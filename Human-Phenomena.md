@@ -10,7 +10,7 @@ For most thinking, I don't actively figure out the conclusion. Rather, I think o
 I can observe my thoughts, one at a time, and maybe with sone vague sense of other things being in the background, but largely it's just one thought at a time.
 
 I cannot directly observe my working memory. I can focus attention on something, and then I'm aware of it. My WM seems to influence what I focus on.
-* Design: CF feeds from single top attention (event), not from WM.
+* Design: CF feeds from single top attention (event), not from WM as a whole.
 
 ## Short Term Memory and Long Term Memory
 I can observe my short term and long term memories, but only after I have thought about it. I cannot just access it willy nilly. It requires a trigger, a specific thought, to start it.
