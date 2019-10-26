@@ -51,4 +51,6 @@ Result:
 ## Discussion - Remove 'HANDLED' tag
 * I don't think it's scalable.
 * Each processor should identify a trigger event as _handled_ through the _presence_ of an event that handles it and links back to it.
-* Problem of how to avoid infinite loops.
+
+Disadvantages:
+* Problem of how to avoid infinite loops. The 'handled' flag on an event stops infinite loops. If the handling event is forgotten, but the trigger somehow remains, then infinite loops could start up. Particularly if the forgotten event was a past step in a long chain of thought...it would be particularly annoying if an old thought stream starts up again when it's already been 'done'.
