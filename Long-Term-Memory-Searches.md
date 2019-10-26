@@ -16,10 +16,18 @@ This approach seems inefficient and overly loose, but it also fits with another 
 Advantages:
 * Flat representation model.
 * Feeds into the idea that LTM searches just happen based on whats in WM, continuously in the background, rather than always requiring an explicit request.
+* Easier for other processors to integrate into the process. So seems more biologically plausible.
 
 Disadvantages:
 * Harder to implement the ability to try multiple alternatives
 * WM filled up with noise.
+* Needs the Multi-Event-Emit model to work well, so that the events from LTM go into WM with low priority, but can still make it in.
+
+Rebuttal:
+* Because Conscious Feedback only gives us a small window into what's held in WM, humans may well get a single MemoryResponse event into WM, wrapping the list of results.
+** But that does require a further processor to extract the results (probably one at a time) in order to make them available for other processors to examine. And how does this MemoryResponseSelectionProcessor decide which item to pick next, when it doesn't know what the other processors are looking for. The whole thing just seems less biologically plausible.
+* If WM was suddenly filled up with the noise of the results, you'd expect it to come into the CF loop.
+** But CF only shows the single top strongest event, so we wouldn't necessarily know.
 
 # Discussion - Memory as a Sense
 'Memory' could be a sense too. For humans, it appears to behave quite differently to other senses; primarily because it doesn't behave as a stream, like the other senses. So we perceive it in a very different way, and attribute very different rationalizations to its makeup.
