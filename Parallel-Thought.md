@@ -1,0 +1,1 @@
+Current architecture assumes a Single-Event-Emit at a time. But an alternative is a Multi-Event-Emit at at time model.
