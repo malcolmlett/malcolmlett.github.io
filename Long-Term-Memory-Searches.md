@@ -1,4 +1,4 @@
-Discussion - Fire-and-Forget Style
+# Discussion - Fire-and-Forget Style
 A lot of processes within the humain brain seem to operate on a "fire-and-forget-and-wait" model:
 1. send a one-way request into the abyss
 2. wait for the abyss to mysteriously contain information that can be used for a next step
@@ -20,3 +20,14 @@ Advantages:
 Disadvantages:
 * Harder to implement the ability to try multiple alternatives
 * WM filled up with noise.
+
+# Discussion - Memory as a Sense
+'Memory' could be a sense too. For humans, it appears to behave quite differently to other senses; primarily because it doesn't behave as a stream, like the other senses. So we perceive it in a very different way, and attribute very different rationalizations to its makeup.
+
+But, if it could be quite reasonable to consider it a sense like any other, and that it feeds in in just the same way.
+
+That would mean:
+* It comes in as an input, not directly back into a processor as a 'response' or directly into working memory.
+* Interceptors pick up its data and pre-process them before they are fed into processors and/or directly into working memory, as chosen by the attention-attenuator. Basically, STM and LTM start working almost like processors themselves, with an active component that injects data into the system -- as a 'sense' input.
+
+It operates in response to triggers, which may be explicit requests, or just a strong correlation to something in working memory at the time. -- ie: memories that pop up out of the blue.
