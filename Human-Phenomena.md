@@ -6,13 +6,13 @@ Some cases are also indicated with a brief summary of how the implications for d
 For most thinking, I don't actively figure out the conclusion. Rather, I think of a problem, and the answer just appears in my awareness. I believe this works by the subconscious monitoring the state of working memory. When a recognizable question is present, the part of the brain that knows how to answer it, populates the answer back into the WM. This makes biological sense: physical wirings cannot track data around, but must have the data moved into a single accessible place - namely, Working Memory.
 * Design: Processors monitor WM, and bubble up the answer via Attention Attenuator.
 
-## Granularity of Working Memory
+## Conscious Feedback
 I can observe my thoughts, one at a time, and maybe with sone vague sense of other things being in the background, but largely it's just one thought at a time.
 
 I cannot directly observe my working memory. I can focus attention on something, and then I'm aware of it. My WM seems to influence what I focus on.
 * Design: CF feeds from single top attention (event), not from WM as a whole.
 
-## Short Term Memory and Long Term Memory
+## Short Term and Long Term Memory
 I can observe my short term and long term memories, but only after I have thought about it. I cannot just access it willy nilly. It requires a trigger, a specific thought, to start it.
 * Design: Place query into WM. Processor searches STM and LTM and places result into WM.
 
