@@ -18,3 +18,6 @@ I use consciousness specifically to refer to the parts of a system that produce 
 
 # But Consciousness is just an illusion .... and other theories
 There are a number of theories on what human consciousness is, and what produces it. Like many, I fall into a particular camp and I don't find any of the other theories convincing.
+
+# See Also
+* [[A Theory of the Human Mind]]
