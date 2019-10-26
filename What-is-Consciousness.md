@@ -5,8 +5,6 @@ I use consciousness specifically to refer to the parts of a system that produce 
 * awareness of thought - the fact that the system can observe its own 'thought' and has 'meta thought' (can think about its own thoughts)
 * experience of experiencing - the system has that subtle, hard to explain, human sensation of there being something in our heads that observes all of this. In contrast to a mechanical or electronic machine, for which we have no scientific rational reason to believe it experiences anything.
 
-More in [[What is Consciousness]].
-
 # But Consciousness is just an illusion .... and other theories
 There are a number of theories on what human consciousness is, and what produces it. Like many, I fall into a particular camp and I don't find any of the other theories convincing.
 
