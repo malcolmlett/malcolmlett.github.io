@@ -1,4 +1,4 @@
-This page services to collect together interesting human phenomena. Particularly those that help us make architectural decisions - with the goal always to be to emulate human thought systems as much as possible.
+As much as possible, I'm interested in emulating the design of the human brain, at a high-level architectural level. This page services to collect together interesting human phenomena. Particularly those that help us make architectural decisions.
 
 (...watch this space...)
 
