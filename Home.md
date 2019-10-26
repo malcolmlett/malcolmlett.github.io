@@ -18,3 +18,5 @@ More in [[What is Consciousness]].
 
 # See Also
 * [[A Theory of the Human Mind]]
+* [[Human Phenomena]]
+* Discussion and Design articles
