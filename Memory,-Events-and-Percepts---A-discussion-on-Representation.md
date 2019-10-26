@@ -47,3 +47,8 @@ Search Request:
 Result:
 1. STM/LTM discovers Percept holding a concept or fact.
 2. Emits new PerceptEvent, with 'tags=memory', and holding the percept.
+
+## Discussion - Remove 'HANDLED' tag
+* I don't think it's scalable.
+* Each processor should identify a trigger event as _handled_ through the _presence_ of an event that handles it and links back to it.
+* Problem of how to avoid infinite loops.
