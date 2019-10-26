@@ -10,14 +10,11 @@ My favourite example for a long time has been that of a consciousness, with the 
 It occurred to me in late 2019 that, while I certainly don't think I understand anything about human consciousness, I may have formed together enough of a theory that I can actually build something practical.
 
 # What does "Consciousness" mean to me?
-The word can mean many different things to different people, in different contexts.
-
 I use consciousness specifically to refer to the parts of a system that produce these phenomena:
 * awareness of thought - the fact that the system can observe its own 'thought' and has 'meta thought' (can think about its own thoughts)
 * experience of experiencing - the system has that subtle, hard to explain, human sensation of there being something in our heads that observes all of this. In contrast to a mechanical or electronic machine, for which we have no scientific rational reason to believe it experiences anything.
 
-# But Consciousness is just an illusion .... and other theories
-There are a number of theories on what human consciousness is, and what produces it. Like many, I fall into a particular camp and I don't find any of the other theories convincing.
+More in [[What is Consciousness]].
 
 # See Also
 * [[A Theory of the Human Mind]]
