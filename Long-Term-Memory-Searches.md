@@ -21,7 +21,7 @@ Advantages:
 Disadvantages:
 * Harder to implement the ability to try multiple alternatives
 * WM filled up with noise.
-* Needs the [Parallelised Thought] model to work well, so that the events from LTM go into WM with low priority, but can still make it in.
+* Needs the [Parallel Thought] model to work well, so that the events from LTM go into WM with low priority, but can still make it in.
 
 Rebuttal:
 * Because Conscious Feedback only gives us a small window into what's held in WM, humans may well get a single MemoryResponse event into WM, wrapping the list of results.
