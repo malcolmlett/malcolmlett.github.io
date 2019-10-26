@@ -29,7 +29,7 @@ There's some work to do to clean-up how Event objects are created.
 ** absolute-strength = proc-emitted-strength * processor-weighting * trigger-event-strength
 ** (mind you, this particular equation needs some scaling-up, because otherwise it leads to zero over time)
 
-## Granularity of Representation: Literal/Concrete vs Abstract/Flexible
+## Solution - Granularity of Representation: Literal/Concrete vs Abstract/Flexible
 Don't want to go adding too many meta-attributes to Event data type. For example, don't want to split 'references' up into 'concepts', 'triggers', 'relateds'.
 
 Aim for a simple representational model that is flexible and flat. Think 'Twitter': extremely simple data structure and API, with lots of ways to use it.
