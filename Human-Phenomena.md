@@ -23,3 +23,11 @@ On waking, I have no thoughts. Then my attention fills up with the memory of thi
 ## Thought Mechanisms
 I recognize "I don't understand" events by the lack of an answer from my subconscious, rather than a direct "don't understand" result. It's as if I learn the typical response time, and if I don't get one within that time then I say "I don't understand". If a result subsequently does arrive, then I say "oh, actually I do know".
 * Design: Conscious awareness used to judge lack of knowledge. Individual processors don't explicitly detect a lack of ability to process. eg: expression parser doesn't emit a 'CannotParse' event.
+
+## Meta-Thought
+We have some _control_ over our attention. For example, meditation is an act especially focused on influencing our attention. This plays into our ability to _monitor_ thought and attention, and to notice the "monkeys in the head". As we develop, we learn to recognise these effects, and we learn strategies for addressing them. Examples:
+* I can choose to 'focus' on something
+* I can choose to relax my focus and think 'broadly'
+* I can immediately react to the thought of a particular strategy and choose to avoid it, for example based on past experience.
+
+The ability to _control_ our attention seems to be something we learn. It his hard to learn. It takes a long time to learn to control it well, and our ability improves slowly over time. It feels much like learning to control a limb - at an early age we 'discover' that we can control the limb, and then we slowly improve the granularity of control. Presumably, for a long time during our initial development, we have no understanding that we can control our thought - or even have much of an awareness of our ability to monitor our thoughts.
