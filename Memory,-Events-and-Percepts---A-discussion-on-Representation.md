@@ -16,10 +16,15 @@ Every Event should be labelled with its _source_. But best not to get too litera
 
 * Store facts/concepts and events both as first-class items within STM/LTM. For example, don't wrap Percepts in PerceptEvents unnecessarily when storing pre-programmed facts. _Can_ additionally store the Event of when the concept/fact was learned. This event memory may be independently forgotten.
 
-## Aside: Clean up Events
+## Clean up Event Creation
 There's some work to do to clean-up how Event objects are created.
 * Don't set Event timestamp in processors. Just want the processors to be simple and not worry about 'Emulation Context'.
-
+* Processors should set strength according to their own level of confidence -- without having to consider the value relative to global importance.
+* AA applies a (potentially learned) weighting factor against each processor.
+* When emitting new events, processors should set 'ref' to triggering event, so that AA can use this to adjust strength.
+* AA calculates absolute strength of emitted event, something like:
+** absolute-strength = proc-emitted-strength * processor-weighting * trigger-event-strength
+** (mind you, this particular equation needs some scaling-up, because otherwise it leads to zero over time)
 
 ## Aside: Memory as a Sense
 'Memory' could be a sense too. For humans, it appears to behave quite differently to other senses; primarily because it doesn't behave as a stream, like the other senses. So we perceive it in a very different way, and attribute very different rationalizations to its makeup.
