@@ -1,4 +1,6 @@
-As much as possible, I'm interested in emulating the design of the human brain, at a high-level architectural level. This page services to collect together interesting human phenomena. Particularly those that help us make architectural decisions.
+As much as possible, I'm interested in emulating the design of the human brain, at a high-level architectural level. This page serves to collect together interesting human phenomena. Particularly those that help us make architectural decisions.
+
+Some cases are also indicated with a brief summary of how the implications for design of the emulator.
 
 ## Sub-consciousness
 For most thinking, I don't actively figure out the conclusion. Rather, I think of a problem, and the answer just appears in my awareness. I believe this works by the subconscious monitoring the state of working memory. When a recognizable question is present, the part of the brain that knows how to answer it, populates the answer back into the WM. This makes biological sense: physical wirings cannot track data around, but must have the data moved into a single accessible place - namely, Working Memory.
