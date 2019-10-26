@@ -14,3 +14,8 @@
 CF still only picks top-most event.
 
 Has the interesting effect of allowing parallel thought, with the top-most thought stream being fed back via CF, but everything else being 'background' thought.
+
+Consequences:
+* 'HANDLED' tag no longer works. Because there's no single selection of which event has 'handled' another.
+    * 'Handled' is addressed through the _presence_ of an event that links back to it, and the processor considers that event as handling the trigger.
+    * Drawback is that the 'handled' flag on an event stops infinite loops. If the handling event is forgotten, but the trigger somehow remains, then infinite loops could start up. Particularly if the forgotten event was a past step in a long chain of thought...it would be particularly annoying if an old thought stream starts up again when it's already been 'done'.
