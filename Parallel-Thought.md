@@ -15,5 +15,11 @@ CF still only picks top-most event.
 
 Has the interesting effect of allowing parallel thought, with the top-most thought stream being fed back via CF, but everything else being 'background' thought.
 
+Advantages:
+* Disregarding biological plausibility, this seems like the kind of optimisations that are built into modern computer CPUs to speed up processing.
+
+Disadvantages:
+* I'm not sure how biologically plausible this is.
+
 Consequences:
 * 'HANDLED' tag no longer works. Because there's no single selection of which event has 'handled' another. See discussion in [[Memory,-Events-and-Percepts---A-discussion-on-Representation]] for details and drawbacks.
