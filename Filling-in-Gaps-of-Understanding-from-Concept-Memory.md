@@ -4,7 +4,7 @@ How to solve "3 + ? = 8" without having previously been trained to cope with suc
 ## Solution
 ...to be scanned...
 
-## Review of Processors
+## Review of Processor Steps
 The processing of "3 + ? = 8" currently occurs via the following steps, broken into stages:
 
 | Step | Processor | Description |
