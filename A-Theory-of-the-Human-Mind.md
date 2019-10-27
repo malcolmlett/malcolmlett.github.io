@@ -19,3 +19,6 @@ In practice, it turns out there are some other requirements, without which consc
 * some form of 'current state' like working memory (this is the 'state' part of a turing machine)
 * a minimum level of intelligence
 * short to long term memory (required for a useful level of intelligence)
+
+## See Also
+* [[What is Consciousness]]
