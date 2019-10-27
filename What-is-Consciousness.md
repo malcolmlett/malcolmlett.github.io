@@ -1,11 +1,11 @@
 The word "Consciousness" can mean many different things to different people, in different contexts.
 
-# What does "Consciousness" mean to me?
+## What does "Consciousness" mean to me?
 I use consciousness specifically to refer to the parts of a system that produce these phenomena:
 * awareness of thought - the fact that the system can observe its own 'thought' and has 'meta thought' (can think about its own thoughts)
 * experience of experiencing - the system has that subtle, hard to explain, human sensation of there being something in our heads that observes all of this. In contrast to a mechanical or electronic machine, for which we have no scientific rational reason to believe it experiences anything.
 
-# But Consciousness is just an illusion .... and other theories
+## But Consciousness is just an illusion .... and other theories
 There are a number of theories on what human consciousness is, and what produces it. Like many, I fall into a particular camp and I don't find any of the other theories convincing.
 
 Some alternative theories of consciousness:
@@ -22,5 +22,5 @@ Some of the issues I have with the various theories:
 * Scope and ability of the attached spiritual entity is too limited by the capability of the biological brain. eg: effects of brain damage, sleep.
 * The lack of an explained _mechanism_ for creating the phenomenon of "experience of experiencing".
 
-# See Also
+## See Also
 * [[A Theory of the Human Mind]]
