@@ -1,4 +1,4 @@
-# Discussion - Fire-and-Forget Style
+## Discussion - Fire-and-Forget Style
 A lot of processes within the humain brain seem to operate on a "fire-and-forget-and-wait" model:
 1. send a one-way request into the abyss
 2. wait for the abyss to mysteriously contain information that can be used for a next step
@@ -29,7 +29,7 @@ Rebuttal:
 * If WM was suddenly filled up with the noise of the results, you'd expect it to come into the CF loop.
 ** But CF only shows the single top strongest event, so we wouldn't necessarily know.
 
-# Discussion - Memory as a Sense
+## Discussion - Memory as a Sense
 'Memory' could be a sense too. For humans, it appears to behave quite differently to other senses; primarily because it doesn't behave as a stream, like the other senses. So we perceive it in a very different way, and attribute very different rationalizations to its makeup.
 
 But, if it could be quite reasonable to consider it a sense like any other, and that it feeds in in just the same way.
