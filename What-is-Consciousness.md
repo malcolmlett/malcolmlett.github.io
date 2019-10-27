@@ -21,3 +21,6 @@ Some of the issues I have with the various theories:
 * Not recognising the significance of the "experience of experiencing"
 * Scope and ability of the attached spiritual entity is too limited by the capability of the biological brain. eg: effects of brain damage, sleep.
 * The lack of an explained _mechanism_ for creating the phenomenon of "experience of experiencing".
+
+# See Also
+* [[A Theory of the Human Mind]]
