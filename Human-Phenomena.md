@@ -34,3 +34,4 @@ We have some _control_ over our attention. For example, meditation is an act esp
 * I can immediately react to the thought of a particular strategy and choose to avoid it, for example based on past experience.
 
 The ability to _control_ our attention seems to be something we learn. It his hard to learn. It takes a long time to learn to control it well, and our ability improves slowly over time. It feels much like learning to control a limb - at an early age we 'discover' that we can control the limb, and then we slowly improve the granularity of control. Presumably, for a long time during our initial development, we have no understanding that we can control our thought - or even have much of an awareness of our ability to monitor our thoughts.
+* Let's call this "Meta-Learning"
