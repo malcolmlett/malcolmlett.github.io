@@ -4,6 +4,20 @@ How to solve "3 + ? = 8" without having previously been trained to cope with suc
 ## Solution
 ...to be scanned...
 
+## High Level Description of Solution
+We're automating a sequence that could otherwise have been instructor led, but still emulate a lot of interesting things:
+1. Solve "3 + ? = 8"
+2. Calculator: What's '?'?
+3. It's a number.
+4. Try a number.
+5. Calculator: "3 + <picks a random number> = 8 => false"
+6. Keep trying.
+7. Calculator: keeps trying for a short period, gives up.
+8. Keep trying.
+9. Calculator: adjusts perseverance.
+10. Calculator: keeps trying until it succeeds.
+11. Calculator: "3 + 5 = 8".
+
 ## Review of Processor Steps
 The processing of "3 + ? = 8" currently occurs via the following steps, broken into stages:
 
