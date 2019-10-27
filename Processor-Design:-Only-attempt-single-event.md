@@ -13,5 +13,13 @@ Biological design:
 Consequences:
 * This design has a drawback in that it cannot iterate over multiple actionable events in WM, as it will potentially always attempt to action the same event. The management of this comes down to "meta-learning": the ability to learn to work _with_ the mind's limitations.
 
+## Solution - Code
+Could play well into the desire to implement Processors using a simpler functional-style programming:
+```
+new Processor(
+  wm -> myCustomSelection(wm.all()),
+  e -> myCustomEvaluation(e));
+```
+
 ## See Also
 This design is in contrast to the [[Processors as Cloud Lambda Functions]] model.
