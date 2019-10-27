@@ -30,3 +30,6 @@ Disadvantages:
 
 Rebuttal:
 * Seems biologically implausible, to move the "code" to the "data" in this way.
+
+## See Also
+* [[Processor-Design:-Only-attempt-single-event]]
