@@ -7,7 +7,7 @@ In wondering about that, I've always felt that once we could understand consciou
 
 My favourite example for a long time has been that of a consciousness with the intelligence of a calculator - a conscious calculator.
 
-It occurred to me in late 2019 that, while I certainly don't think I understand anything about human consciousness, I may have formed together enough of a theory that I can actually build something practical.
+It occurred to me in late 2019 that, while I certainly don't think I understand anything significant about human consciousness, I may have formed together enough of a theory that I can actually build something practical.
 
 ## See Also
 * [[A Theory of the Human Mind]]
