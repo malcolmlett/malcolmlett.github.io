@@ -5,7 +5,7 @@ I've been wondering about human [consciousness](What-is-Consciousness) for a whi
 
 In wondering about that, I've always felt that once we could understand consciousness, we would discover that it exists in many forms and levels. In particular, I think consciousness as a phenomenon can exist in systems with highly varying levels of intelligence, and that the strength of that conscious phenomenon is probably tied to the level of intelligence.
 
-My favourite example for a long time has been that of a consciousness, with the intelligence of a calculator - a conscious calculator.
+My favourite example for a long time has been that of a consciousness with the intelligence of a calculator - a conscious calculator.
 
 It occurred to me in late 2019 that, while I certainly don't think I understand anything about human consciousness, I may have formed together enough of a theory that I can actually build something practical.
 
