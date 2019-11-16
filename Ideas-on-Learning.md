@@ -1,3 +1,5 @@
+This page is a brain-dump of ideas, while I piece together something more logical.
+
 ## Hierarchical Learning
 How do our subconscious processors learn high level things. No evolutionarily defined fitness function is going to be specific enough to learn efficiently. It's only our conscious thought that knows whether we did something right or wrong. 
 
