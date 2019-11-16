@@ -21,4 +21,4 @@ However, for a first cut, it will be sufficient to hard code this into the Atten
 
 Any processor can learn to emit AttenuationEvents.
 
-(Labels: work-in-progress)
+_(Labels: work-in-progress)_
