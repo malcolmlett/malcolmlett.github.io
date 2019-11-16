@@ -20,3 +20,5 @@ However, for a first cut, it will be sufficient to hard code this into the Atten
 * strength of AttenuationEvent is subtracted from emitted event strengths to determine their effective strengths. Events are omitted altogether if their effective strength hits zero. Otherwise they compete with others according to their attenuated effective strength. 
 
 Any processor can learn to emit AttenuationEvents.
+
+(Labels: work-in-progress)
