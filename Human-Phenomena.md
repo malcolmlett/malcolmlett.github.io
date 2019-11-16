@@ -38,3 +38,20 @@ The ability to _control_ our attention seems to be something we learn. It his ha
 
 Inhibiting thoughts: I have a learned habit of turning on the tap too early while brushing my teeth. I consciously counteract this my noticing that I have turned it on too soon, turning it off, and then holding onto a thought that counteracts the ongoing desire to turn it back on. In my case, I can actually still feel the ongoing impulse or urge, but it's not via the Conscious Feedback loop - more like a different sense. So it probably doesn't emit any further events into WM. Mind you, in this case, it probably never made it into WM in the first place. Not until I noticed I'd done an action I didn't want to do. 
 * Processors can emit events that are subsequently used to counteract or attenuate events from other processors.
+
+## The Double-checking Brain
+Our brain doesn't just produce a result and then act on it. It is continually double checking itself. 
+
+The other day I used the wrong word in a conversation, potentially leading to an embarrassing situation. I knew immediately as the word exited my mouth. But why did I make a mistake in the first place? 
+
+Our brains are not accurate computing engines, but flaky guessing machines. We continually take short cuts, bedstraw its efficient to do so. Our internal brain processors that produce language primarily work automatically. We can analyse each word consciously before speaking it, if we wish. And sometimes we do - you know when someone does that, because they talk slower. But mostly we trust that our subconscious will produce the right result and allow the words to flow straight out our mouths without checking them. 
+
+But that's not the end of the story. We're listening in on ourselves. In a conversation we use that to build a mental model of the other person's state of mind. Or perhaps we just care about speaking in a particular way, and so we listen in and analyse the speech for mistakes. 
+
+When people get brain damage in the region of the brain devoted to understanding spoken language, they lose the ability to understand their own speech. They can still generate language and talk, but cannot double check what they are saying. These people talk in long drawn out sentences with many mistakes.
+
+Every part of our brain is unreliable. So our brain employs an architecture of continually double and triple checking checking itself, at each step of the way, and then listening/watching the final output, and of the resultant consequences. Sometimes a single action has gone through many layers of double checking. Many of those layers of double checking can be enabled/disabled through conscious thought. This explains the smooth transition when learning a new skill, from having to consciously orchestrate every step, to gradually allowing our automated systems to take over as we observe that they are doing a good enough job. 
+
+I suspect these sorts of trust-and-act-then-double-check mechanisms are there throughout the brain, across many layers.
+
+Curiously, this also explains so much of human behavior - it's such a normal human thing to make mistakes and correct ourselves; it's one of those uncanny valley things with robots that don't make mistakes. 
