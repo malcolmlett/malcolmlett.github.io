@@ -4,6 +4,16 @@ It provides a convenient place to jot down some thoughts, without needing to wor
 
 _(list: work-in-progress)_
 
+* [[Ideas on Learning]]
 * [[First Design for Double Checking Mind]]
 * [[First Design for Conscious Atttenuation]]
+* [[Tracking Attempts during Problem Solving]]
+* [[Worked Examples]]
+* [[Processors like Cloud Lambda Functions]]
+* [[Processor Design; Only attempt single event]]
+* [[Parallel Thought]]
+* [[Long Term Memory Searches]]
+* [[Filling in Gaps of Understanding from Concept Memory]]
+* [[Memory, Events and Percepts; A discussion on Representation]]
+* [[Archive of Scanned Notes]]
 
