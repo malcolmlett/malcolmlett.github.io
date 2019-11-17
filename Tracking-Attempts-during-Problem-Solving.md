@@ -12,3 +12,5 @@ I think I'll store that explicit tracking by emitting an event that makes explic
 
 ## Solution - Parallel Thought
 The [[Parallel Thought]] model will not work well with purely-STM based tracking of attempts, as background thought won't get tracked. This could be either a good or bad thing.
+
+_(Added 2019-10-28. Labels: work-in-progress)_
