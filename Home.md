@@ -12,4 +12,5 @@ It occurred to me in late 2019 that, while I certainly don't think I understand 
 ## See Also
 * [[A Theory of the Human Mind]]
 * [[Human Phenomena]]
+* [[Work in Progress]]
 * Discussion and Design articles
