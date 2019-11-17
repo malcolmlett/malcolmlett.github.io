@@ -9,4 +9,4 @@ As we mature from birth, and our intelligence increases, we consciously measure 
 
 So, if our conscious intelligence is used to measure the fitness of our actions, all that we need is to label the past memories with the fitness measure. Then, the nightly memory and learning system can use that memory, along with attached fitness, and feed it beck into the appropriate region of neural network to train it.
 
-_(Added 2019-11-16. Labels: work-in-progress)_
+_(Added 2019-11-16. Labels: work-in-progress, theory)_
