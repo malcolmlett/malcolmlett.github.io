@@ -24,4 +24,4 @@ Disadvantages:
 Consequences:
 * 'HANDLED' tag no longer works. Because there's no single selection of which event has 'handled' another. See discussion in [[Memory,-Events-and-Percepts---A-discussion-on-Representation]] for details and drawbacks.
 
-_(Added 2019-10-26. Labels: work-in-progress)_
+_(Added 2019-10-27. Labels: work-in-progress)_
