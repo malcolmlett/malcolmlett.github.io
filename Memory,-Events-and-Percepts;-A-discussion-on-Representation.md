@@ -54,3 +54,5 @@ Result:
 
 Disadvantages:
 * Problem of how to avoid infinite loops. The 'handled' flag on an event stops infinite loops. If the handling event is forgotten, but the trigger somehow remains, then infinite loops could start up. Particularly if the forgotten event was a past step in a long chain of thought...it would be particularly annoying if an old thought stream starts up again when it's already been 'done'.
+
+_(Added 2019-10-26. Labels: work-in-progress)_
