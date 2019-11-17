@@ -21,3 +21,5 @@ This page lists PDF scans of notes.
 * [Use for Conscious Feedback - Solve equation without help.pdf](files/archive/Use-for-Conscious-Feedback;-Solve-equation-without-help.pdf) - Oct 2019
 * [Use for Conscious Feedback - Solve equation.pdf](files/archive/Use-for-Conscious-Feedback;-Solve-equation.pdf) - Oct 2019
 * [Use for Conscious Feedback - Stuck and Cycle detection.pdf](files/archive/Use-for-Conscious-Feedback;-Stuck-and-Cycle-detection.pdf) - Oct 2019
+
+_(Added: 2019-10-01. Labels: work-in-progress)_
