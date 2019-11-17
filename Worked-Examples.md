@@ -34,3 +34,5 @@ The processing of user command "3 + ? = 8", without user interaction to help the
 | 3.0 | StuckThoughtInterceptor             | Emits StuckThoughtEvent|
 | 3... | (...)                              | [WIP] Now start employing strategies to guess at number value of '?' |
 | x.x | FindMatchingConceptProcessor        | [WIP] Last found concept(s) not good enough, tries again |
+
+_(Added 2019-10-27. Labels: work-in-progress)_
