@@ -23,3 +23,5 @@ new Processor(
 
 ## See Also
 This design is in contrast to the [[Processors as Cloud Lambda Functions]] model.
+
+_(Added 2019-10-27. Labels: work-in-progress)_
