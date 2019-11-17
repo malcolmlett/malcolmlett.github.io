@@ -2,4 +2,4 @@ The purpose of the `work-in-progress` folder is to collect together thoughts dur
 
 It provides a convenient place to jot down some thoughts, without needing to worry about maintaining it into the future.
 
-* [[Long Term Memory Searches]]
+_(list: work-in-progress)_
