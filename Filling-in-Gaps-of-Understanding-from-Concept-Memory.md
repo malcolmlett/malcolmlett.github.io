@@ -44,3 +44,5 @@ For attempt tracking, when first emiting StuckThoughtEvent, I think a processor 
 * Currently adds top-most event to Event.references(), but there's probably no point specifically in tracking that one.
 * Need to track the end of the chain at the time of stuck thought - so needs to navigate to end of chain, and reference that event.
 * If it tracks anything else too, it would be about making an attempt to identify the event that best describes the current underlying request/problem that is stuck.
+
+_(Added 2019-10-27. Labels: work-in-progress)_
