@@ -1,4 +1,4 @@
-What actually happens in order to execute a thought process from start to finish? This page answers that threw some detailed examples.
+What actually happens in order to execute a thought process from start to finish? This page answers that through some detailed examples.
 
 ## Solve "3 + 8"
 The processing of user command "3 + 8" occurs as follows:
