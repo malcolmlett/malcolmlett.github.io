@@ -39,3 +39,5 @@ That would mean:
 * Interceptors pick up its data and pre-process them before they are fed into processors and/or directly into working memory, as chosen by the attention-attenuator. Basically, STM and LTM start working almost like processors themselves, with an active component that injects data into the system -- as a 'sense' input.
 
 It operates in response to triggers, which may be explicit requests, or just a strong correlation to something in working memory at the time. -- ie: memories that pop up out of the blue.
+
+_(Added 2019-10-27. Labels: work-in-progress)_
