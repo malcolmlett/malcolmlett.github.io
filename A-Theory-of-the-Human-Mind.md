@@ -7,7 +7,7 @@ Topics:
    * Neural pattern matching vs. sequential thought  (vis-a-vis Fast and Slow thinking, Daniel Kahneman)
 * Scope of experience of Conscious Thought limited by scope of conscious feedback.
 * Consciousness is just a turing machine.
-* No free-will - just processors, attention, and meta-thought. The experience of free-will is an artifact of our tightly integrated mental model, and the labeling of its inputs as 'my thoughts'.
+* Free-will - The experience of free-will is an artifact of our tightly integrated mental model, and the labeling of its inputs as 'my thoughts'.
 
 ## Minimum Requirements
 I believe the most basic form of consciousness needs only the following:
