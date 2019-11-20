@@ -1,0 +1,1 @@
+<p align="center">Copyright (c) 2019 Malcolm Lett - Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0">GPL 3.0</a></p>
