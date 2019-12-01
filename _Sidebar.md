@@ -2,7 +2,7 @@
 * [[Home]]
 
 ### Design
-* _tbd_
+* [[Architecture Overview]]
 
 ### Theory
 * [[What is Consciousness]]
