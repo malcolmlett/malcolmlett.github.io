@@ -66,7 +66,7 @@ So the awareness of our own thoughts is a fundamentally necessary input to our t
 4. The selected output is loaded back into working memory as the new state, and the process repeats.
 5. The short and long-term outcomes are monitored and critiqued over time, and controls are employed wherever necessary to adjust how the thought process is carried out.
 
-# Experiencing of Consciousness
+# Experience of Consciousness
 One of the greatest unsolved problems of consciousness is why we experience it in the way that we do.
 
 There are a few aspects to that:
