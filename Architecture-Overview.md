@@ -32,3 +32,43 @@ Inputs can be used within the system in any of the following ways, listed roughl
 1. Input event detected by Interceptor (eg: command request), picked up by a processor for that kind of event (eg: command request), and loaded into AA as something to be worked upon. May be all that's consumed of the input at that time.
 2. Input event at the start of a sequence detected by Interceptor, picked up by a processor which outputs some sort of "observe input" event.
 3. Presence of "observe input" event causes AA to directly feed intercepted input directly into conscious awareness. Raw input is used too, in some unknown way.
+
+## Events
+A general computing engine needs some form of abstract data structure that is flexible enough to represent widely varying concepts. The data structure used is an Event.
+
+Events are made up of:
+* an identification of its source
+* a time
+* a type
+* arbitrary data
+
+Most processors can only operate against specific events, as they require domain knowledge to interpret.
+
+## Interceptors
+Interceptors detect features and events. Some of the processing performed by them can be quite complex, especially in the area of vision and language. Interceptors do not have access to the current state of working-memory - at-least not significantly.
+
+Interceptors will tend to be largely stateless, except for where needed in order to detect changes over time. For example, a simple interceptor may record the immediately previous input state, in order to detect when the input changes.
+
+Examples include:
+* identify the objects in the current visual field
+* extract the words and their meaning from heard language
+* identify when output from CF has changed - in order to trigger storing the new event into STM
+
+In neural network terms, Interceptors are probably best implemented via some form of Recurrent Neural Network.
+
+## Processors
+Processors have no state of their own, but they receive many inputs.
+
+Each processor may use any combination of the following:
+* all state currently within WM
+* outputs from interceptors - typically a processor will only ever by wired to one or more specific interceptors
+
+In neural network terms, Processors are probably best implemented via deep-learning networks.
+
+## Attention Attenuator
+This is the key to making the biological computing engine work. It must maintain _stable_ thought.
+
+It performs a number of roles:
+* Decides which processor is used for output at each moment.
+* Monitors processors over time and learns how useful they are - attenuating or strengthening their outputs as appropriate.
+* Avoids infinite loops.
