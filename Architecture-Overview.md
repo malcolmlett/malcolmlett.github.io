@@ -94,10 +94,36 @@ Events may be _compacted_. If they hold a lot of contextual data, that data is e
 When an event has been compacted and it is needed in the thought process, it generally will not be good enough to use directly anymore. Rather, that will trigger a processor to attempt to re-load the full details from STM.
 
 ## Short Term Memory
-Most processors cannot directly access Short Term Memory (STM). Rather, only a special purpose processor can query STM, based on the presence of a "STM request" event in WM. Processors must emit that event if they need information from STM.
+General purpose processors cannot directly access Short Term Memory (STM). Rather, only a special purpose processor can query STM, based on the presence of a "STM request" event in WM. Processors must emit that event if they need information from STM.
 
-STM is organised as an ordered queue of most recent events, but it is limited in how much it can hold. For example, around 10 minutes.
+STM stores event objects. It is organised as an ordered queue of most recent events, but it is limited in how much it can hold. For example, around 10 minutes.
+
+STM is populated one event at a time, as the output from CF changes.
 
 Data fetches are search-driven, based on a number of different available search queries:
-* like - search for recent events based on similarity to something else, or relating to a concept
 * id-lookup - fetch an event by its unique ID
+* by-time - search for all events within the most recent 'x' time
+* like - search for events anywhere in STM based on similarity to something else
+* by-association - search for events anywhere in STM related to an 'example' event or concept
+
+## Long Term Memory
+General purpose processors cannot directly access Long Term Memory (LTM). Rather, only a special purpose processor can query LTM, based on the presence of an "LTM request" event in WM. Processors must emit that event if they need information from LTM.
+
+LTM stores Event and Concept objects. It is organised as an un-ordered associative bag of event and concept items. It has an unspecified large storage capacity.
+
+LTM is pre-populated with concepts relating to pre-programmed processors. This enables the system, out of the box, to leverage those pre-programmed mental skills in the same way as if they had been learned them from scratch.
+
+Data fetches are via:
+* id-lookup - fetch an event or concept by its unique ID
+* by-association - retrieve events and concepts related to an 'example' event or concept
+
+The design for populating LTM during runtime is net yet defined.
+
+## Conscious Feedback
+The role of conscious feedback is to simplify and to summarise the state of mind. In full terms, this includes the current state of WM, plus data from a persistent "mental model of mind". In our implementation, this is restricted to WM. Furthermore, in humans we seem to only be able to observe one WM event at a time, and so this limitation is equally applied here.
+
+CF just outputs whatever is the top event in WM.
+
+It does not apply any summarisation or simplification.
+
+The uniformity of data is chosen for convenience, but also because it seems biologically plausible that the data representation available to our conscious awareness is the same as the data representation used by its processors.
