@@ -2,8 +2,10 @@
 * [[Home]]
 
 ### Theory
+* [[Background to A Theory of Mind]]
 * [[A Theory of the Human Mind]]
 * [[What is Consciousness]]
+* [[Philosophical Description of Consciousness]]
 * [[Human Phenomena]]
 
 ### Work in Progress
