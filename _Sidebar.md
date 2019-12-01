@@ -1,6 +1,9 @@
 # Pages
 * [[Home]]
 
+### Design
+* _tbd_
+
 ### Theory
 * [[What is Consciousness]]
 * [[Background to A Theory of Mind]]
