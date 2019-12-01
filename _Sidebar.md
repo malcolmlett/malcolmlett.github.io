@@ -13,7 +13,7 @@
 
 ### Work in Progress
 * [[Work in Progress]]
-* [[Archive of Scanned Notes]
+* [[Archive of Scanned Notes]]
 
 ### Old Wordpress Blog
 * [My theory on consciousness](https://hometechnician.wordpress.com/2014/07/18/my-theory-on-consciousness/)
