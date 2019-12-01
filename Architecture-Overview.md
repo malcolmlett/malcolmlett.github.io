@@ -37,6 +37,7 @@ Inputs can be used within the system in any of the following ways, listed roughl
 A general computing engine needs some form of abstract data structure that is flexible enough to represent widely varying concepts. The data structure used is an Event.
 
 Events are made up of:
+* a unique ID (UUID)
 * an identification of its source
 * a time
 * a type
@@ -72,3 +73,31 @@ It performs a number of roles:
 * Decides which processor is used for output at each moment.
 * Monitors processors over time and learns how useful they are - attenuating or strengthening their outputs as appropriate.
 * Avoids infinite loops.
+
+The chosen processor output is fed into Working Memory, updating its state.
+
+## Working Memory
+Working Memory (WM) holds the state in a state-machine. It holds a collection of Events, but only up to a low limit on total data quantity. All processors are given access to the full state of WM.
+
+When each new event is added to WM, the following occurs:
+* If room needs to be freed up, the oldest event(s) are either compacted or removed.
+* The new event is added at the top.
+* Additionally, events in WM that aren't being acted on fade over time.
+
+Events may be _compacted_. If they hold a lot of contextual data, that data is either simplified or removed, eventually leaving only meta-data, before ultimately the whole event is removed. For example, the following sequence could occur:
+* "Bob asked me 3 + 5" (original)
+* "Bob asked me to do a +"
+* "Bob asked me a calculation"
+* "Bob asked me something"
+* "I was asked something"
+
+When an event has been compacted and it is needed in the thought process, it generally will not be good enough to use directly anymore. Rather, that will trigger a processor to attempt to re-load the full details from STM.
+
+## Short Term Memory
+Most processors cannot directly access Short Term Memory (STM). Rather, only a special purpose processor can query STM, based on the presence of a "STM request" event in WM. Processors must emit that event if they need information from STM.
+
+STM is organised as an ordered queue of most recent events, but it is limited in how much it can hold. For example, around 10 minutes.
+
+Data fetches are search-driven, based on a number of different available search queries:
+* like - search for recent events based on similarity to something else, or relating to a concept
+* id-lookup - fetch an event by its unique ID
