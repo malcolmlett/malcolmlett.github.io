@@ -1,5 +1,4 @@
 This page lists PDF scans of notes.
-
 * [Basic Idea.pdf](files/archive/Basic-Idea.pdf) - Oct 2019
 * [Basic Idea - Take 2.pdf](files/archive/Basic-Idea-Take-2.pdf) - Oct 2019
 * [Conscious Feedback into Short Term Memory.pdf](files/archive/Conscious-Feedback-into-Short-Term-Memory.pdf) - Oct 2019
@@ -21,5 +20,7 @@ This page lists PDF scans of notes.
 * [Use for Conscious Feedback - Solve equation without help.pdf](files/archive/Use-for-Conscious-Feedback;-Solve-equation-without-help.pdf) - Oct 2019
 * [Use for Conscious Feedback - Solve equation.pdf](files/archive/Use-for-Conscious-Feedback;-Solve-equation.pdf) - Oct 2019
 * [Use for Conscious Feedback - Stuck and Cycle detection.pdf](files/archive/Use-for-Conscious-Feedback;-Stuck-and-Cycle-detection.pdf) - Oct 2019
+* [Use for Conscious Feedback - Solve equation without help 2.pdf](files/archive/Use-for-Conscious-Feedback;-Solve-equation-without-help-2.pdf) - Oct 2019
+* [New principles for thought.pdf](files/archive/New-principles-for-thought.pdf) - Oct 2019
 
 _(Added: 2019-10-01. Labels: work-in-progress)_
