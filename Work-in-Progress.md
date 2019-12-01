@@ -13,5 +13,4 @@ _(list: work-in-progress)_
 * [[Long Term Memory Searches]]
 * [[Filling in Gaps of Understanding from Concept Memory]]
 * [[Memory, Events and Percepts; A discussion on Representation]]
-* [[Archive of Scanned Notes]]
 
