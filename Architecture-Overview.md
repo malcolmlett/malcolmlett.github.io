@@ -20,6 +20,17 @@ There are two main data types that run through the system:
 * Inputs in a stream of their raw data form
 * Events
 
+## Pathways
+There are two main pathways that work together in this architecture.
+
+![high level data cycles](files/high-level-data-cycles-v1.png)
+
+The **data cycle** forms the main data processing. It primarily takes the external inputs and the current state of Working Memory, and uses this to update the state of Working Memory.
+
+The **control cycle** monitors and controls activity in order to maintain stable thought. This uses Conscious Feedback to summarise the activity of the data cycle.
+
+The two cycles operate in an integrated fashion, as managed by the Attention Attenuator.
+
 ## Inputs
 In humans and other biological life-forms all raw senses behave like a continuous stream. Pre-processing pathways are required to identify features, to extract basic meaning, and to trigger on events. Humans seem to be able to observe the raw input when desired (eg: to objectively examine what we see in our sight), but generally we work off feature-extracted summaries of those inputs.
 
