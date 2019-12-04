@@ -9,10 +9,6 @@ Thus, for a biologically based computing engine, every step is inaccurate and un
 
 It turns out that this error-prone nature is what leads to such overall adaptability. When every component must be adaptable in the face of high error rates, the aggregate is capable of amazing things. That aggregate is capable of not just adapting to our surroundings and changing social structures, but it's able to adapt to different methods of thinking. 
 
-A little example:
-* If you combine multiple unreliable components together, such that their errors are multiplied, you very quickly converge towards zero accuracy. But if you verify one component against another, you can increase the overall accuracy. The likelihood of two 90% accurate components both being wrong is only 1%.
-* tbd: move this to discussion on background
-
 # Conscious from the Ground Up
 With such an error prone architecture, how is it possible to execute step by step logical thought? The behaviour of thinking becomes a learned activity too, in much the same way that we learn to control our limbs through trial and observation.
 
