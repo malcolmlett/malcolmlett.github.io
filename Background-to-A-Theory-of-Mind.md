@@ -56,11 +56,18 @@ There is more to the puzzle yet, but this is one of the more significant points 
 # Awareness of Thought and the Error Prone Brain
 In the exercises above, you observed the flow of thoughts while you carried out actions and solved a difficult problem. But why can you observe them at all?
 
-tbd: consciousness is a sense.
+## Consciousness as a Sense
+tbd
 
-tbd: error prone brain.
-(tbd: can move some of the detailed content from philosophical articles into here)
+## Error Prone Brain
+tbd
+(please see section in [[Human Phenomena]])
 
+A little example:
+* If you combine multiple unreliable components together, such that their errors are multiplied, you very quickly converge towards zero accuracy. But if you verify one component against another, you can increase the overall accuracy. The likelihood of two 90% accurate components both being wrong is only 1%.
+* tbd: move this to discussion on background
+
+## A Necessary Component of the Architecture
 So the awareness of our own thoughts is a fundamentally necessary input to our thought process, in order to govern its activity. And the integration of working memory and processors now looks like this:
 1. Some input is loaded into working memory
 2. All attached processors have the potential for producing an output. 
@@ -103,3 +110,22 @@ So the limits of an individual's intelligence growth are imposed by the specific
 A concrete example may actually lie in the way that we _can_ increase intelligence to an extent. Individual regions of brain can increase in size. For example London cabbies, with their enlarged memory centre. But it is likely that our biology imposes limits on that growth. Any fitness function will incorporate efficiency, and there is an inherent trade-off between size and efficiency. The limit is "soft", and can be stretched, but only so far. 
 
 Beyond that, each brain region had an inherent capacity. This is like a (roughly) fixed number of neurons that can learn anything its given, but only to the resolution possible within that number of neurons.
+
+# Evolution
+## Consciousness
+We have discussed above how consciousness is a necessary component of our brain as a computing architecture. I believe that alone explains why consciousness evolved. As we started to develop high-level thought, we needed a control mechanism. Otherwise we would have ended up with a system that is highly prone to pointless wandering thought, with long wasteful cycles.
+
+Evolution would have created many different variations on architecture. For example:
+* Different scopes of awareness - ie: different parts of our brain being included in the catchment of conscious feedback.
+* Different levels of course-grained high-level thought vs fine-grained low-level details within conscious feedback.
+* The feedback coming into the system at different places of the architecture.
+* Different mechanisms for how thoughts can control the action of the processing architecture.
+
+Ultimately, the design we have today will be based on what turned out to be the most efficient and effective. For example:
+* Scientists believe our working memory can hold multiple things at once (approximately 7 items), and yet we are only ever consciously aware of one thing at a time. I believe this means that the conscious feedback provides access only to the single top-most (or most recent) item in working memory. This must have happened because it turned out to be sufficient to maintain stable thought.
+
+## Mammals
+tbd
+
+## Fitness Functions
+tbd
