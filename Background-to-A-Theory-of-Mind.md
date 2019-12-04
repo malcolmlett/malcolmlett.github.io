@@ -1,4 +1,4 @@
-[[A Theory of the Human Mind]] provides a unified description of how consciousness plays out in the human mind, and how an artificial simulation of it can be created from that theory. The [[Philosophical Description of Consciousness]] frames those conclusions in relation to the experience of being human. This article focuses on how those conclusions were reached.
+This article investigates how consciousness in the human mind operates, explaining it from common phenomena. The focus is on providing an explanation for how I drew conclusions on the architecture of consciousness. For further reading see [[A Theory of the Human Mind]], which provides a unified description consciousness, and a [[Philosophical Description of Consciousness]] frames those conclusions in relation to the experience of being human.
 
 In order to explain why consciousness is what it is, you will be taken on a journey through your own mind. This journey will attempt to peel away the layers of obscurity, and to drill down through uncertainty when there are things that we cannot directly measure.
 
