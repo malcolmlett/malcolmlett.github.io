@@ -1,5 +1,7 @@
 It turns out that Consciousness is nothing like what we thought it was. This article attempts to describe what it is, what it is not, and why it was necessary for it to evolve.
 
+For background, please see [[Background to A Theory of Mind]] and [[A Theory of the Human Mind]].
+
 # Logical Inaccuracy
 Biology is a deeply flawed way of creating a reliable, accurate computing engine. Evolutionary processes inherently introduce errors, and approximations. The network of neurons that our ability to learn and think depends on, depends on approximations. It's approximations start with high inaccuracy, and improve over time, but there is no boundary line between being untrained and trained. 
 
