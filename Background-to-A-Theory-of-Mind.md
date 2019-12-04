@@ -60,8 +60,20 @@ In the exercises above, you observed the flow of thoughts while you carried out 
 tbd
 
 ## Error Prone Brain
-tbd
-(please see section in [[Human Phenomena]])
+The high reasoning part of our brain is a state machine, but without the reliable stack of a computer CPU. The architecture of having many processors competing for attention is extremely flexible, but suffers from a susceptibility to 
+wandering thought, circular thought (infinite loops), and stuck thought (dead ends in the state machine).
+
+According to my theory, basic creatures like insects probably employ purely stateless processors. The only state coming from body feedback and hormones. So the evolution of higher reasoning also needed to develop a mechanism for managing the overall processing. That management process is complex, and needs domain knowledge of the data and thought process being carried out. So a natural solution is to just feed the mental state break in as a first class input. Interestingly, this would lead to evolved and learned processors with the processing of problem data and feedback being tightly integrated. 
+
+This doesn't need general intelligence. It's a fundamental architecture. It doesn't need tight integration of problem and feedback data, but it helps. It does need a sufficient level of intelligence applied to that feedback, and if there's no general intelligence, then it basically has to be hard coded. 
+
+So there's basically two options for achieving that level of feedback understanding:
+1. Hard coded feedback processing and attention control. Limited data integration. Doesn't require general intelligence. Very unhuman-like. 
+2. Fully integrated General intelligence with learning. Human-like. 
+
+In the human case, we are probably born with some basic building blocks of attention control - that do only the most basic of attenuation of repeated signals to avoid tight infinite loops. And then we learn to override those and apply higher reasoning. 
+
+This theory also suggests there is a minimum level of intelligence required for consciousness, because otherwise it cannot control thought well enough. But in contrast, maybe that limit is very small...the slightest bit of self control could rate on the consciousness scale. 
 
 A little example:
 * If you combine multiple unreliable components together, such that their errors are multiplied, you very quickly converge towards zero accuracy. But if you verify one component against another, you can increase the overall accuracy. The likelihood of two 90% accurate components both being wrong is only 1%.
@@ -124,8 +136,12 @@ Evolution would have created many different variations on architecture. For exam
 Ultimately, the design we have today will be based on what turned out to be the most efficient and effective. For example:
 * Scientists believe our working memory can hold multiple things at once (approximately 7 items), and yet we are only ever consciously aware of one thing at a time. I believe this means that the conscious feedback provides access only to the single top-most (or most recent) item in working memory. This must have happened because it turned out to be sufficient to maintain stable thought.
 
-## Mammals
-tbd
-
 ## Fitness Functions
 tbd
+
+## Mammals
+All mammals have basically the same brain structure. In particular, all mammals have a neo-cortex, which is thought to be the primary component involved in high-level thought. So it seems reasonable to assume that all mammals are conscious.
+
+Other creatures, like birds, fish, and insects, do not have a neo-cortex. So perhaps they are not conscious, or certainly not in the same way that mammals are. Remember, consciousness is an architecture, and it's there to solve a particular problem of control. If these creates have a different architecture, then they definitely have a different experience. It's possible they have some form of consciousness too, based on a different architecture.
+
+I believe animals can function without high-level thought and thus without the need for consciousness, so my best guess is that non-mammals do not have consciousness.
