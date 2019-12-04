@@ -1,4 +1,4 @@
-This page describes my overarching theory. Most of the points here are unproven assumptions, based on observations of my own thoughts and influenced from current theories around world.
+This page describes my overarching theory. Most of the points here are unproven assumptions, based on observations of my own thoughts and influenced from current theories around world. For background on how these conclusions were drawn, see [[Background to A Theory of Mind]].
 
 ...work in progress...
 
