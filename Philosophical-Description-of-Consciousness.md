@@ -20,3 +20,6 @@ Eventually, almost by accident, we discover that we can control our thought in s
 
 # Free-will
 tbd.
+
+# Ethics
+tbd.
