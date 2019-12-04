@@ -1,4 +1,4 @@
-It turns out that Consciousness is nothing like what we thought it was. This article attempts to describe what it is, what it is not, and why it was necessary for it to evolve.
+It turns out that Consciousness is nothing like what we thought it was. This article looks at what it means for our understanding of ourselves and our place in the world.
 
 For background, please see [[Background to A Theory of Mind]] and [[A Theory of the Human Mind]].
 
@@ -17,3 +17,6 @@ Consciousness is a sense, in just the same way our standard 5 senses are. We are
 At first we have no control. We learn to recognise some meaning from the stream of noise, just like we gradually learn to recognise patterns and correlates associated with our touch sense.
 
 Eventually, almost by accident, we discover that we can control our thought in small ways. As we learn to control our limbs, we mostly send chaotic signals to our limb muscles, and eventually we recognise a correlation between the signals we have sent and their effect. The same goes for learning to control our thoughts. 
+
+# Free-will
+tbd.
