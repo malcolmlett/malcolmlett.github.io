@@ -87,6 +87,11 @@ So the awareness of our own thoughts is a fundamentally necessary input to our t
 4. The selected output is loaded back into working memory as the new state, and the process repeats.
 5. The short and long-term outcomes are monitored and critiqued over time, and controls are employed wherever necessary to adjust how the thought process is carried out.
 
+# Processor Output Selection
+The attention control mechanism monitors the quality of results from processors, and attenuates their strength according to that quality. Over time, as processors are trained, their accuracy improves and their strength is increased.
+
+In reality, the biological architecture of processor output selection is probably quite different. For starters, we observe using fRMI that certain inputs seem to only activate related areas of the brain. Additionally, neurons work not on a continuous output state, but on electrical spike firing rates. So it seems reasonable to conclude that processing of a sense spans out like a wave, and is filtered for at each step, so that eventually only the final selected processor completes the execution of the wave back into the attention centre and into working memory.
+
 # Experience of Consciousness
 One of the greatest unsolved problems of consciousness is why we experience it in the way that we do.
 
