@@ -14,7 +14,7 @@ Topics:
 # State Machine
 The high-level thought system of the human brain is a state machine with a tightly integrated control mechanism, known as consciousness. The low-level older part of the brain is something much more akin to our current deep-learning artificial neural network models - basically just pattern matching/prediction engines. All thought, including high-level thought, is achieved through coordinating the function of the state machine with the low-level pattern matching/prediction components of the brain.
 
-The high-level state machine of the brain is illustrated in the following diagram.
+The high-level state machine of the brain is illustrated in the following diagram. The senses are received as inputs, pre-processed, then used in conjunction with the current state (held in Working Memory) to produce multiple potential new states, which are selected by the attention control mechanism.
 
 ![basic state machine](files/human-basic-state-machine-v1.png)
 
