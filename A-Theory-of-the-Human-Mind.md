@@ -52,6 +52,13 @@ Logic processing is performed by many individual _Processors_. All processors ac
 Each processor is largely stateless on its own, and follows something of the simple pattern recognition / prediction design of modern deep learning neural networks in AI research.
 
 ## Processor Output Selection
+The attention control mechanism has the hard job of deciding which processor's output should be selected. It likely chooses only a single item from hundreds or thousands of competing processor outputs.
+
+I'm not certain what exact approach is used for selection. The most basic approach could be as simple as picking the output with the strongest signal.
+
+The attention control mechanism also needs to monitor the quality of results from processors, and attenuates their strength according to that quality. Over time, as processors are trained, their accuracy improves and their strength is increased.
+
+Note: In reality, the biological architecture of processor output selection is probably quite different to the approach outlined here. But the exact implementation details shouldn't have too much of an impact on our goal of implementing an artificial intelligence.
 
 # Awareness of Thought
 We don't have direct awareness of the execution of processors, or even of the total set of processors that activated. Rather, we only appear to observe the selected next step that is fed into working memory.
