@@ -31,6 +31,20 @@ It appears that our senses can enter the attention centre through three pathways
 * Pre-processed and accepted directly into attention - significant events enter our attention with very minimal logic processing. This is likely the case for fight-or-flight style events.
 * Raw or only minimally pre-processed and accepted directly into attention - occasionally we choose to pay direct attention to our senses. For example when observing a landscape in order to paint a picture.
 
+The pre-processing stage is split into many individual segments that focus on a particular sense (or combination of one or two senses), and detection of a particular feature or event. They operate without the larger high-level context represented within working memory. This enables pre-processing to be focused, which makes it easier and faster to train.
+
+I call these multiple pre-processing segments, _Interceptors_.
+
+## Working Memory
+Neuroscience currently believes that we hold about 7 items in working memory, for up to about 1 minute.
+
+This is the state data store of our state machine. The presence or absence of certain data items directly influence which logic processes activate or are dormant.
+
+The most simple state machine may be able to operate with only a single data item, and the larger the working memory the more efficient computation can be in theory. In practice, there are trade-offs affecting the size of working memory. If too small, then it is not sufficient to hold all data needed for a particular thought process - more logic processing actions are required for low-level swap-in/swap-out of data from long term storage. If too large, then the data transmission channels between working memory and logic processing become too wide.
+
+## Logic Processing
+
+
 # Minimally Conscious Architecture
 I believe the most basic form of consciousness needs only the following:
 * sufficiently interesting inputs & outputs
