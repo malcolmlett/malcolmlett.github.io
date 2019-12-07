@@ -60,15 +60,30 @@ The attention control mechanism also needs to monitor the quality of results fro
 
 Note: In reality, the biological architecture of processor output selection is probably quite different to the approach outlined here. But the exact implementation details shouldn't have too much of an impact on our goal of implementing an artificial intelligence.
 
+# Control
+tbd:
+* Need for control
+* Conscious Feedback
+
 # Awareness of Thought
+...tbd... what are we aware of and what not?
+* Scope of experience of Conscious Thought limited by scope of conscious feedback.
+* Working Memory - but only one item.
+
 We don't have direct awareness of the execution of processors, or even of the total set of processors that activated. Rather, we only appear to observe the selected next step that is fed into working memory.
 
-# Minimally Conscious Architecture
-I believe the most basic form of consciousness needs only the following:
+# Other Significant Components
+* Mental model of mind - Like our mental model of body, we also maintain a mental model of mind.
+
+# Other forms of Consciousness
+I believe the most basic theoretical form of consciousness needs only the following:
 * sufficiently interesting inputs & outputs
 * 'current state' - ie: working memory
 * feedback loop - current state of thought is fed back as an input
 * a minimum level of complexity sufficient to incorporate the feedback loop into main logic processing
+
+tbd:
+* Mammals and other animals
 
 ## See Also
 * [[What is Consciousness]]
