@@ -20,6 +20,7 @@ Eventually, almost by accident, we discover that we can control our thought in s
 
 # Free-will
 tbd.
+The experience of free-will is an artifact of: observed steps in the state machine, integrated control mechanism with direct control thoughts, mental model of mind, labeling of inputs as 'my thoughts'.
 
 # Ethics
 tbd.
