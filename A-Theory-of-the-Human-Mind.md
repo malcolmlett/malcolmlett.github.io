@@ -11,9 +11,12 @@ Topics:
 * Consciousness is just a state machine.
 * Free-will - The experience of free-will is an artifact of our tightly integrated mental model, and the labeling of its inputs as 'my thoughts'.
 
-## Overview
-The high-level thought system of the human brain is a state machine with a tightly integrated control mechanism, known as consciousness. The low-level older part of the brain is something much more akin to our current deep-learning artificial neural network models - basically just pattern matching/prediction engines.
+# State Machine
+The high-level thought system of the human brain is a state machine with a tightly integrated control mechanism, known as consciousness. The low-level older part of the brain is something much more akin to our current deep-learning artificial neural network models - basically just pattern matching/prediction engines. All thought, including high-level thought, is achieved through coordinating the function of the state machine with the low-level pattern matching/prediction components of the brain.
 
+The high-level state machine of the brain is illustrated in the following diagram.
+
+![basic state machine](files/human-basic-state-machine-v1.png)
 
 # Minimally Conscious Architecture
 I believe the most basic form of consciousness needs only the following:
