@@ -2,15 +2,6 @@ This page attempts to present a unified theory of how consciousness and high-lev
 
 While the theory uses the human mind as the primary example, it is focused on the theoretical fundamental architectures of consciousness, irrespective of whether that is in the form of a human biological consciousness, or some other alien mechanical consciousness.
 
-### work in progress
-
-Topics:
-* All of thought is done by sub-conscious processor modules.
-   * Neural pattern matching vs. sequential thought  (vis-a-vis Fast and Slow thinking, Daniel Kahneman)
-* Scope of experience of Conscious Thought limited by scope of conscious feedback.
-* Consciousness is just a state machine.
-* Free-will - The experience of free-will is an artifact of our tightly integrated mental model, and the labeling of its inputs as 'my thoughts'.
-
 # State Machine
 The high-level thought system of the human brain is a state machine with a tightly integrated control mechanism, known as consciousness. The low-level older part of the brain is something much more akin to our current deep-learning artificial neural network models - basically just pattern matching/prediction engines. All thought, including high-level thought, is achieved through coordinating the function of the state machine with the low-level pattern matching/prediction components of the brain.
 
