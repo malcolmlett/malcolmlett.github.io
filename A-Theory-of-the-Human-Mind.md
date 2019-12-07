@@ -1,6 +1,8 @@
-This page describes my overarching theory. Most of the points here are unproven assumptions, based on observations of my own thoughts and influenced from current theories around world. For background on how these conclusions were drawn, see [[Background to A Theory of Mind]].
+This page attempts to present a unified theory of how consciousness and high-level thinking function in the human mind, and likely in the mind of other mammals. Most of the points here are unproven assumptions, based on observations of my own thoughts and influenced from current scientific theories around world. See [[Background to A Theory of Mind]] for more details on how this theory was constructed.
 
-...work in progress...
+While the theory uses the human mind as the primary example, it is focused on the theoretical fundamental architectures of consciousness, irrespective of whether that is in the form of a human biological consciousness, or some other alien mechanical consciousness.
+
+### work in progress
 
 Topics:
 * All of thought is done by sub-conscious processor modules.
@@ -9,16 +11,16 @@ Topics:
 * Consciousness is just a state machine.
 * Free-will - The experience of free-will is an artifact of our tightly integrated mental model, and the labeling of its inputs as 'my thoughts'.
 
-## Minimum Requirements
-I believe the most basic form of consciousness needs only the following:
-* feedback loop: current state of thought is fed back as an input
-* "experience of experiencing" - whatever that is, it's fundamentally important
+## Overview
+The high-level thought system of the human brain is a state machine with a tightly integrated control mechanism, known as consciousness. The low-level older part of the brain is something much more akin to our current deep-learning artificial neural network models - basically just pattern matching/prediction engines.
 
-In practice, it turns out there are some other requirements, without which consciousness doesn't produce anything interesting, and would never have evolved in biological forms:
-* sufficiently interesting inputs (senses)
-* some form of 'current state' like working memory (this is the 'state' part of a turing machine)
-* a minimum level of intelligence
-* short to long term memory (required for a useful level of intelligence)
+
+# Minimally Conscious Architecture
+I believe the most basic form of consciousness needs only the following:
+* sufficiently interesting inputs & outputs
+* 'current state' - ie: working memory
+* feedback loop - current state of thought is fed back as an input
+* a minimum level of complexity sufficient to incorporate the feedback loop into main logic processing
 
 ## See Also
 * [[What is Consciousness]]
