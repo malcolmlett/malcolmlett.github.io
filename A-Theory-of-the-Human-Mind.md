@@ -18,6 +18,8 @@ Ignoring the control-mechanism for the moment, the high-level state machine of t
 
 ![basic state machine](files/human-basic-state-machine-v1.png)
 
+In the terminology of Danial Kahneman, the pre-processing and logic processing components produce _System 1_ or _Fast Thinking_, while the net result of multiple steps being executed by the state machine form _System 2_ or _Slow Thinking_.
+
 ## Senses
 Raw senses are received as more or less continuous streams of data, whereas high-level thoughts works on discrete states. The raw senses are pre-processed for three reasons:
 * convert from stream to discrete events, through a process of filtering and event detection
@@ -42,8 +44,17 @@ This is the state data store of our state machine. The presence or absence of ce
 
 The most simple state machine may be able to operate with only a single data item, and the larger the working memory the more efficient computation can be in theory. In practice, there are trade-offs affecting the size of working memory. If too small, then it is not sufficient to hold all data needed for a particular thought process - more logic processing actions are required for low-level swap-in/swap-out of data from long term storage. If too large, then the data transmission channels between working memory and logic processing become too wide.
 
-## Logic Processing
+The state representation within working memory is likely fairly high-level. It is likely at the level of what we observe within our consciousness.
 
+## Logic Processing
+Logic processing is performed by many individual _Processors_. All processors act on the current input and working memory state, and produce a suggested outcome. Those outcomes compete, and are selected by the attention control mechanism. The selected output is fed back into working memory, and this forms the next step within a stream of thought.
+
+Each processor is largely stateless on its own, and follows something of the simple pattern recognition / prediction design of modern deep learning neural networks in AI research.
+
+## Processor Output Selection
+
+# Awareness of Thought
+We don't have direct awareness of the execution of processors, or even of the total set of processors that activated. Rather, we only appear to observe the selected next step that is fed into working memory.
 
 # Minimally Conscious Architecture
 I believe the most basic form of consciousness needs only the following:
