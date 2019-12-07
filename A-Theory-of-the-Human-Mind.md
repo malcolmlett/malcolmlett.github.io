@@ -26,10 +26,10 @@ Raw senses are received as more or less continuous streams of data, whereas high
 
 For example, our cochlea produce a continuous stream of auditory signals into our brain. This is pre-processed to detect the presence of language. The auditory stream is simultaneously parsed and split into discrete segments (words). Sections of partially extracted meaning are passed into through processors and directly into the attention control centre.
 
-Our senses can enter the attention centre through three paths:
-* Pre-processed and used as input to logic processing
-* Pre-processed and accepted directly into attention
-* Raw or only minimally pre-processed and accepted directly into attention
+It appears that our senses can enter the attention centre through three pathways:
+* Pre-processed and used as input to logic processing - this is the strongest and most used pathway, where we do not directly pay attention to our senses, but conclusions and actions are drawn from them anyway.
+* Pre-processed and accepted directly into attention - significant events enter our attention with very minimal logic processing. This is likely the case for fight-or-flight style events.
+* Raw or only minimally pre-processed and accepted directly into attention - occasionally we choose to pay direct attention to our senses. For example when observing a landscape in order to paint a picture.
 
 # Minimally Conscious Architecture
 I believe the most basic form of consciousness needs only the following:
