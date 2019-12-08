@@ -56,6 +56,8 @@ tbd:
 * Need for control
 * Conscious Feedback
 
+![conscious feedback](files/human-conscious-feedback-v1.png)
+
 # Awareness of Thought
 ...tbd... what are we aware of and what not?
 * Scope of experience of Conscious Thought limited by scope of conscious feedback.
