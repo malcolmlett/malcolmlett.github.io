@@ -67,6 +67,7 @@ We don't have direct awareness of the execution of processors, or even of the to
 
 # Other Significant Components
 * Mental model of mind - Like our mental model of body, we also maintain a mental model of mind.
+* Actions - not too important for understanding thought processes so omitted from this description
 
 # Other forms of Consciousness
 I believe the most basic theoretical form of consciousness needs only the following:
