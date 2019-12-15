@@ -22,5 +22,12 @@ Some of the issues I have with the various theories:
 * Scope and ability of the attached spiritual entity is too limited by the capability of the biological brain. eg: effects of brain damage, sleep.
 * The lack of an explained _mechanism_ for creating the phenomenon of "experience of experiencing".
 
+# Experience of Experience (EOE)
+Experience of Experience (EOE) is more than just the fact that senses are received as inputs and used in further processing. We observe our own experiences as if there is a "little me" watching passively as the senses and thoughts flow past. It has little to do with the specific qualities of those experiences (often referred to as 'qualia' in philosophical discussions). Rather, it has more to do with the fact that there are experiences at all.
+
+This is very different to how we presume that, in an electronic circuit, electrons just flow through gates, causing data states to change, and in turn causing control flows to change. We presume that, even in the event of button presses and other input signals being "actioned", there is still nothing that "experiences" those interactions.
+
+It is hard to define exactly what EOE is. And thus it is hard to reach general consensus. For the purposes of all discussions within this site, it is interpreted as discussed above, with the recognised limitation that the description is necessarily quite vague.
+
 ## See Also
 * [[A Theory of the Human Mind]]
