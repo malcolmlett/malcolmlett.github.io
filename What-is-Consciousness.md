@@ -10,8 +10,8 @@ There are a number of theories on what human consciousness is, and what produces
 
 Some alternative theories of consciousness:
 * It's an illusion
-   * Our detailed mental model makes it think it exists in a palpable way, in the same way that our mental model of our body makes us think our missing limb still exists (Phantom limb syndrome).
-* It's an (emanation)   (todo: what's that word?)
+   * Our detailed mental model makes us think it exists in a palpable way, in the same way that our mental model of our body makes us think our missing limb still exists (Phantom limb syndrome).
+* It's emergent
 * It's a mystical spiritual entity that's somehow linked to our corporal brain.
 * The "Hard problem of consciousness" is not a hard problem
 
@@ -22,7 +22,7 @@ Some of the issues I have with the various theories:
 * Scope and ability of the attached spiritual entity is too limited by the capability of the biological brain. eg: effects of brain damage, sleep.
 * The lack of an explained _mechanism_ for creating the phenomenon of "experience of experiencing".
 
-# Experience of Experience (EOE)
+## Experience of Experience (EOE)
 Experience of Experience (EOE) is more than just the fact that senses are received as inputs and used in further processing. We observe our own experiences as if there is a "little me" watching passively as the senses and thoughts flow past. It has little to do with the specific qualities of those experiences (often referred to as 'qualia' in philosophical discussions). Rather, it has more to do with the fact that there are experiences at all.
 
 This is very different to how we presume that, in an electronic circuit, electrons just flow through gates, causing data states to change, and in turn causing control flows to change. We presume that, even in the event of button presses and other input signals being "actioned", there is still nothing that "experiences" those interactions.
