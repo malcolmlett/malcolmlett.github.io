@@ -9,7 +9,7 @@
 * [[Background to A Theory of Mind]]
 * [[A Theory of the Human Mind]]
 * [[Philosophical Description of Consciousness]]
-* [[The theory of the Thalamic symbiote]]
+* [[The analogy of the Thalamic symbiote]]
 * [[Human Phenomena]]
 
 ### Work in Progress
