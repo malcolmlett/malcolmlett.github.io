@@ -33,6 +33,15 @@ The thalamic senses appear to be received in parallel, as independent senses. An
 
 ![thalamic control](files/thalamic-control.png)
 
+Based on ideas discussed in [[A Theory of the Human Mind]], the Thalamus controls the Human brain in the following ways:
+* rates the accuracy/effectiveness of each processor, and attenuates the strength of underperforming processor outputs
+* selects which processors to execute and/or decides which executed processor's output to select
+* routes the selected processor output into Working Memory
+* may construct special purpose meta-thought signals and load them into Working Memory, in order to control the flow of thought
+* and/or may have other control mechanisms over the Human brain
+
+With that as the assumed outcome, the logic within the Thalamus could be executed very a simple typical feedforward-style network.
+
 ## Properties of Experience
 We have concluded the following properties:
 * High-level sense representations include a triad of information: raw-ish sense + meaning + context,
