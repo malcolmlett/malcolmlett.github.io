@@ -1,4 +1,6 @@
-In neuroscience, the Thalamus is a small central region of the brain that is understood to have the role of transferring raw sense inputs to other brain regions for filtering and processing, and for receiving those processed senses. Neuroscience is starting to form the conclusion that the Thalamus receives processed data in a high-level representation and is where ultimate decision making is made. Combining that with understanding with observations of our own conscious experience, it seems plausible that the Thalamus is the seat of human consciousness. This articles presents that theory in the form of an analogy of the Thalamus as existing in a symbiotic relationship with the rest of the brain.
+In neuroscience, the Thalamus is a small central region of the brain that is understood to have the role of transferring raw sense inputs to other brain regions for filtering and processing, and for receiving those processed senses. Neuroscience is starting to form the conclusion that the Thalamus receives processed data in a high-level representation and is where ultimate decision making is made. Combining that with understanding with observations of our own conscious experience, it seems plausible that the Thalamus is the seat of human consciousness.
+
+This articles presents that theory in the form of an analogy of the Thalamus as existing in a symbiotic relationship with the rest of the brain.
 
 ![thalamus-brain-region](files/thalamus-brain-region.png)
 CREDIT: NICOLLE R. FULLER / SAYOSTUDIO
