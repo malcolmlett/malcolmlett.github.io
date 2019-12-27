@@ -9,6 +9,7 @@
 * [[Background to A Theory of Mind]]
 * [[A Theory of the Human Mind]]
 * [[Philosophical Description of Consciousness]]
+* [[Awareness of Thought is not the mystery]]
 * [[The analogy of the Thalamic symbiote]]
 * [[Human Phenomena]]
 
