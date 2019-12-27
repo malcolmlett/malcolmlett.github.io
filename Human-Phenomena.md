@@ -4,28 +4,28 @@ Some cases are also indicated with a brief summary of how the implications for d
 
 ## Sub-consciousness
 For most thinking, I don't actively figure out the conclusion. Rather, I think of a problem, and the answer just appears in my awareness. I believe this works by the subconscious monitoring the state of working memory. When a recognizable question is present, the part of the brain that knows how to answer it, populates the answer back into the WM. This makes biological sense: physical wirings cannot track data around, but must have the data moved into a single accessible place - namely, Working Memory.
-* Design: Processors monitor WM, and bubble up the answer via Attention Attenuator.
+* Design conclusion: Processors monitor WM, and bubble up the answer via Attention Attenuator.
 
 ## Conscious Feedback
 I can observe my thoughts, one at a time, and maybe with sone vague sense of other things being in the background, but largely it's just one thought at a time.
 
 I cannot directly observe my working memory. I can focus attention on something, and then I'm aware of it. My WM seems to influence what I focus on.
-* Design: CF feeds from single top attention (event), not from WM as a whole.
+* Design conclusion: CF feeds from single top attention (event), not from WM as a whole.
 
 ## Short Term and Long Term Memory
 I can observe my short term and long term memories, but only after I have thought about it. I cannot just access it willy nilly. It requires a trigger, a specific thought, to start it.
-* Design: Place query into WM. Processor searches STM and LTM and places result into WM.
+* Design conclusion: Place query into WM. Processor searches STM and LTM and places result into WM.
 
 ## Waking-Up
 On waking, I have no thoughts. Then my attention fills up with the memory of things that were happening before I fell asleep. Unresolved things come back stronger than resolved things.
-* Design: Processor to reload unresolved events from STM when WM is empty. Works for general forgetfulness and on waking.
+* Design conclusion: Processor to reload unresolved events from STM when WM is empty. Works for general forgetfulness and on waking.
 
 ## Thought Mechanisms
 I recognize "I don't understand" events by the lack of an answer from my subconscious, rather than a direct "don't understand" result. It's as if I learn the typical response time, and if I don't get one within that time then I say "I don't understand". If a result subsequently does arrive, then I say "oh, actually I do know".
-* Design: Conscious awareness used to judge lack of knowledge. Individual processors don't explicitly detect a lack of ability to process. eg: expression parser doesn't emit a 'CannotParse' event.
+* Design conclusion: Conscious awareness used to judge lack of knowledge. Individual processors don't explicitly detect a lack of ability to process. eg: expression parser doesn't emit a 'CannotParse' event.
 
 Some thought is _hard_ - we actively try to avoid doing it. Like when a child learns to read, just looking at a character and remembering what sound it makes requires a lot of effort. Other thought, even if it requires remembering things, is easy. So thinking has a graduated scale of effort. This could make biological sense: more complicated thinking requires more energy expenditure (probably measured in terms of the redirection of oxygenated blood to the appropriate regions of brain), so it would make evolutionary sense to prioritise solving problems using the most efficient mechanisms available that give a good enough trade off between accuracy and effort. As an aside: oxygenated blood supply is how fRMI is used today to [measure brain activity](https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging) - thus the theory seems to fit. Curiously, this implies that, for every thought, a prediction is made about what brain regions are required, and about how broadly energy needs to be supplied, in order to encourage/dissuade thought process that is about to begin. And we actually experience that within our conscious awareness, to some extent.
-* Design: well, there's a lot going on here, but it's doable.
+* Design conclusion: well, there's a lot going on here, but it's doable.
 
 ## Meta-Thought
 We have some _control_ over our attention. For example, meditation is an act especially focused on influencing our attention. This plays into our ability to _monitor_ thought and attention, and to notice the "monkeys in the head". As we develop, we learn to recognise these effects, and we learn strategies for addressing them. Examples:
@@ -37,7 +37,7 @@ The ability to _control_ our attention seems to be something we learn. It his ha
 * Let's call this "Meta-Learning"
 
 Inhibiting thoughts: I have a learned habit of turning on the tap too early while brushing my teeth. I consciously counteract this my noticing that I have turned it on too soon, turning it off, and then holding onto a thought that counteracts the ongoing desire to turn it back on. In my case, I can actually still feel the ongoing impulse or urge, but it's not via the Conscious Feedback loop - more like a different sense. So it probably doesn't emit any further events into WM. Mind you, in this case, it probably never made it into WM in the first place. Not until I noticed I'd done an action I didn't want to do. 
-* Processors can emit events that are subsequently used to counteract or attenuate events from other processors.
+* Design conclusion: Processors can emit events that are subsequently used to counteract or attenuate events from other processors.
 
 ## The Double-checking Brain
 Our brain doesn't just produce a result and then act on it. It is continually double checking itself. 
