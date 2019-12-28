@@ -47,7 +47,7 @@ Based on ideas discussed in [[A Theory of the Human Mind]], the Thalamus control
 With that as the assumed outcome, the logic within the Thalamus could be executed very a simple typical feedforward-style network.
 
 ## Properties of Experience
-We have concluded the following properties:
+The discussions above have enabled us to form some conclusions about the properties of experience:
 * High-level sense representations include a triad of information: raw-ish sense + meaning + context,
 * Experience is limited in scope to input senses only (specifically the 6 thalamic senses)
 * Experience is limited to the human-thalamic interface
