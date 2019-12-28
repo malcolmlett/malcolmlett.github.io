@@ -25,13 +25,15 @@ So the human body has 5 raw nerve senses, while the Thalamus has 6 high-level se
 * meaning labels - eg: object detection in visual senses; sentence understanding in auditory senses
 * context labels - eg: mental body model of location of touch; mental mind model of source of conscious feedback.
 
-With such labeling in place, it can be understood how those 6 thalamic senses are re-purposed for other human internal body and mind senses and states that otherwise do not fit exactly the typical 5 external physical senses:
+With the meaning and context attached, it's hard to imagine what the raw-ish sense data is needed for. But it is clearly part of experience. While there is evidence that we do not experience the actual raw senses, we certainly seem to be able to see our vision as an image, for example, and to examine low-level properties of that image.
+
+With meaning and context labeling in place, it can be understood how those 6 thalamic senses are re-purposed for other human internal body and mind senses and states that otherwise do not fit exactly the typical 5 external physical senses:
 * Inner voices are generated and subsequently interpreted by internal context processing, labeled as "internal thought" by mental models, and finally received by the Thalamus' auditory sense input.
-* Headache pain is interpreted as 'touch' sense, labeled with location in the head by mental body models, and received by the Thalamus' touch sense input.
+* Some headache pain is known to not be caused by touch nerve endings, and yet it is interpreted as 'touch' sense, labeled with location in the head by mental body models, and received by the Thalamus' touch sense input.
 * Hunger is indicated by the vagus nerve, interpreted as a 'touch' sense, labeled with location in the stomach by mental body models, and received by the Thalamus' touch sense input.
 * Intention of action only becomes aware to us via conscious feedback, labeled as internal thought.
 
-The thalamic senses appear to be received in parallel, as independent senses. An alternative often used in electronics is to use a single serial line, with multiple data streams multiplexed onto that line. However, on self-observation, it appears that we can experience multiple senses at the same time. For example, we can listen to music while watching the road while driving. Additionally, due to the nature of how neural-networks grow and learn, it makes sense for separate senses to be handled via separate input processing within the Thalamus. Lastly, from biology, it appears that the Thalamus is involved in attention control, so it is easier for those separate senses to be provided to the Thalamus separately and for it to then decide on attention.
+The thalamic senses appear to be received in parallel, as independent senses. An alternative often used in electronics is to use a single serial line, with multiple data streams multiplexed onto that line. However, on self-observation, it appears that we can experience multiple senses at the same time. For example, we can watch and listen at the same time as a car drives past, and also smell its exhaust. Additionally, due to the nature of how neural-networks grow and learn, it makes sense for separate senses to be handled via separate input processing within the Thalamus. Lastly, from biology, it appears that the Thalamus is involved in attention control, so it is easier for those separate senses to be provided to the Thalamus separately and for it to then decide on attention.
 
 ![thalamic control](files/thalamic-control.png)
 
