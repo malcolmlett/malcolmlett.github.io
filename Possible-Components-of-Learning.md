@@ -45,3 +45,5 @@ I posit that our reward system measures 'paths', as well as 'outcomes'.
 The system learns to recognise paths that have tended to produce outcome rewards. It recognises those paths in our actions, and provides small rewards for each action provided we stay close to those paths. 
 
 Example: I spend a lot of time puzzling over problems because I find it fun. I feel a sense of happiness just in the act of thinking about the problem, even without making any particular progress. It causes me to keep coming back to the problem throughout the day, day-dreaming as it were.
+
+(Added 2019-12-30. Labels: work-in-progress, theory)
