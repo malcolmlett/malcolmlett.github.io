@@ -3,7 +3,9 @@ I wonder if the following three main components enable our advanced learning:
 * Prediction
 * Reward
 
-All three components learn in their own way, but in a circular inter-dependent way. 
+All three components learn in their own way, but in a circular inter-dependent way.
+
+![possible learning components](files/possible-learning-components.png)
 
 ## Components
 ### Prediction centre
