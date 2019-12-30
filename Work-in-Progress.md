@@ -2,6 +2,9 @@ The purpose of the `work-in-progress` category is to collect together thoughts d
 
 _(list: work-in-progress)_
 
+* [[Possible Components of Learning]]
+* [[A Work in Progress Theory of Learning]]
+* [[Learning to Count]]
 * [[Ideas on Learning]]
 * [[First Design for Double Checking Mind]]
 * [[First Design for Conscious Atttenuation]]
@@ -13,4 +16,5 @@ _(list: work-in-progress)_
 * [[Long Term Memory Searches]]
 * [[Filling in Gaps of Understanding from Concept Memory]]
 * [[Memory, Events and Percepts; A discussion on Representation]]
+* [[Archive of Scanned Notes]]
 
