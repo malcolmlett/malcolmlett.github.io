@@ -39,6 +39,8 @@ Aside: I wonder why dopamine is required as a reward mechanism when there is alr
 ## Reward Reinforcement Learning Mechanism 
 Reinforcement learning only works efficiently if there is an abstract model, like a bayesian belief network. It doesn't work so well with a pure typical neural network. That's OK, that can be engineered through evolution into the base case. 
 
+Mind you, there are other techniques that don't require such models, eg: [Q learning](https://riptutorial.com/tensorflow/example/30637/minimal-example).
+
 ### Path-based Reward 
 In humans, many small-scale actions lead to some sort of immediate reward. Most of the time we don't notice this. But sometimes we can observe this. Reinforcement reward only measures the final outcome. But we often receive internal reward for steps along the way. 
 
