@@ -22,5 +22,10 @@ This page lists PDF scans of notes.
 * [Use for Conscious Feedback - Stuck and Cycle detection.pdf](files/archive/Use-for-Conscious-Feedback;-Stuck-and-Cycle-detection.pdf) - Oct 2019
 * [Use for Conscious Feedback - Solve equation without help 2.pdf](files/archive/Use-for-Conscious-Feedback;-Solve-equation-without-help-2.pdf) - Oct 2019
 * [New principles for thought.pdf](files/archive/New-principles-for-thought.pdf) - Oct 2019
+* [Properties-and-Interactions.pdf](files/archive/2020-02-23-Properties-and-Interactions.pdf) - Feb 2020
+* [Consciousness is not the problem.pdf](files/archive/2020-02-23-Consciousness-is-not-the-problem.pdf) - Feb 2020
+* [Implementation design for learning to predict.pdf](files/archive/2020-02-23-Implementation-design-for-learning-to-predict.pdf) - Feb 2020
+* [Current summary article notes.pdf](files/archive/2020-02-23-Current-summary-article-notes.pdf) - Feb 2020
+* [Philisophical implications on life and expectations.pdf](files/archive/2020-02-23-Philisophical-implications-on-life-and-expectations.pdf) - Feb 2020
 
 _(Added: 2019-10-01. Labels: work-in-progress)_
