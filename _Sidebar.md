@@ -11,6 +11,7 @@
 * [[Philosophical Description of Consciousness]]
 * [[Awareness of Thought is not the mystery]]
 * [[The analogy of the Thalamic symbiote]]
+* [[The Hard Problem of Experience]]
 * [[Human Phenomena]]
 
 ### Work in Progress
