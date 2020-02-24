@@ -13,6 +13,7 @@
 * [[The analogy of the Thalamic symbiote]]
 * [[The Hard Problem of Experience]]
 * [[Human Phenomena]]
+* [[Guiding Principles]]
 
 ### Work in Progress
 * [[Work in Progress]]
