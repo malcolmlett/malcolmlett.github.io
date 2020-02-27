@@ -23,4 +23,4 @@ Maybe something like this:
 * Mirroring - experience exactly mirrors the data passing through a particular catchment area within the brain
 * Measured - experience is like an act of taking a measurement of data at a particular point
 
-(tbd: properties also discussed in [A Theory of Experience]
+(tbd: properties also discussed in [[The Hard Problem of Experience]]
