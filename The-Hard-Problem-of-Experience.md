@@ -23,6 +23,8 @@ Properties:
 3. Experience is active in just one way: the data is modified to identify exactly which data was experienced
 4. Experience is gated: it can be enabled/disabled (as happens during sleep), and the process that governs that is not included in the content of experience, nor is it under direct conscious control.
 
+(tbd: properties also discussed in [[Awareness of Thought is not the mystery]])
+
 ### Content
 One of the most important distinctions here is that the _content_ of experience can be explained entirely via mechanistic principles. 
 
