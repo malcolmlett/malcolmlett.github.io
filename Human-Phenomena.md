@@ -55,3 +55,12 @@ Every part of our brain is unreliable. So our brain employs an architecture of c
 I suspect these sorts of trust-and-act-then-double-check mechanisms are there throughout the brain, across many layers.
 
 Curiously, this also explains so much of human behavior - it's such a normal human thing to make mistakes and correct ourselves; it's one of those uncanny valley things with robots that don't make mistakes. 
+
+## Character and Word Recognition
+My first language is English, and I've been reading and writing it for a long enough that I'm completely unaware of how I do it. It's impossible for me to see a word without reading it, especially for simple words. A classic example of this is the [Stroop effect](https://en.wikipedia.org/wiki/Stroop_effect) - we perceive the written word and its colour at almost the same speed and get confused if they are in-congruent.
+
+I'm learning Tamil. It has a different character system to that of English, and I am now very familiar with the Tamil characters. I get an immediate sense of familiarity when I see Tamil characters in unexpected places, and to a large extent I understand each character without thinking about it. However, reading and understanding of actual words is still a very conscious and laborious experience for me.
+
+I recognise some other scripts that I have seen around a lot. For example Hindi. I can identify text as "probably Hindi" quite easily. And yet, I don't know a single character. I am only familiar with the general way that it looks. So for me, seeing Hindi text is an almost purely visual experience - with very little meaning attached.
+
+* Conclusion: perception/experience is a measurement of reality via our senses, intertwined with automatically processed meaning.
