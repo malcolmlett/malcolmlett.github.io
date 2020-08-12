@@ -3,6 +3,7 @@
 
 ### Design
 * [[Architecture Overview]]
+* [[Conscious Calculator v2]]
 
 ### Theory
 * [[What is Consciousness]]
