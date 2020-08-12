@@ -5,6 +5,8 @@ And this one is based on Neural Networks.
 # Architecture
 todo
 
+Neural network focused on visceral loop.
+
 # Phenomenonal Emulations
 What phonemena can this design emulate?
 
