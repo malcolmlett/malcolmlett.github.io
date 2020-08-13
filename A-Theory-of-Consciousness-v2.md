@@ -45,8 +45,8 @@ Terminology:
 * Properties of consciousness
 * Meta problem of consciousness 
 
-Further research 
-* Build it 
+# Further research 
+* Build it - see: [[Conscious Calculator v2]]
 * Cause of phenomenological experience
 
 
