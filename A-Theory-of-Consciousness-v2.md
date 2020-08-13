@@ -47,7 +47,9 @@ Terminology:
 
 # Further research 
 * Build it - see: [[Conscious Calculator v2]]
-* Cause of phenomenological experience
+* Cause of phenomenological experiences
+
+# References
 
 
 
