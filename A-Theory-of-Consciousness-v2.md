@@ -25,6 +25,24 @@ Terminology:
 # Analysis
 * why conclude all the above
 
+## Explanation of Phenomena - Boundaries of Conscious Experience
+The remaining two sections of this chapter pick two particular phenomena of conscious experience and show how they are explained by the theory presented here.
+
+The theory presents a possible explanation for why certain things produce phenomenological experience and others not; specifically, that the content of the model defines the content of conscious experience.
+
+...
+
+## Explanation of Phenomena - Meta-problem of Consciousness
+
+Why do we conclude ourselves as conscious? We shall now examine the theory's ability to explain this.
+
+In order for an individual to conclude themselves as conscious, they need to follow a particular logic path. That path is presented here first in the form of an example of a person reflecting on their own thoughts, and then at a more low-level how those thoughts can be produced:
+
+Inner thought example:
+1. "I am tired, therefore I want to sit down"
+2. "I am aware that I just had the desire to sit down, and I have the strong sense that it was I who decided that"
+3. "Because I make decisions, and I am aware of those decisions, then I am conscious".
+
 # Why is this useful
 
 * We can build it
