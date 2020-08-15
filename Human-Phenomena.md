@@ -6,6 +6,7 @@ Some cases are also indicated with a brief summary of how the implications for d
 When I attempt to work through a problem, step by step, I appear to be taking an active role in each step.
 For example, when solving an algebra question, I experience myself deciding on the action for each step and calculating the result of that action. And yet, when I watch my thoughts more closely, I realise that actually the conclusion of each tiny step just 'appears' in my thought. What's 5 + 3? The answer is either just there, or it is not.
 * Design conclusion: processing happens in cycles, with the result of each cycle performed entirely sub-consciously through neural network, and the conscious mind only receives the result. Sometimes the result is just an intermediate step, or even a result with a flag of high uncertainty, in which case further processing cycles are used to add to or test the partial result.
+* Note: duplicate of example under 'Sub-consciousness'
 
 fRMI studies have found that we only become aware of making a choice _after_ the choice has already begun to be actioned.
 * Point for investigation: why might this be?
