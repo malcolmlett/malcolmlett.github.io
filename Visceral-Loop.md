@@ -1,5 +1,10 @@
 [WORK IN PROGRESS]
 
+The "Visceral Loop" is a characterisation of the thought processes required in order for one to rationalise about their own awareness, and for them to conclude themselves as conscious.
+
+TBPlaced: We are aware of our own thoughts, but more than that, we are aware of our awareness. That is the crux of our conclusion that we are conscious.
+
+
 Loop:
 1. processors receive and process input data
 2. thalamic symbiote selects data
@@ -14,29 +19,13 @@ Q: what can this be used for?
 
 The Analogy of the Thalamic Symbiote provided a framework that helped to introspect the boundaries and properties of consciousness. The Visceral Loop is one possible mechanism that produces those characteristics.
 
-# Meta-problem of Consciousness
-...tbd
-
-
-## Meta and Meta-meta Thought
-Thought -> meta-thought: control loop -> meta-meta-thought: meta-awareness. 
-
-We are aware of our own thoughts, but more than that, we are aware of our awareness. That is the crux of our conclusion that we are conscious.
-
-# Phenomena anecdotes
-## Post-hoc awareness of decisions
-Visceral loop explains why fRMI studies have shown that we become aware of a decision after its made. Because it takes iterations to consciously become aware of the decision and think about the fact it was made. In short : we can only think about one thing at a time. So the decision and thinking about the decision require separate steps. 
-
-## Sleep
-When going under general anaesthetic, we lose our sense of time. We seem to experience ourselves waking up immediately after sleeping. This is different to sleep, where we have some sense of time passing. Clearly, the generic anaesthetic disables some internal time tracking that is otherwise available during sleep......[but why did I think this was relevant to visceral loop?]
-
-# Formalism of Consciousness
-Presented here is a first attempt towards a mathematical formalism of consciousness.
+# Formalisation
+Presented here is a first attempt towards a mathematical formalism of the conclusion of one's own consciousness.
 
 One concludes themselves as conscious if they can conclude that:
 * `∃ t: I am conscious of t`
 
-In order to conclude that one is conscious of some `t`, some prerequisites must be met and a number of algorithmic steps must be carried out. The steps follow the three iterations of the visceral loop.
+In order to conclude that one is conscious of some `t`, some prerequisites must be met and a number of algorithmic steps must be carried out. The steps carried out follow three iterations of the visceral loop:
 
 Iteration 1:
 
@@ -66,3 +55,11 @@ The three iterations above can be seen as just a sampling of steps within a long
 * Iteration 3: Meta-meta-thought or Meta-awareness - Thoughts about the fact that one is aware of their own thoughts. For example, Descartes' famous "I think therefore I am" quote is the result of Iteration 3 thought.
 
 It is interesting to note that the majority of high-level thought is done in Iteration 1 alone, and that Iteration 2 thought is a big evolutionary step forwards in the control mechanism of this state machine.
+
+# Analysis of Phenomenal Anecdotes
+## Post-hoc awareness of decisions
+Visceral loop explains why fRMI studies have shown that we become aware of a decision after its made. Because it takes extra processing cycles to consciously consider the fact of the decision being made. In short: we can only think about one thing at a time, so the decision itself and thought about the decision require separate steps.
+
+## Sleep
+When going under general anaesthetic, we lose our sense of time. We seem to experience ourselves waking up immediately after sleeping. This is different to sleep, where we have some sense of time passing. Clearly, the generic anaesthetic disables some internal time tracking that is otherwise available during sleep......[but why did I think this was relevant to visceral loop?]
+
