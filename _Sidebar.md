@@ -14,6 +14,7 @@
 * [[Awareness of Thought is not the mystery]]
 * [[The analogy of the Thalamic symbiote]]
 * [[The Hard Problem of Experience]]
+* [[Visceral Loop]]
 * [[Human Phenomena]]
 * [[Guiding Principles]]
 
