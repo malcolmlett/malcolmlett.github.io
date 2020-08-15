@@ -61,4 +61,4 @@ When going under general anaesthetic, we lose our sense of time. We seem to expe
 
 # Conclusions
 One very important conclusion can be drawn from an understanding of the visceral loop:
-> It turns out that the boundary and content of what we can conclude as consciousness is dictated by what is representable within the model, and what processing can be performed against that model.
+> The boundary and content of what we can conclude as consciousness is dictated by what is representable within the model, and what processing can be performed against that model.
