@@ -67,7 +67,7 @@ todo: offer some rationale for assuming that the scope of conscious experience i
 
 # Curious Effects
 * [[The analogy of the Thalamic symbiote]]
-* Visceral loop
+* [[Visceral Loop]]
 * Free will
 * Properties of consciousness
 * Meta problem of consciousness 
