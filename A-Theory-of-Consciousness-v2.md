@@ -25,14 +25,8 @@ Terminology:
 # Analysis
 * why conclude all the above
 
-## Explanation of Phenomena - Boundaries of Conscious Experience
-The remaining two sections of this chapter pick two particular phenomena of conscious experience and show how they are explained by the theory presented here.
-
-The theory presents a possible explanation for why certain things produce phenomenological experience and others not; specifically, that the content of the model defines the content of conscious experience.
-
-...
-
 ## Explanation of Phenomena - Meta-problem of Consciousness
+The remaining two sections of this chapter pick two particular phenomena of conscious experience and show how they are explained by the theory presented here.
 
 Why do we conclude ourselves as conscious? We shall now examine the theory's ability to explain this.
 
@@ -42,6 +36,20 @@ Inner thought example:
 1. "I am tired, therefore I want to sit down"
 2. "I am aware that I just had the desire to sit down, and I have the strong sense that it was I who decided that"
 3. "Because I make decisions, and I am aware of those decisions, then I am conscious".
+
+Logical level example:
+1. .
+2. .
+3. .
+
+The is referred to as a 'Visceral Loop'.
+
+## Explanation of Phenomena - Boundaries of Conscious Experience
+The theory presents a possible explanation for why certain things produce phenomenological experience and others not; specifically, that the content of the model defines the content of conscious experience.
+
+...
+
+It seems quite clear that there are portions of data processing within our brain that we are conscious of, other data states and processing that we are not aware of. Why, do we experience a particular subset of data processing as consciousness? It turns out that the boundary and content of what we can conclude as consciousness is dictated by what is representable within the model, and what processing can be performed against that model. 
 
 # Why is this useful
 
