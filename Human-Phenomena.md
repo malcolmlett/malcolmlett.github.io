@@ -2,12 +2,19 @@ As much as possible, I'm interested in emulating the design of the human brain, 
 
 Some cases are also indicated with a brief summary of how the implications for design of the emulator.
 
-## Step by step thought
+## Thought Mechanisms
 When I attempt to work through a problem, step by step, I appear to be taking an active role in each step.
 For example, when solving an algebra question, I experience myself deciding on the action for each step and calculating the result of that action. And yet, when I watch my thoughts more closely, I realise that actually the conclusion of each tiny step just 'appears' in my thought. What's 5 + 3? The answer is either just there, or it is not.
+* Design conclusion: processing happens in cycles, with the result of each cycle performed entirely sub-consciously through neural network, and the conscious mind only receives the result. Sometimes the result is just an intermediate step, or even a result with a flag of high uncertainty, in which case further processing cycles are used to add to or test the partial result.
 
-## Post-hoc conclusion of Making choices
 fRMI studies have found that we only become aware of making a choice _after_ the choice has already begun to be actioned.
+* Point for investigation: why might this be?
+
+I recognize "I don't understand" events by the lack of an answer from my subconscious, rather than a direct "don't understand" result. It's as if I learn the typical response time, and if I don't get one within that time then I say "I don't understand". If a result subsequently does arrive, then I say "oh, actually I do know".
+* Design conclusion: Conscious awareness used to judge lack of knowledge. Individual processors don't explicitly detect a lack of ability to process. eg: expression parser doesn't emit a 'CannotParse' event.
+
+Some thought is _hard_ - we actively try to avoid doing it. Like when a child learns to read, just looking at a character and remembering what sound it makes requires a lot of effort. Other thought, even if it requires remembering things, is easy. So thinking has a graduated scale of effort. This could make biological sense: more complicated thinking requires more energy expenditure (probably measured in terms of the redirection of oxygenated blood to the appropriate regions of brain), so it would make evolutionary sense to prioritise solving problems using the most efficient mechanisms available that give a good enough trade off between accuracy and effort. As an aside: oxygenated blood supply is how fRMI is used today to [measure brain activity](https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging) - thus the theory seems to fit. Curiously, this implies that, for every thought, a prediction is made about what brain regions are required, and about how broadly energy needs to be supplied, in order to encourage/dissuade thought process that is about to begin. And we actually experience that within our conscious awareness, to some extent.
+* Design conclusion: well, there's a lot going on here, but it's doable.
 
 ## Sub-consciousness
 For most thinking, I don't actively figure out the conclusion. Rather, I think of a problem, and the answer just appears in my awareness. I believe this works by the subconscious monitoring the state of working memory. When a recognizable question is present, the part of the brain that knows how to answer it, populates the answer back into the WM. This makes biological sense: physical wirings cannot track data around, but must have the data moved into a single accessible place - namely, Working Memory.
@@ -26,13 +33,6 @@ I can observe my short term and long term memories, but only after I have though
 ## Waking-Up
 On waking, I have no thoughts. Then my attention fills up with the memory of things that were happening before I fell asleep. Unresolved things come back stronger than resolved things.
 * Design conclusion: Processor to reload unresolved events from STM when WM is empty. Works for general forgetfulness and on waking.
-
-## Thought Mechanisms
-I recognize "I don't understand" events by the lack of an answer from my subconscious, rather than a direct "don't understand" result. It's as if I learn the typical response time, and if I don't get one within that time then I say "I don't understand". If a result subsequently does arrive, then I say "oh, actually I do know".
-* Design conclusion: Conscious awareness used to judge lack of knowledge. Individual processors don't explicitly detect a lack of ability to process. eg: expression parser doesn't emit a 'CannotParse' event.
-
-Some thought is _hard_ - we actively try to avoid doing it. Like when a child learns to read, just looking at a character and remembering what sound it makes requires a lot of effort. Other thought, even if it requires remembering things, is easy. So thinking has a graduated scale of effort. This could make biological sense: more complicated thinking requires more energy expenditure (probably measured in terms of the redirection of oxygenated blood to the appropriate regions of brain), so it would make evolutionary sense to prioritise solving problems using the most efficient mechanisms available that give a good enough trade off between accuracy and effort. As an aside: oxygenated blood supply is how fRMI is used today to [measure brain activity](https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging) - thus the theory seems to fit. Curiously, this implies that, for every thought, a prediction is made about what brain regions are required, and about how broadly energy needs to be supplied, in order to encourage/dissuade thought process that is about to begin. And we actually experience that within our conscious awareness, to some extent.
-* Design conclusion: well, there's a lot going on here, but it's doable.
 
 ## Meta-Thought
 We have some _control_ over our attention. For example, meditation is an act especially focused on influencing our attention. This plays into our ability to _monitor_ thought and attention, and to notice the "monkeys in the head". As we develop, we learn to recognise these effects, and we learn strategies for addressing them. Examples:
