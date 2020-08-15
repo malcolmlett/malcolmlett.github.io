@@ -1,5 +1,3 @@
-[WORK IN PROGRESS]
-
 The "Visceral Loop" is a characterisation of the thought processes required in order for one to rationalise about their own awareness, about the apparent _viscerality_ of those thoughts, and thus for them to conclude themselves as conscious. It takes as a premise that high-order thought is carried out in cycles of a state machine, where the output of one cycle (or some summarisation thereof) is used as input to the next cycle, along with further inputs retrieved from other sources (such as sense, or memory). A further premise is that each cycle of the state machine can only carry out a single basic processing step. In other words, multiple cycles of the state machine are required for any algorithm or thought process that requires the combination of multiple intermediate results, or requires access to memory structures after intermediate decisions of what to access, or simply requires more complex thinking than one's brain has learned to perform within a single pass through of its neural structures.
 
 Consider the following mental conversation:
@@ -12,20 +10,6 @@ Each step is carried out through the same brain mechanics. First, a signal is re
 The following section formalises the above example as the three iterations of the visceral loop, and in doing so defines what is necessary in order to reach the conclusion of one's own consciousness.
 
 The claim of the visceral loop is that: i) any decision of one's own consciousness requires at least three cycles of the state machine, ii) the scope of what we can conclude as being conscious of is limited by what data can pass through these three cycles, and iii) that we gain a useful insight into our thought and consciousness itself through characterisation of thought into the three cycles, or iterations, of this loop.
-
-
-
-
-TBPlaced: We are aware of our own thoughts, but more than that, we are aware of our awareness. That is the crux of our conclusion that we are conscious.
-
-
-
-While it does not explain the phenomenon of experience, it fully explains the effect of us experiencing consciousness and how/why we subsequently process that experience.
-
-Q: what can this be used for?
-* The loop is a simple process cycle and can be applied anywhere.
-
-The Analogy of the Thalamic Symbiote provided a framework that helped to introspect the boundaries and properties of consciousness. The Visceral Loop is one possible mechanism that produces those characteristics.
 
 # Formalisation
 Presented here is a first attempt towards a mathematical formalism of the conclusion of one's own consciousness.
@@ -52,6 +36,8 @@ Iteration 3:
 7. prerequisite: model contains i) fact of presence of `t`, and ii) relationship of `t` to 'I'
 8. `t` and its relationship to `I` is selected as focus of attention for processing, producing: "I am conscious of `t`"
 
+Essentially, we are aware of our own thoughts, but more than that, we are aware of our awareness. That is the crux of our conclusion that we are conscious.
+
 The above example represents the case where we conclude consciousness from observations of being able to form our own novel thoughts. Another example is of being able to experience our senses, where steps #3 and #4 are dropped.
 
 The three iterations above can be seen as just a sampling of steps within a long linear thought path. Indeed, a fourth iteration is required to move from "I am conscious of `t`" to "I am a conscious being". However, it is more useful to use the above three iterations as a basis for characterising kinds of thought:
@@ -65,6 +51,8 @@ The three iterations above can be seen as just a sampling of steps within a long
 It is interesting to note that the majority of high-level thought is done in Iteration 1 alone, and that Iteration 2 thought is a big evolutionary step forwards in the control mechanism of this state machine.
 
 # Analysis of Phenomenal Anecdotes
+While it does not explain the phenomenon of experience, it fully explains the effect of us experiencing consciousness and how/why we subsequently process that experience. The Analogy of the Thalamic Symbiote provided a framework that helped to introspect the boundaries and properties of consciousness. The Visceral Loop is one possible mechanism that produces those characteristics.
+
 ## Post-hoc awareness of decisions
 Visceral loop explains why fRMI studies have shown that we become aware of a decision after its made. Because it takes extra processing cycles to consciously consider the fact of the decision being made. In short: we can only think about one thing at a time, so the decision itself and thought about the decision require separate steps.
 
