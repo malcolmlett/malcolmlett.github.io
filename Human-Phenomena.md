@@ -2,6 +2,13 @@ As much as possible, I'm interested in emulating the design of the human brain, 
 
 Some cases are also indicated with a brief summary of how the implications for design of the emulator.
 
+## Step by step thought
+When I attempt to work through a problem, step by step, I appear to be taking an active role in each step.
+For example, when solving an algebra question, I experience myself deciding on the action for each step and calculating the result of that action. And yet, when I watch my thoughts more closely, I realise that actually the conclusion of each tiny step just 'appears' in my thought. What's 5 + 3? The answer is either just there, or it is not.
+
+## Post-hoc conclusion of Making choices
+fRMI studies have found that we only become aware of making a choice _after_ the choice has already begun to be actioned.
+
 ## Sub-consciousness
 For most thinking, I don't actively figure out the conclusion. Rather, I think of a problem, and the answer just appears in my awareness. I believe this works by the subconscious monitoring the state of working memory. When a recognizable question is present, the part of the brain that knows how to answer it, populates the answer back into the WM. This makes biological sense: physical wirings cannot track data around, but must have the data moved into a single accessible place - namely, Working Memory.
 * Design conclusion: Processors monitor WM, and bubble up the answer via Attention Attenuator.
