@@ -59,3 +59,6 @@ Visceral loop explains why fRMI studies have shown that we become aware of a dec
 ## Sleep
 When going under general anaesthetic, we lose our sense of time. We seem to experience ourselves waking up immediately after sleeping. This is different to sleep, where we have some sense of time passing. Clearly, the generic anaesthetic disables some internal time tracking that is otherwise available during sleep......[but why did I think this was relevant to visceral loop?]
 
+# Conclusions
+One very important conclusion can be drawn from an understanding of the visceral loop:
+> It turns out that the boundary and content of what we can conclude as consciousness is dictated by what is representable within the model, and what processing can be performed against that model.
