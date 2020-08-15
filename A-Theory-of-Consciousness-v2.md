@@ -63,6 +63,23 @@ todo: offer some rationale for assuming that the scope of conscious experience i
 * Doesn't explain phenomenal experience 
 * Doesn't entirely explain why we don't experience other cyclic regions within in the brain 
 
+This is best characterised as an intuitional gap: theories of consciousness exist that support it being an entirely physical phenomenon, and yet our intuitions about consciousness make it hard for us to accept that a simple physical explanation is sufficient. The leads many to assume a metaphysical explanation is necessary.
+
+I posit that the error here is our intuition. Our intuitions on the subject tend to be contradictory. Even an individual talking about this area will often make statements that seem to contradict each other. Our intuitions are so strong that they make it hard for us to consider the possibilities rationally, and thus may actually be leading us astray.
+
+Curiously, the theory presented here does leave open one important variable within the realm of the physical. It is possible that something physical, within the biology of the brain neurons, is required to turn the model into phenomenological experience. In other words, given two regions of biological neural network (in the same individual or in different individuals), both having equivalent model states and data processing capabilities, could it be that one has a biological structure that turns the model into experience, while the other does not? Our intuition is that there is something special about experience that requires more than just a self-serving data model.
+
+At this stage, I am sympathetic to two possibilities:
+1. That there does exist a biological difference between the aforementioned two neural network regions.
+2. That there is no difference between the two neural network regions, and thus any system with a model and processing loop that replicates the behaviors of the visceral loop must be conscious.
+
+I don't have any idea how to test which is true. And, furthermore, I fear that our intuition is of little help at this stage.
+
+But, if I am to hazard a guess, I would argue in the case of the former, as per the following very simplistic logic:
+* I am opposed to the theory that ordinary matter is conscious (pan-psychism) - ie: my intuition is that this is incorrect.
+* Possibility #2 tends to suggest pan-psychism.
+* Therefore, #1 is most likely, and we should spend time looking for that difference.
+
 # FAQs
 
 # Curious Effects
