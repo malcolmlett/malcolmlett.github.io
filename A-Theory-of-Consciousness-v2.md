@@ -1,4 +1,4 @@
-(This is a re-work that will replace the existing [[A Theory of the Human Mind]] page, it is currently a WORK IN PROGRESS)
+(WORK IN PROGRESS: This is a re-work that will replace the existing [[A Theory of the Human Mind]] page)
 
 This page presents an engineering investigation of conscious experience, and forms a consistent explanation that is useful enough for it to be emulated today. A likely architecture for the logical components of high-order thought are presented. It is shown that the content of conscious experience is governed by a representational 'model' upon which all high-order thought is based. It is shown how this theory can explain the majority of the phenomena of consciousness, and it is suggested that this architecture will ultimately form the basis for artificial general intelligence. An investigation of the gaps remaining is also covered.
 
