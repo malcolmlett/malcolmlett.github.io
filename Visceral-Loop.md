@@ -14,18 +14,40 @@ Q: what can this be used for?
 
 The Analogy of the Thalamic Symbiote provided a framework that helped to introspect the boundaries and properties of consciousness. The Visceral Loop is one possible mechanism that produces those characteristics.
 
-h1. Meta-problem of Consciousness
+# Meta-problem of Consciousness
 ...tbd
 
 
-h2. Meta and Meta-meta Thought
+## Meta and Meta-meta Thought
 Thought -> meta-thought: control loop -> meta-meta-thought: meta-awareness. 
 
 We are aware of our own thoughts, but more than that, we are aware of our awareness. That is the crux of our conclusion that we are conscious.
 
-h1. Phenomena anecdotes
-h2. Post-hoc awareness of decisions
+# Phenomena anecdotes
+## Post-hoc awareness of decisions
 Visceral loop explains why fRMI studies have shown that we become aware of a decision after its made. Because it takes iterations to consciously become aware of the decision and think about the fact it was made. In short : we can only think about one thing at a time. So the decision and thinking about the decision require separate steps. 
 
-h2. Sleep
+## Sleep
 When going under general anaesthetic, we lose our sense of time. We seem to experience ourselves waking up immediately after sleeping. This is different to sleep, where we have some sense of time passing. Clearly, the generic anaesthetic disables some internal time tracking that is otherwise available during sleep......[but why did I think this was relevant to visceral loop?]
+
+# Formalism of Consciousness
+Presented here is a first attempt towards a mathematical formalism of consciousness.
+
+One concludes themselves as conscious if they can conclude that:
+* `∃ t: I am conscious of t`
+
+In order to conclude that one is conscious of some `t`, some prerequisites must be met and a number of algorithmic steps must be carried out. The steps follow the three iterations of the visceral loop.
+
+Iteration 1:
+
+1. a sense input is processed, producing `t`: some output conclusion, decision, action, or intermediate logical step
+
+Iteration 2:
+
+2. prerequisite: `t` is present (in model)
+3. prerequisite: `t` is sourced from 'I'  (as indicated through sense labeling)
+4. prerequisite: ∃ memory of producing `t` in past thought
+5. `t` is selected as point of attention for processing, producing: i) fact of presence of `t`, ii) relationship of `t` to 'I'
+
+Iteration 3
+
