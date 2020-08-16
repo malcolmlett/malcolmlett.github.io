@@ -18,7 +18,7 @@ Terminology:
 ## Views
 The mechanisms that lead to consciousness are best explained by examining them in the context of different views.
 
-![basic state machine](files/A-theory-of-consciousness-v2-state-machine.png)
+![basic state machine](files/A-theory-of-consciousness-v2-layers.png)
 
 The _biological_ view sees our brain as a collection of neurons of varying types forming a tremendously complicated network. Slowly science is beginning to understand the kind of processing performed by different regions, however our understanding at this level is still very much at its infancy. This article will largely omit discussion about the biological view. However, as we shall see, there is one particularly significant point that needs to be made about the nature of any physical computational machine such as the biological brain.
 
@@ -31,8 +31,10 @@ Main conclusion:
 * Physical computational machines have bulky data processing circuits, and bulky memory storage, and they need a small working area to hold the current set of data being worked on.
 
 ## Logical View
+![logical view diagram](files/A-theory-of-consciousness-v2-state-machine.png)
 
 ## Virtual View
+![virtual view diagram](files/A-theory-of-consciousness-v2-model-layer.png)
 
 # Analysis
 * why conclude all the above
