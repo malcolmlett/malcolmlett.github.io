@@ -17,6 +17,7 @@ Terminology:
 * Offline
 
 ## Layers
+![basic state machine](files/A-theory-of-consciousness-v2-state-machine.png)
 
 ## Logical Layer
 
