@@ -2,9 +2,10 @@
 
 This page presents an engineering investigation of conscious experience, and forms a consistent explanation that is useful enough for it to be emulated today. A likely architecture for the logical components of high-order thought are presented. It is shown that the content of conscious experience is governed by a representational 'model' upon which all high-order thought is based. It is shown how this theory can explain the majority of the phenomena of consciousness, and it is suggested that this architecture will ultimately form the basis for artificial general intelligence. An investigation of the gaps remaining is also covered.
 
+# Introduction
 The "Hard Problem of Consciousness" (Chalmers) has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. 
 
-The theories here have been developed by considering our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through introspection.
+The theories here have been developed by considering our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through introspection. While the theory uses the human mind as the primary example, it is focused on the theoretical fundamental architectures of consciousness, irrespective of whether that is in the form of a human biological consciousness, or some other alien mechanical consciousness.
 
 # Background
 (brief lit survey)
@@ -32,6 +33,11 @@ Main conclusion:
 
 ## Logical View
 ![logical view diagram](files/A-theory-of-consciousness-v2-state-machine.png)
+The high-level thought system of the human brain is a state machine with a tightly integrated control mechanism, known as consciousness. The low-level older part of the brain is something much more akin to our current deep-learning artificial neural network models - basically just pattern matching/prediction engines. All thought, including high-level thought, is achieved through coordinating the function of the state machine with the low-level pattern matching/prediction components of the brain.
+
+Ignoring the control-mechanism for the moment, the high-level state machine of the brain is illustrated in the following diagram. The senses are received as inputs, pre-processed, then used in conjunction with the current state (held in Working Memory) to produce multiple potential new states, which are selected by the attention control mechanism.
+
+In the terminology of Danial Kahneman, the pre-processing and logic processing components on their own are of the form of _System 1_ thought (_Fast Thinking_), while the net result of multiple steps being executed by the state machine form _System 2_ thought (_Slow Thinking_).
 
 ## Virtual View
 ![virtual view diagram](files/A-theory-of-consciousness-v2-model-layer.png)
