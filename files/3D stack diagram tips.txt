@@ -1,0 +1,14 @@
+Gimp
+----
+Source:
+1. Draw.io > select content and bounding box
+2. Edit > Copy as Image
+
+
+3d rectangle:
+1. sheer 170
+2. rotate -10 degrees
+
+drop-shadow:
+Filters > Light and Shadow > Drop Shadow...
+x: 0, y: 20, radius: 10, opacity: 0.75
