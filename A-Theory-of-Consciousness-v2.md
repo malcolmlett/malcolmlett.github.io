@@ -7,10 +7,12 @@ The "Hard Problem of Consciousness" (Chalmers) has been a conundrum for many cen
 
 The theories here have been developed by considering our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through introspection. While the theory uses the human mind as the primary example, it is focused on the theoretical fundamental architectures of consciousness, irrespective of whether that is in the form of a human biological consciousness, or some other alien mechanical consciousness.
 
+_Unified Theory_ presents a shallow overview of the whole of the theory. _Analysis_ presents a rationale for the theory, and examines some of its consequences......
+
 # Background
 (brief lit survey)
 
-# Main
+# Unified Theory
 Terminology:
 * Online
 * Reinforcement
@@ -28,16 +30,37 @@ The _logical_ view attempts to present a simplified architecture of the componen
 The _virtual_ view exists only as the data state that is produced, transferred, and examined by the _logical_ view. However, some important concepts and behaviours are best examined within the framework of the _virtual_ view.
 
 ## Biological View
+All mammals have a neocortex, and birds have a similar structure called the dorsal ventricular ridge (DVR) that neuroscience suggests provides similar capability to the neocortex [SDOct2012].
+
 Main conclusion:
 * Physical computational machines have bulky data processing circuits, and bulky memory storage, and they need a small working area to hold the current set of data being worked on.
 
 ## Logical View
+The full set of data processing that occurs within our brain is immensely complicated, occurring at many levels with complicated interactions. For example, some behaviours are the result of entirely unconscious brain activity. No one paper could hope to explain all of that, and must focus on a narrow subset of brain functions. This paper is no different. The theory presented here focuses on the mechanisms behind high-order thought, and how they are associated with conscious experience.
+
+The theory claims that the high-level thought system of the human brain is a state machine with a tightly integrated control mechanism, whereas the low-level older part of the brain is something much more akin to our current deep-learning artificial neural network models - basically just pattern matching/prediction engines. High-level thought is achieved through a combination of a relatively simple state machine architecture, with the pattern matching and prediction power of those low-level neural networks.
+
+The proposed high-level state machine of the brain is illustrated in the following diagram. Externally sourced senses (our nominal five senses), plus internal senses (eg: mental tracking of limb position), are received as inputs (likely in a pre-processed form), then used in conjunction with the current state (held in Working Memory) to produce a new state.
+
 ![logical view diagram](files/A-theory-of-consciousness-v2-state-machine.png)
-The high-level thought system of the human brain is a state machine with a tightly integrated control mechanism, known as consciousness. The low-level older part of the brain is something much more akin to our current deep-learning artificial neural network models - basically just pattern matching/prediction engines. All thought, including high-level thought, is achieved through coordinating the function of the state machine with the low-level pattern matching/prediction components of the brain.
 
-Ignoring the control-mechanism for the moment, the high-level state machine of the brain is illustrated in the following diagram. The senses are received as inputs, pre-processed, then used in conjunction with the current state (held in Working Memory) to produce multiple potential new states, which are selected by the attention control mechanism.
+In the diagram above, the Logic Processing box represents what is likely the bulk of the brain. While it is likely an oversimplification, it is assumed that the logic processing components are largely stateless, in that they merely compute a result given the inputs. It is further assumed that we can think of the multiple logic components of the brain as a single aggregate.
 
-In the terminology of Danial Kahneman, the pre-processing and logic processing components on their own are of the form of _System 1_ thought (_Fast Thinking_), while the net result of multiple steps being executed by the state machine form _System 2_ thought (_Slow Thinking_).
+In the terminology of Danial Kahneman, the logic processing components on their own are of the form of _System 1_ thought (_Fast Thinking_), while the net result of multiple steps being executed by the state machine form _System 2_ thought (_Slow Thinking_).
+
+### Working Memory
+Neuroscience currently believes that we hold about 7 items in working memory, for up to about 1 minute.
+
+This is the state data store of our state machine. The presence or absence of certain data items directly influence which logic processes activate or are dormant.
+
+The most simple state machine may be able to operate with only a single data item, and the larger the working memory the more efficient computation can be in theory. In practice, there are trade-offs affecting the size of working memory. If too small, then it is not sufficient to hold all data needed for a particular thought process - more logic processing actions are required for low-level swap-in/swap-out of data from long term storage. If too large, then the data transmission channels between working memory and logic processing become too wide.
+
+The state representation within working memory is likely fairly high-level. It is likely at the level of what we observe within our consciousness.
+
+### Control Mechanism
+tbd...
+
+![logic and control loops](files/high-level-data-cycles-v1.png)
 
 ## Virtual View
 ![virtual view diagram](files/A-theory-of-consciousness-v2-model-layer.png)
@@ -114,7 +137,7 @@ But, if I am to hazard a guess, I would argue in the case of the former, as per 
 * Cause of phenomenological experiences
 
 # References
-
+[SDOct2012] University of Chicago Medical Center. "Homolog of mammalian neocortex found in bird brain." ScienceDaily, 1 October 2012. www.sciencedaily.com/releases/2012/10/121001151953.htm.
 
 
 
