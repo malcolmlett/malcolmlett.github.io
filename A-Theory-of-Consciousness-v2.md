@@ -88,11 +88,28 @@ High-level thought involves multiple steps and intermediate states. Working memo
 It's possible that the evolution of working memory was the catalyst for the evolution of a state-machine processing loop, which further formed the basis of the high-level thinking that we enjoy today.
 
 ## Evolutionary reason for awareness of thoughts
-### The problem with state machines
+### The need for a control mechanism
+If you were to build a state machine yourself, you would not want to do it with neural networks. State machines operate on the principle of a loop that repeats itself over and over but with different state and with different operations. They require stability and predictability. Neural networks are noisy, chaotic, and take a long time to train. A state machine using neural networks for processing is highly unstable and tends to get stuck in infinite loops.
+
+A common engineering solution to stability problems is a control mechanism that uses feedback. The control mechanism uses a feedback measurement of the output of the system that it compares against some ideal signal, and uses that to adjust the system's behaviour. It seems reasonable to assume from the fact that we can observe our own thoughts, that we employ such a control mechanism.
+
+See more: [[The Error Prone Brain]]
+
+### Control options
+What kind of control mechanism might be employed within a biological neuronal brain? What information does that control mechanism need? And what level of computational complexity?
+
+The control mechanism It doesn't need tight integration of problem and feedback data, but it helps. It does need a sufficient level of intelligence applied to that feedback, and if there's no general intelligence, then it basically has to be hard coded.
+
+So there's basically two options for achieving that level of feedback understanding:
+
+1. Hard coded feedback processing and attention control. Limited data integration. Doesn't require general intelligence. Very unhuman-like.
+2. Fully integrated General intelligence with learning. Human-like.
+
+In the human case, we are probably born with some basic building blocks of attention control - that do only the most basic of attenuation of repeated signals to avoid tight infinite loops. And then we learn to override those and apply higher reasoning.
+
+This theory also suggests there is a minimum level of intelligence required for consciousness, because otherwise it cannot control thought well enough.
 
 
-### Control mechanism
-## Different options.
 * Possibility of alien kinds of minds. Eg: two separate cycles. 
 * We have phenomenal experience of our senses equally as we experience our own thoughts. Thus, evolution has selected a self controlled processor. 
 
@@ -103,6 +120,7 @@ It's possible that the evolution of working memory was the catalyst for the evol
  
 ## Learning
 * Why I don't talk about it much. 
+* Evolution and pre-wired control.
 * Evolutionary advantage to auto-learning.
 
 
