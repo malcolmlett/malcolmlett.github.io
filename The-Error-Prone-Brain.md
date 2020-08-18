@@ -6,8 +6,9 @@ This doesn't need general intelligence. It's a fundamental architecture. It does
 
 So there's basically two options for achieving that level of feedback understanding:
 
-Hard coded feedback processing and attention control. Limited data integration. Doesn't require general intelligence. Very unhuman-like.
-Fully integrated General intelligence with learning. Human-like.
+1. Hard coded feedback processing and attention control. Limited data integration. Doesn't require general intelligence. Very unhuman-like.
+2. Fully integrated General intelligence with learning. Human-like.
+
 In the human case, we are probably born with some basic building blocks of attention control - that do only the most basic of attenuation of repeated signals to avoid tight infinite loops. And then we learn to override those and apply higher reasoning.
 
 This theory also suggests there is a minimum level of intelligence required for consciousness, because otherwise it cannot control thought well enough. But in contrast, maybe that limit is very small...the slightest bit of self control could rate on the consciousness scale.
