@@ -7,6 +7,10 @@ The "Hard Problem of Consciousness" (Chalmers) has been a conundrum for many cen
 
 The theories here have been developed by considering our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through introspection. While the theory uses the human mind as the primary example, it is focused on the theoretical fundamental architectures of consciousness, irrespective of whether that is in the form of a human biological consciousness, or some other alien mechanical consciousness.
 
+tbd. Introduce what I define as consciousness:
+* Contenders: awareness of thought, emotions, empathy, experience of senses, high-level processing
+* Human vs general definition of consciousness
+
 _Unified Theory_ presents a shallow overview of the whole of the theory. _Analysis_ presents a rationale for the theory, and examines some of its consequences......
 
 # Background
