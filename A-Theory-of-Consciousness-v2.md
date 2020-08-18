@@ -65,8 +65,11 @@ tbd...
 ## Virtual View
 ![virtual view diagram](files/A-theory-of-consciousness-v2-model-layer.png)
 
-# Analysis
+# Rationale
 * why conclude all the above
+
+
+# Analysis
 
 ## Explanation of Phenomena - Meta-problem of Consciousness
 The remaining two sections of this chapter pick two particular phenomena of conscious experience and show how they are explained by the theory presented here.
