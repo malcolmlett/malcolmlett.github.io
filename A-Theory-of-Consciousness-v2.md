@@ -66,7 +66,7 @@ tbd...
 ![virtual view diagram](files/A-theory-of-consciousness-v2-model-layer.png)
 
 # Rationale
-This section provides an account of why I believe the theory presented here is a good explanation of our experienced phenomena. 
+This section provides an account of why I believe the theory presented here is a good explanation of our experienced phenomena. The discussion is necessarily shallow in order to avoid this full article becoming too large. Links to further discussions are provided.
 
 I should first point out that this is a working hypothesis. Some of the premises here may not be universally agreed and need further corroboration. 
 
