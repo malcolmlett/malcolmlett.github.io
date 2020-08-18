@@ -66,7 +66,31 @@ tbd...
 ![virtual view diagram](files/A-theory-of-consciousness-v2-model-layer.png)
 
 # Rationale
-* why conclude all the above
+This section provides an account of why I believe the theory presented here is a good explanation of our experienced phenomena. 
+
+I should first point out that this is a working hypothesis. Some of the premises here may not be universally agreed and need further corroboration. 
+
+If the theory is correct, then there is very little of our internal brain structure that we can observe directly. This, there should be little that we can deduce about it. However, it turns out the model that I purport we operate on is much like an abstraction in computer science. And, I computer science we know that every abstraction leaks internal details.
+
+
+## The need for working memory and how it leads to high level thought
+* Simple low level only brain can use integrated state/memory. But to improve efficiency and flexibility needs separate memory and a way to access and bring sections to processors. 
+
+## Evolutionary reason for awareness of thoughts
+* The problem with state machines. 
+* Control mechanism
+* Different options.
+* Possibility of alien kinds of minds. Eg: two separate cycles. 
+* We have phenomenal experience of our senses equally as we experience our own thoughts. Thus, evolution has selected a self controlled processor. 
+* Sense labeling: needed in order for control mechanism to know which senses to use. Senses need to be labelled in some way, either through explicit addition of labels, location of source neurons, or some other means.
+
+## Consciousness: natural consequence of visceral loop
+
+ 
+## Learning
+* Why I don't talk about it much. 
+* Evolutionary advantage to auto-learning.
+
 
 
 # Analysis
@@ -108,6 +132,8 @@ todo: offer some rationale for assuming that the scope of conscious experience i
 
 * Doesn't explain phenomenal experience 
 * Doesn't entirely explain why we don't experience other cyclic regions within in the brain 
+
+This remains an open question. And I believe it is an important question. It was a continual attempt to answer that very question that has driven the direction of this theory. However, it's scope is now significantly reduced. In fact, our physical state controls our experiential state so strongly that it is hard to conceive of experience as being anything other than entirely passive. 
 
 This is best characterised as an intuitional gap: theories of consciousness exist that support it being an entirely physical phenomenon, and yet our intuitions about consciousness make it hard for us to accept that a simple physical explanation is sufficient. The leads many to assume a metaphysical explanation is necessary.
 
