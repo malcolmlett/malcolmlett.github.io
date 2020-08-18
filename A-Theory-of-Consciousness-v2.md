@@ -70,19 +70,33 @@ This section provides an account of why I believe the theory presented here is a
 
 I should first point out that this is a working hypothesis. Some of the premises here may not be universally agreed and need further corroboration. 
 
-If the theory is correct, then there is very little of our internal brain structure that we can observe directly. This, there should be little that we can deduce about it. However, it turns out the model that I purport we operate on is much like an abstraction in computer science. And, I computer science we know that every abstraction leaks internal details.
+If the theory is correct, then there is very little of our internal brain structure that we can observe directly. Thus there should be little that we can deduce about it. However, it turns out the model that I purport we operate on is much like the sort of 'abstraction layer' that is often used in software engineering; and it is well known within the software development field that every abstraction leaks internal details. So in practice we can deduce a lot through observations of the particular computational behaviours and edge cases that we experience, combined with the understanding from modern neuroscience.
 
+## Working memory
+Brain neurons exist in physical space and thus are subject to a simple physical law: they cannot be moved around easily. When a regions of neurons have developed a structure and learned firing pattern that produces useful computational capability, that computational capability might be useful for processing of data retrieved from arbitrary sources. Those sources might include long term memory. As memory becomes larger, it becomes inefficient to provide direct access from the computational region to the whole of memory - the data transfer channel could become physically very wide. Furthermore, as the brain evolves greater computational dexterity, it ends up with multiple regions with specialised capabilities. Direct access between those 'processors' and memory would now require multiple wide data transfer channels.
 
-## The need for working memory and how it leads to high level thought
-* Simple low level only brain can use integrated state/memory. But to improve efficiency and flexibility needs separate memory and a way to access and bring sections to processors. 
+From a physical space perspective, a far more efficient solution is to have a central area where data-to-be-processed is temporarily stored, and for the processing regions to access data in that temporary storage, rather than directly access full memory. Essentially, it is necessary to bring the data to the processor because the processor is large and unmovable.
+
+## High-level thought as a state machine
+As we are discovering through the development of artificial neural networks, a simple non-cyclic network of neurons can be very effective for pattern matching and prediction. However it isn't suitable for high-level thought because of a number of limitations:
+* it's only capable of producing results from a single pass of the network
+* it's hard to combine results from multiple arbitrarily selected processing regions
+* it's inflexible across short time scales
+
+High-level thought involves multiple steps and intermediate states. Working memory serves to hold those intermediate state. Multiple steps are supported through operating in cycles, with each cycle taking the current state of working memory, applying one step of computation, and storing the result back into working memory. In other words, a 'state machine'.
+
+It's possible that the evolution of working memory was the catalyst for the evolution of a state-machine processing loop, which further formed the basis of the high-level thinking that we enjoy today.
 
 ## Evolutionary reason for awareness of thoughts
-* The problem with state machines. 
-* Control mechanism
-* Different options.
+### The problem with state machines
+
+
+### Control mechanism
+## Different options.
 * Possibility of alien kinds of minds. Eg: two separate cycles. 
 * We have phenomenal experience of our senses equally as we experience our own thoughts. Thus, evolution has selected a self controlled processor. 
-* Sense labeling: needed in order for control mechanism to know which senses to use. Senses need to be labelled in some way, either through explicit addition of labels, location of source neurons, or some other means.
+
+### Sense labeling: needed in order for control mechanism to know which senses to use. Senses need to be labelled in some way, either through explicit addition of labels, location of source neurons, or some other means.
 
 ## Consciousness: natural consequence of visceral loop
 
