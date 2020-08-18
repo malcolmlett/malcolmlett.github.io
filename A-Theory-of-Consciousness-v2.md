@@ -96,8 +96,17 @@ A common engineering solution to stability problems is a control mechanism that 
 See more: [[The Error Prone Brain]]
 
 ### Control options
+tbd: this section will be clearer if I consider learning pressures.
+
 What kind of control mechanism might be employed within a biological neuronal brain? The following distinguishes two basic approaches:
-1.  
+
+1. Independent control: an entirely separate control processor actively monitors and manipulates state to ensure stability
+![independent control loop](files/A-theory-of-consciousness-v2-independent-control.png)
+
+2. Integrated control: control is performed by a relatively simple feedback loop that is actioned on by the main processor.
+![integrated control loop](files/A-theory-of-consciousness-v2-integrated-control.png)
+
+
 
 What information does that control mechanism need? And what level of computational complexity? The identification of infinite loops alone can be quite complex, as a sequence of states of arbitrary length may form an infinite loop.
 
