@@ -96,7 +96,10 @@ A common engineering solution to stability problems is a control mechanism that 
 See more: [[The Error Prone Brain]]
 
 ### Control options
-What kind of control mechanism might be employed within a biological neuronal brain? What information does that control mechanism need? And what level of computational complexity?
+What kind of control mechanism might be employed within a biological neuronal brain? The following distinguishes two basic approaches:
+1.  
+
+What information does that control mechanism need? And what level of computational complexity? The identification of infinite loops alone can be quite complex, as a sequence of states of arbitrary length may form an infinite loop.
 
 The control mechanism It doesn't need tight integration of problem and feedback data, but it helps. It does need a sufficient level of intelligence applied to that feedback, and if there's no general intelligence, then it basically has to be hard coded.
 
