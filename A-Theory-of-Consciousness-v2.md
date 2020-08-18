@@ -7,14 +7,18 @@ The "Hard Problem of Consciousness" (Chalmers) has been a conundrum for many cen
 
 The theories here have been developed by considering our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through introspection. While the theory uses the human mind as the primary example, it is focused on the theoretical fundamental architectures of consciousness, irrespective of whether that is in the form of a human biological consciousness, or some other alien mechanical consciousness.
 
+Many theories, all focusing on different parts, providing some prices of the puzzle. 
+* Tononi: partial mechanism for measurement, but not complete: doesn't define sufficiency.
+* AST: introduces how important the model is.
+* Chalmers: explains how the problem is split into a mechanical/computational problem that is comparatively easy, while the Hard problem remains a philosophical question because we don't have any possible physical explanation. Consequently many metaphysical explanations have been suggested. 
+
+The theory presented here attempts to show how the vast majority of phenomena have a plausible physical explanation. In so doing, the theory provides a framework to reproduce that vast majority of phenomena. The remaining phenomena is investigated later, where it is explained that only the question of phenomenal experience remains. It is shown how little of that phenomenon is left for explanation. Furthermore, it is shown that, while it remains an important question particularly from the point of view of ethics, we now know enough that the one remaining answer makes no difference to our ability to start building it. 
+
 tbd. Introduce what I define as consciousness:
 * Contenders: awareness of thought, emotions, empathy, experience of senses, high-level processing
 * Human vs general definition of consciousness
 
 _Unified Theory_ presents a shallow overview of the whole of the theory. _Analysis_ presents a rationale for the theory, and examines some of its consequences......
-
-# Background
-(brief lit survey)
 
 # Unified Theory
 Terminology:
@@ -23,7 +27,7 @@ Terminology:
 * Offline
 
 ## Views
-The mechanisms that lead to consciousness are best explained by examining them in the context of different views.
+The mechanisms that lead to human consciousness are best explained by examining them in the context of different views.
 
 ![basic state machine](files/A-theory-of-consciousness-v2-layers.png)
 
