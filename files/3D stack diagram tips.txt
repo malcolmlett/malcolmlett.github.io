@@ -12,3 +12,6 @@ Source:
 drop-shadow:
 Filters > Light and Shadow > Drop Shadow...
 x: 0, y: 20, radius: 10, opacity: 0.75
+
+
+Trying to produce something like this: https://www.presentation-process.com/layer-diagram.html
