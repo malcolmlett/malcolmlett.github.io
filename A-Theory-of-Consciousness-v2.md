@@ -211,8 +211,29 @@ todo: offer some rationale for assuming that the scope of conscious experience i
 * Basis of AGI
 * Now that we understand it enough, we can modify it. Eg: learning algorithms don't have to be done exactly the same way. Reinforcement doesn't had to be fine exactly the same way. 
 
-# Gaps in Explanation
+# Open Questions
+## Lossiness in Visceral Loop
+We appear to perceive certain external and internal senses and data sources, while not perceiving others. For example, we don't have direct access to arbitrary long term memories, and it seems quite reasonable to assume that access to long term memory requires some sort of background lookup. But our ability to infer the inputs to the main high-level processor are limited by what it can output. That limitation alone could be the explanation for what we perceive in our phenomenal experience vs what we don't. Alternatively, we may be able to perceive all of the inputs to the processor, and that's that set of inputs that we subsequently call 'senses'. Or, it could even be somewhere in between. In brief, the question is about how 'lossy' the transformation is from input to output.
 
+Considerations:
+* are some inputs treated differently to others so that there is a clear distinction between those than can be processed and fed directly to output vs those that can't?
+* does the processing itself, through a combination of evolution and learning, select some inputs more strongly and reflect them in the output more accurately than others?
+* are there evolutionary limitations in what the state model can represent, that could means that certain inputs are effectively hidden from representation?
+
+tbd. diagram
+
+## Split between Working Model and State Model
+The observed distinction can be summarised as:
+* state model - appears as a single continuous stream that is smoothly updated from cycle to cycle
+* working memory - appears as a data store with multiple entries, only one of which can be accessed at a time.
+
+However, the real delineation between the state model and working memory is not clear, or if there even is a delineation at all. At one extreme, they may be independent components that pass through two independent channels that belong to the two overlayed loops: the main computational processing loop and the control loop. At the other extreme, there may be only one such channel and the state model and working memory are one in the same thing.
+
+tbd. diagram
+
+An important consideration here is the above question of the lossyness of the processing step. For example, if the processing step is lossy, then it is entirely possible that there is only a working memory, that the processing step only even passes one entry from the working memory at a time, that the output is stored back into the working memory, and that the perception of a state model is a result of the fact that only one working memory entry is selected at a time.
+
+## Biological basis for Phenomenal Exprience
 * Doesn't explain phenomenal experience 
 * Doesn't entirely explain why we don't experience other cyclic regions within in the brain 
 
