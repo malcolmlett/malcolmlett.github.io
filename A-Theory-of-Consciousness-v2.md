@@ -117,8 +117,6 @@ What kind of control mechanism might be employed within a biological neuronal br
 2. Integrated control: control is performed by a relatively simple feedback loop that is actioned on by the main processor.
 ![integrated control loop](files/A-theory-of-consciousness-v2-integrated-control.png)
 
-
-
 What information does that control mechanism need? And what level of computational complexity? The identification of infinite loops alone can be quite complex, as a sequence of states of arbitrary length may form an infinite loop.
 
 The control mechanism It doesn't need tight integration of problem and feedback data, but it helps. It does need a sufficient level of intelligence applied to that feedback, and if there's no general intelligence, then it basically has to be hard coded.
@@ -132,14 +130,17 @@ In the human case, we are probably born with some basic building blocks of atten
 
 This theory also suggests there is a minimum level of intelligence required for consciousness, because otherwise it cannot control thought well enough.
 
-
+tbd.
 * Possibility of alien kinds of minds. Eg: two separate cycles. 
 * We have phenomenal experience of our senses equally as we experience our own thoughts. Thus, evolution has selected a self controlled processor. 
 
 ### Sense labeling
 * needed in order for control mechanism to know which senses to use. Senses need to be labelled in some way, either through explicit addition of labels, location of source neurons, or some other means.
 
-## Consciousness: a natural consequence of the visceral loop
+## Consciousness and the Visceral Loop
+tbd. Move section on 'meta-problem of consciousness' into here.
+
+In essence, consciousness is a natural consequence of the visceral loop.
 
 ## Memories
 I see memory as an extra source of data that further benefits high-level thought. Further to that, some form of memory is surely necessary for the evolution of high-level thought. However, my assumption for now is that it is not necessary to investigate in detail in order to understand consciousness.
