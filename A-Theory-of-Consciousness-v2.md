@@ -8,6 +8,7 @@ The "Hard Problem of Consciousness" (Chalmers) has been a conundrum for many cen
 There are many theories out there, all focusing on different aspects and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). They all provide some pieces of the puzzle. For example:
 * Tononi: partial mechanism for measurement, but not complete: doesn't define sufficiency.
 * AST: introduces how important the model is.
+** the work here can be seen as building on AST, although I reached many of the same conclusions independently.
 * Chalmers: explains how the problem is split into a mechanical/computational problem that is comparatively easy, while the Hard problem remains a philosophical question because we don't have any possible physical explanation. Consequently many metaphysical explanations have been suggested. 
 
 The theories here have been developed by considering our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through introspection. While the theory uses the human mind as the primary example, it is focused on the theoretical fundamental architectures of consciousness irrespective of whether that is in the form of a human biological consciousness, or some other alien mechanical consciousness.
@@ -135,10 +136,37 @@ This theory also suggests there is a minimum level of intelligence required for 
 * Possibility of alien kinds of minds. Eg: two separate cycles. 
 * We have phenomenal experience of our senses equally as we experience our own thoughts. Thus, evolution has selected a self controlled processor. 
 
-### Sense labeling: needed in order for control mechanism to know which senses to use. Senses need to be labelled in some way, either through explicit addition of labels, location of source neurons, or some other means.
+### Sense labeling
+* needed in order for control mechanism to know which senses to use. Senses need to be labelled in some way, either through explicit addition of labels, location of source neurons, or some other means.
 
-## Consciousness: natural consequence of visceral loop
+## Consciousness: a natural consequence of the visceral loop
 
+## Memories
+I see memory as an extra source of data that further benefits high-level thought. Further to that, some form of memory is surely necessary for the evolution of high-level thought. However, my assumption for now is that it is not necessary to investigate in detail in order to understand consciousness.
+
+So, rather than investigate in detail, I shall simply state that I assume that there is roughly three kinds of memory and that these are independent from the 'State Model' that will be discussed further in the next section.
+* Working Memory
+* Short Term Memory
+* Long Term Memory: known to be split into episodic and autobiographical.
+
+## Models
+Graziano [Graziano2017] introduced Attention Schema Theory (AST), which suggested how important a representational model might be for consciousness.
+
+I suggest that there are at least three distinct 'models' in effect here and that they play importantly different roles:
+* _State Model_: passive store of current state of in-flight thought. Closely related to Working Memory, but presumed independent.
+* _Mental Model of Body_: predictive and generative model use to track locations of body components, capabilities of those components, and used to generate planning in relation to movement
+* _Mental Model of Mind_: predictive and generative model use to track capabilities of the mind, and used to generate planning in relation to future thought, eg: strategies for solving problems
+
+It is the mental models of body and mind that suffer problems when they cannot be updated [citation].
+
+The visceral loop explains why the state model is both a significant source of input to data processing, and the outcome of that processing. The two work so closely together that it can be hard to see the distinction between them. That may be because our ability to analyse our own consciousness is a factor of that model/processing interaction.
+
+More specifically, the scope of what we can conclude about our own consciousness through introspection alone is a factor of:
+* the capability of the state model to represent different data
+* the detail of our mental-model-of-mind
+* the evolved and learned capability of the high-level processing units to use those data representations and to produce meaningful conclusions
+
+A more detailed analysis of the boundaries of what can be concluded through this mechanism is discussed below.
  
 ## Learning
 * Why I don't talk about it much. 
@@ -220,7 +248,10 @@ But, if I am to hazard a guess, I would argue in the case of the former, as per 
 * Cause of phenomenological experiences
 
 # References
+[Graziano2017] Michael S. A. Graziano, Department of Psychology and Neuroscience, Princeton University, US. "The Attention Schema Theory: A Foundation for Engineering Artificial Consciousness". Front. Robot. AI, 14 November 2017. https://doi.org/10.3389/frobt.2017.00060.
+
 [SDOct2012] University of Chicago Medical Center. "Homolog of mammalian neocortex found in bird brain." ScienceDaily, 1 October 2012. www.sciencedaily.com/releases/2012/10/121001151953.htm.
+
 
 
 
