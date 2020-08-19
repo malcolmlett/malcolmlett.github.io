@@ -134,6 +134,13 @@ tbd.
 * Possibility of alien kinds of minds. Eg: two separate cycles. 
 * We have phenomenal experience of our senses equally as we experience our own thoughts. Thus, evolution has selected a self controlled processor. 
 
+## Senses
+Observation of senses
+* conscious feedback loop received as a sense
+* in contrast, working memory is not
+
+But it's the subsequent processing of those data sources that determines what is experienced as a 'sense', because it is the processing and subsequent conclusionary output that states what is a sense and what is not. An open question is how lossy the processing step is. For example, could it be that working memory is also supplied as a sense in the same way that the external senses and the state model are fed in, but that the processing step never concludes anything directly about working memory - giving us the conclusion that it isn't received as a sense.
+
 ### Sense labeling
 * needed in order for control mechanism to know which senses to use. Senses need to be labelled in some way, either through explicit addition of labels, location of source neurons, or some other means.
 
