@@ -25,6 +25,9 @@ In the human case, we are probably born with some basic building blocks of atten
 
 This theory also suggests there is a minimum level of intelligence required for consciousness, because otherwise it cannot control thought well enough. But in contrast, maybe that limit is very small...the slightest bit of self control could rate on the consciousness scale.
 
+# Split Brains
+
+
 # Logical Inaccuracy
 Biology is a deeply flawed way of creating a reliable, accurate computing engine. Evolutionary processes inherently introduce errors, and approximations. The network of neurons that our ability to learn and think depends on, depends on approximations. It's approximations start with high inaccuracy, and improve over time, but there is no boundary line between being untrained and trained. 
 
