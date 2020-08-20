@@ -26,7 +26,11 @@ In the human case, we are probably born with some basic building blocks of atten
 This theory also suggests there is a minimum level of intelligence required for consciousness, because otherwise it cannot control thought well enough. But in contrast, maybe that limit is very small...the slightest bit of self control could rate on the consciousness scale.
 
 # Split Brains
+A possible alternative theory for the human control mechanism comes down to the fact that our brains have two distinct hemispheres. It's possible that that our brain actually employs an independent control mechanism, in the form of the two hemispheres acting independently then competing against each other in order to achieve the ultimate result and stability.
 
+It's an interesting avenue for investigation.
+
+My initial thought is that I don't think this is likely because there is some evidence that each hemisphere can produce logical stable thought independently [Joseph2011].
 
 # Logical Inaccuracy
 Biology is a deeply flawed way of creating a reliable, accurate computing engine. Evolutionary processes inherently introduce errors, and approximations. The network of neurons that our ability to learn and think depends on, depends on approximations. It's approximations start with high inaccuracy, and improve over time, but there is no boundary line between being untrained and trained. 
@@ -48,3 +52,6 @@ Eventually, almost by accident, we discover that we can control our thought in s
 The discussion here leads to some interesting suggestions about possible alternative brain structures. For example, while we have concluded that the human brain uses an integrated control mechanism, that doesn't entirely rule out the possibility of brains developing that employ an independent control mechanism.
 
 Such beings would likely develop quite different high-level thought styles than humans.
+
+# References
+[Joseph2011] Rhawn Joseph, Brain Research Laboratory, Califiornia. "The Split Brain: Two Brains - Two Minds". 2011. http://cosmology.com/Consciousness163.html.
