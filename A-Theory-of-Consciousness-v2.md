@@ -23,11 +23,6 @@ tbd. Introduce what I define as consciousness:
 _Unified Theory_ presents a shallow overview of the whole of the theory. _Analysis_ presents a rationale for the theory, and examines some of its consequences......
 
 # Unified Theory
-Terminology:
-* Online
-* Reinforcement
-* Offline
-
 ## Views
 The mechanisms that lead to human consciousness are best explained by examining them in the context of three different views.
 
@@ -170,13 +165,6 @@ Sense labeling:
 * based on mental-model-of-mind
 * could be via explicit labeling, or just by the mental-model-of-mind being used to 'guess' to the source of a sense based on its characteristics
 
-## Learning
-* Why I don't talk about it much. 
-* Evolution and pre-wired control.
-* Evolutionary advantage to auto-learning.
-
-
-
 # Analysis
 
 ## Explanation of Phenomena - Meta-problem of Consciousness
@@ -213,6 +201,17 @@ todo: offer some rationale for assuming that the scope of conscious experience i
 * Now that we understand it enough, we can modify it. Eg: learning algorithms don't have to be done exactly the same way. Reinforcement doesn't had to be fine exactly the same way. 
 
 # Open Questions
+## Learning
+The ability for a particular brain organisation to productively learn is significant factor governing how the brain evolved the mechanisms it has. Unfortunately the theory presented here will not be complete without a detailed consideration of how each component could learn its required behaviours.
+
+I will state briefly some general ideas on how learning fits together, but obviously significantly more research will be required in this area.
+
+* The overall brain structure is obviously constructed as a result of evolutionary pressures. I suggest that the brain is also pre-wired with the most basic starting blocks of a control mechanism. That pre-wiring likely incorporates some degree of immutable hard barriers, for example to ensure that we don't get completely stuck in a tight infinite loop, but also supports the ability for us to learn, modify, and override softer control forces.
+
+* I suspect that different components of the brain learn through different mechanisms. For example, we know that [Hebbian](https://en.wikipedia.org/wiki/Hebbian_theory) learning operates in an 'online learning' mode. There is also some evidence that our brain employs 'offline learning' during sleep in order to transfer memories and new skills to long term memory [citation]. Lastly, I suspect that some systems learning through more of a re-inforcement style.
+
+Along with new understanding coming from neuroscience, I suspect big gains will come from trying to build an artificial consciousness from the ground up. My entire control-mechanism basis of consciousness came from trying to build a high level emulation of the state machine components and finding how susceptible it was to infinite loops.
+
 ## Lossiness in Visceral Loop
 We appear to perceive certain external and internal senses and data sources, while not perceiving others. For example, we don't have direct access to arbitrary long term memories, and it seems quite reasonable to assume that access to long term memory requires some sort of background lookup. But our ability to infer the inputs to the main high-level processor are limited by what it can output. That limitation alone could be the explanation for what we perceive in our phenomenal experience vs what we don't. Alternatively, we may be able to perceive all of the inputs to the processor, and that's that set of inputs that we subsequently call 'senses'. Or, it could even be somewhere in between. In brief, the question is about how 'lossy' the transformation is from input to output.
 
