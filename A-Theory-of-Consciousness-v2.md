@@ -121,19 +121,6 @@ This theory also suggests that there is a minimum level of intelligence required
 
 See more: [[The Error Prone Brain]]
 
-## Consciousness and the Visceral Loop
-tbd. Move section on 'meta-problem of consciousness' into here.
-
-In essence, consciousness is a natural consequence of the visceral loop.
-
-## Memories
-I see memory as an extra source of data that further benefits high-level thought. Further to that, some form of memory is surely necessary for the evolution of high-level thought. However, my assumption for now is that it is not necessary to investigate in detail in order to understand consciousness.
-
-So, rather than investigate in detail, I shall simply state that I assume that there is roughly three kinds of memory and that these are independent from the 'State Model' that will be discussed further in the next section.
-* Working Memory
-* Short Term Memory
-* Long Term Memory: known to be split into episodic and autobiographical.
-
 ## Models
 Graziano [Graziano2017] introduced Attention Schema Theory (AST), which suggested how important a representational model might be for consciousness.
 
@@ -152,7 +139,7 @@ More specifically, the scope of what we can conclude about our own consciousness
 * the evolved and learned capability of the high-level processing units to use those data representations and to produce meaningful conclusions
 
 A more detailed analysis of the boundaries of what can be concluded through this mechanism is discussed below.
- 
+
 ## Sense labeling
 Observation of senses
 * conscious feedback loop received as a sense
@@ -165,11 +152,7 @@ Sense labeling:
 * based on mental-model-of-mind
 * could be via explicit labeling, or just by the mental-model-of-mind being used to 'guess' to the source of a sense based on its characteristics
 
-# Analysis
-
-## Explanation of Phenomena - Meta-problem of Consciousness
-The remaining two sections of this chapter pick two particular phenomena of conscious experience and show how they are explained by the theory presented here.
-
+## Consciousness and the Visceral Loop
 Why do we conclude ourselves as conscious? We shall now examine the theory's ability to explain this.
 
 In order for an individual to conclude themselves as conscious, they need to follow a particular logic path. That path is presented here first in the form of an example of a person reflecting on their own thoughts, and then at a more low-level how those thoughts can be produced:
@@ -185,6 +168,21 @@ Logical level example:
 3. .
 
 The is referred to as a 'Visceral Loop'.
+
+In essence, consciousness is a natural consequence of the visceral loop.
+
+## Memories
+I see memory as an extra source of data that further benefits high-level thought. Further to that, some form of memory is surely necessary for the evolution of high-level thought. However, my assumption for now is that it is not necessary to investigate in detail in order to understand consciousness.
+
+So, rather than investigate in detail, I shall simply state that I assume that there is roughly three kinds of memory and that these are independent from the 'State Model' discussed earlier.
+* Working Memory
+* Short Term Memory
+* Long Term Memory: known to be split into episodic and autobiographical.
+
+# Analysis
+
+## Explanation of Phenomena - Meta-problem of Consciousness
+The remaining two sections of this chapter pick two particular phenomena of conscious experience and show how they are explained by the theory presented here.
 
 ## Explanation of Phenomena - Boundaries of Conscious Experience
 The theory presents a possible explanation for why certain things produce phenomenological experience and others not; specifically, that the content of the model defines the content of conscious experience.
