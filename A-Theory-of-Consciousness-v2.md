@@ -103,39 +103,33 @@ It's possible that the evolution of working memory was the catalyst for the evol
 ### The need for a control mechanism
 If you were to build a state machine yourself, you would not want to do it with neural networks. State machines operate on the principle of a loop that repeats itself over and over but with different state and with different operations. They require stability and predictability. Neural networks are noisy, chaotic, and take a long time to train. A state machine using neural networks for processing is highly unstable and tends to get stuck in infinite loops.
 
-A common engineering solution to stability problems is a control mechanism that uses feedback. The control mechanism uses a feedback measurement of the output of the system that it compares against some ideal signal, and uses that to adjust the system's behaviour. It seems reasonable to assume from the fact that we can observe our own thoughts, that we employ such a control mechanism.
+A common engineering solution to stability problems is a control mechanism that uses feedback. The control mechanism uses a feedback measurement of the output of the system that it compares against some ideal signal, and uses that to adjust the system's behaviour. 
+
+Broadly, there are two styles of control mechanism that might be employed in such a system:
+
+1. Independent control: an entirely separate control processor actively monitors and manipulates state to ensure stability.
+2. Integrated control: control is performed by a relatively simple feedback loop that is actioned on by the main processor.
+
+Due to the complexity and variability of thought, an independent control mechanism would require significant domain knowledge about the kinds of thought that passes through the main processors. For example, if I am trying to solve '5 + x = 8' in my head by trying lots of different possible values of x, am I stuck in an infinite loop that the control mechanism needs to intervene in? The level of understanding required by an independent control processor suggests that the control mechanism cannot be separate, but is rather integrated into the main processor itself.
+
+Furthermore, we can examine the two options a little more concretely to see how it may 'feel' to have such a mechanism:
+
+1. Independent control: would have limited data integration with the rest of the brain. There would be no need for awareness of thought. Unlikely to be human-like in our experience of it.
+2. Integrated control: the computational and learning capabilities of the main processor would be fully leveraged to help stabilize thought. Human-like in our experience of it.
+
+It seems reasonable to assume from the fact that we can observe our own thoughts, that we employ a control mechanism and that it follows the integrated control option discussed here.
+
+![integrated control loop](files/A-theory-of-consciousness-v2-integrated-control.png)
+
+In the human case, we are probably born with some basic building blocks of the control mechanism that do only the most basic of attenuation of repeated signals to avoid tight infinite loops. This could for example be in the form of a basic attention control. Some form of evolutionary structured learning pressure would be applied so that over the longer term we learn to override those basic controls and apply higher reasoning.
+
+This theory also suggests that there is a minimum level of intelligence required for consciousness, because otherwise it cannot control thought well enough.
 
 See more: [[The Error Prone Brain]]
 
-### Control options
-tbd: this section will be clearer if I consider learning pressures.
-
-What kind of control mechanism might be employed within a biological neuronal brain? The following distinguishes two basic approaches:
-
-1. Independent control: an entirely separate control processor actively monitors and manipulates state to ensure stability
-![independent control loop](files/A-theory-of-consciousness-v2-independent-control.png)
-
-2. Integrated control: control is performed by a relatively simple feedback loop that is actioned on by the main processor.
-![integrated control loop](files/A-theory-of-consciousness-v2-integrated-control.png)
-
-What information does that control mechanism need? And what level of computational complexity? The identification of infinite loops alone can be quite complex, as a sequence of states of arbitrary length may form an infinite loop.
-
-The control mechanism It doesn't need tight integration of problem and feedback data, but it helps. It does need a sufficient level of intelligence applied to that feedback, and if there's no general intelligence, then it basically has to be hard coded.
-
-So there's basically two options for achieving that level of feedback understanding:
-
-1. Hard coded feedback processing and attention control. Limited data integration. Doesn't require general intelligence. Very unhuman-like.
-2. Fully integrated General intelligence with learning. Human-like.
-
-In the human case, we are probably born with some basic building blocks of attention control - that do only the most basic of attenuation of repeated signals to avoid tight infinite loops. And then we learn to override those and apply higher reasoning.
-
-This theory also suggests there is a minimum level of intelligence required for consciousness, because otherwise it cannot control thought well enough.
-
-tbd.
-* Possibility of alien kinds of minds. Eg: two separate cycles. 
-* We have phenomenal experience of our senses equally as we experience our own thoughts. Thus, evolution has selected a self controlled processor. 
-
 ## Senses
+We have phenomenal experience of our senses equally as we experience our own thoughts. Thus, evolution has selected a self controlled processor. 
+
 Observation of senses
 * conscious feedback loop received as a sense
 * in contrast, working memory is not
