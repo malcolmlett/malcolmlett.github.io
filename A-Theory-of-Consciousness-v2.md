@@ -100,7 +100,6 @@ High-level thought involves multiple steps and intermediate states. Working memo
 It's possible that the evolution of working memory was the catalyst for the evolution of a state-machine processing loop, which further formed the basis of the high-level thinking that we enjoy today.
 
 ## Evolutionary reason for awareness of thoughts
-### The need for a control mechanism
 If you were to build a state machine yourself, you would not want to do it with neural networks. State machines operate on the principle of a loop that repeats itself over and over but with different state and with different operations. They require stability and predictability. Neural networks are noisy, chaotic, and take a long time to train. A state machine using neural networks for processing is highly unstable and tends to get stuck in infinite loops.
 
 A common engineering solution to stability problems is a control mechanism that uses feedback. The control mechanism uses a feedback measurement of the output of the system that it compares against some ideal signal, and uses that to adjust the system's behaviour. 
@@ -126,18 +125,6 @@ In the human case, we are probably born with some basic building blocks of the c
 This theory also suggests that there is a minimum level of intelligence required for consciousness, because otherwise it cannot control thought well enough.
 
 See more: [[The Error Prone Brain]]
-
-## Senses
-We have phenomenal experience of our senses equally as we experience our own thoughts. Thus, evolution has selected a self controlled processor. 
-
-Observation of senses
-* conscious feedback loop received as a sense
-* in contrast, working memory is not
-
-But it's the subsequent processing of those data sources that determines what is experienced as a 'sense', because it is the processing and subsequent conclusionary output that states what is a sense and what is not. An open question is how lossy the processing step is. For example, could it be that working memory is also supplied as a sense in the same way that the external senses and the state model are fed in, but that the processing step never concludes anything directly about working memory - giving us the conclusion that it isn't received as a sense.
-
-### Sense labeling
-* needed in order for control mechanism to know which senses to use. Senses need to be labelled in some way, either through explicit addition of labels, location of source neurons, or some other means.
 
 ## Consciousness and the Visceral Loop
 tbd. Move section on 'meta-problem of consciousness' into here.
@@ -171,6 +158,18 @@ More specifically, the scope of what we can conclude about our own consciousness
 
 A more detailed analysis of the boundaries of what can be concluded through this mechanism is discussed below.
  
+## Sense labeling
+Observation of senses
+* conscious feedback loop received as a sense
+* in contrast, working memory is not
+
+But it's the subsequent processing of those data sources that determines what is experienced as a 'sense', because it is the processing and subsequent conclusionary output that states what is a sense and what is not. An open question is how lossy the processing step is. For example, could it be that working memory is also supplied as a sense in the same way that the external senses and the state model are fed in, but that the processing step never concludes anything directly about working memory - giving us the conclusion that it isn't received as a sense.
+
+Sense labeling:
+* needed in order for control mechanism to know which senses to use. Senses need to be labelled in some way, either through explicit addition of labels, location of source neurons, or some other means.
+* based on mental-model-of-mind
+* could be via explicit labeling, or just by the mental-model-of-mind being used to 'guess' to the source of a sense based on its characteristics
+
 ## Learning
 * Why I don't talk about it much. 
 * Evolution and pre-wired control.
