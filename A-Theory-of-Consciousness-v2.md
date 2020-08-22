@@ -78,7 +78,27 @@ tbd...
 ![logic and control loops](files/high-level-data-cycles-v1.png)
 
 ## Virtual View
+The virtual view focuses on the scope of conscious experience, as defined by the content of the state model. By examining the virtual view we can highlight what can and cannot be observed by a conscious system.
+
 ![virtual view diagram](files/A-theory-of-consciousness-v2-model-layer.png)
+
+### Visceral Loop
+Characterised as:
+* iteration 1
+* iteration 2
+* iteration 3
+
+### Variations of experience
+Different kinds of conscious systems will have the greatest variance from one kind to another within the virtual view. The particular data that is represented within the state model depends entirely on the specific needs of the system.
+
+Mammals have a fairly standard set of 5 external senses (sight, smell, sound, taste, touch), all of which are represented within the state model; however, an artificial consciousness built to monitor internet activity may employ all of the same architectures described within the logical view, but the set of senses that are represented within the state model will be entirely different.
+
+For a dog, the state model will contain much the same kinds of things as a human. It will have representations of the same 5 senses. It will employ a conscious feedback loop for a control mechanism and thus have awareness of its own thought, experienced in the same way as its 5 external senses. However, it's level of intelligence and computational needs are significantly less than that of a human, and thus its ability to process its conscious feedback in the context of its own consciousness will be significantly limited. Furthermore, with less need for computational processing, there is less need for detailed data representation within that domain. Thus, while a dog will have some form of awareness of its own thoughts, the quality of that awareness will be less defined than in a human. Significantly, a dog likely reaches iteration 2 of the visceral loop, but it is quite possible that it does not reach iteration 3.
+
+tbd.
+* virtual view focuses on the scope of conscious experience, highlights what we can observe, and what we cannot
+* pre-processed senses with attached labeling and meaning
+* list of 'internal senses': taste, touch, smell, sight, sound, conscious feedback, memory, processing output
 
 # Rationale
 This section provides an account of why I believe the theory presented here is a good explanation of our experienced phenomena. The discussion is necessarily shallow in order to avoid this full article becoming too large. Links to further discussions are provided.
