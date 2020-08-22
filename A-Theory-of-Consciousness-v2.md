@@ -77,16 +77,20 @@ tbd...
 
 ![logic and control loops](files/high-level-data-cycles-v1.png)
 
-### State Model and Schematic Models
+### Schematic Models
 tbd.
-* State model - passive data representation
-* Mental model of body - schematic and generative model
-* Mental model of mind - schematic and generative model
+Schematic and generative models:
+* Mental model of body
+* Mental model of mind
 
 ## Virtual View
 The virtual view focuses on the scope of conscious experience, as defined by the content of the state model. By examining the virtual view we can highlight what can and cannot be observed by a conscious system.
 
 ![virtual view diagram](files/A-theory-of-consciousness-v2-model-layer.png)
+
+### State Model
+tbd.
+* State model - passive data representation
 
 ### Content of State Model
 Some examples from my own observations of what data sources can be represented within the state model:
