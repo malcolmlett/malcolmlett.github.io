@@ -86,11 +86,15 @@ This section provides an account of why I believe the theory presented here is a
 If the theory is correct, then there is very little of our internal brain structure that we can observe directly. Thus there should be little that we can deduce about it. However, it turns out the model that I purport we operate on is much like the sort of 'abstraction layer' that is often used in software engineering; and it is well known within the software development field that every abstraction leaks internal details. So in practice we can deduce a lot through observations of the particular computational behaviours and edge cases that we experience, combined with the understanding from modern neuroscience.
 
 ## The need for working memory
+tbd. diagram.
+
 Brain neurons exist in physical space and thus are subject to a simple physical law: they cannot be moved around easily. When a regions of neurons have developed a structure and learned firing pattern that produces useful computational capability, that computational capability might be useful for processing of data retrieved from arbitrary sources. Those sources might include long term memory. As memory becomes larger, it becomes inefficient to provide direct access from the computational region to the whole of memory - the data transfer channel could become physically very wide. Furthermore, as the brain evolves greater computational dexterity, it ends up with multiple regions with specialised capabilities. Direct access between those 'processors' and memory would now require multiple wide data transfer channels.
 
 From a physical space perspective, a far more efficient solution is to have a central area where data-to-be-processed is temporarily stored, and for the processing regions to access data in that temporary storage, rather than directly access full memory. Essentially, it is necessary to bring the data to the processor because the processor is large and unmovable.
 
 ## High-level thought as a state machine
+tbd. diagram.
+
 As we are discovering through the development of artificial neural networks, a simple non-cyclic network of neurons can be very effective for pattern matching and prediction. However it isn't suitable for high-level thought because of a number of limitations:
 * it's only capable of producing results from a single pass of the network
 * it's hard to combine results from multiple arbitrarily selected processing regions
@@ -187,8 +191,11 @@ So, rather than investigate in detail, I shall simply state that I assume that t
 
 # Analysis
 
-## Explanation of Phenomena - Meta-problem of Consciousness
-The remaining two sections of this chapter pick two particular phenomena of conscious experience and show how they are explained by the theory presented here.
+This chapter picks two particular phenomena of conscious experience and show how they are explained by the theory presented here.
+
+tbd. link to a separate article that does a detailed review of properties of conscious experience and how well this theory fits.
+
+tbd. what other phenomena should I analyse?
 
 ## Explanation of Phenomena - Boundaries of Conscious Experience
 The theory presents a possible explanation for why certain things produce phenomenological experience and others not; specifically, that the content of the model defines the content of conscious experience.
@@ -197,12 +204,6 @@ todo: offer some rationale for assuming that the scope of conscious experience i
 ...
 
 [WITHIN FIRST OR SECOND PHENOMENA SECTION?] It seems quite clear that there are portions of data processing within our brain that we are conscious of, other data states and processing that we are not aware of. Why, do we experience a particular subset of data processing as consciousness? It turns out that the boundary and content of what we can conclude as consciousness is dictated by what is representable within the model, and what processing can be performed against that model. 
-
-# Why is this useful
-
-* We can build it
-* Basis of AGI
-* Now that we understand it enough, we can modify it. Eg: learning algorithms don't have to be done exactly the same way. Reinforcement doesn't had to be fine exactly the same way. 
 
 # Open Questions
 Like any theory being developed, there are a number of questions remaining. At the most basic level, there are questions around how the logical view maps into the physical view, and about how much pre- and post-processing of signals occurs outside of the high-level processing schematic presented in the logical view here. As our understanding of neuroscience improves, we will be able to narrow down the range of possible explanations.
@@ -220,6 +221,10 @@ I will state briefly some general ideas on how learning fits together, but obvio
 
 Along with new understanding coming from neuroscience, I suspect big gains will come from trying to build an artificial consciousness from the ground up. My entire control-mechanism basis of consciousness came from trying to build a high level emulation of the state machine components and finding how susceptible it was to infinite loops.
 
+## Pre-processing of Inputs
+* labelling
+* meaning attachment (eg: depth perception and object recognition in vision)
+
 ## Lossiness in Visceral Loop
 We appear to perceive certain external and internal senses and data sources, while not perceiving others. For example, we don't have direct access to arbitrary long term memories, and it seems quite reasonable to assume that access to long term memory requires some sort of background lookup. But our ability to infer the inputs to the main high-level processor are limited by what it can output. That limitation alone could be the explanation for what we perceive in our phenomenal experience vs what we don't. Alternatively, we may be able to perceive all of the inputs to the processor, and that's that set of inputs that we subsequently call 'senses'. Or, it could even be somewhere in between. In brief, the question is about how 'lossy' the transformation is from input to output.
 
@@ -235,13 +240,16 @@ The observed distinction can be summarised as:
 * state model - appears as a single continuous stream that is smoothly updated from cycle to cycle
 * working memory - appears as a data store with multiple entries, only one of which can be accessed at a time.
 
-However, the real delineation between the state model and working memory is not clear, or if there even is a delineation at all. At one extreme, they may be independent components that pass through two independent channels that belong to the two overlayed loops: the main computational processing loop and the control loop. At the other extreme, there may be only one such channel and the state model and working memory are one in the same thing.
+However, the real delineation between the state model and working memory is not clear, or if there even is a delineation at all. At one extreme, they may be independent components that pass through two independent channels that belong to the two overlaid loops: the main computational processing loop and the control loop. At the other extreme, there may be only one such channel and the state model and working memory are one in the same thing.
 
 tbd. diagram
 
-An important consideration here is the above question of the lossyness of the processing step. For example, if the processing step is lossy, then it is entirely possible that there is only a working memory, that the processing step only even passes one entry from the working memory at a time, that the output is stored back into the working memory, and that the perception of a state model is a result of the fact that only one working memory entry is selected at a time.
+An important consideration here is the above question of the lossiness of the processing step. For example, if the processing step is lossy, then it is entirely possible that there is only a working memory, that the processing step only even passes one entry from the working memory at a time, that the output is stored back into the working memory, and that the perception of a state model is a result of the fact that only one working memory entry is selected at a time.
 
-## Biological basis for Phenomenal Exprience
+## Output from processing: state model vs actions
+What exactly is the output from the processing? Is that output the state model or does something else post-process in order to produce the state model, for example, as a 'summary' of the raw output. How does that output feed into action control?
+
+## Biological basis for Phenomenal Experience
 * Doesn't explain phenomenal experience 
 * Doesn't entirely explain why we don't experience other cyclic regions within in the brain 
 
