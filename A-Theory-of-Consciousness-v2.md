@@ -23,9 +23,9 @@ tbd. Introduce what I define as consciousness:
 * Contenders: awareness of thought, emotions, empathy, experience of senses, high-level processing
 * Human vs general definition of consciousness
 
-_Unified Theory_ presents a shallow overview of the whole of the theory. _Analysis_ presents a rationale for the theory, and examines some of its consequences......
+_Theory Overview_ presents a shallow overview of the whole of the theory. _Rationale_ presents a rationale for the theory, and examines some of its consequences......
 
-# Unified Theory
+# Theory Overview
 ## Views
 The mechanisms that lead to human consciousness are best explained by examining them in the context of three different views.
 
