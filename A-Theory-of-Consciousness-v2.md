@@ -77,18 +77,37 @@ tbd...
 
 ![logic and control loops](files/high-level-data-cycles-v1.png)
 
+### State Model and Schematic Models
+tbd.
+* State model - passive data representation
+* Mental model of body - schematic and generative model
+* Mental model of mind - schematic and generative model
+
 ## Virtual View
 The virtual view focuses on the scope of conscious experience, as defined by the content of the state model. By examining the virtual view we can highlight what can and cannot be observed by a conscious system.
 
 ![virtual view diagram](files/A-theory-of-consciousness-v2-model-layer.png)
 
+### Content of State Model
+Some examples from my own observations of what data sources can be represented within the state model:
+* working memory: we seem to be only able to think about one 'thing' at a time, which I interpret as being one item from working memory is selected into the state model at a time
+* senses: we can simultaneously observe multiples senses, eg: when watching and listening as a car drives past
+* mental models of body: we can be aware of specific aspects of our mental map of the body, eg: we can close our eyes and 'feel' where our limbs are. And our touch sense is tightly integrated with our mental map of body to identify where the touche sense occurred from. But I don't think we have direct access to all of the mental model of the body at once.
+* mental model of mind: like the mental model of body, we are aware of specific aspects of our mind's mental model of itself. eg: a judgement about one's general ability in mathematics. But, like the mental model of body, I don't think we have direct access to all of this model at once.
+* long term memory: we can draw up recent and long past memories, but we certainly do not have access to all of those directly. There appears to be some sort of fetching mechanism
+* conscious feedback: output from processing in prior cycle
+
+The 5 external senses in particular are interesting, as it is well known that we do not observe them in their raw form. Vision, for example, is produced by the eyes with varying levels of focus and detail across the visual field, and yet it's very hard for us to directly observe that because the sense has been pre-processed to construct a single coherent virtual visual field. Furthermore, we experience senses pre-attached with 'meaning': rather than seeing a series of lines and dots, I see a window, a door, a ball; rather than hearing a bunch of strange sounds, I hear specific spoken words. Lastly, I think senses are also 'labelled' as to their source: we have a strong perception of whether a sense came to us externally, or from us internally. Very interesting results occur when that labeling is disrupted, such as when people 'hear voices'.
+
 ### Visceral Loop
+tbd.
 Characterised as:
 * iteration 1
 * iteration 2
 * iteration 3
 
 ### Higher-order thought
+tbd.
 There are two possibilities...
 
 Possibility #1:
@@ -110,12 +129,9 @@ Mammals have a fairly standard set of 5 external senses (sight, smell, sound, ta
 
 For a dog, the state model will contain much the same kinds of things as a human. It will have representations of the same 5 senses. It will employ a conscious feedback loop for a control mechanism and thus have awareness of its own thought, experienced in the same way as its 5 external senses. However, it's level of intelligence and computational needs are significantly less than that of a human, and thus its ability to process its conscious feedback in the context of its own consciousness will be significantly limited. Furthermore, with less need for computational processing, there is less need for detailed data representation within that domain. Thus, while a dog will have some form of awareness of its own thoughts, the quality of that awareness will be less defined than in a human. Significantly, a dog likely reaches iteration 2 of the visceral loop, but it is quite possible that it does not reach iteration 3.
 
-tbd.
-* virtual view focuses on the scope of conscious experience, highlights what we can observe, and what we cannot
-* pre-processed senses with attached labeling and meaning
-* list of 'internal senses': taste, touch, smell, sight, sound, conscious feedback, memory, processing output
 
 # Rationale
+
 This section provides an account of why I believe the theory presented here is a good explanation of our experienced phenomena. The discussion is necessarily shallow in order to avoid this full article becoming too large. Links to further discussions are provided.
 
 If the theory is correct, then there is very little of our internal brain structure that we can observe directly. Thus there should be little that we can deduce about it. However, it turns out the model that I purport we operate on is much like the sort of 'abstraction layer' that is often used in software engineering; and it is well known within the software development field that every abstraction leaks internal details. So in practice we can deduce a lot through observations of the particular computational behaviours and edge cases that we experience, combined with the understanding from modern neuroscience.
