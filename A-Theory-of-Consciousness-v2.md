@@ -88,6 +88,21 @@ Characterised as:
 * iteration 2
 * iteration 3
 
+### Higher-order thought
+There are two possibilities...
+
+Possibility #1:
+* Senses are pre-processed before becoming available as inputs to the processing system that produces the state model
+* All inputs can be represented without transformation in the state model
+* It the pre-processing that defines the range of possible data represented within the state model
+
+Possibility #2
+* Senses are supplied raw to processor
+* Iteration 1 of visceral loop applies apparent 'pre-processing' and thus limiting how much of the raw senses we can be aware of
+* It is the main processor that defines the range of possible data represented within the state model
+
+My hunch is that possibility #1 is the best fit, because the level of flexibility of processing available and the flexibility to 'choose' to not transform inputs. We can, for example, directly observe and think about individual lines and colours within our vision. Which would seem to be quite close to un-processed sense data.
+
 ### Variations of experience
 Different kinds of conscious systems will have the greatest variance from one kind to another within the virtual view. The particular data that is represented within the state model depends entirely on the specific needs of the system.
 
