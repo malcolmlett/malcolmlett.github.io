@@ -42,6 +42,11 @@ Slowly science is beginning to understand the kind of processing performed by di
 
 All mammals have a neocortex, and birds have a similar structure called the dorsal ventricular ridge (DVR) that neuroscience suggests provides similar capability to the neocortex [SDOct2012].
 
+### Neuronal structure
+The neurons in mammalian brains and in artificial neural networks are completely different in the physical way in which they operate, but that difference is not significant for the experience of consciousness. This article uses them both interchangeably for examples when expressing ideas. 
+Further to that, any mechanism that supports sufficient flexibility of learning could suffice.
+
+### Physical location in space
 Main conclusion:
 * Physical computational machines have bulky data processing circuits, and bulky memory storage, and they need a small working area to hold the current set of data being worked on.
 
@@ -200,7 +205,9 @@ todo: offer some rationale for assuming that the scope of conscious experience i
 * Now that we understand it enough, we can modify it. Eg: learning algorithms don't have to be done exactly the same way. Reinforcement doesn't had to be fine exactly the same way. 
 
 # Open Questions
-Like any theory being developed, there are a number of questions remaining. At the most basic level, there are questions around how the logical view maps into the physical view, and about how much pre- and post-processing of signals occurs outside of the high-level processing schematic presented in the logical view here. The sections below discuss in detail a small selection of specific open questions.
+Like any theory being developed, there are a number of questions remaining. At the most basic level, there are questions around how the logical view maps into the physical view, and about how much pre- and post-processing of signals occurs outside of the high-level processing schematic presented in the logical view here. As our understanding of neuroscience improves, we will be able to narrow down the range of possible explanations.
+
+The sections below discuss in detail a selection of specific open questions.
 
 ## Learning
 The ability for a particular brain organisation to productively learn is significant factor governing how the brain evolved the mechanisms it has. Unfortunately the theory presented here will not be complete without a detailed consideration of how each component could learn its required behaviours.
@@ -268,6 +275,7 @@ But, if I am to hazard a guess, I would argue in the case of the former, as per 
 
 # Further research 
 * Build it - see: [[Conscious Calculator v2]]
+* Further study of neuroscience works in order to refine the architecture of the logical view.
 * Cause of phenomenological experiences
 
 # References
