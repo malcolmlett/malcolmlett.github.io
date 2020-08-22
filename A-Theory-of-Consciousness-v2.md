@@ -16,6 +16,9 @@ The theories here have been developed by considering our current understanding o
 
 The theory presented here attempts to show how the vast majority of phenomena have a plausible physical explanation. In so doing, the theory provides a framework to reproduce that vast majority of phenomena. The remaining unexplained phenomena is investigated later, where it is explained that only the question of phenomenal experience remains. It is shown how little of that phenomenon is left for explanation. Furthermore, it is shown that, while it remains an important question particularly from the point of view of ethics, we now know enough that the one remaining answer makes no difference to our ability to start building it. 
 
+I should point out that this is a working hypothesis. Some of the premises here may not be universally agreed and need further corroboration, and in general more work is needed to investigate and confirm the hypotheses. 
+The motivation for presenting this work is to present a sufficiently plausible explanation of conscious experience that shows that conscious experience can be explained through mechanistic physical processes without the need for meta-physical explanations. In doing so, I further hope that the theory presented is at least close to reality and that it acts as a useful basis for further research.
+
 tbd. Introduce what I define as consciousness:
 * Contenders: awareness of thought, emotions, empathy, experience of senses, high-level processing
 * Human vs general definition of consciousness
@@ -74,8 +77,6 @@ tbd...
 
 # Rationale
 This section provides an account of why I believe the theory presented here is a good explanation of our experienced phenomena. The discussion is necessarily shallow in order to avoid this full article becoming too large. Links to further discussions are provided.
-
-I should first point out that this is a working hypothesis. Some of the premises here may not be universally agreed and need further corroboration. 
 
 If the theory is correct, then there is very little of our internal brain structure that we can observe directly. Thus there should be little that we can deduce about it. However, it turns out the model that I purport we operate on is much like the sort of 'abstraction layer' that is often used in software engineering; and it is well known within the software development field that every abstraction leaks internal details. So in practice we can deduce a lot through observations of the particular computational behaviours and edge cases that we experience, combined with the understanding from modern neuroscience.
 
