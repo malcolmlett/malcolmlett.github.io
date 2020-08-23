@@ -129,7 +129,7 @@ The characterisation is as follows:
 
 * **Iteration 2 thought**: Meta-thought - Thought that depends on having an awareness of one's own thoughts, but doesn't explicitly take note of the fact that we are observing our thoughts. This is the control mechanism that is so important for maintaining stable thought. For example, when making judgement calls about whether a particular thought process is proving productive, or realising that we made a mistake. It is also the reason why we can take an active role in teaching ourselves new skills.
 
-* **Iteration 3 thought*: "Meta-meta-thought or Meta-awareness - Thoughts about the fact that one is aware of their own thoughts. For example, Descartes' famous "I think therefore I am" quote is the result of Iteration 3 thought. It is here that we compare our own awareness of thought to our socially constructed understanding of the term 'consciousness' and conclude that we, also, are conscious.
+* **Iteration 3 thought**: "Meta-meta-thought or Meta-awareness - Thoughts about the fact that one is aware of their own thoughts. For example, Descartes' famous "I think therefore I am" quote is the result of Iteration 3 thought. It is here that we compare our own awareness of thought to our socially constructed understanding of the term 'consciousness' and conclude that we, also, are conscious.
 
 It is interesting to note that the majority of high-level thought is done in Iteration 1 alone, that Iteration 2 thought is used exponentially less frequently, and that Iteration 3 thought is used exponentially less frequently again.
 
@@ -143,9 +143,9 @@ Iteration 2 thought requires the labeling of input data in relation to the mind 
 Iteration 3 thought takes that to the next level. That relationship itself becomes the input data that is further processed in relation to the mind schema.
 
 More formerly, the sequence of the 3 visceral loop iterations to conclude oneself as conscious can be represented as follows:
-* Iteration 1: f(inputs) -> x: some result of simple thought
-* Iteration 2: f(x) -> expr(x, mind-schema)
-* Iteration 3: f(expr(x, mind-schema)) -> expr(mind-schema, mind-schema)   
+* Iteration 1: `f(inputs) -> x`: some result of simple thought
+* Iteration 2: `f(x) -> expr(x, mind-schema)`
+* Iteration 3: `f(expr(x, mind-schema)) -> expr(mind-schema, mind-schema)`
 
 ### Higher-order thought
 tbd.
@@ -385,13 +385,13 @@ But, if I am to hazard a guess, I would argue in the case of the former, as per 
 
 [Graziano2017] Michael S. A. Graziano, Department of Psychology and Neuroscience, Princeton University, US. "The Attention Schema Theory: A Foundation for Engineering Artificial Consciousness". Front. Robot. AI, 14 November 2017. https://doi.org/10.3389/frobt.2017.00060.
 
-[Halligan2000] Halligan, P. W., and Oakley, D. A. (2000). Greatest myth of all. New Scientist #168 (pp 34�39). https://www.newscientist.com/article/mg16822653-700-greatest-myth-of-all.
+[Halligan2000] Halligan, P. W., and Oakley, D. A. (2000). Greatest myth of all. New Scientist #168 (pp 3439). https://www.newscientist.com/article/mg16822653-700-greatest-myth-of-all.
 
 [Halligan2017] Peter W. Halligan, and David A. Oakley. 2017. "Chasing the Rainbow: The Non-conscious Nature of Being". Frontiers in Science. https://doi.org/10.3389/fpsyg.2017.01924
 
 [Rosenthal2005] Rosenthal, D. "Consciousness and Mind." New York: Oxford University Press. 2005.
 
-[Rosenthal2011] Lau, H. and Rosenthal, D. "Empirical support for higher-order theories of consciousness." Trends in Cognitive Sciences 15: 365–373. 2011.
+[Rosenthal2011] Lau, H. and Rosenthal, D. "Empirical support for higher-order theories of consciousness." Trends in Cognitive Sciences 15: 365â373. 2011.
 
 [SDOct2012] University of Chicago Medical Center. "Homolog of mammalian neocortex found in bird brain." ScienceDaily, 1 October 2012. www.sciencedaily.com/releases/2012/10/121001151953.htm.
 
