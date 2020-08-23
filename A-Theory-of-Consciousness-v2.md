@@ -10,14 +10,17 @@ There are many theories out there, all focusing on different aspects and coming 
 * AST: introduces how important the model is.
 ** the work here can be seen as building on AST, although I reached many of the same conclusions independently.
 * Higher-order Thought Theory [Rosenthal2011][Rosenthal2005][Gennaro 1996][Gennaro2012] suggests that the brain uses high-level abstract representations of objects within conscious thought
-* Chalmers: explains how the problem is split into a mechanical/computational problem that is comparatively easy, while the Hard problem remains a philosophical question because we don't have any possible physical explanation. Consequently many metaphysical explanations have been suggested. 
+* Chalmers: explains how the problem is split into a mechanical/computational problem that is comparatively easy, while the Hard problem remains a philosophical question because we don't have any possible physical explanation. Consequently many metaphysical explanations have been suggested.
+
+Many existing theories avoid the actual questions of how and why we have phenomenal experience. This theory is different. My goal is to answer the most difficult question, and the theory here is the closest that I have got to that goal so far.
+
+My theory can be seen as an application and extension of AST and Higher-order Thought Theory. My theory can also be seen as a sufficient explanation of the underlying mechanisms that explains why many neuroscience researchers believe that consciousness is just an entirely passive after-the-fact summation of events [Halligan2017].
 
 The theories here have been developed by considering our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through introspection. While the theory uses the human mind as the primary example, it is focused on the theoretical fundamental architectures of consciousness irrespective of whether that is in the form of a human biological consciousness, or some other alien mechanical consciousness.
 
-The theory presented here attempts to show how the vast majority of phenomena have a plausible physical explanation. In so doing, the theory provides a framework to reproduce that vast majority of phenomena. The remaining unexplained phenomena is investigated later, where it is explained that only the question of phenomenal experience remains. It is shown how little of that phenomenon is left for explanation. Furthermore, it is shown that, while it remains an important question particularly from the point of view of ethics, we now know enough that the one remaining answer makes no difference to our ability to start building it. 
+The theory presented here attempts to show how the vast majority of phenomena have a plausible physical explanation. In so doing, the theory provides a framework to reproduce that vast majority of phenomena. The remaining unexplained phenomena is investigated later, where it is explained that the aspects of phenomenal experience still remain. It is shown however that only a small portion of that phenomenon is left in need of explanation. Furthermore, it is shown that, while it remains an important question particularly from the point of view of ethics, we now know enough that the one remaining answer makes no difference to our ability to start building it. 
 
-I should point out that this is a working hypothesis. Some of the premises here may not be universally agreed and need further corroboration, and in general more work is needed to investigate and confirm the hypotheses. 
-The motivation for presenting this work is to present a sufficiently plausible explanation of conscious experience that shows that conscious experience can be explained through mechanistic physical processes without the need for meta-physical explanations. In doing so, I further hope that the theory presented is at least close to reality and that it acts as a useful basis for further research.
+I should point out that this is a working hypothesis. Some of the premises here may not be universally agreed and need further corroboration, and in general more work is needed to investigate and confirm the hypotheses. The motivation for presenting this work is to present a sufficiently plausible explanation of conscious experience that shows that conscious experience can be explained through mechanistic physical processes without the need for meta-physical explanations. In doing so, I further hope that the theory presented is at least close to reality and that it acts as a useful basis for further research.
 
 tbd. Introduce what I define as consciousness:
 * Contenders: awareness of thought, emotions, empathy, experience of senses, high-level processing
@@ -71,6 +74,18 @@ This is the state data store of our state machine. The presence or absence of ce
 The most simple state machine may be able to operate with only a single data item, and the larger the working memory the more efficient computation can be in theory. In practice, there are trade-offs affecting the size of working memory. If too small, then it is not sufficient to hold all data needed for a particular thought process - more logic processing actions are required for low-level swap-in/swap-out of data from long term storage. If too large, then the data transmission channels between working memory and logic processing become too wide.
 
 The state representation within working memory is likely fairly high-level. It is likely at the level of what we observe within our consciousness.
+
+### Processing
+tbd. most of this section belongs in some other kind of article. But I do need to be clear about kinds of processing are happening here....or may not. Maybe just leave that as a given...but move this to a separate article.
+
+It appears to us that we are consciously involved in each and every step of our decision making. However, neuroscience is gradually finding that it is more accurate to say that processing is performed by non-conscious systems, and that we become aware of it in our consciousness after the fact [Halligan2000]. Some researchers take that even further to suggest that consciousness is entirely passive [Halligan2017].
+
+I think the statements are all too intertwined with the particular author's views on what the popularist definition of consciousness is.
+
+I see 'consciousness' more as a description of the whole system, and conscious awareness as being governed by what does and doesn't get represented within the state model. 
+
+more. tbd.
+
 
 ### Control Mechanism
 tbd...
@@ -348,9 +363,15 @@ But, if I am to hazard a guess, I would argue in the case of the former, as per 
 
 [Graziano2017] Michael S. A. Graziano, Department of Psychology and Neuroscience, Princeton University, US. "The Attention Schema Theory: A Foundation for Engineering Artificial Consciousness". Front. Robot. AI, 14 November 2017. https://doi.org/10.3389/frobt.2017.00060.
 
+[Halligan2000] Halligan, P. W., and Oakley, D. A. (2000). Greatest myth of all. New Scientist #168 (pp 34–39). https://www.newscientist.com/article/mg16822653-700-greatest-myth-of-all.
+
+[Halligan2017] Peter W. Halligan, and David A. Oakley. 2017. "Chasing the Rainbow: The Non-conscious Nature of Being". Frontiers in Science. https://doi.org/10.3389/fpsyg.2017.01924
+
 [Rosenthal2005] Rosenthal, D. "Consciousness and Mind." New York: Oxford University Press. 2005.
 
 [Rosenthal2011] Lau, H. and Rosenthal, D. "Empirical support for higher-order theories of consciousness." Trends in Cognitive Sciences 15: 365â€“373. 2011.
 
 [SDOct2012] University of Chicago Medical Center. "Homolog of mammalian neocortex found in bird brain." ScienceDaily, 1 October 2012. www.sciencedaily.com/releases/2012/10/121001151953.htm.
+
+Wegner, D. M. (2002). The Illusion of Conscious Will. Cambridge, MA: MIT Press.
 
