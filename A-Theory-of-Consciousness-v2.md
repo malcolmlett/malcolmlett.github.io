@@ -88,9 +88,9 @@ The existence of the feedback path is the explanation for why we have awareness 
 ### Schematic Models
 Before moving onto conscious experience itself, we need to highlight two important 'internal senses'. 
 
-*Body Schema*: It is well understood that the brain maintains a mental map of the body. This is used, for example, to track the motion of limbs so that we can know where a limb is without seeing it. It is also used to track the capabilities of those limbs; for example to track when a leg is damaged and thus must not be walked on with full body weight. The body schema is also used in a _generative_ way: to plan future actions and to control muscle signals in order to achieve a desired outcome.
+**Body Schema**: It is well understood that the brain maintains a mental map of the body. This is used, for example, to track the motion of limbs so that we can know where a limb is without seeing it. It is also used to track the capabilities of those limbs; for example to track when a leg is damaged and thus must not be walked on with full body weight. The body schema is also used in a _generative_ way: to plan future actions and to control muscle signals in order to achieve a desired outcome.
 
-*Mind Schema*: Like some other researches (eg: [Graziano2017]), I believe our brains also maintain a mental map of our mind. It tracks the observed capabilities of our mind. It will be used in a _generative_ way: to guess at the best way to solve a problem; to monitor the thought path taken and to continually assess the likelihood that it will produce a useful outcome.
+**Mind Schema**: Like some other researches (eg: [Graziano2017]), I believe our brains also maintain a mental map of our mind. It tracks the observed capabilities of our mind. It will be used in a _generative_ way: to guess at the best way to solve a problem; to monitor the thought path taken and to continually assess the likelihood that it will produce a useful outcome.
 
 I believe that the body schema and mind schema are independent brain components that are fed as some form of input to the main processor of the state machine described above. Curiously, the information from these schema available to our conscious awareness 
 appears to have significantly less resolution than that of many other senses, eg: the five external senses and conscious feedback itself. One possibility is that we don't directly receive the schema as input, but rather they are used in a pre-processing step that attaches meaning to the sense inputs. For example, when listening to someone talk in a language you are familiar with, it is almost impossible to separate the sounds from the interpreted words. And when looking at a house, by the time you perceive it consciously the image in front of you is already interpreted as being a house with a door etc.
@@ -102,22 +102,20 @@ I think a particularly strong argument for the existence of these schemas as ind
 
 The virtual view focuses on the scope of conscious experience, where the state in the state machine becomes the central focus. By examining the virtual view we can highlight what can and cannot be observed by a conscious system.
 
-![virtual view diagram](files/A-theory-of-consciousness-v2-model-layer.png)
-
 ### State Model
 One key component of a state machine is its state. The 'state model' is the passive data representation that is simultaneously the output of the main processor, and the input to its next cycle.
 
-tbd. diagram
+![virtual view diagram](files/A-theory-of-consciousness-v2-model-layer.png)
 
 The state model represents anything that may be useful as a direct output (eg: for governing action), or as input for the next cycle (eg: an intermediate result within a sequence of thought). The state model has tremendous flexibility in the kinds of data sources and results that can be represented within it, and in the resolution of those representations. At any given moment it may represent only one thing with high precision, or it may represent multiple things with low precision and information about the relationships between those things. 
 
 The range of data sources that can be directly represented within the state model is particularly enlightening. Some examples from my own observations are:
-* working memory: we seem to be only able to think about one 'thing' at a time, which I interpret as being where one item from working memory is selected into the state model at a time
-* senses: any of the five external senses can be focused on observed consciously. Additionally we can simultaneously observe multiples senses, eg: when watching and listening as a car drives past
-* body schema: we can be aware of specific aspects of our mental map of the body, eg: we can close our eyes and 'feel' where our limbs are. And our touch sense is tightly integrated with our mental map of body to identify where the touch sense occurred from. But I don't think we have direct access to all of the body schema at once.
-* mind schema: like the mental model of body, we are aware of specific aspects of our mind's mental model of itself. eg: a judgement about one's general ability in mathematics. But, like the body schema, I don't think we have direct access to all of this model at once.
-* long term memory: we can draw up recent and long past memories, but we certainly do not have access to all of those directly. There appears to be some sort of fetching mechanism involved.
-* conscious feedback: output from processing in prior cycle
+* **working memory**: we seem to be only able to think about one 'thing' at a time, which I interpret as being where one item from working memory is selected into the state model at a time
+* **senses**: any of the five external senses can be focused on observed consciously. Additionally we can simultaneously observe multiples senses, eg: when watching and listening as a car drives past
+* **body schema**: we can be aware of specific aspects of our mental map of the body, eg: we can close our eyes and 'feel' where our limbs are. And our touch sense is tightly integrated with our mental map of body to identify where the touch sense occurred from. But I don't think we have direct access to all of the body schema at once.
+* **mind schema**: like the mental model of body, we are aware of specific aspects of our mind's mental model of itself. eg: a judgement about one's general ability in mathematics. But, like the body schema, I don't think we have direct access to all of this model at once.
+* **long term memory**: we can draw up recent and long past memories, but we certainly do not have access to all of those directly. There appears to be some sort of fetching mechanism involved.
+* **conscious feedback**: output from processing in prior cycle
 
 The five external senses in particular are interesting, as it is well known that we do not observe them in their raw form. Vision, for example, is produced by the eyes with varying levels of focus and detail across the visual field, and yet it's very hard for us to directly observe that because the sense has been pre-processed to construct a single coherent virtual visual field. Furthermore, we experience senses pre-attached with 'meaning': rather than seeing a series of lines and dots, I see a window, a door, a ball; rather than hearing a bunch of strange sounds, I hear specific spoken words.
 
