@@ -122,11 +122,30 @@ The five external senses in particular are interesting, as it is well known that
 I also think senses are 'labelled' in some way as to their source. For example, we have a strong perception of whether a sense came to us externally, or from us internally. Very interesting results occur when that labeling is disrupted, such as when people 'hear voices'.
 
 ### Visceral Loop
-tbd.
-Characterised as:
-* iteration 1
-* iteration 2
-* iteration 3
+The 'Visceral Loop' is a characterisation of the kinds of thought or processing outcomes that pass through the state machine of high-level thought. It is also the culmination of the theory, for it explains why we conclude ourselves as conscious.
+
+The characterisation is as follows:
+* **Iteration 1 thought**: Thought - General high-level thought that use sense data as inputs or further processing of existing model state that does not explicitly draw relationships to the individual. For example, when making a decision whether or not to buy toothpaste, solving a maths problem, or planning how to make coffee for the first time. This covers the vast majority of thought, as we generally do not need to waste our time thinking about thought itself.
+
+* **Iteration 2 thought**: Meta-thought - Thought that depends on having an awareness of one's own thoughts, but doesn't explicitly take note of the fact that we are observing our thoughts. This is the control mechanism that is so important for maintaining stable thought. For example, when making judgement calls about whether a particular thought process is proving productive, or realising that we made a mistake. It is also the reason why we can take an active role in teaching ourselves new skills.
+
+* **Iteration 3 thought*: "Meta-meta-thought or Meta-awareness - Thoughts about the fact that one is aware of their own thoughts. For example, Descartes' famous "I think therefore I am" quote is the result of Iteration 3 thought. It is here that we compare our own awareness of thought to our socially constructed understanding of the term 'consciousness' and conclude that we, also, are conscious.
+
+It is interesting to note that the majority of high-level thought is done in Iteration 1 alone, that Iteration 2 thought is used exponentially less frequently, and that Iteration 3 thought is used exponentially less frequently again.
+
+An example application of the visceral loop to conclude oneself as conscious looks like this:
+1. "I am tired, therefore I want to sit down"
+2. "I am aware that I just had the desire to sit down, and I have the strong sense that it was I who decided that"
+3. "Because I make decisions, and I am aware of those decisions, I am conscious"  
+
+Iteration 2 thought requires the labeling of input data in relation to the mind schema. I can only say that "I" am aware of a thought because I have a concept of "I" vs "not I" (ie: the mind schema itself), and that the particular input is labeled as being sourced from "I" (ie: a relationship between I and the mind schema).
+
+Iteration 3 thought takes that to the next level. That relationship itself becomes the input data that is further processed in relation to the mind schema.
+
+More formerly, the sequence of the 3 visceral loop iterations to conclude oneself as conscious can be represented as follows:
+* Iteration 1: f(inputs) -> x: some result of simple thought
+* Iteration 2: f(x) -> expr(x, mind-schema)
+* Iteration 3: f(expr(x, mind-schema)) -> expr(mind-schema, mind-schema)   
 
 ### Higher-order thought
 tbd.
