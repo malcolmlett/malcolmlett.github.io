@@ -120,7 +120,7 @@ The range of data sources that can be directly represented within the state mode
 
 The five external senses in particular are interesting, as it is well known that we do not observe them in their raw form. Vision, for example, is produced by the eyes with varying levels of focus and detail across the visual field, and yet it's very hard for us to directly observe that because the sense has been pre-processed to construct a single coherent virtual visual field. Furthermore, we experience senses pre-attached with 'meaning': rather than seeing a series of lines and dots, I see a window, a door, a ball; rather than hearing a bunch of strange sounds, I hear specific spoken words.
 
-I also think senses are 'labelled' in some way as to their source. For example, we have a strong perception of whether a sense came to us externally or from us internally. Very interesting results occur when that labeling is disrupted, such as when people 'hear voices'. The labelling is clearly a reference back to the body and mind schemas.
+I also think senses are 'labelled' in some way as to their source. For example, we have a strong perception of whether a sense came to us externally or from us internally. Very interesting results occur when that labelling is disrupted, such as when people 'hear voices'. The labelling is clearly a reference back to the body and mind schemas.
 
 ### Visceral Loop
 The 'Visceral Loop' is a characterisation of the kinds of thought or processing outcomes that pass through the state machine described above, and how that thought leads to the individual having a _visceral_ awareness of their own thoughts. It is thus the culmination of the theory, for it explains how we come to conclude ourselves as conscious beings.
@@ -132,11 +132,11 @@ The visceral loop thus characterises each cycle of the state machine as falling 
 
 * **Iteration 2 thought**: Meta-thought - Thought that depends on having an awareness of one's own thoughts, but doesn't explicitly take note of the fact that we are observing our thoughts. This is the control mechanism that is so important for maintaining stable thought. For example, when making judgement calls about whether a particular thought process is proving productive, or realising that we made a mistake.
 
-* **Iteration 3 thought**: "Meta-meta-thought or Meta-awareness - Thoughts about the fact that one is aware of their own thoughts. For example, Descartes' famous "I think therefore I am" quote is the result of Iteration 3 thought. It is here that we compare our own awareness of thought to our socially constructed understanding of the term 'consciousness' and conclude that we, also, are conscious.
+* **Iteration 3 thought**: Meta-meta-thought or Meta-awareness - Thoughts about the fact that one is aware of their own thoughts. For example, Descartes' famous "I think therefore I am" quote is the result of Iteration 3 thought. It is here that we compare our own awareness of thought to our socially constructed understanding of the term 'consciousness' and conclude that we, also, are conscious.
 
 An example application of the visceral loop is seen in the following sequence of one's inner voice:
 1. "What's 3 + 5? Must be 7"
-2. "oh woops, I made that mistake last time. I remember it turned out to be 8"
+2. "Oh woops, I made that mistake last time. I remember it turned out to be 8"
 3. "I just had a thought about a past mistake. I can hear my own thoughts"
 
 Iteration 2 requires the labelling of input data in relation to the mind schema. I can only say that "I remember" because I have a concept of "I" vs "not I" (ie: the mind schema itself) and that the data is indicated as being sourced from that "I" (ie: a relationship between I and the mind schema).
@@ -144,13 +144,15 @@ Iteration 2 requires the labelling of input data in relation to the mind schema.
 Iteration 3 thought takes that to the next level. The relationship itself becomes the input data that is further processed in relation to the mind schema. With sufficient thought in this category, one can conclude themselves as conscious.
 
 More formally, the three iterations of the visceral loop can be represented as follows:
-* Iteration 1: `f(inputs) -> x`: some result of simple thought
-* Iteration 2: `f(x, schemas) -> relationship(x : mind-schema)`
-* Iteration 3: `f(relationship(x : mind-schema), schemas) -> relationship(mind-schema : mind-schema)`
+* Iteration 1: `f(inputs) -> x` - some result of simple thought
+* Iteration 2: `f(x, mind-schema) -> relationship(x : mind-schema)`
+* Iteration 3: `f(relationship(x : mind-schema), mind-schema) -> relationship(mind-schema : mind-schema)`
 
 ![virtual view diagram](files/A-theory-of-consciousness-v2-visceral-loop.png)
 
 It is interesting to note that the majority of high-level thought is done in Iteration 1 alone, that Iteration 2 thought occurs exponentially less frequently, and that Iteration 3 thought occurs exponentially less frequently again.
+
+See more: [[Visceral Loop]]
 
 
 # Rationale
@@ -224,52 +226,17 @@ More specifically, the scope of what we can conclude about our own consciousness
 
 A more detailed analysis of the boundaries of what can be concluded through this mechanism is discussed below.
 
-## Sense labeling
+## Sense labelling
 Observation of senses
 * conscious feedback loop received as a sense
 * in contrast, working memory is not
 
 But it's the subsequent processing of those data sources that determines what is experienced as a 'sense', because it is the processing and subsequent conclusionary output that states what is a sense and what is not. An open question is how lossy the processing step is. For example, could it be that working memory is also supplied as a sense in the same way that the external senses and the state model are fed in, but that the processing step never concludes anything directly about working memory - giving us the conclusion that it isn't received as a sense.
 
-Sense labeling:
+Sense labelling:
 * needed in order for control mechanism to know which senses to use. Senses need to be labelled in some way, either through explicit addition of labels, location of source neurons, or some other means.
 * based on mental-model-of-mind
-* could be via explicit labeling, or just by the mental-model-of-mind being used to 'guess' to the source of a sense based on its characteristics
-
-## Consciousness and the Visceral Loop
-Why do we conclude ourselves as conscious? We shall now examine the theory's ability to explain this.
-
-In order for an individual to conclude themselves as conscious, they need to follow a particular logic path. That path is presented here first in the form of an example of a person reflecting on their own thoughts, and then at a more low-level how those thoughts can be produced:
-
-Inner thought example:
-1. "I am tired, therefore I want to sit down"
-2. "I am aware that I just had the desire to sit down, and I have the strong sense that it was I who decided that"
-3. "Because I make decisions, and I am aware of those decisions, then I am conscious".
-
-Logical level example:
-1. .
-2. .
-3. .
-
-The is referred to as a 'Visceral Loop'.
-
-In essence, consciousness is a natural consequence of the visceral loop.
-
-## Memories
-I see memory as an extra source of data that further benefits high-level thought. Further to that, some form of memory is surely necessary for the evolution of high-level thought. However, my assumption for now is that it is not necessary to investigate in detail in order to understand consciousness.
-
-So, rather than investigate in detail, I shall simply state that I assume that there is roughly three kinds of memory and that these are independent from the 'State Model' discussed earlier.
-* Working Memory
-* Short Term Memory
-* Long Term Memory: known to be split into episodic and autobiographical.
-
-# Analysis
-
-This chapter picks two particular phenomena of conscious experience and show how they are explained by the theory presented here.
-
-tbd. link to a separate article that does a detailed review of properties of conscious experience and how well this theory fits.
-
-tbd. what other phenomena should I analyse?
+* could be via explicit labelling, or just by the mental-model-of-mind being used to 'guess' to the source of a sense based on its characteristics
 
 ## Explanation of Phenomena - Boundaries of Conscious Experience
 The theory presents a possible explanation for why certain things produce phenomenological experience and others not; specifically, that the content of the model defines the content of conscious experience.
@@ -279,7 +246,15 @@ todo: offer some rationale for assuming that the scope of conscious experience i
 
 [WITHIN FIRST OR SECOND PHENOMENA SECTION?] It seems quite clear that there are portions of data processing within our brain that we are conscious of, other data states and processing that we are not aware of. Why, do we experience a particular subset of data processing as consciousness? It turns out that the boundary and content of what we can conclude as consciousness is dictated by what is representable within the model, and what processing can be performed against that model. 
 
+
+## Memories
+I think some researchers have suggested that the perception of consciousness is an artefact of memory. Specifically, that our memory is used to construct a representation of recent thoughts. In doing so, the memory of independently produced thoughts become modelled as a continuous stream. This is assumed to operate in the same way that we perceive vision as a smooth visual field of uniform resolution whereas in reality we physically see only a tiny fraction of the scene in front of us at any point in time. The assumption is that the presence of this smoothed out memory of apparently continuous thoughts tricks us into thinking we are conscious.
+
+In contrast, I don't see that explanation as adding much to the whole solution. While it is probably true that our memory of past thoughts creates a simplified 'smoothed out' representation, it doesn't answer why we conclude ourselves as conscious from that data, and it isn't necessary to reach the conclusion of consciousness. So rather than being core to the explanation, I see it as just yet another example of the result of the visceral loop.
+
+
 # Open Questions
+
 Like any theory being developed, there are a number of questions remaining. At the most basic level, there are questions around how the logical view maps into the physical view, and about how much pre- and post-processing of signals occurs outside of the high-level processing schematic presented in the logical view here. As our understanding of neuroscience improves, we will be able to narrow down the range of possible explanations.
 
 Clearly, the theory needs more corroborating evidence in order for us to confirm whether it is indeed correct. Much of that will come from two particular sources: i) further understanding of neuroscience, and ii) learnings from attempting to build an artificial consciousness. 
