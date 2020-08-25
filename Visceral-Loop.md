@@ -43,17 +43,9 @@ Essentially, we are aware of our own thoughts, but more than that, we are aware 
 
 The above example represents the case where we conclude consciousness from observations of being able to form our own novel thoughts. Another example is of being able to experience our senses, where steps #3 and #4 are dropped.
 
-The three iterations above can be seen as just a sampling of steps within a long linear thought path. Indeed, a fourth iteration is required to move from "I am conscious of `t`" to "I am a conscious being". However, it is more useful to use the above three iterations as a basis for characterising kinds of thought:
-
-* Iteration 1: Thought - General high-level thought about sense inputs or further processing of existing model state. Such as when making a decision, solving a problem, or performing an action. This covers the vast majority of thought, as we generally do not need to waste our time thinking about thought itself.
-
-* Iteration 2: Meta-thought - Thought that depends on having an awareness of one's own thoughts. This is what enables us to actively monitor and control our thought. For example, when realising that we made a mistake. It is the reason why we can take an active role in teaching ourselves new skills.
-
-* Iteration 3: Meta-meta-thought or Meta-awareness - Thoughts about the fact that one is aware of their own thoughts. For example, Descartes' famous "I think therefore I am" quote is the result of Iteration 3 thought.
-
-It is interesting to note that the majority of high-level thought is done in Iteration 1 alone, and that Iteration 2 thought is a big evolutionary step forwards in the control mechanism of this state machine.
-
 # Closer examination of Visceral Loop Iterations
+The three iterations above can be seen as just a sampling of steps within a long linear thought path. Indeed, a fourth iteration is required to move from "I am conscious of `t`" to "I am a conscious being". However, it is more useful to use the above three iterations as a basis for characterising kinds of thought
+
 ## Iteration 1
 General thought.
 
