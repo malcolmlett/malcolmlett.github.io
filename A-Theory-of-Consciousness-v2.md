@@ -28,17 +28,20 @@ tbd. Introduce what I define as consciousness:
 
 _Theory Overview_ presents a shallow overview of the whole of the theory. _Rationale_ presents a rationale for the theory, and examines some of its consequences......
 
+
 # Theory Overview
-## Views
-The mechanisms that lead to human consciousness are best explained by examining them in the context of three different views.
+
+The mechanisms that lead to human consciousness are best explained by examining them in the context of three groups of overlayed views.
 
 ![basic state machine](files/A-theory-of-consciousness-v2-layers.png)
 
 The _physical_ view sees the human brain as a collection of neurons. While some regions have specific functionality that we understand, other regions serve many purposes. Many different kinds of behaviours are tightly integrated and overlapping making it very hard to identify the pathways that apply to conscious experience.
 
-The _logical_ view sees the brain as layers of simplified computational architectures, with specific focus on the high-level thought mechanism. The majority of discussions presented here are in the context of this view.
+The _logical_ view sees the brain as layers of simplified computational architectures, with specific focus on the high-level thought mechanism. 
 
 The _virtual_ view exists only as the data state that is produced, transferred, and examined by the _logical_ view. However, some important concepts and behaviours are best examined within the framework of the _virtual_ view.
+
+The majority of discussions presented here are in the context of the logical and virtual views.
 
 ## Physical View
 Slowly science is beginning to understand the kind of processing performed by different regions, however our understanding at this level is still very much at its infancy. This article will largely omit discussion about the biological view. However, as we shall see, there is one particularly significant point that needs to be made about the nature of any physical computational machine, such as the biological brain.
@@ -183,27 +186,27 @@ It's possible that the evolution of working memory was the catalyst for the evol
 ## Control mechanism as basis for awareness of thoughts
 If you were to build a state machine yourself, you would not want to do it with neural networks. State machines operate on the principle of a loop that repeats itself over and over but with different state and with different operations. They require stability and predictability. Neural networks are noisy, chaotic, and take a long time to train. A state machine using neural networks for processing is highly unstable and tends to get stuck in infinite loops.
 
-A common engineering solution to stability problems is a control mechanism that uses feedback. The control mechanism uses a feedback measurement of the output of the system that it compares against some ideal signal, and uses that to adjust the system's behaviour. 
+A common engineering solution to stability problems is the addition of a control mechanism. A common control mechanism uses a feedback measurement of the output of the system that it compares against some ideal signal, and uses that to adjust the system's behaviour. 
 
-Broadly, there are two styles of control mechanism that might be employed in such a system:
+Broadly, there are two styles of control mechanism that might be employed in a state machine system:
 
 1. Independent control: an entirely separate control processor actively monitors and manipulates state to ensure stability.
 2. Integrated control: control is performed by a relatively simple feedback loop that is actioned on by the main processor.
 
-Due to the complexity and variability of thought, an independent control mechanism would require significant domain knowledge about the kinds of thought that passes through the main processors. For example, if I am trying to solve '5 + x = 8' in my head by trying lots of different possible values of x, am I stuck in an infinite loop that the control mechanism needs to intervene in? The level of understanding required by an independent control processor suggests that the control mechanism cannot be separate, but is rather integrated into the main processor itself.
+Due to the complexity and variability of thought, an independent control mechanism would require significant domain knowledge about the kinds of thought that passes through the main processor. For example, if I am trying to solve '5 + x = 8' in my head by trying lots of different possible values of x, am I stuck in an infinite loop? The level of understanding required by an independent control processor suggests that the control mechanism cannot be separate, but is rather integrated into the main processor itself.
 
 Furthermore, we can examine the two options a little more concretely to see how it may 'feel' to have such a mechanism:
 
 1. Independent control: would have limited data integration with the rest of the brain. There would be no need for awareness of thought. Unlikely to be human-like in our experience of it.
-2. Integrated control: the computational and learning capabilities of the main processor would be fully leveraged to help stabilize thought. Human-like in our experience of it.
+2. Integrated control: the computational and learning capabilities of the main processor would be fully leveraged to help stabilize thought. Requires that the feedback measurement is supplied into the main processer as a first-class input, like other senses. Human-like in our experience of it.
 
-It seems reasonable to assume from the fact that we can observe our own thoughts, that we employ a control mechanism and that it follows the integrated control option discussed here.
+It thus seems reasonable to assume from the fact that we can observe our own thoughts, that we employ a control mechanism and that it follows the integrated control option discussed here.
 
 ![integrated control loop](files/A-theory-of-consciousness-v2-integrated-control.png)
 
-In the human case, we are probably born with some basic building blocks of the control mechanism that do only the most basic of attenuation of repeated signals to avoid tight infinite loops. This could for example be in the form of a basic attention control. Some form of evolutionary structured learning pressure would be applied so that over the longer term we learn to override those basic controls and apply higher reasoning.
+In the human case, we are probably born with some basic building blocks of a control mechanism. It would do only the most basic attenuation of repeated signals to avoid tight infinite loops. This could for example be in the form of a basic attention control. Some form of evolutionarily structured learning pressure would be applied so that over the longer term we learn to override those basic controls and apply higher reasoning.
 
-This theory also suggests that there is a minimum level of intelligence required for consciousness, because otherwise it cannot control thought well enough.
+This also suggests that there is a minimum level of intelligence required for a conscious system. Without that minimum level of intelligence it cannot control thought well enough. And without being able to control thought, it would not be evolutionarily adaptive to develop a state-machine style of higher-level processing.
 
 See more: [[The Error Prone Brain]]
 
