@@ -5,11 +5,14 @@ Consider the following mental conversation:
 2. "I am aware that I just had the desire to sit down, and I have the strong sense that it was I who decided that"
 3. "Because I make decisions, and I am aware of those decisions, I am conscious"
 
-Each step is carried out through the same brain mechanics. First, a signal is received as input to the high-order processing region of the brain, either as a novel sense input, or as state output from a prior cycle. Attention selection chooses that signal over other potential signals for processing. A result is produced from a single pass-through of the high-order processing neural network. That result is the output of that cycle of processing, which is recorded in working memory, and fed back as input to the next cycle.
+Each step is carried out through the same brain mechanics. First, a signal is received as input to the high-order processing region of the brain, either as a novel sense input, or as state output from a prior cycle. Attention selection chooses that signal over other potential signals for processing. A result is produced from a single pass-through of the high-order processing neural network. That result is the output of that cycle of processing, which is fed back as input to the next cycle.
 
 The following section formalises the above example as the three iterations of the visceral loop, and in doing so defines what is necessary in order to reach the conclusion of one's own consciousness.
 
-The claim of the visceral loop is that: i) any decision of one's own consciousness requires at least three cycles of the state machine, ii) the scope of what we can conclude as being conscious of is limited by what data can pass through these three cycles, and iii) that we gain a useful insight into our thought and consciousness itself through characterisation of thought into the three cycles, or iterations, of this loop.
+The claim of the visceral loop is that:
+* i) any decision of one's own consciousness requires at least three cycles of the state machine,
+* ii) the scope of what we can conclude as being conscious of is limited by what data can pass through these three cycles, and
+* iii) that we gain a useful insight into our thought and consciousness itself through this characterisation of thought.
 
 # Formalisation
 Presented here is a first attempt towards a mathematical formalism of the conclusion of one's own consciousness.
@@ -73,6 +76,8 @@ Thoughts about the fact that one is aware of their own thoughts. For example, De
 Where Iteration 2 is fundamentally necessary for stable thought in a state-machine running on fuzzy, noisy, learning neurons, Iteration 3 is more of a predictable side effect. All of the mechanisms for conscious feedback, the mind schema, sense labelling, and the ability to consider our thoughts in relationship to our mind schema, are necessary for Iteration 2 to function efficiently. But those same mechanisms also enable one last logical jump: to start thinking about thinking itself.
 
 The only potential gap in a system between its ability to reach Iteration 2 and Iteration 3 thought is its processing capabilities and associated data representation capabilities. More colloquially, a sufficient level of intelligence is required in order to reach Iteration 3. This suggests, for example, that dogs will routinely use Iteration 2 to ensure stability of thought, but will not necessarily have sufficient intelligence to be able to rationalise about the ability to do so.
+
+It is perhaps a simplification to state that after only three iterations of a state machine we can conclude ourselves as conscious in a general sense. For example, Iteration 3 thought will start with more of a vague sense of being aware of one's own senses. For example, maybe it's more of an "oh, I just thought that" moment. That would likely be followed up with another vague notation: "oh, I seem to be aware of my own thoughts". And which would finally be used to draw a more general statement, such as "that sounds like what people call 'consciousness', so I must be conscious too". While this example is still very imprecise, it clarifies that each Iteration of the visceral loop is a _characterisation_ that may be applied to each step in a sequence of thoughts. 
 
 # Analysis of Phenomenal Anecdotes
 While it does not explain the phenomenon of experience, it fully explains the effect of us experiencing consciousness and how/why we subsequently process that experience. The Analogy of the Thalamic Symbiote provided a framework that helped to introspect the boundaries and properties of consciousness. The Visceral Loop is one possible mechanism that produces those characteristics.
