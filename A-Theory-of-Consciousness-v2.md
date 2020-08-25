@@ -99,13 +99,14 @@ I think a particularly strong argument for the existence of these schemas as ind
 
 
 ## Virtual View
+tbd. alternatively: phrase as a 'data' view
 
 The virtual view focuses on the scope of conscious experience, where the state in the state machine becomes the central focus. By examining the virtual view we can highlight what can and cannot be observed by a conscious system.
 
 ### State Model
 One key component of a state machine is its state. The 'state model' is the passive data representation that is simultaneously the output of the main processor, and the input to its next cycle.
 
-![virtual view diagram](files/A-theory-of-consciousness-v2-model-layer.png)
+![virtual view diagram](files/A-theory-of-consciousness-v2-state-model.png)
 
 The state model represents anything that may be useful as a direct output (eg: for governing action), or as input for the next cycle (eg: an intermediate result within a sequence of thought). The state model has tremendous flexibility in the kinds of data sources and results that can be represented within it, and in the resolution of those representations. At any given moment it may represent only one thing with high precision, or it may represent multiple things with low precision and information about the relationships between those things. 
 
@@ -119,56 +120,36 @@ The range of data sources that can be directly represented within the state mode
 
 The five external senses in particular are interesting, as it is well known that we do not observe them in their raw form. Vision, for example, is produced by the eyes with varying levels of focus and detail across the visual field, and yet it's very hard for us to directly observe that because the sense has been pre-processed to construct a single coherent virtual visual field. Furthermore, we experience senses pre-attached with 'meaning': rather than seeing a series of lines and dots, I see a window, a door, a ball; rather than hearing a bunch of strange sounds, I hear specific spoken words.
 
-I also think senses are 'labelled' in some way as to their source. For example, we have a strong perception of whether a sense came to us externally, or from us internally. Very interesting results occur when that labeling is disrupted, such as when people 'hear voices'.
+I also think senses are 'labelled' in some way as to their source. For example, we have a strong perception of whether a sense came to us externally or from us internally. Very interesting results occur when that labeling is disrupted, such as when people 'hear voices'. The labelling is clearly a reference back to the body and mind schemas.
 
 ### Visceral Loop
-The 'Visceral Loop' is a characterisation of the kinds of thought or processing outcomes that pass through the state machine of high-level thought. It is also the culmination of the theory, for it explains why we conclude ourselves as conscious.
+The 'Visceral Loop' is a characterisation of the kinds of thought or processing outcomes that pass through the high-level thought state machine, and how certain kinds of thought lead to having a _visceral_ sense of our own consciousness. It is thus the culmination of the theory, for it explains how we come to conclude ourselves as conscious beings.
 
-The characterisation is as follows:
-* **Iteration 1 thought**: Thought - General high-level thought that use sense data as inputs or further processing of existing model state that does not explicitly draw relationships to the individual. For example, when making a decision whether or not to buy toothpaste, solving a maths problem, or planning how to make coffee for the first time. This covers the vast majority of thought, as we generally do not need to waste our time thinking about thought itself.
+The visceral loop characterises each cycle of the state machine as falling into one of the following categories: 
+* **Iteration 1 thought**: Thought - General high-level thought that use sense data as inputs or further processing of existing state that does not explicitly draw relationships to the individual. For example, when making a decision whether or not to buy toothpaste, solving a maths problem, or planning how to make coffee for the first time. This covers the vast majority of thought, as we generally do not need to waste our time thinking about thought itself.
 
 * **Iteration 2 thought**: Meta-thought - Thought that depends on having an awareness of one's own thoughts, but doesn't explicitly take note of the fact that we are observing our thoughts. This is the control mechanism that is so important for maintaining stable thought. For example, when making judgement calls about whether a particular thought process is proving productive, or realising that we made a mistake. It is also the reason why we can take an active role in teaching ourselves new skills.
 
 * **Iteration 3 thought**: "Meta-meta-thought or Meta-awareness - Thoughts about the fact that one is aware of their own thoughts. For example, Descartes' famous "I think therefore I am" quote is the result of Iteration 3 thought. It is here that we compare our own awareness of thought to our socially constructed understanding of the term 'consciousness' and conclude that we, also, are conscious.
 
-It is interesting to note that the majority of high-level thought is done in Iteration 1 alone, that Iteration 2 thought is used exponentially less frequently, and that Iteration 3 thought is used exponentially less frequently again.
+I describe this in the phrasing of a loop with three iterations because it also summarises the optimum path to conclusion of consciousness, along with elucidating that the conclusion requires three iterations of the state machine at a minimum. It is interesting to note that the majority of high-level thought is done in Iteration 1 alone, that Iteration 2 thought occurs exponentially less frequently, and that Iteration 3 thought occurs exponentially less frequently again.
 
 An example application of the visceral loop to conclude oneself as conscious looks like this:
-1. "I am tired, therefore I want to sit down"
-2. "I am aware that I just had the desire to sit down, and I have the strong sense that it was I who decided that"
-3. "Because I make decisions, and I am aware of those decisions, I am conscious"  
+1. "What's 3 + 5? Must be 7"
+2. "oh woops, I made that mistake last time. It was actually 8"
+3. "I am aware that I just had a thought about a past mistake, and I have the strong sense that it was I who had that thought"
 
-Iteration 2 thought requires the labeling of input data in relation to the mind schema. I can only say that "I" am aware of a thought because I have a concept of "I" vs "not I" (ie: the mind schema itself), and that the particular input is labeled as being sourced from "I" (ie: a relationship between I and the mind schema).
+Iteration 2 thought requires the labelling of input data in relation to the mind schema. I can only say that "I" am aware of a thought because I have a concept of "I" vs "not I" (ie: the mind schema itself), and that the particular input is labelled as being sourced from "I" (ie: a relationship between I and the mind schema).
 
 Iteration 3 thought takes that to the next level. That relationship itself becomes the input data that is further processed in relation to the mind schema.
 
-More formerly, the sequence of the 3 visceral loop iterations to conclude oneself as conscious can be represented as follows:
+More formally, the sequence of the 3 visceral loop iterations to conclude oneself as conscious can be represented as follows:
 * Iteration 1: `f(inputs) -> x`: some result of simple thought
-* Iteration 2: `f(x) -> expr(x, mind-schema)`
-* Iteration 3: `f(expr(x, mind-schema)) -> expr(mind-schema, mind-schema)`
+* Iteration 2: `f(x, schemas) -> relationship(x : mind-schema)`
+* Iteration 3: `f(relationship(x : mind-schema), schemas) -> relationship(mind-schema : mind-schema)`
 
-### Higher-order thought
-tbd.
-There are two possibilities...
+![virtual view diagram](files/A-theory-of-consciousness-v2-visceral-loop.png)
 
-Possibility #1:
-* Senses are pre-processed before becoming available as inputs to the processing system that produces the state model
-* All inputs can be represented without transformation in the state model
-* It the pre-processing that defines the range of possible data represented within the state model
-
-Possibility #2
-* Senses are supplied raw to processor
-* Iteration 1 of visceral loop applies apparent 'pre-processing' and thus limiting how much of the raw senses we can be aware of
-* It is the main processor that defines the range of possible data represented within the state model
-
-My hunch is that possibility #1 is the best fit, because the level of flexibility of processing available and the flexibility to 'choose' to not transform inputs. We can, for example, directly observe and think about individual lines and colours within our vision. Which would seem to be quite close to un-processed sense data.
-
-### Variations of experience
-Different kinds of conscious systems will have the greatest variance from one kind to another within the virtual view. The particular data that is represented within the state model depends entirely on the specific needs of the system.
-
-Mammals have a fairly standard set of 5 external senses (sight, smell, sound, taste, touch), all of which are represented within the state model; however, an artificial consciousness built to monitor internet activity may employ all of the same architectures described within the logical view, but the set of senses that are represented within the state model will be entirely different.
-
-For a dog, the state model will contain much the same kinds of things as a human. It will have representations of the same 5 senses. It will employ a conscious feedback loop for a control mechanism and thus have awareness of its own thought, experienced in the same way as its 5 external senses. However, it's level of intelligence and computational needs are significantly less than that of a human, and thus its ability to process its conscious feedback in the context of its own consciousness will be significantly limited. Furthermore, with less need for computational processing, there is less need for detailed data representation within that domain. Thus, while a dog will have some form of awareness of its own thoughts, the quality of that awareness will be less defined than in a human. Significantly, a dog likely reaches iteration 2 of the visceral loop, but it is quite possible that it does not reach iteration 3.
 
 
 # Rationale
@@ -300,6 +281,8 @@ todo: offer some rationale for assuming that the scope of conscious experience i
 # Open Questions
 Like any theory being developed, there are a number of questions remaining. At the most basic level, there are questions around how the logical view maps into the physical view, and about how much pre- and post-processing of signals occurs outside of the high-level processing schematic presented in the logical view here. As our understanding of neuroscience improves, we will be able to narrow down the range of possible explanations.
 
+Clearly, the theory needs more corroborating evidence in order for us to confirm whether it is indeed correct. Much of that will come from two particular sources: i) further understanding of neuroscience, and ii) learnings from attempting to build an artificial consciousness. 
+
 The sections below discuss in detail a selection of specific open questions.
 
 ## Learning
@@ -309,7 +292,7 @@ I will state briefly some general ideas on how learning fits together, but obvio
 
 * The overall brain structure is obviously constructed as a result of evolutionary pressures. I suggest that the brain is also pre-wired with the most basic starting blocks of a control mechanism. That pre-wiring likely incorporates some degree of immutable hard barriers, for example to ensure that we don't get completely stuck in a tight infinite loop, but also supports the ability for us to learn, modify, and override softer control forces.
 
-* I suspect that different components of the brain learn through different mechanisms. For example, we know that [Hebbian](https://en.wikipedia.org/wiki/Hebbian_theory) learning operates in an 'online learning' mode. There is also some evidence that our brain employs 'offline learning' during sleep in order to transfer memories and new skills to long term memory [citation]. Lastly, I suspect that some systems learning through more of a re-inforcement style.
+* I suspect that different components of the brain learn through different mechanisms. For example, we know that [Hebbian](https://en.wikipedia.org/wiki/Hebbian_theory) learning operates in an 'online learning' mode. There is also some evidence that our brain employs 'offline learning' during sleep in order to transfer memories and new skills to long term memory [citation]. Lastly, I suspect that some systems learning through more of a re-enforcement style.
 
 Along with new understanding coming from neuroscience, I suspect big gains will come from trying to build an artificial consciousness from the ground up. My entire control-mechanism basis of consciousness came from trying to build a high level emulation of the state machine components and finding how susceptible it was to infinite loops.
 
@@ -355,7 +338,7 @@ Curiously, the theory presented here does leave open one important variable with
 
 At this stage, I am sympathetic to two possibilities:
 1. That there does exist a biological difference between the aforementioned two neural network regions.
-2. That there is no difference between the two neural network regions, and thus any system with a model and processing loop that replicates the behaviors of the visceral loop must be conscious.
+2. That there is no difference between the two neural network regions, and thus any system with a model and processing loop that replicates the behaviours of the visceral loop must be conscious.
 
 I don't have any idea how to test which is true. And, furthermore, I fear that our intuition is of little help at this stage.
 
