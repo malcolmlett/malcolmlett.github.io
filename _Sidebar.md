@@ -15,6 +15,7 @@
 * [[The analogy of the Thalamic symbiote]]
 * [[The Hard Problem of Experience]]
 * [[Visceral Loop]]
+* [[The Error Prone Brain]]
 * [[Human Phenomena]]
 * [[Guiding Principles]]
 
