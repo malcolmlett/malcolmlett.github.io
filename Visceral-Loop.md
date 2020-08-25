@@ -1,11 +1,11 @@
 The "Visceral Loop" is a characterisation of the thought processes required in order for one to rationalise about their own awareness, about the apparent _viscerality_ of those thoughts, and thus for them to conclude themselves as conscious. It takes as a premise that high-order thought is carried out in cycles of a state machine, where the output of one cycle (or some summarisation thereof) is used as input to the next cycle, along with further inputs retrieved from other sources (such as sense, or memory). A further premise is that each cycle of the state machine can only carry out a single basic processing step. In other words, multiple cycles of the state machine are required for any algorithm or thought process that requires the combination of multiple intermediate results, or requires access to memory structures after intermediate decisions of what to access, or simply requires more complex thinking than one's brain has learned to perform within a single pass through of its neural structures.
 
 Consider the following mental conversation:
-1. "I am tired, therefore I want to sit down"
-2. "I am aware that I just had the desire to sit down, and I have the strong sense that it was I who decided that"
-3. "Because I make decisions, and I am aware of those decisions, I am conscious"
+1. "What's 3 + 5? Must be 7"
+2. "oh woops, I made that mistake last time. It was actually 8"
+3. "I am aware that I just had a thought about a past mistake, and I have the strong sense that it was I who had that thought. That's consciousness."
 
-Each step is carried out through the same brain mechanics. First, a signal is received as input to the high-order processing region of the brain, either as a novel sense input, or as state output from a prior cycle. Attention selection chooses that signal over other potential signals for processing. A result is produced from a single pass-through of the high-order processing neural network. That result is the output of that cycle of processing, which is fed back as input to the next cycle.
+Each step is carried out through the same brain mechanics. First, a signal is received as input to the high-order processing region of the brain, either as a novel sense input, or as state output from a prior cycle. Attention selection chooses that signal over other potential signals for processing. A result is produced from a single pass-through of the high-order processing neural network, which is subsequently fed back as input to the next cycle.
 
 The following section formalises the above example as the three iterations of the visceral loop, and in doing so defines what is necessary in order to reach the conclusion of one's own consciousness.
 
