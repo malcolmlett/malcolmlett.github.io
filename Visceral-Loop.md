@@ -50,6 +50,30 @@ The three iterations above can be seen as just a sampling of steps within a long
 
 It is interesting to note that the majority of high-level thought is done in Iteration 1 alone, and that Iteration 2 thought is a big evolutionary step forwards in the control mechanism of this state machine.
 
+# Closer examination of Visceral Loop Iterations
+## Iteration 1
+General thought.
+
+General high-level thought that use sense data as inputs or further processing of existing state that does not explicitly draw relationships to the individual. For example, when making a decision whether or not to buy toothpaste, solving a maths problem, or planning how to make coffee for the first time. This covers the vast majority of thought, as we generally do not need to waste our time thinking about thought itself.
+
+## Iteration 2
+Meta-thought, or Self-awareness in a 'mind' sense (ie: in contrast to being aware of one's own physical body when they see themselves in a mirror).
+
+Thought that depends on having an awareness of one's own thoughts, but doesn't explicitly take note of the fact that we are observing our thoughts. 
+
+This is the giant leap in the evolution of a state-machine style of high level thought. It is the control mechanism that is so important for maintaining stable thought. For example, when making judgement calls about whether a particular thought process is proving productive, or realising that we made a mistake.
+
+This is the reason why we can take an active role in teaching ourselves new skills.
+
+## Iteration 3
+Meta-meta-thought, or Meta-awareness.
+
+Thoughts about the fact that one is aware of their own thoughts. For example, Descartes' famous "I think therefore I am" quote is the result of Iteration 3 thought. It is here that we compare our own awareness of thought to our socially constructed understanding of the term 'consciousness' and conclude that we, also, are conscious.
+
+Where Iteration 2 is fundamentally necessary for stable thought in a state-machine running on fuzzy, noisy, learning neurons, Iteration 3 is more of a predictable side effect. All of the mechanisms for conscious feedback, the mind schema, sense labelling, and the ability to consider our thoughts in relationship to our mind schema, are necessary for Iteration 2 to function efficiently. But those same mechanisms also enable one last logical jump: to start thinking about thinking itself.
+
+The only potential gap in a system between its ability to reach Iteration 2 and Iteration 3 thought is its processing capabilities and associated data representation capabilities. More colloquially, a sufficient level of intelligence is required in order to reach Iteration 3. This suggests, for example, that dogs will routinely use Iteration 2 to ensure stability of thought, but will not necessarily have sufficient intelligence to be able to rationalise about the ability to do so.
+
 # Analysis of Phenomenal Anecdotes
 While it does not explain the phenomenon of experience, it fully explains the effect of us experiencing consciousness and how/why we subsequently process that experience. The Analogy of the Thalamic Symbiote provided a framework that helped to introspect the boundaries and properties of consciousness. The Visceral Loop is one possible mechanism that produces those characteristics.
 
