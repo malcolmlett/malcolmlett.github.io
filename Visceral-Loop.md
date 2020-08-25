@@ -60,6 +60,8 @@ This is the giant leap in the evolution of a state-machine style of high level t
 
 This is the reason why we can take an active role in teaching ourselves new skills.
 
+In a way, Iteration 2 thought is consciousness, because it is both _necessary_ and _sufficient_ for awareness of one's own thoughts. However, in a different respect, it is a kind of "unaware consciousness": the conscious feedback loop is there, and thus thought is fed into the main processing loop, and that feedback is used to monitor and control thought patterns; and yet the individual has not actively recognised that it is doing this.
+
 ## Iteration 3
 Meta-meta-thought, or Meta-awareness.
 
