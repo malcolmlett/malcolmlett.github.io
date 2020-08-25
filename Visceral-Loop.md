@@ -1,15 +1,18 @@
 The "Visceral Loop" is a characterisation of the thought processes required in order for one to rationalise about their own awareness, about the apparent _viscerality_ of those thoughts, and thus for them to conclude themselves as conscious. It takes as a premise that high-order thought is carried out in cycles of a state machine, where the output of one cycle (or some summarisation thereof) is used as input to the next cycle, along with further inputs retrieved from other sources (such as sense, or memory). A further premise is that each cycle of the state machine can only carry out a single basic processing step. In other words, multiple cycles of the state machine are required for any algorithm or thought process that requires the combination of multiple intermediate results, or requires access to memory structures after intermediate decisions of what to access, or simply requires more complex thinking than one's brain has learned to perform within a single pass through of its neural structures.
 
 Consider the following mental conversation:
-1. "I am tired, therefore I want to sit down"
-2. "I am aware that I just had the desire to sit down, and I have the strong sense that it was I who decided that"
-3. "Because I make decisions, and I am aware of those decisions, I am conscious"
+1. "What's 3 + 5? Must be 7"
+2. "oh woops, I made that mistake last time. It was actually 8"
+3. "I am aware that I just had a thought about a past mistake, and I have the strong sense that it was I who had that thought. That's consciousness."
 
-Each step is carried out through the same brain mechanics. First, a signal is received as input to the high-order processing region of the brain, either as a novel sense input, or as state output from a prior cycle. Attention selection chooses that signal over other potential signals for processing. A result is produced from a single pass-through of the high-order processing neural network. That result is the output of that cycle of processing, which is recorded in working memory, and fed back as input to the next cycle.
+Each step is carried out through the same brain mechanics. First, a signal is received as input to the high-order processing region of the brain, either as a novel sense input, or as state output from a prior cycle. Attention selection chooses that signal over other potential signals for processing. A result is produced from a single pass-through of the high-order processing neural network, which is subsequently fed back as input to the next cycle.
 
 The following section formalises the above example as the three iterations of the visceral loop, and in doing so defines what is necessary in order to reach the conclusion of one's own consciousness.
 
-The claim of the visceral loop is that: i) any decision of one's own consciousness requires at least three cycles of the state machine, ii) the scope of what we can conclude as being conscious of is limited by what data can pass through these three cycles, and iii) that we gain a useful insight into our thought and consciousness itself through characterisation of thought into the three cycles, or iterations, of this loop.
+The claim of the visceral loop is that:
+* i) any decision of one's own consciousness requires at least three cycles of the state machine,
+* ii) the scope of what we can conclude as being conscious of is limited by what data can pass through these three cycles, and
+* iii) that we gain a useful insight into our thought and consciousness itself through this characterisation of thought.
 
 # Formalisation
 Presented here is a first attempt towards a mathematical formalism of the conclusion of one's own consciousness.
@@ -40,15 +43,35 @@ Essentially, we are aware of our own thoughts, but more than that, we are aware 
 
 The above example represents the case where we conclude consciousness from observations of being able to form our own novel thoughts. Another example is of being able to experience our senses, where steps #3 and #4 are dropped.
 
-The three iterations above can be seen as just a sampling of steps within a long linear thought path. Indeed, a fourth iteration is required to move from "I am conscious of `t`" to "I am a conscious being". However, it is more useful to use the above three iterations as a basis for characterising kinds of thought:
+# Closer examination of Visceral Loop Iterations
+The three iterations above can be seen as just a sampling of steps within a long linear thought path. Indeed, a fourth iteration is required to move from "I am conscious of `t`" to "I am a conscious being". However, it is more useful to use the above three iterations as a basis for characterising kinds of thought
 
-* Iteration 1: Thought - General high-level thought about sense inputs or further processing of existing model state. Such as when making a decision, solving a problem, or performing an action. This covers the vast majority of thought, as we generally do not need to waste our time thinking about thought itself.
+## Iteration 1
+General thought.
 
-* Iteration 2: Meta-thought - Thought that depends on having an awareness of one's own thoughts. This is what enables us to actively monitor and control our thought. For example, when realising that we made a mistake. It is the reason why we can take an active role in teaching ourselves new skills.
+General high-level thought that use sense data as inputs or further processing of existing state that does not explicitly draw relationships to the individual. For example, when making a decision whether or not to buy toothpaste, solving a maths problem, or planning how to make coffee for the first time. This covers the vast majority of thought, as we generally do not need to waste our time thinking about thought itself.
 
-* Iteration 3: Meta-meta-thought or Meta-awareness - Thoughts about the fact that one is aware of their own thoughts. For example, Descartes' famous "I think therefore I am" quote is the result of Iteration 3 thought.
+## Iteration 2
+Meta-thought, or Self-awareness in a 'mind' sense (ie: in contrast to being aware of one's own physical body when they see themselves in a mirror).
 
-It is interesting to note that the majority of high-level thought is done in Iteration 1 alone, and that Iteration 2 thought is a big evolutionary step forwards in the control mechanism of this state machine.
+Thought that depends on having an awareness of one's own thoughts, but doesn't explicitly take note of the fact that we are observing our thoughts. 
+
+This is the giant leap in the evolution of a state-machine style of high level thought. It is the control mechanism that is so important for maintaining stable thought. For example, when making judgement calls about whether a particular thought process is proving productive, or realising that we made a mistake.
+
+This is the reason why we can take an active role in teaching ourselves new skills.
+
+In a way, Iteration 2 thought is consciousness, because it is both _necessary_ and _sufficient_ for awareness of one's own thoughts. However, in a different respect, it is a kind of "unaware consciousness": the conscious feedback loop is there, and thus thought is fed into the main processing loop, and that feedback is used to monitor and control thought patterns; and yet the individual has not actively recognised that it is doing this.
+
+## Iteration 3
+Meta-meta-thought, or Meta-awareness.
+
+Thoughts about the fact that one is aware of their own thoughts. For example, Descartes' famous "I think therefore I am" quote is the result of Iteration 3 thought. It is here that we compare our own awareness of thought to our socially constructed understanding of the term 'consciousness' and conclude that we, also, are conscious.
+
+Where Iteration 2 is fundamentally necessary for stable thought in a state-machine running on fuzzy, noisy, learning neurons, Iteration 3 is more of a predictable side effect. All of the mechanisms for conscious feedback, the mind schema, sense labelling, and the ability to consider our thoughts in relationship to our mind schema, are necessary for Iteration 2 to function efficiently. But those same mechanisms also enable one last logical jump: to start thinking about thinking itself.
+
+The only potential gap in a system between its ability to reach Iteration 2 and Iteration 3 thought is its processing capabilities and associated data representation capabilities. More colloquially, a sufficient level of intelligence is required in order to reach Iteration 3. This suggests, for example, that dogs will routinely use Iteration 2 to ensure stability of thought, but will not necessarily have sufficient intelligence to be able to rationalise about the ability to do so.
+
+It is perhaps a simplification to state that after only three iterations of a state machine we can conclude ourselves as conscious in a general sense. For example, Iteration 3 thought will start with more of a vague sense of being aware of one's own senses. For example, maybe it's more of an "oh, I just thought that" moment. That would likely be followed up with another vague notation: "oh, I seem to be aware of my own thoughts". And which would finally be used to draw a more general statement, such as "that sounds like what people call 'consciousness', so I must be conscious too". While this example is still very imprecise, it clarifies that each Iteration of the visceral loop is a _characterisation_ that may be applied to each step in a sequence of thoughts. 
 
 # Analysis of Phenomenal Anecdotes
 While it does not explain the phenomenon of experience, it fully explains the effect of us experiencing consciousness and how/why we subsequently process that experience. The Analogy of the Thalamic Symbiote provided a framework that helped to introspect the boundaries and properties of consciousness. The Visceral Loop is one possible mechanism that produces those characteristics.
