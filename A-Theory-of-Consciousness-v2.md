@@ -161,31 +161,35 @@ See more: [[Visceral Loop]]
 
 # Rationale
 
-This section provides an account of why I believe the theory presented here is a good explanation of our experienced phenomena. The discussion is necessarily shallow in order to avoid this full article becoming too large. Links to further discussions are provided.
+This section provides an account of why I believe the theory presented here is a good explanation of our experienced phenomena. The discussion is necessarily shallow in order to avoid this article becoming too large. Links to further discussions are provided.
 
-If the theory is correct, then there is very little of our internal brain structure that we can observe directly. Thus there should be little that we can deduce about it. However, it turns out the model that I purport we operate on is much like the sort of 'abstraction layer' that is often used in software engineering; and it is well known within the software development field that every abstraction leaks internal details. So in practice we can deduce a lot through observations of the particular computational behaviours and edge cases that we experience, combined with the understanding from modern neuroscience.
+If the theory is correct, then there is very little of our internal brain structure that we can observe directly. Thus there should be little that we can deduce about it. However, it turns out the model that I purport we operate on is much like the sort of 'abstraction layer' that is often used in software engineering; and it is well known within the software development field that every abstraction leaks internal details. So in practice we can deduce a lot through observations of the particular computational behaviours and edge cases that we experience, combined with our understanding from modern neuroscience.
 
 ## The need for working memory
 tbd. diagram.
 
-Brain neurons exist in physical space and thus are subject to a simple physical law: they cannot be moved around easily. When a regions of neurons have developed a structure and learned firing pattern that produces useful computational capability, that computational capability might be useful for processing of data retrieved from arbitrary sources. Those sources might include long term memory. As memory becomes larger, it becomes inefficient to provide direct access from the computational region to the whole of memory - the data transfer channel could become physically very wide. Furthermore, as the brain evolves greater computational dexterity, it ends up with multiple regions with specialised capabilities. Direct access between those 'processors' and memory would now require multiple wide data transfer channels.
+Brain neurons exist in physical space and thus are subject to a simple physical law: they cannot be moved around easily.
 
-From a physical space perspective, a far more efficient solution is to have a central area where data-to-be-processed is temporarily stored, and for the processing regions to access data in that temporary storage, rather than directly access full memory. Essentially, it is necessary to bring the data to the processor because the processor is large and unmovable.
+Regions of neurons develop a structure and learn a firing pattern that produces useful computational capability. That computational capability might be useful for processing of data retrieved from arbitrary sources. It cannot be _moved_ to the different data sources, so there must be a data transfer channel from each source to the processing region.
+
+Those sources might include long term memory. As memory becomes larger, it becomes inefficient to provide direct access from the computational region to the whole of memory - the data transfer channel could become physically very wide. Furthermore, as the brain evolves greater computational dexterity, it ends up with multiple regions with specialised capabilities. Direct access between each 'processor' and memory would now require multiple data transfer channels.
+
+From a physical space perspective, a far more efficient solution is to have a central area where data-to-be-processed is temporarily stored, and for all processing regions to access data in that temporary storage. Essentially, it is necessary to bring the data to the processor because the processor is large and unmovable.
 
 ## High-level thought as a state machine
 tbd. diagram.
 
 As we are discovering through the development of artificial neural networks, a simple non-cyclic network of neurons can be very effective for pattern matching and prediction. However it isn't suitable for high-level thought because of a number of limitations:
-* it's only capable of producing results from a single pass of the network
+* it's only capable of producing results from a single pass of the network (Convolutional Neural Networks), or a single pass of the data stream (Recurrent Neural Networks)
 * it's hard to combine results from multiple arbitrarily selected processing regions
-* it's inflexible across short time scales
+* it can learn and is flexible in the long term, but static and inflexible in the short term
 
-High-level thought involves multiple steps and intermediate states. Working memory serves to hold those intermediate state. Multiple steps are supported through operating in cycles, with each cycle taking the current state of working memory, applying one step of computation, and storing the result back into working memory. In other words, a 'state machine'.
+High-level thought involves multiple steps and intermediate states. Working memory serves to hold those intermediate states. Multiple steps are supported through operating in cycles, with each cycle taking the current state of working memory, applying one step of computation, and storing the result back into working memory. In other words, a 'state machine'.
 
-It's possible that the evolution of working memory was the catalyst for the evolution of a state-machine processing loop, which further formed the basis of the high-level thinking that we enjoy today.
+It's possible that the evolution of working memory was the catalyst for the evolution of a state-machine processing loop, which further formed the basis of the high intelligence that we enjoy today.
 
 ## Control mechanism as basis for awareness of thoughts
-If you were to build a state machine yourself, you would not want to do it with neural networks. State machines operate on the principle of a loop that repeats itself over and over but with different state and with different operations. They require stability and predictability. Neural networks are noisy, chaotic, and take a long time to train. A state machine using neural networks for processing is highly unstable and tends to get stuck in infinite loops.
+If you were to build a state machine yourself, you would not want to do it with neural networks. State machines operate on the principle of a loop that repeats itself over and over, with the same logic rules but different state. They require stability and predictability. Neural networks are noisy, chaotic, and take a long time to train. A state machine using neural networks for processing is highly unstable and tends to get stuck in infinite loops. I encountered this myself in my first attempt to model the state machine of consciousness using simple logic rules. And I wasn't even subject to the unpredictable nature of neural networks.
 
 A common engineering solution to stability problems is the addition of a control mechanism. A common control mechanism uses a feedback measurement of the output of the system that it compares against some ideal signal, and uses that to adjust the system's behaviour. 
 
@@ -228,7 +232,7 @@ More specifically, the scope of what we can conclude about our own consciousness
 * the evolved and learned capability of the high-level processing units to use those data representations and to produce meaningful conclusions
 
 ## Boundaries of conscious experience
-It seems quite clear that there are portions of data processing within our brain that we are conscious of, other data states and processing that we are not aware of. Why do we experience a particular subset of data processing as consciousness? The claim of the visceral loop is that the boundary and content of what we can conclude as consciousness is dictated by what is representable within the state model and by what processing can be performed against that model.
+It seems quite clear that there are portions of data processing within our brain that we are conscious of, and other data states and processing that we are not aware of. Why do we experience a particular subset of data processing as consciousness? The claim of the visceral loop is that the boundary and content of what we can conclude as consciousness is dictated by what is representable within the state model and by what processing can be performed against that model.
 
 In developing this theory, I earlier wrote an article on [[The analogy of the Thalamic symbiote]]. That was a thought experiment to try to quantify more precisely what is and isn't available to conscious experience. In brief, it describes a tiny creature (the Thalamus) living in a symbiotic relationship with the main bulk of the brain and the rest of the body (the Human). They exist that way because of mutually beneficial evolutionary strategies, whereby each avoided having to evolve the characteristics that the other had already evolved. The Thalamus prefers to sense and operate against high-level abstract concepts, rather than directly observing its physical surroundings; and it prefers just to make executive choices between available options, rather than performing any hard computations. The Human has only a moderate level of intelligence, but has successfully managed to develop accurate senses about the outside world, to process those senses in order to form simple representations of reality, and to apply some simple logic rules. Using a chess analogy, the Human can think one step at a time. As they are separate organisms, they have a different set of 'senses'. Humans have the five external senses that we are familiar with, and the Thalamus has high-level data senses that approximately translate as equivalents of those five Human senses. However, the Thalamus also has one additional sense which takes a high-level summary of the state of the Human part of the brain. The experience of consciousness, the inner most "I" when I talk about myself, is actually the Thalamus experiencing its own senses.
 
@@ -256,29 +260,23 @@ In contrast, I don't see that explanation as adding much to the whole solution. 
 
 # Open Questions
 
-Like any theory being developed, there are a number of questions remaining. At the most basic level, there are questions around how the logical view maps into the physical view, and about how much pre- and post-processing of signals occurs outside of the high-level processing schematic presented in the logical view here. As our understanding of neuroscience improves, we will be able to narrow down the range of possible explanations.
+Like any theory being developed, there are a number of questions remaining. At the most basic level there are questions around how the logical view maps into the physical view, and about how much pre- and post-processing of signals occurs outside of the high-level processing schematic presented in the logical view here. As our understanding of neuroscience improves, we will be able to narrow down the range of possible explanations.
 
-Clearly, the theory needs more corroborating evidence in order for us to confirm whether it is indeed correct. Much of that will come from two particular sources: i) further understanding of neuroscience, and ii) learnings from attempting to build an artificial consciousness. 
+Clearly, the theory needs more corroborating evidence in order for us to confirm whether it is indeed correct. Much of that will come from two particular sources: i) further understanding of neuroscience, and ii) learnings from attempting to build an artificial consciousness. For example, my entire control-mechanism basis of consciousness came from trying to build a high level emulation of the state machine components and finding how susceptible it was to infinite loops.
 
 The sections below discuss in detail a selection of specific open questions.
 
 ## Learning
-The ability for a particular brain organisation to productively learn is significant factor governing how the brain evolved the mechanisms it has. Unfortunately the theory presented here will not be complete without a detailed consideration of how each component could learn its required behaviours.
+The ability for a particular system to productively learn is a significant factor governing how the brain evolved the mechanisms it has. Unfortunately the theory presented here will not be complete without a detailed consideration of how each component could learn its required behaviours.
 
 I will state briefly some general ideas on how learning fits together, but obviously significantly more research will be required in this area.
 
 * The overall brain structure is obviously constructed as a result of evolutionary pressures. I suggest that the brain is also pre-wired with the most basic starting blocks of a control mechanism. That pre-wiring likely incorporates some degree of immutable hard barriers, for example to ensure that we don't get completely stuck in a tight infinite loop, but also supports the ability for us to learn, modify, and override softer control forces.
 
-* I suspect that different components of the brain learn through different mechanisms. For example, we know that [Hebbian](https://en.wikipedia.org/wiki/Hebbian_theory) learning operates in an 'online learning' mode. There is also some evidence that our brain employs 'offline learning' during sleep in order to transfer memories and new skills to long term memory [citation]. Lastly, I suspect that some systems learning through more of a re-enforcement style.
-
-Along with new understanding coming from neuroscience, I suspect big gains will come from trying to build an artificial consciousness from the ground up. My entire control-mechanism basis of consciousness came from trying to build a high level emulation of the state machine components and finding how susceptible it was to infinite loops.
-
-## Pre-processing of Inputs
-* labelling
-* meaning attachment (eg: depth perception and object recognition in vision)
+* I suspect that different components of the brain learn through different mechanisms. For example, we know that [Hebbian](https://en.wikipedia.org/wiki/Hebbian_theory) learning operates in an 'online learning' mode. There is also some evidence that our brain employs 'offline learning' during sleep in order to transfer memories and new skills to long term memory [citation]. Lastly, I suspect that some systems learn through more of a re-enforcement style, updating their state only occasionally when feedback is available, and possibly applying its state as a source of online learning pressure to other components.
 
 ## Lossiness in Visceral Loop
-We appear to perceive certain external and internal senses and data sources, while not perceiving others. For example, we don't have direct access to arbitrary long term memories, and it seems quite reasonable to assume that access to long term memory requires some sort of background lookup. But our ability to infer the inputs to the main high-level processor are limited by what it can output. That limitation alone could be the explanation for what we perceive in our phenomenal experience vs what we don't. Alternatively, we may be able to perceive all of the inputs to the processor, and that's that set of inputs that we subsequently call 'senses'. Or, it could even be somewhere in between. In brief, the question is about how 'lossy' the transformation is from input to output.
+We appear to perceive certain external and internal senses and data sources, while not perceiving others. For example, we don't have direct access to arbitrary long term memories, and it seems quite reasonable to assume that access to long term memory requires some sort of background lookup. But our ability to infer the inputs to the main high-level processor is limited by what it can output. That limitation alone could be the explanation for what we perceive in our phenomenal experience vs what we don't. Alternatively, perhaps the processor is capable of selecting any of its inputs and allowing them to pass through un-transformed. Or perhaps the real answer is somewhere in between or a a mixture of the two. In brief, the question is about how 'lossy' the transformation is from input to output.
 
 Considerations:
 * are some inputs treated differently to others so that there is a clear distinction between those than can be processed and fed directly to output vs those that can't?
@@ -287,7 +285,7 @@ Considerations:
 
 tbd. diagram
 
-## Split between Working Model and State Model
+## Split between Working Model, State Model, and Actions
 The observed distinction can be summarised as:
 * state model - appears as a single continuous stream that is smoothly updated from cycle to cycle
 * working memory - appears as a data store with multiple entries, only one of which can be accessed at a time.
@@ -296,15 +294,14 @@ However, the real delineation between the state model and working memory is not 
 
 tbd. diagram
 
-An important consideration here is the above question of the lossiness of the processing step. For example, if the processing step is lossy, then it is entirely possible that there is only a working memory, that the processing step only even passes one entry from the working memory at a time, that the output is stored back into the working memory, and that the perception of a state model is a result of the fact that only one working memory entry is selected at a time.
+An important consideration here is the above question of the lossiness of the processing step. For example, if the processing step is lossy, then it is entirely possible that there is only a working memory, that the processing step only ever passes one entry from the working memory at a time, that the output is stored back into the working memory, and that the perception of an independent state model is a result of the fact that only one working memory entry is selected at a time.
 
-## Output from processing: state model vs actions
-What exactly is the output from the processing? Is that output the state model or does something else post-process in order to produce the state model, for example, as a 'summary' of the raw output. How does that output feed into action control?
+Lastly, what exactly is the output from the processing? Is that output the state model or does something else post-process it in order to produce the state model, for example, as a 'summary' of the raw output. How does that output feed into action control?
 
-## Biological basis for Phenomenal Experience
-I set out to explain the existence of phenomenal experience. While I think I have produced something that will contribute significantly to the fields of artificial consciousness and artificial general intelligence, in the area of phenomenal experience I remain frustrated.
+## Biological basis for phenomenal experience
+I set out to explain the existence of phenomenal experience. While I think I have produced something that will contribute significantly to the fields of artificial consciousness and artificial general intelligence, and perhaps even to the field of neuroscience; in the area of phenomenal experience, I remain frustrated.
 
-In that domain, I think the greatest benefit of my theory is that it narrows the scope of the remaining question. I have not definitely explained whether phenomenal experience is a thing, or why it occurs, but I have explained that 99% of the contents of phenomenal experience has a simple computational explanation. And I have offered a concrete theory behind those computations.
+In that domain, I think the greatest benefit of my theory is that it narrows the scope of the remaining question. I have not definitely explained whether phenomenal experience is a thing, or why it occurs, but I have explained that 99% of the contents of phenomenal experience has a simple computational explanation. And more than that, I have offered a concrete theory behind those computations.
 
 Furthermore, if my theory is correct, then our physical state controls our experiential state so strongly that it is hard to conceive of phenomenal experience as being anything other than entirely passive. And if it is entirely passive, why would it even exist?
 
@@ -314,22 +311,23 @@ So what remains?
 
 * Also, in the brain the data state may be stored in one particular set of neurons, while the processor is a different set of neurons. So which set of neurons is conscious? Or more accurately, which set of neurons has phenomenal experience?
 
-* Lastly, given that consciousness can apparently be produced with such a simple data state and processor in a simple cyclic relationship, surely there could be many such simple cyclic regions within even a single brain. Perhaps with the left and right hemispheres, for example. Why does such a brain not experience multiple consciousnesses?
+* Lastly, given that consciousness can apparently be produced with such a simple data state and processor in a simple cyclic relationship, surely there could be many such simple cyclic regions within even a single brain. Perhaps the left and right hemispheres of the brain are examples of this. Why does such a brain not experience multiple consciousnesses?
 
-These questions are best characterised as an 'intuitional gap': theories of consciousness exist that support it being an entirely physical phenomenon, and yet our intuitions about consciousness make it hard for us to accept that a simple physical explanation is sufficient. The leads many to assume a metaphysical explanation is necessary.
+These questions are best characterised as an 'intuitional gap': theories of consciousness exist that support it being an entirely physical phenomenon, and yet our intuitions about consciousness make it hard for us to accept that a simple physical explanation is sufficient. For example, this has lead many to assume a metaphysical explanation is necessary. Ned Block beautifully summarised this intuitional gap in "The Harder Problem of Consciousness" [Block2003] when he stated: "Not only do we lack a ground of belief [to decide something as conscious vs not conscious], but we lack a conception of any ground of belief".
 
-I posit that the error here is our intuition. Our intuitions on the subject tend to be contradictory. Even an individual talking about this area will often make statements that seem to contradict each other. Our intuitions are so strong that they make it hard for us to consider the possibilities rationally, and thus may actually be leading us astray.
+I posit that the error here is our intuition itself. The question of phenomenal consciousness is so hard to measure that we are left with little else than intuition to guide our judgements. But our intuitions on the subject tend to be contradictory; between individuals, and even from the same individual. Our intuitions are so strong that they make it hard for us to consider the possibilities rationally, and thus they may actually be leading us astray.
 
-Curiously, the theory presented here does leave open one important variable within the realm of the physical. It is possible that something physical, within the biology of the brain neurons, is required to turn the state model and/or processor into phenomenological experience. In other words, given two regions of biological neural network (in the same individual or in different individuals), both having equivalent model states and data processing capabilities, could it be that one has a biological structure that turns the model into experience, while the other does not? Our intuition is that there is something special about experience that requires more than just a self-serving data model.
+I won't attempt to make a claim about which aspects of our intuitions are misleading. But I do think that this is the area where research should focus.
+
+Curiously, the theory presented here does leave open one important variable within the realm of the physical. It is possible that something physical, within the biology of the brain neurons, is required to turn the state model and/or processor into phenomenological experience. In other words, given two regions of biological neural network (in the same individual or in different individuals), both having equivalent model states and data processing capabilities, could it be that one has a biological structure that turns the model into experience, while the other does not? Our intuition is that there is something special about experience that requires more than just a self-serving data model. But our intuition has questionable judgement.
 
 At this stage, I am sympathetic to two possibilities:
 1. That there does exist a biological difference between the aforementioned two neural network regions.
-2. That there is no difference between the two neural network regions, and thus any system with a model and processing loop that replicates the behaviours of the visceral loop must be conscious. And thus that consciousness is not as magical as our intuitions would have us think.
+2. That there is no difference between the two neural network regions, and thus any system with a model and processing loop that replicates the behaviours of the visceral loop must be conscious.
 
-I don't have any idea how to test which is true. And, furthermore, I fear that our intuition is of little help at this stage.
+I prefer to think that consciousness is an entirely physical construct, and thus I take the second possibility to imply that consciousness is not as magical as our intuitions would have us think.
 
-But, if I am to hazard a guess, I would argue in favour of the latter, as per the following very simplistic logic that depends on my own flawed intuition:
-* it's all just electrical and chemical signals, so it's hard to imagine there being any fundamental difference between one kind of neuron and another in terms of their ability to produce phenomenal experience.
+Yet, I don't have any idea how to test which possibility is true. And, furthermore, I fear that our intuition is of little help at this stage.
 
 
 # Curious Effects
@@ -345,6 +343,8 @@ But, if I am to hazard a guess, I would argue in favour of the latter, as per th
 * Further study of neuroscience works in order to refine the architecture of the logical view.
 
 # References
+[Block2003] Ned Block. "The Harder Problem of Consciousness". January 2003. The Journal of Philosophy XCIX(8). DOI: 10.2307/3655621
+
 [Gennaro1996] Gennaro, R. "Consciousness and Self Consciousness: A Defense of the Higher Order Thought Theory of Consciousness." Philadelphia, PA: John Benjamins Publishing. 1996.
 
 [Gennaro2012] Gennaro, R. "The Consciousness Paradox: Consciousness, Concepts, and Higher-Order Thoughts." Cambridge, MA: The MIT Press. 2012.
@@ -361,5 +361,4 @@ But, if I am to hazard a guess, I would argue in favour of the latter, as per th
 
 [SDOct2012] University of Chicago Medical Center. "Homolog of mammalian neocortex found in bird brain." ScienceDaily, 1 October 2012. www.sciencedaily.com/releases/2012/10/121001151953.htm.
 
-Wegner, D. M. (2002). The Illusion of Conscious Will. Cambridge, MA: MIT Press.
 
