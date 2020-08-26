@@ -3,6 +3,8 @@
 This page outlines a working theory behind the computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is shown that the content of conscious experience is governed by a representational 'state model' that explains the majority of the phenomena of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered.
 
 # Introduction
+tbd.
+
 The "Hard Problem of Consciousness" (Chalmers) has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. 
 
 There are many theories out there, all focusing on different aspects and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). They all provide some pieces of the puzzle. For example:
@@ -44,16 +46,22 @@ The _virtual_ view exists only as the data state that is produced, transferred, 
 The majority of discussions presented here are in the context of the logical and virtual views.
 
 ## Physical View
+tbd.
+
 Slowly science is beginning to understand the kind of processing performed by different regions, however our understanding at this level is still very much at its infancy. This article will largely omit discussion about the biological view. However, as we shall see, there is one particularly significant point that needs to be made about the nature of any physical computational machine, such as the biological brain.
 
 All mammals have a neocortex, and birds have a similar structure called the dorsal ventricular ridge (DVR) that neuroscience suggests provides similar capability to the neocortex [SDOct2012].
 
 ### Neuronal structure
+tbd.
+
 The neurons in mammalian brains and in artificial neural networks are completely different in the physical way in which they operate, but that difference is not significant for the experience of consciousness. Any mechanism that supports sufficient flexibility of learning could suffice.
 
 This article uses biological and artificial neural networks interchangeably for examples when expressing ideas. 
 
 ### Physical location in space
+tbd.
+
 Main conclusion:
 * Physical computational machines have bulky data processing circuits, and bulky memory storage, and they need a small working area to hold the current set of data being worked on.
 
@@ -71,13 +79,11 @@ In the diagram above, the Logic Processing box represents what is likely the bul
 In the terminology of Danial Kahneman, the logic processing components on their own are of the form of _System 1_ thought (_Fast Thinking_), while the net result of multiple steps being executed by the state machine form _System 2_ thought (_Slow Thinking_).
 
 ### Working Memory
-Neuroscience currently believes that we hold about 7 items in working memory, for up to about 1 minute [citation].
-
-This is the state data store of our state machine. The presence or absence of certain data items directly influence which logic processes activate.
+Neuroscience currently believes that we hold about 7 items in working memory, for up to about 1 minute [citation]. This is the state data store of our state machine. The presence or absence of certain data items directly influence which logic processes activate.
 
 In theory, the larger the working memory the more efficient computation can be. In practice, there are trade-offs affecting the size of working memory. If too small, then it is not sufficient to hold all data needed for a particular thought process - more logic processing actions are required for low-level swap-in/swap-out of data from long term storage. If too large, then the data transmission channels between working memory and logic processing become too wide.
 
-The state representation within working memory is likely fairly high-level. In fact, as we shall see, it is precisely at the level of detail of what we observe within our consciousness.
+The state representation within working memory is likely fairly high-level, and probably at the same level of detail of what we observe within our consciousness.
 
 ### Control Mechanism
 A state machine employing fuzzy, learning, neural networks for its logic processor requires a control mechanism in order to maintain stability. The control mechanism uses a feedback path separate from the main processing loop. It acts like a secondary processing loop, or 'feedback loop', but for efficiency and flexibility, it re-uses the main processor. The main processor is trained to enforce stability control through learning pressure and some amount of evolutionary pre-wiring.  
@@ -95,31 +101,30 @@ Before moving onto conscious experience itself, we need to highlight two importa
 
 **Mind Schema**: Like some other researches (eg: [Graziano2017]), I believe our brains also maintain a mental map of our mind. It tracks the observed capabilities of our mind. It will be used in a _generative_ way: to suggest a possibly suitable approach to solve a problem. And it will be used in a _predictive_ way: to monitor the thought path taken and to continually assess the likelihood that it will produce a useful outcome.
 
-I believe that the body schema and mind schema are independent brain components, and that they are used in some way to 'label' the source of data received by the main processor. It is the body and mind schemas that suffer problems when they cannot be updated [citation].
-
 ## Virtual View
 tbd. alternatively: phrase as a 'data' view
 
 The virtual view focuses on the scope of conscious experience, where the state in the state machine becomes the central focus. By examining the virtual view we can highlight what can and cannot be observed by a conscious system.
 
 ### State Model
-One key component of a state machine is its state. The 'state model' is the passive data representation that is simultaneously the output of the main processor and the input to its next cycle.
+A key component of a state machine is its state. The 'state model' is the passive data representation that is simultaneously the output of the main processor and the input to its next cycle.
 
 ![virtual view diagram](files/A-theory-of-consciousness-v2-state-model.png)
 
-The state model represents anything that may be useful as a direct output (eg: for governing action), or as input for the next cycle (eg: an intermediate result within a sequence of thought). The state model has tremendous flexibility in the kinds of data sources and results that can be represented within it, and in the resolution of those representations. At any given moment it may represent only one thing with high precision, or it may represent multiple things with low precision and information about the relationships between those things. 
+The state model represents anything that may be useful as a direct output (eg: for governing action), or as input for the next cycle (eg: an intermediate result within a sequence of thought). The state model has tremendous flexibility in the kinds of data sources and results that can be represented within it, and in the resolution of those representations. For example, at any given moment it may represent only one thing with high precision, or it may represent multiple things with low precision and information about the relationships between those things. 
 
 The range of data sources that can be directly represented within the state model is particularly enlightening. Some examples from my own observations are:
-* **working memory**: we seem to be only able to think about one 'thing' at a time, which I interpret as being where one item from working memory is selected into the state model at a time
-* **senses**: any of the five external senses can be focused on observed consciously. Additionally we can simultaneously observe multiples senses, eg: when watching and listening as a car drives past
+* **working memory**: we seem to be only able to think about one 'thing' at a time, which I interpret as being where one item from working memory is selected into the state model at a time.
+* **senses**: any of the five external senses can be focused on and observed consciously. Additionally we can simultaneously observe multiples senses, eg: when watching and listening as a car drives past.
 * **body schema**: we can be aware of specific aspects of our mental map of the body, eg: we can close our eyes and 'feel' where our limbs are. And our touch sense is tightly integrated with our mental map of body to identify where the touch sense occurred from. But I don't think we have direct access to all of the body schema at once.
 * **mind schema**: like the mental model of body, we are aware of specific aspects of our mind's mental model of itself. eg: a judgement about one's general ability in mathematics. But, like the body schema, I don't think we have direct access to all of this model at once.
 * **long term memory**: we can draw up recent and long past memories, but we certainly do not have access to all of those directly. There appears to be some sort of fetching mechanism involved.
-* **conscious feedback**: output from processing in prior cycle
+* **conscious feedback**: output from processing in prior cycle.
 
 The five external senses in particular are interesting, as it is well known that we do not observe them in their raw form. Vision, for example, is produced by the eyes with varying levels of focus and detail across the visual field, and yet it's very hard for us to directly observe that because the sense has been pre-processed to construct a single coherent virtual visual field. Furthermore, we experience senses pre-attached with 'meaning': rather than seeing a series of lines and dots, I see a window, a door, a ball; rather than hearing a bunch of strange sounds, I hear specific spoken words.
 
-I also think senses are 'labelled' in some way as to their source. For example, we have a strong perception of whether a sense came to us externally or from us internally. Very interesting results occur when that labelling is disrupted, such as when people 'hear voices'. The labelling is clearly a reference back to the body and mind schemas.
+I also think senses are 'labelled' in some way as to their source. For example, we have a strong perception of whether a sense came to us externally or from us internally. The labelling is clearly a reference back to the body and mind schemas. Very interesting results occur when that labelling is disrupted, such as when people 'hear voices', or when the body or mind schemas cannot be updated [citation].
+
 
 ### Visceral Loop
 The 'Visceral Loop' is a characterisation of the kinds of thought or processing outcomes that pass through the state machine described above, and how that thought leads to the individual having a _visceral_ awareness of their own thoughts. It is thus the culmination of the theory, for it explains how we come to conclude ourselves as conscious beings.
@@ -221,26 +226,6 @@ More specifically, the scope of what we can conclude about our own consciousness
 * the capability of the state model to represent different data
 * the detail of our mind schema
 * the evolved and learned capability of the high-level processing units to use those data representations and to produce meaningful conclusions
-
-A more detailed analysis of the boundaries of what can be concluded through this mechanism is discussed below.
-
-## Sense pre-processing
-tbd. Just remove this section altogether if there's no obvious need for it.
-
-tbd. rationale for why I think sense labelling is a thing.
-tbd. and meaning attachment from schema
-tbd. but is this necessary?
-
-Observation of senses
-* conscious feedback loop received as a sense
-* in contrast, working memory is not
-
-But it's the subsequent processing of those data sources that determines what is experienced as a 'sense', because it is the processing and subsequent conclusionary output that states what is a sense and what is not. An open question is how lossy the processing step is. For example, could it be that working memory is also supplied as a sense in the same way that the external senses and the state model are fed in, but that the processing step never concludes anything directly about working memory - giving us the conclusion that it isn't received as a sense.
-
-Sense labelling:
-* needed in order for control mechanism to know which senses to use. Senses need to be labelled in some way, either through explicit addition of labels, location of source neurons, or some other means.
-* based on mental-model-of-mind
-* could be via explicit labelling, or just by the mental-model-of-mind being used to 'guess' to the source of a sense based on its characteristics
 
 ## Boundaries of conscious experience
 It seems quite clear that there are portions of data processing within our brain that we are conscious of, other data states and processing that we are not aware of. Why do we experience a particular subset of data processing as consciousness? The claim of the visceral loop is that the boundary and content of what we can conclude as consciousness is dictated by what is representable within the state model and by what processing can be performed against that model.
