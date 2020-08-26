@@ -230,6 +230,9 @@ More specifically, the scope of what we can conclude about our own consciousness
 A more detailed analysis of the boundaries of what can be concluded through this mechanism is discussed below.
 
 ## Sense labelling
+tbd. rationale for why I think sense labelling is a thing.
+tbd. but is this necessary?
+
 Observation of senses
 * conscious feedback loop received as a sense
 * in contrast, working memory is not
@@ -241,17 +244,29 @@ Sense labelling:
 * based on mental-model-of-mind
 * could be via explicit labelling, or just by the mental-model-of-mind being used to 'guess' to the source of a sense based on its characteristics
 
-## Explanation of Phenomena - Boundaries of Conscious Experience
-The theory presents a possible explanation for why certain things produce phenomenological experience and others not; specifically, that the content of the model defines the content of conscious experience.
+## Boundaries of conscious experience
+It seems quite clear that there are portions of data processing within our brain that we are conscious of, other data states and processing that we are not aware of. Why do we experience a particular subset of data processing as consciousness? The claim of the visceral loop is that the boundary and content of what we can conclude as consciousness is dictated by what is representable within the state model and by what processing can be performed against that model.
 
-todo: offer some rationale for assuming that the scope of conscious experience is defined by what is represented within the model.
-...
+In developing this theory, I earlier wrote an article on [[The analogy of the Thalamic symbiote]]. That was a thought experiment to try to quantify more precisely what is and isn't available to conscious experience. In brief, it describes a tiny creature (the Thalamus) living in a symbiotic relationship with the main bulk of the brain and the rest of the body (the Human). They exist that way because of mutually beneficial evolutionary strategies, whereby each avoided having to evolve the characteristics that the other had already evolved. The Thalamus prefers to sense and operate against high-level abstract concepts, rather than directly observing its physical surroundings; and it prefers just to make executive choices between available options, rather than performing any hard computations. The Human has only a moderate level of intelligence, but has successfully managed to develop accurate senses about the outside world, to process those senses in order to form simple representations of reality, and to apply some simple logic rules. Using a chess analogy, the Human can think one step at a time. As they are separate organisms, they have a different set of 'senses'. Humans have the five external senses that we are familiar with, and the Thalamus has high-level data senses that approximately translate as equivalents of those five Human senses. However, the Thalamus also has one additional sense which takes a high-level summary of the state of the Human part of the brain. The experience of consciousness, the inner most "I" when I talk about myself, is actually the Thalamus experiencing its own senses.
 
-[WITHIN FIRST OR SECOND PHENOMENA SECTION?] It seems quite clear that there are portions of data processing within our brain that we are conscious of, other data states and processing that we are not aware of. Why, do we experience a particular subset of data processing as consciousness? It turns out that the boundary and content of what we can conclude as consciousness is dictated by what is representable within the model, and what processing can be performed against that model. 
+While the suggestion of the Thalamic symbiote seems absurd, curiously it does propose a model that fits very well with the observations that an individual may make about their own conscious experience after sufficient thought. For example:
+1. We don't actually have phenomenal experience of our physical senses, but rather we experience a pre-processed form of our senses, after gaps in data have been filled in and meaning attached.
+2. We have phenomenal experience of more than just our 5 physical senses. Conscious feedback is definitely an extra sense, and there may be more.
+3. Our phenomenal experience omits all low level details of the functioning of our brain.
+4. It feels like there is some inner "I" that does the experiencing.
+5. On first glance, executive control (the ability to take an active role in making decisions) appears to be intimately linked with conscious experience.
+6. For complex problems, each logic step produces an intermediate result, which is experienced, but the execution of the logic step itself is not.
 
+The state machine and visceral loop theory of consciousness explains all of those observations. In response to the numbered items above:
+1. It's only in Iteration 2 that we can observe our senses, and by then Iteration 1 and possibly some explicit pre-processing has already taken place.
+2. The state machine requires a feedback loop as input to its control mechanism, which adds 'conscious feedback' as a sense. Our observations of 'senses' in Iteration 2 are defined by the contents of the state model, rather than the raw physical senses.
+3. The low level functioning of the brain is used to produce results, which may be represented in the state model, but there are 'monitoring nerves' that track the operations of logic circuits scattered throughout the brain.
+4. All senses are labelled or interpreted in relation to the mind and body schema.
+5. The conclusion of having executive control comes from the fact that high-level thought typically requires multiple steps, and that we are aware of the result of each step in the process.
+6. Like for the general case of not being aware of low level functioning of the brain, we are not aware of the execution of logic until it produces a result that is stored into the state model.
 
 ## Memories
-I think some researchers have suggested that the perception of consciousness is an artefact of memory. Specifically, that our memory is used to construct a representation of recent thoughts. In doing so, the memory of independently produced thoughts become modelled as a continuous stream. This is assumed to operate in the same way that we perceive vision as a smooth visual field of uniform resolution whereas in reality we physically see only a tiny fraction of the scene in front of us at any point in time. The assumption is that the presence of this smoothed out memory of apparently continuous thoughts tricks us into thinking we are conscious.
+I think some researchers have suggested that the perception of consciousness is an artefact of memory [citation]. Specifically, that our memory is used to construct a representation of recent thoughts. In doing so, the memory of independently produced thoughts become modelled as a continuous stream. This is assumed to operate in the same way that we perceive vision as a smooth visual field of uniform resolution whereas in reality we physically see only a tiny fraction of the scene in front of us at any point in time. The assumption is that the presence of this smoothed out memory of apparently continuous thoughts tricks us into thinking we are conscious.
 
 In contrast, I don't see that explanation as adding much to the whole solution. While it is probably true that our memory of past thoughts creates a simplified 'smoothed out' representation, it doesn't answer why we conclude ourselves as conscious from that data, and it isn't necessary to reach the conclusion of consciousness. So rather than being core to the explanation, I see it as just yet another example of the result of the visceral loop.
 
@@ -312,11 +327,11 @@ Furthermore, if my theory is correct, then our physical state controls our exper
 
 So what remains?
 
-The theory as presented so far seems to suggest that the combination of a simple data state with a processor that interprets the data state in a particular way is sufficient for consciousness. That implies that some very simple circuits would be conscious, but it just doesn't seem right. What's missing?
+* The theory as presented so far seems to suggest that the combination of a simple data state with a processor that interprets the data state in a particular way is sufficient for consciousness. That implies that some very simple circuits would be conscious, but it just doesn't seem right. What's missing?
 
-Also, in the brain the data state may be stored in one particular set of neurons, while the processor is a different set of neurons. So which set of neurons is conscious? Or more accurately, which set of neurons has phenomenal experience?
+* Also, in the brain the data state may be stored in one particular set of neurons, while the processor is a different set of neurons. So which set of neurons is conscious? Or more accurately, which set of neurons has phenomenal experience?
 
-Lastly, given that consciousness can apparently be produced with such a simple data state and processor in a simple cyclic relationship, surely there could be many such simple cyclic regions within even a single brain. Perhaps with the left and right hemispheres, for example. Why does such a brain not experience multiple consciousnesses?
+* Lastly, given that consciousness can apparently be produced with such a simple data state and processor in a simple cyclic relationship, surely there could be many such simple cyclic regions within even a single brain. Perhaps with the left and right hemispheres, for example. Why does such a brain not experience multiple consciousnesses?
 
 These questions are best characterised as an 'intuitional gap': theories of consciousness exist that support it being an entirely physical phenomenon, and yet our intuitions about consciousness make it hard for us to accept that a simple physical explanation is sufficient. The leads many to assume a metaphysical explanation is necessary.
 
