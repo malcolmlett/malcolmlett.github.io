@@ -89,17 +89,13 @@ tbd. new diagram
 The existence of the feedback path is the explanation for why we have awareness of our thoughts, and as such is typically referred to as 'conscious feedback' within this theory. However, the exact distinction of data that passes back into the main processor via working memory vs. conscious feedback remains an open question, with some discussion on this later on. 
 
 ### Schematic Models
-Before moving onto conscious experience itself, we need to highlight two important 'internal senses'. 
+Before moving onto conscious experience itself, we need to highlight two important internal sources of information. 
 
 **Body Schema**: It is well understood that the brain maintains a mental map of the body. This is used, for example, to track the motion of limbs so that we can know where a limb is without seeing it. It is also used to track the capabilities of those limbs; for example to track when a leg is damaged and thus must not be walked on with full body weight. The body schema is also used in a _generative_ way: to plan future actions and to control muscle signals in order to achieve a desired outcome.
 
-**Mind Schema**: Like some other researches (eg: [Graziano2017]), I believe our brains also maintain a mental map of our mind. It tracks the observed capabilities of our mind. It will be used in a _generative_ way: to guess at the best way to solve a problem; to monitor the thought path taken and to continually assess the likelihood that it will produce a useful outcome.
+**Mind Schema**: Like some other researches (eg: [Graziano2017]), I believe our brains also maintain a mental map of our mind. It tracks the observed capabilities of our mind. It will be used in a _generative_ way: to suggest a possibly suitable approach to solve a problem. And it will be used in a _predictive_ way: to monitor the thought path taken and to continually assess the likelihood that it will produce a useful outcome.
 
-I believe that the body schema and mind schema are independent brain components that are fed as some form of input to the main processor of the state machine described above. Curiously, the information from these schema available to our conscious awareness 
-appears to have significantly less resolution than that of many other senses, eg: the five external senses and conscious feedback itself. One possibility is that we don't directly receive the schema as input, but rather they are used in a pre-processing step that attaches meaning to the sense inputs. For example, when listening to someone talk in a language you are familiar with, it is almost impossible to separate the sounds from the interpreted words. And when looking at a house, by the time you perceive it consciously the image in front of you is already interpreted as being a house with a door etc.
-
-I think a particularly strong argument for the existence of these schemas as independent components of the brain is that i) the learning algorithm required to 'train' these schemas is relatively simple (just run in a tight cycle of predicting the next future state, observing what really happens, and correcting the network from the difference), ii) that it can be trained independently of the main processing units, and iii) that it provides a very useful input to the main processing units.
-
+I believe that the body schema and mind schema are independent brain components, and that they are used in some way to 'label' the source of data received by the main processor. It is the body and mind schemas that suffer problems when they cannot be updated [citation].
 
 ## Virtual View
 tbd. alternatively: phrase as a 'data' view
@@ -107,7 +103,7 @@ tbd. alternatively: phrase as a 'data' view
 The virtual view focuses on the scope of conscious experience, where the state in the state machine becomes the central focus. By examining the virtual view we can highlight what can and cannot be observed by a conscious system.
 
 ### State Model
-One key component of a state machine is its state. The 'state model' is the passive data representation that is simultaneously the output of the main processor, and the input to its next cycle.
+One key component of a state machine is its state. The 'state model' is the passive data representation that is simultaneously the output of the main processor and the input to its next cycle.
 
 ![virtual view diagram](files/A-theory-of-consciousness-v2-state-model.png)
 
@@ -211,26 +207,28 @@ This also suggests that there is a minimum level of intelligence required for a 
 See more: [[The Error Prone Brain]]
 
 ## Models
-Graziano [Graziano2017] introduced Attention Schema Theory (AST), which suggested how important a representational model might be for consciousness.
+Graziano [Graziano2017] introduced Attention Schema Theory (AST), which suggested how important a representational model might be for consciousness. Graziano assumes a single model that encapsulates information about the capabilities of the body, the mind, and the data state, but admits that there may be other divisions.
 
-I suggest that there are at least three distinct 'models' in effect here and that they play importantly different roles:
-* _State Model_: passive store of current state of in-flight thought. Closely related to Working Memory, but presumed independent.
-* _Mental Model of Body_: predictive and generative model use to track locations of body components, capabilities of those components, and used to generate planning in relation to movement
-* _Mental Model of Mind_: predictive and generative model use to track capabilities of the mind, and used to generate planning in relation to future thought, eg: strategies for solving problems
+Upon considering how the different kinds of information in that space become available to our consciousness, and in the kinds of processing that would be applied, I think there are three separate models in this context. Importantly, I think the state model is just a passive data representation that can be moved around between different regions of the brain, whereas the body and mind schema are more likely to be physically wired within certain specific regions of the brain. We certainly know this is true for the case of the body schema.
 
-It is the mental models of body and mind that suffer problems when they cannot be updated [citation].
+Another important distinction is that the information from the body and mind schema appears to have significantly less resolution within our awareness than that of many other senses (eg: the five external senses plus conscious feedback). I can open my eyes and see lots of detail, and I can clearly observe my current thought as well as my 'inner voice'. And although I can reference specific knowledge about my ability to do maths, for example, I would not expect to observe all of my mentally mapped details of my mind's capabilities without a lengthy introspection session. Thus, my mind schema appears to behave more like a long term memory: certain events elicit specific responses due to their association, but I can freely browse all of its contents.
 
-The visceral loop explains why the state model is both a significant source of input to data processing, and the outcome of that processing. The two work so closely together that it can be hard to see the distinction between them. That may be because our ability to analyse our own consciousness is a factor of that model/processing interaction.
+I think a particularly strong argument for the existence of these schemas as independent components of the brain is that i) the learning algorithm required to 'train' these schemas is relatively simple (just run in a tight cycle of predicting the next future state, observing what really happens, and correcting the network from the difference), ii) that it can be trained independently of the main processing units, and iii) that it provides a very useful input to the main processing units.
+
+The visceral loop explains why the state model is both a significant source of input to data processing, and the outcome of that processing. The model and processing step work so closely together that it can be hard to see the distinction between them. That may be because our ability to analyse our own consciousness is a factor of that model/processing interaction.
 
 More specifically, the scope of what we can conclude about our own consciousness through introspection alone is a factor of:
 * the capability of the state model to represent different data
-* the detail of our mental-model-of-mind
+* the detail of our mind schema
 * the evolved and learned capability of the high-level processing units to use those data representations and to produce meaningful conclusions
 
 A more detailed analysis of the boundaries of what can be concluded through this mechanism is discussed below.
 
-## Sense labelling
+## Sense pre-processing
+tbd. Just remove this section altogether if there's no obvious need for it.
+
 tbd. rationale for why I think sense labelling is a thing.
+tbd. and meaning attachment from schema
 tbd. but is this necessary?
 
 Observation of senses
@@ -350,6 +348,7 @@ But, if I am to hazard a guess, I would argue in favour of the latter, as per th
 
 
 # Curious Effects
+
 * [[The analogy of the Thalamic symbiote]]
 * [[Visceral Loop]]
 * Free will
@@ -357,9 +356,8 @@ But, if I am to hazard a guess, I would argue in favour of the latter, as per th
 * Meta problem of consciousness 
 
 # Further research 
-* Build it - see: [[Conscious Calculator v2]]
+* Learn more by building it - see: [[Conscious Calculator v2]]
 * Further study of neuroscience works in order to refine the architecture of the logical view.
-* Cause of phenomenological experiences
 
 # References
 [Gennaro1996] Gennaro, R. "Consciousness and Self Consciousness: A Defense of the Higher Order Thought Theory of Consciousness." Philadelphia, PA: John Benjamins Publishing. 1996.
