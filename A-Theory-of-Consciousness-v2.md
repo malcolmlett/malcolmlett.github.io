@@ -190,15 +190,15 @@ A common engineering solution to stability problems is the addition of a control
 
 Broadly, there are two styles of control mechanism that might be employed in a state machine system:
 
-1. Independent control: an entirely separate control processor actively monitors and manipulates state to ensure stability.
-2. Integrated control: control is performed by a relatively simple feedback loop that is actioned on by the main processor.
+1. **Independent control**: an entirely separate control processor actively monitors and manipulates state to ensure stability.
+2. **Integrated control**: control is performed by a relatively simple feedback loop that is actioned on by the main processor.
 
 Due to the complexity and variability of thought, an independent control mechanism would require significant domain knowledge about the kinds of thought that passes through the main processor. For example, if I am trying to solve '5 + x = 8' in my head by trying lots of different possible values of x, am I stuck in an infinite loop? The level of understanding required by an independent control processor suggests that the control mechanism cannot be separate, but is rather integrated into the main processor itself.
 
 Furthermore, we can examine the two options a little more concretely to see how it may 'feel' to have such a mechanism:
 
-1. Independent control: would have limited data integration with the rest of the brain. There would be no need for awareness of thought. Unlikely to be human-like in our experience of it.
-2. Integrated control: the computational and learning capabilities of the main processor would be fully leveraged to help stabilize thought. Requires that the feedback measurement is supplied into the main processer as a first-class input, like other senses. Human-like in our experience of it.
+1. Independent control would have limited data integration with the rest of the brain. There would be no need for awareness of thought. Unlikely to be human-like in our experience of it.
+2. With Integrated control the computational and learning capabilities of the main processor would be fully leveraged to help stabilize thought. Requires that the feedback measurement is supplied into the main processer as a first-class input, like other senses. Human-like in our experience of it.
 
 It thus seems reasonable to assume from the fact that we can observe our own thoughts, that we employ a control mechanism and that it follows the integrated control option discussed here.
 
@@ -304,29 +304,35 @@ An important consideration here is the above question of the lossiness of the pr
 What exactly is the output from the processing? Is that output the state model or does something else post-process in order to produce the state model, for example, as a 'summary' of the raw output. How does that output feed into action control?
 
 ## Biological basis for Phenomenal Experience
-* Doesn't explain phenomenal experience 
-* Doesn't entirely explain why we don't experience other cyclic regions within in the brain 
+I set out to explain the existence of phenomenal experience. While I think I have produced something that will contribute significantly to the fields of artificial consciousness and artificial general intelligence, in the area of phenomenal experience I remain frustrated.
 
-This remains an open question. And I believe it is an important question. It was a continual attempt to answer that very question that has driven the direction of this theory. However, it's scope is now significantly reduced. In fact, our physical state controls our experiential state so strongly that it is hard to conceive of experience as being anything other than entirely passive. 
+In that domain, I think the greatest benefit of my theory is that it narrows the scope of the remaining question. I have not definitely explained whether phenomenal experience is a thing, or why it occurs, but I have explained that 99% of the contents of phenomenal experience has a simple computational explanation. And I have offered a concrete theory behind those computations.
 
-This is best characterised as an intuitional gap: theories of consciousness exist that support it being an entirely physical phenomenon, and yet our intuitions about consciousness make it hard for us to accept that a simple physical explanation is sufficient. The leads many to assume a metaphysical explanation is necessary.
+Furthermore, if my theory is correct, then our physical state controls our experiential state so strongly that it is hard to conceive of phenomenal experience as being anything other than entirely passive. And if it is entirely passive, why would it even exist?
+
+So what remains?
+
+The theory as presented so far seems to suggest that the combination of a simple data state with a processor that interprets the data state in a particular way is sufficient for consciousness. That implies that some very simple circuits would be conscious, but it just doesn't seem right. What's missing?
+
+Also, in the brain the data state may be stored in one particular set of neurons, while the processor is a different set of neurons. So which set of neurons is conscious? Or more accurately, which set of neurons has phenomenal experience?
+
+Lastly, given that consciousness can apparently be produced with such a simple data state and processor in a simple cyclic relationship, surely there could be many such simple cyclic regions within even a single brain. Perhaps with the left and right hemispheres, for example. Why does such a brain not experience multiple consciousnesses?
+
+These questions are best characterised as an 'intuitional gap': theories of consciousness exist that support it being an entirely physical phenomenon, and yet our intuitions about consciousness make it hard for us to accept that a simple physical explanation is sufficient. The leads many to assume a metaphysical explanation is necessary.
 
 I posit that the error here is our intuition. Our intuitions on the subject tend to be contradictory. Even an individual talking about this area will often make statements that seem to contradict each other. Our intuitions are so strong that they make it hard for us to consider the possibilities rationally, and thus may actually be leading us astray.
 
-Curiously, the theory presented here does leave open one important variable within the realm of the physical. It is possible that something physical, within the biology of the brain neurons, is required to turn the model into phenomenological experience. In other words, given two regions of biological neural network (in the same individual or in different individuals), both having equivalent model states and data processing capabilities, could it be that one has a biological structure that turns the model into experience, while the other does not? Our intuition is that there is something special about experience that requires more than just a self-serving data model.
+Curiously, the theory presented here does leave open one important variable within the realm of the physical. It is possible that something physical, within the biology of the brain neurons, is required to turn the state model and/or processor into phenomenological experience. In other words, given two regions of biological neural network (in the same individual or in different individuals), both having equivalent model states and data processing capabilities, could it be that one has a biological structure that turns the model into experience, while the other does not? Our intuition is that there is something special about experience that requires more than just a self-serving data model.
 
 At this stage, I am sympathetic to two possibilities:
 1. That there does exist a biological difference between the aforementioned two neural network regions.
-2. That there is no difference between the two neural network regions, and thus any system with a model and processing loop that replicates the behaviours of the visceral loop must be conscious.
+2. That there is no difference between the two neural network regions, and thus any system with a model and processing loop that replicates the behaviours of the visceral loop must be conscious. And thus that consciousness is not as magical as our intuitions would have us think.
 
 I don't have any idea how to test which is true. And, furthermore, I fear that our intuition is of little help at this stage.
 
-But, if I am to hazard a guess, I would argue in the case of the former, as per the following very simplistic logic:
-* I am opposed to the theory that ordinary matter is conscious (pan-psychism) - ie: my intuition is that this is incorrect.
-* Possibility #2 tends to suggest pan-psychism.
-* Therefore, #1 is most likely, and we should spend time looking for that difference.
+But, if I am to hazard a guess, I would argue in favour of the latter, as per the following very simplistic logic that depends on my own flawed intuition:
+* it's all just electrical and chemical signals, so it's hard to imagine there being any fundamental difference between one kind of neuron and another in terms of their ability to produce phenomenal experience.
 
-# FAQs
 
 # Curious Effects
 * [[The analogy of the Thalamic symbiote]]
