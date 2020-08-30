@@ -3,22 +3,29 @@
 This page outlines a working theory behind the computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is shown that the content of conscious experience is governed by a representational 'state model' and a particular kind of processing loop, that explains the majority of the phenomena of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered.
 
 # Introduction
-The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. The problem of explaining consciousness is often divided into an "easy problem" and a "hard problem". The "easy problem" is to explain the underlying mechanisms behind the functions of learning, reasoning, remembering, perceptual discrimination. The "hard problem" of consciousness is to explain why those functions are accompanied by experience? [Chalmers1995]
+The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. There are many theories out there. Each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI).
 
-There are many theories out there. Each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). In general they all provide some pieces of the puzzle. For example:
+A small sampling of the viewpoints is as follows:
+* Chalmers: explains how the problem is split into a comparatively "easy problem" of explaining the mechanical/computational mechanisms behind the functions of learning, reasoning, remembering, perceptual discrimination internal access, etc.; while the "hard problem" is why these functions are accompanied by experience, and that it remains a philosophical question because we don't have any possible physical explanation. [Chalmers1995]
 * Tononi: partial mechanism for measurement, but not complete: doesn't define sufficiency.
 * AST: introduces how important the model is.
 * Higher-order Thought Theory [Rosenthal2011][Rosenthal2005][Gennaro 1996][Gennaro2012] suggests that the brain uses high-level abstract representations of objects within conscious thought
-* Chalmers: explains how the problem is split into a mechanical/computational problem that is comparatively easy, while the Hard problem remains a philosophical question because we don't have any possible physical explanation. Consequently many metaphysical explanations have been suggested.
+* Halligan: explains how neuroscience has discovered that conscious thought happens _after_ the action that it purports to have caused, and thus suggests that it is merely a side effect with no functional purpose [Halligan2017]
 * tbd. Dennet.
 
-Many existing theories avoid the actual questions of how and why we have phenomenal experience. This theory is different. My goal is to answer the most difficult question, and the theory here is the closest that I have got to that goal so far.
+In general they all provide some pieces of the puzzle but fail to convincingly solve the overall problem because they are either too abstract or too narrow in scope. Furthermore, many physicalist theories fail to account for the "hard problem" and try to hand-wave the problem away, while others fall back onto metaphysical explanations. Neither outcome seems satisfactory. The theory presented here is different. Via a mechanistic computational account, it attempts to attack head on the hardest "easy problem" questions of how it is that we can observe our own thoughts, and of why consciousness evolved; and it attempts to draw as close as possible to the "hard problem" of experience itself. 
 
-tbd. My theory can be seen as an application and extension of AST and Higher-order Thought Theory. My theory can also be seen as a sufficient explanation of the underlying mechanisms that explains why many neuroscience researchers believe that consciousness is just an entirely passive after-the-fact summation of events [Halligan2017].
 
-The theories here have been developed by considering our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through introspection. While the theory uses the human mind as the primary example, it is focused on the theoretical fundamental architectures of consciousness irrespective of whether that is in the form of a human biological consciousness, or some other alien mechanical consciousness.
+It attempts to show how the vast majority of phenomena have a plausible physical explanation. In so doing, the theory provides a framework to reproduce that vast majority of phenomena. 
 
-The theory presented here attempts to show how the vast majority of phenomena have a plausible physical explanation. In so doing, the theory provides a framework to reproduce that vast majority of phenomena. The remaining unexplained phenomena is investigated later, where it is explained that the aspects of phenomenal experience still remain. It is shown however that only a small portion of that phenomenon is left in need of explanation. Furthermore, it is shown that, while it remains an important question particularly from the point of view of ethics, we now know enough that the one remaining answer makes no difference to our ability to start building it. 
+The remaining unexplained phenomena is investigated later, where it is explained that the question of phenomenal experience still remains. I include my own characterisation of that "explanatory gap" in the hope that it may suggest some avenues of explanation.
+
+It is shown however that only a small portion of that phenomenon is left in need of explanation. Furthermore, it is shown that, while it remains an important question particularly from the point of view of ethics, we now know enough that the one remaining answer makes no difference to our ability to start building it.
+
+The theories here have been developed by considering our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through extensive self introspection. The theory can be seen as an application of AST and Higher-order Thought Theory, but it provides a much more concrete account than the abstract notions posited by those theories. 
+
+The theory here uses the human mind as the primary example, but it is focused on the theoretical fundamental architectures of consciousness irrespective of whether it is realized in the form of a human biological consciousness, an artificial consciousness simulated on a computer, or some alien mechanical consciousness.
+
 
 I should point out that this is a working hypothesis. Some of the premises here may not be universally agreed and need further corroboration, and in general more work is needed to investigate and confirm the hypotheses. The motivation for presenting this work is to present a sufficiently plausible explanation of conscious experience that shows that conscious experience can be explained through mechanistic physical processes without the need for meta-physical explanations. In doing so, I further hope that the theory presented is at least close to reality and that it acts as a useful basis for further research.
 
@@ -27,6 +34,7 @@ tbd. Introduce what I define as consciousness:
 * Human vs general definition of consciousness
 
 _Theory Overview_ presents a shallow overview of the whole of the theory. _Rationale_ presents a rationale for the theory, and examines some of its consequences......
+_Open Questions_ summarises some of the main areas where the theory needs more work, and examines what phenomena of consciousness remain unexplained. Sadly, this still includes the aspect of phenomenal experience.
 
 
 # Theory Overview
