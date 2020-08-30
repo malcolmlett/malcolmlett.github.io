@@ -1,22 +1,20 @@
 (WORK IN PROGRESS: This is a re-work that will replace the existing [[A Theory of the Human Mind]] page)
 
-This page outlines a working theory behind the computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is shown that the content of conscious experience is governed by a representational 'state model' that explains the majority of the phenomena of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered.
+This page outlines a working theory behind the computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is shown that the content of conscious experience is governed by a representational 'state model' and a particular kind of processing loop, that explains the majority of the phenomena of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered.
 
 # Introduction
-tbd.
+The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. The problem of explaining consciousness is often divided into an "easy problem" and a "hard problem". The "easy problem" is to explain the underlying mechanisms behind the functions of learning, reasoning, remembering, perceptual discrimination. The "hard problem" of consciousness is to explain why those functions are accompanied by experience? [Chalmers1995]
 
-The "Hard Problem of Consciousness" (Chalmers) has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. 
-
-There are many theories out there, all focusing on different aspects and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). They all provide some pieces of the puzzle. For example:
+There are many theories out there. Each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). In general they all provide some pieces of the puzzle. For example:
 * Tononi: partial mechanism for measurement, but not complete: doesn't define sufficiency.
 * AST: introduces how important the model is.
-** the work here can be seen as building on AST, although I reached many of the same conclusions independently.
 * Higher-order Thought Theory [Rosenthal2011][Rosenthal2005][Gennaro 1996][Gennaro2012] suggests that the brain uses high-level abstract representations of objects within conscious thought
 * Chalmers: explains how the problem is split into a mechanical/computational problem that is comparatively easy, while the Hard problem remains a philosophical question because we don't have any possible physical explanation. Consequently many metaphysical explanations have been suggested.
+* tbd. Dennet.
 
 Many existing theories avoid the actual questions of how and why we have phenomenal experience. This theory is different. My goal is to answer the most difficult question, and the theory here is the closest that I have got to that goal so far.
 
-My theory can be seen as an application and extension of AST and Higher-order Thought Theory. My theory can also be seen as a sufficient explanation of the underlying mechanisms that explains why many neuroscience researchers believe that consciousness is just an entirely passive after-the-fact summation of events [Halligan2017].
+tbd. My theory can be seen as an application and extension of AST and Higher-order Thought Theory. My theory can also be seen as a sufficient explanation of the underlying mechanisms that explains why many neuroscience researchers believe that consciousness is just an entirely passive after-the-fact summation of events [Halligan2017].
 
 The theories here have been developed by considering our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through introspection. While the theory uses the human mind as the primary example, it is focused on the theoretical fundamental architectures of consciousness irrespective of whether that is in the form of a human biological consciousness, or some other alien mechanical consciousness.
 
@@ -33,17 +31,17 @@ _Theory Overview_ presents a shallow overview of the whole of the theory. _Ratio
 
 # Theory Overview
 
-The mechanisms that lead to human consciousness are best explained by examining them in the context of three groups of overlayed views.
+The mechanisms that lead to human consciousness are best explained by examining them in the context of three overlayed views.
 
 ![basic state machine](files/A-theory-of-consciousness-v2-layers.png)
 
-The _physical_ view sees the human brain as a collection of neurons. While some regions have specific functionality that we understand, other regions serve many purposes. Many different kinds of behaviours are tightly integrated and overlapping making it very hard to identify the pathways that apply to conscious experience.
+The _physical_ view examines the human brain as a collection of neurons. While some regions have specific functionality that we understand, other regions serve many purposes. Many different kinds of behaviours are tightly integrated and overlapping making it very hard to identify the pathways that apply to conscious experience.
 
-The _logical_ view sees the brain as layers of simplified computational architectures, with specific focus on the high-level thought mechanism. 
+The _logical_ view examines the brain as layers of simplified component architectures. 
 
-The _virtual_ view exists only as the data state that is produced, transferred, and examined by the _logical_ view. However, some important concepts and behaviours are best examined within the framework of the _virtual_ view.
+The _data_ view examines the data state that is produced, transferred, and processed by the _logical_ view.
 
-The majority of discussions presented here are in the context of the logical and virtual views.
+The majority of discussions presented here are in the context of the logical and data views.
 
 ## Physical View
 tbd.
@@ -72,7 +70,7 @@ The theory claims that the high-level thought system of the human brain is a sta
 
 The proposed high-level state machine of the brain is illustrated in the following diagram. Externally sourced senses (our nominal five senses), plus internal senses (eg: mental tracking of limb position), are received as inputs (likely in a pre-processed form), then used in conjunction with the current state (held in Working Memory) to produce a new state.
 
-![logical view diagram](files/A-theory-of-consciousness-v2-state-machine.png)
+![state machine](files/A-theory-of-consciousness-v2-state-machine.png)
 
 In the diagram above, the Logic Processing box represents what is likely the bulk of the brain. While it is likely an oversimplification, it is assumed that the logic processing components are largely stateless, in that they merely compute a result given the inputs. It is further assumed that we can think of the multiple logic components of the brain as a single aggregate.
 
@@ -101,15 +99,15 @@ Before moving onto conscious experience itself, we need to highlight two importa
 
 **Mind Schema**: Like some other researches (eg: [Graziano2017]), I believe our brains also maintain a mental map of our mind. It tracks the observed capabilities of our mind. It will be used in a _generative_ way: to suggest a possibly suitable approach to solve a problem. And it will be used in a _predictive_ way: to monitor the thought path taken and to continually assess the likelihood that it will produce a useful outcome.
 
-## Virtual View
+## Data View
 tbd. alternatively: phrase as a 'data' view
 
-The virtual view focuses on the scope of conscious experience, where the state in the state machine becomes the central focus. By examining the virtual view we can highlight what can and cannot be observed by a conscious system.
+The data view focuses on the scope of conscious experience, where the state in the state machine becomes the central focus. By examining the data view we can highlight what can and cannot be observed by a conscious system.
 
 ### State Model
 A key component of a state machine is its state. The 'state model' is the passive data representation that is simultaneously the output of the main processor and the input to its next cycle.
 
-![virtual view diagram](files/A-theory-of-consciousness-v2-state-model.png)
+![state model](files/A-theory-of-consciousness-v2-state-model.png)
 
 The state model represents anything that may be useful as a direct output (eg: for governing action), or as input for the next cycle (eg: an intermediate result within a sequence of thought). The state model has tremendous flexibility in the kinds of data sources and results that can be represented within it, and in the resolution of those representations. For example, at any given moment it may represent only one thing with high precision, or it may represent multiple things with low precision and information about the relationships between those things. 
 
@@ -152,7 +150,7 @@ More formally, the three iterations of the visceral loop can be represented as f
 * Iteration 2: `f(x, mind-schema) -> relationship(x : mind-schema)`
 * Iteration 3: `f(relationship(x : mind-schema), mind-schema) -> relationship(mind-schema : mind-schema)`
 
-![virtual view diagram](files/A-theory-of-consciousness-v2-visceral-loop.png)
+![visceral loop](files/A-theory-of-consciousness-v2-visceral-loop.png)
 
 It is interesting to note that the majority of high-level thought is done in Iteration 1 alone, that Iteration 2 thought occurs exponentially less frequently, and that Iteration 3 thought occurs exponentially less frequently again.
 
@@ -344,6 +342,8 @@ Yet, I don't have any idea how to test which possibility is true. And, furthermo
 
 # References
 [Block2003] Ned Block. "The Harder Problem of Consciousness". January 2003. The Journal of Philosophy XCIX(8). DOI: 10.2307/3655621
+
+[Chalmers1995] Chalmers, D.J. "Facing up to the Problem of Consciousness." Journal of Consciousness Studies 2: 200-19, 1995.
 
 [Gennaro1996] Gennaro, R. "Consciousness and Self Consciousness: A Defense of the Higher Order Thought Theory of Consciousness." Philadelphia, PA: John Benjamins Publishing. 1996.
 
