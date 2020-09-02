@@ -3,13 +3,13 @@
 This page outlines a working theory behind the computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is shown that the content of conscious experience is governed by a representational 'state model' and a particular kind of processing loop, that explains the majority of the phenomena of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered.
 
 # Introduction
-The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. There are many theories out there. Each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI).
+The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. There are many theories out there. Each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). For a detailed discussion of the problem and the various viewpoints see: [Consciousness](https://iep.utm.edu/consciou/) and [The Hard Problem of Consciousness](https://iep.utm.edu/hard-con/) (Internet Encyclopedia of Philosophy).
 
 A small sampling of the viewpoints is as follows:
 * Chalmers: explains how the problem is split into a comparatively "easy problem" of explaining the mechanical/computational mechanisms behind the functions of learning, reasoning, remembering, perceptual discrimination internal access, etc.; while the "hard problem" is why these functions are accompanied by experience, and that it remains a philosophical question because we don't have any possible physical explanation. [Chalmers1995]
 * Tononi: partial mechanism for measurement, but not complete: doesn't define sufficiency.
 * AST: introduces how important the model is.
-* Higher-order Thought Theory [Rosenthal2011][Rosenthal2005][Gennaro 1996][Gennaro2012] suggests that the brain uses high-level abstract representations of objects within conscious thought
+* Higher-order Thought Theory [Rosenthal2011, Rosenthal2005, Gennaro1996, Gennaro2012] suggests that the brain uses high-level abstract representations of objects within conscious thought
 * Halligan: explains how neuroscience has discovered that conscious thought happens _after_ the action that it purports to have caused, and thus suggests that it is merely a side effect with no functional purpose [Halligan2017]
 * tbd. Dennet.
 
@@ -80,9 +80,9 @@ The proposed high-level state machine of the brain is illustrated in the followi
 
 ![state machine](files/A-theory-of-consciousness-v2-state-machine.png)
 
-In the diagram above, the Logic Processing box represents what is likely the bulk of the brain. While it is likely an oversimplification, it is assumed that the logic processing components are largely stateless, in that they merely compute a result given the inputs. It is further assumed that we can think of the multiple logic components of the brain as a single aggregate.
+In the diagram above, the Logic Processing box represents what is likely the bulk of the brain and where non-conscious mental processes produce meaningful results from the received senses and internal inputs inputs [Nisbett1977]. While it is an oversimplification, the logic processing components are treated as largely stateless, in that they merely compute a result given the inputs. It is further assumed that we can think of the multiple logic components of the brain as a single aggregate.
 
-In the terminology of Danial Kahneman, the logic processing components on their own are of the form of _System 1_ thought (_Fast Thinking_), while the net result of multiple steps being executed by the state machine form _System 2_ thought (_Slow Thinking_).
+In the terminology of Daniel Kahneman, the logic processing components on their own are of the form of _System 1_ thought (_Fast Thinking_), while the net result of multiple steps being executed by the state machine form _System 2_ thought (_Slow Thinking_).
 
 ### Working Memory
 Neuroscience currently believes that we hold about 7 items in working memory, for up to about 1 minute [citation]. This is the state data store of our state machine. The presence or absence of certain data items directly influence which logic processes activate.
@@ -153,7 +153,7 @@ Iteration 2 requires the labelling of input data in relation to the mind schema.
 
 Iteration 3 thought takes that to the next level. The relationship itself becomes the input data that is further processed in relation to the mind schema. With sufficient thought in this category, one can conclude themselves as conscious.
 
-More formally, the three iterations of the visceral loop can be represented as follows:
+More formally, the three iterations of the visceral loop can be represented using a mathematical notation that highlights the inputs to the function, and its result:
 * Iteration 1: `f(inputs) -> x` - some result of simple thought
 * Iteration 2: `f(x, mind-schema) -> relationship(x : mind-schema)`
 * Iteration 3: `f(relationship(x : mind-schema), mind-schema) -> relationship(mind-schema : mind-schema)`
@@ -185,14 +185,22 @@ From a physical space perspective, a far more efficient solution is to have a ce
 ## High-level thought as a state machine
 tbd. diagram.
 
-As we are discovering through the development of artificial neural networks, a simple non-cyclic network of neurons can be very effective for pattern matching and prediction. However it isn't suitable for high-level thought because of a number of limitations:
-* it's only capable of producing results from a single pass of the network (Convolutional Neural Networks), or a single pass of the data stream (Recurrent Neural Networks)
-* it's hard to combine results from multiple arbitrarily selected processing regions
-* it can learn and is flexible in the long term, but static and inflexible in the short term
+Various studies have revealed that we are either unaware of the majority of processes that occur within the brain [Miller1962, Nisbett1977, Halligan2000], or that we only become aware of those processes _after the fact_ [Halligan2017]. Furthermore, evidence from cognitive neuropsychology suggests that we can perform relatively complicated processing and have that influence our awareness, without even being aware of the processing or the sense inputs that the processing was based on [Driver1998, Marshall1988, Weiskrantz1985].
+
+I suggest that this is quite straight-forward to explain.
+
+The kinds of processing mentioned above form what Daniel Kahneman refers to as _System 1_ thought (or _Fast Thinking_ thought) [Kahneman2011]. Here, deep and complex layers of neurons are involved, and while they may have cycles on the micro scale, they likely have the macro scale form of a simple [feed-forward network](https://en.wikipedia.org/wiki/Feedforward_neural_network). This _System 1_ thought can be quite advanced, as we know from the work of Kahneman. For example, it can localize the source of a specific sound, produce the result for simple well practiced questions such as "2+2=?", read text on a billboard, or even drive a car on an empty road.
+
+To summarise all that in short form: simple macro-scale-feed-forward networks are great for efficient pattern matching, prediction, and generation of well practiced actions.
+
+However, such networks are not suitable for high-level thought because of a number of limitations:
+* they are only capable of producing results from a single pass of the network.
+* it's hard to combine results from multiple arbitrarily selected processing regions.
+* these networks can learn and are flexible in the long term, but are typically static and inflexible in the short term.
 
 High-level thought involves multiple steps and intermediate states. Working memory serves to hold those intermediate states. Multiple steps are supported through operating in cycles, with each cycle taking the current state of working memory, applying one step of computation, and storing the result back into working memory. In other words, a 'state machine'.
 
-It's possible that the evolution of working memory was the catalyst for the evolution of a state-machine processing loop, which further formed the basis of the high intelligence that we enjoy today.
+I would even go further to suggest that it's possible that the evolution of working memory was the catalyst for the evolution of a state-machine processing loop. That, of course, further formed the basis of the high intelligence that we enjoy today.
 
 ## Control mechanism as basis for awareness of thoughts
 If you were to build a state machine yourself, you would not want to do it with neural networks. State machines operate on the principle of a loop that repeats itself over and over, with the same logic rules but different state. They require stability and predictability. Neural networks are noisy, chaotic, and take a long time to train. A state machine using neural networks for processing is highly unstable and tends to get stuck in infinite loops. I encountered this myself in my first attempt to model the state machine of consciousness using simple logic rules. And I wasn't even subject to the unpredictable nature of neural networks.
@@ -344,29 +352,43 @@ Yet, I don't have any idea how to test which possibility is true. And, furthermo
 * Properties of consciousness
 * Meta problem of consciousness 
 
+
 # Further research 
+
 * Learn more by building it - see: [[Conscious Calculator v2]]
 * Further study of neuroscience works in order to refine the architecture of the logical view.
 
+
 # References
-[Block2003] Ned Block. "The Harder Problem of Consciousness". January 2003. The Journal of Philosophy XCIX(8). DOI: 10.2307/3655621
 
-[Chalmers1995] Chalmers, D.J. "Facing up to the Problem of Consciousness." Journal of Consciousness Studies 2: 200-19, 1995.
+[Block2003] Ned Block. 2003. "The Harder Problem of Consciousness". The Journal of Philosophy XCIX(8), January 2003. DOI: 10.2307/3655621.
 
-[Gennaro1996] Gennaro, R. "Consciousness and Self Consciousness: A Defense of the Higher Order Thought Theory of Consciousness." Philadelphia, PA: John Benjamins Publishing. 1996.
+[Chalmers1995] Chalmers, D.J. 1995. "Facing up to the Problem of Consciousness." Journal of Consciousness Studies 2: 200-19.
 
-[Gennaro2012] Gennaro, R. "The Consciousness Paradox: Consciousness, Concepts, and Higher-Order Thoughts." Cambridge, MA: The MIT Press. 2012.
+[Driver1998] Driver, J., and Mattingley, J. B. (1998). "Parietal neglect and visual awareness". Nat. Neurosci. 1, 17–22 doi: 10.1038/217
 
-[Graziano2017] Michael S. A. Graziano, Department of Psychology and Neuroscience, Princeton University, US. "The Attention Schema Theory: A Foundation for Engineering Artificial Consciousness". Front. Robot. AI, 14 November 2017. https://doi.org/10.3389/frobt.2017.00060.
+[Gennaro1996] Gennaro, R. 1996. "Consciousness and Self Consciousness: A Defense of the Higher Order Thought Theory of Consciousness." Philadelphia, PA: John Benjamins Publishing.
 
-[Halligan2000] Halligan, P. W., and Oakley, D. A. (2000). Greatest myth of all. New Scientist #168 (pp 3439). https://www.newscientist.com/article/mg16822653-700-greatest-myth-of-all.
+[Gennaro2012] Gennaro, R. 2012. "The Consciousness Paradox: Consciousness, Concepts, and Higher-Order Thoughts." Cambridge, MA: The MIT Press.
+
+[Graziano2017] Michael S. A. Graziano. Nov 2017. "The Attention Schema Theory: A Foundation for Engineering Artificial Consciousness". Front. Robot. AI, 14 November 2017. https://doi.org/10.3389/frobt.2017.00060.
+
+[Halligan2000] Halligan, P. W., and Oakley, D. A. 2000. Greatest myth of all. New Scientist #168 (pp 34-39). https://www.newscientist.com/article/mg16822653-700-greatest-myth-of-all.
 
 [Halligan2017] Peter W. Halligan, and David A. Oakley. 2017. "Chasing the Rainbow: The Non-conscious Nature of Being". Frontiers in Science. https://doi.org/10.3389/fpsyg.2017.01924
 
-[Rosenthal2005] Rosenthal, D. "Consciousness and Mind." New York: Oxford University Press. 2005.
+[Kahneman2011] Kahneman, D. (2011). "Thinking, fast and slow." New York: Farrar, Straus and Giroux.
 
-[Rosenthal2011] Lau, H. and Rosenthal, D. "Empirical support for higher-order theories of consciousness." Trends in Cognitive Sciences 15: 365â373. 2011.
+[Marshall1988] Marshall, J. C., and Halligan, P. W. (1988). Blindsight and insight in visuo-spatial neglect. Nature 336, 766–767. doi: 10.1038/336766a0
 
-[SDOct2012] University of Chicago Medical Center. "Homolog of mammalian neocortex found in bird brain." ScienceDaily, 1 October 2012. www.sciencedaily.com/releases/2012/10/121001151953.htm.
+[Miller1962] Miller, G. A. (1962). "Psychology: The Science of Mental Life". London: Penguin.
 
+[Nisbett1977] Nisbett, Richard & Wilson, Timothy. 1977. "Telling More Than We Can Know: Verbal Reports on Mental Processes". Psychological Review. 84. (pp 231-259). http://dx.doi.org/10.1037/0033-295X.84.3.231.
 
+[Rosenthal2005] Rosenthal, D. 2005. "Consciousness and Mind." New York: Oxford University Press.
+
+[Rosenthal2011] Lau, H. and Rosenthal, D. 2011. "Empirical support for higher-order theories of consciousness." Trends in Cognitive Sciences 15: (pp 365-373).
+
+[SDOct2012] University of Chicago Medical Center. 2012. "Homolog of mammalian neocortex found in bird brain." ScienceDaily, 1 October 2012. www.sciencedaily.com/releases/2012/10/121001151953.htm.
+
+[Weiskrantz1985] Weiskrantz, L. (1985). "Blindsight: A Case Study and Implications". Oxford: OUP
