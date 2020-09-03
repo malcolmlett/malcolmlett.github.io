@@ -29,17 +29,38 @@ The theory here uses the human mind as the primary example, but it is focused on
 
 I should point out that this is a working hypothesis. Some of the premises here may not be universally agreed and need further corroboration, and in general more work is needed to investigate and confirm the hypotheses. The motivation for presenting this work is to present a sufficiently plausible explanation of conscious experience that shows that conscious experience can be explained through mechanistic physical processes without the need for meta-physical explanations. In doing so, I further hope that the theory presented is at least close to reality and that it acts as a useful basis for further research.
 
-tbd. Introduce what I define as consciousness:
-* Contenders: awareness of thought, emotions, empathy, experience of senses, high-level processing
-* Human vs general definition of consciousness
-
 _Theory Overview_ presents a shallow overview of the whole of the theory. _Rationale_ presents a rationale for the theory, and examines some of its consequences......
 _Open Questions_ summarises some of the main areas where the theory needs more work, and examines what phenomena of consciousness remain unexplained. Sadly, this still includes the aspect of phenomenal experience.
 
 
 # Theory Overview
+The full set of data processing that occurs within our brain is immensely complicated, occurring at many levels with complicated interactions. For example, some behaviours are the result of entirely unconscious brain activity. No one paper could hope to explain all of that, and must focus on a narrow subset of brain functions. This paper is no different. The theory presented here focuses on the mechanisms behind high-order thought, and how they are associated with conscious experience.
 
-The mechanisms that lead to human consciousness will be explained here by examining them in the context of three overlayed views.
+The theory presented here describes a set of architectural structures and computional mechanims that it purports to produce consciousness in any systems that contain these structures and mechanisms. This includes biological organisms such as humans, and other mammals, and likely in other biological forms too (in particular, it is suspected that birds and fish have the same basic brain components as mammals that are necessary for high-level thought). It would also apply to artificial organisms, including virtual ones (ie: simulated in a computer).
+
+But what do I mean by the use of the words 'consciousness' and 'conscious'?
+
+I think of consciousness as having the following characteristics:
+* awareness of senses (*)
+* awareness of thought
+* able to elicit some sort of action as output (*)
+* high-level thought processing
+* phenomenal experience - ie: the conscious system's experience of its own senses and thought
+
+The star (*) indicates two characteristics which could potentially be dropped, and might still produce consciousness. However, the reality is that such a system would be useless and would certainly never evolve on its own right.
+
+Many other characteristics are commonly attributed to consciousness, particularly in movies. However I view them as addendums to consciousness, because a system could in theory exist without them and still be argued as conscious:
+* emotions
+* empathy
+* physical embodiment
+* human-level of intelligence
+
+As we shall see later on, the _existence_ of phenomenal experience is 
+unfortunately not explained by the theory. However, I believe all aspects of the _content_ of that experience are explained.
+
+## Views
+
+The proposed mechanisms that lead to human consciousness will be explained here by examining them in the context of three overlayed views.
 
 ![basic state machine](files/A-theory-of-consciousness-v2-layers.png)
 
@@ -56,7 +77,7 @@ tbd.
 
 Slowly science is beginning to understand the kind of processing performed by different regions, however our understanding at this level is still very much at its infancy. This article will largely omit discussion about the biological view. However, as we shall see, there is one particularly significant point that needs to be made about the nature of any physical computational machine, such as the biological brain.
 
-All mammals have a neocortex, and birds have a similar structure called the dorsal ventricular ridge (DVR) that neuroscience suggests provides similar capability to the neocortex [SDOct2012].
+All mammals have a neocortex, and birds have a similar structure called the dorsal ventricular ridge (DVR) that neuroscience suggests provides similar capability to the neocortex [SDOct2012]. I have also seen some suggestion that fish have a similar structure with similar functionality.
 
 ### Neuronal structure
 tbd.
@@ -72,8 +93,6 @@ Main conclusion:
 * Physical computational machines have bulky data processing circuits, and bulky memory storage, and they need a small working area to hold the current set of data being worked on.
 
 ## Logical View
-The full set of data processing that occurs within our brain is immensely complicated, occurring at many levels with complicated interactions. For example, some behaviours are the result of entirely unconscious brain activity. No one paper could hope to explain all of that, and must focus on a narrow subset of brain functions. This paper is no different. The theory presented here focuses on the mechanisms behind high-order thought, and how they are associated with conscious experience.
-
 The theory claims that the high-level thought system of the human brain is a state machine with a tightly integrated control mechanism, whereas the low-level older part of the brain is something much more akin to our current deep-learning artificial neural network models - basically just pattern matching/prediction engines. High-level thought is achieved through a combination of a relatively simple state machine architecture, with the pattern matching and prediction power of those low-level neural networks.
 
 The proposed high-level state machine of the brain is illustrated in the following diagram. Externally sourced senses (our nominal five senses), plus internal senses (eg: mental tracking of limb position), are received as inputs (likely in a pre-processed form), then used in conjunction with the current state (held in Working Memory) to produce a new state.
@@ -230,9 +249,11 @@ This also suggests that there is a minimum level of intelligence required for a 
 See more: [[The Error Prone Brain]]
 
 ## Models
-Graziano [Graziano2017] introduced Attention Schema Theory (AST), which suggested how important a representational model might be for consciousness. Graziano assumes a single model that encapsulates information about the capabilities of the body, the mind, and the data state, but admits that there may be other divisions.
+Graziano [Graziano2017] introduced Attention Schema Theory (AST), which posits that the brain uses a high-level representational model to encapsulate information about the state of the body and thoughts within the mind, and that this is used for attention control. The existence of some sort of mental model of the body, or 'body schema', is well established in our understanding of the primary motor and somatosensory projection areas, along with their associated non-primary projection areas [Gleitman2003, ch2].
 
-Upon considering how the different kinds of information in that space become available to our consciousness, and in the kinds of processing that would be applied, I think there are three separate models in this context. Importantly, I think the state model is just a passive data representation that can be moved around between different regions of the brain, whereas the body and mind schema are more likely to be physically wired within certain specific regions of the brain. We certainly know this is true for the case of the body schema from our discovery of primary motor and somatosensory projection areas [Gleitman2003, ch2].
+Graziano introduced the idea of a 'mind schema', similar to the body schema but models the capabilities of the mind itself. He then suggested how, through self-reference, this model could form the basis for the conclusion of one's own consciousness. Graziano assumes a single model that encapsulates all behavioural predictions of the body and mind, and of the state of current thought, but admits that there may be other divisions.
+
+Like Graziano, I also think that understanding the models employed by the brain is key to understanding consciousness. However, upon considering the different kinds of information that become available to our consciousness, and in the kinds of processing that would be applied, I think there are three separate models in this context. Importantly, I think the state model is just a passive data representation that can be moved around between different regions of the brain, whereas the body and mind schema are more likely to be physically wired within certain specific regions of the brain.
 
 Another important distinction is that the information from the body and mind schema appears to have significantly less resolution within our awareness than that of many other senses (eg: the five external senses plus conscious feedback). I can open my eyes and see lots of detail, and I can clearly observe my current thought as well as my 'inner voice'. And although I can reference specific knowledge about my ability to do maths, for example, I would not expect to observe all of my mentally mapped details of my mind's capabilities without a lengthy introspection session. Thus, my mind schema appears to behave more like a long term memory: certain events elicit specific responses due to their association, but I can freely browse all of its contents.
 
