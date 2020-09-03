@@ -4,15 +4,22 @@ Source:
 1. Draw.io > select content and bounding box
 2. Edit > Copy as Image
 
-
 3d rectangle:
-1. sheer 170+0
-2. rotate -10 degrees
-3. layer: transparency=80
+1. clear existing content of layer, and show the 'frame' layer for guide
+2. sheer 170+0
+3. rotate -10 degrees
+4. layer: transparency=80
 
 drop-shadow:
-Filters > Light and Shadow > Drop Shadow...
-x: 0, y: 20, radius: 10, opacity: 0.75
+1. select each layer in turn
+2. Filters > Light and Shadow > Drop Shadow...
+3. x: 0, y: 20, radius: 10, opacity: 0.75
+
+export:
+1. Image > Merge visible layers > with Drop invisible layers
+2. File > Export
+2. Close Gimp file WITHOUT saving
+3. !!DO NOT SAVE the Gimp file!!
 
 
 Trying to produce something like this: https://www.presentation-process.com/layer-diagram.html
