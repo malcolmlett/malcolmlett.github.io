@@ -6,8 +6,9 @@ Source:
 
 
 3d rectangle:
-1. sheer 170
+1. sheer 170+0
 2. rotate -10 degrees
+3. layer: transparency=80
 
 drop-shadow:
 Filters > Light and Shadow > Drop Shadow...
