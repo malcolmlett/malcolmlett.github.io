@@ -108,16 +108,15 @@ Before moving onto conscious experience itself, we need to highlight two importa
 **Mind Schema**: Like some other researches (eg: [Graziano2017]), I believe our brains also maintain a mental map of our mind. It tracks the observed capabilities of our mind. It will be used in a _generative_ way: to suggest a possibly suitable approach to solve a problem. And it will be used in a _predictive_ way: to monitor the thought path taken and to continually assess the likelihood that it will produce a useful outcome.
 
 ## Data View
-tbd. alternatively: phrase as a 'data' view
 
-The data view focuses on the scope of conscious experience, where the state in the state machine becomes the central focus. By examining the data view we can highlight what can and cannot be observed by a conscious system.
+The data view examines the data states and high-level representations used within the brain. We shall focus within the scope of conscious experience, and in particular the 'state model' of the state machine. By examining the data view we can highlight what is and isn't observed within the high-level thought of a conscious system.
 
 ### State Model
-A key component of a state machine is its state. The 'state model' is the passive data representation that is simultaneously the output of the main processor and the input to its next cycle.
+The 'state model' is the passive data representation used within the state machine. It is simultaneously the output of the main processor and the input to its next cycle.
 
 ![state model](files/A-theory-of-consciousness-v2-state-model.png)
 
-The state model represents anything that may be useful as a direct output (eg: for governing action), or as input for the next cycle (eg: an intermediate result within a sequence of thought). The state model has tremendous flexibility in the kinds of data sources and results that can be represented within it, and in the resolution of those representations. For example, at any given moment it may represent only one thing with high precision, or it may represent multiple things with low precision and information about the relationships between those things. 
+The state model represents anything that may be useful as a direct output (eg: for governing action), or as input for the next cycle (eg: an intermediate result within a sequence of thought). Within humans, the state model has tremendous flexibility in the kinds of data sources and results that can be represented within it, and in the resolution of those representations. For example, at any given moment it may represent only one thing with high precision, or it may represent multiple things with low precision and information about the relationships between those things. 
 
 The range of data sources that can be directly represented within the state model is particularly enlightening. Some examples from my own observations are:
 * **working memory**: we seem to be only able to think about one 'thing' at a time, which I interpret as being where one item from working memory is selected into the state model at a time.
@@ -127,10 +126,9 @@ The range of data sources that can be directly represented within the state mode
 * **long term memory**: we can draw up recent and long past memories, but we certainly do not have access to all of those directly. There appears to be some sort of fetching mechanism involved.
 * **conscious feedback**: output from processing in prior cycle.
 
-The five external senses in particular are interesting, as it is well known that we do not observe them in their raw form. Vision, for example, is produced by the eyes with varying levels of focus and detail across the visual field, and yet it's very hard for us to directly observe that because the sense has been pre-processed to construct a single coherent virtual visual field. Furthermore, we experience senses pre-attached with 'meaning': rather than seeing a series of lines and dots, I see a window, a door, a ball; rather than hearing a bunch of strange sounds, I hear specific spoken words.
+The five external senses in particular are interesting, as it is well known that we do not observe them in their raw form. Vision, for example, is produced by the eyes with varying levels of focus and detail across the visual field, and yet it's very hard for us to directly observe that because the sense has been pre-processed to construct a single coherent virtual visual field. Furthermore, we experience senses pre-attached with 'meaning': rather than seeing a series of lines and dots, I see a window, a door, a ball; rather than hearing a sampling of strange sounds, I hear specific spoken words.
 
-I also think senses are 'labelled' in some way as to their source. For example, we have a strong perception of whether a sense came to us externally or from us internally. The labelling is clearly a reference back to the body and mind schemas. Very interesting results occur when that labelling is disrupted, such as when people 'hear voices', or when the body or mind schemas cannot be updated [citation].
-
+I also think senses carry with them a sort of 'labelling' as to their source. For example, we have a strong perception of whether a sense came to us externally or from us internally. The labelling appears to be a reference back to the body and mind schemas. Very interesting results occur when that labelling is disrupted, such as when people with schizophrenia 'hear voices' not realising that they are the ones speaking [Klaver2016], or when the body or mind schemas cannot be updated, causing [anosognosia](https://www.nami.org/About-Mental-Illness/Common-with-Mental-Illness/Anosognosia).
 
 ### Visceral Loop
 The 'Visceral Loop' is a characterisation of the kinds of thought or processing outcomes that pass through the state machine described above, and how that thought leads to the individual having a _visceral_ awareness of their own thoughts. It is thus the culmination of the theory, for it explains how we come to conclude ourselves as conscious beings.
@@ -189,7 +187,7 @@ Various studies have revealed that we are either unaware of the majority of proc
 
 I suggest that this is quite straight-forward to explain.
 
-The kinds of processing mentioned above form what Daniel Kahneman refers to as _System 1_ thought (or _Fast Thinking_ thought) [Kahneman2011]. Here, deep and complex layers of neurons are involved, and while they may have cycles on the micro scale, they likely have the macro scale form of a simple [feed-forward network](https://en.wikipedia.org/wiki/Feedforward_neural_network). This _System 1_ thought can be quite advanced, as we know from the work of Kahneman. For example, it can localize the source of a specific sound, produce the result for simple well practiced questions such as "2+2=?", read text on a billboard, or even drive a car on an empty road.
+The kinds of processing mentioned above form what Daniel Kahneman refers to as _System 1_ (or _fast thinking_) thought [Kahneman2011]. Here, deep and complex layers of neurons are involved, and while they may have cycles on the micro scale, they likely have the macro scale form of a simple [feed-forward network](https://en.wikipedia.org/wiki/Feedforward_neural_network). This _System 1_ thought can be quite advanced, as we know from the work of Kahneman. For example, it can localize the source of a specific sound, produce the result for simple well practiced questions such as "2+2=?", read text on a billboard, or even drive a car on an empty road.
 
 To summarise all that in short form: simple macro-scale-feed-forward networks are great for efficient pattern matching, prediction, and generation of well practiced actions.
 
@@ -200,12 +198,14 @@ However, such networks are not suitable for high-level thought because of a numb
 
 High-level thought involves multiple steps and intermediate states. Working memory serves to hold those intermediate states. Multiple steps are supported through operating in cycles, with each cycle taking the current state of working memory, applying one step of computation, and storing the result back into working memory. In other words, a 'state machine'.
 
-I would even go further to suggest that it's possible that the evolution of working memory was the catalyst for the evolution of a state-machine processing loop. That, of course, further formed the basis of the high intelligence that we enjoy today.
+It is this action of the state machine, with thought that spans multiple cycles, that is characterised by Kahneman as _System 2_ (or _slow thinking_) thought.
+
+As an aside, I think it's possible that the evolution of working memory was the catalyst for the evolution of a state-machine processing loop, which of course further formed the basis of the high intelligence that we enjoy today.
 
 ## Control mechanism as basis for awareness of thoughts
 If you were to build a state machine yourself, you would not want to do it with neural networks. State machines operate on the principle of a loop that repeats itself over and over, with the same logic rules but different state. They require stability and predictability. Neural networks are noisy, chaotic, and take a long time to train. A state machine using neural networks for processing is highly unstable and tends to get stuck in infinite loops. I encountered this myself in my first attempt to model the state machine of consciousness using simple logic rules. And I wasn't even subject to the unpredictable nature of neural networks.
 
-A common engineering solution to stability problems is the addition of a control mechanism. A common control mechanism uses a feedback measurement of the output of the system that it compares against some ideal signal, and uses that to adjust the system's behaviour. 
+A common engineering solution to stability problems is the addition of a control mechanism. A common control mechanism uses a feedback measurement of the output of the system, which it it compares against some ideal signal, and uses that to adjust the system's behaviour.
 
 Broadly, there are two styles of control mechanism that might be employed in a state machine system:
 
@@ -232,11 +232,11 @@ See more: [[The Error Prone Brain]]
 ## Models
 Graziano [Graziano2017] introduced Attention Schema Theory (AST), which suggested how important a representational model might be for consciousness. Graziano assumes a single model that encapsulates information about the capabilities of the body, the mind, and the data state, but admits that there may be other divisions.
 
-Upon considering how the different kinds of information in that space become available to our consciousness, and in the kinds of processing that would be applied, I think there are three separate models in this context. Importantly, I think the state model is just a passive data representation that can be moved around between different regions of the brain, whereas the body and mind schema are more likely to be physically wired within certain specific regions of the brain. We certainly know this is true for the case of the body schema.
+Upon considering how the different kinds of information in that space become available to our consciousness, and in the kinds of processing that would be applied, I think there are three separate models in this context. Importantly, I think the state model is just a passive data representation that can be moved around between different regions of the brain, whereas the body and mind schema are more likely to be physically wired within certain specific regions of the brain. We certainly know this is true for the case of the body schema from our discovery of primary motor and somatosensory projection areas [Gleitman2003, ch2].
 
 Another important distinction is that the information from the body and mind schema appears to have significantly less resolution within our awareness than that of many other senses (eg: the five external senses plus conscious feedback). I can open my eyes and see lots of detail, and I can clearly observe my current thought as well as my 'inner voice'. And although I can reference specific knowledge about my ability to do maths, for example, I would not expect to observe all of my mentally mapped details of my mind's capabilities without a lengthy introspection session. Thus, my mind schema appears to behave more like a long term memory: certain events elicit specific responses due to their association, but I can freely browse all of its contents.
 
-I think a particularly strong argument for the existence of these schemas as independent components of the brain is that i) the learning algorithm required to 'train' these schemas is relatively simple (just run in a tight cycle of predicting the next future state, observing what really happens, and correcting the network from the difference), ii) that it can be trained independently of the main processing units, and iii) that it provides a very useful input to the main processing units.
+I think a particularly strong argument for the existence of these schemas as independent components of the brain is that i) the learning algorithm required to 'train' these schemas is relatively simple (just run in a tight cycle of predicting the next future state, observing what really happens, and correcting the network from the difference), ii) that they can be trained independently of the main processing units, and iii) that they provide a very useful input to the main processing units.
 
 The visceral loop explains why the state model is both a significant source of input to data processing, and the outcome of that processing. The model and processing step work so closely together that it can be hard to see the distinction between them. That may be because our ability to analyse our own consciousness is a factor of that model/processing interaction.
 
@@ -248,11 +248,11 @@ More specifically, the scope of what we can conclude about our own consciousness
 ## Boundaries of conscious experience
 It seems quite clear that there are portions of data processing within our brain that we are conscious of, and other data states and processing that we are not aware of. Why do we experience a particular subset of data processing as consciousness? The claim of the visceral loop is that the boundary and content of what we can conclude as consciousness is dictated by what is representable within the state model and by what processing can be performed against that model.
 
-In developing this theory, I earlier wrote an article on [[The analogy of the Thalamic symbiote]]. That was a thought experiment to try to quantify more precisely what is and isn't available to conscious experience. In brief, it describes a tiny creature (the Thalamus) living in a symbiotic relationship with the main bulk of the brain and the rest of the body (the Human). They exist that way because of mutually beneficial evolutionary strategies, whereby each avoided having to evolve the characteristics that the other had already evolved. The Thalamus prefers to sense and operate against high-level abstract concepts, rather than directly observing its physical surroundings; and it prefers just to make executive choices between available options, rather than performing any hard computations. The Human has only a moderate level of intelligence, but has successfully managed to develop accurate senses about the outside world, to process those senses in order to form simple representations of reality, and to apply some simple logic rules. Using a chess analogy, the Human can think one step at a time. As they are separate organisms, they have a different set of 'senses'. Humans have the five external senses that we are familiar with, and the Thalamus has high-level data senses that approximately translate as equivalents of those five Human senses. However, the Thalamus also has one additional sense which takes a high-level summary of the state of the Human part of the brain. The experience of consciousness, the inner most "I" when I talk about myself, is actually the Thalamus experiencing its own senses.
+In developing this theory, I earlier wrote an article on [[The analogy of the Thalamic symbiote]]. That was a thought experiment to try to rationalise more precisely what is and isn't available to conscious experience. In brief, it describes a tiny creature (the Thalamus) living in a symbiotic relationship with the main bulk of the brain and the rest of the body (the Human). They exist that way because of mutually beneficial evolutionary strategies, whereby each avoided having to evolve the characteristics that the other had already evolved. The Thalamus prefers to sense and operate against high-level abstract concepts, rather than directly observing its physical surroundings; and it prefers just to make executive choices between available options, rather than performing any hard computations. The Human has only a moderate level of intelligence, but has successfully managed to develop accurate senses about the outside world, to process those senses in order to form simple representations of reality, and to apply some simple logic rules. Using a chess analogy, the Human can think one step at a time. As they are separate organisms, they have a different set of 'senses'. Humans have the five external senses that we are familiar with, and the Thalamus has high-level data senses that approximately translate as equivalents of those five Human senses. However, the Thalamus also has one additional sense which takes a high-level summary of the state of the Human part of the brain. The experience of consciousness, the inner most "I" when I talk about myself, is actually the Thalamus experiencing its own senses.
 
 While the suggestion of the Thalamic symbiote seems absurd, curiously it does propose a model that fits very well with the observations that an individual may make about their own conscious experience after sufficient thought. For example:
 1. We don't actually have phenomenal experience of our physical senses, but rather we experience a pre-processed form of our senses, after gaps in data have been filled in and meaning attached.
-2. We have phenomenal experience of more than just our 5 physical senses. Conscious feedback is definitely an extra sense, and there may be more.
+2. We have phenomenal experience of more than just our five physical senses. Conscious feedback is definitely an extra sense, and there may be more.
 3. Our phenomenal experience omits all low level details of the functioning of our brain.
 4. It feels like there is some inner "I" that does the experiencing.
 5. On first glance, executive control (the ability to take an active role in making decisions) appears to be intimately linked with conscious experience.
@@ -276,9 +276,9 @@ In contrast, I don't see that explanation as adding much to the whole solution. 
 
 Like any theory being developed, there are a number of questions remaining. At the most basic level there are questions around how the logical view maps into the physical view, and about how much pre- and post-processing of signals occurs outside of the high-level processing schematic presented in the logical view here. As our understanding of neuroscience improves, we will be able to narrow down the range of possible explanations.
 
-Clearly, the theory needs more corroborating evidence in order for us to confirm whether it is indeed correct. Much of that will come from two particular sources: i) further understanding of neuroscience, and ii) learnings from attempting to build an artificial consciousness. For example, my entire control-mechanism basis of consciousness came from trying to build a high level emulation of the state machine components and finding how susceptible it was to infinite loops.
+Clearly, the theory needs more corroborating evidence in order for us to confirm whether it is indeed correct. Much of that will come from two particular sources: i) further understanding of neuroscience, and ii) learnings from attempting to build a artificial consciousness and artificial general intelligence. For example, my entire control-mechanism basis of consciousness came from trying to build a high level emulation of the state machine components and finding how susceptible it was to infinite loops.
 
-The sections below discuss in detail a selection of specific open questions.
+The sections below discuss a selection of specific open questions.
 
 ## Learning
 The ability for a particular system to productively learn is a significant factor governing how the brain evolved the mechanisms it has. Unfortunately the theory presented here will not be complete without a detailed consideration of how each component could learn its required behaviours.
@@ -287,7 +287,7 @@ I will state briefly some general ideas on how learning fits together, but obvio
 
 * The overall brain structure is obviously constructed as a result of evolutionary pressures. I suggest that the brain is also pre-wired with the most basic starting blocks of a control mechanism. That pre-wiring likely incorporates some degree of immutable hard barriers, for example to ensure that we don't get completely stuck in a tight infinite loop, but also supports the ability for us to learn, modify, and override softer control forces.
 
-* I suspect that different components of the brain learn through different mechanisms. For example, we know that [Hebbian](https://en.wikipedia.org/wiki/Hebbian_theory) learning operates in an 'online learning' mode. There is also some evidence that our brain employs 'offline learning' during sleep in order to transfer memories and new skills to long term memory [citation]. Lastly, I suspect that some systems learn through more of a re-enforcement style, updating their state only occasionally when feedback is available, and possibly applying its state as a source of online learning pressure to other components.
+* I suspect that different components of the brain learn through different mechanisms. For example, we know that [Hebbian](https://en.wikipedia.org/wiki/Hebbian_theory) learning operates in an 'online learning' mode. There is also some evidence that our brain employs 'offline learning' such as in the suggested process of [memory consolidation](https://en.wikipedia.org/wiki/Memory_consolidation). Lastly, I suspect that some systems learn through more of a re-enforcement style, updating their state only occasionally when feedback is available, and possibly applying its state as a source of online learning pressure to other components.
 
 ## Lossiness in Visceral Loop
 We appear to perceive certain external and internal senses and data sources, while not perceiving others. For example, we don't have direct access to arbitrary long term memories, and it seems quite reasonable to assume that access to long term memory requires some sort of background lookup. But our ability to infer the inputs to the main high-level processor is limited by what it can output. That limitation alone could be the explanation for what we perceive in our phenomenal experience vs what we don't. Alternatively, perhaps the processor is capable of selecting any of its inputs and allowing them to pass through un-transformed. Or perhaps the real answer is somewhere in between or a a mixture of the two. In brief, the question is about how 'lossy' the transformation is from input to output.
@@ -371,6 +371,8 @@ Yet, I don't have any idea how to test which possibility is true. And, furthermo
 
 [Gennaro2012] Gennaro, R. 2012. "The Consciousness Paradox: Consciousness, Concepts, and Higher-Order Thoughts." Cambridge, MA: The MIT Press.
 
+[Gleitman2003] - Henry Gleitman, Alan J. Fridlund, Daniel Reisburg. "Psychology". Sixth edition. Norton publishing.
+
 [Graziano2017] Michael S. A. Graziano. Nov 2017. "The Attention Schema Theory: A Foundation for Engineering Artificial Consciousness". Front. Robot. AI, 14 November 2017. https://doi.org/10.3389/frobt.2017.00060.
 
 [Halligan2000] Halligan, P. W., and Oakley, D. A. 2000. Greatest myth of all. New Scientist #168 (pp 34-39). https://www.newscientist.com/article/mg16822653-700-greatest-myth-of-all.
@@ -378,6 +380,8 @@ Yet, I don't have any idea how to test which possibility is true. And, furthermo
 [Halligan2017] Peter W. Halligan, and David A. Oakley. 2017. "Chasing the Rainbow: The Non-conscious Nature of Being". Frontiers in Science. https://doi.org/10.3389/fpsyg.2017.01924
 
 [Kahneman2011] Kahneman, D. (2011). "Thinking, fast and slow." New York: Farrar, Straus and Giroux.
+
+[Klaver2016] Klaver, M. and Dijkerman, HC. (2016). "Bodily Experience in Schizophrenia: Factors Underlying a Disturbed Sense of Body Ownership." Front. Hum. Neurosci. 10:305. https://doi.org/10.3389/fnhum.2016.00305
 
 [Marshall1988] Marshall, J. C., and Halligan, P. W. (1988). Blindsight and insight in visuo-spatial neglect. Nature 336, 766–767. doi: 10.1038/336766a0
 
