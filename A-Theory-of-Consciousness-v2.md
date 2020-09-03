@@ -242,8 +242,6 @@ Furthermore, we can examine the two options a little more concretely to see how 
 
 It thus seems reasonable to assume from the fact that we can observe our own thoughts, that we employ a control mechanism and that it follows the integrated control option discussed here.
 
-![integrated control loop](files/A-theory-of-consciousness-v2-integrated-control.png)
-
 In the human case, we are probably born with some basic building blocks of a control mechanism. It would do only the most basic attenuation of repeated signals to avoid tight infinite loops. This could for example be in the form of a basic attention control. Some form of evolutionarily structured learning pressure would be applied so that over the longer term we learn to override those basic controls and apply higher reasoning.
 
 This also suggests that there is a minimum level of intelligence required for a conscious system. Without that minimum level of intelligence it cannot control thought well enough. And without being able to control thought, it would not be evolutionarily adaptive to develop a state-machine style of higher-level processing.
@@ -323,7 +321,7 @@ Considerations:
 tbd. diagram
 
 ## Split between Working Model, State Model, and Actions
-The observed distinction can be summarised as:
+The self-observed distinction between state model and working model can be summarised as:
 * state model - appears as a single continuous stream that is smoothly updated from cycle to cycle
 * working memory - appears as a data store with multiple entries, only one of which can be accessed at a time.
 
