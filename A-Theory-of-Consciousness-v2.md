@@ -108,7 +108,7 @@ In the diagram above, the Logic Processing box represents what is likely the bul
 In the terminology of Daniel Kahneman, the logic processing components on their own are of the form of _System 1_ thought (_Fast Thinking_), while the net result of multiple steps being executed by the state machine form _System 2_ thought (_Slow Thinking_).
 
 ### Working Memory
-Neuroscience currently believes that we hold about 7 items in working memory, for up to about 1 minute [citation]. This is the state data store of our state machine. The presence or absence of certain data items directly influence which logic processes activate.
+Neuroscience currently believes that we hold about seven items in working memory, for up to about one minute [citation]. This is the state data store of our state machine. The presence or absence of certain data items directly influence which logic processes activate.
 
 In theory, the larger the working memory the more efficient computation can be. In practice, there are trade-offs affecting the size of working memory. If too small, then it is not sufficient to hold all data needed for a particular thought process - more logic processing actions are required for low-level swap-in/swap-out of data from long term storage. If too large, then the data transmission channels between working memory and logic processing become too wide.
 
@@ -117,11 +117,9 @@ The state representation within working memory is likely fairly high-level, and 
 ### Control Mechanism
 A state machine employing fuzzy, learning, neural networks for its logic processor requires a control mechanism in order to maintain stability. The control mechanism uses a feedback path separate from the main processing loop. It acts like a secondary processing loop, or 'feedback loop', but for efficiency and flexibility, it re-uses the main processor. The main processor is trained to enforce stability control through learning pressure and some amount of evolutionary pre-wiring.  
 
-tbd. new diagram
+![control loop](files/A-theory-of-consciousness-v2-control-loop.png)
 
-![logic and control loops](files/high-level-data-cycles-v1.png)
-
-The existence of the feedback path is the explanation for why we have awareness of our thoughts, and as such is typically referred to as 'conscious feedback' within this theory. However, the exact distinction of data that passes back into the main processor via working memory vs. conscious feedback remains an open question, with some discussion on this later on. 
+The existence of the feedback path is the explanation for why we have awareness of our thoughts, and as such is often referred to as 'conscious feedback' here. However, the exact distinction of data that passes back into the main processor via working memory vs. conscious feedback remains an open question, with some discussion on this later on.
 
 ### Schematic Models
 Before moving onto conscious experience itself, we need to highlight two important internal sources of information. 
