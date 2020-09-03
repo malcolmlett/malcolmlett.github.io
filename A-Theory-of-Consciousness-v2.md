@@ -3,9 +3,9 @@
 This page outlines a working theory behind the computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is shown that the content of conscious experience is governed by a representational 'state model' and a particular kind of processing loop, that explains the majority of the phenomena of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered.
 
 # Introduction
-The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. There are many theories out there. Each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). For a detailed discussion of the problem and the various viewpoints see: [Consciousness](https://iep.utm.edu/consciou/) and [The Hard Problem of Consciousness](https://iep.utm.edu/hard-con/) (Internet Encyclopedia of Philosophy).
+The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. There are many theories available, each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). For a detailed discussion of the problem and the various viewpoints see: [Consciousness](https://iep.utm.edu/consciou/) and [The Hard Problem of Consciousness](https://iep.utm.edu/hard-con/) (Internet Encyclopedia of Philosophy).
 
-A small sampling of the viewpoints is as follows:
+A brief sampling of the viewpoints is as follows:
 * Chalmers: explains how the problem is split into a comparatively "easy problem" of explaining the mechanical/computational mechanisms behind the functions of learning, reasoning, remembering, perceptual discrimination internal access, etc.; while the "hard problem" is why these functions are accompanied by experience, and that it remains a philosophical question because we don't have any possible physical explanation. [Chalmers1995]
 * Tononi: partial mechanism for measurement, but not complete: doesn't define sufficiency.
 * AST: introduces how important the model is.
@@ -39,15 +39,15 @@ _Open Questions_ summarises some of the main areas where the theory needs more w
 
 # Theory Overview
 
-The mechanisms that lead to human consciousness are best explained by examining them in the context of three overlayed views.
+The mechanisms that lead to human consciousness will be explained here by examining them in the context of three overlayed views.
 
 ![basic state machine](files/A-theory-of-consciousness-v2-layers.png)
 
-The _physical_ view examines the human brain as a collection of neurons. While some regions have specific functionality that we understand, other regions serve many purposes. Many different kinds of behaviours are tightly integrated and overlapping making it very hard to identify the pathways that apply to conscious experience.
+The _physical_ view examines the brain as a collection of neurons. While some regions have specific functionality that we understand, other regions serve many purposes. Many different kinds of behaviours are tightly integrated and overlapping making it very hard to identify specific functionality within this "spaghetti" of pathways.
 
-The _logical_ view examines the brain as layers of simplified component architectures. 
+The _logical_ view unpacks the physical "spaghetti" by reinterpreting it as simplified component architectures. 
 
-The _data_ view examines the data state that is produced, transferred, and processed by the _logical_ view.
+The _data_ view examines the data state that is produced, transferred, and processed within the _logical_ view.
 
 The majority of discussions presented here are in the context of the logical and data views.
 
@@ -344,17 +344,15 @@ I prefer to think that consciousness is an entirely physical construct, and thus
 Yet, I don't have any idea how to test which possibility is true. And, furthermore, I fear that our intuition is of little help at this stage.
 
 
-# Curious Effects
+# Conclusions
 
-* [[The analogy of the Thalamic symbiote]]
-* [[Visceral Loop]]
-* Free will
-* Properties of consciousness
-* Meta problem of consciousness 
+To copy from section above:
+> In that domain, I think the greatest benefit of my theory is that it narrows the scope of the remaining question. I have not definitely explained whether phenomenal experience is a thing, or why it occurs, but I have explained that 99% of the contents of phenomenal experience has a simple computational explanation. And more than that, I have offered a concrete theory behind those computations.
+>
+> Furthermore, if my theory is correct, then our physical state controls our experiential state so strongly that it is hard to conceive of phenomenal experience as being anything other than entirely passive. And if it is entirely passive, why would it even exist?
 
 
-# Further research 
-
+## Further research 
 * Learn more by building it - see: [[Conscious Calculator v2]]
 * Further study of neuroscience works in order to refine the architecture of the logical view.
 
