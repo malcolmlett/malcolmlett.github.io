@@ -14,12 +14,16 @@ drop-shadow:
 1. select each layer in turn
 2. Filters > Light and Shadow > Drop Shadow...
 3. x: 0, y: 20, radius: 10, opacity: 0.75
+#. Then use Filters > Repeat "Drop Shadow" on subsequent layers
 
 export:
-1. Image > Merge visible layers > with Drop invisible layers
-2. File > Export
-2. Close Gimp file WITHOUT saving
-3. !!DO NOT SAVE the Gimp file!!
+1. Make sure 'background' and 'frame' layers are not visible
+2. Image > Merge visible layers > with Discard invisible layers
+3. Select just the main part of the image
+4. Image > Crop to Selection
+5. File > Export
+6. Close Gimp file WITHOUT saving
+7. !!DO NOT SAVE the Gimp file!!
 
 
 Trying to produce something like this: https://www.presentation-process.com/layer-diagram.html
