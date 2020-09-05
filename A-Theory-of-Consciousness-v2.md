@@ -1,11 +1,11 @@
 (WORK IN PROGRESS: This is a re-work that will replace the existing [[A Theory of the Human Mind]] page)
 
-This page outlines a working theory behind the computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is shown that the content of conscious experience is governed by a representational 'state model' and a particular kind of processing loop, that explains the majority of the phenomena of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered.
+This page outlines a working theory for the algorithmic and computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is suggested that the content of conscious experience is governed by a representational 'state model', along with a particular form of state machine processing loop, that explains the majority of the internal subjective attributes of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered.
 
 # Introduction
-The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. There are many theories available, each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). For a detailed discussion of the problem and the various viewpoints see: [Consciousness](https://iep.utm.edu/consciou/) and [The Hard Problem of Consciousness](https://iep.utm.edu/hard-con/) (Internet Encyclopedia of Philosophy).
+The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. There are many theories available, each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). For a detailed discussion of the problem and various viewpoints see: [Consciousness](https://iep.utm.edu/consciou/) and [The Hard Problem of Consciousness](https://iep.utm.edu/hard-con/) (Internet Encyclopedia of Philosophy).
 
-A brief sampling of the viewpoints is as follows:
+Some of those viewpoints are discussed here:
 
 * Chalmers: explains how the problem is split into a comparatively "easy problem" of explaining the mechanical/computational mechanisms behind the functions of learning, reasoning, remembering, perceptual discrimination internal access, etc.; while the "hard problem" is why these functions are accompanied by experience, and that it remains a philosophical question because we don't have any possible physical explanation. [Chalmers1995]
 
@@ -19,30 +19,27 @@ A brief sampling of the viewpoints is as follows:
 
 * tbd. Dennet.
 
-In general they all provide some pieces of the puzzle but fail to convincingly solve the overall problem because they are either too abstract or too narrow in scope. Furthermore, many physicalist theories fail to account for the "hard problem" and try to hand-wave the problem away, while others fall back onto metaphysical explanations. Neither outcome seems satisfactory. The theory presented here is different. Via a mechanistic computational account, it attempts to attack head on the hardest "easy problem" questions of how it is that we can observe our own thoughts, and of why consciousness evolved; and it attempts to draw as close as possible to the "hard problem" of experience itself. 
+In general all of the theories above provide some pieces of the puzzle but fail to convincingly explain the overall question of consciousness because they are either too abstract or too narrow in scope. Furthermore, many physicalist theories fail to account for the "hard problem" and try to hand-wave the problem away, while others fall back onto metaphysical explanations. Neither outcome seems satisfactory. 
+
+The theory presented here is different. Via a mechanistic computational account, it attempts to attack head-on the hardest "easy problem" questions of how it is that we can observe our own thoughts, and of why consciousness evolved; and it attempts to draw as close as possible to the "hard problem" of phenomenal experience itself. Through considerations of our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through extensive self introspection, I shall provide what I believe to be a plausible architecture or framework that underlies consciousness. This theory can be seen as an application of Attention Schema Theory and Higher-order Thought Theory, but I believe it provides a much more concrete account than the abstract notions posited by those theories. 
+
+In _Theory Overview_, I attempt to present, in a concise way, a clear and plausible "architecture" that I believe is sufficient to explain those phenomena. And within _Rationale_, I provide the reasoning behind this theory. However this is a working hypothesis, with many areas needing further corroboration. So, in _Open Questions_, I summarise some of the main areas where the theory needs more work. In there I reveal how the _explanatory gap_ of phenomenal experience still remains, but to a reduced scope. I include my own characterisation of that _explanatory gap_ in the hope of providing some further avenues for exploration.
+
+I shall first present an outline of the whole of the theory, followed separately by the rationale that forms its background. I shall follow this up with a discussion of the most significant remaining open questions, and conclude by summarising where I think this theory is useful for future directions of research.
 
 
-It attempts to show how the vast majority of phenomena have a plausible physical explanation. In so doing, the theory provides a framework to reproduce that vast majority of phenomena. 
-
-The remaining unexplained phenomena is investigated later, where it is explained that the question of phenomenal experience still remains. I include my own characterisation of that "explanatory gap" in the hope that it may suggest some avenues of explanation.
-
-It is shown however that only a small portion of that phenomenon is left in need of explanation. Furthermore, it is shown that, while it remains an important question particularly from the point of view of ethics, we now know enough that the one remaining answer makes no difference to our ability to start building it.
-
-The theories here have been developed by considering our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through extensive self introspection. The theory can be seen as an application of AST and Higher-order Thought Theory, but it provides a much more concrete account than the abstract notions posited by those theories. 
-
-The theory here uses the human mind as the primary example, but it is focused on the theoretical fundamental architectures of consciousness irrespective of whether it is realized in the form of a human biological consciousness, an artificial consciousness simulated on a computer, or some alien mechanical consciousness.
-
-
-I should point out that this is a working hypothesis. Some of the premises here may not be universally agreed and need further corroboration, and in general more work is needed to investigate and confirm the hypotheses. The motivation for presenting this work is to present a sufficiently plausible explanation of conscious experience that shows that conscious experience can be explained through mechanistic physical processes without the need for meta-physical explanations. In doing so, I further hope that the theory presented is at least close to reality and that it acts as a useful basis for further research.
-
-_Theory Overview_ presents a shallow overview of the whole of the theory. _Rationale_ presents a rationale for the theory, and examines some of its consequences......
-_Open Questions_ summarises some of the main areas where the theory needs more work, and examines what phenomena of consciousness remain unexplained. Sadly, this still includes the aspect of phenomenal experience.
+==> TODO: while that's all very nice and well, it's now missing the significance and importance of this work: that the account is not just plausible, but functionally sufficient to produce something useful --- I think.
+==> Looks like this....Background: AI is platauing because it can't do general intelligence. I believe one of the key components for solving general intelligence is to understand the mechanisms behind consciousness. I believe the theory here provides a solid framework that forms the basis of artificial general intelligence.
+==> BUT, maybe that's just trying to mix up multiple focusses.
 
 
 # Theory Overview
 The full set of data processing that occurs within our brain is immensely complicated, occurring at many levels with complicated interactions. For example, some behaviours are the result of entirely unconscious brain activity. No one paper could hope to explain all of that, and must focus on a narrow subset of brain functions. This paper is no different. The theory presented here focuses on the mechanisms behind high-order thought, and how they are associated with conscious experience.
 
-The theory presented here describes a set of architectural structures and computional mechanims that it purports to produce consciousness in any systems that contain these structures and mechanisms. This includes biological organisms such as humans, and other mammals, and likely in other biological forms too (in particular, it is suspected that birds and fish have the same basic brain components as mammals that are necessary for high-level thought). It would also apply to artificial organisms and systems, including virtual ones (ie: simulated in a computer).
+The theory presented here describes a set of architectural structures and computional mechanims that it purports produce consciousness in any systems that contain these structures and mechanisms. This includes biological organisms such as humans, and other mammals, and likely in other biological forms too (in particular, it is suspected that birds and fish have the same basic brain components as mammals that are necessary for high-level thought). It would also apply to artificial organisms and systems, including virtual ones (ie: simulated in a computer).
+
+The theory here uses the human mind as the primary example, but it is focused on the theoretical fundamental architectures of consciousness irrespective of whether it is realized in the form of a human biological consciousness, an artificial consciousness simulated on a computer, or some alien mechanical consciousness.
+
 
 But what do I mean by the use of the words 'consciousness' and 'conscious'?
 
@@ -366,6 +363,8 @@ Yet, I don't have any idea how to test which possibility is true. And, furthermo
 
 
 # Conclusions
+
+The motivation for this work was to present a sufficiently plausible explanation of conscious experience that would show that conscious experience can be explained through mechanistic physical processes without the need for meta-physical explanations. In doing so, I further hope that the theory presented is at least close to reality and that it acts as a useful basis for further research.
 
 To copy from section above:
 > In that domain, I think the greatest benefit of my theory is that it narrows the scope of the remaining question. I have not definitely explained whether phenomenal experience is a thing, or why it occurs, but I have explained that 99% of the contents of phenomenal experience has a simple computational explanation. And more than that, I have offered a concrete theory behind those computations.
