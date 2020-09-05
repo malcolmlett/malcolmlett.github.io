@@ -21,51 +21,42 @@ Some of those viewpoints are discussed here:
 
 In general all of the theories above provide some pieces of the puzzle but fail to convincingly explain the overall question of consciousness because they are either too abstract or too narrow in scope. Furthermore, many physicalist theories fail to account for the "hard problem" and try to hand-wave the problem away, while others fall back onto metaphysical explanations. Neither outcome seems satisfactory. 
 
-The theory presented here is different. Via a mechanistic computational account, it attempts to attack head-on the hardest "easy problem" questions of how it is that we can observe our own thoughts, and of why consciousness evolved; and it attempts to draw as close as possible to the "hard problem" of phenomenal experience itself. Through considerations of our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through extensive self introspection, I shall provide what I believe to be a plausible architecture or framework that underlies consciousness. This theory can be seen as an application of Attention Schema Theory and Higher-order Thought Theory, but I believe it provides a much more concrete account than the abstract notions posited by those theories. 
-
-In _Theory Overview_, I attempt to present, in a concise way, a clear and plausible "architecture" that I believe is sufficient to explain those phenomena. And within _Rationale_, I provide the reasoning behind this theory. However this is a working hypothesis, with many areas needing further corroboration. So, in _Open Questions_, I summarise some of the main areas where the theory needs more work. In there I reveal how the _explanatory gap_ of phenomenal experience still remains, but to a reduced scope. I include my own characterisation of that _explanatory gap_ in the hope of providing some further avenues for exploration.
+The theory presented here is different. Via a mechanistic computational account, it attempts to attack head-on the hardest "easy problem" questions of how it is that we can observe our own thoughts, and of why consciousness evolved; and it attempts to draw as close as possible to the "hard problem" of phenomenal experience itself. Through considerations of our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and through extensive self introspection, I shall provide what I believe to be a plausible architecture or framework for the mechanisms that underlie high-level thought and how they are associated with conscious experience. My theory can be seen as an application of Attention Schema Theory and Higher-order Thought Theory, but I believe it provides a much broader and more concrete account than the abstract notions posited by those theories. 
 
 I shall first present an outline of the whole of the theory, followed separately by the rationale that forms its background. I shall follow this up with a discussion of the most significant remaining open questions, and conclude by summarising where I think this theory is useful for future directions of research.
 
 
-==> TODO: while that's all very nice and well, it's now missing the significance and importance of this work: that the account is not just plausible, but functionally sufficient to produce something useful --- I think.
-==> Looks like this....Background: AI is platauing because it can't do general intelligence. I believe one of the key components for solving general intelligence is to understand the mechanisms behind consciousness. I believe the theory here provides a solid framework that forms the basis of artificial general intelligence.
-==> BUT, maybe that's just trying to mix up multiple focusses.
-
-
 # Theory Overview
-The full set of data processing that occurs within our brain is immensely complicated, occurring at many levels with complicated interactions. For example, some behaviours are the result of entirely unconscious brain activity. No one paper could hope to explain all of that, and must focus on a narrow subset of brain functions. This paper is no different. The theory presented here focuses on the mechanisms behind high-order thought, and how they are associated with conscious experience.
 
-The theory presented here describes a set of architectural structures and computional mechanims that it purports produce consciousness in any systems that contain these structures and mechanisms. This includes biological organisms such as humans, and other mammals, and likely in other biological forms too (in particular, it is suspected that birds and fish have the same basic brain components as mammals that are necessary for high-level thought). It would also apply to artificial organisms and systems, including virtual ones (ie: simulated in a computer).
+I posit that the architectural structures and computional mechanims that I shall explain shortly are the basis for consciousness in humans, and that they may be sufficient to produce consciousness in any system that contains these structures and mechanisms. This includes biological organisms such as humans, and other mammals, and likely in other biological forms too). It would also apply to artificial organisms and systems, including virtual ones (ie: simulated in a computer).
 
-The theory here uses the human mind as the primary example, but it is focused on the theoretical fundamental architectures of consciousness irrespective of whether it is realized in the form of a human biological consciousness, an artificial consciousness simulated on a computer, or some alien mechanical consciousness.
+I shall use the human mind as the primary example, but I am focused on providing a theoretical fundamental architecture of consciousness that applies irrespective of whether it is realized in the form of a human biological consciousness, an artificial consciousness simulated on a computer, or some alien mechanical consciousness.
 
+But first, what do I mean by the use of the words 'consciousness' and 'conscious'?
 
-But what do I mean by the use of the words 'consciousness' and 'conscious'?
+In simple terms, I'm referring to, the internal subjective awareness of self that is lost during sleep, and regained upon waking [citation]. But even that is vague. Which aspects of subjective awareness are included in the term? Which of the various things that we can be aware of should be considered as a core component of consciousness? Which components can be expected to exist in any form of consciousness, and which we would argue would remove the existence of consciousness if they were not present?
 
-I view consciousness as having the following characteristics:
+Approximately, I view a minimal consciousness as having the following characteristics:
 * awareness of senses (*)
 * awareness of thought
 * able to elicit some sort of action as output (*)
 * high-level thought processing
 * phenomenal experience - ie: the conscious system's experience of its own senses and thought
 
-The star (*) indicates two characteristics which could potentially be dropped and still yield consciousness. However, the practical reality is that such a system would be useless and would never evolve on its own.
+As we shall see later on, the _existence_ of phenomenal experience is unfortunately not explained by the theory presented here. However, I believe all aspects of the _content_ of that experience are explained; which I think is a significant enough achievement to celebrate. The star (*) indicates two characteristics which could potentially be dropped and still yield consciousness. However, the practical reality is that such a system would be useless and would never evolve on its own.
 
-Many other characteristics are commonly attributed to consciousness, particularly in movies. However I view them merely as addendums that happen to occur in the human realization of consciousness because a system could in theory exist without them and still be argued as conscious:
+Many other characteristics are commonly attributed to consciousness, particularly in movies on the subject; however I view them merely as addendums. They are typically characteristics that happen to occur in the human realization of consciousness, but a system could in theory exist without them and quite reasonably be argued as conscious. Some examples are:
 * emotions
 * empathy
 * physical embodiment
 * human-level of intelligence
-
-As we shall see later on, the _existence_ of phenomenal experience is unfortunately not explained by the theory. However, I believe all aspects of the _content_ of that experience are explained.
 
 ## Views
 The proposed mechanisms that lead to human consciousness will be explained here by examining them in the context of three overlayed views.
 
 ![basic state machine](files/A-theory-of-consciousness-v2-layers.png)
 
-The _physical_ view examines the brain as a collection of neurons. While some regions have specific functionality that we understand, other regions serve many purposes. Many different kinds of behaviours are tightly integrated and overlapping making it very hard to identify specific functionality within this "spaghetti" of pathways.
+The _physical_ view examines the brain as a collection of neurons. While some regions have specific functionality that we understand, other regions serve many purposes and are hard to characterise exactly. Many different kinds of behaviours are tightly integrated and overlap across multiple regions making it very hard to identify specific functionality within this "spaghetti" of pathways.
 
 The _logical_ view unpacks the physical "spaghetti" by reinterpreting it as simplified component architectures. 
 
@@ -74,17 +65,17 @@ The _data_ view examines the data state that is produced, transferred, and proce
 The majority of discussions presented here are in the context of the logical and data views.
 
 ## Physical View
-Slowly science is beginning to understand the kind of processing performed by different regions of the human brain, and we are gaining some mediocre knowledge of how non-human brains function, but overall our understanding is very much at its infancy. This article will largely omit discussion about the physical view. However, as we shall see, there is one particularly significant point that needs to be made about the nature of any physical computational machine, such as the biological brain.
+Slowly science is beginning to understand the kind of processing performed by different regions of the human brain, and we are gaining some mediocre knowledge of how non-human brains function, but overall our understanding is very much at its infancy. This article will largely omit discussion about the physical view. However, as we shall see, there is one particularly significant point that needs to be made about the nature of any physical computational machine, including the biological brain.
 
 ### Consciousness across the animal kingdom
-We don't know which animals experience consciousness. All mammals share the same basic brain structure, and in particular the share a neocortex, which is believed to be the main area for higher-level thought. The experience of consciousness appears to correlate very strongly with higher-level thought, so one could conclude that the presence or lack of a neocortex can be used to distinguish the presence of consciousness in animals.
+Scientists don't know for certain which animals experience consciousness, but there are some hints. All mammals share the same basic brain structure, and in particular they share a neocortex, which is believed to be the main area for higher-level thought. The experience of consciousness appears to correlate very strongly with higher-level thought, so one could conclude that the presence or lack of a neocortex can be used to distinguish the presence of consciousness in animals.
 
-Birds have a similar structure called the dorsal ventricular ridge (DVR) that neuroscientists now believe provide similar capability to the neocortex [SDOct2012]. I have also seen some suggestion that fish have a similar structure with similar functionality.
+Birds have a similar structure called the dorsal ventricular ridge (DVR) that some neuroscientists believe provide similar capability to the neocortex [SDOct2012]. I have also seen some suggestion that fish have a similar structure with similar functionality.
 
 ### Neuronal structure
 The neurons in mammalian brains are different to those in artificial neural networks in terms of the physical way in which they operate, but I posit that the difference is not significant for the experience of consciousness. Any mechanism that supports sufficient flexibility of learning could suffice for the realization of consciousness.
 
-This article will use biological and artificial neural networks interchangeably for examples when expressing ideas. 
+In fact, this article will use biological and artificial neural networks interchangeably for examples when expressing ideas. 
 
 ### Physical location in space
 tbd. diagram
