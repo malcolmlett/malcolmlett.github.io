@@ -78,8 +78,6 @@ The neurons in mammalian brains are different to those in artificial neural netw
 In fact, this article will use biological and artificial neural networks interchangeably for examples when expressing ideas. 
 
 ### Physical location in space
-tbd. diagram
-
 tbd.
 Main conclusion:
 * Physical computational machines have bulky data processing circuits, and bulky memory storage, and they need a small working area to hold the current set of data being worked on.
@@ -179,7 +177,7 @@ This section provides an account of why I believe the theory presented here is a
 If the theory is correct, then there is very little of our internal brain structure that we can observe directly. Thus there should be little that we can deduce about it. However, it turns out the model that I purport we operate on is much like the sort of 'abstraction layer' that is often used in software engineering; and it is well known within the software development field that every abstraction leaks internal details. So in practice we can deduce a lot through observations of the particular computational behaviours and edge cases that we experience, combined with our understanding from modern neuroscience.
 
 ## The need for working memory
-tbd. diagram.
+![working memory](files/A-theory-of-consciousness-v2-working-memory.png)
 
 Brain neurons exist in physical space and thus are subject to a simple physical law: they cannot be moved around easily.
 
@@ -190,13 +188,13 @@ Those sources might include long term memory. As memory becomes larger, it becom
 From a physical space perspective, a far more efficient solution is to have a central area where data-to-be-processed is temporarily stored, and for all processing regions to access data in that temporary storage. Essentially, it is necessary to bring the data to the processor because the processor is large and unmovable.
 
 ## High-level thought as a state machine
-tbd. diagram.
-
 Various studies have revealed that we are either unaware of the majority of processes that occur within the brain [Miller1962, Nisbett1977, Halligan2000], or that we only become aware of those processes _after the fact_ [Halligan2017]. Furthermore, evidence from cognitive neuropsychology suggests that we can perform relatively complicated processing and have that influence our awareness, without even being aware of the processing or the sense inputs that the processing was based on [Driver1998, Marshall1988, Weiskrantz1985].
 
 I suggest that this is quite straight-forward to explain.
 
 The kinds of processing mentioned above form what Daniel Kahneman refers to as _System 1_ (or _fast thinking_) thought [Kahneman2011]. Here, deep and complex layers of neurons are involved, and while they may have cycles on the micro scale, they likely have the macro scale form of a simple [feed-forward network](https://en.wikipedia.org/wiki/Feedforward_neural_network). This _System 1_ thought can be quite advanced, as we know from the work of Kahneman. For example, it can localize the source of a specific sound, produce the result for simple well practiced questions such as "2+2=?", read text on a billboard, or even drive a car on an empty road.
+
+![systems-1-and-2](files/A-theory-of-consciousness-v2-systems-1-and-2.png)
 
 To summarise all that in short form: simple macro-scale-feed-forward networks are great for efficient pattern matching, prediction, and generation of well practiced actions.
 
@@ -309,6 +307,8 @@ Considerations:
 tbd. diagram
 
 ## Split between Working Model, State Model, and Actions
+tbd. introduce this better
+
 The self-observed distinction between state model and working model can be summarised as:
 * state model - appears as a single continuous stream that is smoothly updated from cycle to cycle
 * working memory - appears as a data store with multiple entries, only one of which can be accessed at a time.
