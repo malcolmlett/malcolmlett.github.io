@@ -324,7 +324,7 @@ Lastly, what exactly is the output from the processing? Is that output the state
 ## Biological basis for phenomenal experience
 I set out to explain the existence of phenomenal experience. While I think I have produced something that will contribute significantly to the fields of artificial consciousness and artificial general intelligence, and perhaps even to the field of neuroscience; in the area of phenomenal experience, I remain frustrated.
 
-In that domain, I think the greatest benefit of my theory is that it narrows the scope of the remaining question. I have not been able to explain what phenomenal experience is, or why it occurs, but I have shown how the contents of phenomenal experience can be defined entirely in terms of a mechanistic basis. And more than that, I have offered a concrete theory behind those mechanisms.
+In that domain, I think the greatest benefit of my theory is that it narrows the scope of the remaining question. I have not been able to explain what phenomenal experience is or why it occurs, but I have shown how the contents of phenomenal experience can be defined entirely in terms of a mechanistic basis. And more than that, I have offered a concrete theory behind those mechanisms.
 
 So what remains?
 
@@ -334,38 +334,30 @@ So what remains?
 
 * Lastly, given that consciousness can apparently be produced with such a simple data state and processor in a simple cyclic relationship, surely there could be many such simple cyclic regions within even a single brain. Perhaps the left and right hemispheres of the brain are examples of this. Why does such a brain not experience multiple consciousnesses?
 
-This is the classic explanatory gap between what can and cannot be described about our subject experience through physicalist mechanistic processes, and which Chalmers refers to as the "hard problem" of consciousness. But I think these questions are better characterised as an 'intuitional gap': theories of consciousness exist that support it being an entirely physical phenomenon, and yet our intuitions about consciousness make it hard for us to accept that a simple physical explanation is sufficient. For example, this has lead many to assume a metaphysical explanation is necessary. Ned Block beautifully summarised this intuitional gap in "The Harder Problem of Consciousness" [Block2003] when he stated: "Not only do we lack a ground of belief [to decide something as conscious vs not conscious], but we lack a conception of any ground of belief".
+This is the classic explanatory gap between what can and cannot be described about our subject experience through physicalist mechanistic processes, and which Chalmers refers to as the "hard problem" of consciousness. But I think these questions are better characterised as an "intuitional gap": theories of consciousness exist that support it being an entirely physical phenomenon, and yet our intuitions about consciousness make it hard for us to accept that a simple physical explanation is sufficient. For example, this has lead many to assume a metaphysical explanation is necessary. Ned Block beautifully summarised this intuitional gap in "The Harder Problem of Consciousness" [Block2003] when he stated: "Not only do we lack a ground of belief [to decide something as conscious vs not conscious], but we lack a conception of any ground of belief".
 
 I posit that the error here is our intuition itself. The question of phenomenal consciousness is so hard to measure that we are left with little else than intuition to guide our judgements. But our intuitions on the subject tend to be contradictory; between individuals, and even from the same individual. Our intuitions are so strong that they make it hard for us to consider the possibilities rationally, and thus they may actually be leading us astray.
 
-I won't attempt to make a claim about which aspects of our intuitions are misleading. But I do think that this is the area where research should focus.
+I won't attempt to make a claim about which aspects of our intuitions are misleading, but I do think that this is the area where research should focus.
 
 Curiously, the theory presented here does leave open one important variable within the realm of the physical. It is possible that something physical, within the biology of the brain neurons, is required to turn the state model and/or processor into phenomenological experience. In other words, given two regions of biological neural network (in the same individual or in different individuals), both having equivalent model states and data processing capabilities, could it be that one has a biological structure that turns the model into experience, while the other does not? Our intuition is that there is something special about experience that requires more than just a self-serving data model. But our intuition has questionable judgement.
-
-At this stage, I am sympathetic to two possibilities:
-1. That there does exist a biological difference between the aforementioned two neural network regions.
-2. That there is no difference between the two neural network regions, and thus any system with a model and processing loop that replicates the behaviours of the visceral loop must be conscious.
-
-I prefer to think that consciousness is an entirely physical construct, and thus I take the second possibility to imply that consciousness is not as magical as our intuitions would have us think.
-
-Yet, I don't have any idea how to test which possibility is true. And, furthermore, I fear that our intuition is of little help at this stage.
 
 
 # Conclusions
 
-The motivation for this work was to present a sufficiently plausible explanation of conscious experience that would show that conscious experience can be explained through mechanistic physical processes without the need for meta-physical explanations. In doing so, I further hope that the theory presented is at least close to reality and that it acts as a useful basis for further research.
+The motivation for this work was threefold. Firstly, to offer a more complete and concrete theory of the mechanisms behind consciousness and to show how consciousness and high-level thought relate to each other. Secondly, to show that those physical mechanisms are sufficient for the subjective experience of consciousness. And thirdly, to form a basis for future research into artificial general intelligence.
 
-I have shown that there is a tight coupling between the mechanistic basis for the _content_ of phenomenal experience and the _existence_ of that phenomenal experience.
+I have presented a detailed theory of those mechanisms. Some areas of the theory are speculative and need further corroborating evidence in to be certain that they represent how human consciousness arises. However, the stated mechanisms are simple enough that they can be emulated easily using our current technology, and I am confident that it will prove useful for future research.
 
-To copy from section above:
-> In that domain, I think the greatest benefit of my theory is that it narrows the scope of the remaining question. I have not definitely explained whether phenomenal experience is a thing, or why it occurs, but I have explained that 99% of the contents of phenomenal experience has a simple computational explanation. And more than that, I have offered a concrete theory behind those computations.
->
-> Furthermore, if my theory is correct, then our physical state controls our experiential state so strongly that it is hard to conceive of phenomenal experience as being anything other than entirely passive. And if it is entirely passive, why would it even exist?
+If the theory is correct, then it also offers some meaningful insights into the nature of the human mind. In particular, the following claims have been made:
+* Working memory is a necessary component to support scalability of the kinds of thought possible.
+* High-level thought is the result of the action of a state machine.
+* The state machine employs a feedback loop in order to maintain stability, and it is this feedback loop that we experience as the awareness of our own thoughts.
+* Consciousness is a result of the action of that state machine, along with its feedback loop and other sources of information. And in particular, the "conclusion of one's own consciousness" is an outcome of that state machine as it follows a particular path of logical conclusions.
 
+Finally, while the theory offers no further insight into the _existence_ of phenomenal experience, it shows that there there is a tight coupling between its existence and the mechanistic basis for its _content_. I believe that this tight coupling narrows the remaining question. I have also argued that the best characterisation of that remaining question is as an "intuitional gap", and that we must directly address questions of the accuracy of our intuitions in this domain in order to move forwards.
 
-## Further research 
-* Learn more by building it - see: [[Conscious Calculator v2]]
-* Further study of neuroscience works in order to refine the architecture of the logical view.
+Further research will focus on the learnings that can be attained by building an emulation of the above theory, and on incorporating more of our current understanding of neuroscience into the theory.
 
 
 # References
