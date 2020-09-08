@@ -28,5 +28,6 @@ This page lists PDF scans of notes.
 * [Current summary article notes.pdf](files/archive/2020-02-23-Current-summary-article-notes.pdf) - Feb 2020
 * [Philisophical implications on life and expectations.pdf](files/archive/2020-02-23-Philisophical-implications-on-life-and-expectations.pdf) - Feb 2020
 * [Internal sense scenarios](files/archive/2020-02-28-Internal-Sense-Scenarios.pdf) - Feb 2020
+* [An Examination of executive function in context of visceral loop](files/archive/2020-08-26-Examination-of-executive-function-in-context-of-visceral-loop.pdf) - (Aug 2020)
 
 _(Added: 2019-10-01. Labels: work-in-progress)_
