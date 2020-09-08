@@ -1,6 +1,6 @@
 (WORK IN PROGRESS: This is a re-work that will replace the existing [[A Theory of the Human Mind]] page)
 
-This page outlines a working theory for the algorithmic and computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is suggested that the content of conscious experience is governed by a representational _state model_, along with a particular form of state machine processing loop, that explains the majority of the internal subjective attributes of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered and a directions for further avenues of research suggested.
+This page outlines a working theory for the algorithmic and computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is suggested that the content of conscious experience is governed by a representational _state model_, along with a particular form of state machine processing loop, that explains the majority of the internal subjective attributes of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered and directions for further avenues of research suggested.
 
 # Introduction
 The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. There are many theories available, each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). For a detailed discussion of the problem and various viewpoints see [Consciousness](https://iep.utm.edu/consciou/) and [The Hard Problem of Consciousness](https://iep.utm.edu/hard-con/) (Internet Encyclopedia of Philosophy).
@@ -27,20 +27,19 @@ The theory presented here tries to be different. Via a mechanistic computational
 
 There are many overlaps between the theory presented here and those of others mentioned above. In particular, my theory can be seen as an application of AST and HOT Theory, and I suspect that it is fully compatible with IIT. However, I believe my theory provides a much broader, more complete, and more concrete account than the abstract notions posited by those theories. 
 
-I shall first present an outline of the theory in its entirety, followed separately by the rationale that forms its background. I shall follow this up with a discussion of the most significant remaining open questions, and conclude by summarising where I think this theory is useful for future directions of research.
-
-
 # Theory Overview
 
-I posit that the architectural structures and computional mechanims that I shall explain shortly are the basis for consciousness in humans, and that they may be sufficient to produce consciousness in any system that contains these structures and mechanisms. This includes biological organisms such as humans, and other mammals, and likely in other biological forms too). It would also apply to artificial organisms and systems, including virtual ones (ie: simulated in a computer).
+This chapter presents an outline of the theory in its entirety, but with minimal reference to how these conclusions were reached. It is followed separately by a chapter devoted to the rationale that forms its background.
+
+I posit that the architectural structures and computational mechanisms that I shall explain shortly are the basis for consciousness in humans, and that they may be sufficient to produce consciousness in any system that contains these structures and mechanisms. This includes biological organisms such as humans, and other mammals, and likely in other biological forms too). It would also apply to artificial organisms and systems, including virtual ones (ie: simulated in a computer).
 
 I shall use the human mind as the primary example, but I am focused on providing a theoretical fundamental architecture of consciousness that applies irrespective of whether it is realized in the form of a human biological consciousness, an artificial consciousness simulated on a computer, or some alien mechanical consciousness.
 
-But first, what do I mean by the use of the word 'consciousness' and of its derivative, 'conscious'?
+But first, what do I mean by the use of the word _consciousness_ and of its derivative, _conscious_?
 
 In simple terms, I am referring to the internal subjective awareness of self that is lost during sleep and regained upon waking [citation]. But even that is vague. Which aspects of subjective awareness are included in the term? Which of the various things that we can be aware of should be considered as a core component of consciousness? Which components can be expected to exist in any form of consciousness, and which components would we argue to negate the existence of consciousness if they were not present?
 
-Approximately, I view a minimal consciousness as having the following characteristics:
+I view a minimal consciousness as having the following characteristics:
 * awareness of senses (*)
 * awareness of thought
 * able to elicit some sort of action as output (*)
