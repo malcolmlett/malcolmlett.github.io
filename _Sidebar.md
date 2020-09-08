@@ -3,9 +3,9 @@
 
 ### Theory
 * [[Theory Home]]
+* [[A Theory of Consciousness]]
 * [[What is Consciousness]]
 * [[Background to A Theory of Mind]]
-* [[A Theory of Consciousness]]
 * [[Philosophical Description of Consciousness]]
 * [[Awareness of Thought is not the mystery]]
 * [[The analogy of the Thalamic symbiote]]
