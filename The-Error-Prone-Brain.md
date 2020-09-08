@@ -7,10 +7,10 @@ This doesn't need general intelligence. It's a fundamental architecture. It does
 What kind of control mechanism might be employed within a biological neuronal brain? The following distinguishes two basic approaches:
 
 1. Independent control: an entirely separate control processor actively monitors and manipulates state to ensure stability
-![independent control loop](files/A-theory-of-consciousness-v2-independent-control.png)
+![independent control loop](files/A-theory-of-consciousness-independent-control.png)
 
 2. Integrated control: control is performed by a relatively simple feedback loop that is actioned on by the main processor.
-![integrated control loop](files/A-theory-of-consciousness-v2-integrated-control.png)
+![integrated control loop](files/A-theory-of-consciousness-integrated-control.png)
 
 tbd. the distinctions between the above options may be clearer if put in the context of learning pressures.
 
@@ -30,7 +30,7 @@ A possible alternative theory for the human control mechanism comes down to the 
 
 It's an interesting avenue for investigation.
 
-My initial thought is that I don't think this is likely because there is some evidence that each hemisphere can produce logical stable thought independently [Joseph2011].
+My initial thought is that I don't think this is likely because there is some evidence that each hemisphere can produce logical stable thought independently (Joseph, 2011).
 
 # Logical Inaccuracy
 Biology is a deeply flawed way of creating a reliable, accurate computing engine. Evolutionary processes inherently introduce errors, and approximations. The network of neurons that our ability to learn and think depends on, depends on approximations. It's approximations start with high inaccuracy, and improve over time, but there is no boundary line between being untrained and trained. 
@@ -54,4 +54,4 @@ The discussion here leads to some interesting suggestions about possible alterna
 Such beings would likely develop quite different high-level thought styles than humans.
 
 # References
-[Joseph2011] Rhawn Joseph, Brain Research Laboratory, Califiornia. "The Split Brain: Two Brains - Two Minds". 2011. http://cosmology.com/Consciousness163.html.
+Joseph, R. (2011). The Split Brain: Two Brains - Two Minds. Brain Research Laboratory, Califiornia. http://cosmology.com/Consciousness163.html.
