@@ -1,17 +1,21 @@
 (WORK IN PROGRESS: This is a re-work that will replace the existing [[A Theory of the Human Mind]] page)
 
-This page outlines a working theory for the algorithmic and computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is suggested that the content of conscious experience is governed by a representational 'state model', along with a particular form of state machine processing loop, that explains the majority of the internal subjective attributes of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered.
+This page outlines a working theory for the algorithmic and computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is suggested that the content of conscious experience is governed by a representational _state model_, along with a particular form of state machine processing loop, that explains the majority of the internal subjective attributes of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered and a directions for further avenues of research suggested.
 
 # Introduction
-The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. There are many theories available, each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). For a detailed discussion of the problem and various viewpoints see: [Consciousness](https://iep.utm.edu/consciou/) and [The Hard Problem of Consciousness](https://iep.utm.edu/hard-con/) (Internet Encyclopedia of Philosophy).
+The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. There are many theories available, each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). For a detailed discussion of the problem and various viewpoints see [Consciousness](https://iep.utm.edu/consciou/) and [The Hard Problem of Consciousness](https://iep.utm.edu/hard-con/) (Internet Encyclopedia of Philosophy).
 
 Some of those viewpoints, where they bring some bearing to the paper here, are discussed in what follows.
 
-David Chalmers explains how the problem is split into a comparatively "easy problem" of explaining the mechanical/computational mechanisms behind the functions of learning, reasoning, remembering, perceptual discrimination internal access, etc.; while the "hard problem" is why these functions are accompanied by the feeling of subjective experience, commonly referred to as _phenomenal experience_ [Chalmers1995]. Chalmers explains why this remains a deeply philosophical question because we don't have any possible physical explanation. Chalmers also describes how one massive problem is that we just have a way to examine something and to identify whether it is conscious or not, and if we just had some magic measuring device to tell us we would finally be able to make some sense of it all.
+David Chalmers explains how the problem is split into a comparatively "easy problem" of explaining the mechanical/computational mechanisms behind the functions of learning, reasoning, remembering, perceptual discrimination internal access, etc.; while the "hard problem" is why these functions are accompanied by the feeling of subjective experience, commonly referred to as _phenomenal experience_ [Chalmers1995]. Chalmers explains why this remains a deeply philosophical question because we don't have any possible physical explanation. Chalmers also explains that we do not have a way to examine something and to identify whether it is conscious or not, and that if we just had some magic measuring device to tell us we would finally be able to make some sense of it all.
 
-One such measuring device was proposed by Giulio Tononi as Integrated Information Theory (IIT). IIT provides a model for measuring the level of consciousness in a system [Tononi2004, Tononi2014]. It proposes some requirements for the existence of consciousness, but the theory is generally considered insufficient to explain why _phenomenal experience_ exists. IIT operates within the same scope as the mechanistic explanation of consciousness that will be outlined within this paper, and in that way IIT is complementary to my own.
+One such measuring device was proposed by Giulio Tononi, in the form of Integrated Information Theory (IIT). IIT 
+provides a model for measuring the level of consciousness in a system [Tononi2004, Tononi2014]. It proposes some 
+requirements for the existence of consciousness, but the theory is generally considered insufficient to explain 
+why phenomenal experience exists. IIT operates within the same scope as the mechanistic explanation of 
+consciousness that will be outlined within this paper, and in that way IIT is complementary to my own.
 
-Michael Graziano suggests that consciousness is grounded in an "attention schema". Attention Schema Theory (AST) proposes that the brain produces a model, or schema, of itself and uses this to govern attentional focus, to make predictions about how the brain will behave, to guide the thought process, and that it is used to model the state of others and thus form the basis for empathy. Graziano makes a compelling case for the importance of a "mind schema" (??) in both the automated non-conscious and higher-level thought processes of the brain. However AST remains only as a high-level abstract account of some of the processes behind consciousness. Graziano also claims that consciousness is the result of a learned "naïve theory", and that it is "essentially a ghost story, a socially learned narrative that we use to explain ourselves, a social epiphenomenon with debatable utility" [Graziono2017].
+Michael Graziano suggests that consciousness is grounded in an "attention schema". Attention Schema Theory (AST) proposes that the brain produces a model, or schema, of itself and uses this to govern attentional focus, to make predictions about how the brain will behave, to guide the thought process, and that it is used to model the state of others and thus form the basis for empathy. Graziano makes a compelling case for the importance of a "mind schema" (??) in both the automated non-conscious and high-level thought processes of the brain. However AST presents only a high-level abstract account of some of the processes behind consciousness. Graziano also claims that consciousness is the result of a learned "naïve theory", and that it is "essentially a ghost story, a socially learned narrative that we use to explain ourselves, a social epiphenomenon with debatable utility" [Graziono2017].
 
 Higher-order Thought (HOT) Theory [Gennaro1996, Rosenthal2005, Rosenthal2011, Gennaro2012] suggests that the brain uses high-level abstract representations of objects within conscious thought. There are however many critics of the theory as it does not explain how those HOTs translate to conscious experience, and there is a perceived problem of reverse mapping from HOTs to more detailed representations. I suggest that HOT Theory may be more useful than its detractors argue, but that it needs to be placed within the context of a larger framework to make sense.
 
@@ -19,7 +23,7 @@ In direct contrast to HOT Theory, other theories, such as that of Halligan and O
 
 In general all of the theories above provide some pieces of the puzzle but fail to convincingly explain the overall question of consciousness because they are either too abstract or too narrow in scope. Furthermore, many physicalist theories fail to account for the "hard problem" and try to hand-wave the problem away, while others fall back onto metaphysical explanations. Neither outcome seems satisfactory. 
 
-The theory presented here is different. Via a mechanistic computational account, it attempts to attack head-on the hardest "easy problem" questions of how it is that we can observe our own thoughts, and of why consciousness evolved; and it attempts to draw as close as possible to the "hard problem" of phenomenal experience itself. Through considerations of our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and from extensive self introspection, I shall provide what I believe to be a plausible framework for the mechanisms that underlie high-level thought and how they are associated with conscious experience.
+The theory presented here tries to be different. Via a mechanistic computational account, it attempts to attack head-on the hardest "easy problem" questions of how it is that we can observe our own thoughts, and of why consciousness evolved; and it attempts to draw as close as possible to the "hard problem" of phenomenal experience itself. Through considerations of our current understanding of neuroscience, the characteristics of biological and artificial neural networks, and from extensive self introspection, I shall provide what I believe to be a plausible framework for the mechanisms that underlie high-level thought and how they are associated with conscious experience.
 
 There are many overlaps between the theory presented here and those of others mentioned above. In particular, my theory can be seen as an application of AST and HOT Theory, and I suspect that it is fully compatible with IIT. However, I believe my theory provides a much broader, more complete, and more concrete account than the abstract notions posited by those theories. 
 
@@ -52,7 +56,7 @@ Many other characteristics are commonly attributed to consciousness, particularl
 * human-level of intelligence
 
 ## Views
-The proposed mechanisms that lead to human consciousness will be explained here by examining them in the context of three overlayed views.
+The proposed mechanisms of consciousness will be explained here by examining them in the context of three overlayed views: physical, logical, and data.
 
 ![basic state machine](files/A-theory-of-consciousness-v2-layers.png)
 
@@ -80,15 +84,18 @@ The neurons in mammalian brains are different to those in artificial neural netw
 In fact, this article will use biological and artificial neural networks interchangeably for examples when expressing ideas. 
 
 ### Physical location in space
-tbd.
-Main conclusion:
-* Physical computational machines have bulky data processing circuits, and bulky memory storage, and they need a small working area to hold the current set of data being worked on.
+Physical computational machines have bulky data processing circuits, bulky memory storage, and bulky sense pre-processing (eg: visual cortex). Those bulky regions take up a physical location in space, and cannot be "moved to the data", so the data must be "moved to the processors". I posit that this is the reason for the evolution of working memory, to act as a small holding area for the current set of data being worked on.
+
+In theory, the larger the working memory the more efficient computation can be. In practice, there are trade-offs affecting the size of working memory. If too small, then it is not sufficient to hold all data needed for a particular thought process - more logic processing actions are required for low-level swap-in/swap-out of data from long term storage. If too large, then the data transmission channels between working memory and logic processing become too wide.
+
+Neuroscience currently believes that we hold about seven items in working memory, for up to about one minute [citation].
 
 ## Logical View
 The theory claims that the high-level thought system of the human brain is a state machine with a tightly integrated control mechanism, whereas the low-level unaware or non-conscious processing performed the brain is something much more akin to our current deep-learning artificial neural network models - basically just pattern matching/prediction engines. So, high-level thought is achieved through a combination of a relatively simple state machine architecture, combined with the pattern matching and prediction power of those low-level neural networks.
 
 As we shall see, the activity of this high-level thought system explains almost all of the phenomena that we experience as _consciousness_.
 
+### State Machine
 The proposed high-level state machine of the brain is illustrated in the following diagram. Externally sourced senses (our nominal five senses), plus internal senses (eg: mental tracking of limb position), are received as inputs (likely in a pre-processed form), then used in conjunction with the current state (held in Working Memory) to produce a new state.
 
 ![state machine](files/A-theory-of-consciousness-v2-state-machine.png)
@@ -97,12 +104,7 @@ In the diagram above, the Logic Processing box represents what is likely the bul
 
 In the terminology of Daniel Kahneman, the logic processing components on their own are of the form of _System 1_ thought (_Fast Thinking_), while the net result of multiple steps being executed by the state machine form _System 2_ thought (_Slow Thinking_).
 
-### Working Memory
-Neuroscience currently believes that we hold about seven items in working memory, for up to about one minute [citation]. This is the state data-store of our state machine. The presence or absence of certain data items directly influence which logic processes activate.
-
-In theory, the larger the working memory the more efficient computation can be. In practice, there are trade-offs affecting the size of working memory. If too small, then it is not sufficient to hold all data needed for a particular thought process - more logic processing actions are required for low-level swap-in/swap-out of data from long term storage. If too large, then the data transmission channels between working memory and logic processing become too wide.
-
-The state representation within working memory is likely fairly high-level, and probably at the same level of detail of what we observe within our consciousness.
+Working memory is the state data-store of our state machine. The presence or absence of certain data items directly influence which logic processes activate. The state representation within working memory is likely fairly high-level, and probably at the same level of detail of what we observe within our consciousness.
 
 ### Control Mechanism
 A state machine employing fuzzy, learning, neural networks for its logic processor requires a control mechanism in order to maintain stability. The control mechanism uses a feedback path separate from the main processing loop. It acts like a secondary processing loop, or _feedback loop_, but for efficiency and flexibility, it re-uses the main processor. The main processor is trained to enforce stability control through learning pressure and some amount of evolutionary pre-wiring.  
@@ -310,22 +312,16 @@ Considerations:
 * does the processing itself, through a combination of evolution and learning, select some inputs more strongly and reflect them in the output more accurately than others?
 * are there evolutionary limitations in what the state model can represent, that could mean that certain inputs are effectively hidden from representation?
 
-tbd. diagram
-
 ## Split between Working Model, State Model, and Actions
-tbd. introduce this better
-
-The self-observed distinction between state model and working model can be summarised as:
-* state model - appears as a single continuous stream that is smoothly updated from cycle to cycle
+It is not clear what distinctions exist between working memory, the state model, and how actions are represented. The self-observed distinction between state model and working model can be summarised as:
+* state model - appears as a single continuous stream that is smoothly updated from cycle to cycle, but only one "item" of thought is represented at a time.
 * working memory - appears as a data store with multiple entries, only one of which can be accessed at a time.
 
 However, the real delineation between the state model and working memory is not clear, or if there even is a delineation at all. At one extreme, they may be independent components that pass through two independent channels that belong to two overlaid loops: the main computational processing loop and the control loop. At the other extreme, there may be only one such channel, in which case the state model and working memory are one in the same thing.
 
-tbd. diagram
-
 An important consideration here is the previous question about the "lossiness" of the processing step. For example, if the processing step is highly lossy, then it is entirely possible that there is only a working memory, that the processing step only ever passes one entry from the working memory at a time, that the output is stored back into the working memory, and that the perception of an independent state model is a result of the fact that only one working memory entry is selected at a time.
 
-Lastly, what exactly is the output from the processing? Is that output the state model or does something else post-process it in order to produce the state model, for example, as some sort of summary of the raw output. How does that output feed into action control?
+Lastly, what exactly is the output from the processing? Is that output the state model or does something else post-process it in order to produce the state model, for example, as some sort of summary of the raw output. And how does that output feed into action control?
 
 ## Biological basis for phenomenal experience
 I set out to explain the existence of _phenomenal experience_. While I think I have produced something that will contribute significantly to the fields of artificial consciousness and artificial general intelligence, and perhaps even to the fields of cognitive science and neuroscience; in the area of phenomenal experience, I remain frustrated.
