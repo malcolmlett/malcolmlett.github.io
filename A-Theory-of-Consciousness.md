@@ -1,23 +1,19 @@
 This page outlines a working theory for the algorithmic and computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is suggested that the content of conscious experience is governed by a representational _state model_, along with a particular form of state machine processing loop, that explains the majority of the internal subjective attributes of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered and directions for further avenues of research suggested.
 
 # Introduction
-The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. There are many theories available, each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). For a detailed discussion of the problem and various viewpoints see [Consciousness](https://iep.utm.edu/consciou/) and [The Hard Problem of Consciousness](https://iep.utm.edu/hard-con/) (Internet Encyclopedia of Philosophy).
+The question of consciousness has been a conundrum for many centuries. In modern times, disciplines as varied as philosophy, neuroscience, physics, and computer science all discuss the topic. There are many theories available, each focusing on a particular subset of the problem and coming from different perspectives (eg: philosophy vs. neuroscience vs. AI). For a detailed discussion of the problem and various viewpoints see [Consciousness](https://iep.utm.edu/consciou/) and [The Hard Problem of Consciousness](https://iep.utm.edu/hard-con/) (_Internet Encyclopedia of Philosophy_).
 
 Some of those viewpoints, where they bring some bearing to the paper here, are discussed in what follows.
 
-David Chalmers explains how the problem is split into a comparatively "easy problem" of explaining the mechanical/computational mechanisms behind the functions of learning, reasoning, remembering, perceptual discrimination internal access, etc.; while the "hard problem" is why these functions are accompanied by the feeling of subjective experience, commonly referred to as _phenomenal experience_ [Chalmers1995]. Chalmers explains why this remains a deeply philosophical question because we don't have any possible physical explanation. Chalmers also explains that we do not have a way to examine something and to identify whether it is conscious or not, and that if we just had some magic measuring device to tell us we would finally be able to make some sense of it all.
+David Chalmers explains how the problem is split into a comparatively "easy problem" of explaining the mechanical/computational mechanisms behind the functions of learning, reasoning, remembering, perceptual discrimination internal access, etc.; while the "hard problem" is why these functions are accompanied by the feeling of subjective experience, commonly referred to as _phenomenal experience_ (Chalmers, 1995). Chalmers explains why this remains a deeply philosophical question because we don't have any possible physical explanation. Chalmers also explains that we do not have a way to examine something and to identify whether it is conscious or not, and that if we just had some magic measuring device to tell us we would finally be able to make some sense of it all.
 
-One such measuring device was proposed by Giulio Tononi, in the form of Integrated Information Theory (IIT). IIT 
-provides a model for measuring the level of consciousness in a system [Tononi2004, Tononi2014]. It proposes some 
-requirements for the existence of consciousness, but the theory is generally considered insufficient to explain 
-why phenomenal experience exists. IIT operates within the same scope as the mechanistic explanation of 
-consciousness that will be outlined within this paper, and in that way IIT is complementary to my own.
+One such measuring device was proposed by Giulio Tononi, in the form of Integrated Information Theory (IIT). IIT provides a model for measuring the level of consciousness in a system (Tononi, 2004; Oizumi, Albantakis & Tononi, 2014). It proposes some requirements for the existence of consciousness, but the theory is generally considered insufficient to explain why phenomenal experience exists. IIT operates within the same scope as the mechanistic explanation of consciousness that will be outlined within this paper, and in that way IIT is complementary to my own.
 
-Michael Graziano suggests that consciousness is grounded in an "attention schema". Attention Schema Theory (AST) proposes that the brain produces a model, or schema, of itself and uses this to govern attentional focus, to make predictions about how the brain will behave, to guide the thought process, and that it is used to model the state of others and thus form the basis for empathy. Graziano makes a compelling case for the existence of a mental model of the mind, or "attention schema", and its importance in both the automated non-conscious and high-level thought processes of the brain. However AST presents only a high-level abstract account of some of the processes behind consciousness. Graziano also claims that consciousness is the result of a learned "naïve theory", and that it is "essentially a ghost story, a socially learned narrative that we use to explain ourselves, a social epiphenomenon with debatable utility" [Graziono2017].
+Michael Graziano suggests that consciousness is grounded in an "attention schema" (2017). Attention Schema Theory (AST) proposes that the brain produces a model, or schema, of itself and uses this to govern attentional focus, to make predictions about how the brain will behave, to guide the thought process, and that it is used to model the state of others and thus form the basis for empathy. Graziano makes a compelling case for the existence of a mental model of the mind, or "attention schema", and its importance in both the automated non-conscious and high-level thought processes of the brain. However AST presents only a high-level abstract account of some of the processes behind consciousness. Graziano also claims that consciousness is the result of a learned "naïve theory", and that it is "essentially a ghost story, a socially learned narrative that we use to explain ourselves, a social epiphenomenon with debatable utility" (Graziono, 2017, p. 8).
 
-Higher-order Thought (HOT) Theory [Gennaro1996, Rosenthal2005, Rosenthal2011, Gennaro2012] suggests that the brain uses high-level abstract representations of objects within conscious thought. There are however many critics of the theory as it does not explain how those HOTs translate to conscious experience, and there is a perceived problem of reverse mapping from HOTs to more detailed representations. I suggest that HOT Theory may be more useful than its detractors argue, but that it needs to be placed within the context of a larger framework to make sense.
+Higher-order Thought (HOT) Theory (Gennaro, 1996; Rosenthal, 2005; Lau & Rosenthal, 2011; Gennaro, 2012) suggests that the brain uses high-level abstract representations of objects within conscious thought. There are however many critics of the theory as it does not explain how those HOTs translate to conscious experience, and there is a perceived problem of reverse mapping from HOTs to more detailed representations. I suggest that HOT Theory may be more useful than its detractors argue, but that it needs to be placed within the context of a larger framework to make sense.
 
-In direct contrast to HOT Theory, other theories, such as that of Halligan and Oakley, suggest that high-level thought has no executive control, that it is merely a narrative of phenomena that we tell ourselves, and even that it has no functional purpose. Those conclusions are drawn from observations that an individual's claim of being conscious of an act is associated with brain activity that occurs _after_ the action has already been started [Halligan2000, Halligan2017]. The observation of conscious thought occurring _after_ the action is a significant one, and one that has an explanation in the theory presented by this paper, but the authors of those works make an ungrounded logical leap in concluding that high-level thought has no executive control.
+In direct contrast to HOT Theory, other theories, such as that of Halligan and Oakley, suggest that high-level thought has no executive control, that it is merely a narrative of phenomena that we tell ourselves, and even that it has no functional purpose. Those conclusions are drawn from observations that an individual's claim of being conscious of an act is associated with brain activity that occurs _after_ the action has already been started (Halligan & Oakley, 2000; Halligan & Oakley, 2017). The observation of conscious thought occurring _after_ the action is a significant one, and one that has an explanation in the theory presented by this paper, but the authors of those works make an ungrounded logical leap in concluding that high-level thought has no executive control.
 
 In general all of the theories above provide some pieces of the puzzle but fail to convincingly explain the overall question of consciousness because they are either too abstract or too narrow in scope. Furthermore, many physicalist theories fail to account for the "hard problem" and try to hand-wave the problem away, while others fall back onto metaphysical explanations. Neither outcome seems satisfactory. 
 
@@ -71,7 +67,7 @@ Slowly science is beginning to understand the kind of processing performed by di
 ### Consciousness across the animal kingdom
 Scientists don't know for certain which animals experience consciousness, but there are some hints. All mammals share the same basic brain structure, and in particular they share a neocortex, which is believed to be the main area for higher-level thought. The experience of consciousness appears to correlate very strongly with higher-level thought, so one could conclude that the presence or lack of a neocortex can be used to distinguish the presence of consciousness in animals.
 
-Birds have a similar structure called the dorsal ventricular ridge (DVR) that some neuroscientists believe provide similar capability to the neocortex [SDOct2012]. There has also been a suggestion that fish have a similar structure with similar functionality, and even a suggestion that perhaps insects could be conscious [Barron2016]. The _thalamus_ is another region that has a significant part to play in consciousness, particularly in the area of wakefulness, and it can be found both mammals and reptiles [SDFeb2020].
+Birds have a similar structure called the dorsal ventricular ridge (DVR) that some neuroscientists believe provide similar capability to the neocortex (Uni. Chic. Med. Cent., 2012). There has also been a suggestion that fish have a similar structure with similar functionality, and even a suggestion that perhaps insects could be conscious (Barron & Klein, 2016). The _thalamus_ is another region that has a significant part to play in consciousness, particularly in the area of wakefulness, and it can be found both mammals and reptiles (Cell Press, 2020).
 
 ### Neuronal structure
 The neurons in mammalian brains are different to those in artificial neural networks in terms of the physical way in which they operate, but I posit that the difference is not significant for the experience of consciousness. Any mechanism that supports sufficient flexibility of learning could suffice for the realization of consciousness.
@@ -95,7 +91,7 @@ The proposed high-level state machine of the brain is illustrated in the followi
 
 ![state machine](files/A-theory-of-consciousness-state-machine.png)
 
-In the diagram above, the Logic Processing box represents what is likely the bulk of the brain and where non-conscious mental processes produce meaningful results from the received senses and internal input [Nisbett1977]. While it is an oversimplification, the logic processing components are treated as largely stateless, in that they merely compute a result given the inputs. It is further assumed that we can think of multiple logic components of the brain as a single aggregate.
+In the diagram above, the Logic Processing box represents what is likely the bulk of the brain and where non-conscious mental processes produce meaningful results from the received senses and internal input (Nisbett & Wilson, 1977). While it is an oversimplification, the logic processing components are treated as largely stateless, in that they merely compute a result given the inputs. It is further assumed that we can think of multiple logic components of the brain as a single aggregate.
 
 In the terminology of Daniel Kahneman, the logic processing components on their own are of the form of _System 1_ thought (_Fast Thinking_), while the net result of multiple steps being executed by the state machine form _System 2_ thought (_Slow Thinking_).
 
@@ -113,7 +109,7 @@ Before moving onto conscious experience itself, we need to highlight two importa
 
 **Body Schema**: It is well understood that the brain maintains a mental map of the body. This is used, for example, to track the motion of limbs so that we can know where a limb is without seeing it. It is also used to track the capabilities of those limbs; for example to track when a leg is damaged and thus must not be walked on with full body weight. The body schema is also used in a _generative_ way: to plan future actions and to control muscle signals in order to achieve a desired outcome.
 
-**Mind Schema**: Like some other researches (eg: [Graziano2017]), I believe our brains also maintain a mental map of our mind. It tracks the observed capabilities of our mind. It will be used in a _generative_ way: to suggest a possibly suitable approach to solve a problem. And it will be used in a _predictive_ way: to monitor the thought path taken and to continually assess the likelihood that it will produce a useful outcome.
+**Mind Schema**: Like some other researches (eg: Graziano (2017)), I believe our brains also maintain a mental map of our mind. It tracks the observed capabilities of our mind. It will be used in a _generative_ way: to suggest a possibly suitable approach to solve a problem. And it will be used in a _predictive_ way: to monitor the thought path taken and to continually assess the likelihood that it will produce a useful outcome.
 
 ## Data View
 
@@ -138,7 +134,7 @@ The range of data sources that can be directly represented within the state mode
 
 The five external senses in particular are interesting, as it is well known that we do not observe them in their raw form. Vision, for example, is produced by the eyes with varying levels of focus and detail across the visual field, and yet it's very hard for us to directly observe that because the sense has been pre-processed to construct a single coherent virtual visual field. Furthermore, we experience senses pre-attached with 'meaning': rather than seeing a series of lines and dots, I see a window, a door, a ball; rather than hearing a sampling of strange sounds, I hear specific spoken words.
 
-I also think senses carry with them a sort of "labelling" as to their source. For example, we have a strong perception of whether a sense came to us externally or from us internally. The labelling appears to be a reference back to the body and mind schemas. Very interesting results occur when that labelling is disrupted, such as when people with schizophrenia "hear voices" not realising that they are the ones speaking [Klaver2016], or when the body or mind schemas cannot be updated, causing [anosognosia](https://www.nami.org/About-Mental-Illness/Common-with-Mental-Illness/Anosognosia).
+I also think senses carry with them a sort of "labelling" as to their source. For example, we have a strong perception of whether a sense came to us externally or from us internally. The labelling appears to be a reference back to the body and mind schemas. Very interesting results occur when that labelling is disrupted, such as when people with schizophrenia "hear voices" not realising that they are the ones speaking (Klaver & Dijkerman, 2016), or when the body or mind schemas cannot be updated, causing [anosognosia](https://www.nami.org/About-Mental-Illness/Common-with-Mental-Illness/Anosognosia).
 
 ### Visceral Loop
 The Visceral Loop is a characterisation of the kinds of thought or processing outcomes that pass through the state machine described above, and how that thought leads to the individual having a visceral awareness of their own thoughts. It is thus the culmination of the theory, for it explains how we come to conclude ourselves as conscious beings.
@@ -191,11 +187,11 @@ Those sources might include long term memory, for example. As memory becomes lar
 From a physical space perspective, a far more efficient solution is to have a central area where "data to be processed" is temporarily stored, and for all processing regions to access data in that temporary storage. Essentially, it is necessary to bring the data to the processor because the processor is large and unmovable.
 
 ## High-level thought as a state machine
-Various studies have revealed that we are either unaware of the majority of processes that occur within the brain [Miller1962, Nisbett1977, Halligan2000], or that we only become aware of those processes _after the fact_ [Halligan2017]. Furthermore, evidence from cognitive neuropsychology suggests that we can perform relatively complicated processing and have that influence our awareness, without even being aware of the processing or the sense inputs that the processing was based on [Driver1998, Marshall1988, Weiskrantz1985].
+Various studies have revealed that we are either unaware of the majority of processes that occur within the brain (Miller, 1962; Nisbett & Wilson, 1977; Halligan & Oakley, 2000), or that we only become aware of those processes _after the fact_ (Halligan & Oakley, 2017). Furthermore, evidence from cognitive neuropsychology suggests that we can perform relatively complicated processing and have that influence our awareness, without even being aware of the processing or the sense inputs that the processing was based on (Weiskrantz, 1985; Marshall & Halligan, 1988; Driver & Mattingley, 1998).
 
 I suggest that this is quite straight-forward to explain.
 
-The kinds of processing mentioned above form what Daniel Kahneman refers to as _System 1_ (or _fast thinking_) thought [Kahneman2011]. Here, deep and complex layers of neurons are involved, and while they may have cycles on the micro scale, they likely have the macro scale form of a simple [feed-forward network](https://en.wikipedia.org/wiki/Feedforward_neural_network). This _System 1_ thought can be quite advanced, as we know from the work of Kahneman. For example, it can localize the source of a specific sound, produce the result for simple well practiced questions such as "2+2=?", read text on a billboard, or even drive a car on an empty road.
+The kinds of processing mentioned above form what Daniel Kahneman refers to as _System 1_ (or _fast thinking_) thought (2011). Here, deep and complex layers of neurons are involved, and while they may have cycles on the micro scale, they likely have the macro scale form of a simple [feed-forward network](https://en.wikipedia.org/wiki/Feedforward_neural_network). This _System 1_ thought can be quite advanced, as we know from the work of Kahneman. For example, it can localize the source of a specific sound, produce the result for simple well practiced questions such as "2+2=?", read text on a billboard, or even drive a car on an empty road.
 
 ![systems-1-and-2](files/A-theory-of-consciousness-systems-1-and-2.png)
 
@@ -238,7 +234,7 @@ This also suggests that there is a minimum level of intelligence required for a 
 See more: [[The Error Prone Brain]]
 
 ## Models
-Graziano [Graziano2017] introduced Attention Schema Theory (AST), which posits that the brain uses a high-level representational model to encapsulate information about the state of the body and thoughts within the mind, and that this is used for attention control. The existence of some sort of mental model of the body, or _body schema_, is well established in our understanding of the primary motor and somatosensory projection areas, along with their associated non-primary projection areas [Gleitman2003, ch2].
+Graziano (2017) introduced Attention Schema Theory (AST), which posits that the brain uses a high-level representational model to encapsulate information about the state of the body and thoughts within the mind, and that this is used for attention control. The existence of some sort of mental model of the body, or _body schema_, is well established in our understanding of the primary motor and somatosensory projection areas, along with their associated non-primary projection areas (Gleitman, Fridlund & Reisburg, 2003, ch2).
 
 Graziano introduced the idea of a _mind schema_: similar to the body schema but models the capabilities of the mind itself. He then suggested how, through self-reference, this model could form the basis for the conclusion of one's own consciousness. Graziano assumes a single model that encapsulates all behavioural predictions of the body and mind, and of the state of current thought, but admits that there may be other divisions.
 
@@ -326,7 +322,7 @@ So what remains?
 
 * Lastly, given that consciousness can apparently be produced with such a simple data state and processor in a simple cyclic relationship, surely there could be many such simple cyclic regions within a single brain. Perhaps the left and right hemispheres of the brain are examples of this. Why does such a brain not experience multiple consciousnesses?
 
-This is the classic explanatory gap between what can and cannot be described about our subject experience through physicalist mechanistic processes, and which Chalmers refers to as the "hard problem" of consciousness. But I think these questions are better characterised as an "intuitional gap": theories of consciousness exist that support it being an entirely physical phenomenon, and yet our intuitions about consciousness make it hard for us to accept that a simple physical explanation is sufficient. This has lead many to assume a metaphysical explanation is necessary. Ned Block elegantly summarised this intuitional gap in "The Harder Problem of Consciousness" [Block2003] when he stated: "Not only do we lack a ground of belief [to decide something as conscious vs not conscious], but we lack a conception of any ground of belief".
+This is the classic explanatory gap between what can and cannot be described about our subject experience through physicalist mechanistic processes, and which Chalmers refers to as the "hard problem" of consciousness. But I think these questions are better characterised as an "intuitional gap": theories of consciousness exist that support it being an entirely physical phenomenon, and yet our intuitions about consciousness make it hard for us to accept that a simple physical explanation is sufficient. This has lead many to assume a metaphysical explanation is necessary. Ned Block elegantly summarised this intuitional gap in "The Harder Problem of Consciousness" (2002) when he stated: "Not only do we lack a ground of belief [to decide something as conscious vs not conscious], but we lack a conception of any ground of belief".
 
 I posit that the error here is our intuition itself. The question of phenomenal consciousness is so hard to measure that we are left with little else than intuition to guide our judgements. But our intuitions on the subject tend to be contradictory; between individuals, and even from the same individual. Our intuitions are so strong that they make it hard for us to consider the possibilities rationally, and thus they may actually be leading us astray.
 
@@ -354,49 +350,46 @@ Further research will focus on the learnings that can be attained by building an
 
 # References
 
-[Barron2016] Barron, A. B., & Klein, C. (2016). What insects can tell us about the origins of consciousness. Proceedings of the National Academy of Sciences of the United States of America, 113(18), 4900–4908. https://doi.org/10.1073/pnas.1520084113
+Barron, A. B., & Klein, C. (2016). What insects can tell us about the origins of consciousness. Proceedings of the National Academy of Sciences of the United States of America, 113(18), 4900–4908. https://doi.org/10.1073/pnas.1520084113
 
-[Block2003] Ned Block. 2003. "The Harder Problem of Consciousness". The Journal of Philosophy XCIX(8), January 2003. DOI: 10.2307/3655621.
+Block, N. (2002). The Harder Problem of Consciousness. The Journal of Philosophy XCIX(8), Aug 2002. https://doi.org/10.2307/3655621
 
-[Chalmers1995] Chalmers, D.J. 1995. "Facing up to the Problem of Consciousness." Journal of Consciousness Studies 2: 200-19.
+Cell Press. (2020, February 12). Researchers stimulate areas vital to consciousness in monkeys' brains -- and it wakes them up. ScienceDaily. Retrieved September 7, 2020 from www.sciencedaily.com/releases/2020/02/200212111440.htm
 
-[Driver1998] Driver, J., and Mattingley, J. B. (1998). "Parietal neglect and visual awareness". Nat. Neurosci. 1, 17–22 doi: 10.1038/217
+Chalmers, D.J. (1995). Facing up to the Problem of Consciousness. Journal of Consciousness Studies 2: 200-19.
 
-[Gennaro1996] Gennaro, R. 1996. "Consciousness and Self Consciousness: A Defense of the Higher Order Thought Theory of Consciousness." Philadelphia, PA: John Benjamins Publishing.
+Driver, J., and Mattingley, J. B. (1998). Parietal neglect and visual awareness. Nat. Neurosci. 1, 17–22. https://doi.org/10.1038/217
 
-[Gennaro2012] Gennaro, R. 2012. "The Consciousness Paradox: Consciousness, Concepts, and Higher-Order Thoughts." Cambridge, MA: The MIT Press.
+Gennaro, R. (1996). Consciousness and Self Consciousness: A Defense of the Higher Order Thought Theory of Consciousness. Philadelphia, PA: John Benjamins Publishing.
 
-[Gleitman2003] - Henry Gleitman, Alan J. Fridlund, Daniel Reisburg. "Psychology". Sixth edition. Norton publishing.
+Gennaro, R. (2012). "The Consciousness Paradox: Consciousness, Concepts, and Higher-Order Thoughts." Cambridge, MA: The MIT Press.
 
-[Graziano2017] Michael S. A. Graziano. Nov 2017. "The Attention Schema Theory: A Foundation for Engineering Artificial Consciousness". Front. Robot. AI, 14 November 2017. https://doi.org/10.3389/frobt.2017.00060.
+Gleitman, H., Fridlund, A. J., and Reisburg, D. (2003). _Psychology_. Sixth edition. Norton publishing.
 
-[Halligan2000] Halligan, P. W., and Oakley, D. A. 2000. Greatest myth of all. New Scientist #168 (pp 34-39). https://www.newscientist.com/article/mg16822653-700-greatest-myth-of-all.
+Graziano, M. S. A. (Nov 2017). The Attention Schema Theory: A Foundation for Engineering Artificial Consciousness. Front. Robot. AI, 14 November 2017. https://doi.org/10.3389/frobt.2017.00060.
 
-[Halligan2017] Peter W. Halligan, and David A. Oakley. 2017. "Chasing the Rainbow: The Non-conscious Nature of Being". Frontiers in Science. https://doi.org/10.3389/fpsyg.2017.01924
+Halligan, P. W., and Oakley, D. A. (2000). Greatest myth of all. New Scientist #168 (pp 34-39). https://www.newscientist.com/article/mg16822653-700-greatest-myth-of-all
 
-[Kahneman2011] Kahneman, D. (2011). "Thinking, fast and slow." New York: Farrar, Straus and Giroux.
+Halligan, P. W., and Oakley, D. A. (2017). Chasing the Rainbow: The Non-conscious Nature of Being. Frontiers in Science. https://doi.org/10.3389/fpsyg.2017.01924
 
-[Klaver2016] Klaver, M. and Dijkerman, HC. (2016). "Bodily Experience in Schizophrenia: Factors Underlying a Disturbed Sense of Body Ownership." Front. Hum. Neurosci. 10:305. https://doi.org/10.3389/fnhum.2016.00305
+Kahneman, D. (2011). _Thinking, fast and slow._ New York: Farrar, Straus and Giroux.
 
-[Marshall1988] Marshall, J. C., and Halligan, P. W. (1988). Blindsight and insight in visuo-spatial neglect. Nature 336, 766–767. doi: 10.1038/336766a0
+Klaver, M. and Dijkerman, HC. (2016). Bodily Experience in Schizophrenia: Factors Underlying a Disturbed Sense of Body Ownership. Front. Hum. Neurosci. 10:305. https://doi.org/10.3389/fnhum.2016.00305
 
-[Miller1962] Miller, G. A. (1962). "Psychology: The Science of Mental Life". London: Penguin.
+Lau, H. and Rosenthal, D. (2011). Empirical support for higher-order theories of consciousness. Trends in Cognitive Sciences 15: (pp 365-373).
 
-[Nisbett1977] Nisbett, Richard & Wilson, Timothy. 1977. "Telling More Than We Can Know: Verbal Reports on Mental Processes". Psychological Review. 84. (pp 231-259). http://dx.doi.org/10.1037/0033-295X.84.3.231.
+Marshall, J. C., and Halligan, P. W. (1988). Blindsight and insight in visuo-spatial neglect. Nature 336, 766–767. https://doi.org/10.1038/336766a0
 
-[Rosenthal2005] Rosenthal, D. 2005. "Consciousness and Mind." New York: Oxford University Press.
+Miller, G. A. (1962). _Psychology: The Science of Mental Life_. London: Penguin.
 
-[Rosenthal2011] Lau, H. and Rosenthal, D. 2011. "Empirical support for higher-order theories of consciousness." Trends in Cognitive Sciences 15: (pp 365-373).
+Nisbett, R. E., and Wilson, T. D. (1977). Telling More Than We Can Know: Verbal Reports on Mental Processes. Psychological Review. 84. (pp 231-259). http://dx.doi.org/10.1037/0033-295X.84.3.231
 
-[SDFeb2020] Cell Press. (2020, February 12). Researchers stimulate areas vital
- to consciousness in monkeys' brains -- and it wakes them up. ScienceDaily. 
-Retrieved September 7, 2020 from 
-www.sciencedaily.com/releases/2020/02/200212111440.htm
+Rosenthal, D. (2005). _Consciousness and Mind_. New York: Oxford University Press.
 
-[SDOct2012] University of Chicago Medical Center. (2012, October 1). Homolog of mammalian neocortex found in bird brain. ScienceDaily. Retrieved September 6, 2020 from www.sciencedaily.com/releases/2012/10/121001151953.htm
+Tononi, G. (2004). An Information Integration Theory of Consciousness. BMC neuroscience. 5. 42. http://dx.doi.org/10.1186/1471-2202-5-42
 
-[Tononi2004] Tononi, Giulio. (2004). An Information Integration Theory of Consciousness. BMC neuroscience. 5. 42. doi: 10.1186/1471-2202-5-42. https://www.researchgate.net/publication/8198745_An_Information_Integration_Theory_of_Consciousness
+Oizumi, M., Albantakis, L., and Tononi, G. (2014). From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0. PLOS Computational Biology 10(5): e1003588. https://doi.org/10.1371/journal.pcbi.1003588
 
-[Tononi2014] Oizumi M, Albantakis L, Tononi G (2014). From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0. PLOS Computational Biology 10(5): e1003588. https://doi.org/10.1371/journal.pcbi.1003588.
+University of Chicago Medical Center. (2012, October 1). Homolog of mammalian neocortex found in bird brain. ScienceDaily. Retrieved September 6, 2020 from www.sciencedaily.com/releases/2012/10/121001151953.htm
 
-[Weiskrantz1985] Weiskrantz, L. (1985). "Blindsight: A Case Study and Implications". Oxford: OUP
+Weiskrantz, L. (1985). Blindsight: A Case Study and Implications. Oxford: Oxford University Press
