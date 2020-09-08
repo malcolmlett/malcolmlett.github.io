@@ -67,7 +67,7 @@ Slowly science is beginning to understand the kind of processing performed by di
 ### Consciousness across the animal kingdom
 Scientists don't know for certain which animals experience consciousness, but there are some hints. All mammals share the same basic brain structure, and in particular they share a neocortex, which is believed to be the main area for higher-level thought. The experience of consciousness appears to correlate very strongly with higher-level thought, so one could conclude that the presence or lack of a neocortex can be used to distinguish the presence of consciousness in animals.
 
-Birds have a similar structure called the dorsal ventricular ridge (DVR) that some neuroscientists believe provide similar capability to the neocortex (Uni. Chic. Med. Cent., 2012). There has also been a suggestion that fish have a similar structure with similar functionality, and even a suggestion that perhaps insects could be conscious (Barron & Klein, 2016). The _thalamus_ is another region that has a significant part to play in consciousness, particularly in the area of wakefulness, and it can be found both mammals and reptiles (Cell Press, 2020).
+Birds have a similar structure called the dorsal ventricular ridge (DVR) that some neuroscientists believe provide similar capability to the neocortex (Uni. Chic. Med. Cent., 2012; Harris, 2015). There has also been a suggestion that fish have a similar structure with similar functionality, and even a suggestion that perhaps insects could be conscious (Barron & Klein, 2016). The _thalamus_ is another region that has a significant part to play in consciousness, particularly in the area of wakefulness, and it can be found both mammals and reptiles (Cell Press, 2020).
 
 ### Neuronal structure
 The neurons in mammalian brains are different to those in artificial neural networks in terms of the physical way in which they operate, but I posit that the difference is not significant for the experience of consciousness. Any mechanism that supports sufficient flexibility of learning could suffice for the realization of consciousness.
@@ -371,6 +371,8 @@ Graziano, M. S. A. (Nov 2017). The Attention Schema Theory: A Foundation for Eng
 Halligan, P. W., and Oakley, D. A. (2000). Greatest myth of all. New Scientist #168 (pp 34-39). https://www.newscientist.com/article/mg16822653-700-greatest-myth-of-all
 
 Halligan, P. W., and Oakley, D. A. (2017). Chasing the Rainbow: The Non-conscious Nature of Being. Frontiers in Science. https://doi.org/10.3389/fpsyg.2017.01924
+
+Harris, K. D. (2015). Cortical computation in mammals and birds. Proceedings of the National Academy of Sciences Mar 2015, 112 (11) 3184-3185; https://doi.org/10.1073/pnas.1502209112
 
 Kahneman, D. (2011). _Thinking, fast and slow._ New York: Farrar, Straus and Giroux.
 
