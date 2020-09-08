@@ -1,10 +1,6 @@
 # Pages
 * [[Home]]
 
-### Design
-* [[Architecture Overview]]
-* [[Conscious Calculator v2]]
-
 ### Theory
 * [[What is Consciousness]]
 * [[Background to A Theory of Mind]]
@@ -18,6 +14,10 @@
 * [[The Error Prone Brain]]
 * [[Human Phenomena]]
 * [[Guiding Principles]]
+
+### Design
+* [[Architecture Overview]]
+* [[Conscious Calculator v2]]
 
 ### Work in Progress
 * [[Work in Progress]]
