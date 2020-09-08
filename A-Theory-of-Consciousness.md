@@ -1,5 +1,3 @@
-(WORK IN PROGRESS: This is a re-work that will replace the existing [[A Theory of the Human Mind]] page)
-
 This page outlines a working theory for the algorithmic and computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is suggested that the content of conscious experience is governed by a representational _state model_, along with a particular form of state machine processing loop, that explains the majority of the internal subjective attributes of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered and directions for further avenues of research suggested.
 
 # Introduction
@@ -57,7 +55,7 @@ Many other characteristics are commonly attributed to consciousness, particularl
 ## Views
 The proposed mechanisms of consciousness will be explained here by examining them in the context of three overlayed views: physical, logical, and data.
 
-![basic state machine](files/A-theory-of-consciousness-v2-layers.png)
+![basic state machine](files/A-theory-of-consciousness-layers.png)
 
 The _physical_ view examines the brain as a collection of neurons. While some regions have specific functionality that we understand, other regions serve many purposes and are hard to characterise exactly. Many different kinds of behaviours are tightly integrated and overlap across multiple regions making it very hard to identify specific functionality within this "spaghetti" of pathways.
 
@@ -95,7 +93,7 @@ As we shall see, the activity of this high-level thought system explains almost 
 ### State Machine
 The proposed high-level state machine of the brain is illustrated in the following diagram. Externally sourced senses (our nominal five senses), plus internal senses (eg: mental tracking of limb position), are received as inputs (likely in a pre-processed form), then used in conjunction with the current state (held in Working Memory) to produce a new state.
 
-![state machine](files/A-theory-of-consciousness-v2-state-machine.png)
+![state machine](files/A-theory-of-consciousness-state-machine.png)
 
 In the diagram above, the Logic Processing box represents what is likely the bulk of the brain and where non-conscious mental processes produce meaningful results from the received senses and internal input [Nisbett1977]. While it is an oversimplification, the logic processing components are treated as largely stateless, in that they merely compute a result given the inputs. It is further assumed that we can think of multiple logic components of the brain as a single aggregate.
 
@@ -106,7 +104,7 @@ Working memory is the state data-store of our state machine. The presence or abs
 ### Control Mechanism
 A state machine employing fuzzy, learning, neural networks for its logic processor requires a control mechanism in order to maintain stability. The control mechanism uses a feedback path separate from the main processing loop. It acts like a secondary processing loop, or _feedback loop_, but for efficiency and flexibility, it re-uses the main processor. The main processor is trained to enforce stability control through learning pressure and some amount of evolutionary pre-wiring.  
 
-![control loop](files/A-theory-of-consciousness-v2-control-loop.png)
+![control loop](files/A-theory-of-consciousness-control-loop.png)
 
 The existence of the feedback path is the explanation for why we have awareness of our thoughts, and as such is often referred to as _conscious feedback_ here. However, the exact distinction of data that passes back into the main processor via working memory vs. conscious feedback remains an open question, with some discussion on this later on.
 
@@ -124,7 +122,7 @@ The data view examines the data states and high-level representations used withi
 ### State Model
 The _state model_ is the passive data representation used within the state machine. It is simultaneously the output of the main processor and the input to its next cycle.
 
-![state model](files/A-theory-of-consciousness-v2-state-model.png)
+![state model](files/A-theory-of-consciousness-state-model.png)
 
 The state model represents anything that may be useful as a direct output (eg: for governing action), or as input for the next cycle (eg: an intermediate result within a sequence of thought). Within humans, the state model has tremendous flexibility in the kinds of data sources and results that can be represented within it, and in the resolution of those representations. For example, at any given moment it may represent only one thing with high precision, or it may represent multiple things with low precision and information about the relationships between those things. 
 
@@ -170,7 +168,7 @@ More formally, the three iterations of the visceral loop can be represented usin
 * Iteration 2: `f(x, mind-schema) -> relationship(x : mind-schema)`
 * Iteration 3: `f(relationship(x : mind-schema), mind-schema) -> relationship(mind-schema : mind-schema)`
 
-![visceral loop](files/A-theory-of-consciousness-v2-visceral-loop.png)
+![visceral loop](files/A-theory-of-consciousness-visceral-loop.png)
 
 See more: [[Visceral Loop]]
 
@@ -182,7 +180,7 @@ This section provides an account of why I believe the theory presented here is a
 If the theory is correct, then there is very little of our internal brain structure that we can observe directly. Thus there should be little that we can deduce about it. However, it turns out the model that I purport we operate on is much like the sort of "abstraction layer" that is often used in software engineering; and it is well known within the software development field that every abstraction leaks internal details. So in practice we can deduce a lot through observations of the particular computational behaviours and edge cases that we experience, combined with our understanding from modern neuroscience.
 
 ## The need for working memory
-![working memory](files/A-theory-of-consciousness-v2-working-memory.png)
+![working memory](files/A-theory-of-consciousness-working-memory.png)
 
 Brain neurons exist in physical space and thus are subject to a simple physical law: they cannot be moved around easily.
 
@@ -199,7 +197,7 @@ I suggest that this is quite straight-forward to explain.
 
 The kinds of processing mentioned above form what Daniel Kahneman refers to as _System 1_ (or _fast thinking_) thought [Kahneman2011]. Here, deep and complex layers of neurons are involved, and while they may have cycles on the micro scale, they likely have the macro scale form of a simple [feed-forward network](https://en.wikipedia.org/wiki/Feedforward_neural_network). This _System 1_ thought can be quite advanced, as we know from the work of Kahneman. For example, it can localize the source of a specific sound, produce the result for simple well practiced questions such as "2+2=?", read text on a billboard, or even drive a car on an empty road.
 
-![systems-1-and-2](files/A-theory-of-consciousness-v2-systems-1-and-2.png)
+![systems-1-and-2](files/A-theory-of-consciousness-systems-1-and-2.png)
 
 To summarise all that in short form: simple macro-scale feed-forward networks are great for efficient pattern matching, prediction, and generation of well practiced actions.
 
