@@ -1,6 +1,6 @@
 This article investigates how consciousness in the human mind operates, explaining it from common phenomena. The focus is on providing an explanation for how I drew conclusions on the architecture of consciousness.
 
-For further reading see [[A Theory of the Human Mind]], which provides a unified description consciousness, and a [[Philosophical Description of Consciousness]] frames those conclusions in relation to the experience of being human.
+For further reading see [[A Theory of Consciousness]], which provides a unified description of consciousness.
 
 In order to explain why consciousness is what it is, you will be taken on a journey through your own mind. This journey will attempt to peel away the layers of obscurity, and to drill down through uncertainty when there are things that we cannot directly measure.
 
