@@ -5,7 +5,7 @@
 * [[Theory Home]]
 * [[What is Consciousness]]
 * [[Background to A Theory of Mind]]
-* [[A Theory of Consciousness v2]]
+* [[A Theory of Consciousness]]
 * [[Philosophical Description of Consciousness]]
 * [[Awareness of Thought is not the mystery]]
 * [[The analogy of the Thalamic symbiote]]
