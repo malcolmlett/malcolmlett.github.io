@@ -15,7 +15,7 @@ requirements for the existence of consciousness, but the theory is generally con
 why phenomenal experience exists. IIT operates within the same scope as the mechanistic explanation of 
 consciousness that will be outlined within this paper, and in that way IIT is complementary to my own.
 
-Michael Graziano suggests that consciousness is grounded in an "attention schema". Attention Schema Theory (AST) proposes that the brain produces a model, or schema, of itself and uses this to govern attentional focus, to make predictions about how the brain will behave, to guide the thought process, and that it is used to model the state of others and thus form the basis for empathy. Graziano makes a compelling case for the importance of a "mind schema" (??) in both the automated non-conscious and high-level thought processes of the brain. However AST presents only a high-level abstract account of some of the processes behind consciousness. Graziano also claims that consciousness is the result of a learned "naïve theory", and that it is "essentially a ghost story, a socially learned narrative that we use to explain ourselves, a social epiphenomenon with debatable utility" [Graziono2017].
+Michael Graziano suggests that consciousness is grounded in an "attention schema". Attention Schema Theory (AST) proposes that the brain produces a model, or schema, of itself and uses this to govern attentional focus, to make predictions about how the brain will behave, to guide the thought process, and that it is used to model the state of others and thus form the basis for empathy. Graziano makes a compelling case for the existence of a mental model of the mind, or "attention schema", and its importance in both the automated non-conscious and high-level thought processes of the brain. However AST presents only a high-level abstract account of some of the processes behind consciousness. Graziano also claims that consciousness is the result of a learned "naïve theory", and that it is "essentially a ghost story, a socially learned narrative that we use to explain ourselves, a social epiphenomenon with debatable utility" [Graziono2017].
 
 Higher-order Thought (HOT) Theory [Gennaro1996, Rosenthal2005, Rosenthal2011, Gennaro2012] suggests that the brain uses high-level abstract representations of objects within conscious thought. There are however many critics of the theory as it does not explain how those HOTs translate to conscious experience, and there is a perceived problem of reverse mapping from HOTs to more detailed representations. I suggest that HOT Theory may be more useful than its detractors argue, but that it needs to be placed within the context of a larger framework to make sense.
 
@@ -37,7 +37,7 @@ I shall use the human mind as the primary example, but I am focused on providing
 
 But first, what do I mean by the use of the word _consciousness_ and of its derivative, _conscious_?
 
-In simple terms, I am referring to the internal subjective awareness of self that is lost during sleep and regained upon waking [citation]. But even that is vague. Which aspects of subjective awareness are included in the term? Which of the various things that we can be aware of should be considered as a core component of consciousness? Which components can be expected to exist in any form of consciousness, and which components would we argue to negate the existence of consciousness if they were not present?
+In simple terms, I am referring to the internal subjective awareness of self that is lost during sleep and regained upon waking. But even that is vague. Which aspects of subjective awareness are included in the term? Which of the various things that we can be aware of should be considered as a core component of consciousness? Which components can be expected to exist in any form of consciousness, and which components would we argue to negate the existence of consciousness if they were not present?
 
 I view a minimal consciousness as having the following characteristics:
 * awareness of senses (*)
@@ -73,21 +73,19 @@ Slowly science is beginning to understand the kind of processing performed by di
 ### Consciousness across the animal kingdom
 Scientists don't know for certain which animals experience consciousness, but there are some hints. All mammals share the same basic brain structure, and in particular they share a neocortex, which is believed to be the main area for higher-level thought. The experience of consciousness appears to correlate very strongly with higher-level thought, so one could conclude that the presence or lack of a neocortex can be used to distinguish the presence of consciousness in animals.
 
-Birds have a similar structure called the dorsal ventricular ridge (DVR) that some neuroscientists believe provide similar capability to the neocortex [SDOct2012]. I have also seen some suggestion that fish have a similar structure with similar functionality.
-
-tbd. There is also some suggestion that the Thalamus is strongly involved...and it or its synonyms are found in .....
+Birds have a similar structure called the dorsal ventricular ridge (DVR) that some neuroscientists believe provide similar capability to the neocortex [SDOct2012]. There has also been a suggestion that fish have a similar structure with similar functionality, and even a suggestion that perhaps insects could be conscious [Barron2016]. The _thalamus_ is another region that has a significant part to play in consciousness, particularly in the area of wakefulness, and it can be found both mammals and reptiles [SDFeb2020].
 
 ### Neuronal structure
 The neurons in mammalian brains are different to those in artificial neural networks in terms of the physical way in which they operate, but I posit that the difference is not significant for the experience of consciousness. Any mechanism that supports sufficient flexibility of learning could suffice for the realization of consciousness.
 
 In fact, this article will use biological and artificial neural networks interchangeably for examples when expressing ideas. 
 
-### Physical location in space
-Physical computational machines have bulky data processing circuits, bulky memory storage, and bulky sense pre-processing (eg: visual cortex). Those bulky regions take up a physical location in space, and cannot be "moved to the data", so the data must be "moved to the processors". I posit that this is the reason for the evolution of working memory, to act as a small holding area for the current set of data being worked on.
+### Physical locations in space
+Complex computational machines have bulky data processing circuits, bulky memory storage, and bulky sense pre-processing (eg: visual cortex). Those bulky regions take up a physical location in space, and cannot be "moved to the data". Thus, the data must be "moved to the processors". I posit that this is the reason for the evolution of working memory, to act as a small holding area for the current set of data being worked on.
 
 In theory, the larger the working memory the more efficient computation can be. In practice, there are trade-offs affecting the size of working memory. If too small, then it is not sufficient to hold all data needed for a particular thought process - more logic processing actions are required for low-level swap-in/swap-out of data from long term storage. If too large, then the data transmission channels between working memory and logic processing become too wide.
 
-Neuroscience currently believes that we hold about seven items in working memory, for up to about one minute [citation].
+The working memory I refer to here is the same as that originally thought to hold around seven items for up to about a minute (see [Working memory](https://en.wikipedia.org/wiki/Working_memory#Capacity) in Wikipedia).
 
 ## Logical View
 The theory claims that the high-level thought system of the human brain is a state machine with a tightly integrated control mechanism, whereas the low-level unaware or non-conscious processing performed the brain is something much more akin to our current deep-learning artificial neural network models - basically just pattern matching/prediction engines. So, high-level thought is achieved through a combination of a relatively simple state machine architecture, combined with the pattern matching and prediction power of those low-level neural networks.
@@ -280,11 +278,6 @@ The state machine and visceral loop theory of consciousness explains all of thos
 5. The conclusion of having executive control comes from the fact that high-level thought typically requires multiple steps, and that we are aware of the result of each step in the process.
 6. Like for the general case of not being aware of low level functioning of the brain, we are not aware of the execution of logic until it produces a result that is stored into the state model.
 
-## Memories
-I think some researchers have suggested that the perception of consciousness is an artefact of memory [citation]. Specifically, that our memory is used to construct a representation of recent thoughts, and in doing so the memory of independently produced thoughts become modelled as a continuous stream. By analogy, this is likely assumed to operate in the same way that we perceive vision as a smooth visual field of uniform resolution whereas in reality we physically see only a tiny fraction of the scene in front of us at any point in time. The assumption is that the presence of this smoothed out memory of apparently continuous thoughts tricks us into thinking we are conscious.
-
-In contrast, I don't see that explanation as adding much to the whole solution. While it is probably true that our memory of past thoughts creates a simplified "smoothed out" representation, it doesn't answer why we conclude ourselves as conscious from that data, and it isn't necessary to reach the conclusion of consciousness. So rather than being core to the explanation, I see it as just yet another example of the result of the visceral loop.
-
 
 # Open Questions
 
@@ -363,6 +356,8 @@ Further research will focus on the learnings that can be attained by building an
 
 # References
 
+[Barron2016] Barron, A. B., & Klein, C. (2016). What insects can tell us about the origins of consciousness. Proceedings of the National Academy of Sciences of the United States of America, 113(18), 4900–4908. https://doi.org/10.1073/pnas.1520084113
+
 [Block2003] Ned Block. 2003. "The Harder Problem of Consciousness". The Journal of Philosophy XCIX(8), January 2003. DOI: 10.2307/3655621.
 
 [Chalmers1995] Chalmers, D.J. 1995. "Facing up to the Problem of Consciousness." Journal of Consciousness Studies 2: 200-19.
@@ -395,7 +390,12 @@ Further research will focus on the learnings that can be attained by building an
 
 [Rosenthal2011] Lau, H. and Rosenthal, D. 2011. "Empirical support for higher-order theories of consciousness." Trends in Cognitive Sciences 15: (pp 365-373).
 
-[SDOct2012] University of Chicago Medical Center. (2012, October 1). "Homolog of mammalian neocortex found in bird brain." ScienceDaily. www.sciencedaily.com/releases/2012/10/121001151953.htm
+[SDFeb2020] Cell Press. (2020, February 12). Researchers stimulate areas vital
+ to consciousness in monkeys' brains -- and it wakes them up. ScienceDaily. 
+Retrieved September 7, 2020 from 
+www.sciencedaily.com/releases/2020/02/200212111440.htm
+
+[SDOct2012] University of Chicago Medical Center. (2012, October 1). Homolog of mammalian neocortex found in bird brain. ScienceDaily. Retrieved September 6, 2020 from www.sciencedaily.com/releases/2012/10/121001151953.htm
 
 [Tononi2004] Tononi, Giulio. (2004). An Information Integration Theory of Consciousness. BMC neuroscience. 5. 42. doi: 10.1186/1471-2202-5-42. https://www.researchgate.net/publication/8198745_An_Information_Integration_Theory_of_Consciousness
 
