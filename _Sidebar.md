@@ -5,7 +5,6 @@
 * [[Theory Home]]
 * [[What is Consciousness]]
 * [[Background to A Theory of Mind]]
-* [[A Theory of the Human Mind]]
 * [[A Theory of Consciousness v2]]
 * [[Philosophical Description of Consciousness]]
 * [[Awareness of Thought is not the mystery]]
