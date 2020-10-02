@@ -1,3 +1,3 @@
 <p align="center">Copyright &copy; 2020 Malcolm Lett - Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0">GPL 3.0</a></p>
 
-Contact: my.name at gmail
+<p align="center">Contact: my.name at gmail</p>
