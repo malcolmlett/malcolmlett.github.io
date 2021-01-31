@@ -45,6 +45,8 @@ The list of experienced senses is something like this:
 
 For the usual 5 senses, the list above is the _internal_ versions, that are only loosely based on the external senses and are often re-purposed for other internal data. eg: imagination, memory of past visuals.
 
+(tbd: discussed in more detail within [An Examination of executive function in context of visceral loop.pdf](files/archive/2020-08-26-Examination-of-executive-function-in-context-of-visceral-loop.pdf))
+
 ### Thing that Experiences
 The remaining properties of experience are hard to define. But they stem from one simple analogy: that we _experience_ our raw and pre-processed external and internal senses as if we are a separate organism that more or less passively receives those inputs. There appears to be a well-defined junction, and our experience is defined entirely by the data that passes over that junction.
 
