@@ -2,6 +2,7 @@ The purpose of the `work-in-progress` category is to collect together thoughts d
 
 _(list: work-in-progress)_
 
+* [[Designing a Proto Artificial General Intelligence]]
 * [[Possible Components of Learning]]
 * [[A Work in Progress Theory of Learning]]
 * [[Learning to Count]]

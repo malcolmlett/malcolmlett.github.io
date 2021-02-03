@@ -19,6 +19,7 @@
 ### Design
 * [[Architecture Overview]]
 * [[Conscious Calculator v2]]
+* [[Designing a Proto Artificial General Intelligence]]
 
 ### Work in Progress
 * [[Work in Progress]]
