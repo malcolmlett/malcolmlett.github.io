@@ -1,14 +1,12 @@
-Using [[A Theory of Consciousness]] as the basis, this page attempts to build up a design what is hoped to be the basis for an artificial general intelligence.
-
-....
-work in progress
-....
+Can we use our best current understanding of neuroscience to inspire AI architectures that could form an artificial general intelligence (AGI)? This page attempts to do that. It uses the results of [[A Theory of Consciousness]] as the overarching guide, along with additional biological influences. Also see [[Biological basis for proto AGI]] for some further background to the design here.
 
 # Overview
 
+First, for a bit of fun, this is the complete architecture. In the sections that follow, this shall be broken down and the rationalisation explained in detail.
+
 ![Complete](files/An-agi-architecture-v1-complete.png)
 
-# Training
+## Training
 
 Repeated cycles of the following sequence of training:
 * RL of Level 1 with jitter as input
@@ -16,7 +14,78 @@ Repeated cycles of the following sequence of training:
 * RL of whole network with jitter against executive control output (?)
 * RL of whole network with full policy execution
 
-![Training](files/An-agi-architecture-v1-low-level-training.png)
+# Building up Architecture
+## Low level motor control
+Mammals don't learn motor control through external rewards; they learn it through watching and observing. And through _jitter_ - in the early stages of development randomly fired muscle signals cause the ligaments to move (citation needed), and the senses are used to pick up the result (particularly touch + vision). This is likely fundamental in bootstrapping a number of brain circuits. For our solution, this will be used to bootstrap the learning of two networks:
+* motor control
+* sense interpretation
+
+![Low Level with jitter](files/An-agi-architecture-v1-low-level-jitter.png)
+
+Start with randomly initialised policy and sense interpretation networks. Random jitter (noise) is injected into the raw motor control signal. This causes movement that affects the sense inputs and an update of the state. 
+
+For the moment we'll ignore how the sense interpretation network is trained and focus on the motor control policy. Jitter induces an action `a`, which leads to an observed state `s'` one time step later. This forms an trainable observation that `a` lead to `s'`. Now, for context, action `a` occurred at time `t` where the state observation was `s`. So we can now collect a series of observations of the form:
+
+    p(s'|s,a)
+
+We could use that to learn a predictive model of the sort that is used in model-based RL algorithms. But model-based RL algorithms are cumbersome, and require a planning engine - which doesn't seem to make sense for the most low-level motor control. So we turn the observation on its head and use it to learn the action given an initial state `s` and a goal `g`. If we force that `g` uses the same representation as states, then we can train with `g=s'`. So, instead we build a network on the form here, and use supervised learning on the observations:
+
+    p(a|s,g)
+
+Now, there are a few gotchas here.
+
+1. Under the rules of probabilities, you cannot flip from `p(s'|s,a)` to `p(a|s,s')` without incorporating some a-prioris about `p(s')` etc.. In practice our approximation will be good enough given that we are only using this to bootstrap learning and we will use other processes to smooth out the errors.
+
+2. Jitter only enables us to observe `s'` for time `t+1`. But when we come to use this policy, goal `g` is quike likely only reachable at some `t+i` where `i > 1`, and our network hasn't received any training for that. For now we'll gloss over that issue with a foolish assumption that our network will generalise well enough to make reasonable guesses for the action at time `t` under those conditions. In the next section we'll use RL to train for `i > 1`.
+
+3. Even given that assumption, it is likely that we'll run into problems of overfitting causing bad guesses. The problem is that our network capacity is significantly higher than is needed for the sparse data received so far. In humans, the initial bootstrap learning likely occurs while the brain is still developing and is much smaller than its eventual size. Thus it has less neurons to overfit with and will generalise better. In current ML, we always use fixed size networks, so we will probably need to resolve the overfitting problem here somehow.
+
+4. In mammals, motor control is triggered by the primary motor cortex, but the exact sequencing, timing, and coordination with other movements is governed by the cerebellum. Exactly how that occurs is still unknown. For now we'll build all of that into our one policy network.
+
+## Reinforcement learning for low level motor control
+Now we use RL to train the motor control policy (MC policy) for trajectories that best lead towards goal states. We'll use the current agent's state representation for the goals, so we do not _a priori_ know the parameters of the reward function. We must use data collected from the current policy, or at least near to it. During the training runs in the prior section, we'll collect the full unbroken trajectory within a sequential data buffer `D = (d1, d2, d3, ....dN)`, where `di` is the tuple of data taken at time `t`:
+
+    (e,s,a,e',s')
+    
+where:
+* `e` and `e'` are the true environment states at time `t` and `t+1`
+* `s` and `s'` as before are the state representations at time `t` and `t+1`
+* `a` is the action taken at time `t`.
+
+We'll now sample from that buffer to produce (`e,g`) tuples for training: starting states and goals. There's a few ways of choosing these. The simplest is to pick a fixed number of `w` at random, separately a fixed number of `s'` at random, and to pair them up. We don't know how hard it is to get from any such `w` to `s'`, but we'll assume it's always achievable under the dynamics of a safe bootstrap training environment.
+
+An alternative would be to randomly sample short sub-trajectories from `D` of some random length with (with a maximum length of say 10), and then to use the first event in each sub-trajectory as the initial environment state, and the last `s'` as the goal. This would definitely produce trajectories that we know are achievable within a short action length, but provide less exploration for our RL algorithm, so we'll use the first simpler approach for now and see how it goes.
+
+We'll assume that any goal can be achieved within some reasonable maximum trajectory length, `n`, with say 10 steps. This seems a reasonable starting point, as any simple limb task is usually carried out very quickly.
+
+We'll now run the agent under RL training conditions. For each of the training tuples selected above, we'll initialise the environment to `e`, fix the goal to `g`, and then allow the agent to run for a maximum of `n` steps. Our reward function will encourage the agent to achieve a state output that matches the goal sometime within that maximum trajectory length, but also to prefer achieving it sooner rather than later. For each run, we'll pick the state output `s(t+k)` that is closest to the goal `g`, and reward it based on how closely that state output matches the goal, and additionally discount based on how many steps it takes to achieve that best outcome. For the error measurement, we'll just pick something simple and convenient, such as RMSE. There are some more advanced "hard-wired" rewards that we might build into that too at a later time - see the section below on _Internalised Reward_.
+
+As our policy network produces deterministic continuous actions, we'll use the [Deep Deterministic Policy Gradient (DDPG))](https://spinningup.openai.com/en/latest/algorithms/ddpg.html) algorithm for training.
+
+![Low Level RL](files/An-agi-architecture-v1-low-level-rl.png)
+
+The RL learning discussed here will be alternated with the jitter and supervised learning discussed above. Thus, the low-level MC policy will accurately learn `p(a|s(t),s(t+i)` for all of `1 <= i <= n`.
+
+## Low level state representation
+How do we train the state representation?
+
+In the complete architecture, the state representation will be used as input to highel level executive control networks. It represents abstract features that the higher level network will decide how to use. Thus we don't expect it to have any direct relationship to the external environment and cannot train the sense interpetation network directly. In practice, provided it is initialised with random weights, its initial configuration will provide a meaningful usefulness of representation even without training. This is known as _reservior computing_, and its usefulness is proven and leveraged further in the theory of [Extreme Learning Machines](https://en.wikipedia.org/wiki/Extreme_learning_machine).
+
+We may wish to apply some tuning pressure to the state representation in order to achieve some goals and alleviate some concerns:
+1. Training of other networks in the agent will become trivial if the state representation is a constant zero output, so there may be pressure to tune towards that outcome unless we counteract it.
+2. We don't yet know what kind of information the high level networks will require, so we have only a vague notion that the state representation needs to be useful. This can be clarified a little by stating that it must produce a high contrast of outputs for highly different inputs. We paraphrase this vague requirement as requiring the representation to have _high saliency_.
+
+As a first step towards providing some tuning pressure, we could setup a sort of adversarial network architecture. From the raw action output, we could train an extra network to predict the expected state on the next time step, and we could compare the outputs between those two networks. We might use RMSE and apply half the loss to each network for training. We could probably improve this further by calculating a loss that specifically measures contrast or saliency of the output; for example, perhaps the 'gram matrix' used in the [neural style transfer](https://www.tensorflow.org/tutorials/generative/style_transfer) TensorFlow tutorial could help here. See Option 1 in diagram below.
+
+In practice, this approach probably wouldn't give us much. Furthermore, assuming that the networks are randomly initialised with a distribution having mean zero, the shared loss will on average encourage both networks towards zero.
+
+Another approach could be to use the state representation as input to predict the reward received, and to use supervised learning to train a Q network with backpropagation into the state interpretation network. The intuition here is that it will ensure that the state representation has sufficient saliency for accurate reward prediction. See Option 2 in diagram below. The problem is, in the prior section, our choose was to reward based on the current state representation. So it doesn't add anything that isn't already there.
+
+One way of solving this could be to slightly change the RL training in the section above. Instead of rewarding based on the state output, we could reward based on the actual limb positions that were observed during data collection. Then our state to reward prediction network has something more meaningful to learn. Also, this would seem to be a better reward function overall: it is more aligned with the actual goal of training the motor policy to control the limbs to reach a desired outcome, and it is less dependent on changes in state representation. The problem is that, under the current architectural framework, the implementation of this reward function depends more on external computation so cannot be internalised into the agent's online self-learning.
+
+Some experimentation will be required here. For now, we'll work on the assumption that the sense interpretation network acts as a _reserviour_, and doesn't need training.
+
+![Low Level state saliency](files/An-agi-architecture-v1-low-level-state-saliency.png)
 
 # Mental Models
 
