@@ -87,6 +87,10 @@ Some experimentation will be required here. For now, we'll work on the assumptio
 
 ![Low Level state saliency](files/An-agi-architecture-v1-low-level-state-saliency.png)
 
+# Next Ideas
+
+![next ideas](files/An-agi-architecture-v1-other-ideas.png)
+
 # Mental Models
 
 ## Background discussion on kinds of model
@@ -123,5 +127,35 @@ I suspect that bayesian models are fundamental to the advanced goal decision mak
 * Assuming "bayesian modelling engine" is separate, does main executive control network need to re-learn how to use the bayesian models as they are refined? For example, a baby with no bayesian models could not learn to use those models until _after_ it had formed some initial models. Then as the models get more advanced, it'd probably need to re-learn again to fully use the more advanced aspects of the models. At some point it'd presumably reach a point where it knows how to work with any new kind of bayesian model already.
 * Are bayesian models used in lower level layers too or just within the executive control layers?
 
+# Building up to a Higher-order motor control
+
+The current design of the low-level motor-control/sense component will tend to use a fairly low-level representation at its interface to the layer above. This is because i) it runs on a 'reservoir' theory and thus has minimal training pressure to modify its representational level, and ii) it is trained on instantaneous sense inputs without time-sensitive context (ie: it will represent motion at level of "arm is moving up at speed x"). And the goal input to the low-level will have that same level of representation.
+
+Thus, the low-level will not learn medium level representations like "move arm towards mouth in eating position". This fits well with observations from brain stimulation in monkeys.
+
+To build up a higher level system, we need to enforce a higher level of representation. One component of that likely comes via a _body map_. Inherently it must have some characteristics that force an optimum representational level, and that must apply a pressure to the level that it actually learns and outputs.
+
+![body map](files/An-agi-architecture-v1-body-map.png)
+
+Another aspect of the system is that it is made up of many many neural net layers stacked on top of each other. From raw sense input up to executive control, each layer _integrates_ the data from below into a slightly higher representation. From executive control down to raw motor control, each layer _differentiates_ the data from above into a slightly lower representation. Across the system, this applies a pressure that is distributed between top and bottom, creating a _representational gradient_.
+
+Like the body map, other support components within the system must have inherent characteristics that apply pressure on the representational level. The final result will be found at the natural equilibrium of those pressures.
+
+Lastly, evolution will have tuned all those inherent component characteristics so that the system as a whole produces "fit" results.
+
+![motor control layers](files/An-agi-architecture-v1-motor-control-layers.png)
+
+## Training
+So, how to actually train the intermediate-level?
+
+Based on the above notes, the training of the intermediate-level will be a combination of:
+1. back-propagation from high-level and low-level component training.
+2. training during RL that incorporates the support components (body map, modelling system)
+
+Lastly, the following narrative provides some observation:
+* I want to eat. I want my hand to put the food into my mouth. I don't care how it gets there as long as it doesn't drop the food, it doesn't hurt me in the process, and it basically follows an efficient path.
+* My goal is a high-level concept of "food in mouth".
+* I'll actively monitor the arm and provide internal reward to myself if I achieve my high-level goal.
+* And it would appear that the level of that high-level goal is a result of the representational gradient and other pressures as described above.
 
 (Added 2021-02-03. Labels: work-in-progress)
