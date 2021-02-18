@@ -8,24 +8,24 @@ This page summarises some of the known neuroscience, observations, and assumed m
 * https://en.wikipedia.org/wiki/Proprioception
 
 ## Motor Control
-Motor control is governed by a number of layers, with increasing levels of abstraction (Neuroscience Online, s3, ch1):
-* Level 1 - Spinal Cord
-* Level 2 - Brain Stem
-* Level 3 - Motor Cortex
-* Level 4 - Association Cortex
+Motor control is governed by a number of layers, with increasing levels of abstraction (Neuroscience Online, s3):
 
-(tbd: turn this all into a terse table)
+|Layer|Responsibility|
+|---|---|
+|Level 1 - Spinal Cord|Contains motor neurons that control individual muscles. Governs rhythmic behaviours, such as walking. Ensures maintenance of balance and other safety actions through [_Reflexes_](https://en.wikipedia.org/wiki/Reflex). Reflexes elicit involuntary motion behaviours in response to stimuli, before the stimuli impulses even reach the brain. [_Primitive reflexes_](https://en.wikipedia.org/wiki/Primitive_reflexes) (a.k.a. infantile or newborn reflexes) are a subset that typically disappear as a child develops. A classic example of a reflex is the [_stretch reflex_](https://en.wikipedia.org/wiki/Stretch_reflex), which automatically contracts any muscle that feels a stretch, and is involved with maintaining balance.|
+|Level 2 - Brain Stem|..|
+|Level 3 - Motor Cortex|
+|Level 4 - Association Cortex|
 
+The motor cortex is further subdivided into a number of regions:
 
-The spinal cord contains motor neurons that control individual muscles. The spinal cord also includes complex neural circuitry to govern the most common rhythmic behaviours, such as walking.
-
-Significantly, some important motor control actions are performed without brain involvement. For example, in order to maintain balance while standing, the [_stretch reflex_](https://en.wikipedia.org/wiki/Stretch_reflex) automatically contracts any muscle that feels a stretch; without any brain involvement.
+|Region|Responsibility|
+|---|---|
+|Primary Motor Cortex (M1)|Electrophysiological recordings have shown that the primary motor cortex homunculus appears to represent the movements of individual body parts, which often requires the coordinated activity of large groups of muscles throughout the body (Neuroscience Online, s3, ch3). In other words, the primary motor cortex homunculus does not map to the activity of individual muscles.|
+|(more tbd)|..|
 
 ![simple sensorimotor pathways](files/sensorimotor-pathways-simple.png)
 
-The most basic form of motor control are [_reflexes_](https://en.wikipedia.org/wiki/Reflex). These are nearly instantaneous involuntary movements in response to some stimuli, and are present at birth. They occur through neural pathways called _reflex arcs_, which act on the stimuli impulse before the impulse even reaches the brain. [_Primitive reflexes_](https://en.wikipedia.org/wiki/Primitive_reflexes) (a.k.a. infantile or newborn reflexes) are a subset that disappear as a neurotypical child develops.
-
-Electrophysiological recordings have shown that the primary motor cortex homunculus appears to represent the movements of individual body parts, which often requires the coordinated activity of large groups of muscles throughout the body (Neuroscience Online, s3, ch3). In other words, the primary motor cortex homunculus does not map to the activity of individual muscles.
 
 
 ## Sensorimotor Development

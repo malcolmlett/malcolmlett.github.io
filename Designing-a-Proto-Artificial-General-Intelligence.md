@@ -93,9 +93,9 @@ Some experimentation will be required here. For now, we'll work on the assumptio
 
 ![next ideas](files/An-agi-architecture-v1-other-ideas.png)
 
-# Mental Models
+## Mental Models
 
-## Background discussion on kinds of model
+### Background discussion on kinds of model
 In the combined context of AI and human brains, there are three kinds of level of "model", with different representations:
 * Model Free Policy Networks - Used in reinforcement learning to predict best action given a state
 * Model Based Policy Networks - Used in reinforcement learning to predict future state given an action
@@ -110,7 +110,7 @@ So, the theory proposed here is that the brain uses different structures for dif
 2. Model Based Policy Networks - Medium-speed learned predictions of next state given current state and action
 3. Bayesian Network Models - Generated, manipulated, and used by high-order thought to help inform decision making.
 
-## Bayesian modelling engine
+### Bayesian modelling engine
 The assumption for now is that there is some other system that is used for creating bayesian models.
 
 ![Bayesian Models](files/An-agi-architecture-v1-bayesian-models.png)
@@ -121,15 +121,15 @@ Assumed characteristics are:
 * Recursively Composed: each model is built up from other models with a new layer added. Eg: a car has a wheel.
 * Introspection: We can inspect individual parts of a model, but this is probably due to the composition structure. ie: it's likely that we cannot inspect within a model, but that we can observe at the interface of each of the composed parts.
 
-## Bayesian models for goal decisioning
+### Bayesian models for goal decisioning
 I suspect that bayesian models are fundamental to the advanced goal decision making of general intelligence. This also fits with the fact that humans are so easily misguided in their goals - humans target ill-conceived ideas of self-value based on cultural expectations. Eg: one person may prefer to shop at the cheapest stores in order to spend less money, while another may prefer to shop at the most expensive stores because of the social status of that store or its products.
 
-## Outstanding questions
+### Outstanding questions
 * How to make this work in practice?
 * Assuming "bayesian modelling engine" is separate, does main executive control network need to re-learn how to use the bayesian models as they are refined? For example, a baby with no bayesian models could not learn to use those models until _after_ it had formed some initial models. Then as the models get more advanced, it'd probably need to re-learn again to fully use the more advanced aspects of the models. At some point it'd presumably reach a point where it knows how to work with any new kind of bayesian model already.
 * Are bayesian models used in lower level layers too or just within the executive control layers?
 
-# Building up to a Higher-order motor control
+## Building up to a Higher-order motor control
 
 The current design of the low-level motor-control/sense component will tend to use a fairly low-level representation at its interface to the layer above. This is because i) it runs on a 'reservoir' theory and thus has minimal training pressure to modify its representational level, and ii) it is trained on instantaneous sense inputs without time-sensitive context (ie: it will represent motion at level of "arm is moving up at speed x"). And the goal input to the low-level will have that same level of representation.
 
@@ -161,3 +161,83 @@ Lastly, the following narrative provides some observation:
 * And it would appear that the level of that high-level goal is a result of the representational gradient and other pressures as described above.
 
 (Added 2021-02-03. Labels: work-in-progress)
+
+## Artificial General Intelligence
+What is general intelligence? There is no agreement on a single definiton for that, nor do we have a clear idea what characteristics should definitely be included vs excluded. In many cases the discussion is muddied with some who want to focus on _human-like_ intelligence vs a more species-agnostic view of general intelligence. 
+
+According to Wikipedia's article on [artificial general intelligence](https://en.m.wikipedia.org/wiki/Artificial_general_intelligence), there is wide agreement among artificial intelligence researchers that intelligence is required to do the following:
+* Reason, use strategy, solve puzzles, and make judgments under uncertainty
+* represent knowledge, including commonsense knowledge
+* plan
+* learn
+* communicate in natural language
+* integrate all these skills towards common goals
+
+In my own view, some of the key features include:
+* obtain and recall knowledge
+* reasoning, including:
+    * deduction
+    * induction
+    * inferrence
+* autonomy
+* learning
+
+However, an agent that is missing just one or two of the above list may perhaps still be considered to have general intelligence.
+
+In any case, my current view takes a slightly different approach that initially side-steps the problem of trying to quantify general intelligence. I ask the question: how can we _build up to_ an artificial general intelligence. The focus here is to examine how humans operate, and to follow some of those principles. With that in mind, here's what I've got so far, highest priority first:
+
+1. The agent needs to be able to interact with an environment, under constraints.
+    * Interact with an environment creates data to learn from and adapt to. Without that it is too hard to define a problem space that is generic enough for generic intelligence to arise.
+    * The agent needs constraints that restrict what it can do, so that the learning space is manageable.
+    * The agent needs constraints applied to it that make it obligatory to explore and learning to adapt to the environment. Eg: that it gets hungry and must find food to prevent death. Without such a constraint, it could sit idly forever and never learn anything.
+2. The agent must have autonomy over its learning, and this autonomy must be built in from the start.
+    * From the most basic bootstrapping of learning, the agent's learning should be driven by its own internal reward/goal system.
+    * That internal reward/goal system may be very primitive to begin with, but it must grow and be modified from experience just like all other learning.
+    * It is only by incorporating that self-driven learning from the start that it can learn to use its own intelligence to govern its own learning.
+3. The architecture of the agent must enable its executive control layer to operate against high-level abstractions.
+    * This is fundamental to reducing the learning search space for the executive control layer.
+    * It's also clear that humans operate at this level.
+4. The executive control layer operates as a state machine.
+    * As per [[A Theory of Consciousness]].
+5. It must have memory.
+    * Necessary in order to produce a _train of thought_.
+    * Memory is the architecture that enables the agent to comprehend and rationalise about things across time.
+6. It needs to be capable of modelling the difference between itself and the outside environment.
+
+### Axis of Comprehension
+From one of the notes above, it occurs to me that there are multiple axis across which an agent might be capable of comprehending and rationalising about. Some of those axis are:
+* Physical space
+    * At a point in time, understand _location_ of itself and things, and the relation between itself and things.
+    * Generate actions that are considered in the context of physical space.
+* Time
+    * Understand that events can occur across time, forming a sequence of events. 
+    * Understand the relationship, across time, between two or more events.
+* Physics
+    * Doesn't need to understand anything about physics, but should be able to predict it.
+    * Be able to learn to operate within the physics of the environment.
+    * Be able to learn to predict how those physics will affect things or play out. eg: that a ball drops to the ground if you hold it up and let go.
+* Thing space
+    * Number
+        * Understand that things have _number_.
+        * Be able to count - at least to some extent.
+        * Understand simple mathematical relationships. eg: if you have some balls, and you take one away, then you have _less_ balls than before.
+    * Boundary awareness
+        * Understand that things have boundaries.
+        * Awareness of itself as its own boundary.
+    * Class vs Instance
+        * Understand that two things that look alike or similar, have the same class but are not the same instance.
+        * See stages of Piaget's sensorimotor learning theory, and how human babies don't understand this distinction to start with.
+    * Composition of things
+        * Understand that larger things can be composed of smaller things.
+    * Label
+        * Be able to use labels to refer to things.
+        * Be able to compose labels into hierarchies and rationalise about things at the higher levels of hierarchy
+    * Physical vs Abstract
+        * Be able to build up knowledge and rationalise about abstract concepts that are not physical things.
+        * This includes 'thought' and thinking about the fact that it has awareness of its own thoughts (Iteration 2 or 3 of Visceral Loop?)
+* Self
+    * Not sure if this just falls under 'thing space' but it might be different.
+    * Ability to observe its own actions and thoughts, and to know that they are its own.
+    * Ability to comprehend that it voluntary control over itself.
+    * Ability to set goals, with consideration to how those goals will affect itself.
+    
