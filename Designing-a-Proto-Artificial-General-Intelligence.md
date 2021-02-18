@@ -205,7 +205,9 @@ In any case, my current view takes a slightly different approach that initially 
 6. It needs to be capable of modelling the difference between itself and the outside environment.
 
 ### Axis of Comprehension
-From one of the notes above, it occurs to me that there are multiple axis across which an agent might be capable of comprehending and rationalising about. Some of those axis are:
+From one of the notes above, it occurs to me that there are multiple axis across which an agent might be capable of comprehending and rationalising about. The distinction between the different axis fundamentally comes down to the mechanics of how it can produce that comprehension. For example, a note above suggested that memory is necessary in order to comprehend the effects of time. In contrast, it does not require a memory in order to comprehend physical space, without the impacts of time: it can see in an instant that one object is above the other, without needing to remember anything.
+
+Some of those axis might be:
 * Physical space
     * At a point in time, understand _location_ of itself and things, and the relation between itself and things.
     * Generate actions that are considered in the context of physical space.
