@@ -1,5 +1,103 @@
 Can we use our best current understanding of neuroscience to inspire AI architectures that could form an artificial general intelligence (AGI)? This page attempts to do that. It uses the results of [[A Theory of Consciousness]] as the overarching guide, along with additional biological influences. Also see [[Biological basis for proto AGI]] for some further background to the design here.
 
+# Background
+What is general intelligence? There is no agreement on a single definiton for that, nor do we have a clear idea what characteristics should definitely be included vs excluded. In many cases the discussion is muddied by disagreement on whether to focus on _human-like_ intelligence or a more species-agnostic view of general intelligence. 
+
+According to Wikipedia's article on [artificial general intelligence](https://en.m.wikipedia.org/wiki/Artificial_general_intelligence), "there is wide agreement among artificial intelligence researchers that intelligence is required to do the following:
+* Reason, use strategy, solve puzzles, and make judgments under uncertainty;
+* represent knowledge, including commonsense knowledge;
+* plan;
+* learn;
+* communicate in natural language;
+* integrate all these skills towards common goals".
+
+In my own view, some of the key features include:
+* acquire and recall knowledge
+* reasoning, including:
+    * deduction
+    * induction
+    * inferrence
+* autonomy
+* learning
+
+However, an agent that is missing just one or two of the above list may perhaps still be considered to have general intelligence.
+
+In any case, my current view takes a slightly different approach that initially side-steps the problem of trying to quantify general intelligence. I ask the question: how can we _build up to_ an artificial general intelligence. The focus here is to examine how humans operate, and to follow some of those principles. With that in mind, here's what I've got so far, highest priority first:
+
+1. The agent needs to be able to interact with an environment, under constraints.
+    * Interact with an environment creates data to learn from and adapt to. Without that it is too hard to define a problem space that is generic enough for generic intelligence to arise.
+    * The agent needs constraints that restrict what it can do, so that the learning space is manageable.
+    * The agent needs constraints applied to it that make it obligatory to explore and learning to adapt to the environment. Eg: that it gets hungry and must find food to prevent death. Without such a constraint, it could sit idly forever and never learn anything.
+2. The agent must have autonomy over its learning, and this autonomy must be built in from the start.
+    * From the most basic bootstrapping of learning, the agent's learning should be driven by its own internal reward/goal system.
+    * That internal reward/goal system may be very primitive to begin with, but it must grow and be modified from experience just like all other learning.
+    * It is only by incorporating that self-driven learning from the start that it can learn to use its own intelligence to govern its own learning.
+3. The architecture of the agent must enable its executive control layer to operate against high-level abstractions.
+    * This is fundamental to reducing the learning search space for the executive control layer.
+    * It's also clear that humans operate at this level.
+4. The executive control layer operates as a state machine.
+    * As per [[A Theory of Consciousness]].
+5. It must have memory.
+    * Necessary in order to produce a _train of thought_.
+    * Memory is the architecture that enables the agent to comprehend and rationalise about things across time.
+6. It needs to be capable of modelling the difference between itself and the outside environment.
+
+## Biological Constraints
+All biological life forms evolve in the context of constraints that impact their ability to maintain life and to succeed in procreating. While these constraints may not be directly necessary for general intelligence _per se_, they are important context for how general intelligence has evolved in humans. Some such constraints act on the individual during their lifetime, acting as motivation drivers, affecting their exposure to different experiences, and thus affecting what they learn. Other constraints act only at evolutionary scales. I shall attempt to identify the constraints that had the most impact on the evolution of human intelligence, and to classify them as "learning" or "evolutionary" constraints.
+
+Evolutionary constraints:
+* The process of evolution itself - provides a mechanism for experimenting with different architectures and tuning parameters. with its own inherent limitations. eg: the vast majority of adaptations are achieved through gradual improvement on top of existing adaptations.
+* Evolutionary success factor - the evolutionary reward function measures the ability to produce many healthy offspring. Note that this is a subtly different reward function than the one that drives day-to-day experience (hunger, sex, etc.). 
+* An increasingly complicated social structure
+* Parallel evolution of body and brain
+
+Individual learning constraints:
+* The need to repeatedly consume food
+    * Hunger provides a reward function that operates over relatively short timescales
+* The need for protection from the environment (including weather and predators)
+    * eg: Finding shelter from the rain offers almost immediate reward
+* Brain capacity grows as the individual matures
+
+## Axis of Comprehension
+From one of the notes above, it occurs to me that there are multiple axis across which an agent might be capable of comprehending and rationalising. The distinction between the different axis fundamentally comes down to the mechanics of how that comprehension can be achieved. For example, memory is necessary in order to comprehend the effects of time. In contrast, memory is not required in order to comprehend physical space without the impacts of time: an agent can see in an instant that one object is above the other, without needing to remember anything.
+
+Some of those axis might be:
+* Physical space
+    * At a point in time, understand _location_ of things, the relation between different things, and the relationship between those things and itself.
+    * Generate actions that are considered in the context of physical space.
+* Time
+    * Understand that events can occur across time, forming a sequence of events. 
+    * Understand the relationship, across time, between two or more events.
+* Physics
+    * Doesn't need to understand anything about physics, but should be able to predict it.
+    * Be able to learn to operate within the physics of the environment.
+    * Be able to learn to predict how those physics will affect things or play out. eg: that a ball drops to the ground if you hold it up and let go.
+* Thing space
+    * Number
+        * Understand that things have _number_.
+        * Be able to count - at least to some extent.
+        * Understand simple mathematical relationships. eg: if you have some balls, and you take one away, then you have _less_ balls than before.
+    * Boundary awareness
+        * Understand that things have boundaries.
+        * Awareness of itself as its own boundary.
+    * Class vs Instance
+        * Understand that two things that look alike or similar, have the same class but are not the same instance.
+        * See stages of Piaget's sensorimotor learning theory, and how human babies don't understand this distinction to start with.
+    * Composition of things
+        * Understand that larger things can be composed of smaller things.
+    * Label
+        * Be able to use labels to refer to things.
+        * Be able to compose labels into hierarchies and rationalise about things at the higher levels of hierarchy
+    * Physical vs Abstract
+        * Be able to build up knowledge and rationalise about abstract concepts that are not physical things.
+        * This includes 'thought' and thinking about the fact that it has awareness of its own thoughts (Iteration 2 or 3 of Visceral Loop?)
+* Self
+    * Not sure if this just falls under 'thing space' but it might be different.
+    * Ability to observe its own actions and thoughts, and to know that they are its own.
+    * Ability to comprehend that it has voluntary control over itself.
+    * Ability to set goals, with consideration to how those goals will affect itself.
+    
+
 # Overview
 
 First, for a bit of fun, this is the complete architecture. In the sections that follow, this shall be broken down and the rationalisation explained in detail.
@@ -162,84 +260,3 @@ Lastly, the following narrative provides some observation:
 
 (Added 2021-02-03. Labels: work-in-progress)
 
-## Artificial General Intelligence
-What is general intelligence? There is no agreement on a single definiton for that, nor do we have a clear idea what characteristics should definitely be included vs excluded. In many cases the discussion is muddied with some who want to focus on _human-like_ intelligence vs a more species-agnostic view of general intelligence. 
-
-According to Wikipedia's article on [artificial general intelligence](https://en.m.wikipedia.org/wiki/Artificial_general_intelligence), there is wide agreement among artificial intelligence researchers that intelligence is required to do the following:
-* Reason, use strategy, solve puzzles, and make judgments under uncertainty
-* represent knowledge, including commonsense knowledge
-* plan
-* learn
-* communicate in natural language
-* integrate all these skills towards common goals
-
-In my own view, some of the key features include:
-* obtain and recall knowledge
-* reasoning, including:
-    * deduction
-    * induction
-    * inferrence
-* autonomy
-* learning
-
-However, an agent that is missing just one or two of the above list may perhaps still be considered to have general intelligence.
-
-In any case, my current view takes a slightly different approach that initially side-steps the problem of trying to quantify general intelligence. I ask the question: how can we _build up to_ an artificial general intelligence. The focus here is to examine how humans operate, and to follow some of those principles. With that in mind, here's what I've got so far, highest priority first:
-
-1. The agent needs to be able to interact with an environment, under constraints.
-    * Interact with an environment creates data to learn from and adapt to. Without that it is too hard to define a problem space that is generic enough for generic intelligence to arise.
-    * The agent needs constraints that restrict what it can do, so that the learning space is manageable.
-    * The agent needs constraints applied to it that make it obligatory to explore and learning to adapt to the environment. Eg: that it gets hungry and must find food to prevent death. Without such a constraint, it could sit idly forever and never learn anything.
-2. The agent must have autonomy over its learning, and this autonomy must be built in from the start.
-    * From the most basic bootstrapping of learning, the agent's learning should be driven by its own internal reward/goal system.
-    * That internal reward/goal system may be very primitive to begin with, but it must grow and be modified from experience just like all other learning.
-    * It is only by incorporating that self-driven learning from the start that it can learn to use its own intelligence to govern its own learning.
-3. The architecture of the agent must enable its executive control layer to operate against high-level abstractions.
-    * This is fundamental to reducing the learning search space for the executive control layer.
-    * It's also clear that humans operate at this level.
-4. The executive control layer operates as a state machine.
-    * As per [[A Theory of Consciousness]].
-5. It must have memory.
-    * Necessary in order to produce a _train of thought_.
-    * Memory is the architecture that enables the agent to comprehend and rationalise about things across time.
-6. It needs to be capable of modelling the difference between itself and the outside environment.
-
-### Axis of Comprehension
-From one of the notes above, it occurs to me that there are multiple axis across which an agent might be capable of comprehending and rationalising about. The distinction between the different axis fundamentally comes down to the mechanics of how it can produce that comprehension. For example, a note above suggested that memory is necessary in order to comprehend the effects of time. In contrast, it does not require a memory in order to comprehend physical space, without the impacts of time: it can see in an instant that one object is above the other, without needing to remember anything.
-
-Some of those axis might be:
-* Physical space
-    * At a point in time, understand _location_ of itself and things, and the relation between itself and things.
-    * Generate actions that are considered in the context of physical space.
-* Time
-    * Understand that events can occur across time, forming a sequence of events. 
-    * Understand the relationship, across time, between two or more events.
-* Physics
-    * Doesn't need to understand anything about physics, but should be able to predict it.
-    * Be able to learn to operate within the physics of the environment.
-    * Be able to learn to predict how those physics will affect things or play out. eg: that a ball drops to the ground if you hold it up and let go.
-* Thing space
-    * Number
-        * Understand that things have _number_.
-        * Be able to count - at least to some extent.
-        * Understand simple mathematical relationships. eg: if you have some balls, and you take one away, then you have _less_ balls than before.
-    * Boundary awareness
-        * Understand that things have boundaries.
-        * Awareness of itself as its own boundary.
-    * Class vs Instance
-        * Understand that two things that look alike or similar, have the same class but are not the same instance.
-        * See stages of Piaget's sensorimotor learning theory, and how human babies don't understand this distinction to start with.
-    * Composition of things
-        * Understand that larger things can be composed of smaller things.
-    * Label
-        * Be able to use labels to refer to things.
-        * Be able to compose labels into hierarchies and rationalise about things at the higher levels of hierarchy
-    * Physical vs Abstract
-        * Be able to build up knowledge and rationalise about abstract concepts that are not physical things.
-        * This includes 'thought' and thinking about the fact that it has awareness of its own thoughts (Iteration 2 or 3 of Visceral Loop?)
-* Self
-    * Not sure if this just falls under 'thing space' but it might be different.
-    * Ability to observe its own actions and thoughts, and to know that they are its own.
-    * Ability to comprehend that it voluntary control over itself.
-    * Ability to set goals, with consideration to how those goals will affect itself.
-    

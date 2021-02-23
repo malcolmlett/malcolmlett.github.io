@@ -1,6 +1,21 @@
 This page summarises some of the known neuroscience, observations, and assumed mechanisms that underly the design in [[Designing a Proto Artificial General Intelligence]].
 
 # Neuroscience
+# Brain development
+Brain size increases from birth, reaching full size at about 7 years. The number of neurons and quality of connections change drastically during that time too (Developmental Psychology, ch 4), as summarised in the following table:
+
+|Age|Brain size as percentage of adult weight|Neuron development|
+|---|---|
+|0 months|25%|Most of 100 to 200 billion neurons present, but not fully mature, and with minimal myelin (fatty tissy around nerve axons, that help to increase the speed of transmission from one cell to another). Over next two years, brain undergoes proliferation of dendrites within cortex (thin outer covering of brain, involved with voluntary activity and thinking). |
+|2 years|75%|Peak of cortex dendrites: a single neuron may have thousands of dendrites. Following this, neural pathways not used will be eliminated, and pathways in used will be made stronger.|
+|6 years|95%|The prefrontal cortext (located behind the forehead) continues to grow and mature throughout childhood. Greatest myelin development occurs during first several years. |
+|7 years|100%||
+|13-18 years|100%|Prefrontal cortext experiences additional growth spurt. Experience shapes which connections are strengthened or lost, and by maturity about 40% of prefrontal connections are lost. This is the last part of the brain to mature, and eventually comprises 85% of total brain weight. Myelin levels reach maturity during this time.|
+
+
+## Sensorimotor System
+
+
 ## Senses
 (tbd)
 
@@ -84,6 +99,9 @@ I think the answer here is that, to the largest extent, this is not possible. Th
 To some extent though, you can learn to do that on auto-pilot. The simple act of digging a hole is as repeatable a process as driving the car to your regular grocery store, and requires you to merely play out a well learned series of actions (on the tool). So there is an extent to which it becomes automatic, but still not entirely automatic. And this seems to fit with the lack of a tertiary motor cortex.
 
 # References
+Developmental Psychology, ch 4. Lumen Learning. https://courses.lumenlearning.com/suny-hccc-ss-152-1/chapter/physical-development/
+
 McLeod, S. A. (2019, April 09). Sensorimotor stage. Simply Psychology. https://www.simplypsychology.org/sensorimotor.html
 
 Neuroscience Online. Neurobiology & Anatomy, McGovern Medical School, University of Texas. https://nba.uth.tmc.edu/neuroscience/
+
