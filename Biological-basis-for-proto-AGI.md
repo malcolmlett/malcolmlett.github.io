@@ -56,6 +56,19 @@ Piaget's theories on human child intellectual development come from the 1950s an
 
 A couple of good writeups can be found on the [massey.ac.nz](https://www.massey.ac.nz/~wwpapajl/evolution/assign2/MH/webpage.htm), and [lumenlearning.com](https://courses.lumenlearning.com/suny-lifespandevelopment/chapter/piaget-and-the-sensorimotor-stage/) websites, including descriptions of the other stages.
 
+## Memory
+The kinds of memory in humans have been categorised in order to try to understand them. The categories are ([source](https://www.predictivesafety.com/blog/the-7-types-of-memory-and-how-to-improve-them)):
+* Short-term Memory: memory that lasts for only about 20 to 30 seconds.
+* Long-term Memory: memory that lasts longer than 30 seconds.
+    * Explicit Memory: memories that you can consciously think about.
+    * Implicit Memory: memories that you don't have to consciously recall
+
+Within that categorisation, we have the following concrete forms of memory:
+* Working Memory: a short-term memory
+* Episodic Memory (aka Autiobiographical Memory): long-term explicit memory that stores experienced events. The details of events stored vary widely depending on the significance at the time, and on how often we access the memory. Eposidic memories are not stored in a literal form, but are _re-constructed_ at the time of access. Episodic memories fade over time. 
+* Semantic Memory: long-term explicit memory that represents general knowledge about the world. These are vey stable once learned, in contrast to episodic memories. Semantic memory declines only very slowly as we age.
+* Procedural Memory: long-term implicit memory about how to do things. Better thought of as learned skill than a memory. eg: riding a bike, speaking a language.
+
 # Examples
 * Wilderbeast calves can [walk within minutes of their birth](https://en.wikipedia.org/wiki/Wildebeest#Breeding_and_reproduction). While many aspects of walking (muscle development, basic muscle control) can be developed while in the womb; there is no way that the complicated act of walking (coordinating motion, maintaining balance) can be learned from experience while in the womb. The systems involved with walking are very complex. Importantly, they cannot be governed by hard-wired basic signals - like for reflexes. They require the use of complex trained neural networks. Surely the only reasonable explanation here is that evolution has encoded the exact neural configuration (including synaptic strengths) into the DNA, for those systems that are required immediately upon birth.
 

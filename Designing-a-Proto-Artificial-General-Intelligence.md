@@ -174,6 +174,38 @@ On a side note, for many years neuroscience and psychology have struggled to und
 
 (tbd: probably need to add some extra phases to support different biological neural potentiation levels)
     
+# Principles
+## Convergence
+A multi-layered system like this will be inherently chaotc. So without explicit consideration it's chances of converging towards a stable and useful outcome are minimal.
+
+To counteract that the architecture must build in convergent forces that apply at multiple points. These will be applied across all layers, and across multiple time scales.
+
+## Brain growth
+The human baby brain starts small, with many capabilities not fully formed. Those capabilities "come online" over time as the child grows. I believe this had two benefits:
+* It helps to reduce the search space for optimal network training. Effectively it trains against a simpler problem to start with, then slowly increases the brain capacity and retrains on more complex problems. 
+*  It helps to ensure convergence in an otherwise unstable system. With full executive control, we've got too much control over the reinforcement learning algorithm, but when in a fresh state, the executive control will be too unstable. So better to train level 1 systems first, holding executive control in a mostly disabled state. 
+
+In contrast, a modern neural network is static in size, thus we will not be able to replicate the same efficiency of learning. However, there may be other opportunities for improving our architecture or approach. For example, we may initially attenuate-to-zero the output of particular components, and slowly ramp up their output signal strength and their accuracy improves.
+
+## Avoiding catastrophic forgetting
+Modern neural networks suffer from "catastrophic forgetting", where training on one skill causes loss of a prior learned skill. Humans don't suffer from this problem, as the brain seems to be able to slot different skills into slightly different regions. There is work on achieving that with AI. One promising angle is Stephen Grossberg's Adaptive Resonance Theory (ART).
+
+To keep things simple, for now we will ignore the issue of catastrophic forgetting, and will setup a training environment where all required skills are repeatedly re-practiced.
+
+## Executive Contral and Decomposed Sandwich form of Reinforcement Learning
+I think executive control incorporates a "decomposed sandwich" form of reinforcement learning - where many aspects of the algorithm are under direct control. This includes:
+* Internalisation of reward function. 
+* Exploration vs exploitation ratio
+* Control over each individual attempt.
+
+Executive control also learns to "drive" the unseen aspects of reinforcement learning by building up a model of how it works and choosing to leverage it. 
+* Eg: we observe what methods of learning work best for ourselves. 
+* Eg: we actively choose to learn a new skill. 
+
+## Evolution as Learning Mechanism
+Anything that is common amongst the majority of humanity is too consistent to be left to dumb luck; it has to be a result of evolution, and thus enforced (or at least predisposed) due to the architecture. At the very least, it must additionally depend on guaranteed aspects of the environment (eg: gravity, air, sunlight vs nighttime cycle).
+ 
+Some aspects of human brain behaviour require the pre-wiring of feelings, urges, desires, distastes, etc.. In some cases these can be simple electrical signals that the brain can learn online to work with. In other cases, they must require pre-wiring of network structures -- ie: a whole NN "domain model" encoding. This is feasible from evolution - that some of the NN training is a result of evolution, which amounts to pre-training of the network weights (ie: not just the high level architecture).
 
 # Architecture
 First, for a bit of fun, this is the complete architecture. In the sections that follow, this shall be broken down and the rationalisation explained in detail.
@@ -309,13 +341,13 @@ The current design of the low-level motor-control/sense component will tend to u
 
 Thus, the low-level will not learn medium level representations like "move arm towards mouth in eating position". This fits well with observations from brain stimulation in monkeys.
 
-To build up a higher level system, we need to enforce a higher level of representation. One component of that likely comes via a _body map_. Inherently it must have some characteristics that force an optimum representational level, and that must apply a pressure to the level that it actually learns and outputs.
+To build up a higher level system, we need to enforce a higher level of representation. One component of that likely comes via the body map of _proprioception_. Inherently it must have some characteristics that force an optimum representational level, and that must apply a pressure to the level that it actually learns and outputs.
 
-![body map](files/An-agi-architecture-v1-body-map.png)
+![proprioception](files/An-agi-architecture-v1-proprioception.png)
 
 Another aspect of the system is that it is made up of many many neural net layers stacked on top of each other. From raw sense input up to executive control, each layer _integrates_ the data from below into a slightly higher representation. From executive control down to raw motor control, each layer _differentiates_ the data from above into a slightly lower representation. Across the system, this applies a pressure that is distributed between top and bottom, creating a _representational gradient_.
 
-Like the body map, other support components within the system must have inherent characteristics that apply pressure on the representational level. The final result will be found at the natural equilibrium of those pressures.
+Like proprioception, other support components within the system must have inherent characteristics that apply pressure on the representational level. The final result will be found at the natural equilibrium of those pressures.
 
 Lastly, evolution will have tuned all those inherent component characteristics so that the system as a whole produces "fit" results.
 
