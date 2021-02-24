@@ -161,7 +161,8 @@ The above phases suggest certain machinery:
     * Mental modelling capability.
     * External and internal experiences as source of input.
 4. Long-term skill potentiation depends on:
-    * Modality dependent trainable components
+    * Modality dependent trainable components.
+        * This may not require any new components. Rather, perhaps it just means that each layer needs to be trainable.
     * Self-driven reward
 
 On a separate note, for many years nneuroscience and psychology have struggled to understand how humans can apparently learn so fast. I suspect the answer is the way that shorter term adaption phases can be used to bootstrap development in longer term phases.
