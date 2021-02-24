@@ -81,7 +81,7 @@ Some of those axis might be:
         * Understand that things have boundaries.
         * Awareness of itself as its own boundary.
     * Class vs Instance
-        * Understand that two things that look alike or similar, have the same class but are not the same instance.
+        * Understand that two things that look alike or similar have the same class but are not the same instance.
         * See stages of Piaget's sensorimotor learning theory, and how human babies don't understand this distinction to start with.
     * Composition of things
         * Understand that larger things can be composed of smaller things.
@@ -96,10 +96,82 @@ Some of those axis might be:
     * Ability to observe its own actions and thoughts, and to know that they are its own.
     * Ability to comprehend that it has voluntary control over itself.
     * Ability to set goals, with consideration to how those goals will affect itself.
+
+## Layers
+
+Analysis of brain layers:
+
+|Layer|Description|Re-interpretation|AI Architecture Layer|
+|---|---|---|---|
+|1. Spinal chord|Reflexes|Mechanical layer. eg: senses to stop motorn at end of motion.|Omitted|
+|2. Brain stem|(tbd)|(tbd)|(tbd)|
+|3. Primary sensorimotor cortex|(tbd)|(tbd)|(tbd)|
+|4. Non-primary sensorimotor cortex|(tbd)|(tbd)|(tbd)|
+|5. Association cortex|(tbd)|(tbd)|(tbd)|
+
+## Phases of Adaptation
+
+Learning, and adaptation in general, can be broken down into a few phases. They vary by their timescales, and are differentiated by the underlying mechanisms necessary in order to produce the adaptation. Each phase, in order, acts as a source of learning for subsequent phases.
+
+1. Just-in-time adaptation:
+    * This phase of adaptation occurs as an application of the flexibility already built in within existing skills and knowledge.
+    * It may include the use of short-term working memory; in the sense that short-term working memory is used to govern sequences of actions and critical thinking. The memory of the event could be completely forgotten afterwards.
+    * This adaptation occurs during a single sequence of events, over very short timescales (a few minutes at most).
+    * No learning or longer term change in behaviour occurs during this phase.
+    * The level of complexity of adaption here does however depend heavily on the longer term adaptions from other phases.
+    * Example: attempting to write with a pen, discovering that the pen has run out, and getting another pen from the drawer.
+    
+2. Memorisation:
+    * This phase uses medium to long term memory of events to adapt to situations without technically learning anything.
+    * It also excludes changes to 'mental models' (the subject of the next phase).
+    * Like the just-in-time adaption phase, the level of complexity of adaption here depends on longer term adaptions.
+    * Example: see someone try a particular approach that works, and then try it yourself.
+    * Example: try different approach for a problem than previously tried, even with a period of days in between. 
+    * Example: when about to sit on a particular chair, remembering that the last time you sat on that chair you fell off -- without having updated any mental models about why certain kinds of chairs may be unstable.
+    
+3. Mental model updates:
+    * Within this phase, adaption is achieved through incorporation of new knowledge or experiences into the high-level representational models that we create in order to understand the world.
+    * This is more abstract than just memorising a particular event. In fact, the actual event(s) that triggered the mental map updates may be forgotten.
+    * The timescales over which this occurs can vary widely, from a few seconds to years.
+    * Mental models may be updated automatically as new facts are acquired, or may result from consciously working through a problem and reaching a conclusion.
+    * Example: realising for the first time that some chairs 'swivel', and that they're easier to topple over, and from then on recognising swivel chairs as being different to non-swivel chairs.
+    * Example: learning about the world through reading books.
+    
+4. Long-term skill potentiation:
+    * Here I use _skill_ in a very broad sense, referring to any physical or mental capability that can be done without conscious orchestration, and also including the capabilities of thought itself.
+    * Could be applied at any layer.
+    * Typically only occurs over medium to long timescales - hours to years.
+    * Examples: walking, talking, working with the hands, driving a car, learning to think, learning problem solving skills.
+
+I suspect that for the majority of new physical and mental skills, their development undergoes each phase in turn. In order to clarify this, I offer a learning example annotated with how I suspect it interacts with the phases:
+* A right-handed child is learning to write with a pen. They first pick up the pen with their left hand, and upon instruction swap the pen to their right hand. This is just-in-time adaptation.
+* The event also feeds into the memorisation phase: in the next class they will remember being told to use the right hand. They will need to carry that out consciously for a few times before a _habit_ (long term potentiation) sets in.
+* During practice they will be told many things about how letters are formed, about how they should look. All of those instructions (at least those not forgotten) will initially be adapted to through memorisation, but will also be used to build mental models about hand writing in general, and about the construction and appearance of individual letters. Following that, the teacher no longer needs to give feedback when the child's writing is messy - because they will judge that for themselves. Furthermore, the child will use the teacher's and their own feedback to develop mental models about how to drive their hands and fingers in order to produce the desired outcome.
+* Initially memorisation and mental models will continue to be used by the child to drive their actions and judge their own success. Through practice, and over time, the ability to control the pen develops, the quality of writing improves, and there will be less dependency on memories and mental models to govern action. Eventually they will cease to be used on a regular basis - once the skill has been achieved sufficiently that the child no longer consciously controls how to write. From then on, the mental models in particular may be occassionaly consulted when making a mistake or writing some less familiar.
+
+The above phases suggest certain machinery:
+1. Just-in-time adaptation depends on:
+    * Short-term working memory.
+    * External and self-produced feedback
+    * Existing capabilities acquired as a result of all other phases.
+2. Memorisation adaptation depends on:
+    * Medium and long term memory and recall of events.
+    * Executive and sub-executive control capabilities sufficient to be able to act on information from memories.
+3. Mental model-based adaptation depneds on:
+    * Mental modelling capability.
+    * External and internal experiences as source of input.
+4. Long-term skill potentiation depends on:
+    * Modality dependent trainable components
+    * Self-driven reward
+
+On a separate note, for many years nneuroscience and psychology have struggled to understand how humans can apparently learn so fast. I suspect the answer is the way that shorter term adaption phases can be used to bootstrap development in longer term phases.
+    
+(tbd: biological background discussing different potentiation levels with different durations)
+
+(tbd: probably need to add some extra phases to support different biological neural potentiation levels)
     
 
-# Overview
-
+# Architecture
 First, for a bit of fun, this is the complete architecture. In the sections that follow, this shall be broken down and the rationalisation explained in detail.
 
 ![Complete](files/An-agi-architecture-v1-complete.png)
