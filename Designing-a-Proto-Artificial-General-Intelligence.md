@@ -147,7 +147,8 @@ I suspect that for the majority of new physical and mental skills, their develop
 * A right-handed child is learning to write with a pen. They first pick up the pen with their left hand, and upon instruction swap the pen to their right hand. This is just-in-time adaptation.
 * The event also feeds into the memorisation phase: in the next class they will remember being told to use the right hand. They will need to carry that out consciously for a few times before a _habit_ (long term potentiation) sets in.
 * During practice they will be told many things about how letters are formed, about how they should look. All of those instructions (at least those not forgotten) will initially be adapted to through memorisation, but will also be used to build mental models about hand writing in general, and about the construction and appearance of individual letters. Following that, the teacher no longer needs to give feedback when the child's writing is messy - because they will judge that for themselves. Furthermore, the child will use the teacher's and their own feedback to develop mental models about how to drive their hands and fingers in order to produce the desired outcome.
-* Initially memorisation and mental models will continue to be used by the child to drive their actions and judge their own success. Through practice, and over time, the ability to control the pen develops, the quality of writing improves, and there will be less dependency on memories and mental models to govern action. Eventually they will cease to be used on a regular basis - once the skill has been achieved sufficiently that the child no longer consciously controls how to write. From then on, the mental models in particular may be occassionaly consulted when making a mistake or writing some less familiar.
+* Initially memorisation and mental models will continue to be used by the child to drive their actions and judge their own success. Through practice, and over time, the ability to control the pen develops, the quality of writing improves, and there will be less dependency on memories and mental models to govern action. Eventually they will cease to be used on a regular basis - once the skill has been achieved sufficiently that the child no longer consciously controls how to write. The mental models may be occassionaly consulted when making a mistake or writing some less familiar.
+* Later, when learning maths, the writing skill is depended on without conscious control, and it frees up the learning phases for the more complicated task at hand.
 
 The above phases suggest certain machinery:
 1. Just-in-time adaptation depends on:
@@ -165,7 +166,9 @@ The above phases suggest certain machinery:
         * This may not require any new components. Rather, perhaps it just means that each layer needs to be trainable.
     * Self-driven reward
 
-On a separate note, for many years nneuroscience and psychology have struggled to understand how humans can apparently learn so fast. I suspect the answer is the way that shorter term adaption phases can be used to bootstrap development in longer term phases.
+On a side note, for many years neuroscience and psychology have struggled to understand how humans can apparently learn so fast. I suspect the answer is the way that shorter term adaption phases can be used to bootstrap development in longer term phases.
+
+(tdd: tie into actual neuroscience/developmental psychology theories in this area, and on what the known brain regions and pathways are)
     
 (tbd: biological background discussing different potentiation levels with different durations)
 
