@@ -97,18 +97,6 @@ Some of those axis might be:
     * Ability to comprehend that it has voluntary control over itself.
     * Ability to set goals, with consideration to how those goals will affect itself.
 
-## Layers
-
-Analysis of brain layers:
-
-|Layer|Description|Re-interpretation|AI Architecture Layer|
-|---|---|---|---|
-|1. Spinal chord|Reflexes|Mechanical layer. eg: senses to stop motorn at end of motion.|Omitted|
-|2. Brain stem|(tbd)|(tbd)|(tbd)|
-|3. Primary sensorimotor cortex|(tbd)|(tbd)|(tbd)|
-|4. Non-primary sensorimotor cortex|(tbd)|(tbd)|(tbd)|
-|5. Association cortex|(tbd)|(tbd)|(tbd)|
-
 ## Phases of Adaptation
 
 Learning, and adaptation in general, can be broken down into a few phases. They vary by their timescales, and are differentiated by the underlying mechanisms necessary in order to produce the adaptation. Each phase, in order, acts as a source of learning for subsequent phases.
@@ -208,6 +196,27 @@ Anything that is common amongst the majority of humanity is too consistent to be
 Some aspects of human brain behaviour require the pre-wiring of feelings, urges, desires, distastes, etc.. In some cases these can be simple electrical signals that the brain can learn online to work with. In other cases, they must require pre-wiring of network structures -- ie: a whole NN "domain model" encoding. This is feasible from evolution - that some of the NN training is a result of evolution, which amounts to pre-training of the network weights (ie: not just the high level architecture).
 
 # Architecture
+## Biology to Machine Mapping
+Analysis of brain layers and how we'll emulate them in an AI:
+
+|Layer|Description|Re-interpretation|AI Architecture Layer|
+|---|---|---|---|
+|1. Spinal chord|Reflexes|Mechanical layer. eg: senses to stop motorn at end of motion.|Omitted|
+|2. Brain stem|(tbd)|(tbd)|(tbd)|
+|3. Primary sensorimotor cortex|(tbd)|(tbd)|(tbd)|
+|4. Non-primary sensorimotor cortex|(tbd)|(tbd)|(tbd)|
+|5. Association cortex|(tbd)|(tbd)|(tbd)|
+
+Analysis of brain memory types and how we'll emulate them in an AI:
+
+|Layer|Description|Re-interpretation|AI Architecture Layer|
+|---|---|---|---|
+|Working Memory|Short-term executive function memory|Current working state for executive control layer|RNN state within executive control policy network|
+|Episodic Memory|(tbd)|(tbd)|(tbd)|
+|Semantic Memory|(tbd)|(tbd)|Bayesian models|
+|Procedural Memory|(tbd)|(tbd)|Training pressure against layers|
+
+## Overview
 First, for a bit of fun, this is the complete architecture. In the sections that follow, this shall be broken down and the rationalisation explained in detail.
 
 ![Complete](files/An-agi-architecture-v1-complete.png)
