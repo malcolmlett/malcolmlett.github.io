@@ -15,12 +15,8 @@ Brain size increases from birth, reaching full size at about 7 years. The number
 
 ## Sensorimotor System
 
-
 ## Senses
 (tbd)
-
-* https://en.wikipedia.org/wiki/Body_schema
-* https://en.wikipedia.org/wiki/Proprioception
 
 ## Motor Control
 Motor control is governed by a number of layers, with increasing levels of abstraction (Neuroscience Online, s3):
@@ -41,7 +37,25 @@ The motor cortex is further subdivided into a number of regions:
 
 ![simple sensorimotor pathways](files/sensorimotor-pathways-simple.png)
 
+## Proprioception
+* https://en.wikipedia.org/wiki/Body_schema
+* https://en.wikipedia.org/wiki/Proprioception
 
+Accuracy of motor control is coordinated through _proprioception_, which includes the senses of position and movement of limbs and trunk, the senses of effort, force, and heaviness, and the sense of balance. Alternatively, the term _kinesthesia_ is sometimes used when referring to just the sense of limb position and movement.
+
+Proprioception is achieved through aggregation of direct senses and through mental tracking of limb position. It  depends on three distinct sources of feedback listed here highest priority first (Proske & Gandevia, 2012):
+1. Muscle spindle fibres, tendon organs, and joints -- explicit proprioceptive senses
+2. Skin
+3. Vision
+
+To summarise:
+* "Proprioceptive sensations are mysterious because we are largely unaware of them. They are distinguishable from exteroceptors such as the eye and the ear in that they are not associated with specific, recognizable sensations. Yet, when we are not actually looking at our limbs, we are able to indicate with reasonable accuracy their positions and whether they are moving. Part of the explanation for this lack of identifiable sensations relates to the predictability of proprioceptive signals. We are aware that we are making a willed movement and so anticipate the sensory input that it generates. A general concept in sensory physiology is that what we feel commonly represents the difference between what is expected and what has actually occurred (e.g., Refs. 19, 86, 423). On that basis, if a movement goes to plan and there is no mismatch between the expected signals and those actually generated, no definable sensation is produced, yet the subject knows precisely the location of their limb. It is possible to generate an artificial proprioceptive signal using muscle vibration (159). Vibration produces sensations of limb displacement and movement, leading the subject to express astonishment at the unwilled nature of the sensations. This suggests that the will to move and the subsequent proprioceptive sensations are intimately linked." (quoted from Proske & Gandevia, 2012. section 1a).
+
+In neurotypical individuals, vision feedback is only used for certain specific tasks requiring high accuracy. In deafferented individuals, where the sense from muscle spindle fibres is lost, vision can be used to replace the lost sense. However, this requires conscious control of movements, the movements are slower than normal, and are relatively short and simple due to the mental effort involved (Proske & Gandevia, 2012. section 4a).
+
+The muscle spindle fibres etc. provide direct feedback on relative limb angles and movement, but not limb length or absolute position. The brain maintains a _body schema_ that aggregates all that information together along with learned parameters of the body shape and size, in order to track absolute limb position (Proske & Gandevia, 2012. section 4a). Studies have shown the this tracking is maintained even in the absense of visual feedback, and that predictive errors as much as 20 degrees can be induced in individuals through manipulation of muscle resting state (Proske & Gandevia, 2012. section 3).
+
+Some theories suggest the existence of a separate _body image_, which holds more static information such as general capabilities, tracking of capability changes due to injury or amputation, and is implicated in body dismorphic syndromes. It is suggested that the body image is the cause of phantom limbs and anosognosia (Proske & Gandevia, 2012. section 4a).
 
 ## Sensorimotor Development
 * https://en.wikipedia.org/wiki/Developmental_psychology
@@ -114,7 +128,8 @@ To some extent though, you can learn to do that on auto-pilot. The simple act of
 # References
 Developmental Psychology, ch 4. Lumen Learning. https://courses.lumenlearning.com/suny-hccc-ss-152-1/chapter/physical-development/
 
-McLeod, S. A. (2019, April 09). Sensorimotor stage. Simply Psychology. https://www.simplypsychology.org/sensorimotor.html
+McLeod, S. A. 2019, April 09. Sensorimotor stage. Simply Psychology. https://www.simplypsychology.org/sensorimotor.html
 
 Neuroscience Online. Neurobiology & Anatomy, McGovern Medical School, University of Texas. https://nba.uth.tmc.edu/neuroscience/
 
+Proske, Uwe; and Gandevia, Simon C. 2012, Oct. "The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force". Physiological review. https://doi.org/10.1152/physrev.00048.2011 ([full text](https://journals.physiology.org/doi/full/10.1152/physrev.00048.2011)).

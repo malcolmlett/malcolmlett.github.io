@@ -304,6 +304,21 @@ Some experimentation will be required here. For now, we'll work on the assumptio
 
 ![Low Level state saliency](files/An-agi-architecture-v1-low-level-state-saliency.png)
 
+## Proprioception
+
+If mirroring humans, proprioception has a number of ways in which it connects into the system:
+* Lowest level sensorimotor system trained via raw motor outputs and raw proprioceptive senses, probably with no input from even skin touch sense, and definitely none from vision.
+* Touch sense feeds into sensorimotor system, but not sure exactly where.
+* Intermediate layer uses high-level proprioception output to help plan movement
+* Intermediate senses feed into proprioception system in order to train proprioceptive model and update proprioceptive state (eg: apply error correction)
+* High level proprioceptive state fed in a first-class sense to executive control layer.
+    * Note: in contrast to other senses, there is no raw proprioceptive sense data fed into executive control.
+    * eg: you can lie still, close your eyes, and know where every part of your body is - but it's believed that you don't experience any direct awareness of the muscle spindle fibre senses. Furthermore, while you may not be consciously attentive to the proprioceptive sense at all times, that information is always available. This is in the same way that the touch sense of your clothes on your skin is available available, but you are only attentive to it occassionally.
+
+![proprioception](files/An-agi-architecture-v1-proprioception.png)
+
+
+
 # Next Ideas
 
 ![next ideas](files/An-agi-architecture-v1-other-ideas.png)
@@ -351,8 +366,6 @@ The current design of the low-level motor-control/sense component will tend to u
 Thus, the low-level will not learn medium level representations like "move arm towards mouth in eating position". This fits well with observations from brain stimulation in monkeys.
 
 To build up a higher level system, we need to enforce a higher level of representation. One component of that likely comes via the body map of _proprioception_. Inherently it must have some characteristics that force an optimum representational level, and that must apply a pressure to the level that it actually learns and outputs.
-
-![proprioception](files/An-agi-architecture-v1-proprioception.png)
 
 Another aspect of the system is that it is made up of many many neural net layers stacked on top of each other. From raw sense input up to executive control, each layer _integrates_ the data from below into a slightly higher representation. From executive control down to raw motor control, each layer _differentiates_ the data from above into a slightly lower representation. Across the system, this applies a pressure that is distributed between top and bottom, creating a _representational gradient_.
 
