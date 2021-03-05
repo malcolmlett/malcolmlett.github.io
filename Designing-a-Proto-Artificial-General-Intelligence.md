@@ -196,7 +196,7 @@ Anything that is common amongst the majority of humanity is too consistent to be
 Some aspects of human brain behaviour require the pre-wiring of feelings, urges, desires, distastes, etc.. In some cases these can be simple electrical signals that the brain can learn online to work with. In other cases, they must require pre-wiring of network structures -- ie: a whole NN "domain model" encoding. This is feasible from evolution - that some of the NN training is a result of evolution, which amounts to pre-training of the network weights (ie: not just the high level architecture).
 
 # Architecture
-## Biology to Machine Mapping
+## Artificial equivalents of Biological systems
 Analysis of brain layers and how we'll emulate them in an AI:
 
 |Layer|Description|Re-interpretation|AI Architecture Layer|
@@ -217,12 +217,14 @@ Analysis of brain memory types and how we'll emulate them in an AI:
 |Procedural Memory|(tbd)|(tbd)|Training pressure against layers|
 
 ## Overview
-First, for a bit of fun, this is the complete architecture. In the sections that follow, this shall be broken down and the rationalisation explained in detail.
+The following systemds are involved:
+![overview of systems](files/An-agi-architecture-v1-overview-of-systems.png)
 
+## Full architecture
+For a bit of fun, this is the complete architecture. This shall be broken down and the rationalisation explained in detail within the sections that follow.
 ![Complete](files/An-agi-architecture-v1-complete.png)
 
 ## Training
-
 Repeated cycles of the following sequence of training:
 * RL of Level 1 with jitter as input
 * Supervised Learning (SL) of Levels 1 + 1b with generated sense inputs
@@ -317,12 +319,6 @@ If mirroring humans, proprioception has a number of ways in which it connects in
 
 ![proprioception](files/An-agi-architecture-v1-proprioception.png)
 
-
-
-# Next Ideas
-
-![next ideas](files/An-agi-architecture-v1-other-ideas.png)
-
 ## Mental Models
 
 ### Background discussion on kinds of model
@@ -374,6 +370,7 @@ Like proprioception, other support components within the system must have inhere
 Lastly, evolution will have tuned all those inherent component characteristics so that the system as a whole produces "fit" results.
 
 ![motor control layers](files/An-agi-architecture-v1-motor-control-layers.png)
+
 
 ## Training
 So, how to actually train the intermediate-level?
