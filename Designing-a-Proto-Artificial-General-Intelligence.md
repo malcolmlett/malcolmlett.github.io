@@ -455,7 +455,7 @@ Rcurrent neural networks (RNNs) were designed to apply against sequences on the 
 
 How to measure utility of an explicit conscious feedback loop, vs just depending on internal state within a stateful policy (ie: RNN)? Use each of these configurations, and train on something simple but that requires processing loops in order to succeed.
 
-![measuring cf](files/An-agi-architecture-v1-measuring-cf.png)
+![measuring cf](files/An-agi-architecture-v1-measuring-cf-success.png)
 
 (Added 2021-02-03. Labels: work-in-progress)
 
