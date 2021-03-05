@@ -1,6 +1,8 @@
 Can we use our best current understanding of neuroscience to inspire AI architectures that could form an artificial general intelligence (AGI)? This page attempts to do that. It uses the results of [[A Theory of Consciousness]] as the overarching guide, along with additional biological influences. Also see [[Biological basis for proto AGI]] for some further background to the design here.
 
+
 # Background
+
 What is general intelligence? There is no agreement on a single definiton for that, nor do we have a clear idea what characteristics should definitely be included vs excluded. In many cases the discussion is muddied by disagreement on whether to focus on _human-like_ intelligence or a more species-agnostic view of general intelligence. 
 
 According to Wikipedia's article on [artificial general intelligence](https://en.m.wikipedia.org/wiki/Artificial_general_intelligence), "there is wide agreement among artificial intelligence researchers that intelligence is required to do the following:
@@ -43,6 +45,7 @@ In any case, my current view takes a slightly different approach that initially 
 6. It needs to be capable of modelling the difference between itself and the outside environment.
 
 ## Biological Constraints
+
 All biological life forms evolve in the context of constraints that impact their ability to maintain life and to succeed in procreating. While these constraints may not be directly necessary for general intelligence _per se_, they are important context for how general intelligence has evolved in humans. Some such constraints act on the individual during their lifetime, acting as motivation drivers, affecting their exposure to different experiences, and thus affecting what they learn. Other constraints act only at evolutionary scales. I shall attempt to identify the constraints that had the most impact on the evolution of human intelligence, and to classify them as "learning" or "evolutionary" constraints.
 
 Evolutionary constraints:
@@ -59,6 +62,7 @@ Individual learning constraints:
 * Brain capacity grows as the individual matures
 
 ## Axis of Comprehension
+
 From one of the notes above, it occurs to me that there are multiple axis across which an agent might be capable of comprehending and rationalising. The distinction between the different axis fundamentally comes down to the mechanics of how that comprehension can be achieved. For example, memory is necessary in order to comprehend the effects of time. In contrast, memory is not required in order to comprehend physical space without the impacts of time: an agent can see in an instant that one object is above the other, without needing to remember anything.
 
 Some of those axis might be:
@@ -161,14 +165,18 @@ On a side note, for many years neuroscience and psychology have struggled to und
 (tbd: biological background discussing different potentiation levels with different durations)
 
 (tbd: probably need to add some extra phases to support different biological neural potentiation levels)
-    
+
+
 # Principles
+
 ## Convergence
+
 A multi-layered system like this will be inherently chaotc. So without explicit consideration it's chances of converging towards a stable and useful outcome are minimal.
 
 To counteract that the architecture must build in convergent forces that apply at multiple points. These will be applied across all layers, and across multiple time scales.
 
 ## Brain growth
+
 The human baby brain starts small, with many capabilities not fully formed. Those capabilities "come online" over time as the child grows. I believe this had two benefits:
 * It helps to reduce the search space for optimal network training. Effectively it trains against a simpler problem to start with, then slowly increases the brain capacity and retrains on more complex problems. 
 *  It helps to ensure convergence in an otherwise unstable system. With full executive control, we've got too much control over the reinforcement learning algorithm, but when in a fresh state, the executive control will be too unstable. So better to train level 1 systems first, holding executive control in a mostly disabled state. 
@@ -176,11 +184,13 @@ The human baby brain starts small, with many capabilities not fully formed. Thos
 In contrast, a modern neural network is static in size, thus we will not be able to replicate the same efficiency of learning. However, there may be other opportunities for improving our architecture or approach. For example, we may initially attenuate-to-zero the output of particular components, and slowly ramp up their output signal strength and their accuracy improves.
 
 ## Avoiding catastrophic forgetting
+
 Modern neural networks suffer from "catastrophic forgetting", where training on one skill causes loss of a prior learned skill. Humans don't suffer from this problem, as the brain seems to be able to slot different skills into slightly different regions. There is work on achieving that with AI. One promising angle is Stephen Grossberg's Adaptive Resonance Theory (ART).
 
 To keep things simple, for now we will ignore the issue of catastrophic forgetting, and will setup a training environment where all required skills are repeatedly re-practiced.
 
 ## Executive Contral and Decomposed Sandwich form of Reinforcement Learning
+
 I think executive control incorporates a "decomposed sandwich" form of reinforcement learning - where many aspects of the algorithm are under direct control. This includes:
 * Internalisation of reward function. 
 * Exploration vs exploitation ratio
@@ -191,12 +201,16 @@ Executive control also learns to "drive" the unseen aspects of reinforcement lea
 * Eg: we actively choose to learn a new skill. 
 
 ## Evolution as Learning Mechanism
+
 Anything that is common amongst the majority of humanity is too consistent to be left to dumb luck; it has to be a result of evolution, and thus enforced (or at least predisposed) due to the architecture. At the very least, it must additionally depend on guaranteed aspects of the environment (eg: gravity, air, sunlight vs nighttime cycle).
  
 Some aspects of human brain behaviour require the pre-wiring of feelings, urges, desires, distastes, etc.. In some cases these can be simple electrical signals that the brain can learn online to work with. In other cases, they must require pre-wiring of network structures -- ie: a whole NN "domain model" encoding. This is feasible from evolution - that some of the NN training is a result of evolution, which amounts to pre-training of the network weights (ie: not just the high level architecture).
 
+
 # Architecture
+
 ## Artificial equivalents of Biological systems
+
 Analysis of brain layers and how we'll emulate them in an AI:
 
 |Layer|Description|Re-interpretation|AI Architecture Layer|
@@ -217,22 +231,28 @@ Analysis of brain memory types and how we'll emulate them in an AI:
 |Procedural Memory|(tbd)|(tbd)|Training pressure against layers|
 
 ## Overview
+
 The following systemds are involved:
 ![overview of systems](files/An-agi-architecture-v1-overview-of-systems.png)
 
 ## Full architecture
+
 For a bit of fun, this is the complete architecture. This shall be broken down and the rationalisation explained in detail within the sections that follow.
 ![Complete](files/An-agi-architecture-v1-complete.png)
 
 ## Training
+
 Repeated cycles of the following sequence of training:
 * RL of Level 1 with jitter as input
 * Supervised Learning (SL) of Levels 1 + 1b with generated sense inputs
 * RL of whole network with jitter against executive control output (?)
 * RL of whole network with full policy execution
 
+
 # Building up Architecture
+
 ## Low level motor control
+
 Mammals don't learn motor control through external rewards; they learn it through watching and observing. And through _jitter_ - in the early stages of development randomly fired muscle signals cause the ligaments to move (citation needed), and the senses are used to pick up the result (particularly touch + vision). This is likely fundamental in bootstrapping a number of brain circuits. For our solution, this will be used to bootstrap the learning of two networks:
 * motor control
 * sense interpretation
@@ -262,6 +282,7 @@ Now, there are a few gotchas here.
 5. In mammals, the lowest level feedback-based sensorimotor development is probably further segregated into its independent modalities: muscle control and muscle senses learned against each other independent of other senses. The vision sense can only be incorporated into that circuit at a much higher level, where it can make sense of the differences when looking at the arm vs looking elsewhere.
 
 ## Reinforcement learning for low level motor control
+
 Now we use RL to train the motor control policy (MC policy) for trajectories that best lead towards goal states. We'll use the current agent's state representation for the goals, so we do not _a priori_ know the parameters of the reward function. We must use data collected from the current policy, or at least near to it. During the training runs in the prior section, we'll collect the full unbroken trajectory within a sequential data buffer `D = (d1, d2, d3, ....dN)`, where `di` is the tuple of data taken at time `t`:
 
     (e,s,a,e',s')
@@ -286,6 +307,7 @@ As our policy network produces deterministic continuous actions, we'll use the [
 The RL learning discussed here will be alternated with the jitter and supervised learning discussed above. Thus, the low-level MC policy will accurately learn `p(a|s(t),s(t+i)` for all of `1 <= i <= n`.
 
 ## Low level state representation
+
 How do we train the state representation?
 
 In the complete architecture, the state representation will be used as input to highel level executive control networks. It represents abstract features that the higher level network will decide how to use. Thus we don't expect it to have any direct relationship to the external environment and cannot train the sense interpetation network directly. In practice, provided it is initialised with random weights, its initial configuration will provide a meaningful usefulness of representation even without training. This is known as _reservior computing_, and its usefulness is proven and leveraged further in the theory of [Extreme Learning Machines](https://en.wikipedia.org/wiki/Extreme_learning_machine).
@@ -318,6 +340,20 @@ If mirroring humans, proprioception has a number of ways in which it connects in
     * eg: you can lie still, close your eyes, and know where every part of your body is - but it's believed that you don't experience any direct awareness of the muscle spindle fibre senses. Furthermore, while you may not be consciously attentive to the proprioceptive sense at all times, that information is always available. This is in the same way that the touch sense of your clothes on your skin is available available, but you are only attentive to it occassionally.
 
 ![proprioception](files/An-agi-architecture-v1-proprioception.png)
+
+### Proprioception Training
+In order to train the proprioceptive system, need to tee off the following against each other:
+* proprioceptive prediction of location of limbs
+* visual interpretation of location of limbs
+* ability to use that to predict accurate movements
+    * eg: use error in final state when attempting to grasp something.
+
+Also:
+* Train to predict next state given current action
+    * Corollary: predicts current state given no planned action.
+    
+tbd:    
+* Which level of state representation to use for training?
 
 ## Mental Models
 
@@ -369,10 +405,10 @@ Like proprioception, other support components within the system must have inhere
 
 Lastly, evolution will have tuned all those inherent component characteristics so that the system as a whole produces "fit" results.
 
-![motor control layers](files/An-agi-architecture-v1-motor-control-layers.png)
+![representational gradient](files/An-agi-architecture-v1-representational-gradient.png)
 
+## Training Strategy for Intermediate Level
 
-## Training
 So, how to actually train the intermediate-level?
 
 Based on the above notes, the training of the intermediate-level will be a combination of:
@@ -384,6 +420,42 @@ Lastly, the following narrative provides some observation:
 * My goal is a high-level concept of "food in mouth".
 * I'll actively monitor the arm and provide internal reward to myself if I achieve my high-level goal.
 * And it would appear that the level of that high-level goal is a result of the representational gradient and other pressures as described above.
+
+
+# Overall Training Approach
+
+## Phases
+
+Just like humans learn in phases, with particular focuses, we can apply the same here. In particular, it may prove useful to disable high-order systems initially.
+
+|#|Focus|Description|Dependencies|
+|---|---|---|---|
+|1|Somatosensory + sensorimotor|.|.|
+|.|...|.|.|
+|.|visual proprioception|.|modelling engine|
+|.|...|.|.|
+|.|conscious control|.|.|
+
+## Measuring success
+
+How will we tell if all this effort is worth it?
+
+Let's compare against the results of using standard reinforcement learning, then slowly build up the layers, using a standard RL policy on the top, until we have a full system.
+
+We'll need to decide on a sensible goal, or set of goals, to experiment with. Then compare those by looking at:
+* success rate at achieving goal
+* learning time
+* "smoothness" of actions
+* "efficiency of actions"
+
+![measuring success](files/An-agi-architecture-v1-measuring-success.png)
+
+### Use of conscious feedback
+Rcurrent neural networks (RNNs) were designed to apply against sequences on the inputs. They were not intended for maintaining long term state -- such as required in order to sustain internal thought. So do we need an explicit concsious feedback loop that feeds last cycles' output as input to the next cycle? Let's test that.
+
+How to measure utility of an explicit conscious feedback loop, vs just depending on internal state within a stateful policy (ie: RNN)? Use each of these configurations, and train on something simple but that requires processing loops in order to succeed.
+
+![measuring cf](files/An-agi-architecture-v1-measuring-cf.png)
 
 (Added 2021-02-03. Labels: work-in-progress)
 
