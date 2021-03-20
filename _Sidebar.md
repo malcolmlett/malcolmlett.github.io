@@ -20,6 +20,7 @@
 * [[Architecture Overview]]
 * [[Conscious Calculator v2]]
 * [[Designing a Proto Artificial General Intelligence]]
+* [[Executive Control]]
 
 ### Work in Progress
 * [[Work in Progress]]
