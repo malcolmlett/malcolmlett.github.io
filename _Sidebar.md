@@ -20,7 +20,7 @@
 * [[Architecture Overview]]
 * [[Conscious Calculator v2]]
 * [[Designing a Proto Artificial General Intelligence]]
-* [[Executive Control]]
+* [[Executive Control in a proto AGI]]
 
 ### Work in Progress
 * [[Work in Progress]]
