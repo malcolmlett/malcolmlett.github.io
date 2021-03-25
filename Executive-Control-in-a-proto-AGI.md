@@ -11,6 +11,45 @@ I now suspect that the following features are key to general intelligence:
 
 tbd: diagram
 
+# Rewards
+
+## Learning from Rewards
+Deep Q Networks (DQN) are the simplest to write in equation form, and while far more advanced techniques are now used, for the purposes of what we need to examine here, the difference is not too important.
+
+The following is a very brief summary of the DQN functions (source: https://www.tensorflow.org/tutorials/reinforcement_learning/actor_critic):
+
+Reward:
+```
+r(t) = actual reward at time t
+```
+
+Expected returns, at time `t`:
+```
+G(t) = sum(t'=t..T: gamma^(t'-t) * r(t'))
+```
+
+Networks:
+```
+policy(a(t) | s(t)) = policy network, parameterized by theta (network weights)
+```
+
+```
+V(s(t)) = value network, parameterised by the same theta
+```
+
+Actor loss:
+```
+actor-loss = - sum(t=1..T: log(policy(a(t)|s(t))) * [G(s(t), a(t)) - V(s(t))])
+```
+
+Critic loss:
+```
+critic-loss = huber-loss(G, V)
+```
+
+Learning is usually accomplished by recording events into a replay buffer (as tuples of state, action, reward), then running supervised learning against batches retrieves from the replay buffer.
+
+
 # Importance of Conscious Feedback
 
 In prior work I've hypothesised that conscious feedback (CF) is important because it acts as a feedback mechanism that the higher-order brain uses against itself to maintain stability. But how exactly does that work?
