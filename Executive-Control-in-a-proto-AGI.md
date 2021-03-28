@@ -18,13 +18,15 @@ Deep Q Networks (DQN) are the simplest to write in equation form, and while far 
 
 The following is a very brief summary of the DQN functions (source: https://www.tensorflow.org/tutorials/reinforcement_learning/actor_critic):
 
-Reward at time `t`:
-
-![r_t](http://www.sciweavers.org/tex2img.php?eq=r_t%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev)
+Reward:
+```
+r(t) = actual reward at time t
+```
 
 Expected returns, at time `t`:
-
-![equation](http://www.sciweavers.org/tex2img.php?eq=G_%7Bt%7D%20%3D%20%5Csum_%7Bt%27%3Dt%7D%5ET%20%5Cgamma%5E%7Bt%27-t%7D%20r_%7Bt%27%7D%0A%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+```
+G(t) = sum(t'=t..T: gamma^(t'-t) * r(t'))
+```
 
 Networks:
 ```
