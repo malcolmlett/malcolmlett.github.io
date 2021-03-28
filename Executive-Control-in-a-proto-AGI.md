@@ -13,7 +13,7 @@ tbd: diagram
 
 # Rewards
 
-## Learning from Rewards
+## Deep Reinforcement Learning Background
 One way of slicing the range of RL algorithms available at the moment is to classify them as using one of two approaches:
 * Value function estimation
 * Policy representation and the policy gradient method.
