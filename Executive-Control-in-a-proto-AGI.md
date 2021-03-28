@@ -14,7 +14,13 @@ tbd: diagram
 # Rewards
 
 ## Learning from Rewards
-Deep Q Networks (DQN) are the simplest to write in equation form, and while far more advanced techniques are now used, for the purposes of what we need to examine here, the difference is not too important.
+One way of slicing the range of RL algorithms available at the moment is to classify them as using one of two approaches:
+* Value function estimation
+* Policy representation and the policy gradient method.
+
+In value function estimation, the agent attempts to learn a function `V(a(t) | s(t))` that predicts the value (expected sum of rewards) of the path beginning with action `a` at time `t`, given the current state `s(t)` and in implicit fixed goal. The expected value of each action depends on the likely subsequent actions, which are again decided based on the same value function, thus the value of action `a` at time `t`, depends on the expected subsequent actions. Algorithms based on this include the Q-learning algorithm originally proposed by Watkins and Dayan in 1992 [3] and the Sarsa algorithm proposed by Rummery and Niranjan in 1994 [4]. The advantage of this type of algorithm is that the process is simple and easily implementable; however, it does not solve the problem of continuous action space well. The REINFORCE algorithm proposed by Sutton et al. [5] and the actor-critic algorithm proposed by Konda and Tsitsiklis [6] are typical algorithms based on policy gradient method. The main idea of these algorithms is to link the parameterization policy with the cumulative reward and continuously optimize the policy to obtain the optimal policy. This type of method can solve the problem of continuous action space, but can easily converge to the local optimal solution [7].
+
+Deep Q Networks (DQN) is one of the simplest algorithms to write in equation form, and while far more advanced techniques are now used, for the purposes of what we need to examine here, the difference is not too important. In particular, currently another popular algorithm Proximal Policy Optimization (PPO) essentially looks the same, but with some extra refinements.
 
 The following is a very brief summary of the DQN functions (source: https://www.tensorflow.org/tutorials/reinforcement_learning/actor_critic):
 
@@ -91,3 +97,9 @@ Learning to balance when walking (intermediate layer reward)
 * But reward shoudln't kick in when lying down, so need a simple automatic mechanism to switch that reward on/off.
 * Possible mechanism:
     * Switch on/off based on pressure on soles the feet.
+
+# References
+
+Rummery, G., and Niranjan, M. (1994). On-line Q learning using connectionist systems. Cambridge University Engineering Department, Cambridge, UK. Technical Report CUDE/F-INFENG/TR 166. [Google Scholar link](https://scholar.google.com/scholar_lookup?title=On-line%20Q%20learning%20using%20connectionist%20systems&author=G.%20Rummery%20&author=M.%20Niranjan&publication_year=1994)
+
+Watkins, C., and Dayan, P (1991). Q-learning. Machine Learning, vol. 8, no. 3-4, pp. 279–292. https://doi.org/10.1007/bf00992698
