@@ -76,9 +76,13 @@ In value function estimation, the agent attempts to learn a function `V(a(t) | s
 
 Typical algorithms based on the policy gradient method include the REINFORCE algorithm proposed by Sutton et al. (2000) and the actor-critic algorithm proposed by Konda and Tsitsiklis (2000) are typical algorithms based on policy gradient method. The main idea of these algorithms is to link the parameterization policy with the cumulative reward and continuously optimize the policy to obtain the optimal policy. This type of method can solve the problem of continuous action space, but can easily converge to the local optimal solution (Zhao, Liu, Zhao, and Tang, 2018).
 
-Deep Q Networks (DQN) is one of the simplest algorithms to write in equation form, and while far more advanced techniques are now used, for the purposes of what we need to examine here, the difference is not too important. In particular, currently another popular algorithm Proximal Policy Optimization (PPO) essentially looks the same, but with some extra refinements. Both of these follow the policy gradient method, with an actor-critic used to calculate "advantage" for a given action - which has been found to reduce variance and improve convergence.
+### Deep Q Networks
+Deep Q Networks (DQN) is one of the simplest algorithms to write in equation form, 
 
-The following is a very brief summary of the DQN functions (source: https://www.tensorflow.org/tutorials/reinforcement_learning/actor_critic):
+### Policy Gradient Methods
+A simple actor-critic algorithm is relatively easy to write in equatio form, and while far more advanced techniques are now used, for the purposes of what we need to examine here, the difference is not too important. In particular, currently another popular algorithm Proximal Policy Optimization (PPO) essentially looks the same, but with some extra refinements. Both of these follow the policy gradient method, with an actor-critic used to calculate "advantage" for a given action - which has been found to reduce variance and improve convergence.
+
+The following is a very brief summary of the simple actor-critic policy gradient functions (source: https://www.tensorflow.org/tutorials/reinforcement_learning/actor_critic):
 
 Reward:
 ```
@@ -111,6 +115,18 @@ critic-loss = huber-loss(G, V)
 
 Learning is usually accomplished by recording events into a replay buffer (as tuples of state, action, reward), then running supervised learning against batches retrieves from the replay buffer.
 
+### Convergence Improvement Techniques
+There are several methods that have been shown to improve convergence efficiency and/or accurancy. Two relatively simple methods that are frequently included are:
+
+1. Using a target Q-Network that is updated separately from the online  Q-Network. The target network weights are updated periodically to match the online network, which is updated at every step. This maintains a longer period with the same action-values, in contrast to weight updates, which occur at every step.
+
+2. The use of an Experience Replay (ER) buffer, enabling mini-batch training, rather than single sample training.
+
+### Hierarchical Reinforcement Learning
+
+
+### Intrinsic Motivation
+Diversity Is All You Need (DIAYN) (Eysenbach, Gupta, _et al_, 2018) provides an mechanism for pre-training a network via a form of intrinsic motivation based on the idea of discovering a collection of distinguishable "skills". The approach aligns well with our general approach for AGI, as the "skills" that they refer to are encoded as an extra input parameter to the policy network. In our design, that is called a "goal".
 
 # Importance of Conscious Feedback
 
@@ -156,6 +172,8 @@ Learning to balance when walking (intermediate layer reward)
 
 # References
 
+Eysenbach, B., Gupta, A., Ibarz, J., and Levine, S. (2018). Diversity is All You Need: Learning Skills without a Reward Function. ArXiv. https://arxiv.org/abs/1802.06070
+
 Konda, V. R., and Tsitsiklis, J. N. (2000). Actor-critic algorithms. Advances in Neural Information Processing Systems, pp. 1008–1014, MIT Press, Cambridge, MA, USA. [Google Scholar link](https://scholar.google.com/scholar_lookup?title=Actor-critic%20algorithms&author=V.%20R.%20Konda%20&author=J.%20N.%20Tsitsiklis&publication_year=2000)
 
 Rummery, G., and Niranjan, M. (1994). On-line Q learning using connectionist systems. Cambridge University Engineering Department, Cambridge, UK. Technical Report CUDE/F-INFENG/TR 166. [Google Scholar link](https://scholar.google.com/scholar_lookup?title=On-line%20Q%20learning%20using%20connectionist%20systems&author=G.%20Rummery%20&author=M.%20Niranjan&publication_year=1994)
@@ -165,3 +183,4 @@ Sutton, R. S., McAllester, D. A., Singh, S. P., et al. (2000). Policy gradient m
 Watkins, C., and Dayan, P (1991). Q-learning. Machine Learning, vol. 8, no. 3-4, pp. 279–292. https://doi.org/10.1007/bf00992698
 
 Zhao, Y.-N., Liu, P., Zhao, W., and Tang, X.-L. (2018). Twice sampling method in deep Q-network. Acta Automatica Sinica, vol. 45, no. 10, pp. 1870–1882. https://doi.org/10.16383/j.aas.2018.c170635
+
