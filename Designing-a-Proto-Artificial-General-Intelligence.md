@@ -424,6 +424,12 @@ Lastly, the following narrative provides some observation:
 
 # Overall Training Approach
 
+## Capabilities Development
+
+Our training approach needs to consider that some capabilities cannot be efficiently developed without first developing lower-level capabilities. This creates a dependency graph, which can be represented as follows:
+
+![dependency graph](files/An-agi-architecture-v1-dependency-graph.png)
+
 ## Phases
 
 Just like humans learn in phases, with particular focuses, we can apply the same here. In particular, it may prove useful to disable high-order systems initially.
