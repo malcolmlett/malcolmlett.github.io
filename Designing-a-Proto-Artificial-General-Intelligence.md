@@ -1,5 +1,7 @@
 Can we use our best current understanding of neuroscience to inspire AI architectures that could form an artificial general intelligence (AGI)? This page attempts to do that. It uses the results of [[A Theory of Consciousness]] as the overarching guide, along with additional biological influences. Also see [[Biological basis for proto AGI]] for some further background to the design here.
 
+This page presents CIPAGIO: Consciousness Inspired Proto Artificial General Intelligence Operative.
+
 
 # Background
 
@@ -328,6 +330,18 @@ Some experimentation will be required here. For now, we'll work on the assumptio
 
 ![Low Level state saliency](files/An-agi-architecture-v1-low-level-state-saliency.png)
 
+### Variational Autoencoders
+Another approach that might prove very helpful in this context is to take advantage of some of the work that led to [Variational Autoencoders](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73) (VAE). 
+
+VAEs pair up an encoder and decoder network in a setup that is similar to an adversarial pairing, they can be trained so that the decoder can reproduce something as close as possible to the original before it was encoded. And the resultant encoded representation has a significantly reduced dimensionality from the original source. Additionally, variational encoders include a regularization technique to ensure that the encoded representation as a 'regular' pattern so that similar sources have similar encoded representations.
+
+This happens to fit quite well with an attempt to recreate what biology does: pairing forward and backward prediction. In fact, it offers a potentially more constructive approach than a mere computational reserviour.
+
+### Raw State Representation is a Bad Goal Representation
+Tbd: flesh this out further...
+
+As discussed in Section 4 of https://papers.nips.cc/paper/2018/file/7ec69dd44416c46745f6edd947b470cd-Paper.pdf, while it is possible to use the state representation as a goal representation, the solution does not scale well. The authors of that paper propose an alternative: .....tbd.... 
+
 ## Proprioception
 
 If mirroring humans, proprioception has a number of ways in which it connects into the system:
@@ -429,6 +443,36 @@ Lastly, the following narrative provides some observation:
 Our training approach needs to consider that some capabilities cannot be efficiently developed without first developing lower-level capabilities. This creates a dependency graph, which can be represented as follows:
 
 ![dependency graph](files/An-agi-architecture-v1-dependency-graph.png)
+
+wip....
+
+From point of view of observable outcomes:
+1. Learn utility free "skills" from mutual information metrics via DIAYN. 
+	* Outcome: discovers bunch of disjointed utility free actions. Primarily low level, but may include some intermediate "skills" too. 
+	* Outcome: some vision feature detections will be in place, but unrefined. Hopefully some prediction linking motion to sense changes. Limited to no meaning interpretation. And given that accurate sense prediction, with attention, requires higher level control, this will be quite inaccurate. 
+	* However, eg: without any driver to learn to walk, it won't necessarily do so. 
+2. Learn intermediate skills from primitive drivers
+	* Needs a driver. But I don't want to use the kind of hidden-sourced sparse rewards that traditional RL uses. 
+	* Babies use intermediate-level primitive instincts. Eg: smell food and move to it. 
+	* Subsequently: can observe own actions and cause /effect to build mental model about hunger and food. 
+3. Learn intermediate skills from external rewards 
+	* Reward with food, pleasure, pain. 
+	* Outcomes: improves mental models.
+    
+The abilities of the executive control layer will need to be bootstrapped via naive RL, and for this to slowly feed into mental models that later enable the production of goals. This looks something like:
+1. Primitive RL without any self control
+	* To a self-aware agent feels like across successive experiences its instinctive actions change over time to a different outcome. 
+	* No experience of the error or reward signals or the learning. 
+2. Model free Prediction 
+	* Starts to predict that a particular sense observation is typically followed by an instinctual action and an outcome. 
+	* Self aware agent now becomes aware of the prediction that certain actions and outcomes are about to follow. 
+3. Model based prediction
+	* Draws connection between primitive experience (eg hunger), the outcome that resolves the experience, and the actions that can get there. 
+	* Self aware agent "understands" in a very primitive sense why it instinctively performs the actions it does. 
+4. Discovery of goals
+	* Somehow this translates into a model about its ability to have goals. 
+	* (need to investigate this more) 
+5. Use of goals
 
 ## Phases
 
