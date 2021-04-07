@@ -257,19 +257,21 @@ Repeated cycles of the following sequence of training:
 
 Mammals don't learn motor control through external rewards; they learn it through watching and observing. And through _jitter_ - in the early stages of development randomly fired muscle signals cause the ligaments to move (citation needed), and the senses are used to pick up the result (particularly touch + vision). This is likely fundamental in bootstrapping a number of brain circuits. For our solution, this will be used to bootstrap the learning of two networks:
 * motor control
-* sense interpretation
+* sense interpretation producing higher-order _latent state_ representations from raw sense inputs
 
 ![Low Level with jitter](files/An-agi-architecture-v1-low-level-jitter.png)
 
-Start with randomly initialised policy and sense interpretation networks. Random jitter (noise) is injected into the raw motor control signal. This causes movement that affects the sense inputs and an update of the state. 
+Start with randomly initialised policy and sense interpretation networks. Random jitter (noise) is injected into the raw motor control signal. This causes movement that affects the sense inputs and an update of the latent state. 
 
-For the moment we'll ignore how the sense interpretation network is trained and focus on the motor control policy. Jitter induces an action `a`, which leads to an observed state `s'` one time step later. This forms an trainable observation that `a` lead to `s'`. Now, for context, action `a` occurred at time `t` where the state observation was `s`. So we can now collect a series of observations of the form:
+For the moment we'll ignore how the sense interpretation network is trained and focus on the motor control policy. Jitter induces an action `a`, which leads to an observed latent state `s'` one time step later. This forms an trainable observation at time `t` of `a` causing a transitition from state `s` to `s'`. So we can now collect a series of observations of the form (`t` omitted for simplicity):
 
     p(s'|s,a)
 
-We could use that to learn a predictive model of the sort that is used in model-based RL algorithms. But model-based RL algorithms are cumbersome, and require a planning engine - which doesn't seem to make sense for the most low-level motor control. So we turn the observation on its head and use it to learn the action given an initial state `s` and a goal `g`. If we force that `g` uses the same representation as states, then we can train with `g=s'`. So, instead we build a network on the form here, and use supervised learning on the observations:
+We could use that to learn a predictive model of the sort that is used in model-based RL algorithms. But model-based RL algorithms are cumbersome and require a planning engine - which doesn't seem to make sense for the most low-level motor control. So we turn the observation on its head and use it to learn the action given an initial state `s` and a goal `g`. If we force that `g` uses the same latent state representation, then we can train with `g=s'`. So, instead we build a network on the form here, and use supervised learning on the observations:
 
     p(a|s,g)
+    
+It should be noted that use of latent state representation as goals has precedent in RL research. (Nair _et _al_, 2018) showed that it leads to sample efficient learning. In particular, they showed that using the latent state leads to much better results than the raw sense inputs. Additionally, they showed that with the right regularization the latent state representation can be treated as a euclidean space and distances used as errors during training. More on that in the _Low level state representation_ section below.
 
 Now, there are a few gotchas here.
 
@@ -310,37 +312,42 @@ The RL learning discussed here will be alternated with the jitter and supervised
 
 ## Low level state representation
 
-How do we train the state representation?
+How do we train the state representation that the sense intepretation network will output? In the complete architecture, the state representation will be used as input to higher level networks, and possibly the goal representation too. We don't yet know what kind of information the high level networks will require, so we have only a vague notion that the state representation needs to be useful. This can be clarified a little by stating that it must produce a high contrast of outputs for highly different inputs. We paraphrase this vague requirement as requiring the representation to have _high saliency_.
 
-In the complete architecture, the state representation will be used as input to highel level executive control networks. It represents abstract features that the higher level network will decide how to use. Thus we don't expect it to have any direct relationship to the external environment and cannot train the sense interpetation network directly. In practice, provided it is initialised with random weights, its initial configuration will provide a meaningful usefulness of representation even without training. This is known as _reservior computing_, and its usefulness is proven and leveraged further in the theory of [Extreme Learning Machines](https://en.wikipedia.org/wiki/Extreme_learning_machine).
+There are a number of options available:
 
-We may wish to apply some tuning pressure to the state representation in order to achieve some goals and alleviate some concerns:
-1. Training of other networks in the agent will become trivial if the state representation is a constant zero output, so there may be pressure to tune towards that outcome unless we counteract it.
-2. We don't yet know what kind of information the high level networks will require, so we have only a vague notion that the state representation needs to be useful. This can be clarified a little by stating that it must produce a high contrast of outputs for highly different inputs. We paraphrase this vague requirement as requiring the representation to have _high saliency_.
+**Back-prop pressure from layers above**
+* Depend entirely on training being applied at higher levels, with the back-propogation from that training applying a training pressure to the low level state interpretation network.
+* We want to encourage convergence across multiple layers, whereas this approach depnds entirely on the layer above forcing convergence, so it's not so great on its own.
+* Additionally, it means that activity that is triggered only within the low-level layer (eg: 'jitter' movements) will not apply any learning pressure.
 
-As a first step towards providing some tuning pressure, we could setup a sort of adversarial network architecture. From the raw action output, we could train an extra network to predict the expected state on the next time step, and we could compare the outputs between those two networks. We might use RMSE and apply half the loss to each network for training. We could probably improve this further by calculating a loss that specifically measures contrast or saliency of the output; for example, perhaps the 'gram matrix' used in the [neural style transfer](https://www.tensorflow.org/tutorials/generative/style_transfer) TensorFlow tutorial could help here. See Option 1 in diagram below.
+**Reservour computing**
+* In practice, provided the state interpretation network is initialised with random weights, its initial configuration will provide a meaningful usefulness of representation even without training. This is known as _reservior computing_, and its usefulness is proven and leveraged further in the theory of [Extreme Learning Machines](https://en.wikipedia.org/wiki/Extreme_learning_machine).
 
-In practice, this approach probably wouldn't give us much. Furthermore, assuming that the networks are randomly initialised with a distribution having mean zero, the shared loss will on average encourage both networks towards zero.
+**Future state prediction**
+* Under a sort of adversarial network architecture, tee off the sense interpretation network againts a prediction network. The prediction network would predict the expected state on the next time step, based on the current raw sense inputs and motor control inputs. The error would be the difference between the outputs from two networks. Both networks would be trained against this error, so that they converge to the same representation.
+* This approach alone will likely converge towards a 'zero representation', where all inputs lead to a zero output. That would be the easiest path to minimise the training loss. Additionally, assuming that the networks are randomly initialised with a distribution having mean zero, the shared loss will on average encourage both networks towards zero.
+* Thus it will need to be paired up with something to increase saliency. For example the 'gram matrix' used in the [neural style transfer](https://www.tensorflow.org/tutorials/generative/style_transfer) TensorFlow tutorial, or some other mutual-information metric.
 
-Another approach could be to use the state representation as input to predict the reward received, and to use supervised learning to train a Q network with backpropagation into the state interpretation network. The intuition here is that it will ensure that the state representation has sufficient saliency for accurate reward prediction. See Option 2 in diagram below. The problem is, in the prior section, our choose was to reward based on the current state representation. So it doesn't add anything that isn't already there.
+**Reward prediction**
+* Use the state representation as input to predict the reward received, and to use supervised learning to train a Q network with backpropagation into the state interpretation network.
+* The intuition here is that it will ensure that the state representation has sufficient saliency for accurate reward prediction.
+* The problem is that, in the section above on low-level motor control training, our choice was to reward motor control policy based on the current state representation. So this approach doesn't add anything that isn't already there.
+* A solution could be to use ground truth values for motor control reward (ie: actual limb positions), and then a reward prediction network off the state representation could lead to something useful. However, this depends on external rewards, and we want to train the agent using intrinsic rewards -- especially for the low-level networks.
 
-One way of solving this could be to slightly change the RL training in the section above. Instead of rewarding based on the state output, we could reward based on the actual limb positions that were observed during data collection. Then our state to reward prediction network has something more meaningful to learn. Also, this would seem to be a better reward function overall: it is more aligned with the actual goal of training the motor policy to control the limbs to reach a desired outcome, and it is less dependent on changes in state representation. The problem is that, under the current architectural framework, the implementation of this reward function depends more on external computation so cannot be internalised into the agent's online self-learning.
+**Variational autoencoders**
+* An approach that has been successfully applied by other researches is to use a [Variational Autoencoder](https://en.wikipedia.org/wiki/Variational_autoencoder) (VAE).
+* Like the prediction approaches above, autoencoders tee off two networks against each other. They use the idea that the sense-interpretation network from raw sense to higher level representation is an _encoder_, and thus there can exist a _decoder_ which does the opposite. By feeding the encoder output into the decoder, the final output should be something similar to the raw sense inputs.
+* VAEs are autoencoders with an additional regularization that ensures a smoother representation space. The intuition is that similar raw inputs should lead to similar encoded representations. However, in practice it has been observed that simple autoencoders produce chaotic results with similar raw inputs leading to very different encoded representations. So a regularization term is added to training to smooth that out.
+* This has an added bonus that the representation space now operates as a euclidean space and you can compute _distances_ between two state representations (Nair _et _al_, 2018).
+* The idea of pairing up a forward and a backward facing network seems to fit quite well with the [Adapative resonance theory](https://en.wikipedia.org/wiki/Adaptive_resonance_theory) of biological brains.
 
-Some experimentation will be required here. For now, we'll work on the assumption that the sense interpretation network acts as a _reserviour_, and doesn't need training.
+I suspect that the best result is a combination of:
+* Variational autoencoders
+* Back-prop pressure from layers above
+* Use of a good state space exploration learning approach such as the jitter signals discussed above or the Diversity Is All You Need (DIAYN) approach of (Eysenbach _et al_, 2018).
 
 ![Low Level state saliency](files/An-agi-architecture-v1-low-level-state-saliency.png)
-
-### Variational Autoencoders
-Another approach that might prove very helpful in this context is to take advantage of some of the work that led to [Variational Autoencoders](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73) (VAE). 
-
-VAEs pair up an encoder and decoder network in a setup that is similar to an adversarial pairing, they can be trained so that the decoder can reproduce something as close as possible to the original before it was encoded. And the resultant encoded representation has a significantly reduced dimensionality from the original source. Additionally, variational encoders include a regularization technique to ensure that the encoded representation as a 'regular' pattern so that similar sources have similar encoded representations.
-
-This happens to fit quite well with an attempt to recreate what biology does: pairing forward and backward prediction. In fact, it offers a potentially more constructive approach than a mere computational reserviour.
-
-### Raw State Representation is a Bad Goal Representation
-Tbd: flesh this out further...
-
-As discussed in Section 4 of https://papers.nips.cc/paper/2018/file/7ec69dd44416c46745f6edd947b470cd-Paper.pdf, while it is possible to use the state representation as a goal representation, the solution does not scale well. The authors of that paper propose an alternative: .....tbd.... 
 
 ## Proprioception
 
@@ -507,5 +514,12 @@ How to measure utility of an explicit conscious feedback loop, vs just depending
 
 ![measuring cf](files/An-agi-architecture-v1-measuring-cf-success.png)
 
-(Added 2021-02-03. Labels: work-in-progress)
 
+# References
+
+Eysenbach, B., Gupta, A., Ibarz, J., and Levine, S. (2018). Diversity is All You Need: Learning Skills without a Reward Function. ArXiv. https://arxiv.org/abs/1802.06070
+
+Nair, A., Pong, V., Dalal, M., Bahl, S., Lin, S., and Levine, S. (2018). Visual Reinforcement Learning with Imagined Goals. ArXiv. https://arxiv.org/abs/1807.04742
+
+
+(Added 2021-02-03. Labels: work-in-progress)
