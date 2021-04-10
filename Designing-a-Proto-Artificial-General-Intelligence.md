@@ -163,7 +163,7 @@ The above phases suggest certain machinery:
 
 On a side note, for many years neuroscience and psychology have struggled to understand how humans can apparently learn so fast. I suspect the answer is the way that shorter term adaption phases can be used to bootstrap development in longer term phases.
 
-(tdd: tie into actual neuroscience/developmental psychology theories in this area, and on what the known brain regions and pathways are)
+(tbd: tie into actual neuroscience/developmental psychology theories in this area, and on what the known brain regions and pathways are)
     
 (tbd: biological background discussing different potentiation levels with different durations)
 
@@ -171,7 +171,7 @@ On a side note, for many years neuroscience and psychology have struggled to und
 
 ## Executive Observability
 
-Human conscious experience has some specific characteristics that inform us about the kinds of data that is available to the highest level _executive control_ layer of the brain. Some things that we can observe and think aboutinclude:
+Human conscious experience has some specific characteristics that inform us about the kinds of data that is available to the highest level _executive control_ layer of the brain. Some things that we can observe and think about include:
 * our physical senses
 * our own thoughts
 * our goals
@@ -181,9 +181,9 @@ Human conscious experience has some specific characteristics that inform us abou
 
 Within [[A Theory of Consciousness]], I propose Visceral Loop Theory as a mathematical summary of the computational aspects of conscious experience. In short, it says that an agent can only observe and think its own awareness through multiple iterations of its main processing loop. In particular, an agent _experiences_ something only after at least two iterations of that loop: the first iteration receives a sense signal and produces an action output, the second iteration takes that action output as input and deduces something about the action output and its relation to the agent's _self_, and lastly during the third iteration the agent uses that deduction to generalise about its awareness of its own thoughts.
 
-So, with reference to Visceral Loop Theory, we say that there is _executive observability_ of some data if the policy within the executive control layer has sufficient access to the data that, i) it can produce outputs that relate directly to that data, and ii) that there is _executive observability_ of those outputs. In practice, this means that the policy's outputs are fed back as additional inputs, and that the main data is question is either a direct input to the policy (at a representational level suitable for the policy) or that the policy holds it as recurrent state.
+So, with reference to Visceral Loop Theory, we say that there is _executive observability_ of some data if the policy within the executive control layer has sufficient access to the data that i) it can produce outputs that relate directly to that data, and ii) that there is _executive observability_ of those outputs. In practice, this means that the policy's outputs are fed back as additional inputs, and that the main data is question is either a direct input to the policy (at a representational level suitable for the policy) or that the policy holds it as recurrent state.
 
-The ability to classify data as having executive observability is important for judging the level to which an artificial network architecture has any possibility of emulating conscious experience. Given our lack of understanding of what general intelligence truly is, this becomes our proxy for measuring the level of AGI that we've produced. Another way of looking at this is to take an example artifical network architecture, focus on the main policy network within the highest level layer (assumwed to be the executive control layer) and imagine what kind of experience a sentient bearing would have should it be based on the architecture surrounding that policy network. Such as in the network architectures pictured here:
+The ability to classify data as having executive observability is important for judging the level to which an artificial network architecture has any possibility of emulating conscious experience. Given our lack of understanding of what general intelligence truly is, this becomes our proxy for measuring the level of AGI that we've produced. Another way of looking at this is to take an example artifical network architecture, focus on the main policy network within the highest level layer (assumwed to be the executive control layer) and imagine what kind of experience a sentient bearing would have should it be based on the architecture surrounding that policy network and based on the assumption that visceral loop theory informs us of what a sentient being experiences. Such as in the network architectures pictured here:
 
 ![executive observability](files/An-agi-architecture-v1-executive-observability.png)
 
