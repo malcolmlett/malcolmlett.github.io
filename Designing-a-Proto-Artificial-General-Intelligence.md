@@ -5,7 +5,8 @@ This page presents CIPAGIO: Consciousness Inspired Proto Artificial General Inte
 
 # Background
 
-What is general intelligence? There is no agreement on a single definiton for that, nor do we have a clear idea what characteristics should definitely be included vs excluded. In many cases the discussion is muddied by disagreement on whether to focus on _human-like_ intelligence or a more species-agnostic view of general intelligence. 
+## What is general intelligence?
+There is no agreement on a single definiton for that, nor do we have a clear idea what characteristics should definitely be included vs excluded. In many cases the discussion is muddied by disagreement on whether to focus on _human-like_ intelligence or a more species-agnostic view of general intelligence. 
 
 According to Wikipedia's article on [artificial general intelligence](https://en.m.wikipedia.org/wiki/Artificial_general_intelligence), "there is wide agreement among artificial intelligence researchers that intelligence is required to do the following:
 * Reason, use strategy, solve puzzles, and make judgments under uncertainty;
@@ -167,6 +168,57 @@ On a side note, for many years neuroscience and psychology have struggled to und
 (tbd: biological background discussing different potentiation levels with different durations)
 
 (tbd: probably need to add some extra phases to support different biological neural potentiation levels)
+
+## Executive Observability
+
+Human conscious experience has some specific characteristics that inform us about the kinds of data that is available to the highest level _executive control_ layer of the brain. Some things that we can observe and think aboutinclude:
+* our physical senses
+* our own thoughts
+* our goals
+* observation of motor control error
+* primitive reward signals (eg: pain, pleasure)
+* emotional interpretation of rewards from teacher roles around us (eg: parent saying "no" or smiling)
+
+Within [[A Theory of Consciousness]], I propose Visceral Loop Theory as a mathematical summary of the computational aspects of conscious experience. In short, it says that an agent can only observe and think its own awareness through multiple iterations of its main processing loop. In particular, an agent _experiences_ something only after at least two iterations of that loop: the first iteration receives a sense signal and produces an action output, the second iteration takes that action output as input and deduces something about the action output and its relation to the agent's _self_, and lastly during the third iteration the agent uses that deduction to generalise about its awareness of its own thoughts.
+
+So, with reference to Visceral Loop Theory, we say that there is _executive observability_ of some data if the policy within the executive control layer has sufficient access to the data that, i) it can produce outputs that relate directly to that data, and ii) that there is _executive observability_ of those outputs. In practice, this means that the policy's outputs are fed back as additional inputs, and that the main data is question is either a direct input to the policy (at a representational level suitable for the policy) or that the policy holds it as recurrent state.
+
+The ability to classify data as having executive observability is important for judging the level to which an artificial network architecture has any possibility of emulating conscious experience. Given our lack of understanding of what general intelligence truly is, this becomes our proxy for measuring the level of AGI that we've produced. Another way of looking at this is to take an example artifical network architecture, focus on the main policy network within the highest level layer (assumwed to be the executive control layer) and imagine what kind of experience a sentient bearing would have should it be based on the architecture surrounding that policy network. Such as in the network architectures pictured here:
+
+![executive observability](files/An-agi-architecture-v1-executive-observability.png)
+
+So, with the definition of executive observability in hand, let's look at the above network architectures and classify what kind of executive observability they have. 
+
+**Oblivious:**
+* No executive observability of policy inputs or outputs.
+* This is a purely mechanical network without any visceral loop activity. A sentient being with this kind of network, would experience only a permanent void. Or rather, it would definitely not be sentient in any way. 
+
+**Naive:**
+* Executive observability of policy output only
+* No observability of error or reward signals
+* No observability of policy updates (from training)
+* A sentient being with this kind of network could be aware of the world around it (its senses), and of the interactions (actions) between its body and the world. But it would feel entirely passive, trapped in a body that it had no influence over. It would not be aware of _why_ the body interacted in the way that it did, nor would it have the ability to model the policy sufficiently to infer or predict the _why_. The salient being has no ability to monitor its own behaviours over time, and so would not notice that its policy changes; however its sense input may include an element of prediction, which could identify when the policy is updated from training.
+* Network architecture variations possible that still fall under this classification:
+    * The feedback loop could be replaced by use of memory or a modelling engine that captures policy outputs and enables modelling of the policy. This could provide post-hoc executive observability of the policy output, however it only replace the capability of the feedback loop in a weak way because it does not provide immediate feedback.
+    * The feedback loop could be replaced by the policy holding internal recurrent state. In order for the policy to have executive observability of its policy output, the internal state needs to accurately correlate with the output. Without that, the policy cannot observe and perform furthure computations about its own outputs, and connot satisfy the requirement for being passed through multiple iterations of the visceral loop. Thus, the problem with building an architecture of this sort is that there is no guarantee that the internal state will accurately reflect the policy output, and it is likely to reduce to the Obvilious network above.
+
+**Human-like:**
+* Executive observability of high level errors and rewards 
+* Executive observability of intermediate states in complex high level thought
+* Executive observability of high level policy outputs
+* Executive observability of goals
+* Post-hoc executive observability of policy changes over time (through modelling / memory)
+* No observability of policy calculations
+* A sentient being with this kind of network (like a human) has a balanced amount of awareness and control over its own operations. It often constructs its own short-term and long-term goals and then proceeds to execute actions in order to achieve those goals, and furthermore uses the achievement of those goals as intrinsic reward. There are also many computational processes for which it is only aware of the output (referred to by Daniel Kahnemann as "System 1 Thought"), or even just the effect after the action has already been carried out (eg: reflexes).
+* Network architecture variations possible that still fall under this classification:
+    * Goals may not be discrete data units, and instead may just be internal recurrent state with the policy. This makes sense because not all actions have correpsonding goals; sometimes they are just instinctual immediate rections to unexpected stimuli.
+
+**Super-human:**
+* Executive observability of policy inputs and outputs
+* Executive observability of policy internal computations (ie: of why an action was chosen) 
+* Executive observability of goals
+* Executive observability (and control) of reinforcement algorithm rewards and the policy updates from it
+* In addition to the experience of a human-like sentience, a super human sentient being with this network would have total awareness and control of its own policy network, including its internal operations. It would never experience an instinctual action or suddenly "just knowing something, because it would have full awareness of how it reached all computationl states.
 
 
 # Principles
