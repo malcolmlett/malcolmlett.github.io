@@ -17,9 +17,9 @@
 * [[Theory Archive]]
 
 ### Design
-* [[Architecture Overview]]
+* [[Conscious Calculator v1]]
 * [[Conscious Calculator v2]]
-* [[Designing a Proto Artificial General Intelligence]]
+* [[Proto AGI v1]]
 * [[Executive Control in a proto AGI]]
 
 ### Work in Progress
