@@ -86,67 +86,6 @@ Some rewards that we might use, as per the categories above:
     
 _more analysis: tbd_
 
-## Deep Reinforcement Learning Background
-One way of slicing the range of RL algorithms available at the moment is to classify them as using one of two approaches:
-* Value function estimation
-* Policy representation and the policy gradient method.
-
-In value function estimation, the agent attempts to learn a function `V(a(t) | s(t))` that predicts the value (expected sum of rewards) of the path beginning with action `a` at time `t`, given the current state `s(t)` and in implicit fixed goal. The expected value of each action depends on the likely subsequent actions, which are again decided based on the same value function, thus the value of action `a` at time `t`, depends on the expected subsequent actions. Algorithms based on this include the Q-learning algorithm originally proposed by Watkins and Dayan (1992) and the Sarsa algorithm proposed by Rummery and Niranjan (1994). The advantage of this type of algorithm is that the process is simple and easily implementable; however, it does not solve the problem of continuous action space well.
-
-Typical algorithms based on the policy gradient method include the REINFORCE algorithm proposed by Sutton et al. (2000) and the actor-critic algorithm proposed by Konda and Tsitsiklis (2000) are typical algorithms based on policy gradient method. The main idea of these algorithms is to link the parameterization policy with the cumulative reward and continuously optimize the policy to obtain the optimal policy. This type of method can solve the problem of continuous action space, but can easily converge to the local optimal solution (Zhao, Liu, Zhao, and Tang, 2018).
-
-### Deep Q Networks
-Deep Q Networks (DQN) is one of the simplest algorithms to write in equation form, 
-
-### Policy Gradient Methods
-A simple actor-critic algorithm is relatively easy to write in equatio form, and while far more advanced techniques are now used, for the purposes of what we need to examine here, the difference is not too important. In particular, currently another popular algorithm Proximal Policy Optimization (PPO) essentially looks the same, but with some extra refinements. Both of these follow the policy gradient method, with an actor-critic used to calculate "advantage" for a given action - which has been found to reduce variance and improve convergence.
-
-The following is a very brief summary of the simple actor-critic policy gradient functions (source: https://www.tensorflow.org/tutorials/reinforcement_learning/actor_critic):
-
-Reward:
-```
-r(t) = actual reward at time t
-```
-
-Expected returns, at time `t`:
-```
-G(t) = sum(t'=t..T: gamma^(t'-t) * r(t'))
-```
-
-Networks:
-```
-policy(a(t) | s(t)) = policy network, parameterized by theta (network weights)
-```
-
-```
-V(s(t)) = value network, parameterised by the same theta
-```
-
-Actor loss:
-```
-actor-loss = - sum(t=1..T: log(policy(a(t)|s(t))) * [G(s(t), a(t)) - V(s(t))])
-```
-
-Critic loss:
-```
-critic-loss = huber-loss(G, V)
-```
-
-Learning is usually accomplished by recording events into a replay buffer (as tuples of state, action, reward), then running supervised learning against batches retrieves from the replay buffer.
-
-### Convergence Improvement Techniques
-There are several methods that have been shown to improve convergence efficiency and/or accurancy. Two relatively simple methods that are frequently included are:
-
-1. Using a target Q-Network that is updated separately from the online  Q-Network. The target network weights are updated periodically to match the online network, which is updated at every step. This maintains a longer period with the same action-values, in contrast to weight updates, which occur at every step.
-
-2. The use of an Experience Replay (ER) buffer, enabling mini-batch training, rather than single sample training.
-
-### Hierarchical Reinforcement Learning
-
-
-### Intrinsic Motivation
-Diversity Is All You Need (DIAYN) (Eysenbach, Gupta, _et al_, 2018) provides an mechanism for pre-training a network via a form of intrinsic motivation based on the idea of discovering a collection of distinguishable "skills". The approach aligns well with our general approach for AGI, as the "skills" that they refer to are encoded as an extra input parameter to the policy network. In our design, that is called a "goal".
-
 # Importance of Conscious Feedback
 
 In prior work I've hypothesised that conscious feedback (CF) is important because it acts as a feedback mechanism that the higher-order brain uses against itself to maintain stability. But how exactly does that work?
