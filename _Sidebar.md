@@ -20,7 +20,6 @@
 * [[Conscious Calculator v1]]
 * [[Conscious Calculator v2]]
 * [[Proto AGI v1]]
-* [[Executive Control in a proto AGI]]
 
 ### Work in Progress
 * [[Work in Progress]]
