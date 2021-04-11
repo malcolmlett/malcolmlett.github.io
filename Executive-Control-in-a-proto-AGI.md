@@ -1,4 +1,4 @@
-This page presents an examination of executive control for the purpose of building our proto AGI.
+This page presents an examination of executive control for the purpose of building [[Proto AGI v1]].
 
 # Key features
 I now suspect that the following features are key to general intelligence:
