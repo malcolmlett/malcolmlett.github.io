@@ -62,17 +62,52 @@ The reinforcement learning community, inspired by biological organism's ability 
 
 Tbd ....summarise...
 
+Many of the intrinsic motivation algorithms depend on abstract theoretical measures, for example mutual information.
+
 However, motivation within biological organisms is something that the organism is aware of and experiences as part of their executive control. So, when viewed in that context, the mechanisms described above are better viewed as _primitive rewards_: _(tbd: define)_. Viewing them in this way can be important, as many of the so called intrinsic motivation techniques suffer from the law of unintended side effects. Often they are devised in the hope of achieviwing a particular outcome, but the actual computation used doesn't necessarily bare a direct relation to that outcome. For example, empowerment based rewards can lead to the agent getting stuck.
 
+## Common mathematical functions
+Before delving into the algorithms, it is helpful to explain a few commonly used functions and cocepts.
+
+#### Mutual Information
+
+`I(X;Y)`
+
+_Mutual information_ is an information theory concept, that measures the amount of mutual dependency between two variables, ie: how much knowing the value of one variable helps predict the value of the other. Given variables `X` and `Y`, the mutual information `I(X;Y)` is zero if the variables are entirely independendent, and a positive number of they have some amount of dependency.
+
+#### Huber entropy
+`H[X | Y]`
+
+tbd...
+
+
 ## DIAYN
-Diversity Is All You Need (DIAYN) (Eysenbach, Gupta, _et al_, 2018) provides an mechanism for pre-training a network via a form of intrinsic motivation based on the idea of discovering a collection of distinguishable "skills". The approach aligns well with our general approach for AGI, as the "skills" that they refer to are encoded as an extra input parameter to the policy network. In our design, that is called a "goal".
+Diversity Is All You Need (DIAYN) (Eysenbach, Gupta, _et al_, 2018) provides an mechanism for pre-training a network via a form of intrinsic motivation based on the idea of discovering a collection of distinguishable _skills_. The approach aligns well with the approach taken here for AGI, as the skills that they refer to are encoded as an extra input parameter to the policy network. In our design, that is called a goal. DIAYN attempts to maximise the diversity of states that the agent can reach. The policy network takes two inputs, the state representation `S`, and a goal representation `G`. `G` a vector of fixed size, and its interpretation is formed as a result of the algorithm.
 
-Maximises diversity of states that the agent can reach. However, this can include many that are unhelpful or even have have negative utility.
+![diayn](files/RL-survey-diayn.png)
 
-diagram: venn-diagram.
+The algorithm:
+* trains the policy using random goals sampled from some pre-defined distribution and held static for each training eposide.
+* trains a discriminator to predict the original goal given observed state.
+* maximises `I(G;S)`, the mutual information between goals and states, in order to ensure that the goal input to the policy has control over the outcome states
+* minimises `I(G;A | S)`, the mutual information between goals and actions given the state, in order to ensure that the states distinguish the goals, not the actions.
+* maximises the entropy `H[A | S]` to ensure that there is maximum diversity of actions
+
+The algorithm maximises diversity of states that the agent can reach. With the goal encodings as the sampling indices, it ensures a diverse sampling of reachable states across all possible states. However, this can include many that are unhelpful or unsafe. So it attains high diversity, but potentially at the compromise of lower utility.
+
+![diyan-statespace](files/RL-survey-diayn-statespace.png)
 
 ## Empowerment
 Produces policy that tries to move agent into state with maximum control over future states. This can result in the equivalent of, for example, climbing to the top of a hill because it has the greatest advantage over attackers, and staying there forever.
+
+tbd....
+
+## Auto Encoders
+While not typically used for intrinsic motivation _per se_, auto encoders have similar characteristics and can be used as a way of achieving a useful result without external rewards.
+
+Assuming that the encoded representation has less capacity than the original data source, auto encoders converge to find the best possible compression strategy across the data samples used for training. In the context of images, they basically train for a domain-specific image compressor. In so doing, they take certain compromises that optimise for structure of the image, with variations depending largely on the error measure used during training.
+
+Variational Auto Encoders (VAEs) add an extra constraint to the possible network configurations, that the encoded representation should have a smooth variation through its space across similar source data. So the encoded representation now must perform two goals instead of just one, and the range of possible optimal encodings is reduced. Thus in a sense this makes the encoding and decoding networks worker harder to reproduce the original input data from an encoding space with further constraints, rather than allowing the encoding representation to be fit optimally for the needs of the encoding and decoding networks.s
 
 # My Own Additions
 
@@ -105,3 +140,19 @@ More articles/papers on the topic of automaticity:
 * https://www.quora.com/What-happens-in-the-brain-when-a-skill-becomes-automatic
 * https://www.fastcompany.com/3058572/how-to-learn-a-new-skill-well-enough-to-do-it-automaticall
 * https://betterhumans.pub/the-science-of-automating-and-perfecting-any-skill-ea89f55b5f3e
+
+
+# References
+
+Eysenbach, B., Gupta, A., Ibarz, J., and Levine, S. (2018). Diversity is All You Need: Learning Skills without a Reward Function. ArXiv. https://arxiv.org/abs/1802.06070
+
+Konda, V. R., and Tsitsiklis, J. N. (2000). Actor-critic algorithms. Advances in Neural Information Processing Systems, pp. 1008–1014, MIT Press, Cambridge, MA, USA. [Google Scholar link](https://scholar.google.com/scholar_lookup?title=Actor-critic%20algorithms&author=V.%20R.%20Konda%20&author=J.%20N.%20Tsitsiklis&publication_year=2000)
+
+Rummery, G., and Niranjan, M. (1994). On-line Q learning using connectionist systems. Cambridge University Engineering Department, Cambridge, UK. Technical Report CUDE/F-INFENG/TR 166. [Google Scholar link](https://scholar.google.com/scholar_lookup?title=On-line%20Q%20learning%20using%20connectionist%20systems&author=G.%20Rummery%20&author=M.%20Niranjan&publication_year=1994)
+
+Sutton, R. S., McAllester, D. A., Singh, S. P., et al. (2000). Policy gradient methods for reinforcement learning with function approximation. Advances in Neural Information Processing Systems, pp. 1057–1063, MIT Press, Cambridge, MA, USA. [Google Scholar link](https://scholar.google.com/scholar_lookup?title=Policy%20gradient%20methods%20for%20reinforcement%20learning%20with%20function%20approximation&author=R.%20S.%20Sutton&author=D.%20A.%20McAllester&author=S.%20P.%20Singh%20et%20al.&publication_year=2000)
+
+Watkins, C., and Dayan, P (1991). Q-learning. Machine Learning, vol. 8, no. 3-4, pp. 279–292. https://doi.org/10.1007/bf00992698
+
+Zhao, Y.-N., Liu, P., Zhao, W., and Tang, X.-L. (2018). Twice sampling method in deep Q-network. Acta Automatica Sinica, vol. 45, no. 10, pp. 1870–1882. https://doi.org/10.16383/j.aas.2018.c170635
+

@@ -3,6 +3,7 @@ Can we use our best current understanding of neuroscience to inspire AI architec
 This page presents CIPAGIO, _Consciousness Inspired Proto Artificial General Intelligence Operative_. It is part of a collection of documents:
 
 * [[Biological basis for proto AGI]]
+* [[Survey of reinforcement learning]]
 * [[Executive Control in a proto AGI]]
 
 
