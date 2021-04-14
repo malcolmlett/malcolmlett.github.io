@@ -7,10 +7,16 @@ This page presents CIPAGIO, _Consciousness Inspired Proto Artificial General Int
 * [[Executive Control in a proto AGI]]
 
 
-# Background
+# Classifications
 
-## What is general intelligence?
-There is no agreement on a single definiton for that, nor do we have a clear idea what characteristics should definitely be included vs excluded. In many cases the discussion is muddied by disagreement on whether to focus on _human-like_ intelligence or a more species-agnostic view of general intelligence. 
+General intelligence is a classic ill-defined problem: we don't understand it well enough even to define what it is. Many have attempted to define it, but there is no agreement. We don't have a way to measure whether something has general intelligence or not, or the level to which it has general intelligence. We don't have a clear idea of what characteristics should definitely be included vs excluded. In many cases the discussion is further muddied by disagreement on whether to focus on _human-like_ intelligence or a more species-agnostic view of general intelligence. 
+
+One useful technique is to classify what we know. As such, this section is devoted to a detailed analysis of what we know, and what we can take some reasonable guesses about. The end result is that we will:
+* identify some characteristics that are worth trying to build into our solution,
+* be able to measure the extent of effectiveness of our solution against some defined levels of capability, and
+* hopefully gain some insight into how to build it.
+
+## Characteristics of General Intelligence
 
 According to Wikipedia's article on [artificial general intelligence](https://en.m.wikipedia.org/wiki/Artificial_general_intelligence), "there is wide agreement among artificial intelligence researchers that intelligence is required to do the following:
 * Reason, use strategy, solve puzzles, and make judgments under uncertainty;
@@ -70,7 +76,7 @@ Individual learning constraints:
 
 ## Axis of Comprehension
 
-From one of the notes above, it occurs to me that there are multiple axis across which an agent might be capable of comprehending and rationalising. The distinction between the different axis fundamentally comes down to the mechanics of how that comprehension can be achieved. For example, memory is necessary in order to comprehend the effects of time. In contrast, memory is not required in order to comprehend physical space without the impacts of time: an agent can see in an instant that one object is above the other, without needing to remember anything.
+It occurs to me that there are multiple axis across which an agent might be capable of comprehending and rationalising. The distinction between the different axis fundamentally comes down to the mechanics of how that comprehension can be achieved. For example, memory is necessary in order to comprehend the effects of time. In contrast, memory is not required in order to comprehend physical space without the impacts of time: an agent can see in an instant that one object is above the other, without needing to remember anything.
 
 Some of those axis might be:
 * Physical space
@@ -223,6 +229,72 @@ So, with the definition of executive observability in hand, let's look at the ab
 * Executive observability of goals
 * Executive observability (and control) of reinforcement algorithm rewards and the policy updates from it
 * In addition to the experience of a human-like sentience, a super human sentient being with this network would have total awareness and control of its own policy network, including its internal operations. It would never experience an instinctual action or suddenly "just knowing something, because it would have full awareness of how it reached all computationl states.
+
+## Thought Levels
+(tbd: flesh out further)
+
+Daniel Kahneman characterises thought into two categories, System 1 and System 2 thought, by making a distinction between whether the thought is produced heuristically and immediately, or from slow deliberated thought, and the suggestion that these two thought styles much employ different systems within the brain.
+
+I find that distinction extremely useful as it fits very well with my theory on the architecture of the conscious part of the brain as desribed in [[A Theory of Consciousness]]. I also find it useful to re-characterise System 1 and System 2 in terms of that architecture, and to propose one more level, System 0, that characterises another kind of thought. Described here:
+
+**System 0:**
+* Processed and actioned on without conscious awareness.
+* May or may not become consciously aware afterwards.
+
+**System 1:**
+* Thought produced via single pass through predictive systems that is subsequently actioned consciously. 
+
+**System 2:**
+* Thought that requires multiple passes through conscious part of brain. 
+
+## Human Training Signals
+How do humans receive the error signals used in supervised learning circuitry, and reward signals that are used in reinforcement learning?
+
+### Reward Levels
+**Simple primitive rewards:**
+* Includes:
+    * Pain / Pleasure 
+    * Hunger / Satiation
+    * Temperature discomfort 
+    * Learning quotient (curiosity, dopamine signalling?) 
+* These are just simple wiring-level reward signals that grow during foetal development.
+* Operates within System 0 thought.
+
+**Domain specific primitive rewards:**
+* Includes:
+    * Smiles
+    * Frowns
+    * Fear (primitive recognition only) 
+    * Body language (primitive recognition only, if any)
+* Reward is processed via genetically embedded neural networks
+* Sometimes results in hormone signals that then act as simple primitive rewards/learning adjustment.
+* Operates within System 0 thought.
+
+**Teacher rewards:**
+* Rewards and punishments given by someone fulfilling the general sense of a teacher role at the time.
+* Includes:
+    * Body language 
+    * Telling off
+    * Encouragement 
+* Reward is processed via mental modelled hierarchical learning, that is built up on top of domain specific primitive rewards.
+* Probably still with some genetically embedded propensity to learn these models.
+* Operates within System 1 and 2 thought.
+
+**Internalised rewards:**
+* Includes:
+    * Internalised version of all of teacher rewards mentioned above
+    * Sense of Achievement (internalised encouragement) 
+    * Fear (internalised discouragement) 
+    * Surprise (depends on learned models and prediction) 
+    * Impatience 
+* These are habitually formed internalisation of teacher rewards. ie: from slow prediction learning systems.
+* Operates within System 1 thought.
+
+**Self-determined rewards:**
+* Includes:
+    * Achievement of own goals
+* Here, mental modelling is used to construct goals. Then mental modelling and prediction is used to recognise achievement or the lack thereof.
+* Operates almost entirely within System 2, but also further adds to internalised rewards and can even be used to change past learned internalised rewards (although often with some difficulty).
 
 
 # Principles
