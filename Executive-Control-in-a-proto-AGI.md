@@ -84,9 +84,34 @@ Some rewards that we might use, as per the categories above:
     * predictive errors (eg: in training sensorimotor network)
 * Sense intepreted
     * Uncertainty / curiosity
-    
-    
+
 _more analysis: tbd_
+
+## Primitive Reward Techniques
+Referred to as _intrinsic motivation_ within the RL community - but I find that term misleading and prefer to use _primitive reward_. For a detailed analysis of common techniques within RL, see [[Survey of Reinforcement Learning]].
+
+### Circular Targets
+Some instrinsic motivation techinques can lead to a policy that always moves the agent towards a particular stable state and then it tries to stay there. For example, empowerment can suffer from this technique, as it targets a state that affords the agent maximum capability of future state changes. Metaphorically, the agent will climb to the top of the hill and stay there.
+
+![circular-motivation](files/Executive-control-circular-motivation.png)
+
+We want an agent that is driven to keep doing things. One way of looking at this is to target the "stable state" as a resonant circular path through state space. Examples of intrinsic motivation that might lead to such a "stable state" are:
+* boredom - desire for unique stimulation
+* curiosity - desire to learn when experiences surprise
+* learning degree - reward based on how much the agent learns over a period
+
+### Primitive Reward Options
+**Boredom**
+Desire for unique stimulation.
+
+**Curiosity**
+Similar to boredom but likely computed in a slightly different way.
+Desire to learn following predictive "surprise".
+
+**Learning Degree**
+Reward based on how much the agent learns over a period.
+Can be risky as it may discourage convergence of policy. So perhaps works better when only measured against the learning degree within modelling engine.    
+    
 
 # Importance of Conscious Feedback
 
