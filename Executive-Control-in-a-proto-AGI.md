@@ -2,7 +2,9 @@ This page forms part of the [[Proto AGI v1]] series.
 
 I present an examination of executive control for the purpose of building a proto AGI.
 
+
 # Key features
+
 I now suspect that the following features are key to general intelligence:
 
 * Mental modeling
@@ -12,6 +14,7 @@ I now suspect that the following features are key to general intelligence:
 * Learned rewards
 
 tbd: diagram
+
 
 # Progression of Capabilities
 
@@ -32,7 +35,10 @@ In what is certainly an oversimplication, we will use the following view of evol
     
 With these three stages in mind, we can measure the progression of capability of our proposed solutions.
 
+
 # Rewards
+
+__(tbd: much of this should move to [[General Intelligence Classifications]]).
 
 ## Reward Categories
 The rewards that a high-functioning general intelligence learns from are complex. In order to attempt to make sense of that, the following diagram categorises the rewards and illustrates how complex those rewards are to learn useful policies from.
@@ -88,6 +94,35 @@ Some rewards that we might use, as per the categories above:
 
 _more analysis: tbd_
 
+## Pure Intrinsic Motivation
+
+What if the solution is to get rid of external training altogether and use pure intrinsic motivation. The main intrinsic motivation drivers would be a combination of something like:
+- Mutual information (DIAYN)
+- Prediction
+- Curiosity
+- Desire
+
+How can that lead to an agent that actually tries to interact with others? Mutual information might again be useful there, as it will attempt to find novel interactions that elicit different states. That will still lead to it finding many different ways of interacting with us, many of which will annoy us but it won't make a distinction. Prediction won't help alleviate that because it will learn to accurately predict our annoyance. So 'Desire' will be necessary: that it wants us to achieve an outcome, but if we are annoyed we won't cooperate and thus it will fail to meet its goal.
+
+The policy will also need to model its rewards so that it can use that to choose goals that lead to rewards. And this will ensure that it can continue to progress and be productive. Hopefully will build up a hierarchical model of rewards so that it can focus on long term gains. However, this reward modelling can be added later, and should only have a weak influence. Its not the main driver. 
+
+Learning algorithms could include:
+- DIAYN at all levels -- certainly at the start, then slowly attenuated away
+- Variational Autoencoders (VAE) for representational training
+- Prediction
+
+This seems like a much more effective long term strategy for producing an AGI.
+
+### Example Architecture
+An example architecture using pure intrinsic motivation might look like:
+* Maximise I(G:S) - mutual information between goals and states (DIAYN) - encourages exploration, diversity of capabilities, and training of goal representation. 
+* Decode error with state regularization (VAE) - encourages saliency of goal representation, and smoothness of the state space. Potentially optimises for reconstructability at expense of utility to higher layers. 
+* Maximise I(A:S) - mutual information between sequences of actions and states (Empowerment) - encourages utility of policies. Note: may need to look into whether there is a conflict with what DIAYN does with I(A:S). 
+* Backprop pressure from training of layers above - encourages utility of state representation. Although, that pressure will be most effective only when applying rewards against the accuracy of the policy of the higher layers. 
+
+Primitive rewards would be applied at each level independently and simultaneously.
+
+
 ## Primitive Reward Techniques
 Referred to as _intrinsic motivation_ within the RL community - but I find that term misleading and prefer to use _primitive reward_. For a detailed analysis of common techniques within RL, see [[Survey of Reinforcement Learning]].
 
@@ -111,8 +146,57 @@ We want an agent that is driven to keep doing things. One way of looking at this
 
 **Learning Degree**
 * Reward based on how much the agent learns over a period.
-* Can be risky as it may discourage convergence of policy. So perhaps works better when only measured against the learning degree within modelling engine.    
-    
+* Can be risky as it may discourage convergence of policy. So perhaps works better when only measured against the learning degree within modelling engine.
+
+
+# Approach
+
+## Policy Autonomy
+Most RL methods today don't trust the policy with much. They hide a number of key things from the policy by not making them available as inputs:
+* Goal
+	* On the basis that we don't know how to encode a goal. We hold the goal to ourselves like a secret card that we don't even reveal when the policy achieves it. 
+* Rewards
+* Execution strategy. 
+	* Model based techniques execute the path search as a mechanical process that the polucy has no control over. 
+
+I want a policy that can "think". One that can choose inaction in order to mull over the options. So I need to trust it more. This includes with goal, rewards, but most importantly with execution strategy. 
+
+I treat mental action the same as physical action. In order to include mental actions within the policy gradient calculations, I  include those actions in the value estimate. 
+
+Example tasks:
+* Planning: learn to simulate possible paths from model without carrying them all out. Great for efficiency in real world. 
+
+## Functional Specialisation
+Intrinsic motivation approach make it very hard to produce results that are useful to us.
+
+Brain uses a lot of functional specialisation, as evidenced by a growing body of research. Particularly from lesion studies. So what if we tried that approach. 
+
+We could add:
+* Explicit represenation of rewards, plus uncertainty. 
+* Explicit support for model free and model based computation. 
+* Explicit support for "simulation" of actions. 
+
+Example:
+* In order to support simulation, action outputs could include an on/off signal that chooses between physical action vs just simulation of an action. Action outputs feed into model free reward predictor -> output into reward memory. Action output, sense inputs and reward prediction states could be fed into a reward uncertainty predictor. Policy uses that to choose to output a control signal to model based reward predictor, and waits. Model based reward predictor emits possible paths through its model. And reward uncertainty predictor estimates uncertainty. 
+* _(tbd: needs diagram).
+* Then extend to actually producing action planning.
+
+## Worked Example - Primitive Rewards plus High-level Goals
+We now look at how we can train the executive control layer to understand and target high-level goals. In order to "trust" our policy, and produce biologically plausible solution, our network will not be pre-trained to understand high-level rewards based on the actual goal, nor will be use external training force based on measurement against the high-level goal. Rather, we will provide the high-level goal as "sense" input to the agent, and depend on the existence of primitive rewards as the training force.
+
+![with-modelling](files/Executive-control-with-modelling.png)
+
+In a full solution, the primitive rewards will be supplied from lower-level layers, and the goal will be indicated by something in the environment that the agent must interpret. For example, a sign denoting the target goal position. For the purpose of focused experimentation, we will simulate the existence of the lower-level layers by providing our own high-level representations directly to the executive control layer. Simulated integrations will include:
+* input as high-level representation of environment
+* input as high-level representation of goal
+* input as high-level representation of primitive reward
+* actions applied against a high-level representation of a simple environment (eg: grid-world office space with simple left/right/up/down movements).
+
+Primitive rewards material to this design include:
+* Pain
+* Pleasure
+
+We will present both primitive rewards and high-level goals as inputs to the high-level layer in order to give the policy the opportunity to adapt its behaviour to maximise rewards. We will include a modelling capability that the policy network can _choose_ whether or not to use at each time step.
 
 # Importance of Conscious Feedback
 
@@ -132,6 +216,7 @@ Why would the executive control layer need CF when it's already got access to al
 
 ## Action Learning
 In RL, we learning mappings from actions to probabilities or reward expectations. The actions here are the _output_ of the neural network of the executive control layer. So the RL algorithm needs to directly observe those outputs. Under a hypothesis that the brain implements something akin to RL, but embedded within all its other processes, then it is that same executive control layer that is involved with the RL training. Thus it needs to directly observe those outputs.
+
 
 # Working Memory
 
