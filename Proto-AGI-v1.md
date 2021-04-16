@@ -5,9 +5,11 @@ This page presents CIPAGIO, _Consciousness Inspired Proto Artificial General Int
 # Background
 This page makes reference to content within other pages:
 * [[Biological basis for proto AGI]]
-* [[Survey of Reinforcement Learning]]
 * [[General Intelligence Classifications]]
 * [[Executive Control in a proto AGI]]
+
+Also see:
+* [[Survey of Reinforcement Learning]]
 
 ## Principles
 
