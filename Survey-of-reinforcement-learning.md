@@ -109,6 +109,7 @@ Assuming that the encoded representation has less capacity than the original dat
 
 Variational Auto Encoders (VAEs) add an extra constraint to the possible network configurations, that the encoded representation should have a smooth variation through its space across similar source data. So the encoded representation now must perform two goals instead of just one, and the range of possible optimal encodings is reduced. Thus in a sense this makes the encoding and decoding networks worker harder to reproduce the original input data from an encoding space with further constraints, rather than allowing the encoding representation to be fit optimally for the needs of the encoding and decoding networks.s
 
+
 # My Own Additions
 
 ## Human inspired solutions for Hierarchical Reinforcement Learning
@@ -140,6 +141,24 @@ More articles/papers on the topic of automaticity:
 * https://www.quora.com/What-happens-in-the-brain-when-a-skill-becomes-automatic
 * https://www.fastcompany.com/3058572/how-to-learn-a-new-skill-well-enough-to-do-it-automaticall
 * https://betterhumans.pub/the-science-of-automating-and-perfecting-any-skill-ea89f55b5f3e
+
+## Efficient Value Estimation 
+_(tbd: flesh out)_
+
+Is in creating a high level policy with high sample efficiency during training, I don't want to be measuring its estimated value using a bloated low level value estimator network that will take ages to train. One of the big problems with that is that the network has high capacity and needs saturation before it will be a useful predictor but large capacity networks take a long time to saturate.
+
+I want something that produces useful results immediately, like it was always saturated and its capacity grows during training. 
+
+Surely a better approach is to use bayesian techniques for the value estimation. 
+
+## Training with growing networks
+_(tbd: flesh out)_
+
+Train network to saturation them increase size and use old network to train new one throufh supervised learning and random sampling. Do for both policy and critic networks. 
+
+Could create genetic solution by starting small, detecting when reward stagnates, and double network size, repeat. 
+
+Inefficient compared to training in simulated envs. But very efficient during real world learning. 
 
 
 # References

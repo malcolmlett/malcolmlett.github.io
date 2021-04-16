@@ -45,6 +45,7 @@ The rewards that a high-functioning general intelligence learns from are complex
 |Sense-interpretation Dependent|This category of reward requires trained neural networks for interpretation of senses. It may even require some level of cognitive ability, but it does not require the level of high-order intelligence required for general intelligence. It includes rewards received by interpreting social feedback, such as from someone critiquing our actions (a 'teacher' in general terms), or from the result of our social interactions with potential friends. It also includes other cognitive interpretation of senses, such as 'surprise' or 'uncertainty' (_a la_ the free energy principle). Examples: teachers saying "good boy" or "no", teacher smiles, teacher frowns, popularity, de-friending, isolation. This form of feedback is often higher-fidelity, but can be frequent or sparse.|Complex networks are required to undestand social cues, based on interpretation of the senses. This form of policy builds on top of the policy learned from primitive rewards, in the sense that the agent likely would never reach the cognitive ability to intepret its senses sufficiently to understand social feedback it it were not for the primitive rewards acting as a bootstrap mechanisms for learning.|
 |Achievement|Rewards that depend entirely on the agent's own measure of success. In other words, rewards that the agent gives to itself, based on a reward measure that it has devised itself. These rewards depend on mental models that the agent builds about the world, based on experience and its ability to deduce self-consistent meaning from its experience. Examples: achieving goals, reflecting on one's own character and/or lifestyle, perfectionism.|Determination of these rewards depend on systems that support dynamic mental-modelling of the world, and for determining goals based on those mental-models.|
 
+## Interactions across Hierarchical Rewards
 Each higher-order reward builds upon the policy trained via the lower-order reward. Thus they form a hierarchy. There are approximately two ways in which these categories of reward can interplay:
 * Refinement
     * Each higher-order reward provides higher fidelity or a more fine-grained frequency of feedback, making it easier to train the policy to follow the best path.
@@ -102,15 +103,15 @@ We want an agent that is driven to keep doing things. One way of looking at this
 
 ### Primitive Reward Options
 **Boredom**
-Desire for unique stimulation.
+* Desire for unique stimulation.
 
 **Curiosity**
-Similar to boredom but likely computed in a slightly different way.
-Desire to learn following predictive "surprise".
+* Similar to boredom but likely computed in a slightly different way.
+* Desire to learn following predictive "surprise".
 
 **Learning Degree**
-Reward based on how much the agent learns over a period.
-Can be risky as it may discourage convergence of policy. So perhaps works better when only measured against the learning degree within modelling engine.    
+* Reward based on how much the agent learns over a period.
+* Can be risky as it may discourage convergence of policy. So perhaps works better when only measured against the learning degree within modelling engine.    
     
 
 # Importance of Conscious Feedback
