@@ -1,4 +1,6 @@
-This page summarises some of the known neuroscience, observations, and assumed mechanisms that underly the design in [[Proto AGI v1]].
+This page forms part of the [[Proto AGI v1]] series.
+
+It summarises some of the known neuroscience, observations, and assumed mechanisms that underly the proto AGI design.
 
 # Neuroscience
 # Brain development
