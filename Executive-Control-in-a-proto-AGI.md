@@ -182,9 +182,11 @@ Example:
 * Then extend to actually producing action planning.
 
 ## Worked Example - Primitive Rewards plus High-level Goals
-We now look at how we can train the executive control layer to understand and target high-level goals. In order to "trust" our policy, and produce biologically plausible solution, our network will not be pre-trained to understand high-level rewards based on the actual goal, nor will be use external training force based on measurement against the high-level goal. Rather, we will provide the high-level goal as "sense" input to the agent, and depend on the existence of primitive rewards as the training force.
+We now look at how we can train the executive control layer to understand and target high-level goals. In order to "trust" our policy, and produce biologically plausible solution, our network will not be pre-trained to understand high-level rewards based on the actual goal, nor will be use external training force based on measurement against the high-level goal. Rather, we will provide the high-level goal as "sense" input to the agent, and depend on i) the existence of primitive rewards as the training force, ii) the fact that the primitive rewards coincide with the high-level goal signal, and iii) a modelling capability that will discover the relationship and subsequently understand goal signals in the absence of primitive rewards.
 
 ![with-modelling](files/Executive-control-with-modelling.png)
+
+We will include a modelling capability that the policy network can _choose_ whether or not to use at each time step.
 
 In a full solution, the primitive rewards will be supplied from lower-level layers, and the goal will be indicated by something in the environment that the agent must interpret. For example, a sign denoting the target goal position. For the purpose of focused experimentation, we will simulate the existence of the lower-level layers by providing our own high-level representations directly to the executive control layer. Simulated integrations will include:
 * input as high-level representation of environment
@@ -196,7 +198,19 @@ Primitive rewards material to this design include:
 * Pain
 * Pleasure
 
-We will present both primitive rewards and high-level goals as inputs to the high-level layer in order to give the policy the opportunity to adapt its behaviour to maximise rewards. We will include a modelling capability that the policy network can _choose_ whether or not to use at each time step.
+The agent will be trained with primitive rewards that will encourage it to achieve maximum pleasure, with least pain, and with the most efficient trajectory. We will present both primitive rewards and high-level goals as inputs to the high-level layer in order to give the policy the opportunity to adapt its behaviour to maximise rewards.
+
+### Add model-free learning
+We assume that the above approach causes the modelling engine to develop a model of the relationship to the goal signal and low-level rewards, and that the policy learns to choose between its own devices and the output from the modelling engine to achieve maximum primitive rewards. Now we can use the goal signal to cause the agent to perform different tasks, and the agent will continue to use the modelling engine to drive its actions.
+
+How do we turn those actions into further learning of the policy itself? It's like we need some form of hebian learning, where the repitition of an action alone is sufficient to cause learning. One option is to use the trajectories produced by this system to train a secondary predictive network. The task of the predictive network is merely to predict what the next action will most likely be, given the current state. In other words, a standard policy of the form `π = p(a|s)`.
+
+So we collect a cache of past trajectories, and use them, in conjunction with supervised learning and generated samples, to train the secondary predictive policy off the main policy. We probably want the predictive network to calculate and output an uncertainty too.
+
+Now the main policy has three options for deriving the next action: calculate the next itself, use the output from the modeller, or use the output from the predictor.
+
+![with-modelling-and-prediction](files/Executive-control-with-modelling-and-prediction.png)
+
 
 # Importance of Conscious Feedback
 
