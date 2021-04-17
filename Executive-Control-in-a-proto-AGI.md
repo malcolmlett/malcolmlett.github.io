@@ -159,9 +159,7 @@ Most RL methods today don't trust the policy with much. They hide a number of ke
 * Execution strategy. 
 	* Model based techniques execute the path search as a mechanical process that the polucy has no control over. 
 
-I want a policy that can "think". One that can choose inaction in order to mull over the options. So I need to trust it more. This includes with goal, rewards, but most importantly with execution strategy. 
-
-I treat mental action the same as physical action. In order to include mental actions within the policy gradient calculations, I  include those actions in the value estimate. 
+I want a policy that can "think". One that can choose inaction in order to mull over the options. So I need to trust it more. This includes with goal, rewards, but most importantly with execution strategy. I treat mental action the same as physical action. In order to include mental actions within the policy gradient calculations, I include those actions in the value estimate. 
 
 Example tasks:
 * Planning: learn to simulate possible paths from model without carrying them all out. Great for efficiency in real world. 
@@ -182,23 +180,19 @@ Example:
 * Then extend to actually producing action planning.
 
 ## Worked Example - Primitive Rewards plus High-level Goals
-We now look at how we can train the executive control layer to understand and target high-level goals. In order to "trust" our policy, and produce biologically plausible solution, our network will not be pre-trained to understand high-level rewards based on the actual goal, nor will be use external training force based on measurement against the high-level goal. Rather, we will provide the high-level goal as "sense" input to the agent, and depend on i) the existence of primitive rewards as the training force, ii) the fact that the primitive rewards coincide with the high-level goal signal, and iii) a modelling capability that will discover the relationship and subsequently understand goal signals in the absence of primitive rewards.
+We now look at how we can train the executive control layer to understand and target teacher specified goals. In order to "trust" our policy, and produce biologically plausible solution, our network will not be pre-trained to understand high-level rewards based on the actual goal, nor will we use any externally driven RL mechanism based on measurement against the goal. Rather, we will provide the teacher goal as high-level "sense" input to the agent, and depend on i) the existence of primitive rewards as the training force, ii) the fact that the primitive rewards coincide with the teacher goal signal, and iii) a modelling capability that will discover the relationship and subsequently understand goal signals in the absence of primitive rewards.
 
 ![with-modelling](files/Executive-control-with-modelling.png)
 
-We will include a modelling capability that the policy network can _choose_ whether or not to use at each time step.
+The policy network will learn to _choose_ whether or not to use the modelling capability at each time step.
 
-In a full solution, the primitive rewards will be supplied from lower-level layers, and the goal will be indicated by something in the environment that the agent must interpret. For example, a sign denoting the target goal position. For the purpose of focused experimentation, we will simulate the existence of the lower-level layers by providing our own high-level representations directly to the executive control layer. Simulated integrations will include:
-* input as high-level representation of environment
-* input as high-level representation of goal
-* input as high-level representation of primitive reward
+In a full solution, the primitive rewards will be supplied from lower-level layers, and the teacher goal will be indicated by something in the environment that the agent must interpret. For example, a sign denoting the target goal position. For the purpose of focused experimentation, we will simulate the existence of the lower-level layers by providing our own high-level representations directly to the executive control layer. Simulated integrations will include:
+* input of high-level representation of environment
+* input of high-level representation of primitive reward
+* input of high-level representation of teacher goal
 * actions applied against a high-level representation of a simple environment (eg: grid-world office space with simple left/right/up/down movements).
 
-Primitive rewards material to this design include:
-* Pain
-* Pleasure
-
-The agent will be trained with primitive rewards that will encourage it to achieve maximum pleasure, with least pain, and with the most efficient trajectory. We will present both primitive rewards and high-level goals as inputs to the high-level layer in order to give the policy the opportunity to adapt its behaviour to maximise rewards.
+Humans have envolved capabilities to learn through many mechanisms from birth, such as to receive rewards via smiles, and hugs, other body language, and voice intonation signals. Our solution is not advanced enough to learn from any of those sorts of signals and thus we must opt for significantly more simplistic methods that operate against the primitive reward signals that we can easily embed: pain and pleasure.
 
 ### Add model-free learning
 We assume that the above approach causes the modelling engine to develop a model of the relationship to the goal signal and low-level rewards, and that the policy learns to choose between its own devices and the output from the modelling engine to achieve maximum primitive rewards. Now we can use the goal signal to cause the agent to perform different tasks, and the agent will continue to use the modelling engine to drive its actions.
@@ -211,6 +205,20 @@ Now the main policy has three options for deriving the next action: calculate th
 
 ![with-modelling-and-prediction](files/Executive-control-with-modelling-and-prediction.png)
 
+The predictor network acts entirely on the current state, unaware of the goal. It produces habits that are triggered by familiar states, without consideration to what the agent is actually trying to achieve at the time. This would seem to emulate human behaviour in some respects. For example, the experience of walking into a room and absent mindedly carrying out a particular sequence of actions that you routinely do, when you actually meant to do something else. These "slips of action" are a known effect in humans and relate to how strongly the habitual action is wired, and the brain's mechanism for choosing between habitual or goal-directed behaviour (de Wit _et al_, 2012).
+
+### Future enhancements
+**Control Policy Goal**
+* Feed goal signal from control policy to prediction policy so that it can adjust its predictions based on the current goal.
+* This may or may not be realistic in a biological sense, as it will impact the occurrence of "slips of action".
+* Introducing this control policy goal into the predictive circuit will also significantly reduce stability because the solution needs a way of enforcing convergence of the goal signal to actually represent the policy's goal.
+
+### Training
+_(tbd)
+
+...collapsing box of pain...
+
+...bird training...
 
 # Importance of Conscious Feedback
 
@@ -255,3 +263,7 @@ Learning to balance when walking (intermediate layer reward)
 * Possible mechanism:
     * Switch on/off based on pressure on soles the feet.
 
+
+# References
+
+de Wit, S., Watson, P., Harsay, H. A., Cohen, M. X., van de Vijver, I., & Ridderinkhof, K. R. (2012). Corticostriatal connectivity underlies individual differences in the balance between habitual and goal-directed action control. The Journal of neuroscience : the official journal of the Society for Neuroscience, 32(35), 12066–12075. https://doi.org/10.1523/JNEUROSCI.1088-12.2012
