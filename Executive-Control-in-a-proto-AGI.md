@@ -32,27 +32,12 @@ In what is certainly an oversimplication, we will use the following view of evol
 * Self-aware Executive Control
     * This stage builds on the previous by adding self-driven goals and rewards, and the conscious feedback loop that enables the system to maintain stability.
     
-    
-With these three stages in mind, we can measure the progression of capability of our proposed solutions.
-
+With these three stages in mind, we will be able to measure the progression of capability of our proposed solutions.
 
 # Rewards
 
-__(tbd: much of this should move to [[General Intelligence Classifications]]).
-
-## Reward Categories
-The rewards that a high-functioning general intelligence learns from are complex. In order to attempt to make sense of that, the following diagram categorises the rewards and illustrates how complex those rewards are to learn useful policies from.
-
-![reward categories](files/Executive-control-reward-categories.png)
-
-|Reward Category|Reward Description|Policy Description|
-|---|---|---|
-|Primitive Rewards|These are rewards that can be supplied to a network through hard-coded mechanisms, using simple raw signals such as from primitive senses. In biology, these would be the earliest to evolve. In a complex environment, a 'teacher' may choose to leverage some of these mechanisms (eg: pain or pleasure). These signals are often sparse, and with low-fidelity (eg: I'm either hungry or I'm not). Examples: pain, hunger, hunger satiation, pleasure, effort, predictive errors.|It is hard for an AI to learn a good policy from such rewards, particularly due to their sparse and low-fidelity nature. However, given that this occurs at the most basic level of agent learning, the policy search space is very large. In many AI settings, resultant limb movements can be jerky. This can be improved by including suitable additional primitive rewards that help to improve the 'quality' (eg: effort can be used to influence the efficiency of ligament movement). Biology has the same problems as AI does with primitive rewards: in complex environments with high dimensionality, it takes a long time to optimise for a good result. Evolution took a long time from single-celled organism to mammals.|
-|Sense-interpretation Dependent|This category of reward requires trained neural networks for interpretation of senses. It may even require some level of cognitive ability, but it does not require the level of high-order intelligence required for general intelligence. It includes rewards received by interpreting social feedback, such as from someone critiquing our actions (a 'teacher' in general terms), or from the result of our social interactions with potential friends. It also includes other cognitive interpretation of senses, such as 'surprise' or 'uncertainty' (_a la_ the free energy principle). Examples: teachers saying "good boy" or "no", teacher smiles, teacher frowns, popularity, de-friending, isolation. This form of feedback is often higher-fidelity, but can be frequent or sparse.|Complex networks are required to undestand social cues, based on interpretation of the senses. This form of policy builds on top of the policy learned from primitive rewards, in the sense that the agent likely would never reach the cognitive ability to intepret its senses sufficiently to understand social feedback it it were not for the primitive rewards acting as a bootstrap mechanisms for learning.|
-|Achievement|Rewards that depend entirely on the agent's own measure of success. In other words, rewards that the agent gives to itself, based on a reward measure that it has devised itself. These rewards depend on mental models that the agent builds about the world, based on experience and its ability to deduce self-consistent meaning from its experience. Examples: achieving goals, reflecting on one's own character and/or lifestyle, perfectionism.|Determination of these rewards depend on systems that support dynamic mental-modelling of the world, and for determining goals based on those mental-models.|
-
 ## Interactions across Hierarchical Rewards
-Each higher-order reward builds upon the policy trained via the lower-order reward. Thus they form a hierarchy. There are approximately two ways in which these categories of reward can interplay:
+Each higher-order reward builds upon the policy trained via a lower-order reward. Thus they form a hierarchy. There are approximately two ways in which these categories of reward can interplay:
 * Refinement
     * Each higher-order reward provides higher fidelity or a more fine-grained frequency of feedback, making it easier to train the policy to follow the best path.
 * Supersedence
@@ -83,13 +68,13 @@ So, a likely training approach is:
     * Effective reward is taken as an equally weighted average across the three reward layers, thus a strong high-order reward can counteract a weak primitive penalty.
 
 ## Reward components
-Some rewards that we might use, as per the categories above:
-* Primitive rewards
+Some rewards that we might use (grouped by reward category):
+* Simple primitive rewards
     * pain
     * satiation
     * learning amount
     * predictive errors (eg: in training sensorimotor network)
-* Sense intepreted
+* Domain-specific primitive rewards
     * Uncertainty / curiosity
 
 _more analysis: tbd_
@@ -192,7 +177,7 @@ In a full solution, the primitive rewards will be supplied from lower-level laye
 * input of high-level representation of teacher goal
 * actions applied against a high-level representation of a simple environment (eg: grid-world office space with simple left/right/up/down movements).
 
-Humans have envolved capabilities to learn through many mechanisms from birth, such as to receive rewards via smiles, and hugs, other body language, and voice intonation signals. Our solution is not advanced enough to learn from any of those sorts of signals and thus we must opt for significantly more simplistic methods that operate against the primitive reward signals that we can easily embed: pain and pleasure.
+Humans have envolved capabilities to learn through many mechanisms from birth, such as to receive rewards via smiles, and hugs, other body language, and voice intonation signals. Our solution is not advanced enough to learn from any of those sorts of signals and thus we must opt for significantly more simplistic methods that operate against the primitive reward signals that we can easily embed: pain, pleasure, and effort.
 
 ### Add model-free learning
 We assume that the above approach causes the modelling engine to develop a model of the relationship to the goal signal and low-level rewards, and that the policy learns to choose between its own devices and the output from the modelling engine to achieve maximum primitive rewards. Now we can use the goal signal to cause the agent to perform different tasks, and the agent will continue to use the modelling engine to drive its actions.

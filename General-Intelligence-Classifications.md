@@ -214,13 +214,17 @@ Learning, and adaptation in general, can be broken down into a few phases. They 
     * Typically only occurs over medium to long timescales - hours to years.
     * Examples: walking, talking, working with the hands, driving a car, learning to think, learning problem solving skills.
 
-I suspect that for the majority of new physical and mental skills, their development undergoes each phase in turn. In order to clarify this, I offer a learning example annotated with how I suspect it interacts with the phases:
+I suspect that for the majority of new physical and mental skills, their development undergoes each phase in turn.
+
+## Example
+In order to clarify this, I offer a learning example annotated with how I suspect it interacts with the phases:
 * A right-handed child is learning to write with a pen. They first pick up the pen with their left hand, and upon instruction swap the pen to their right hand. This is just-in-time adaptation.
 * The event also feeds into the memorisation phase: in the next class they will remember being told to use the right hand. They will need to carry that out consciously for a few times before a _habit_ (long term potentiation) sets in.
 * During practice they will be told many things about how letters are formed, about how they should look. All of those instructions (at least those not forgotten) will initially be adapted to through memorisation, but will also be used to build mental models about hand writing in general, and about the construction and appearance of individual letters. Following that, the teacher no longer needs to give feedback when the child's writing is messy - because they will judge that for themselves. Furthermore, the child will use the teacher's and their own feedback to develop mental models about how to drive their hands and fingers in order to produce the desired outcome.
 * Initially memorisation and mental models will continue to be used by the child to drive their actions and judge their own success. Through practice, and over time, the ability to control the pen develops, the quality of writing improves, and there will be less dependency on memories and mental models to govern action. Eventually they will cease to be used on a regular basis - once the skill has been achieved sufficiently that the child no longer consciously controls how to write. The mental models may be occassionaly consulted when making a mistake or writing some less familiar.
 * Later, when learning maths, the writing skill is depended on without conscious control, and it frees up the learning phases for the more complicated task at hand.
 
+## Capabilities required for adaptive phases
 The above phases suggest certain machinery:
 1. Just-in-time adaptation depends on:
     * Short-term working memory.
@@ -246,55 +250,100 @@ On a side note, for many years neuroscience and psychology have struggled to und
 (tbd: probably need to add some extra phases to support different biological neural potentiation levels)
 
 
-# Human Training Signals
+# Error and Reward Training Signals
 
-How do humans receive the error signals used in supervised learning circuitry, and reward signals that are used in reinforcement learning mechanisms within the brain?
+How do humans receive the error signals used in supervised learning circuitry, and reward signals that are used in reinforcement learning mechanisms within the brain? This section examines error signals and rewards across biology and AI.
 
 ## Reward Levels
-**Simple primitive rewards:**
-* Includes:
-    * Pain / Pleasure 
-    * Hunger / Satiation
-    * Temperature discomfort 
-    * Learning quotient (curiosity, dopamine signalling?) 
-* These are just simple wiring-level reward signals that grow during foetal development.
-* Operates within System 0 thought.
 
-**Domain specific primitive rewards:**
-* Includes:
-    * Smiles
-    * Frowns
-    * Fear (primitive recognition only) 
-    * Body language (primitive recognition only, if any)
-* Reward is processed via genetically embedded neural networks
-* Sometimes results in hormone signals that then act as simple primitive rewards/learning adjustment.
-* Operates within System 0 thought.
+The rewards that a high-functioning general intelligence learns from are complex. In order to attempt to make sense of that, the following diagram categorises the rewards and illustrates how complex those rewards are to learn useful policies from.
 
-**Teacher rewards:**
-* Rewards and punishments given by someone fulfilling the general sense of a teacher role at the time.
-* Includes:
-    * Body language 
-    * Telling off
-    * Encouragement 
-* Reward is processed via mental modelled hierarchical learning, that is built up on top of domain specific primitive rewards.
-* Probably still with some genetically embedded propensity to learn these models.
-* Operates within System 1 and 2 thought.
+![reward categories](files/Executive-control-reward-categories.png)
 
-**Internalised rewards:**
-* Includes:
-    * Internalised version of all of teacher rewards mentioned above
-    * Sense of Achievement (internalised encouragement) 
-    * Fear (internalised discouragement) 
-    * Surprise (depends on learned models and prediction) 
-    * Impatience 
-* These are habitually formed internalisation of teacher rewards. ie: from slow prediction learning systems.
-* Operates within System 1 thought.
+**Simple Rewards:**
+* Reward signals that are fed from simple wiring-level mechanisms that don't require training of a neural network to interpret.
 
-**Self-determined rewards:**
-* Includes:
-    * Achievement of own goals
-* Here, mental modelling is used to construct goals. Then mental modelling and prediction is used to recognise achievement or the lack thereof.
-* Operates almost entirely within System 2, but also further adds to internalised rewards and can even be used to change past learned internalised rewards (although often with some difficulty).
+**Sense-interpretation Rewards:**
+* Requires trained neural networks for interpretation of senses. It may even require some level of cognitive ability, but it does not require the level of high-order intelligence required for general intelligence.
+
+**Achievement Rewards:**
+* Rewards that depend entirely on the agent's own measure of success.
+
+|Order|Reward Category|
+|---|---|
+|1|Primitive Rewards|
+|2|Sense-interpretation Dependent|
+|3|Achievement|
+
+### Simple Primitive Rewards
+Examples:
+* Pain / Pleasure 
+* Hunger / Satiation
+* Temperature discomfort 
+* Learning quotient (curiosity, dopamine signalling?) 
+* Effort
+* Predictive errors
+
+Often sparse and low-fidelity. Operates within System 0 thought.
+
+These are the simplest reward signals, supplied to a network from simple raw primitive senses (eg: pain). The reward signals are fed from simple wiring-level mechanisms that don't require training of a neural network to interpret. In biology, these would likely be the earliest reward mechanisms to evolve, and in the individual would grow and be largely fully formed during foetal development.
+
+In a complex environment, a 'teacher' may choose to leverage some of these mechanisms (eg: pain or pleasure). These signals are often sparse, and with low-fidelity (eg: I'm either hungry or I'm not).
+
+It is hard for an AI to learn a good policy from such rewards, particularly due to their sparse and low-fidelity nature. However, given that this occurs at the most basic level of agent learning, the policy search space is very large. In many AI settings, resultant limb movements can be jerky. This can be improved by including suitable additional primitive rewards that help to improve the 'quality' (eg: effort can be used to influence the efficiency of ligament movement). Biology has the same problems as AI does with primitive rewards: that in complex environments with high dimensionality it takes a long time to optimise for a good result. For example, evolution took a long time to migrate from single-celled organism to mammal.
+
+### Domain-specific Primitive Rewards
+Examples:
+* Smiles
+* Frowns
+* Fear (primitive recognition only) 
+* Body language (primitive recognition only, if any)
+* Surprise / uncertainty (_a la_ the free energy principle)
+
+Operates within System 0 thought.
+
+This category of reward requires neural networks for interpretation of senses, except that they are required prior to the opportunity to sufficiently learn from environmental experience. I assume that their network structure is thus genetically encoded, and that they are effectively "pre-trained" during foetal development. Sometimes also results in hormone signals that then act as simple primitive rewards/learning signals.
+
+### Teacher Rewards
+Examples:
+* Body language 
+* Telling off
+* Encouragement 
+* Social cues
+
+Operates within System 1 and 2 thought. Often higher-fidelity, but can be frequent or sparse.
+
+Rewards and punishments given by someone fulfilling the general sense of a teacher role at the time. The reward is processed via mental modelled hierarchical learning, that is built up on top of domain specific primitive rewards. Probably still with some genetically embedded propensity to learn these models.
+
+It includes rewards received by interpreting social feedback, such as from someone critiquing our actions, or from the result of our social interactions with potential friends. It also includes other cognitive interpretation of senses, such as 'surprise' or 'uncertainty' (_a la_ the free energy principle). Examples: teachers saying "good boy" or "no", teacher smiles, teacher frowns, popularity, de-friending, isolation.
+
+Complex networks are required to undestand social cues, based on interpretation of the senses. This form of policy builds on top of the policy learned from primitive rewards, in the sense that the agent likely would never reach the cognitive ability to intepret its senses sufficiently to understand social feedback it it were not for the primitive rewards acting as a bootstrap mechanisms for learning.
+
+### Internalised Rewards
+Examples:
+* Internalised version of all of teacher rewards mentioned above
+* Sense of Achievement (internalised encouragement)
+* Fear (internalised discouragement)
+* Surprise (depends on learned models and prediction)
+* Impatience
+
+Operates within System 1 thought.
+
+These are habitually formed internalisation of teacher rewards. ie: from slow prediction learning systems.
+
+### Self-determined Rewards
+Examples:
+* Achievement of own goals
+* Reflecting on one's own character and/or lifestyle
+* Perfectionism
+
+Operates within System 2 thought.
+
+Rewards that depend entirely on the agent's own measure of success.
+
+Here, mental modelling is used to construct goals, and then mental modelling and prediction is used to recognise achievement or the lack thereof. Thus, the agent rewards itself based on a measure that it has devised itself. These rewards depend on mental models that the agent builds about the world, based on experience and its ability to deduce self-consistent meaning from its experience.
+
+While it primarily operates within System 2, it also further adds to internalised rewards and can even be used to change past learned internalised rewards (although often with some difficulty).
 
 
 # Executive Control Capabilities
