@@ -260,20 +260,15 @@ The rewards that a high-functioning general intelligence learns from are complex
 
 ![reward categories](files/Executive-control-reward-categories.png)
 
-**Simple Rewards:**
-* Reward signals that are fed from simple wiring-level mechanisms that don't require training of a neural network to interpret.
+The rewards can be further distinguished into levels identified by their dependencies and where they apply within the development stages:
 
-**Sense-interpretation Rewards:**
-* Requires trained neural networks for interpretation of senses. It may even require some level of cognitive ability, but it does not require the level of high-order intelligence required for general intelligence.
-
-**Achievement Rewards:**
-* Rewards that depend entirely on the agent's own measure of success.
-
-|Order|Reward Category|
-|---|---|
-|1|Primitive Rewards|
-|2|Sense-interpretation Dependent|
-|3|Achievement|
+|Order|Thought Level|Reward Category|Brief Description|
+|---|---|---|
+|1|System 0       |Simple Primitive         |Wiring-level mechanisms that don't require training of a neural network|
+|2|System 1       |Domain-specific Primitive|Evolutionarily embedded neural networks "pre-trained" before birth|
+|3|System 1       |Internalised             |Automated habitualised form of teacher rewards|
+|4|Systems 1 and 2|Teacher                  |Conscious observation and interpretation of messages from teacher roles|
+|5|System 2       |Self-determined          |Fully conscious self judgement|
 
 ### Simple Primitive Rewards
 Examples:
@@ -304,6 +299,20 @@ Operates within System 0 thought.
 
 This category of reward requires neural networks for interpretation of senses, except that they are required prior to the opportunity to sufficiently learn from environmental experience. I assume that their network structure is thus genetically encoded, and that they are effectively "pre-trained" during foetal development. Sometimes also results in hormone signals that then act as simple primitive rewards/learning signals.
 
+### Internalised Rewards
+Examples:
+* Internalised version of all of teacher rewards mentioned above
+* Sense of Achievement (internalised encouragement)
+* Fear (internalised discouragement)
+* Surprise (depends on learned models and prediction)
+* Impatience
+
+Operates within System 1 thought. Frequent and high-fidelity.
+
+These are habitually formed internalisation of teacher rewards. Ie: from slow prediction learning systems. While they depend on teacher rewards to develop, they operate in a much less conscious way than teacher rewards, and thus are listed first.
+
+It's interesting to observe that this form of reward is the source of stress in humans, due in part to its high frequency and the fact that it is an internalised reward metric that may not be accurate.
+
 ### Teacher Rewards
 Examples:
 * Body language 
@@ -319,21 +328,9 @@ It includes rewards received by interpreting social feedback, such as from someo
 
 Complex networks are required to undestand social cues, based on interpretation of the senses. This form of policy builds on top of the policy learned from primitive rewards, in the sense that the agent likely would never reach the cognitive ability to intepret its senses sufficiently to understand social feedback it it were not for the primitive rewards acting as a bootstrap mechanisms for learning.
 
-### Internalised Rewards
-Examples:
-* Internalised version of all of teacher rewards mentioned above
-* Sense of Achievement (internalised encouragement)
-* Fear (internalised discouragement)
-* Surprise (depends on learned models and prediction)
-* Impatience
-
-Operates within System 1 thought.
-
-These are habitually formed internalisation of teacher rewards. ie: from slow prediction learning systems.
-
 ### Self-determined Rewards
 Examples:
-* Achievement of own goals
+* Reflection on achievement of own goals (more than just internalised achievement reward)
 * Reflecting on one's own character and/or lifestyle
 * Perfectionism
 
