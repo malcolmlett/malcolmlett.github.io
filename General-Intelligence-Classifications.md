@@ -263,7 +263,7 @@ The rewards that a high-functioning general intelligence learns from are complex
 The rewards can be further distinguished into levels identified by their dependencies and where they apply within the development stages:
 
 |Order|Thought Level|Reward Category|Brief Description|
-|---|---|---|
+|---|---|---|---|
 |1|System 0       |Simple Primitive         |Wiring-level mechanisms that don't require training of a neural network|
 |2|System 1       |Domain-specific Primitive|Evolutionarily embedded neural networks "pre-trained" before birth|
 |3|System 1       |Internalised             |Automated habitualised form of teacher rewards|
