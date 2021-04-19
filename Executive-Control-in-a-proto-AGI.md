@@ -36,6 +36,12 @@ With these three stages in mind, we will be able to measure the progression of c
 
 # Rewards
 
+## Training and Hard-wired Rewards
+
+We want to be careful to offload the executive control layer from having to manage lower level aspects of the system. So we will need to carefully tune which layers receive the RL rewards related to specific things.
+
+![reward-layers](files/Executive-control-reward-layers.png)
+
 ## Interactions across Hierarchical Rewards
 Each higher-order reward builds upon the policy trained via a lower-order reward. Thus they form a hierarchy. There are approximately two ways in which these categories of reward can interplay:
 * Refinement
@@ -80,7 +86,6 @@ Some rewards that we might use (grouped by reward category):
 _more analysis: tbd_
 
 ## Pure Intrinsic Motivation
-
 What if the solution is to get rid of external training altogether and use pure intrinsic motivation. The main intrinsic motivation drivers would be a combination of something like:
 - Mutual information (DIAYN)
 - Prediction
@@ -106,7 +111,6 @@ An example architecture using pure intrinsic motivation might look like:
 * Backprop pressure from training of layers above - encourages utility of state representation. Although, that pressure will be most effective only when applying rewards against the accuracy of the policy of the higher layers. 
 
 Primitive rewards would be applied at each level independently and simultaneously.
-
 
 ## Primitive Reward Techniques
 Referred to as _intrinsic motivation_ within the RL community - but I find that term misleading and prefer to use _primitive reward_. For a detailed analysis of common techniques within RL, see [[Survey of Reinforcement Learning]].
@@ -205,6 +209,7 @@ _(tbd)
 
 ...bird training...
 
+
 # Importance of Conscious Feedback
 
 In prior work I've hypothesised that conscious feedback (CF) is important because it acts as a feedback mechanism that the higher-order brain uses against itself to maintain stability. But how exactly does that work?
@@ -232,12 +237,6 @@ In humans, working memory appears to be a decentralised process. But we don't ne
 ![working-memory-variations](files/Executive-control-wm-variations.png)
 
 At this point the question becomes about what state, if any, that WM component holds. Or, is WM just a pass-through?
-
-# Training and Hard-wired Rewards
-
-We want to be careful to offload the executive control layer from having to manage lower level aspects of the system. So we will need to carefully tune which layers receive the RL rewards related to specific things.
-
-![reward-layers](files/Executive-control-reward-layers.png)
 
 ## Examples
 Learning to balance when walking (intermediate layer reward)

@@ -250,7 +250,7 @@ On a side note, for many years neuroscience and psychology have struggled to und
 (tbd: probably need to add some extra phases to support different biological neural potentiation levels)
 
 
-# Error and Reward Training Signals
+# Training Signals
 
 How do humans receive the error signals used in supervised learning circuitry, and reward signals that are used in reinforcement learning mechanisms within the brain? This section examines error signals and rewards across biology and AI.
 
@@ -341,6 +341,19 @@ Rewards that depend entirely on the agent's own measure of success.
 Here, mental modelling is used to construct goals, and then mental modelling and prediction is used to recognise achievement or the lack thereof. Thus, the agent rewards itself based on a measure that it has devised itself. These rewards depend on mental models that the agent builds about the world, based on experience and its ability to deduce self-consistent meaning from its experience.
 
 While it primarily operates within System 2, it also further adds to internalised rewards and can even be used to change past learned internalised rewards (although often with some difficulty).
+
+## Styles of RL Training Mechanism
+
+**Embedded:**
+* tbd
+
+**External:**
+* tbd
+
+With the above in mind, we another important term to define...
+
+**Embeddable:**
+* An RL mechanism or training technique that is capable of being embedded.
 
 
 # Executive Control Capabilities
