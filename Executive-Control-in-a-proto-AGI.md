@@ -205,9 +205,14 @@ The predictor network acts entirely on the current state, unaware of the goal. I
 ### Training
 _(tbd)
 
-...collapsing box of pain...
+Collapsing box of pain:
 
-...bird training...
+![box-of-pain](files/Executive-control-box-of-pain.png)
+
+Bird training
+
+![parrot-training](files/parrot-training.jpg)
+
 
 ## Adding Goals
 
