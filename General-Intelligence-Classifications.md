@@ -360,9 +360,12 @@ With the above in mind, we another important term to define...
 
 I now present a more detailed analysis of human mental capabilities, focussing primarily on capabilities under executive control.
 
+_(tbd: notes in "Page - To Note Down")_
+
 |Capability|Primary Thought Systems|Description|
 |---|---|---|
 |Prediction|System 0 + 1|..|
+|Habitial Action|System 0 + 1|..|
 |Emotions|System 0 + 1|..|
 |Spatial Understanding|System 1 + 2|..|
 |Social Understanding|System 1 + 2|..|

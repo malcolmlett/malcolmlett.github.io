@@ -168,7 +168,7 @@ Example:
 * _(tbd: needs diagram).
 * Then extend to actually producing action planning.
 
-## Worked Example - Primitive Rewards plus High-level Goals
+## Worked Example - Primitive Rewards plus Teacher Goals
 We now look at how we can train the executive control layer to understand and target teacher specified goals. In order to "trust" our policy, and produce biologically plausible solution, our network will not be pre-trained to understand high-level rewards based on the actual goal, nor will we use any externally driven RL mechanism based on measurement against the goal. Rather, we will provide the teacher goal as high-level "sense" input to the agent, and depend on i) the existence of primitive rewards as the training force, ii) the fact that the primitive rewards coincide with the teacher goal signal, and iii) a modelling capability that will discover the relationship and subsequently understand goal signals in the absence of primitive rewards.
 
 ![with-modelling](files/Executive-control-with-modelling.png)
@@ -208,6 +208,37 @@ _(tbd)
 ...collapsing box of pain...
 
 ...bird training...
+
+## Adding Goals
+
+How do we enable the executive control layer to have goals?
+
+![with-goals](files/Executive-control-with-goals.png)
+
+We want the goal to represent a state that the agent eventually reaches. The first naive approach is to measure the actual state against the goal and reward based on minimising the error. But the policy will maximise that reward by always outputting the current state. We want the goal to not just be a copy of the current state, but to represent a goal in the future. So increase the reward for how much in the future the goal is achieved. In simplistic terms we can do that by rewarding based on how different the goal is to the current state at the time it is emitted, but only grant the reward if it is achieved. Additionally, we can penalise for producing goals that are never achieved.
+
+Working through this a little further, at the time of the reward, pick the closest past goal and reward based on how different the state was to the goal at the time. Also, pick the past goal most different to the current state, and penalise for much different it is to the current state (penalise for not achieving a goal). Now turn that into a more continuous reward function and we have something like this for the reward at time `T`:
+
+```
+r(T) = Σ{t=0:T} |g(t) - s(t)| - |g(T) - s(T)|
+```
+
+That'll likely need a little more work. For one thing, when calculating rewards for a goal, it'll penalise past goals beacuse they are not achieved at time `T`, even if they were achieved at some other time in the past.
+
+![goal-rewards](files/Executive-control-goal-rewards.png)
+
+## Goal or Prediction?
+The biggest issue with the design so far is that the supposed _goal_ is really just a _prediction_ about future state, ie: the agent will maximise reward by always outputting a value that accurately predicts as far into the future as possible. A related issue is that there's no training pressure for the policy to use the current state of the goal in its determination of action. In other words, we're rewarding the agent for predicting the inevitable, rather than striving for something else.
+
+One way to enforce that the policy uses the goal is to maximise the mutual information between the goal and the actions that the policy takes. Something like:
+
+```
+I((a|s); g)
+```
+
+There is another way of looking at this though. A great way for the agent to succeed in its prediction is to intentionally make it happen, ie: to plan actions that lead to the predicted future state (aka goal). As it so happens I'm not the first to think of this approach, it's called [Active Inference](https://en.wikipedia.org/wiki/active_inference). So maybe this simple architecture could be used for goals.
+
+The idea of active inference suggests another tweak: that failed goals are still good if the agent learns from the experience. So perhaps we shouldn't penalise a failed goal (negative reward), but simply reduce the goal's reward contribution towards zero, and add a learning quotient on top. Coincidentally, this sort of thing is incorporated in an information theoretic way within the idea of active inference.
 
 
 # Importance of Conscious Feedback
