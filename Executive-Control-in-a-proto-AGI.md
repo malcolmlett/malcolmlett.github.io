@@ -315,6 +315,8 @@ Now the question remains whether we even need a NN policy after all that.
 A possible view, inspired by biology, is that both systems work in cooperation/competition:
 ![bayse-flow](files/Executive-control-bayes-flow.png)
 
+Another view is that it's looking more and more like we'd be best to focus on bayesian solutions for the executive control layer as our first priority. And only later add in the slower-learning NN approaches. This is starting to look like a more realistic path to true autonomous, self-motivated, self-governed general intelligence.
+
 ## Re-clustering with Memory
 When an observation reveals a bayesian inference prediction error, and this triggers the need for a cluster division, we don't have all the data points available anymore for re-analysis. But, maybe we do, because in the full solution there will be a memory of past events too that could be re-loaded and re-analysed.
 
