@@ -255,6 +255,77 @@ To emulate something close to human experience, it also needs to monitor its own
 For now, that process of self improvement will have to develop spontaneously as I don't know how to reward it for self analysis, and I hopefully shouldn't have to.
 
 
+# Bayesian Modelling
+
+## Online Hierarchical Bayesian Clustering
+It's not easy to do bayesian modelling if we don't have a method for extracting unique "features" to reason about. Given a visual field image, how would I identify that a certain section of that image represents one object as distinct from other objects in the scene? One way of doing that is noting the relative likelihoods of pixels that appear together vs those that are independent. So we need a mechanism that will identify discrete objects and events out of the state input, and we need to analyse for those discrete objects/events across the breadth of the state vector and across time. This will create the lowest level set of nodes in a bayesian model, from which further bayesian modelling can be built up, so it might be the first in a number of discrete bayesian layers.
+
+### A note on state vector representation
+Our hierarchical sense interpretation will blur the inter-object independence. So maybe need to apply regularisation that seeks to maximise independence of output nodes. Perhaps, and hopefully, that's what VAE regularisation does. Will need to investigate.
+
+### Sliding Window for Training
+To make this work, we need to turn existing hierarchical bayesian clustering algorithms into an online mode that can use new information to discover errors in previous clustering. It needs to work in an _aglomerative_ (add samples to build up a cluster) and _divisive_ (divide clusters) mode. A possible training setup is a sliding window of recent state samples:
+
+![sliding-window](files/Executive-control-sliding-window.png)
+
+In order to train on events with equal before/after states, we lag the point in time that training is applied to the middle of the sliding window and analyse only that state sample in relation to others. The comparisons will probably be performed as part of the bayesian clustering algorithm, or otherwise we could bootstrap through background calculations of mutual information.
+
+At runtime, the resultant clustered bayesian model can be used for predictions based on the current state, and the observation error would ultimately lead to re-clustering. The observation error might always lead to a "surprise" signal, and the magnitude of that surprise would ultimately be amplified according to a measure of "emotional affect".
+
+## Architecture
+![bayes-components](files/Executive-control-bayes-components.png)
+
+A possible architecture involves around three bayesian modelling systems:
+
+**Bayesian Modeller #1:**
+* Analyses inputs and performs online clustering
+* At inference time it emits the predicted category (the best matching cluster), and surprise at state components that aren't expected to occur with that category
+
+**Bayesian Modeller #2:**
+* Given the current state, predict the next action that maximises reward.
+* The policy will subsequent use Bayesian Modeller #3 to actually predict the expected reward from the action, and may choose to discard it.
+* The policy is now looking for an alternative suggested action.
+* Discarded actions are collected and used to reduce their likelihood of selection (reduced priors maybe?).
+* Modeller #2 can now produce a new recommendation.
+* As this uses bayesian techniques, it will adapt faster than a NN policy, so should help to train the agent faster.
+
+**Bayesian Modeller #3:**
+* Given an action output by the policy (either for actual physical action or just for simulation), predict most likely reward.
+* Actual reward subsequently received becomes the prediction error that will be used for re-training.
+
+So, we build into the architecture of the executive control layer an embedded mechanism that runs in a loop, predicting and simulating actions, analysing their rewards, and discarding them, until an action is simulated that is predicted to have useful reward.
+
+![bayes-arch](files/Executive-control-bayes-arch.png)
+
+### Active Inference
+Add to that a method of Active Inference, and its method of trading off exploitation vs exploration via learning likelihoods, and you've now got a very adaptable agent.
+
+### Bayesian Inferred Goals
+Additionally, it could make sense to incorporate goals. Goal inputs to the bayesian networks could help tailor their outputs more.
+
+More importantly, if Modeller #2 produces actions, it will be very unstable due to the fact that the benefit of an immediate next action depends on the policy, which changes over time. An alternative is to predict the desired state that will maximise expected rewards - ie: a goal. This has a nice advantage that it will be a much more constant output value over time.
+
+In the long term the actual goal would be decided as a result of bayesian inference and habitual predictions.
+
+And this finally starts to make sense to have an explicit goal representation floating through the executive control layer.
+
+### NN Policy
+Now the question remains whether we even need a NN policy after all that.
+
+A possible view, inspired by biology, is that both systems work in cooperation/competition:
+![bayse-flow](files/Executive-control-bayes-flow.png)
+
+## Re-clustering with Memory
+When an observation reveals a bayesian inference prediction error, and this triggers the need for a cluster division, we don't have all the data points available anymore for re-analysis. But, maybe we do, because in the full solution there will be a memory of past events too that could be re-loaded and re-analysed.
+
+Example:
+* I'm told this three-legged thing is not a chair. Oh now I need to reassess my assumptions. Are all three-legged things not chairs? Memory recall occurs: oh, I remember three-legged chairs.
+
+The recall of those related memories would need to be loaded into working memory, and the whole executive control layer would need to partake in this re-training exercise. On the face of it, this seems like it's commandeering the executive control layer for the training task related to one particular component.
+
+But maybe that's what the executive control layer is all about. The automated machinery needed in order to train these advanced computational systems. It just happens to be self-aware in order to apply top-level governance and prioritisation.
+
+
 # Importance of Conscious Feedback
 
 In prior work I've hypothesised that conscious feedback (CF) is important because it acts as a feedback mechanism that the higher-order brain uses against itself to maintain stability. But how exactly does that work?
@@ -292,7 +363,11 @@ Learning to balance when walking (intermediate layer reward)
 * Possible mechanism:
     * Switch on/off based on pressure on soles the feet.
 
+Office world (copied from Illanes _et al_, 2020):
+![office-world](files/office-world.png)
 
 # References
 
 de Wit, S., Watson, P., Harsay, H. A., Cohen, M. X., van de Vijver, I., & Ridderinkhof, K. R. (2012). Corticostriatal connectivity underlies individual differences in the balance between habitual and goal-directed action control. The Journal of neuroscience : the official journal of the Society for Neuroscience, 32(35), 12066–12075. https://doi.org/10.1523/JNEUROSCI.1088-12.2012
+
+Illanes, L., Yan, X., Icarte, R. T., McIlraith, S. A. (2020). Symbolic Plans as High-Level Instructions for Reinforcement Learning. Proceedings of the Thirtieth International Conference on Automated Planning and Scheduling (ICAPS 2020). http://www.cs.toronto.edu/~lillanes/papers/IllanesYTM-icaps2020-symbolic.pdf
