@@ -138,7 +138,7 @@ Now, there are a few gotchas here.
 
 5. In mammals, the lowest level feedback-based sensorimotor development is probably further segregated into its independent modalities: muscle control and muscle senses learned against each other independent of other senses. The vision sense can only be incorporated into that circuit at a much higher level, where it can make sense of the differences when looking at the arm vs looking elsewhere.
 
-## Reinforcement learning for Proprioceptimotor System
+### Reinforcement learning for proprioceptimotor system
 
 Now we use RL to train the motor control policy (MC policy) for trajectories that best lead towards goal states. We'll use the current agent's state representation for the goals, so we do not _a priori_ know the parameters of the reward function. We must use data collected from the current policy, or at least near to it. During the training runs in the prior section, we'll collect the full unbroken trajectory within a sequential data buffer `D = (d1, d2, d3, ....dN)`, where `di` is the tuple of data taken at time `t`:
 
@@ -163,7 +163,7 @@ As our policy network produces deterministic continuous actions, we'll use the [
 
 The RL learning discussed here will be alternated with the jitter and supervised learning discussed above. Thus, the low-level MC policy will accurately learn `p(a|s(t),s(t+i)` for all of `1 <= i <= n`.
 
-## Low level state representation
+### Low level state representation
 
 How do we train the state representation that the sense intepretation network will output? In the complete architecture, the state representation will be used as input to higher level networks, and possibly the goal representation too. We don't yet know what kind of information the high level networks will require, so we have only a vague notion that the state representation needs to be useful. This can be clarified a little by stating that it must produce a high contrast of outputs for highly different inputs. We paraphrase this vague requirement as requiring the representation to have _high saliency_.
 
@@ -202,24 +202,24 @@ I suspect that the best result is a combination of:
 
 ![Low Level state saliency](files/An-agi-architecture-v1-low-level-state-saliency.png)
 
-## [NEEDS WORK] Proprioception
+### Body schema
 
-    NEEDS WORK - Turns out that biology actually does have proproceptive senses. This section assumed they do not exist and needs updating.
+In humans, proprioception is achieved through aggregation of direct senses and through mental tracking of limb position. It depends on three distinct physical senses, listed in order of highest significance first: i) muscle spindle fibres plus golgi tendon organs, ii) skin, and iii) vision (Proske & Gandevia, 2012). The muscle spindle fibres and tendon organs do not alone accurately track limb position because they encode joint angles, but not limb length. Thus the brain also maintains a _body schema_ that mentally tracks the position of limbs, using input from the senses mentioned (Proske & Gandevia, 2012. section 4a).
 
+In contrast to most other senses, in humans the raw proprioceptive senses are not consciously accessible. Rather we appear to be aware of the current state of the body schema. For example, you can lie still, close your eyes, and know where every part of your body is - but it's believed that you don't experience any direct awareness of the muscle spindle fibre senses. Furthermore, while you may not be consciously attentive to the proprioceptive sense at all times, that information is always available. This is in the same way that the touch sense of your clothes on your skin is available available, but you are only attentive to it occassionally.
 
-If mirroring humans, proprioception has a number of ways in which it connects into the system:
+Putting that together, we have the following components for prioprioception and body schema awareness:
 * Lowest level sensorimotor system trained via raw motor outputs and raw proprioceptive senses, probably with no input from even skin touch sense, and definitely none from vision.
-* Touch sense feeds into sensorimotor system, but not sure exactly where.
-* Intermediate layer uses high-level proprioception output to help plan movement
+* Touch and vision senses fed into association cortices -- aka intermediate layer.
+* Intermediate layer combines proprioceptive senses with touch and vision senses to maintain body schema
+* Intermediate layer uses body schema to help plan movement
 * Intermediate senses feed into proprioception system in order to train proprioceptive model and update proprioceptive state (eg: apply error correction)
-* High level proprioceptive state fed in a first-class sense to executive control layer.
-    * Note: in contrast to other senses, there is no raw proprioceptive sense data fed into executive control.
-    * eg: you can lie still, close your eyes, and know where every part of your body is - but it's believed that you don't experience any direct awareness of the muscle spindle fibre senses. Furthermore, while you may not be consciously attentive to the proprioceptive sense at all times, that information is always available. This is in the same way that the touch sense of your clothes on your skin is available available, but you are only attentive to it occassionally.
+* High level body schema state fed in as input to executive control layer.
 
 ![proprioception](files/An-agi-architecture-v1-proprioception.png)
 
-### Proprioception Training
-In order to train the proprioceptive system, need to tee off the following against each other:
+### Body schema training
+In order to train the body schema system, need to tee off the following against each other:
 * proprioceptive prediction of location of limbs
 * visual interpretation of location of limbs
 * ability to use that to predict accurate movements
@@ -231,6 +231,25 @@ Also:
     
 tbd:    
 * Which level of state representation to use for training?
+
+## Ocular System
+
+Drawing inspiration from proprioceptimotor system, a first draft of an ocular system is as follows:
+
+![ocular-system](files/An-agi-architecture-v1-ocular-system.png)
+
+Corollary discharge, and the closely related term _efference copy_, have an important part to play in the ocular system for predicting the effects of movement on vision. The visual image changes entirely due to agent for any of the following reasons:
+* main body moves, moving the eyes with it
+* eye angle changes
+* eye focus changes
+
+Corollary discharge is achieved by predicting the effect of those changes on the visual input, and removing the "surprise" from the image change as a result. This plays in the reverse too: if an attempt is made to move the body or eyes and the perceived image does not change in accordance, then this should lead to surprise.
+
+## Audiovocal System
+
+Similar to ocular system.
+
+Has similar corollary discharge mechanism to remove one's own production of sound from the 'surprise' signal. And the inverse of that: surprise at not producing sound.
 
 ## Layering-up for Higher-order Motor Control
 
@@ -246,6 +265,11 @@ For our solution, the representational levels will be found through convergence 
 
 ![representational gradient](files/An-agi-architecture-v1-representational-gradient.png)
 
+## Areas Requiring More Work
+
+### Where and What systems
+(tbd)
+
 
 # Intermediate Layer
 
@@ -253,7 +277,7 @@ For our solution, the representational levels will be found through convergence 
 
 ![action layers](files/An-agi-architecture-v1-action-layers.png)
 
-### Hierarchical Action Errors
+### Hierarchical action errors
 
 1. Executive control layer: Send "desire signal" from top layer. eg: "touch finger to nose"
 2. Executive control layer: Observe error, record, and send from executive control layer to intermediate layer.
@@ -270,7 +294,7 @@ Humans use predictive signals from higher-order layers to help in the inference.
 ![prediction-from-above](files/An-agi-architecture-v1-prediction-from-above.png)
 
 
-### Training Strategy for Intermediate Level
+### Training strategy for intermediate level
 
 So, how to actually train the intermediate-level?
 
@@ -426,6 +450,8 @@ How to measure utility of an explicit conscious feedback loop, vs just depending
 Eysenbach, B., Gupta, A., Ibarz, J., and Levine, S. (2018). Diversity is All You Need: Learning Skills without a Reward Function. ArXiv. https://arxiv.org/abs/1802.06070
 
 Nair, A., Pong, V., Dalal, M., Bahl, S., Lin, S., and Levine, S. (2018). Visual Reinforcement Learning with Imagined Goals. ArXiv. https://arxiv.org/abs/1807.04742
+
+Proske, Uwe; and Gandevia, Simon C. 2012, Oct. "The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force". Physiological review. https://doi.org/10.1152/physrev.00048.2011 ([full text](https://journals.physiology.org/doi/full/10.1152/physrev.00048.2011)).
 
 
 (Added 2021-02-03. Labels: work-in-progress)

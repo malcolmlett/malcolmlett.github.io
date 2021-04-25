@@ -72,6 +72,18 @@ Piaget's theories on human child intellectual development come from the 1950s an
 
 A couple of good writeups can be found on the [massey.ac.nz](https://www.massey.ac.nz/~wwpapajl/evolution/assign2/MH/webpage.htm), and [lumenlearning.com](https://courses.lumenlearning.com/suny-lifespandevelopment/chapter/piaget-and-the-sensorimotor-stage/) websites, including descriptions of the other stages.
 
+
+## Corollary discharge and efference copy
+These are two more or less synonymous terms with different histories. 
+
+The basic premise is that the brain sends a copy of its intended motor command to secondary system that predicts the effect on the senses. This is used for example to counter the effect of eye or body movement on the visual image that we perceive. It is used to determine whether the observed change in image is caused by our own movement, or the movement of the scene. Vision is the only proven use of this mechanism, but it is believed that it may play a larger role throughout other systems within the brain. For example, one 2020 paper (https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000639) focused on the amygdala and its management of emotions, suggested that the corollary discharge mechanism may be employed in how rewards are calculated by the brain. 
+
+See:
+* https://en.wikipedia.org/wiki/Corollary_discharge_theory
+* https://en.wikipedia.org/wiki/Efference_copy
+* http://www.scholarpedia.org/article/Corollary_discharge_in_primate_vision
+
+
 ## Memory
 The kinds of memory in humans have been categorised in order to try to understand them. The categories are ([source](https://www.predictivesafety.com/blog/the-7-types-of-memory-and-how-to-improve-them)):
 * Short-term Memory: memory that lasts for only about 20 to 30 seconds.
