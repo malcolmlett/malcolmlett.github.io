@@ -258,7 +258,7 @@ How do humans receive the error signals used in supervised learning circuitry, a
 
 The rewards that a high-functioning general intelligence learns from are complex. In order to attempt to make sense of that, the following diagram categorises the rewards and illustrates how complex those rewards are to learn useful policies from.
 
-![reward categories](files/Executive-control-reward-categories.png)
+![reward categories](files/GI-classifications-reward-categories.png)
 
 The rewards can be further distinguished into levels identified by their dependencies and where they apply within the development stages:
 
