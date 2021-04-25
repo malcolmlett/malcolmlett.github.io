@@ -65,7 +65,7 @@ Analysis of brain layers and how we'll emulate them in an AI:
 
 |Layer|Description|Re-interpretation|AI Architecture Layer|
 |---|---|---|---|
-|1. Spinal chord|Reflexes|Mechanical layer. eg: senses to stop motorn at end of motion.|Omitted|
+|1. Spinal chord|Reflexes|Mechanical layer. Reflexes. Some avenue for signal strength attenuation. eg: senses to stop motor at end of motion.|Omitted|
 |2. Brain stem|(tbd)|(tbd)|(tbd)|
 |3. Primary sensorimotor cortex|(tbd)|(tbd)|(tbd)|
 |4. Non-primary sensorimotor cortex|(tbd)|(tbd)|(tbd)|
@@ -198,7 +198,10 @@ I suspect that the best result is a combination of:
 
 ![Low Level state saliency](files/An-agi-architecture-v1-low-level-state-saliency.png)
 
-## Proprioception
+## [NEEDS WORK] Proprioception
+
+    NEEDS WORK - Turns out that biology actually does have proproceptive senses. This section assumed they do not exist and needs updating.
+
 
 If mirroring humans, proprioception has a number of ways in which it connects into the system:
 * Lowest level sensorimotor system trained via raw motor outputs and raw proprioceptive senses, probably with no input from even skin touch sense, and definitely none from vision.
@@ -224,6 +227,57 @@ Also:
     
 tbd:    
 * Which level of state representation to use for training?
+
+## Layering-up for Higher-order Motor Control
+
+The current design of the low-level motor-control/sense component will tend to use a fairly low-level representation at its interface to the layer above. This is because i) it runs on a 'reservoir' theory and thus has minimal training pressure to modify its representational level, and ii) it is trained on instantaneous sense inputs without time-sensitive context (ie: it will represent motion at level of "arm is moving up at speed x"). And the goal input to the low-level will have that same level of representation.
+
+Thus, the low-level will not learn medium level representations like "move arm towards mouth in eating position". This fits well with observations from brain stimulation in monkeys.
+
+To build up a higher level system, we need to enforce a higher level of representation. One component of that likely comes via the body map of _proprioception_. Inherently it must have some characteristics that force an optimum representational level, and that must apply a pressure to the level that it actually learns and outputs.
+
+Another aspect of the system is that it is made up of many many neural net layers stacked on top of each other. From raw sense input up to executive control, each layer _integrates_ the data from below into a slightly higher representation. From executive control down to raw motor control, each layer _differentiates_ the data from above into a slightly lower representation. Across the system, this applies a pressure that is distributed between top and bottom, creating a _representational gradient_.
+
+Like proprioception, other support components within the system must have inherent characteristics that apply pressure on the representational level. The final result will be found at the natural equilibrium of those pressures.
+
+Lastly, evolution will have tuned all those inherent component characteristics so that the system as a whole produces "fit" results.
+
+![representational gradient](files/An-agi-architecture-v1-representational-gradient.png)
+
+### Hierarchical Learning
+
+![action layers](files/An-agi-architecture-v1-action-layers.png)
+
+### Hierarchical Action Errors
+
+1. Executive control layer: Send "desire signal" from top layer. eg: "touch finger to nose"
+2. Executive control layer: Observe error, record, and send from executive control layer to intermediate layer.
+3. Executive control layer and Intermediate Layer: record observation tuple `<desire, error>`.
+4. Executive control layer: In training round, use `<desire, error>` tuple to move slightly towards producing a better desire signal that would produce a better outcome (assuming a fixed intermediate layer network). Additionally, this probably applies back-prop pressure to intermediate layer.
+5. Intermediate layer: In training round, use `<desire, error>` tuple to move slightly towards doing the better action given a fixed desire signal from the executive control  layer. Additionally, this probably applies back-prop pressure to low-level layer.
+6. And mental modelling will record how much executive control was required in order to achieve the desired state.
+
+![action errors](files/An-agi-architecture-v1-action-error.png)
+
+### Handling Noisy Data
+Humans use predictive signals from higher-order layers to help in the inference. That would look something like this:
+
+![prediction-from-above](files/An-agi-architecture-v1-prediction-from-above.png)
+
+
+### Training Strategy for Intermediate Level
+
+So, how to actually train the intermediate-level?
+
+Based on the above notes, the training of the intermediate-level will be a combination of:
+1. back-propagation from high-level and low-level component training.
+2. training during RL that incorporates the support components (body map, modelling system)
+
+Lastly, the following narrative provides some observation:
+* I want to eat. I want my hand to put the food into my mouth. I don't care how it gets there as long as it doesn't drop the food, it doesn't hurt me in the process, and it basically follows an efficient path.
+* My goal is a high-level concept of "food in mouth".
+* I'll actively monitor the arm and provide internal reward to myself if I achieve my high-level goal.
+* And it would appear that the level of that high-level goal is a result of the representational gradient and other pressures as described above.
 
 ## Mental Models
 
@@ -260,36 +314,6 @@ I suspect that bayesian models are fundamental to the advanced goal decision mak
 * How to make this work in practice?
 * Assuming "bayesian modelling engine" is separate, does main executive control network need to re-learn how to use the bayesian models as they are refined? For example, a baby with no bayesian models could not learn to use those models until _after_ it had formed some initial models. Then as the models get more advanced, it'd probably need to re-learn again to fully use the more advanced aspects of the models. At some point it'd presumably reach a point where it knows how to work with any new kind of bayesian model already.
 * Are bayesian models used in lower level layers too or just within the executive control layers?
-
-## Building up to a Higher-order motor control
-
-The current design of the low-level motor-control/sense component will tend to use a fairly low-level representation at its interface to the layer above. This is because i) it runs on a 'reservoir' theory and thus has minimal training pressure to modify its representational level, and ii) it is trained on instantaneous sense inputs without time-sensitive context (ie: it will represent motion at level of "arm is moving up at speed x"). And the goal input to the low-level will have that same level of representation.
-
-Thus, the low-level will not learn medium level representations like "move arm towards mouth in eating position". This fits well with observations from brain stimulation in monkeys.
-
-To build up a higher level system, we need to enforce a higher level of representation. One component of that likely comes via the body map of _proprioception_. Inherently it must have some characteristics that force an optimum representational level, and that must apply a pressure to the level that it actually learns and outputs.
-
-Another aspect of the system is that it is made up of many many neural net layers stacked on top of each other. From raw sense input up to executive control, each layer _integrates_ the data from below into a slightly higher representation. From executive control down to raw motor control, each layer _differentiates_ the data from above into a slightly lower representation. Across the system, this applies a pressure that is distributed between top and bottom, creating a _representational gradient_.
-
-Like proprioception, other support components within the system must have inherent characteristics that apply pressure on the representational level. The final result will be found at the natural equilibrium of those pressures.
-
-Lastly, evolution will have tuned all those inherent component characteristics so that the system as a whole produces "fit" results.
-
-![representational gradient](files/An-agi-architecture-v1-representational-gradient.png)
-
-## Training Strategy for Intermediate Level
-
-So, how to actually train the intermediate-level?
-
-Based on the above notes, the training of the intermediate-level will be a combination of:
-1. back-propagation from high-level and low-level component training.
-2. training during RL that incorporates the support components (body map, modelling system)
-
-Lastly, the following narrative provides some observation:
-* I want to eat. I want my hand to put the food into my mouth. I don't care how it gets there as long as it doesn't drop the food, it doesn't hurt me in the process, and it basically follows an efficient path.
-* My goal is a high-level concept of "food in mouth".
-* I'll actively monitor the arm and provide internal reward to myself if I achieve my high-level goal.
-* And it would appear that the level of that high-level goal is a result of the representational gradient and other pressures as described above.
 
 ## Absolute vs Relative Control
 In this context, "absolute" refers to a goal or action representation that entirely encodes the full desired state, including ambient background state that isn't relevant to the task at hand. This can be a complex option for controlling a particular focused task, particularly when the ambient state may itself be changing independently. "Relative" is used to refer to any means of producing only a partial representation that focuses only on the task at hand. Additionally at times we will distinguish "static" motion (I want my hands to go to a particular position and stop there) from "dynamic" motion (I want to swing my axe in a chopping motion). And we'll also distinguish "continuous" motion (that requires continuous action signal for duration of motion) from "persisted" motion (begins from a 'start' signal and then can continue without further exec ctrl). 
