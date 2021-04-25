@@ -86,9 +86,13 @@ Analysis of brain memory types and how we'll emulate them in an AI:
 The following systems are involved:
 ![overview of systems](files/An-agi-architecture-v1-overview-of-systems.png)
 
-## Full architecture
+## Layers
 
-For a bit of fun, this is the complete architecture. This shall be broken down and the rationalisation explained in detail within the sections that follow.
+![systems-overview](files/An-agi-architecture-v1-systems-overview.png)
+
+## 2-layer architecture
+
+For a bit of fun, this is what a partially complete 2-layer architecture might look like that doesn't attempt to distinguish the different sensorimotor modalities. The sections that follow shall flesh this out further and add explicit low-level support for the different sensorimotor modalities.
 ![Complete](files/An-agi-architecture-v1-complete.png)
 
 ## Training
@@ -100,9 +104,9 @@ Repeated cycles of the following sequence of training:
 * RL of whole network with full policy execution
 
 
-# Building up Architecture
+# Low-level Sensorimotor Systems
 
-## Low level motor control
+## The Proprioceptimotor System
 
 Mammals don't learn motor control through external rewards; they learn it through watching and observing. And through _jitter_ - in the early stages of development randomly fired muscle signals cause the ligaments to move (citation needed), and the senses are used to pick up the result (particularly touch + vision). This is likely fundamental in bootstrapping a number of brain circuits. For our solution, this will be used to bootstrap the learning of two networks:
 * motor control
@@ -134,7 +138,7 @@ Now, there are a few gotchas here.
 
 5. In mammals, the lowest level feedback-based sensorimotor development is probably further segregated into its independent modalities: muscle control and muscle senses learned against each other independent of other senses. The vision sense can only be incorporated into that circuit at a much higher level, where it can make sense of the differences when looking at the arm vs looking elsewhere.
 
-## Reinforcement learning for low level motor control
+## Reinforcement learning for Proprioceptimotor System
 
 Now we use RL to train the motor control policy (MC policy) for trajectories that best lead towards goal states. We'll use the current agent's state representation for the goals, so we do not _a priori_ know the parameters of the reward function. We must use data collected from the current policy, or at least near to it. During the training runs in the prior section, we'll collect the full unbroken trajectory within a sequential data buffer `D = (d1, d2, d3, ....dN)`, where `di` is the tuple of data taken at time `t`:
 
@@ -230,21 +234,22 @@ tbd:
 
 ## Layering-up for Higher-order Motor Control
 
-The current design of the low-level motor-control/sense component will tend to use a fairly low-level representation at its interface to the layer above. This is because i) it runs on a 'reservoir' theory and thus has minimal training pressure to modify its representational level, and ii) it is trained on instantaneous sense inputs without time-sensitive context (ie: it will represent motion at level of "arm is moving up at speed x"). And the goal input to the low-level will have that same level of representation.
+The current design of the low-level sensorimotor systems will tend to use fairly low-level representations at their interfaces to the layer above. This is because i) they have minimal training pressure applied from the layer above, and ii) they are trained on instantaneous sense inputs without time-sensitive context (ie: it will represent motion at level of "arm is moving up at speed x"). And the goal input to the low-level will have that same level of representation.
 
 Thus, the low-level will not learn medium level representations like "move arm towards mouth in eating position". This fits well with observations from brain stimulation in monkeys.
 
-To build up a higher level system, we need to enforce a higher level of representation. One component of that likely comes via the body map of _proprioception_. Inherently it must have some characteristics that force an optimum representational level, and that must apply a pressure to the level that it actually learns and outputs.
+To build up a higher level system, we need to enforce a higher level of representation. An important aspect of the system is that it is made up of many neural net layers stacked on top of each other. From raw sense input up to executive control, each layer _integrates_ the data from below into a slightly higher representation. From executive control down to raw motor control, each layer _differentiates_ the data from above into a slightly lower representation. Across the system, this applies a pressure that is distributed between top and bottom, creating a _representational gradient_.
 
-Another aspect of the system is that it is made up of many many neural net layers stacked on top of each other. From raw sense input up to executive control, each layer _integrates_ the data from below into a slightly higher representation. From executive control down to raw motor control, each layer _differentiates_ the data from above into a slightly lower representation. Across the system, this applies a pressure that is distributed between top and bottom, creating a _representational gradient_.
+In a biological system, each component in the higher-order layers must have characteristics that work best given a particular representational level and structure. That must apply a convergence pressure on the components that it interacts with. And each other component presumably has similar effects on the components around it. The assumption here is that the final result naturally tends towards an equilibrium. Lastly, evolution will have tuned all those inherent component characteristics so that the system as a whole produces "fit" results.
 
-Like proprioception, other support components within the system must have inherent characteristics that apply pressure on the representational level. The final result will be found at the natural equilibrium of those pressures.
-
-Lastly, evolution will have tuned all those inherent component characteristics so that the system as a whole produces "fit" results.
+For our solution, the representational levels will be found through convergence of pressures illustrated here:
 
 ![representational gradient](files/An-agi-architecture-v1-representational-gradient.png)
 
-### Hierarchical Learning
+
+# Intermediate Layer
+
+## Hierarchical Learning
 
 ![action layers](files/An-agi-architecture-v1-action-layers.png)
 
@@ -259,7 +264,7 @@ Lastly, evolution will have tuned all those inherent component characteristics s
 
 ![action errors](files/An-agi-architecture-v1-action-error.png)
 
-### Handling Noisy Data
+## Handling Noisy Data
 Humans use predictive signals from higher-order layers to help in the inference. That would look something like this:
 
 ![prediction-from-above](files/An-agi-architecture-v1-prediction-from-above.png)
@@ -278,6 +283,9 @@ Lastly, the following narrative provides some observation:
 * My goal is a high-level concept of "food in mouth".
 * I'll actively monitor the arm and provide internal reward to myself if I achieve my high-level goal.
 * And it would appear that the level of that high-level goal is a result of the representational gradient and other pressures as described above.
+
+
+# Executive Control Layer
 
 ## Mental Models
 
@@ -339,6 +347,7 @@ There are a number of options available for supporting relative representations.
 * Delta signals primarily relate to continual vs persisted motion. It requires something to hold the state. Options for that are: hope that the exec ctrl RNN will handle it, hope that the intermediate layer RNN will handle it, or add a hard wired primitive component in between the two that holds the state and effectively acts as a translation layer from  delta to continuous absolute signals. Cons with primitive approach: blanket rule that everything must be delta is too simple. Con with delta: quickly leads to +ve or * ve saturation of persisted values. 
 
 One of the biggest problems with all these options is that they presuppose that all actions operate under the same mode. The reality in biology is probably significantly more complex, with different actions operating under different modes. For example, in biology some parts are likely handled at the low level synaptic and recurrent level. Synaptic cycles are known to exist with separate "off" signals (eg: in primitive pain signalling). So, for something as primitive as walking, it is likely a delta signal from exec ctrl layer, with state handled within the intermediate and low levels. But for many other actions I need to continually produce the action signal: if I stop thinking about doing something, my body stops doing it.
+
 
 # Overall Training Approach
 
