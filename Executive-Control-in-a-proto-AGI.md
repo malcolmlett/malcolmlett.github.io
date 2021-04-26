@@ -16,7 +16,7 @@ I now suspect that the following features are key to general intelligence:
 tbd: diagram
 
 
-# Progression of Capabilities
+## Progression of Capabilities
 
 In what is certainly an oversimplication, we will use the following view of evolutionary progression as a way to understand the important differences between three kinds of policy that might be possible at the higher-order control layer.
 
@@ -33,6 +33,12 @@ In what is certainly an oversimplication, we will use the following view of evol
     * This stage builds on the previous by adding self-driven goals and rewards, and the conscious feedback loop that enables the system to maintain stability.
     
 With these three stages in mind, we will be able to measure the progression of capability of our proposed solutions.
+
+## Policy and Models
+
+I believe that dynamic models are key to: i) the source of dynamic adaptable behaviour, ii) an agent's ability to categorise its observations, and iii) an agent's ability to model its own mental capabilities and to optimally take advantage of those capabilities. Of the various current techniques, bayesian models appear to be the most biologically plausible solution for dynamic modelling.
+
+For now, we assume that the best result is achieved through a mixture of neural-network (NN) policy and bayesian models for understanding.
 
 
 # Rewards

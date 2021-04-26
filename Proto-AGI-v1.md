@@ -348,6 +348,8 @@ Humans use predictive signals from higher-order layers to help in the inference.
 
 ## Next state prediction
 
+In humans, the upper layers predict what they expect to observe based on the current context. This is particularly evident in the case of some mild hallucinations (WUSM, 2021), eg: when hallucinating specific noises in the presence of random background noise.
+
 It can be useful to predict what will happen next. Uses of this include:
 * simulation of actions - how would an action play out if executed?
 * early warning following action - System 1 signal that outcome isn't going to be what executive control layer wanted following the initiation of an action sequence
@@ -510,6 +512,8 @@ Eysenbach, B., Gupta, A., Ibarz, J., and Levine, S. (2018). Diversity is All You
 Nair, A., Pong, V., Dalal, M., Bahl, S., Lin, S., and Levine, S. (2018). Visual Reinforcement Learning with Imagined Goals. ArXiv. https://arxiv.org/abs/1807.04742
 
 Proske, Uwe; and Gandevia, Simon C. 2012, Oct. "The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force". Physiological review. https://doi.org/10.1152/physrev.00048.2011 ([full text](https://journals.physiology.org/doi/full/10.1152/physrev.00048.2011)).
+
+Washington University School of Medicine. (2021, April 1). Mice with hallucination-like behaviors reveal insight into psychotic illness: Study in mice and people offers new approach to investigating mental illnesses. ScienceDaily. Retrieved April 7, 2021 from https://www.sciencedaily.com/releases/2021/04/210401151253.htm
 
 
 (Added 2021-02-03. Labels: work-in-progress)
