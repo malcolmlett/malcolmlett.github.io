@@ -264,7 +264,7 @@ The rewards can be further distinguished into levels identified by their depende
 
 |Order|Thought Level|Reward Category|Brief Description|
 |---|---|---|---|
-|1|System 0 and 1 |Primitive                        |Wiring-level mechanisms that don't require training of a neural network|
+|1|Systems 0 and 1 |Primitive                        |Wiring-level mechanisms that don't require training of a neural network|
 |2|System 1       |Goal achievement                 |Automated "sense of achievement" upon attaining goals|
 |3|System 1       |Pre-trained domain-specific      |Evolutionarily embedded neural networks "pre-trained" before birth|
 |4|System 1       |Internalised                     |Automated habitualised form of teacher rewards|
