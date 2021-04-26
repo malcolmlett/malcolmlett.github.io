@@ -271,7 +271,7 @@ The rewards can be further distinguished into levels identified by their depende
 |5|Systems 1 and 2|Teacher                          |Conscious observation and interpretation of messages from teacher roles|
 |6|System 2       |Self-determined                  |Fully conscious self judgement|
 
-![intrinsic vs extrinsic rewards](/files/GI-classifications-intrinsic-vs-extrinsic-rewards.png)
+![intrinsic vs extrinsic rewards](files/GI-classifications-intrinsic-vs-extrinsic-rewards.png)
 
 ### Primitive rewards
 Examples:
