@@ -354,6 +354,7 @@ It can be useful to predict what will happen next. Uses of this include:
 * observation prediction - predict trajectory of ball
 
 Applying an architecture as per this diagram could help:
+
 ![prediction from below](files/An-agi-architecture-v1-prediction-from-below.png)
 
 The prediction network would be trained through a replay buffer, with the prediction error becoming the training loss. Of note are the representational levels implied in this diagram:
@@ -396,6 +397,7 @@ For our solution, the representational levels will be found through convergence 
 
 ### Hierarchical goal and state example
 Translating human representational hierarchies onto the diagram above, we would have something like this:
+
 ![representational-examples](files/An-agi-architecture-v1-representational-examples.png)
 
 ## Reward Layers

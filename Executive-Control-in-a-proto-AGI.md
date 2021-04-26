@@ -254,8 +254,33 @@ To emulate something close to human experience, it also needs to monitor its own
 
 For now, that process of self improvement will have to develop spontaneously as I don't know how to reward it for self analysis, and I hopefully shouldn't have to.
 
+## Bayesian Goals
+Perhaps a solution is arrived at by recognising the relative strengths of neural networks and bayesian models. The neural network is great for complex policies, and relative stability, while bayesian networks are great for inference and short-term adaptability. So, maybe the bayesian network produces the goal, and the policy actions it. Combine that with the simplistic goal achievement reward measure above, and we have a system that genuinely produces its own goals.
+
+![bayesian goals](files/Executive-control-bayesian-goals.png)
+
+The bayesian modeller would infer a future state `s'` from the current state `s` that it predicts will generate the maximum reward. The policy (neural network) accepts `s'` as a goal, and attempts to produce a sequence of actions that moves it towards state `s'` as efficiently as possible. This solution has a nice advantage that it should produce fairly constant goal values during the window of time where it has not yet attained the goal.
+
+In the longer term, the actual goal would probably be decided as a result of bayesian inference and NN-based habitual predictions. And the value of having an explicit goal representation within the architecture is that accepted goal out of suggestions from multiple systems can encoded in one place and then fed into systems that need to action it and measure success.
+
+### DIAYN
+Convenietly, this approach combines very naturally with DIAYN as an initial exploration approach as it operates through randomly generated goal signals that the policy is expected to produce unique outcomes to. Now, DIAYN trains goal representations that don't mirror the state representation. Thus we've actually got two ways of combining DIAYN with a bayesian goal generator:
+
+1. Constrain the goal representation to be the same as a state representation by only ever sampling from the set of realistic state values. Will likely also need to adjust the mutual information calculations of DIAYN and how they're used for training loss.
+
+2. Constraint the bayesian model to operate against abstract goal representations. Use the exploration of possible goals and states from DIAYN as input to the training of the bayesian model so that it infers target goals `g` instead of future states `s'` values. Will additionally need to train a NN to recognise when a goal is achieved.
+
+The latter has a nice feature that it enables the use of abstract goal representations rather than requiring the goal representation to mirror the state representation, and thus it enables more flexible goal achievement measurements. Likely at the expense of stability. Also, how do we continue to train the goal achievement measurement network after initial DIAYN training?
+
+### Active inference
+Alternatively, instead of DIAYN, we use Active Inference and its method of trading off exploitation vs exploration via learning likelihoods.
+
+This may produce a more adaptable agent. For example, it will initially seek to learn its own abilities. Then, place an unusual object in front and it will explore it due to uncertainties in the prediction of it. Reward the agent for approaching and touching the object and the bayesian model will later seek a reward from it again. Place a different object that punishes instead, and after initial active inference curiosity, the bayesian model will avoid it in the future.
+
 
 # Bayesian Modelling
+
+This chapter looks at how we might actually implement bayesian modeling. In short, how do we build the blue "bayes" boxes in the diarams above?
 
 ## Online Hierarchical Bayesian Clustering
 
@@ -273,8 +298,7 @@ In order to train on events with equal before/after states, we lag the point in 
 
 At runtime, the resultant clustered bayesian model can be used for predictions based on the current state, and the observation error would ultimately lead to re-clustering. The observation error might always lead to a "surprise" signal, and the magnitude of that surprise would ultimately be amplified according to a measure of "emotional affect".
 
-## Architecture
-
+## Multi-Bayes Architecture
 ![bayes-components](files/Executive-control-bayes-components.png)
 
 A possible architecture involves around three bayesian modelling systems:
@@ -299,25 +323,13 @@ So, we build into the architecture of the executive control layer an embedded me
 
 ![bayes-arch](files/Executive-control-bayes-arch.png)
 
-### Active inference
-Add to that a method of Active Inference, and its method of trading off exploitation vs exploration via learning likelihoods, and you've now got a very adaptable agent.
+### Actions via Bayes vs Neural Nets
+If Modeller #2 produces actions, it will be very unstable due to the fact that the benefit of an immediate next action depends on the policy, which changes over time. Additionally, it may be hard to train the policy to decide between its own judgement or the bayesian guess for the next action. A more stable solution would be for Modeller #2 to produce goals, and for the NN policy to execute them.
 
-### Bayesian inferred goals
-Additionally, it could make sense to incorporate goals. Goal inputs to the bayesian networks could help tailor their outputs more.
+Alternatively, we could ask whether we even need a NN policy after all? Perhaps the executive control layer can operate entirely off bayesian models? The long term view, inspired by biology, is that both systems work in cooperation/competition, as indicated in the following diagram. However it's looking more and more like we'd be best to focus on bayesian solutions for the executive control layer as our first priority, and only later add in the slower-learning NN approaches. This is starting to look like a more realistic path to true autonomous, self-motivated, self-governed general intelligence.
 
-More importantly, if Modeller #2 produces actions, it will be very unstable due to the fact that the benefit of an immediate next action depends on the policy, which changes over time. An alternative is to predict the desired state that will maximise expected rewards - ie: a goal. This has a nice advantage that it will be a much more constant output value over time.
+![bayes-flow](files/Executive-control-bayes-flow.png)
 
-In the long term the actual goal would be decided as a result of bayesian inference and habitual predictions.
-
-And this finally starts to make sense to have an explicit goal representation floating through the executive control layer.
-
-### NN Policy
-Now the question remains whether we even need a NN policy after all that.
-
-A possible view, inspired by biology, is that both systems work in cooperation/competition:
-![bayse-flow](files/Executive-control-bayes-flow.png)
-
-Another view is that it's looking more and more like we'd be best to focus on bayesian solutions for the executive control layer as our first priority. And only later add in the slower-learning NN approaches. This is starting to look like a more realistic path to true autonomous, self-motivated, self-governed general intelligence.
 
 ## Re-clustering with Memory
 
