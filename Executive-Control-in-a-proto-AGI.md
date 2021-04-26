@@ -103,6 +103,18 @@ Learning algorithms could include:
 
 This seems like a much more effective long term strategy for producing an AGI.
 
+### Policy autonomy
+Most RL methods today don't trust the policy with much. They hide a number of key things from the policy by not making them available as inputs:
+* Goal
+	* On the basis that we don't know how to encode a goal. We hold the goal to ourselves like a secret card that we don't even reveal when the policy achieves it. 
+* Rewards
+* Execution strategy. 
+	* Model based techniques execute the path search as a mechanical process that the polucy has no control over. 
+
+I want a policy that can "think". One that can choose inaction in order to mull over the options. So I need to trust it more. This includes with goal, rewards, but most importantly with execution strategy. I treat mental action the same as physical action. In order to include mental actions within the policy gradient calculations, I include those actions in the value estimate. 
+
+This fits with the idea of using pure intrinsic motivation.
+
 ### Example Architecture
 An example architecture using pure intrinsic motivation might look like:
 * Maximise I(G:S) - mutual information between goals and states (DIAYN) - encourages exploration, diversity of capabilities, and training of goal representation. 
@@ -111,6 +123,21 @@ An example architecture using pure intrinsic motivation might look like:
 * Backprop pressure from training of layers above - encourages utility of state representation. Although, that pressure will be most effective only when applying rewards against the accuracy of the policy of the higher layers. 
 
 Primitive rewards would be applied at each level independently and simultaneously.
+
+### Functional specialisation
+Intrinsic motivation approach make it very hard to produce results that are useful to us.
+
+Brain uses a lot of functional specialisation, as evidenced by a growing body of research. Particularly from lesion studies. So what if we tried that approach. 
+
+We could add:
+* Explicit represenation of rewards, plus uncertainty. 
+* Explicit support for model free and model based computation. 
+* Explicit support for "simulation" of actions. 
+
+Example:
+* In order to support simulation, action outputs could include an on/off signal that chooses between physical action vs just simulation of an action. Action outputs feed into model free reward predictor -> output into reward memory. Action output, sense inputs and reward prediction states could be fed into a reward uncertainty predictor. Policy uses that to choose to output a control signal to model based reward predictor, and waits. Model based reward predictor emits possible paths through its model. And reward uncertainty predictor estimates uncertainty. 
+* _(tbd: needs diagram).
+* Then extend to actually producing action planning.
 
 ## Primitive Reward Techniques
 
@@ -137,39 +164,6 @@ We want an agent that is driven to keep doing things. One way of looking at this
 **Learning Degree**
 * Reward based on how much the agent learns over a period.
 * Can be risky as it may discourage convergence of policy. So perhaps works better when only measured against the learning degree within modelling engine.
-
-
-# Approach
-
-## Policy Autonomy
-
-Most RL methods today don't trust the policy with much. They hide a number of key things from the policy by not making them available as inputs:
-* Goal
-	* On the basis that we don't know how to encode a goal. We hold the goal to ourselves like a secret card that we don't even reveal when the policy achieves it. 
-* Rewards
-* Execution strategy. 
-	* Model based techniques execute the path search as a mechanical process that the polucy has no control over. 
-
-I want a policy that can "think". One that can choose inaction in order to mull over the options. So I need to trust it more. This includes with goal, rewards, but most importantly with execution strategy. I treat mental action the same as physical action. In order to include mental actions within the policy gradient calculations, I include those actions in the value estimate. 
-
-Example tasks:
-* Planning: learn to simulate possible paths from model without carrying them all out. Great for efficiency in real world. 
-
-## Functional Specialisation
-
-Intrinsic motivation approach make it very hard to produce results that are useful to us.
-
-Brain uses a lot of functional specialisation, as evidenced by a growing body of research. Particularly from lesion studies. So what if we tried that approach. 
-
-We could add:
-* Explicit represenation of rewards, plus uncertainty. 
-* Explicit support for model free and model based computation. 
-* Explicit support for "simulation" of actions. 
-
-Example:
-* In order to support simulation, action outputs could include an on/off signal that chooses between physical action vs just simulation of an action. Action outputs feed into model free reward predictor -> output into reward memory. Action output, sense inputs and reward prediction states could be fed into a reward uncertainty predictor. Policy uses that to choose to output a control signal to model based reward predictor, and waits. Model based reward predictor emits possible paths through its model. And reward uncertainty predictor estimates uncertainty. 
-* _(tbd: needs diagram).
-* Then extend to actually producing action planning.
 
 ## Worked Example - Primitive Rewards plus Teacher Goals
 
@@ -217,7 +211,8 @@ Bird training
 
 ![parrot-training](files/parrot-training.jpg)
 
-## Adding Goals
+
+# Goals
 
 How do we enable the executive control layer to have goals?
 
@@ -335,6 +330,10 @@ The recall of those related memories would need to be loaded into working memory
 
 But maybe that's what the executive control layer is all about. The automated machinery needed in order to train these advanced computational systems. It just happens to be self-aware in order to apply top-level governance and prioritisation.
 
+## Representational Dynamics
+
+Something to consider is that the representational interpretation of the high-level state supplied by the intermediate layer will change over time. The modelling engine will have to cope with those changes.
+
 
 # Importance of Conscious Feedback
 
@@ -367,9 +366,10 @@ In humans, working memory appears to be a decentralised process. But we don't ne
 
 At this point the question becomes about what state, if any, that WM component holds. Or, is WM just a pass-through?
 
-## Examples
 
-Learning to balance when walking (intermediate layer reward)
+# Tasks
+
+Learning to balance when walking (intermediate layer reward):
 * Old-brain performs this without conscious control.
 * Signal from vestibular system provides feedback signal that intermediate and low-level layers use to control balance.
 * Same signal from vestibular system can be used as fine-grained reward function.
@@ -379,6 +379,9 @@ Learning to balance when walking (intermediate layer reward)
 
 Office world (copied from Illanes _et al_, 2020):
 ![office-world](files/office-world.png)
+
+Planning:
+* learn to simulate possible paths from model without carrying them all out. Great for efficiency in real world. 
 
 
 # References

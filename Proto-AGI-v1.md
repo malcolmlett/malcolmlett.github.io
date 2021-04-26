@@ -241,19 +241,34 @@ Has similar corollary discharge mechanism to remove one's own production of soun
 
 # Intermediate Layer
 
-## Training strategy for intermediate level
+(tbd)
 
-So, how to actually train the intermediate-level?
+## Intermediate Layer Training
+So, how to actually train the intermediate layer?
 
+### Factors to consider for training
+As the intermediate layer is totally internal to the agent, it is harder to apply direct reward measures or training losses. There are multiple factors that influence how best to apply RL training to the intermediate layer.
+
+**Representational Gradient:**
+* Back-prop pressure from layer above.
+* Representation bandwidth from layer below.
+* Discussed further within "Overall Training Approach"
+
+**Goal Representation from Below:**
+* The need for DIAYN at intermediate layer in order to discover the low-level layer's goal representation.
+* Discussed further within "Overall Training Approach"
+
+### Resultant training strategy
 Based on the above notes, the training of the intermediate-level will be a combination of:
 1. back-propagation from high-level and low-level component training.
-2. training during RL that incorporates the support components (body map, modelling system)
+2. training during RL that incorporates the support components (ie: body schema)
+3. DIAYN
 
 Lastly, the following narrative provides some observation:
 * I want to eat. I want my hand to put the food into my mouth. I don't care how it gets there as long as it doesn't drop the food, it doesn't hurt me in the process, and it basically follows an efficient path.
 * My goal is a high-level concept of "food in mouth".
 * I'll actively monitor the arm and provide internal reward to myself if I achieve my high-level goal.
-* And it would appear that the level of that high-level goal is a result of the representational gradient and other pressures as described above.
+* And it would appear that the level of that high-level goal is a result of the representational gradient and other pressures as described within this document.
 
 
 # Executive Control Layer
@@ -329,11 +344,28 @@ There are several additional inter-layer connections that can be added to aid in
 
 Humans use predictive signals from higher-order layers to help in the inference. That would look something like this:
 
-![prediction-from-above](files/An-agi-architecture-v1-prediction-from-above.png)
+![prediction from above](files/An-agi-architecture-v1-prediction-from-above.png)
 
-## Next state predection
+## Next state prediction
 
-(tbd)
+It can be useful to predict what will happen next. Uses of this include:
+* simulation of actions - how would an action play out if executed?
+* early warning following action - System 1 signal that outcome isn't going to be what executive control layer wanted following the initiation of an action sequence
+* observation prediction - predict trajectory of ball
+
+Applying an architecture as per this diagram could help:
+![prediction from below](files/An-agi-architecture-v1-prediction-from-below.png)
+
+The prediction network would be trained through a replay buffer, with the prediction error becoming the training loss. Of note are the representational levels implied in this diagram:
+* 2 inputs at higher-order level, plus
+* 1 input at lower-order level, and
+* 1 output at higher-order level.
+
+There will be some variations across the layers:
+* Low-level layer doesn't have a prediction from a lower level layer - it might make sense to feed the raw motor control output plus raw sense input as an alternative low-level input, as this would provide the raw details needed for accurate prediction.
+* Executive control layer doesn't have a higher-order layer to feed the prediction to - feed the prediction into the executive control policy instead.
+
+Another thing to consider is how far into the future the prediction should be. Should each layer just predict the next state for the next time step? Perhaps the low-level layer predicts the next time step, the intermediate layer predicts over a longer period of time, and the executive control layer predicts over an even longer period of time. Training with fixed prediction time intervals is easy with a trajectory cache. It would seem that varying time interval predictions would make more plausible biological sense, but it's not obvious how we'd achieve that.
 
 ## Corollary Discharge
 
@@ -362,12 +394,22 @@ For our solution, the representational levels will be found through convergence 
 
 ![representational gradient](files/An-agi-architecture-v1-representational-gradient.png)
 
+### Hierarchical goal and state example
+Translating human representational hierarchies onto the diagram above, we would have something like this:
+![representational-examples](files/An-agi-architecture-v1-representational-examples.png)
+
 ## Reward Layers
 
-![reward-layers](files/An-agi-architecture-v1-reward-layers.png)
+The low level motor control will be primarily trained using:
+* DIAYN - converges towards outcomes modelled as a function `f1(goal) -> unique state` that is as _diverse_ in outcome states as possible.
+* backprop pressure from above - converges towards outcomes modelled as `f2(goal) -> desired state` that hopefully reflects the interpreted desires from the intermediate layer.
+* primitive efficiency error - influences the trajectories taken to reach the outcomes above
+    
+However there is no reason that the first two pressures above will lead to the same function. The intermediate layer knows nothing of the particular goal representations produced by DIAYN within the low level layer.
 
-Each level learnings a policy in the presence of the behaviours of the level below. Those lower-level behaviours can be represented simplistically as a mapping:
-* control signal -> outcome state
+A solution is to employ DIAYN at all levels, so that each higher-level layer can discover semi-optimum output action representations for commanding the lower-level layer.
+
+![reward-layers](files/An-agi-architecture-v1-reward-layers.png)
 
 As each lower-level layer is also learning and changing its behaviour, the overal system will initially be highly chaotic. But the mechanisms applied to encourage convergence at each level indepedently will ultimately result in the whole system converging. That initial chaotic nature serves the highest level well as it executives a broad search for optimum policy. Primitive efficiency error will help to lead to smooth motion.
 

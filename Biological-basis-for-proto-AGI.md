@@ -20,6 +20,9 @@ Brain size increases from birth, reaching full size at about 7 years. The number
 
 ## Sensorimotor System
 
+Approximate layers:
+![layers](files/Biological-basis-for-proto-AGI-layers.png)
+
 ## Senses
 
 (tbd)
