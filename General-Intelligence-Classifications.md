@@ -264,13 +264,16 @@ The rewards can be further distinguished into levels identified by their depende
 
 |Order|Thought Level|Reward Category|Brief Description|
 |---|---|---|---|
-|1|System 0       |Simple Primitive         |Wiring-level mechanisms that don't require training of a neural network|
-|2|System 1       |Domain-specific Primitive|Evolutionarily embedded neural networks "pre-trained" before birth|
-|3|System 1       |Internalised             |Automated habitualised form of teacher rewards|
-|4|Systems 1 and 2|Teacher                  |Conscious observation and interpretation of messages from teacher roles|
-|5|System 2       |Self-determined          |Fully conscious self judgement|
+|1|System 0 and 1 |Primitive                        |Wiring-level mechanisms that don't require training of a neural network|
+|2|System 1       |Goal achievement                 |Automated "sense of achievement" upon attaining goals|
+|3|System 1       |Pre-trained domain-specific      |Evolutionarily embedded neural networks "pre-trained" before birth|
+|4|System 1       |Internalised                     |Automated habitualised form of teacher rewards|
+|5|Systems 1 and 2|Teacher                          |Conscious observation and interpretation of messages from teacher roles|
+|6|System 2       |Self-determined                  |Fully conscious self judgement|
 
-### Simple Primitive Rewards
+![intrinsic vs extrinsic rewards](/files/GI-classifications-intrinsic-vs-extrinsic-rewards.png)
+
+### Primitive rewards
 Examples:
 * Pain / Pleasure 
 * Hunger / Satiation
@@ -279,15 +282,27 @@ Examples:
 * Effort
 * Predictive errors
 
-Often sparse and low-fidelity. Operates within System 0 thought.
+Sparse. Low-fidelity. Operates within Systems 0 and 1 thought.
 
-These are the simplest reward signals, supplied to a network from simple raw primitive senses (eg: pain). The reward signals are fed from simple wiring-level mechanisms that don't require training of a neural network to interpret. In biology, these would likely be the earliest reward mechanisms to evolve, and in the individual would grow and be largely fully formed during foetal development.
+These are the simplest reward signals, supplied to a network from simple raw primitive senses. The reward signals are fed from simple wiring-level mechanisms that don't require training of a neural network to interpret. In biology, these would likely be the earliest reward mechanisms to evolve, and in they would grow within an individual and be largely fully formed during foetal development. Some such signals are often sparse and with low-fidelity (eg: I'm either hungry or I'm not). Many are closely related to systems that elicit responses without conscious involvement (eg: reflexes, hunger leading to stomach activity, temperature leading to sweating or shivering). Some primitive rewards operate only as error signals between low-level layers and may not have executive observability, while others have executive observability "after the fact" (eg: after reflex action has occurred), or indirectly (eg: feeling of stomach activity).
 
-In a complex environment, a 'teacher' may choose to leverage some of these mechanisms (eg: pain or pleasure). These signals are often sparse, and with low-fidelity (eg: I'm either hungry or I'm not).
+In a complex environment, a 'teacher' may choose to leverage some of these mechanisms (eg: pain or pleasure).
 
-It is hard for an AI to learn a good policy from such rewards, particularly due to their sparse and low-fidelity nature. However, given that this occurs at the most basic level of agent learning, the policy search space is very large. In many AI settings, resultant limb movements can be jerky. This can be improved by including suitable additional primitive rewards that help to improve the 'quality' (eg: effort can be used to influence the efficiency of ligament movement). Biology has the same problems as AI does with primitive rewards: that in complex environments with high dimensionality it takes a long time to optimise for a good result. For example, evolution took a long time to migrate from single-celled organism to mammal.
+It is hard for an AI to learn a good policy from sparse and low-fidelity rewards. In many AI solutions, sparse and low-fidelity rewards are supplied against the most low-level sense interpretation layers, where the policy search space is very large. The resultant limb movements are often jerky. This can be improved by including suitable additional primitive rewards that help to improve the quality. For example, _effort_ can be used to influence the efficiency of ligament movement.
 
-### Domain-specific Primitive Rewards
+Biology clearly has the same problems as AI does with primitive rewards: that in complex environments with high dimensionality it takes a long time to optimise for a good result. For example, evolution took a long time to migrate from single-celled organism to mammal.
+
+### Goal achievement rewards
+Examples:
+* Sense of achievement of self-defined goals
+
+Frequent and high-fidelity. Operates within System 1 thought.
+
+Automated intrinsic reward upon attainment of a goal, as measured via a pre-wired system that compares observed state to intended goal. Operates primarily against short-term goals.
+
+It's not clear whether this is a biologically plausible reward system.
+
+### Pre-trained domain-specific rewards
 Examples:
 * Smiles
 * Frowns
@@ -299,10 +314,10 @@ Operates within System 0 thought.
 
 This category of reward requires neural networks for interpretation of senses, except that they are required prior to the opportunity to sufficiently learn from environmental experience. I assume that their network structure is thus genetically encoded, and that they are effectively "pre-trained" during foetal development. Sometimes also results in hormone signals that then act as simple primitive rewards/learning signals.
 
-### Internalised Rewards
+### Internalised rewards
 Examples:
 * Internalised version of all of teacher rewards mentioned above
-* Sense of Achievement (internalised encouragement)
+* Sense of achievement of externally defined goals (internalised encouragement)
 * Fear (internalised discouragement)
 * Surprise (depends on learned models and prediction)
 * Impatience
@@ -313,14 +328,14 @@ These are habitually formed internalisation of teacher rewards. Ie: from slow pr
 
 It's interesting to observe that this form of reward is the source of stress in humans, due in part to its high frequency and the fact that it is an internalised reward metric that may not be accurate.
 
-### Teacher Rewards
+### Teacher rewards via learned domain-specific recognition
 Examples:
 * Body language 
 * Telling off
 * Encouragement 
 * Social cues
 
-Operates within System 1 and 2 thought. Often higher-fidelity, but can be frequent or sparse.
+Operates within Systems 1 and 2 thought. Often higher-fidelity, but can be frequent or sparse.
 
 Rewards and punishments given by someone fulfilling the general sense of a teacher role at the time. The reward is processed via mental modelled hierarchical learning, that is built up on top of domain specific primitive rewards. Probably still with some genetically embedded propensity to learn these models.
 
@@ -328,7 +343,7 @@ It includes rewards received by interpreting social feedback, such as from someo
 
 Complex networks are required to undestand social cues, based on interpretation of the senses. This form of policy builds on top of the policy learned from primitive rewards, in the sense that the agent likely would never reach the cognitive ability to intepret its senses sufficiently to understand social feedback it it were not for the primitive rewards acting as a bootstrap mechanisms for learning.
 
-### Self-determined Rewards
+### Self-determined rewards
 Examples:
 * Reflection on achievement of own goals (more than just internalised achievement reward)
 * Reflecting on one's own character and/or lifestyle
