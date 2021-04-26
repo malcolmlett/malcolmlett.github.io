@@ -273,41 +273,7 @@ Lastly, the following narrative provides some observation:
 
 # Executive Control Layer
 
-## Mental Models
-
-### Background discussion on kinds of model
-In the combined context of AI and human brains, there are three kinds of level of "model", with different representations:
-* Model Free Policy Networks - Used in reinforcement learning to predict best action given a state
-* Model Based Policy Networks - Used in reinforcement learning to predict future state given an action
-* Mental Models - The ideas that humans build up about themselves and about the world around them that are used to inform decisions.
-
-While "mental models" may seem to be something completely different to the models used in AI reinforcement learning, there is perhaps a way that mental models fit naturally into that grouping.
-
-Bayesian networks have been studied for many years because they would seem to emulate some of the characteristics of how humans form theories about the world. Their use has often failed when applied to low-level learning of the sort that is now done with deep neural networks. But they are a good fit for higher-order "mental models".
-
-So, the theory proposed here is that the brain uses different structures for different layers and different tasks, that are roughly split into the following:
-1. Model Free Policy Networks - Slowest learned best actions given current state and a goal
-2. Model Based Policy Networks - Medium-speed learned predictions of next state given current state and action
-3. Bayesian Network Models - Generated, manipulated, and used by high-order thought to help inform decision making.
-
-### Bayesian modelling engine
-The assumption for now is that there is some other system that is used for creating bayesian models.
-
-![Bayesian Models](files/An-agi-architecture-v1-bayesian-models.png)
-
-Assumed characteristics are:
-* Triggered: created when from some sort of event triggers identification of the need for a new model.
-* Modified: built up and refined over time as more co-factual and counter-factual examples are observed. 
-* Recursively Composed: each model is built up from other models with a new layer added. Eg: a car has a wheel.
-* Introspection: We can inspect individual parts of a model, but this is probably due to the composition structure. ie: it's likely that we cannot inspect within a model, but that we can observe at the interface of each of the composed parts.
-
-### Bayesian models for goal decisioning
-I suspect that bayesian models are fundamental to the advanced goal decision making of general intelligence. This also fits with the fact that humans are so easily misguided in their goals - humans target ill-conceived ideas of self-value based on cultural expectations. Eg: one person may prefer to shop at the cheapest stores in order to spend less money, while another may prefer to shop at the most expensive stores because of the social status of that store or its products.
-
-### Outstanding questions
-* How to make this work in practice?
-* Assuming "bayesian modelling engine" is separate, does main executive control network need to re-learn how to use the bayesian models as they are refined? For example, a baby with no bayesian models could not learn to use those models until _after_ it had formed some initial models. Then as the models get more advanced, it'd probably need to re-learn again to fully use the more advanced aspects of the models. At some point it'd presumably reach a point where it knows how to work with any new kind of bayesian model already.
-* Are bayesian models used in lower level layers too or just within the executive control layers?
+_tbd_
 
 ## Absolute vs Relative Control
 
@@ -342,13 +308,14 @@ There are several additional inter-layer connections that can be added to aid in
 
 ## Handling Noisy Data
 
-Humans use predictive signals from higher-order layers to help in the inference. That would look something like this:
+In humans, the upper layers predict what they expect to observe based on the current context. This is particularly evident in the case of some mild hallucinations (WUSM, 2021), eg: when hallucinating specific noises in the presence of random background noise.
+
+Those predictive signals from higher-order layers help the inference within lower-level layers in the presence of noise. That would look something like this:
 
 ![prediction from above](files/An-agi-architecture-v1-prediction-from-above.png)
 
-## Next state prediction
 
-In humans, the upper layers predict what they expect to observe based on the current context. This is particularly evident in the case of some mild hallucinations (WUSM, 2021), eg: when hallucinating specific noises in the presence of random background noise.
+## Next state prediction
 
 It can be useful to predict what will happen next. Uses of this include:
 * simulation of actions - how would an action play out if executed?
@@ -483,7 +450,8 @@ Just like humans learn in phases, with particular focuses, we can apply the same
 |.|...|.|.|
 |.|conscious control|.|.|
 
-## Measuring success
+
+# Measuring success
 
 How will we tell if all this effort is worth it?
 
@@ -497,12 +465,22 @@ We'll need to decide on a sensible goal, or set of goals, to experiment with. Th
 
 ![measuring success](files/An-agi-architecture-v1-measuring-success.png)
 
-### Use of conscious feedback
-Rcurrent neural networks (RNNs) were designed to apply against sequences on the inputs. They were not intended for maintaining long term state -- such as required in order to sustain internal thought. So do we need an explicit concsious feedback loop that feeds last cycles' output as input to the next cycle? Let's test that.
+## Measuring Use of Conscious Feedback
+Recurrent neural networks (RNNs) were designed to apply against sequences on the inputs. They were not intended for maintaining long term state -- such as required in order to sustain internal thought. So do we need an explicit concsious feedback loop that feeds last cycles' output as input to the next cycle? Let's test that.
 
 How to measure utility of an explicit conscious feedback loop, vs just depending on internal state within a stateful policy (ie: RNN)? Use each of these configurations, and train on something simple but that requires processing loops in order to succeed.
 
 ![measuring cf](files/An-agi-architecture-v1-measuring-cf-success.png)
+
+## Measuring Benefits of Hierarchical Architecture
+
+We want to prove that we've produced a worthwhile hierarchical RL solution. 
+
+The proposed architecture produces a representational hierarchy. But what about a temporal hierarchy? The time steps are still the same frequency at the lowest and highest levels of the architecture. But maybe the executive control layer copes anyway and produces the effect of a temporal hierarchy. An ideal world be if the executive policy just calculates the goal, based on past inputs, and holds that goal constant until it had been reached. In other words, that it feeds a conatant goal to the intermediate level. 
+
+We wouldn't achieve much by trying to force that, but we can measure the extent to which it does or does not do that. Treat executive control's output vector as a euclidean space and measure distance to some fixed reference point. The value should be fairly consistent at the moment of achieving a goal, so take that as the reference point and compare the value at all other time steps to that reference. Do the same for all levels. If measuring across a sequence of goals, use that first reference point across all runs
+
+Expect to see the executive control pretty constant, the low-level layer all over the place, and the intermediate layer in between. 
 
 
 # References

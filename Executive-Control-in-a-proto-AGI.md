@@ -36,9 +36,63 @@ With these three stages in mind, we will be able to measure the progression of c
 
 ## Policy and Models
 
-I believe that dynamic models are key to: i) the source of dynamic adaptable behaviour, ii) an agent's ability to categorise its observations, and iii) an agent's ability to model its own mental capabilities and to optimally take advantage of those capabilities. Of the various current techniques, bayesian models appear to be the most biologically plausible solution for dynamic modelling.
+### Background discussion on kinds of model
+In the combined context of AI and human brains, there are three kinds of "model" that might be referred to, each with different representations and scope:
+* Model Free Policy Networks - Used in reinforcement learning to predict best action given a state
+* Model Based Policy Networks - Used in reinforcement learning to predict future state given an action
+* Mental Models - The ideas that humans build up about themselves and about the world around them that are used to inform decisions.
 
-For now, we assume that the best result is achieved through a mixture of neural-network (NN) policy and bayesian models for understanding.
+While "mental models" may seem to be something completely different to the models used in AI reinforcement learning, there is perhaps a way that mental models fit naturally into that grouping.
+
+Bayesian networks have been studied for many years because they would seem to emulate some of the characteristics of how humans form theories about the world. Their use has often failed when applied to low-level learning of the sort that is now done with deep neural networks. But they are a good fit for higher-order "mental models".
+
+So, the theory proposed here is that the brain uses different structures for different layers and different tasks, that are roughly split into the following:
+1. Model Free Policy Networks - Slowest learned best actions given current state and a goal
+2. Model Based Policy Networks - Medium-speed learned predictions of next state given current state and action
+3. Bayesian Network Models - Generated, manipulated, and used by high-order thought to help inform decision making.
+
+### Mental models as key to general intelligence
+I believe that dynamic models are key to: i) the source of dynamic adaptable behaviour, ii) an agent's ability to categorise its observations, and iii) an agent's ability to model its own mental capabilities and to optimally take advantage of those capabilities. In general, I suspect that bayesian models are fundamental to the advanced goal decision making of general intelligence.
+
+This also fits with the fact that humans are so easily misguided in their goals - humans target ill-conceived ideas of self-value based on cultural expectations. Eg: one person may prefer to shop at the cheapest stores in order to spend less money, while another may prefer to shop at the most expensive stores because of the social status of that store or its products.
+
+For now, we assume that the best result for an AGI is achieved through a mixture of neural-network (NN) policy and bayesian networks for modelling and understanding.
+
+Desired characteristics of a dynamic model:
+* Continously updated
+* Supports logical reasoning
+* Supports inference, deduction, and induction
+* Supports querying
+* Can be used to produce a summary, explanation, or rationale for a decision.
+
+### Interplay with other systems
+Example 1:
+* Observe it raining outside, then suddenly get a feeling that you're expecting to see people carrying umbrellas. Consciously accept that and decide that this means that people carry umbrellas when it rains. Bang! That forms a new dynamic model.
+
+Example 2:
+* Observe it raining outside and consciously notice that people are carrying umbrellas, causing you to wonder about that. Consciously review memories of past observations and realise that people tend to carry umbrellas when it rains. Bang! That forms a new dynamic model.
+
+In the first example, a sub-conscious predictive process picks up on the correlation between rain and umbrellas over potentially several observations, and the prediction suddenly becomes strong enough to elicit an attentional focus (perhaps through another predictive process that observes that this prediction of umbrellas is novel across past experiences of observing rain). The brain's predictive processes don't need many observations, due to their mechanisms for segregating regions to focus on particular predictions (catastrophic forgetting protection). In most cases, the sub-conscious prediction would trigger a conscious review of past memories as in example 2, but it's entirely possible to blindly accept a prediction as sufficient evidence to form a conclusion.
+
+In the second example, the majority of activity is carried out consciously and through review of episodic memory. At most, the only sub-conscious trigger might have been a predictive system that identifies novelty which happened to grab attentional focus.
+
+The first example highlights the usefulness of a sub-conscious predictive system and how it can act as useful input into the conscious thought process. The second example highlights the importance of episodic memory in the process of forming conclusions.
+
+### Bayesian modelling engine
+The assumption for now is that there is some system that is used for creating bayesian models.
+
+![Bayesian Models](files/An-agi-architecture-v1-bayesian-models.png)
+
+Assumed characteristics are:
+* Triggered: created when from some sort of event triggers identification of the need for a new model.
+* Modified: built up and refined over time as more co-factual and counter-factual examples are observed. 
+* Recursively Composed: each model is built up from other models with a new layer added. Eg: a car has a wheel.
+* Introspection: We can inspect individual parts of a model, but this is probably due to the composition structure. ie: it's likely that we cannot inspect within a model, but that we can observe at the interface of each of the composed parts.
+
+Some outstanding questions are:
+* How to make this work in practice?
+* Assuming "bayesian modelling engine" is separate, does main executive control network need to re-learn how to use the bayesian models as they are refined? For example, a baby with no bayesian models could not learn to use those models until _after_ it had formed some initial models. Then as the models get more advanced, it'd probably need to re-learn again to fully use the more advanced aspects of the models. At some point it'd presumably reach a point where it knows how to work with any new kind of bayesian model already.
+* Are bayesian models used in lower level layers too or just within the executive control layers?
 
 
 # Rewards
@@ -89,6 +143,31 @@ Some rewards that we might use (grouped by reward category):
     * Uncertainty / curiosity
 
 _more analysis: tbd_
+
+## Building Up Specialised Rewards
+
+Let's say that we want to encode a prime directive of:
+* Be inquisitive
+
+We can give a reward for _learning_: specifically, when the mental model is updated. Scale reward based on magnitude of change. Possibly even for the magnitude of change when collapsing models - ie: simplification is a better generalisation. 
+
+Give penalty for getting hurt - don't want it to be inquisitive at the expense of its own well being. Primitive negative rewards such as hunger and pain teach us to avoid certain actions. We build up a mental model that helps us avoid those outcomes. Those mental models can become advanced and abstract over time, eg: maintain a healthy lifestyle.
+
+These play into our goals.
+
+But it still needs more constraints. I need to be able to give explicit rewards/punishments. But I want to give that via its senses rather than directly into its internal reward system (the equivalent of a wire into the brain). I could punish via pain, and reward via food, but that doesn't reflect the variety of ways that humans receive rewards.
+
+I'd love to make it receive a reward when I smile at it. But I don't know how to make that happen.
+
+A simplistic compromise is to use a hard coded system that gets direct signal from senses and is pretrained to feed into internal reward system. Eg: pretrained to recognise a particular token in the visual feed and to translate that to a reward signal. This is more like an implant in the brain that observes the visual nerve, rather than an external wire into the brain, but basically the same thing otherwise.
+
+Also, will I know how to encode the reward? Maybe even the exploded RL algorithm still runs off simple reward signals at the low level so I can just tap into these. And maybe the learned "internalised" reward network will output in that same low level signal.
+
+Such a reward system might look like:
+* Hard coded low level system.
+* Plus learning network, that adapts to higher order rewards based on higher order concepts.
+
+What does the learning network actually model though?
 
 ## Pure Intrinsic Motivation
 
@@ -207,7 +286,7 @@ The predictor network acts entirely on the current state, unaware of the goal. I
 * Introducing this control policy goal into the predictive circuit will also significantly reduce stability because the solution needs a way of enforcing convergence of the goal signal to actually represent the policy's goal.
 
 ### Training
-_(tbd)
+In order for policy to learn to understand rewards, it needs to bootstrap. Without primitive recognition of smiles etc we can't use that. So have to use pain and pleasure, and for agent to associate to higher domain rewards. 
 
 Collapsing box of pain:
 
@@ -220,11 +299,11 @@ Bird training
 
 # Goals
 
-How do we enable the executive control layer to have goals?
-
-![with-goals](files/Executive-control-with-goals.png)
+How do we enable the executive control layer to have goals? Why would a policy neural netwokr require an external goal representation. What advantage does a goal representation add? It seems that a goal is just another form of state. Perhaps it's just a way of persisting a past output in order to recall later, and to save having to reprocess and reproduce that goal value each time. Additionally it may be necessary if the production of that goal state cannot be calculated in a single step. So it helps for producing behaviour that is more complex than the network can produce via single pass only. 
 
 We want the goal to represent a state that the agent eventually reaches. The first naive approach is to measure the actual state against the goal and reward based on minimising the error. But the policy will maximise that reward by always outputting the current state. We want the goal to not just be a copy of the current state, but to represent a goal in the future. So increase the reward for how much in the future the goal is achieved. In simplistic terms we can do that by rewarding based on how different the goal is to the current state at the time it is emitted, but only grant the reward if it is achieved. Additionally, we can penalise for producing goals that are never achieved.
+
+![with-goals](files/Executive-control-with-goals.png)
 
 Working through this a little further, at the time of the reward, pick the closest past goal and reward based on how different the state was to the goal at the time. Also, pick the past goal most different to the current state, and penalise for much different it is to the current state (penalise for not achieving a goal). Now turn that into a more continuous reward function and we have something like this for the reward at time `T`:
 
@@ -285,6 +364,8 @@ This may produce a more adaptable agent. For example, it will initially seek to 
 
 
 # Bayesian Modelling
+
+There are a few approaches available for dynamic modelling. One approach could be to use one of the decision-tree solutions, such as BART, instead of a neural network. These could be perfect because they have the smaller size and reach saturation faster, and possibly even support tree growth. Of the various current techniques, bayesian models (or something with similar effects, such as the Probably Approximately Correct (PAC) approximation of bayes models) appear to be the most biologically plausible solution for dynamic modelling.
 
 This chapter looks at how we might actually implement bayesian modeling. In short, how do we build the blue "bayes" boxes in the diarams above?
 
@@ -385,7 +466,7 @@ In humans, working memory appears to be a decentralised process. But we don't ne
 At this point the question becomes about what state, if any, that WM component holds. Or, is WM just a pass-through?
 
 
-# Tasks
+# Example Tasks
 
 Learning to balance when walking (intermediate layer reward):
 * Old-brain performs this without conscious control.
@@ -401,6 +482,14 @@ Office world (copied from Illanes _et al_, 2020):
 Planning:
 * learn to simulate possible paths from model without carrying them all out. Great for efficiency in real world. 
 
+Move efficiently with planning:
+* Target is for policy to move efficiently, with planning, but only if it helps. 
+* Penalise for effort 
+* Thought step is 10% of physical step effort
+* Time penalty for complete inaction
+* Measure efficiency and duration of physical action so tries to go faster
+* Measure pain so it doesn't go too fast and fall over
+* Efficiency of effort alone should provide greyscale reward towards walking upright with best gate: walking on all fours requires more movement, running takes more effort, crawling is too slow. 
 
 # References
 

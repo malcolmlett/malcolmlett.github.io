@@ -375,13 +375,13 @@ With the above in mind, we another important term to define...
 
 # Executive Control Capabilities
 
-I now present a more detailed analysis of human mental capabilities, focussing primarily on capabilities under executive control.
+I now present a more detailed analysis of human mental capabilities, focusing primarily on capabilities under executive control.
 
 _(tbd: notes in "Page - To Note Down")_
 
 |Capability|Primary Thought Systems|Description|
 |---|---|---|
-|Prediction|System 0 + 1|..|
+|Model-free Prediction|System 0 + 1|..|
 |Habitial Action|System 0 + 1|..|
 |Emotions|System 0 + 1|..|
 |Spatial Understanding|System 1 + 2|..|
@@ -390,5 +390,12 @@ _(tbd: notes in "Page - To Note Down")_
 |Memory|System 1 + 2|..|
 |Spatial Planning|System 2|..|
 |Non-spatial Planning|System 2|..|
-|Simulation|System 2|..|
+|Simulation|System 2|Supports trial-and-error approaches (Dolan and Dayan, 2013)|
+|Goal setting|System 2|..|
+|Logical reasoning|System 2|Including: deduction, induction, inferrence, making judgements under uncertainty, use strategy, solze puzzles|
+|Describe|System 2|Describe knowledge, produce a rationale for a decision - most of which will depend on mental models|
 
+
+# References
+
+Dolan, R. J., & Dayan, P. (2013). Goals and habits in the brain. Neuron, 80(2), 312–325. https://doi.org/10.1016/j.neuron.2013.09.007
