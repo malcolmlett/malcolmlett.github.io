@@ -3,7 +3,7 @@ This page forms part of the [[Proto AGI v1]] series.
 I present an examination of executive control for the purpose of building a proto AGI.
 
 
-# Key features
+# Key Features
 
 I now suspect that the following features are key to general intelligence:
 
@@ -34,15 +34,13 @@ In what is certainly an oversimplication, we will use the following view of evol
     
 With these three stages in mind, we will be able to measure the progression of capability of our proposed solutions.
 
+
 # Rewards
 
-## Training and Hard-wired Rewards
+## Interactions Across Hierarchical Rewards
 
 We want to be careful to offload the executive control layer from having to manage lower level aspects of the system. So we will need to carefully tune which layers receive the RL rewards related to specific things.
 
-![reward-layers](files/Executive-control-reward-layers.png)
-
-## Interactions across Hierarchical Rewards
 Each higher-order reward builds upon the policy trained via a lower-order reward. Thus they form a hierarchy. There are approximately two ways in which these categories of reward can interplay:
 * Refinement
     * Each higher-order reward provides higher fidelity or a more fine-grained frequency of feedback, making it easier to train the policy to follow the best path.
@@ -73,7 +71,8 @@ So, a likely training approach is:
     * The base assumption is that we don't need to change anything about what feedback we're giving. We assume that the internalised reward function from the last phase already conflicts (disagrees) with the lower-order reward functions, but that we were previously constraining the effect of its deviation. So, now we just stop constraining the effect of its deviation, and the policies will adjust.
     * Effective reward is taken as an equally weighted average across the three reward layers, thus a strong high-order reward can counteract a weak primitive penalty.
 
-## Reward components
+## Reward Components
+
 Some rewards that we might use (grouped by reward category):
 * Simple primitive rewards
     * pain
@@ -86,6 +85,7 @@ Some rewards that we might use (grouped by reward category):
 _more analysis: tbd_
 
 ## Pure Intrinsic Motivation
+
 What if the solution is to get rid of external training altogether and use pure intrinsic motivation. The main intrinsic motivation drivers would be a combination of something like:
 - Mutual information (DIAYN)
 - Prediction
@@ -113,9 +113,10 @@ An example architecture using pure intrinsic motivation might look like:
 Primitive rewards would be applied at each level independently and simultaneously.
 
 ## Primitive Reward Techniques
+
 Referred to as _intrinsic motivation_ within the RL community - but I find that term misleading and prefer to use _primitive reward_. For a detailed analysis of common techniques within RL, see [[Survey of Reinforcement Learning]].
 
-### Circular Targets
+### Circular targets
 Some instrinsic motivation techinques can lead to a policy that always moves the agent towards a particular stable state and then it tries to stay there. For example, empowerment can suffer from this technique, as it targets a state that affords the agent maximum capability of future state changes. Metaphorically, the agent will climb to the top of the hill and stay there.
 
 ![circular-motivation](files/Executive-control-circular-motivation.png)
@@ -125,7 +126,7 @@ We want an agent that is driven to keep doing things. One way of looking at this
 * curiosity - desire to learn when experiences surprise
 * learning degree - reward based on how much the agent learns over a period
 
-### Primitive Reward Options
+### Primitive reward options
 **Boredom**
 * Desire for unique stimulation.
 
@@ -141,6 +142,7 @@ We want an agent that is driven to keep doing things. One way of looking at this
 # Approach
 
 ## Policy Autonomy
+
 Most RL methods today don't trust the policy with much. They hide a number of key things from the policy by not making them available as inputs:
 * Goal
 	* On the basis that we don't know how to encode a goal. We hold the goal to ourselves like a secret card that we don't even reveal when the policy achieves it. 
@@ -154,6 +156,7 @@ Example tasks:
 * Planning: learn to simulate possible paths from model without carrying them all out. Great for efficiency in real world. 
 
 ## Functional Specialisation
+
 Intrinsic motivation approach make it very hard to produce results that are useful to us.
 
 Brain uses a lot of functional specialisation, as evidenced by a growing body of research. Particularly from lesion studies. So what if we tried that approach. 
@@ -169,6 +172,7 @@ Example:
 * Then extend to actually producing action planning.
 
 ## Worked Example - Primitive Rewards plus Teacher Goals
+
 We now look at how we can train the executive control layer to understand and target teacher specified goals. In order to "trust" our policy, and produce biologically plausible solution, our network will not be pre-trained to understand high-level rewards based on the actual goal, nor will we use any externally driven RL mechanism based on measurement against the goal. Rather, we will provide the teacher goal as high-level "sense" input to the agent, and depend on i) the existence of primitive rewards as the training force, ii) the fact that the primitive rewards coincide with the teacher goal signal, and iii) a modelling capability that will discover the relationship and subsequently understand goal signals in the absence of primitive rewards.
 
 ![with-modelling](files/Executive-control-with-modelling.png)
@@ -213,7 +217,6 @@ Bird training
 
 ![parrot-training](files/parrot-training.jpg)
 
-
 ## Adding Goals
 
 How do we enable the executive control layer to have goals?
@@ -233,6 +236,7 @@ That'll likely need a little more work. For one thing, when calculating rewards 
 ![goal-rewards](files/Executive-control-goal-rewards.png)
 
 ## Goal or Prediction?
+
 The biggest issue with the design so far is that the supposed _goal_ is really just a _prediction_ about future state, ie: the agent will maximise reward by always outputting a value that accurately predicts as far into the future as possible. A related issue is that there's no training pressure for the policy to use the current state of the goal in its determination of action. In other words, we're rewarding the agent for predicting the inevitable, rather than striving for something else.
 
 One way to enforce that the policy uses the goal is to maximise the mutual information between the goal and the actions that the policy takes. Something like:
@@ -246,6 +250,7 @@ There is another way of looking at this though. A great way for the agent to suc
 The idea of active inference suggests another tweak: that failed goals are still good if the agent learns from the experience. So perhaps we shouldn't penalise a failed goal (negative reward), but simply reduce the goal's reward contribution towards zero, and add a learning quotient on top. Coincidentally, this sort of thing is incorporated in an information theoretic way within the idea of active inference.
 
 ## Policy Action Options
+
 At any given time step, the policy now has a number of options available for which inputs to consider when choosing the next action. These are indicated here, with the options that we want to encourage in green, and other options (treated as short-cuts) in blue, and labelled according to what they translate to into our extended version of Daniel Kahneman's thought systems.
 
 ![action-options](files/Executive-control-policy-action-options.png)
@@ -258,6 +263,7 @@ For now, that process of self improvement will have to develop spontaneously as 
 # Bayesian Modelling
 
 ## Online Hierarchical Bayesian Clustering
+
 It's not easy to do bayesian modelling if we don't have a method for extracting unique "features" to reason about. Given a visual field image, how would I identify that a certain section of that image represents one object as distinct from other objects in the scene? One way of doing that is noting the relative likelihoods of pixels that appear together vs those that are independent. So we need a mechanism that will identify discrete objects and events out of the state input, and we need to analyse for those discrete objects/events across the breadth of the state vector and across time. This will create the lowest level set of nodes in a bayesian model, from which further bayesian modelling can be built up, so it might be the first in a number of discrete bayesian layers.
 
 ### A note on state vector representation
@@ -273,6 +279,7 @@ In order to train on events with equal before/after states, we lag the point in 
 At runtime, the resultant clustered bayesian model can be used for predictions based on the current state, and the observation error would ultimately lead to re-clustering. The observation error might always lead to a "surprise" signal, and the magnitude of that surprise would ultimately be amplified according to a measure of "emotional affect".
 
 ## Architecture
+
 ![bayes-components](files/Executive-control-bayes-components.png)
 
 A possible architecture involves around three bayesian modelling systems:
@@ -297,10 +304,10 @@ So, we build into the architecture of the executive control layer an embedded me
 
 ![bayes-arch](files/Executive-control-bayes-arch.png)
 
-### Active Inference
+### Active inference
 Add to that a method of Active Inference, and its method of trading off exploitation vs exploration via learning likelihoods, and you've now got a very adaptable agent.
 
-### Bayesian Inferred Goals
+### Bayesian inferred goals
 Additionally, it could make sense to incorporate goals. Goal inputs to the bayesian networks could help tailor their outputs more.
 
 More importantly, if Modeller #2 produces actions, it will be very unstable due to the fact that the benefit of an immediate next action depends on the policy, which changes over time. An alternative is to predict the desired state that will maximise expected rewards - ie: a goal. This has a nice advantage that it will be a much more constant output value over time.
@@ -318,6 +325,7 @@ A possible view, inspired by biology, is that both systems work in cooperation/c
 Another view is that it's looking more and more like we'd be best to focus on bayesian solutions for the executive control layer as our first priority. And only later add in the slower-learning NN approaches. This is starting to look like a more realistic path to true autonomous, self-motivated, self-governed general intelligence.
 
 ## Re-clustering with Memory
+
 When an observation reveals a bayesian inference prediction error, and this triggers the need for a cluster division, we don't have all the data points available anymore for re-analysis. But, maybe we do, because in the full solution there will be a memory of past events too that could be re-loaded and re-analysed.
 
 Example:
@@ -333,6 +341,7 @@ But maybe that's what the executive control layer is all about. The automated ma
 In prior work I've hypothesised that conscious feedback (CF) is important because it acts as a feedback mechanism that the higher-order brain uses against itself to maintain stability. But how exactly does that work?
 
 ## Analogue to Physical Senses
+
 Learning of low-level motor control and physical sense interpretation incorporate feedback signals that act as measures of predictive error. In many cases part of the construction of those feedback error signals depend on higher layers. The executive control layer also needs to learn, and it needs error signals to help it with that. But when it's already the highest layer, where does it get its error signals from?
 
 When the executive control layer decides on a physical action, its sense inputs become the feedback signal. They are interpreted and compared to the goal, and the difference becomes the feedback signal that the executive control layer applies to itself for that physical action. Importantly, the feedback signal is fine-grained and immediate. This leads to significantly more efficient learning and smoother actions than possible with sparse rewards.
@@ -342,9 +351,11 @@ What about thought? Many thoughts don't lead to physical actions, so the senses 
 How does it learn to do that critiquing? One way is for it to act as a form of sparse-to-dense reward transformation. Almost all thought leads to physical action of some sort eventually. It may be immediate body action (eg: I want to go somewhere, so I start walking). It may be immediate talking action (eg: I say what I was thinking). It may be delayed physical action. All of those physical actions have the possibility of providing some sparse reward from the environment (eg: I find that I've walked to the wrong place; the person I'm talking to looks confused). All of the executive control layer capabilities (prediction, mental models, memory, etc.) can be employed to learn that certain thought processes tend to be productive, while others tend to lead to negative rewards. So those processes can then provide constant critiquing of the thought process, and provide immediate feedback.
 
 ## Inputs vs Outputs
+
 Why would the executive control layer need CF when it's already got access to all the sense inputs and internal state? It because those are all _inputs_ to the neural network of the executive control layer. CF is the only direct way of observing the network's _output_.
 
 ## Action Learning
+
 In RL, we learning mappings from actions to probabilities or reward expectations. The actions here are the _output_ of the neural network of the executive control layer. So the RL algorithm needs to directly observe those outputs. Under a hypothesis that the brain implements something akin to RL, but embedded within all its other processes, then it is that same executive control layer that is involved with the RL training. Thus it needs to directly observe those outputs.
 
 
@@ -357,6 +368,7 @@ In humans, working memory appears to be a decentralised process. But we don't ne
 At this point the question becomes about what state, if any, that WM component holds. Or, is WM just a pass-through?
 
 ## Examples
+
 Learning to balance when walking (intermediate layer reward)
 * Old-brain performs this without conscious control.
 * Signal from vestibular system provides feedback signal that intermediate and low-level layers use to control balance.
@@ -367,6 +379,7 @@ Learning to balance when walking (intermediate layer reward)
 
 Office world (copied from Illanes _et al_, 2020):
 ![office-world](files/office-world.png)
+
 
 # References
 

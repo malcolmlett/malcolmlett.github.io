@@ -2,8 +2,11 @@ This page forms part of the [[Proto AGI v1]] series.
 
 It summarises some of the known neuroscience, observations, and assumed mechanisms that underly the proto AGI design.
 
+
 # Neuroscience
-# Brain development
+
+## Brain development
+
 Brain size increases from birth, reaching full size at about 7 years. The number of neurons and quality of connections change drastically during that time too (Developmental Psychology, ch 4), as summarised in the following table:
 
 |Age|Brain size as percentage of adult weight|Neuron development|
@@ -18,9 +21,11 @@ Brain size increases from birth, reaching full size at about 7 years. The number
 ## Sensorimotor System
 
 ## Senses
+
 (tbd)
 
 ## Motor Control
+
 Motor control is governed by a number of layers, with increasing levels of abstraction (Neuroscience Online, s3):
 
 |Layer|Responsibility|
@@ -40,6 +45,7 @@ The motor cortex is further subdivided into a number of regions:
 ![simple sensorimotor pathways](files/sensorimotor-pathways-simple.png)
 
 ## Proprioception
+
 * https://en.wikipedia.org/wiki/Body_schema
 * https://en.wikipedia.org/wiki/Proprioception
 
@@ -60,6 +66,7 @@ The muscle spindle fibres etc. provide direct feedback on relative limb angles a
 Some theories suggest the existence of a separate _body image_, which holds more static information such as general capabilities, tracking of capability changes due to injury or amputation, and is implicated in body dismorphic syndromes. It is suggested that the body image is the cause of phantom limbs and anosognosia (Proske & Gandevia, 2012. section 4a).
 
 ## Sensorimotor Development
+
 * https://en.wikipedia.org/wiki/Developmental_psychology
 
 Piaget's theories on human child intellectual development come from the 1950s and 60s, and are still basically accepted today. They break development into four stages: _sensorimotor_, _pre-operational_, _concrete operational_, and _formal operational_. Sensorimotor development has six substages that build on top of each other (McLeod, 2019):
@@ -74,6 +81,7 @@ A couple of good writeups can be found on the [massey.ac.nz](https://www.massey.
 
 
 ## Corollary discharge and efference copy
+
 These are two more or less synonymous terms with different histories. 
 
 The basic premise is that the brain sends a copy of its intended motor command to secondary system that predicts the effect on the senses. This is used for example to counter the effect of eye or body movement on the visual image that we perceive. It is used to determine whether the observed change in image is caused by our own movement, or the movement of the scene. Vision is the only proven use of this mechanism, but it is believed that it may play a larger role throughout other systems within the brain. For example, one 2020 paper (https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000639) focused on the amygdala and its management of emotions, suggested that the corollary discharge mechanism may be employed in how rewards are calculated by the brain. 
@@ -85,6 +93,7 @@ See:
 
 
 ## Memory
+
 The kinds of memory in humans have been categorised in order to try to understand them. The categories are ([source](https://www.predictivesafety.com/blog/the-7-types-of-memory-and-how-to-improve-them)):
 * Short-term Memory: memory that lasts for only about 20 to 30 seconds.
 * Long-term Memory: memory that lasts longer than 30 seconds.
@@ -97,11 +106,16 @@ Within that categorisation, we have the following concrete forms of memory:
 * Semantic Memory: long-term explicit memory that represents general knowledge about the world. These are vey stable once learned, in contrast to episodic memories. Semantic memory declines only very slowly as we age.
 * Procedural Memory: long-term implicit memory about how to do things. Better thought of as learned skill than a memory. eg: riding a bike, speaking a language.
 
+
 # Examples
+
 * Wilderbeast calves can [walk within minutes of their birth](https://en.wikipedia.org/wiki/Wildebeest#Breeding_and_reproduction). While many aspects of walking (muscle development, basic muscle control) can be developed while in the womb; there is no way that the complicated act of walking (coordinating motion, maintaining balance) can be learned from experience while in the womb. The systems involved with walking are very complex. Importantly, they cannot be governed by hard-wired basic signals - like for reflexes. They require the use of complex trained neural networks. Surely the only reasonable explanation here is that evolution has encoded the exact neural configuration (including synaptic strengths) into the DNA, for those systems that are required immediately upon birth.
 
+
 # Building up a theory
+
 ## Low level motor control and senses
+
 During fetal development, the mammallian brain does not know about the existence of its limbs, nor about how to interpret the senses it receives. As it does not know about the existence of its limbs, it cannot intentionally attempt to move them and to use the observed error to train itself. It's a classic _chicken-and-egg_ problem problem. So how to bootstrap learning about limb movement (ie: motor control) and sense interpretation?
 
 One observation I made about my own child during their first few months is that their legs and arms flailed around a lot, seemingly without intent. Over time I observed that the flailing seemed to become more intentional. Eventually the flailing was altogether replaced by intentional controlled movement. It turns out that this flailing may have a definite purpose in bootstrapping development (citation needed), as it acts as a form of exploration of the motor control signal space, and simultaneously provides a source of data labelling to correlate with sense inputs.
@@ -112,8 +126,8 @@ In the diagram above, this provides a feedback loop where jitter on the motor co
 
 And finally, after birth, the touch-based bootstrapping gets extended into vision and all the other senses.
 
-
 ## Layering of Motor Control
+
 ### Low-level motor control
 It's pretty clear from our understanding of neuroscience that the primary motor cortex, in combination with cerebellum, and brain stem perform motor control functions at a low level.
 
@@ -139,7 +153,9 @@ I think the answer here is that, to the largest extent, this is not possible. Th
 
 To some extent though, you can learn to do that on auto-pilot. The simple act of digging a hole is as repeatable a process as driving the car to your regular grocery store, and requires you to merely play out a well learned series of actions (on the tool). So there is an extent to which it becomes automatic, but still not entirely automatic. And this seems to fit with the lack of a tertiary motor cortex.
 
+
 # References
+
 Developmental Psychology, ch 4. Lumen Learning. https://courses.lumenlearning.com/suny-hccc-ss-152-1/chapter/physical-development/
 
 McLeod, S. A. 2019, April 09. Sensorimotor stage. Simply Psychology. https://www.simplypsychology.org/sensorimotor.html

@@ -2,7 +2,9 @@ Can we use our best current understanding of neuroscience to inspire AI architec
 
 This page presents CIPAGIO, _Consciousness Inspired Proto Artificial General Intelligence Operative_. It is part of a collection of documents:
 
+
 # Background
+
 This page makes reference to content within other pages:
 * [[Biological basis for proto AGI]]
 * [[General Intelligence Classifications]]
@@ -14,19 +16,16 @@ Also see:
 ## Principles
 
 ### Centralised
-
 It appears that the biological brain largely produces its complex behaviour through decentralised coordination of many components. That's hard to reason about and to build for a proto AGI.
 
 The design for this AGI assumes centralised control.
 
 ### Convergence
-
 A multi-layered system like this will be inherently chaotc. So without explicit consideration it's chances of converging towards a stable and useful outcome are minimal.
 
 To counteract that the architecture must build in convergent forces that apply at multiple points. These will be applied across all layers, and across multiple time scales.
 
 ### Brain growth
-
 The human baby brain starts small, with many capabilities not fully formed. Those capabilities "come online" over time as the child grows. I believe this had two benefits:
 * It helps to reduce the search space for optimal network training. Effectively it trains against a simpler problem to start with, then slowly increases the brain capacity and retrains on more complex problems. 
 *  It helps to ensure convergence in an otherwise unstable system. With full executive control, we've got too much control over the reinforcement learning algorithm, but when in a fresh state, the executive control will be too unstable. So better to train level 1 systems first, holding executive control in a mostly disabled state. 
@@ -34,13 +33,11 @@ The human baby brain starts small, with many capabilities not fully formed. Thos
 In contrast, a modern neural network is static in size, thus we will not be able to replicate the same efficiency of learning. However, there may be other opportunities for improving our architecture or approach. For example, we may initially attenuate-to-zero the output of particular components, and slowly ramp up their output signal strength and their accuracy improves.
 
 ### Avoiding catastrophic forgetting
-
 Modern neural networks suffer from "catastrophic forgetting", where training on one skill causes loss of a prior learned skill. Humans don't suffer from this problem, as the brain seems to be able to slot different skills into slightly different regions. There is work on achieving that with AI. One promising angle is Stephen Grossberg's Adaptive Resonance Theory (ART).
 
 To keep things simple, for now we will ignore the issue of catastrophic forgetting, and will setup a training environment where all required skills are repeatedly re-practiced.
 
 ### Executive Control and Decomposed Sandwich form of Reinforcement Learning
-
 I think executive control incorporates a "decomposed sandwich" form of reinforcement learning - where many aspects of the algorithm are under direct control. This includes:
 * Internalisation of reward function. 
 * Exploration vs exploitation ratio
@@ -51,7 +48,6 @@ Executive control also learns to "drive" the unseen aspects of reinforcement lea
 * Eg: we actively choose to learn a new skill. 
 
 ### Evolution as Learning Mechanism
-
 Anything that is common amongst the majority of humanity is too consistent to be left to dumb luck; it has to be a result of evolution, and thus enforced (or at least predisposed) due to the architecture. At the very least, it must additionally depend on guaranteed aspects of the environment (eg: gravity, air, sunlight vs nighttime cycle).
  
 Some aspects of human brain behaviour require the pre-wiring of feelings, urges, desires, distastes, etc.. In some cases these can be simple electrical signals that the brain can learn online to work with. In other cases, they must require pre-wiring of network structures -- ie: a whole NN "domain model" encoding. This is feasible from evolution - that some of the NN training is a result of evolution, which amounts to pre-training of the network weights (ie: not just the high level architecture).
@@ -60,7 +56,6 @@ Some aspects of human brain behaviour require the pre-wiring of feelings, urges,
 # Architecture
 
 ## Artificial equivalents of Biological systems
-
 Analysis of brain layers and how we'll emulate them in an AI:
 
 |Layer|Description|Re-interpretation|AI Architecture Layer|
@@ -95,14 +90,6 @@ The following systems are involved:
 For a bit of fun, this is what a partially complete 2-layer architecture might look like that doesn't attempt to distinguish the different sensorimotor modalities. The sections that follow shall flesh this out further and add explicit low-level support for the different sensorimotor modalities.
 ![Complete](files/An-agi-architecture-v1-complete.png)
 
-## Training
-
-Repeated cycles of the following sequence of training:
-* RL of Level 1 with jitter as input
-* Supervised Learning (SL) of Levels 1 + 1b with generated sense inputs
-* RL of whole network with jitter against executive control output (?)
-* RL of whole network with full policy execution
-
 
 # Low-level Sensorimotor Systems
 
@@ -134,12 +121,9 @@ Now, there are a few gotchas here.
 
 3. Even given that assumption, it is likely that we'll run into problems of overfitting causing bad guesses. The problem is that our network capacity is significantly higher than is needed for the sparse data received so far. In humans, the initial bootstrap learning likely occurs while the brain is still developing and is much smaller than its eventual size. Thus it has less neurons to overfit with and will generalise better. In current ML, we always use fixed size networks, so we will probably need to resolve the overfitting problem here somehow.
 
-4. In mammals, motor control is triggered by the primary motor cortex, but the exact sequencing, timing, and coordination with other movements is governed by the cerebellum. Exactly how that occurs is still unknown. For now we'll build all of that into our one policy network.
-
-5. In mammals, the lowest level feedback-based sensorimotor development is probably further segregated into its independent modalities: muscle control and muscle senses learned against each other independent of other senses. The vision sense can only be incorporated into that circuit at a much higher level, where it can make sense of the differences when looking at the arm vs looking elsewhere.
+4. In mammals, motor control is triggered by the primary motor cortex, but the exact sequencing, timing, and coordination with other movements is governed by the cerebellum. Exactly how that occurs is still unknown. For now we'll build all of that into our low-level policy network, via use of a Recurrent Neural Network.
 
 ### Reinforcement learning for proprioceptimotor system
-
 Now we use RL to train the motor control policy (MC policy) for trajectories that best lead towards goal states. We'll use the current agent's state representation for the goals, so we do not _a priori_ know the parameters of the reward function. We must use data collected from the current policy, or at least near to it. During the training runs in the prior section, we'll collect the full unbroken trajectory within a sequential data buffer `D = (d1, d2, d3, ....dN)`, where `di` is the tuple of data taken at time `t`:
 
     (e,s,a,e',s')
@@ -164,7 +148,6 @@ As our policy network produces deterministic continuous actions, we'll use the [
 The RL learning discussed here will be alternated with the jitter and supervised learning discussed above. Thus, the low-level MC policy will accurately learn `p(a|s(t),s(t+i)` for all of `1 <= i <= n`.
 
 ### Low level state representation
-
 How do we train the state representation that the sense intepretation network will output? In the complete architecture, the state representation will be used as input to higher level networks, and possibly the goal representation too. We don't yet know what kind of information the high level networks will require, so we have only a vague notion that the state representation needs to be useful. This can be clarified a little by stating that it must produce a high contrast of outputs for highly different inputs. We paraphrase this vague requirement as requiring the representation to have _high saliency_.
 
 There are a number of options available:
@@ -203,7 +186,6 @@ I suspect that the best result is a combination of:
 ![Low Level state saliency](files/An-agi-architecture-v1-low-level-state-saliency.png)
 
 ### Body schema
-
 In humans, proprioception is achieved through aggregation of direct senses and through mental tracking of limb position. It depends on three distinct physical senses, listed in order of highest significance first: i) muscle spindle fibres plus golgi tendon organs, ii) skin, and iii) vision (Proske & Gandevia, 2012). The muscle spindle fibres and tendon organs do not alone accurately track limb position because they encode joint angles, but not limb length. Thus the brain also maintains a _body schema_ that mentally tracks the position of limbs, using input from the senses mentioned (Proske & Gandevia, 2012. section 4a).
 
 In contrast to most other senses, in humans the raw proprioceptive senses are not consciously accessible. Rather we appear to be aware of the current state of the body schema. For example, you can lie still, close your eyes, and know where every part of your body is - but it's believed that you don't experience any direct awareness of the muscle spindle fibre senses. Furthermore, while you may not be consciously attentive to the proprioceptive sense at all times, that information is always available. This is in the same way that the touch sense of your clothes on your skin is available available, but you are only attentive to it occassionally.
@@ -251,20 +233,6 @@ Similar to ocular system.
 
 Has similar corollary discharge mechanism to remove one's own production of sound from the 'surprise' signal. And the inverse of that: surprise at not producing sound.
 
-## Layering-up for Higher-order Motor Control
-
-The current design of the low-level sensorimotor systems will tend to use fairly low-level representations at their interfaces to the layer above. This is because i) they have minimal training pressure applied from the layer above, and ii) they are trained on instantaneous sense inputs without time-sensitive context (ie: it will represent motion at level of "arm is moving up at speed x"). And the goal input to the low-level will have that same level of representation.
-
-Thus, the low-level will not learn medium level representations like "move arm towards mouth in eating position". This fits well with observations from brain stimulation in monkeys.
-
-To build up a higher level system, we need to enforce a higher level of representation. An important aspect of the system is that it is made up of many neural net layers stacked on top of each other. From raw sense input up to executive control, each layer _integrates_ the data from below into a slightly higher representation. From executive control down to raw motor control, each layer _differentiates_ the data from above into a slightly lower representation. Across the system, this applies a pressure that is distributed between top and bottom, creating a _representational gradient_.
-
-In a biological system, each component in the higher-order layers must have characteristics that work best given a particular representational level and structure. That must apply a convergence pressure on the components that it interacts with. And each other component presumably has similar effects on the components around it. The assumption here is that the final result naturally tends towards an equilibrium. Lastly, evolution will have tuned all those inherent component characteristics so that the system as a whole produces "fit" results.
-
-For our solution, the representational levels will be found through convergence of pressures illustrated here:
-
-![representational gradient](files/An-agi-architecture-v1-representational-gradient.png)
-
 ## Areas Requiring More Work
 
 ### Where and What systems
@@ -273,28 +241,7 @@ For our solution, the representational levels will be found through convergence 
 
 # Intermediate Layer
 
-## Hierarchical Learning
-
-![action layers](files/An-agi-architecture-v1-action-layers.png)
-
-### Hierarchical action errors
-
-1. Executive control layer: Send "desire signal" from top layer. eg: "touch finger to nose"
-2. Executive control layer: Observe error, record, and send from executive control layer to intermediate layer.
-3. Executive control layer and Intermediate Layer: record observation tuple `<desire, error>`.
-4. Executive control layer: In training round, use `<desire, error>` tuple to move slightly towards producing a better desire signal that would produce a better outcome (assuming a fixed intermediate layer network). Additionally, this probably applies back-prop pressure to intermediate layer.
-5. Intermediate layer: In training round, use `<desire, error>` tuple to move slightly towards doing the better action given a fixed desire signal from the executive control  layer. Additionally, this probably applies back-prop pressure to low-level layer.
-6. And mental modelling will record how much executive control was required in order to achieve the desired state.
-
-![action errors](files/An-agi-architecture-v1-action-error.png)
-
-## Handling Noisy Data
-Humans use predictive signals from higher-order layers to help in the inference. That would look something like this:
-
-![prediction-from-above](files/An-agi-architecture-v1-prediction-from-above.png)
-
-
-### Training strategy for intermediate level
+## Training strategy for intermediate level
 
 So, how to actually train the intermediate-level?
 
@@ -348,6 +295,7 @@ I suspect that bayesian models are fundamental to the advanced goal decision mak
 * Are bayesian models used in lower level layers too or just within the executive control layers?
 
 ## Absolute vs Relative Control
+
 In this context, "absolute" refers to a goal or action representation that entirely encodes the full desired state, including ambient background state that isn't relevant to the task at hand. This can be a complex option for controlling a particular focused task, particularly when the ambient state may itself be changing independently. "Relative" is used to refer to any means of producing only a partial representation that focuses only on the task at hand. Additionally at times we will distinguish "static" motion (I want my hands to go to a particular position and stop there) from "dynamic" motion (I want to swing my axe in a chopping motion). And we'll also distinguish "continuous" motion (that requires continuous action signal for duration of motion) from "persisted" motion (begins from a 'start' signal and then can continue without further exec ctrl). 
 
 Intuitively it would seem like we need to support relative goals and actions somehow, because that's our experience as a conscious agent. I can keep walking while my mind drifts off. In practice, I think that's better treated as a later optimisation tray someone wise will figure out. I can imagine an evolutionary path where the executive control layer works only in terms of absolute goals and actions initially, and then later frees up executive control by holding state in lower levels so that the exec ctrl layer only needs to send a signal when it's time to change the persistent request. 
@@ -373,7 +321,73 @@ There are a number of options available for supporting relative representations.
 One of the biggest problems with all these options is that they presuppose that all actions operate under the same mode. The reality in biology is probably significantly more complex, with different actions operating under different modes. For example, in biology some parts are likely handled at the low level synaptic and recurrent level. Synaptic cycles are known to exist with separate "off" signals (eg: in primitive pain signalling). So, for something as primitive as walking, it is likely a delta signal from exec ctrl layer, with state handled within the intermediate and low levels. But for many other actions I need to continually produce the action signal: if I stop thinking about doing something, my body stops doing it.
 
 
+# Distributed Predictions
+
+There are several additional inter-layer connections that can be added to aid in predictions that help with both sense interpretation and motor control. This chapter reviews some of those.
+
+## Handling Noisy Data
+
+Humans use predictive signals from higher-order layers to help in the inference. That would look something like this:
+
+![prediction-from-above](files/An-agi-architecture-v1-prediction-from-above.png)
+
+## Next state predection
+
+(tbd)
+
+## Corollary Discharge
+
+(tbd: discussed within applicable low-level layers, so just summarise here)
+
+
 # Overall Training Approach
+
+Repeated cycles of the following sequence of training:
+* RL of Level 1 with jitter as input
+* Supervised Learning (SL) of Levels 1 + 1b with generated sense inputs
+* RL of whole network with jitter against executive control output (?)
+* RL of whole network with full policy execution
+
+## Representational Gradient
+
+The current design of the low-level sensorimotor systems will tend to use fairly low-level representations at their interfaces to the layer above. This is because i) they have minimal training pressure applied from the layer above, and ii) they are trained on instantaneous sense inputs without time-sensitive context (ie: it will represent motion at level of "arm is moving up at speed x"). And the goal input to the low-level will have that same level of representation.
+
+Thus, the low-level will not learn medium level representations like "move arm towards mouth in eating position". This fits well with observations from brain stimulation in monkeys.
+
+To build up a higher level system, we need to enforce a higher level of representation. An important aspect of the system is that it is made up of many neural net layers stacked on top of each other. From raw sense input up to executive control, each layer _integrates_ the data from below into a slightly higher representation. From executive control down to raw motor control, each layer _differentiates_ the data from above into a slightly lower representation. Across the system, this applies a pressure that is distributed between top and bottom, creating a _representational gradient_.
+
+In a biological system, each component in the higher-order layers must have characteristics that work best given a particular representational level and structure. That must apply a convergence pressure on the components that it interacts with. And each other component presumably has similar effects on the components around it. The assumption here is that the final result naturally tends towards an equilibrium. Lastly, evolution will have tuned all those inherent component characteristics so that the system as a whole produces "fit" results.
+
+For our solution, the representational levels will be found through convergence of pressures illustrated here:
+
+![representational gradient](files/An-agi-architecture-v1-representational-gradient.png)
+
+## Reward Layers
+
+![reward-layers](files/An-agi-architecture-v1-reward-layers.png)
+
+Each level learnings a policy in the presence of the behaviours of the level below. Those lower-level behaviours can be represented simplistically as a mapping:
+* control signal -> outcome state
+
+As each lower-level layer is also learning and changing its behaviour, the overal system will initially be highly chaotic. But the mechanisms applied to encourage convergence at each level indepedently will ultimately result in the whole system converging. That initial chaotic nature serves the highest level well as it executives a broad search for optimum policy. Primitive efficiency error will help to lead to smooth motion.
+
+During this time, mental models are also being built up from observations. Eventually the executive control layer will start to produce stable goals and attempt to action them. The goals will initially be based on trying out existing mental models about past learned motol skills, but will later be more driven by goal exploration.
+
+As goal driven exploration takes over, the DIAYN signal will reduce slowly towards zero. ie: reduced induced random noise and reduced RL loss signal from DIAYN algorithm.
+
+## Hierarchical Learning
+
+![action layers](files/An-agi-architecture-v1-action-layers.png)
+
+### Hierarchical action errors
+1. Executive control layer: Send "desire signal" from top layer. eg: "touch finger to nose"
+2. Executive control layer: Observe error, record, and send from executive control layer to intermediate layer.
+3. Executive control layer and Intermediate Layer: record observation tuple `<desire, error>`.
+4. Executive control layer: In training round, use `<desire, error>` tuple to move slightly towards producing a better desire signal that would produce a better outcome (assuming a fixed intermediate layer network). Additionally, this probably applies back-prop pressure to intermediate layer.
+5. Intermediate layer: In training round, use `<desire, error>` tuple to move slightly towards doing the better action given a fixed desire signal from the executive control  layer. Additionally, this probably applies back-prop pressure to low-level layer.
+6. And mental modelling will record how much executive control was required in order to achieve the desired state.
+
+![action errors](files/An-agi-architecture-v1-action-error.png)
 
 ## Capabilities Development
 

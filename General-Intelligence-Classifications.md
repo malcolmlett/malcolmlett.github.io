@@ -144,7 +144,7 @@ So, with reference to Visceral Loop Theory, we say that there is _executive obse
 
 The ability to classify data as having executive observability is important for judging the level to which an artificial network architecture has any possibility of emulating conscious experience. Given our lack of understanding of what general intelligence truly is, this becomes our proxy for measuring the level of AGI that we've produced. Another way of looking at this is to take an example artifical network architecture, focus on the main policy network within the highest level layer (assumwed to be the executive control layer) and imagine what kind of experience a sentient bearing would have should it be based on the architecture surrounding that policy network and based on the assumption that visceral loop theory informs us of what a sentient being experiences. Such as in the network architectures pictured here:
 
-![executive observability](files/An-agi-architecture-v1-executive-observability.png)
+![executive observability](files/GI-classifications-executive-observability.png)
 
 So, with the definition of executive observability in hand, let's look at the above network architectures and classify what kind of executive observability they have. 
 
@@ -217,6 +217,7 @@ Learning, and adaptation in general, can be broken down into a few phases. They 
 I suspect that for the majority of new physical and mental skills, their development undergoes each phase in turn.
 
 ## Example
+
 In order to clarify this, I offer a learning example annotated with how I suspect it interacts with the phases:
 * A right-handed child is learning to write with a pen. They first pick up the pen with their left hand, and upon instruction swap the pen to their right hand. This is just-in-time adaptation.
 * The event also feeds into the memorisation phase: in the next class they will remember being told to use the right hand. They will need to carry that out consciously for a few times before a _habit_ (long term potentiation) sets in.
@@ -225,6 +226,7 @@ In order to clarify this, I offer a learning example annotated with how I suspec
 * Later, when learning maths, the writing skill is depended on without conscious control, and it frees up the learning phases for the more complicated task at hand.
 
 ## Capabilities required for adaptive phases
+
 The above phases suggest certain machinery:
 1. Just-in-time adaptation depends on:
     * Short-term working memory.
