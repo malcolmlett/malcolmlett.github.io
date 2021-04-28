@@ -106,8 +106,8 @@ In the second example, the majority of activity is carried out consciously and t
 
 The first example highlights the usefulness of a sub-conscious predictive system and how it can act as useful input into the conscious thought process. The second example highlights the importance of episodic memory in the process of forming conclusions.
 
-### Bayesian modelling engine
-The assumption for now is that there is some system that is used for creating bayesian models.
+### Dynamic modelling engine
+The assumption for now is that there is some system that is used for creating dynamic models. We investigate bayesian methods for this in a later chapter.
 
 ![Bayesian Models](files/An-agi-architecture-v1-bayesian-models.png)
 
@@ -122,10 +122,21 @@ Some outstanding questions are:
 * Assuming "bayesian modelling engine" is separate, does main executive control network need to re-learn how to use the bayesian models as they are refined? For example, a baby with no bayesian models could not learn to use those models until _after_ it had formed some initial models. Then as the models get more advanced, it'd probably need to re-learn again to fully use the more advanced aspects of the models. At some point it'd presumably reach a point where it knows how to work with any new kind of bayesian model already.
 * Are bayesian models used in lower level layers too or just within the executive control layers?
 
+## Policy autonomy
+Most RL methods today don't trust the policy with much. They hide a number of key things from the policy by not making them available as inputs:
+* Goal
+	* On the basis that we don't know how to encode a goal. We hold the goal to ourselves like a secret card that we don't even reveal when the policy achieves it. 
+* Rewards
+* Execution strategy. 
+	* Model based techniques execute the path search as a mechanical process that the polucy has no control over. 
+
+I want a policy that can "think". One that can choose inaction in order to mull over the options. So I need to trust it more. This includes with goal, rewards, but most importantly with execution strategy. I treat mental action the same as physical action. In order to include mental actions within the policy gradient calculations, I include those actions in the value estimate. 
+
+This "trust" is a key feature of the discussions that follow.
+
 
 # Rewards
 
-## Intro
 When a parent smiles or laughes at an infant, they seem to instinctively recognise it as a good thing, in comparison to someone frowning and shouting. As the child becomes more mature, they feel a pain of regret when they know they did something wrong. People learn complex relationships between actions and rewards, and most if it without any conscious thought. Importantly, we seem to be aware of all reward signals.
 
 This is directly in contrast to current AI reinforcement learning techniques. The reward is merely a number that is fed into a expected value equation, used to calculate a loss value, and finally drives neural net weight adjustments through stochastic gradient descent. The agent isn't aware of any of that process, and is never informed of the reward value itself.
@@ -236,18 +247,6 @@ Learning algorithms could include:
 
 This seems like a much more effective long term strategy for producing an AGI.
 
-### Policy autonomy
-Most RL methods today don't trust the policy with much. They hide a number of key things from the policy by not making them available as inputs:
-* Goal
-	* On the basis that we don't know how to encode a goal. We hold the goal to ourselves like a secret card that we don't even reveal when the policy achieves it. 
-* Rewards
-* Execution strategy. 
-	* Model based techniques execute the path search as a mechanical process that the polucy has no control over. 
-
-I want a policy that can "think". One that can choose inaction in order to mull over the options. So I need to trust it more. This includes with goal, rewards, but most importantly with execution strategy. I treat mental action the same as physical action. In order to include mental actions within the policy gradient calculations, I include those actions in the value estimate. 
-
-This fits with the idea of using pure intrinsic motivation.
-
 ### Example Architecture
 An example architecture using pure intrinsic motivation might look like:
 * Maximise I(G:S) - mutual information between goals and states (DIAYN) - encourages exploration, diversity of capabilities, and training of goal representation. 
@@ -324,7 +323,7 @@ Collapsing box of pain:
 
 ![box-of-pain](files/Executive-control-box-of-pain.png)
 
-Bird training
+I need to look into techniques for bird training, as these techniques may have some important lessons on how to bootstrap advanced behaviour using only primitive reward techniques.
 
 ![parrot-training](files/parrot-training.jpg)
 
@@ -371,8 +370,8 @@ To emulate something close to human experience, it also needs to monitor its own
 
 For now, that process of self improvement will have to develop spontaneously as I don't know how to reward it for self analysis, and I hopefully shouldn't have to.
 
-## Bayesian Goals
-Perhaps a solution is arrived at by recognising the relative strengths of neural networks and bayesian models. The neural network is great for complex policies, and relative stability, while bayesian networks are great for inference and short-term adaptability. So, maybe the bayesian network produces the goal, and the policy actions it. Combine that with the simplistic goal achievement reward measure above, and we have a system that genuinely produces its own goals.
+## Dynamic Modelling for Goals
+Perhaps a solution is arrived at by recognising the relative strengths of neural networks and dynamic modelling techniques. The neural network is great for complex policies, and relative stability, while bayesian networks for example are great for inference and short-term adaptability. So, maybe the bayesian network produces the goal, and the policy actions it. Combine that with the simplistic goal achievement reward measure above, and we have a system that genuinely produces its own goals.
 
 ![bayesian goals](files/Executive-control-bayesian-goals.png)
 
@@ -466,7 +465,16 @@ But maybe that's what the executive control layer is all about. The automated ma
 Something to consider is that the representational interpretation of the high-level state supplied by the intermediate layer will change over time. The modelling engine will have to cope with those changes.
 
 
-# Importance of Conscious Feedback
+# Working Memory
+
+In humans, working memory appears to be a decentralised process. But we don't necessarily need to repeat that for an AI. We could perhaps achieve the same thing with a single 'working memory' (WM) component. One option is the main executive control (EC) system passes some of its output into working memory, and the current state of working memory feeds into EC as an input sense.
+
+![working-memory-variations](files/Executive-control-wm-variations.png)
+
+At this point the question becomes about what state, if any, that WM component holds. Or, is WM just a pass-through?
+
+
+# Conscious Feedback
 
 In prior work I've hypothesised that conscious feedback (CF) is important because it acts as a feedback mechanism that the higher-order brain uses against itself to maintain stability. But how exactly does that work?
 
@@ -487,15 +495,6 @@ Why would the executive control layer need CF when it's already got access to al
 ## Action Learning
 
 In RL, we learning mappings from actions to probabilities or reward expectations. The actions here are the _output_ of the neural network of the executive control layer. So the RL algorithm needs to directly observe those outputs. Under a hypothesis that the brain implements something akin to RL, but embedded within all its other processes, then it is that same executive control layer that is involved with the RL training. Thus it needs to directly observe those outputs.
-
-
-# Working Memory
-
-In humans, working memory appears to be a decentralised process. But we don't necessarily need to repeat that for an AI. We could perhaps achieve the same thing with a single 'working memory' (WM) component. One option is the main executive control (EC) system passes some of its output into working memory, and the current state of working memory feeds into EC as an input sense.
-
-![working-memory-variations](files/Executive-control-wm-variations.png)
-
-At this point the question becomes about what state, if any, that WM component holds. Or, is WM just a pass-through?
 
 
 # Example Tasks
