@@ -2,23 +2,55 @@ This page forms part of the [[Proto AGI v1]] series.
 
 I present an examination of executive control for the purpose of building a proto AGI.
 
+# Introduction
 
-# Key Features
+General intelligence is a tremendously complex topic. The more I have thought about it, the more I have come to the conclusion that human general intelligence is the aggregation of many discrete facets working in concert. Understanding all those facets, and how they interact, is way beyond my own capabilities. So, although I desire to produce something of consequence in this research area, and I believe that I can do so based on the principles of consciousness theorised in [[A Theory of Consciousness]], I must focus on a narrow subset of problems if I am to make any progress. But which problems to focus on? General intelligence is a classic ill-defined problem in that it is not obvious how to break the larger problem into smaller pieces. What are those pieces?
 
-I now suspect that the following features are key to general intelligence:
+In this page I investigate that by initially approaching the question of general intelligence in a haphazard way. I draw out and discuss areas of interest that may or may not be particularly relevant. In so doing, I hope to build up a deeper understanding of the different concrete mechanisms behind general intelligence. From that deeper understanding, we shall be able to determine where to focus our efforts.
 
-* Mental modeling
-* Brain as a deconstructed RL algorithm
-* Prediction
-* Goals
-* Learned rewards
+## Research Goal
 
-tbd: diagram
+With reference to [[A Theory of Consciousness]], in this current research my primary goal is to:
+1. Provide a convincing argument for a processing loop as the basis for general intelligence.
+2. Prove that _conscious feedback_ is a required feature of that processing loop, and qualify what it is needed for and how it is used.
+3. Show that this solution provides a significant improvement over current reinforcement learning techniques for rapid adaptation.
 
+With some luck, I hope also to:
+1. Show convincingly that this approach is the direction required in order to implement artificial intelligence.
+2. Implement some key human general intelligence capabilities.
 
-## Progression of Capabilities
+## Areas of Focus
 
-In what is certainly an oversimplication, we will use the following view of evolutionary progression as a way to understand the important differences between three kinds of policy that might be possible at the higher-order control layer.
+Some of features that I suspect are key to general intelligence, and which will be discussed in detail in the sections below, are as follows...
+
+**Mental modeling:**
+* Being able to model the world, and one-self
+* Using that for inference
+* Using modelling for rapid learning and adaptation
+
+**Neural networks:**
+* Slow-learning neural networks, used in combination with mental modelling, for a best-of-both-worlds solution
+
+**Brain as a deconstructed RL algorithm:**
+* Brain learns through something similar to a reinforcement algorithm, except that it is "deconstructed": its components and steps are split out and distributed throughout the brain's systems and the conscious part of the mind is intimately involved with the process.
+
+**Prediction:**
+* Automatic sub-conscious processes produce most of the results that are used within conscious thought, through automated recognition of triggers, rather than conscious thought explicitly driving them.
+
+**Goals:**
+* Explicit goal representations, consciously observed, drive our actions.
+* This is in direct contrast to many current reinforcement algorithms in AI where the agent is unaware of the goal.
+
+**Learned rewards:**
+* Explicit conscious awareness of rewards, both low-level and high-level in nature.
+
+**Hierchical architecture:**
+* [High-order Thought](https://en.wikipedia.org/wiki/Higher-order_theories_of_consciousness).
+* Low-level layers of the brain (eg: priamry motor cortex, brain stem, spinal chord), and intermediate layers of the brain (eg: non-primary motor cortex, association areas other than frontal cortex), offload much of the hard work of recognising and interacting with the world, enabling the main conscous executive control part of the brain to focus on simplified high-level representations, enabling far more complex thought than would be possible if it had to deal with low-level signals.
+
+## Assumed Architectural Components
+
+As a way of representing some of the assumed main components necessary for general intelligence, we shall attempt to illustrate how they might play together in an AI architecture. At the centre is a policy component that is assumed to be implemented as a neural network of the sort used in reinforcement learning. In what is certainly an oversimplication, we will use the following view of biological advancement as a way to understand the important differences between three kinds of policy that might be possible at the higher-order control layer.
 
 ![evolutionary progression](files/Executive-control-evolutionary-progression.png)
 
@@ -31,12 +63,8 @@ In what is certainly an oversimplication, we will use the following view of evol
     
 * Self-aware Executive Control
     * This stage builds on the previous by adding self-driven goals and rewards, and the conscious feedback loop that enables the system to maintain stability.
-    
-With these three stages in mind, we will be able to measure the progression of capability of our proposed solutions.
 
-## Policy and Models
-
-### Background discussion on kinds of model
+## Models, Models, and Models
 In the combined context of AI and human brains, there are three kinds of "model" that might be referred to, each with different representations and scope:
 * Model Free Policy Networks - Used in reinforcement learning to predict best action given a state
 * Model Based Policy Networks - Used in reinforcement learning to predict future state given an action
@@ -97,6 +125,43 @@ Some outstanding questions are:
 
 # Rewards
 
+## Intro
+When a parent smiles or laughes at an infant, they seem to instinctively recognise it as a good thing, in comparison to someone frowning and shouting. As the child becomes more mature, they feel a pain of regret when they know they did something wrong. People learn complex relationships between actions and rewards, and most if it without any conscious thought. Importantly, we seem to be aware of all reward signals.
+
+This is directly in contrast to current AI reinforcement learning techniques. The reward is merely a number that is fed into a expected value equation, used to calculate a loss value, and finally drives neural net weight adjustments through stochastic gradient descent. The agent isn't aware of any of that process, and is never informed of the reward value itself.
+
+That seems strange, and something I hope to rectify. Executive control needs to be aware of the rewards. Why? So that it can rationalise about them, and directly and intentionally change its behaviours accordingly.
+
+### Kinds of reward
+The RL community takes a lot of inspiration from biology. One such inspiration is that animals and people are largely self-motivated. For example, children learn a lot just from curiosity alone and trial and error. The RL community calls this _intrinsic motivation_ and attempts to emulate it via mathematical techniques in the constrution of a reward function. Often these techniques produce impressive results.
+
+I find the term _intrinsic motivation_ misleading on two fronts. Firstly, as discussed above, these reward functions are not intrinsic to the agent, but are executed by the RL algorithm as an external process that the agent has no involvement with. Secondly, they are rewards for carrying out certain sequences of actions after that fact; and while they may subsequently cause the agent to perform those actions more frequently, they do not _motivate_ the agent to try to do so. Motivation is something more closely related to goals that a self-governing agent chooses based on its own reasons. Most RL agents don't have any ability to choose their own goals.
+
+Thus I prefer to think of these so called _intrinsic motivation_ techniques are _primitive rewards_.
+
+This term draws different connotations. In particular, it suggests clear biological examples, including but not limited to: effort, pain, hunger. Importantly, these signals are all achieved through simple circuits that produce a signal on as few as even a single nerve fibre into the brain. Thus, a lot of handling related to these signals can be achieved without the need of neural networks for interpretation. Many of these signals trigger hormones, immune system response, etc. in ways that are driven entirely by pre-wired processes encoded by DNA; rather than requiring a neural network to be first trained to recognise and process the signals.
+
+Thus, to me, _primitive rewards_ are those that I can architect into the system and that can be immediately used for training. In contrast, I can't reward an AI agent by smiling at it, until it has first learned to see, then to recognise smiles, and finally to realise that a smile is a good thing.
+
+While I wish to use both kinds of rewards, I will need to use _primitive rewards_ to bootstrap learning of more advanced domain-specific rewards. In either case, all rewards should be available to the agent for examination.
+
+For a detailed analysis of common techniques within RL, see [[Survey of Reinforcement Learning]].
+
+### Example rewards
+Some rewards that we might be of use initially include:
+* primitive rewards such as
+    * pain
+    * satiation
+    * learning amount - reward based on how much the agent learns over a period. Can be risky as it may discourage convergence of policy. So perhaps works better when only measured against the learning degree within modelling engine.
+    * predictive errors - eg: in training sensorimotor network
+    * boredom - desire for unique stimulation
+    * curiosity - desire to learn following predictive "surprise" (similar to boredom but likely computed in a slightly different way)
+    * predictive uncertainty - eg: active inference
+* goal achievement
+    * provided that it's possible to architect a simple stable system for recognising when goals have been achieved
+* information theoretic measures such as
+    * mutual information - eg: DIAYN
+    
 ## Interactions Across Hierarchical Rewards
 
 We want to be careful to offload the executive control layer from having to manage lower level aspects of the system. So we will need to carefully tune which layers receive the RL rewards related to specific things.
@@ -107,7 +172,7 @@ Each higher-order reward builds upon the policy trained via a lower-order reward
 * Supersedence
     * Each higher-order reward provides (or at least is interpreted to provide) a "better" measure of success, and thus can override the lower-order reward.
     
-The refinement hierarchy leads to efficient convergence, and predictable outcomes, however it looses from its inflexibility. The supersedence hierarchy appears more relevant to human learning, as it recognises that a higher-order understanding of the situation enables a more accurate interpretation than is possible from the more primitive layers. Additionally, the higher-order rewards may trade off longer term larger rewards against small short term penalties. For example, an agent may be willing to tolerate a certain amount of pain in order to gain a worthwhile large reward. So the supersedence hierarchy can lead to more adaptable and interesting results, but at the cost of being less likely to converge.
+The refinement hierarchy leads to efficient convergence, and predictable outcomes, however it loses from its inflexibility. The supersedence hierarchy appears more relevant to human learning, as it recognises that a higher-order understanding of the situation enables a more accurate interpretation than is possible from the more primitive layers. Additionally, the higher-order rewards may trade off longer term larger rewards against small short term penalties. For example, an agent may be willing to tolerate a certain amount of pain in order to gain a worthwhile large reward. So the supersedence hierarchy can lead to more adaptable and interesting results, but at the cost of being less likely to converge.
 
 ![hierarchical rewards](files/Executive-control-hierarchical-rewards.png)
 
@@ -130,19 +195,6 @@ So, a likely training approach is:
     * Finally now we take the reigns off, let the agent explore the world more fully, and really let it develop its own character.
     * The base assumption is that we don't need to change anything about what feedback we're giving. We assume that the internalised reward function from the last phase already conflicts (disagrees) with the lower-order reward functions, but that we were previously constraining the effect of its deviation. So, now we just stop constraining the effect of its deviation, and the policies will adjust.
     * Effective reward is taken as an equally weighted average across the three reward layers, thus a strong high-order reward can counteract a weak primitive penalty.
-
-## Reward Components
-
-Some rewards that we might use (grouped by reward category):
-* Simple primitive rewards
-    * pain
-    * satiation
-    * learning amount
-    * predictive errors (eg: in training sensorimotor network)
-* Domain-specific primitive rewards
-    * Uncertainty / curiosity
-
-_more analysis: tbd_
 
 ## Building Up Specialised Rewards
 
@@ -171,11 +223,7 @@ What does the learning network actually model though?
 
 ## Pure Intrinsic Motivation
 
-What if the solution is to get rid of external training altogether and use pure intrinsic motivation. The main intrinsic motivation drivers would be a combination of something like:
-- Mutual information (DIAYN)
-- Prediction
-- Curiosity
-- Desire
+What if the solution is to get rid of external training altogether and use pure intrinsic motivation. The main intrinsic motivation drivers would be a combination of something like mutual information (DIAYN), prediction error, curiosity, desire.
 
 How can that lead to an agent that actually tries to interact with others? Mutual information might again be useful there, as it will attempt to find novel interactions that elicit different states. That will still lead to it finding many different ways of interacting with us, many of which will annoy us but it won't make a distinction. Prediction won't help alleviate that because it will learn to accurately predict our annoyance. So 'Desire' will be necessary: that it wants us to achieve an outcome, but if we are annoyed we won't cooperate and thus it will fail to meet its goal.
 
@@ -224,10 +272,6 @@ Example:
 * _(tbd: needs diagram).
 * Then extend to actually producing action planning.
 
-## Primitive Reward Techniques
-
-Referred to as _intrinsic motivation_ within the RL community - but I find that term misleading and prefer to use _primitive reward_. For a detailed analysis of common techniques within RL, see [[Survey of Reinforcement Learning]].
-
 ### Circular targets
 Some instrinsic motivation techinques can lead to a policy that always moves the agent towards a particular stable state and then it tries to stay there. For example, empowerment can suffer from this technique, as it targets a state that affords the agent maximum capability of future state changes. Metaphorically, the agent will climb to the top of the hill and stay there.
 
@@ -237,18 +281,6 @@ We want an agent that is driven to keep doing things. One way of looking at this
 * boredom - desire for unique stimulation
 * curiosity - desire to learn when experiences surprise
 * learning degree - reward based on how much the agent learns over a period
-
-### Primitive reward options
-**Boredom**
-* Desire for unique stimulation.
-
-**Curiosity**
-* Similar to boredom but likely computed in a slightly different way.
-* Desire to learn following predictive "surprise".
-
-**Learning Degree**
-* Reward based on how much the agent learns over a period.
-* Can be risky as it may discourage convergence of policy. So perhaps works better when only measured against the learning degree within modelling engine.
 
 ## Worked Example - Primitive Rewards plus Teacher Goals
 
