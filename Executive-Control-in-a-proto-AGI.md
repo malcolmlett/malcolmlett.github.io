@@ -65,6 +65,7 @@ As a way of representing some of the assumed main components necessary for gener
     * This stage builds on the previous by adding self-driven goals and rewards, and the conscious feedback loop that enables the system to maintain stability.
 
 ## Models, Models, and Models
+
 In the combined context of AI and human brains, there are three kinds of "model" that might be referred to, each with different representations and scope:
 * Model Free Policy Networks - Used in reinforcement learning to predict best action given a state
 * Model Based Policy Networks - Used in reinforcement learning to predict future state given an action
@@ -123,6 +124,7 @@ Some outstanding questions are:
 * Are bayesian models used in lower level layers too or just within the executive control layers?
 
 ## Policy autonomy
+
 Most RL methods today don't trust the policy with much. They hide a number of key things from the policy by not making them available as inputs:
 * Goal
 	* On the basis that we don't know how to encode a goal. We hold the goal to ourselves like a secret card that we don't even reveal when the policy achieves it. 
@@ -371,6 +373,7 @@ To emulate something close to human experience, it also needs to monitor its own
 For now, that process of self improvement will have to develop spontaneously as I don't know how to reward it for self analysis, and I hopefully shouldn't have to.
 
 ## Dynamic Modelling for Goals
+
 Perhaps a solution is arrived at by recognising the relative strengths of neural networks and dynamic modelling techniques. The neural network is great for complex policies, and relative stability, while bayesian networks for example are great for inference and short-term adaptability. So, maybe the bayesian network produces the goal, and the policy actions it. Combine that with the simplistic goal achievement reward measure above, and we have a system that genuinely produces its own goals.
 
 ![bayesian goals](files/Executive-control-bayesian-goals.png)
@@ -417,6 +420,7 @@ In order to train on events with equal before/after states, we lag the point in 
 At runtime, the resultant clustered bayesian model can be used for predictions based on the current state, and the observation error would ultimately lead to re-clustering. The observation error might always lead to a "surprise" signal, and the magnitude of that surprise would ultimately be amplified according to a measure of "emotional affect".
 
 ## Multi-Bayes Architecture
+
 ![bayes-components](files/Executive-control-bayes-components.png)
 
 A possible architecture involves around three bayesian modelling systems:
@@ -447,7 +451,6 @@ If Modeller #2 produces actions, it will be very unstable due to the fact that t
 Alternatively, we could ask whether we even need a NN policy after all? Perhaps the executive control layer can operate entirely off bayesian models? The long term view, inspired by biology, is that both systems work in cooperation/competition, as indicated in the following diagram. However it's looking more and more like we'd be best to focus on bayesian solutions for the executive control layer as our first priority, and only later add in the slower-learning NN approaches. This is starting to look like a more realistic path to true autonomous, self-motivated, self-governed general intelligence.
 
 ![bayes-flow](files/Executive-control-bayes-flow.png)
-
 
 ## Re-clustering with Memory
 

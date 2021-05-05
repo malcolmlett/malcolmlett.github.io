@@ -56,6 +56,7 @@ Some aspects of human brain behaviour require the pre-wiring of feelings, urges,
 # Architecture
 
 ## Artificial equivalents of Biological systems
+
 Analysis of brain layers and how we'll emulate them in an AI:
 
 |Layer|Description|Re-interpretation|AI Architecture Layer|
@@ -244,6 +245,7 @@ Has similar corollary discharge mechanism to remove one's own production of soun
 (tbd)
 
 ## Intermediate Layer Training
+
 So, how to actually train the intermediate layer?
 
 ### Factors to consider for training
@@ -466,6 +468,7 @@ We'll need to decide on a sensible goal, or set of goals, to experiment with. Th
 ![measuring success](files/An-agi-architecture-v1-measuring-success.png)
 
 ## Measuring Use of Conscious Feedback
+
 Recurrent neural networks (RNNs) were designed to apply against sequences on the inputs. They were not intended for maintaining long term state -- such as required in order to sustain internal thought. So do we need an explicit concsious feedback loop that feeds last cycles' output as input to the next cycle? Let's test that.
 
 How to measure utility of an explicit conscious feedback loop, vs just depending on internal state within a stateful policy (ie: RNN)? Use each of these configurations, and train on something simple but that requires processing loops in order to succeed.
