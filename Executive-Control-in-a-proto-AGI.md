@@ -467,6 +467,29 @@ Alternatively, instead of DIAYN, we use Active Inference and its method of tradi
 
 This may produce a more adaptable agent. For example, it will initially seek to learn its own abilities. Then, place an unusual object in front and it will explore it due to uncertainties in the prediction of it. Reward the agent for approaching and touching the object and the bayesian model will later seek a reward from it again. Place a different object that punishes instead, and after initial active inference curiosity, the bayesian model will avoid it in the future.
 
+## Goal Inference
+
+### Bayesian Generative Model
+In the same style as (Rigoli, 2017), the following illustrates a generative model that we may employ within our agent in order to infer the latent causes of rewards received at each time step. It is represented as a bayesian graph, which nodes indicate variables and arrows indicate conditional dependencies. A perceptual layer makes observations (O), which represent estimates of hidden and unobserved features (F). Furthermore, those features are themselves caused by hidden and unobserved latent states (L). Those latest states cause the resultant reward (R). All layers from O to R are connected in a probabilistic fashion. Furthermore, an action (A) performed by the agent during the prior time step is asumed to have had a probabilistic influence over latent states (L) that ultimately caused the observations during this time step.
+
+![generative model](files/Executive-control-generative-model.png)
+
+The observations, features, and latent states are split into two separate groups. One group represents the external environment and the effect of the agent's interactions with that environment. The other group represents the agent's internal state, which includes internal physical states such as hunger and pain, and includes its mental state such as current goal.
+
+The goal decision problem is thus cast in terms of inferring the most likely latent states via a posterior distribution over latent states that the agent can reach through its own volition. The reward is used within this inference by picking a maximum past observed reward, perhaps with some measured or calculated uncertainty, and setting that as the prior probability distribution over the reward. Thus, we can infer the latent states that are most likely, given the reward (or more accurately, the prior belief that rewards will be observed).
+
+It is instructive to compare this with the most elaborate generative model from (Rigoli, 2017), reproduced here with some slight modifications. Their generative model focuses on the inference of likely actions (a-priori unknown and unobserved) given a belief in an expected reward (classified as just "goal achieved" vs "goal not achieved"). They introduce a context variable (C), to encapsulate the agent's state. This coincides very well with our internal features and latent state.
+
+![Rigoli generative model](files/Executive-control-gen-model-rigoli-2017.png)
+
+### Simplifications
+For a first cut, there are some simplifications that we might make.
+
+**Assume latent variables already inferred:**
+* We can assume that the hierarchically layered architecture discussed within [[Proto AGI v1]] already performs the task of latent state inference, and thus the inputs to the executive control layer are already representations of the L nodes.
+* In practice this may be naive because the hierarchical architecture is better thought of as a data compression and feature extraction engine, than producing accurate predictions of external latent states. So, a better assumption is that the inputs to the executive control layer represent estimations of the F nodes.
+
+
 
 # Monitoring and Control
 
@@ -559,3 +582,5 @@ Move efficiently with planning:
 de Wit, S., Watson, P., Harsay, H. A., Cohen, M. X., van de Vijver, I., & Ridderinkhof, K. R. (2012). Corticostriatal connectivity underlies individual differences in the balance between habitual and goal-directed action control. The Journal of neuroscience : the official journal of the Society for Neuroscience, 32(35), 12066–12075. https://doi.org/10.1523/JNEUROSCI.1088-12.2012
 
 Illanes, L., Yan, X., Icarte, R. T., McIlraith, S. A. (2020). Symbolic Plans as High-Level Instructions for Reinforcement Learning. Proceedings of the Thirtieth International Conference on Automated Planning and Scheduling (ICAPS 2020). http://www.cs.toronto.edu/~lillanes/papers/IllanesYTM-icaps2020-symbolic.pdf
+
+Rigoli, F., Pezzulo, G., Dolan, R., & Friston, K. (2017). A Goal-Directed Bayesian Framework for Categorization. Frontiers in psychology, 8, 408. https://doi.org/10.3389/fpsyg.2017.00408
