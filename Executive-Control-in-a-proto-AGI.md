@@ -468,6 +468,35 @@ Alternatively, instead of DIAYN, we use Active Inference and its method of tradi
 This may produce a more adaptable agent. For example, it will initially seek to learn its own abilities. Then, place an unusual object in front and it will explore it due to uncertainties in the prediction of it. Reward the agent for approaching and touching the object and the bayesian model will later seek a reward from it again. Place a different object that punishes instead, and after initial active inference curiosity, the bayesian model will avoid it in the future.
 
 
+# Monitoring and Control
+
+In the search for a strong argument for the need of conscious feedback, and for an AI architecture that could leverage such a feature, we shall now turn to the topic of _monitoring and control_. An autonomous agent that uses bayesian mechanisms to infer goals with maximum expected return, and which uses a combination of bayesian and neural-network reinforcemeant learning mechanisms to drive actions, may not need to directly monitor itself. The built-in reinforcement learning algorithm will silently update network weights and bayesian model priors, without the agent taking an active intentional part in self-tuning.
+
+However, it is my believe that the core reason for the existence of conscious feedback is to support intentional self-tuning.
+
+So a worthy avenue of research is to investigate how an agent can monitor behaviour and infer improvements. We would need to investigate how an agent can apply that to its interactions with the external environment, but also to its interactions with itself in terms of non-physical action outputs (aka thoughts). This investigation will likely lead to the conclusion that conscious feedback is required in order to apply that capability against the agent's own thoughts. And, hoping that this conclusion is reached, we will finally be able to prove that conscious feedback is required in order to maintain thought stability.
+
+To make sense of this, we'll first look at a scenario where our agent needs to monitor and control a separate target agent. Then we'll turn that solution on its head and look at how we can make an agent apply the same logic to monitoring and control of itself.
+
+## Monitoring and Control of Target Agent
+
+In this scenario, we will investigate the mechanisms required of our agent, so that it can effectively monitory and control some target agent. In order to make this investigation more concrete, we will assume that the target agent is implemented based on the principles discussed within this document across all chapters except for this one.
+
+Some options for monitoring of target agent:
+* Model relationship between target entity's goals and the rewards it receives
+* Measure expected reward vs actual
+
+Some options for control:
+* Adjust priors used in other bayesian inference components
+
+_more tbd_
+
+
+## Autonomous Monitoring and Control
+
+Here I introduce the concept of _Intentional Autonomous Monitoring and Control_ (I-AMC). I-AMC refers to an agent that performs monitoring and control of itself, autonomously, and with active intent. In other words, using the same logic and inference processes that it would typically use for interaction with the external environment, it can determine the need and carry out actions in order to make changes to its own tuning parameters.
+
+
 # Working Memory
 
 In humans, working memory appears to be a decentralised process. But we don't necessarily need to repeat that for an AI. We could perhaps achieve the same thing with a single 'working memory' (WM) component. One option is the main executive control (EC) system passes some of its output into working memory, and the current state of working memory feeds into EC as an input sense.
