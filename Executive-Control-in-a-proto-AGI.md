@@ -330,73 +330,6 @@ I need to look into techniques for bird training, as these techniques may have s
 ![parrot-training](files/parrot-training.jpg)
 
 
-# Goals
-
-How do we enable the executive control layer to have goals? Why would a policy neural netwokr require an external goal representation. What advantage does a goal representation add? It seems that a goal is just another form of state. Perhaps it's just a way of persisting a past output in order to recall later, and to save having to reprocess and reproduce that goal value each time. Additionally it may be necessary if the production of that goal state cannot be calculated in a single step. So it helps for producing behaviour that is more complex than the network can produce via single pass only. 
-
-We want the goal to represent a state that the agent eventually reaches. The first naive approach is to measure the actual state against the goal and reward based on minimising the error. But the policy will maximise that reward by always outputting the current state. We want the goal to not just be a copy of the current state, but to represent a goal in the future. So increase the reward for how much in the future the goal is achieved. In simplistic terms we can do that by rewarding based on how different the goal is to the current state at the time it is emitted, but only grant the reward if it is achieved. Additionally, we can penalise for producing goals that are never achieved.
-
-![with-goals](files/Executive-control-with-goals.png)
-
-Working through this a little further, at the time of the reward, pick the closest past goal and reward based on how different the state was to the goal at the time. Also, pick the past goal most different to the current state, and penalise for much different it is to the current state (penalise for not achieving a goal). Now turn that into a more continuous reward function and we have something like this for the reward at time `T`:
-
-```
-r(T) = Σ{t=0:T} |g(t) - s(t)| - |g(T) - s(T)|
-```
-
-That'll likely need a little more work. For one thing, when calculating rewards for a goal, it'll penalise past goals beacuse they are not achieved at time `T`, even if they were achieved at some other time in the past.
-
-![goal-rewards](files/Executive-control-goal-rewards.png)
-
-## Goal or Prediction?
-
-The biggest issue with the design so far is that the supposed _goal_ is really just a _prediction_ about future state, ie: the agent will maximise reward by always outputting a value that accurately predicts as far into the future as possible. A related issue is that there's no training pressure for the policy to use the current state of the goal in its determination of action. In other words, we're rewarding the agent for predicting the inevitable, rather than striving for something else.
-
-One way to enforce that the policy uses the goal is to maximise the mutual information between the goal and the actions that the policy takes. Something like:
-
-```
-I((a|s); g)
-```
-
-There is another way of looking at this though. A great way for the agent to succeed in its prediction is to intentionally make it happen, ie: to plan actions that lead to the predicted future state (aka goal). As it so happens I'm not the first to think of this approach, it's called [Active Inference](https://en.wikipedia.org/wiki/active_inference). So maybe this simple architecture could be used for goals.
-
-The idea of active inference suggests another tweak: that failed goals are still good if the agent learns from the experience. So perhaps we shouldn't penalise a failed goal (negative reward), but simply reduce the goal's reward contribution towards zero, and add a learning quotient on top. Coincidentally, this sort of thing is incorporated in an information theoretic way within the idea of active inference.
-
-## Policy Action Options
-
-At any given time step, the policy now has a number of options available for which inputs to consider when choosing the next action. These are indicated here, with the options that we want to encourage in green, and other options (treated as short-cuts) in blue, and labelled according to what they translate to into our extended version of Daniel Kahneman's thought systems.
-
-![action-options](files/Executive-control-policy-action-options.png)
-
-To emulate something close to human experience, it also needs to monitor its own mental behaviour through a _conscious feedback_ loop. Given the complexity of the architecture, that could well be a very useful feature for maintaining stability. A conscious feedback loop takes the raw policy output and feeds it back in as an input to the whole of the executive control layer. This can enable self-observation through access to trajectory memory of recent events. The agent can model those trajectories, in conjunction with the observed rewards received associated with those trajectories, to identify the kinds of thought processes that are best (maximise reward). Provided that rewards include not just sparse teacher feedback, but also include dense primitive rewards including effort, the agent can then use that modelling to plan its actions better.
-
-For now, that process of self improvement will have to develop spontaneously as I don't know how to reward it for self analysis, and I hopefully shouldn't have to.
-
-## Dynamic Modelling for Goals
-
-Perhaps a solution is arrived at by recognising the relative strengths of neural networks and dynamic modelling techniques. The neural network is great for complex policies, and relative stability, while bayesian networks for example are great for inference and short-term adaptability. So, maybe the bayesian network produces the goal, and the policy actions it. Combine that with the simplistic goal achievement reward measure above, and we have a system that genuinely produces its own goals.
-
-![bayesian goals](files/Executive-control-bayesian-goals.png)
-
-The bayesian modeller would infer a future state `s'` from the current state `s` that it predicts will generate the maximum reward. The policy (neural network) accepts `s'` as a goal, and attempts to produce a sequence of actions that moves it towards state `s'` as efficiently as possible. This solution has a nice advantage that it should produce fairly constant goal values during the window of time where it has not yet attained the goal.
-
-In the longer term, the actual goal would probably be decided as a result of bayesian inference and NN-based habitual predictions. And the value of having an explicit goal representation within the architecture is that accepted goal out of suggestions from multiple systems can encoded in one place and then fed into systems that need to action it and measure success.
-
-### DIAYN
-Convenietly, this approach combines very naturally with DIAYN as an initial exploration approach as it operates through randomly generated goal signals that the policy is expected to produce unique outcomes to. Now, DIAYN trains goal representations that don't mirror the state representation. Thus we've actually got two ways of combining DIAYN with a bayesian goal generator:
-
-1. Constrain the goal representation to be the same as a state representation by only ever sampling from the set of realistic state values. Will likely also need to adjust the mutual information calculations of DIAYN and how they're used for training loss.
-
-2. Constraint the bayesian model to operate against abstract goal representations. Use the exploration of possible goals and states from DIAYN as input to the training of the bayesian model so that it infers target goals `g` instead of future states `s'` values. Will additionally need to train a NN to recognise when a goal is achieved.
-
-The latter has a nice feature that it enables the use of abstract goal representations rather than requiring the goal representation to mirror the state representation, and thus it enables more flexible goal achievement measurements. Likely at the expense of stability. Also, how do we continue to train the goal achievement measurement network after initial DIAYN training?
-
-### Active inference
-Alternatively, instead of DIAYN, we use Active Inference and its method of trading off exploitation vs exploration via learning likelihoods.
-
-This may produce a more adaptable agent. For example, it will initially seek to learn its own abilities. Then, place an unusual object in front and it will explore it due to uncertainties in the prediction of it. Reward the agent for approaching and touching the object and the bayesian model will later seek a reward from it again. Place a different object that punishes instead, and after initial active inference curiosity, the bayesian model will avoid it in the future.
-
-
 # Bayesian Modelling
 
 There are a few approaches available for dynamic modelling. One approach could be to use one of the decision-tree solutions, such as BART, instead of a neural network. These could be perfect because they have the smaller size and reach saturation faster, and possibly even support tree growth. Of the various current techniques, bayesian models (or something with similar effects, such as the Probably Approximately Correct (PAC) approximation of bayes models) appear to be the most biologically plausible solution for dynamic modelling.
@@ -466,6 +399,73 @@ But maybe that's what the executive control layer is all about. The automated ma
 ## Representational Dynamics
 
 Something to consider is that the representational interpretation of the high-level state supplied by the intermediate layer will change over time. The modelling engine will have to cope with those changes.
+
+
+# Goals
+
+How do we enable the executive control layer to have goals? Why would a policy neural netwokr require an external goal representation. What advantage does a goal representation add? It seems that a goal is just another form of state. Perhaps it's just a way of persisting a past output in order to recall later, and to save having to reprocess and reproduce that goal value each time. Additionally it may be necessary if the production of that goal state cannot be calculated in a single step. So it helps for producing behaviour that is more complex than the network can produce via single pass only. 
+
+We want the goal to represent a state that the agent eventually reaches. The first naive approach is to measure the actual state against the goal and reward based on minimising the error. But the policy will maximise that reward by always outputting the current state. We want the goal to not just be a copy of the current state, but to represent a goal in the future. So increase the reward for how much in the future the goal is achieved. In simplistic terms we can do that by rewarding based on how different the goal is to the current state at the time it is emitted, but only grant the reward if it is achieved. Additionally, we can penalise for producing goals that are never achieved.
+
+![with-goals](files/Executive-control-with-goals.png)
+
+Working through this a little further, at the time of the reward, pick the closest past goal and reward based on how different the state was to the goal at the time. Also, pick the past goal most different to the current state, and penalise for much different it is to the current state (penalise for not achieving a goal). Now turn that into a more continuous reward function and we have something like this for the reward at time `T`:
+
+```
+r(T) = Σ{t=0:T} |g(t) - s(t)| - |g(T) - s(T)|
+```
+
+That'll likely need a little more work. For one thing, when calculating rewards for a goal, it'll penalise past goals beacuse they are not achieved at time `T`, even if they were achieved at some other time in the past.
+
+![goal-rewards](files/Executive-control-goal-rewards.png)
+
+## Goal or Prediction?
+
+The biggest issue with the design so far is that the supposed _goal_ is really just a _prediction_ about future state, ie: the agent will maximise reward by always outputting a value that accurately predicts as far into the future as possible. A related issue is that there's no training pressure for the policy to use the current state of the goal in its determination of action. In other words, we're rewarding the agent for predicting the inevitable, rather than striving for something else.
+
+One way to enforce that the policy uses the goal is to maximise the mutual information between the goal and the actions that the policy takes. Something like:
+
+```
+I((a|s); g)
+```
+
+There is another way of looking at this though. A great way for the agent to succeed in its prediction is to intentionally make it happen, ie: to plan actions that lead to the predicted future state (aka goal). As it so happens I'm not the first to think of this approach, it's called [Active Inference](https://en.wikipedia.org/wiki/active_inference). So maybe this simple architecture could be used for goals.
+
+The idea of active inference suggests another tweak: that failed goals are still good if the agent learns from the experience. So perhaps we shouldn't penalise a failed goal (negative reward), but simply reduce the goal's reward contribution towards zero, and add a learning quotient on top. Coincidentally, this sort of thing is incorporated in an information theoretic way within the idea of active inference.
+
+## Policy Action Options
+
+At any given time step, the policy now has a number of options available for which inputs to consider when choosing the next action. These are indicated here, with the options that we want to encourage in green, and other options (treated as short-cuts) in blue, and labelled according to what they translate to into our extended version of Daniel Kahneman's thought systems.
+
+![action-options](files/Executive-control-policy-action-options.png)
+
+To emulate something close to human experience, it also needs to monitor its own mental behaviour through a _conscious feedback_ loop. Given the complexity of the architecture, that could well be a very useful feature for maintaining stability. A conscious feedback loop takes the raw policy output and feeds it back in as an input to the whole of the executive control layer. This can enable self-observation through access to trajectory memory of recent events. The agent can model those trajectories, in conjunction with the observed rewards received associated with those trajectories, to identify the kinds of thought processes that are best (maximise reward). Provided that rewards include not just sparse teacher feedback, but also include dense primitive rewards including effort, the agent can then use that modelling to plan its actions better.
+
+For now, that process of self improvement will have to develop spontaneously as I don't know how to reward it for self analysis, and I hopefully shouldn't have to.
+
+## Dynamic Modelling for Goals
+
+Perhaps a solution is arrived at by recognising the relative strengths of neural networks and dynamic modelling techniques. The neural network is great for complex policies, and relative stability, while bayesian networks for example are great for inference and short-term adaptability. So, maybe the bayesian network produces the goal, and the policy actions it. Combine that with the simplistic goal achievement reward measure above, and we have a system that genuinely produces its own goals.
+
+![bayesian goals](files/Executive-control-bayesian-goals.png)
+
+The bayesian modeller would infer a future state `s'` from the current state `s` that it predicts will generate the maximum reward. The policy (neural network) accepts `s'` as a goal, and attempts to produce a sequence of actions that moves it towards state `s'` as efficiently as possible. This solution has a nice advantage that it should produce fairly constant goal values during the window of time where it has not yet attained the goal.
+
+In the longer term, the actual goal would probably be decided as a result of bayesian inference and NN-based habitual predictions. And the value of having an explicit goal representation within the architecture is that accepted goal out of suggestions from multiple systems can encoded in one place and then fed into systems that need to action it and measure success.
+
+### DIAYN
+Convenietly, this approach combines very naturally with DIAYN as an initial exploration approach as it operates through randomly generated goal signals that the policy is expected to produce unique outcomes to. Now, DIAYN trains goal representations that don't mirror the state representation. Thus we've actually got two ways of combining DIAYN with a bayesian goal generator:
+
+1. Constrain the goal representation to be the same as a state representation by only ever sampling from the set of realistic state values. Will likely also need to adjust the mutual information calculations of DIAYN and how they're used for training loss.
+
+2. Constraint the bayesian model to operate against abstract goal representations. Use the exploration of possible goals and states from DIAYN as input to the training of the bayesian model so that it infers target goals `g` instead of future states `s'` values. Will additionally need to train a NN to recognise when a goal is achieved.
+
+The latter has a nice feature that it enables the use of abstract goal representations rather than requiring the goal representation to mirror the state representation, and thus it enables more flexible goal achievement measurements. Likely at the expense of stability. Also, how do we continue to train the goal achievement measurement network after initial DIAYN training?
+
+### Active inference
+Alternatively, instead of DIAYN, we use Active Inference and its method of trading off exploitation vs exploration via learning likelihoods.
+
+This may produce a more adaptable agent. For example, it will initially seek to learn its own abilities. Then, place an unusual object in front and it will explore it due to uncertainties in the prediction of it. Reward the agent for approaching and touching the object and the bayesian model will later seek a reward from it again. Place a different object that punishes instead, and after initial active inference curiosity, the bayesian model will avoid it in the future.
 
 
 # Working Memory
