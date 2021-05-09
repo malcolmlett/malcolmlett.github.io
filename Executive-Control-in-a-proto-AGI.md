@@ -340,6 +340,8 @@ This chapter looks at how we might actually implement bayesian modeling. In shor
 
 It's not easy to do bayesian modelling if we don't have a method for extracting unique "features" to reason about. Given a visual field image, how would I identify that a certain section of that image represents one object as distinct from other objects in the scene? One way of doing that is noting the relative likelihoods of pixels that appear together vs those that are independent. So we need a mechanism that will identify discrete objects and events out of the state input, and we need to analyse for those discrete objects/events across the breadth of the state vector and across time. This will create the lowest level set of nodes in a bayesian model, from which further bayesian modelling can be built up, so it might be the first in a number of discrete bayesian layers.
 
+Offline clustering methods require access to the complete set of past data, which is obviously not possible for an agent. Thus the clustering method must operate in an online mode. Conveniently, we don't need to worry too much about trying to hold onto past data to enable re-analysis, because the environment will always produce more data.
+
 ### A note on state vector representation
 Our hierarchical sense interpretation will blur the inter-object independence. So maybe need to apply regularisation that seeks to maximise independence of output nodes. Perhaps, and hopefully, that's what VAE regularisation does. Will need to investigate.
 
@@ -351,6 +353,9 @@ To make this work, we need to turn existing hierarchical bayesian clustering alg
 In order to train on events with equal before/after states, we lag the point in time that training is applied to the middle of the sliding window and analyse only that state sample in relation to others. The comparisons will probably be performed as part of the bayesian clustering algorithm, or otherwise we could bootstrap through background calculations of mutual information.
 
 At runtime, the resultant clustered bayesian model can be used for predictions based on the current state, and the observation error would ultimately lead to re-clustering. The observation error might always lead to a "surprise" signal, and the magnitude of that surprise would ultimately be amplified according to a measure of "emotional affect".
+
+### Background noise
+We will also need to include a mechanism to discard background noise so that the agent doesn't try to cluster each and every noise data point it encounters. Should be able to calculate log likelihood of a given data point representing background noise vs belonging to a meaningful cluster. Perhaps with a small replay buffer from recent data points.
 
 ## Multi-Bayes Architecture
 
@@ -449,9 +454,10 @@ Perhaps a solution is arrived at by recognising the relative strengths of neural
 
 ![bayesian goals](files/Executive-control-bayesian-goals.png)
 
-The bayesian modeller would infer a future state `s'` from the current state `s` that it predicts will generate the maximum reward. The policy (neural network) accepts `s'` as a goal, and attempts to produce a sequence of actions that moves it towards state `s'` as efficiently as possible. This solution has a nice advantage that it should produce fairly constant goal values during the window of time where it has not yet attained the goal.
+The bayesian modeller would infer a future state `s'` from the current state `s` that it predicts will generate the maximum reward. The policy (neural network) accepts `s'` as a goal, and attempts to produce a sequence of actions that moves it towards state `s'` as efficiently as possible. This solution has a nice advantage that it should produce fairly constant goal values during the window of time where it has not yet attained the goal. The value of having an explicit goal representation within the architecture is that accepted goal out of suggestions from multiple systems can encoded in one place and then fed into systems that need to action it and measure success.
 
-In the longer term, the actual goal would probably be decided as a result of bayesian inference and NN-based habitual predictions. And the value of having an explicit goal representation within the architecture is that accepted goal out of suggestions from multiple systems can encoded in one place and then fed into systems that need to action it and measure success.
+In the longer term, the actual goal would probably be decided as a competitive/cooperative combination of bayesian inference and NN-based habitual predictions. Additionally, we would later need to recognise that sometimes rewards are tied to actions or trajectories, rather than target states. So predictor may need to be able to output different kinds of targets, unless we can figure out a sufficient state representation that can encompas all three scenarios.
+
 
 ### DIAYN
 Convenietly, this approach combines very naturally with DIAYN as an initial exploration approach as it operates through randomly generated goal signals that the policy is expected to produce unique outcomes to. Now, DIAYN trains goal representations that don't mirror the state representation. Thus we've actually got two ways of combining DIAYN with a bayesian goal generator:
@@ -469,7 +475,56 @@ This may produce a more adaptable agent. For example, it will initially seek to 
 
 ## Goal Inference
 
+Let's now take a closer look into the suggestion of using dynamic models to infer the goal. We shall focus here on bayesian techniques.
+
+Assume some unknown reward generator, `h`, that operates on unknown parameters, `θ`, and known state, `s`. Thus we have:
+```
+p(r|...) = h(θ,s) = p(r|θ,s)
+```
+
+Thus we can infer the reward probability distribution for a given state by integrating over possible values of θ:
+```
+p(r|s) = ∏p(r|θ,s)p(θ)
+```
+
+And by querying across different states it is possible to select a state that maximimes the expected likelihood of maximum reward.
+
+Now, let's say that the agent is in state `s`, and we want to pick a target state `s'` that will maximise rewards. If we naively picked `s'` based on simply maximising the expected reward at `s'`, we would be ignoring the different costs associated with the trajectory from `s` to the different possible `s'` (eg: a target state that is further away may take more effort than one that is close). Additionally, there may be other factors to the state that the agent cannot control but may need to take into account and which may affect the reward (eg: if the agent is hungry, then going to the table and eating food will give a reward; but if it is full, the same action will not produce the same reward).
+
+So, really we need to model as follows, and then pick the best `s'`:
+```
+p(s' for max r|s)
+```
+
+To take into account the true cost of trajectories from `s` to some possible `s'`, we would need to either sum over all possible trajectories (inaccurate, and computationally expensive) or execute planning (more accurate, but computationally expensive). A better approach would be to learn some simple statistical model heuristic for estimating cost to transition from one state to another. Thus, the propability of accumulated return `ret`, when moving from state `s` to `s'` can be modelled as a sum of the expected reward `r` at state `s'`, plus the likely cost `c` of the state transition:
+```
+p(ret|s,s') = p(r|s') + p(c|s...s')
+```
+
+A simple algorithm for using that approach, and simultaneously improving the cost estimation is as follows:
+1. pick best guess of a worthy target `s'`, and its associated _prior_ cost, based on the above equation.
+2. perform planning from `s` to `s'`, calculating a more accurate expected cost
+3. if the new expected cost estimate is significantly different to the prior cost estimate, then update the cost estimate model, and perhaps forcing an explicit update of the prior somehow, and repeat from step #1.
+
 ### Bayesian Generative Model
+_todo: to transfer into here......_
+
+Inspired by Friston paper:
+- Model external env as latent variables (based on external physical senses) 
+- Model internal state as latent variable (based on internal physical senses such as hunger, plus mental state) 
+- Model reward as function of those two latent variables. 
+- In first cut can assume that hierarchical NN layers will suffice for the latent variable inference. 
+
+Also
+- Initially assume equal cost to all potential goal states, and just pick best reward based on external and internal state latent variables. 
+- Apply active inference for exploration of goal space. 
+- Give small reward for attaining a goal. 
+- Give large reward for attaining hidden teacher goal. 
+- Unpredictable nature of teacher reward will introduce variation of best predicted goal, provided there is some Stochastic selection. 
+
+_......end_
+
+
 In the same style as (Rigoli, 2017), the following illustrates a generative model that we may employ within our agent in order to infer the latent causes of rewards received at each time step. It is represented as a bayesian graph, which nodes indicate variables and arrows indicate conditional dependencies. A perceptual layer makes observations (O), which represent estimates of hidden and unobserved features (F). Furthermore, those features are themselves caused by hidden and unobserved latent states (L). Those latest states cause the resultant reward (R). All layers from O to R are connected in a probabilistic fashion. Furthermore, an action (A) performed by the agent during the prior time step is asumed to have had a probabilistic influence over latent states (L) that ultimately caused the observations during this time step.
 
 ![generative model](files/Executive-control-generative-model.png)
@@ -546,6 +601,25 @@ _more tbd_
 Here I introduce the concept of _Intentional Autonomous Monitoring and Control_ (I-AMC). I-AMC refers to an agent that performs monitoring and control of itself, autonomously, and with active intent. In other words, using the same logic and inference processes that it would typically use for interaction with the external environment, it can determine the need and carry out actions in order to make changes to its own tuning parameters.
 
 
+# Learning through Observation
+_todo: should this go into classification page?_
+
+An AGI agent needs to obtain knowledge about the world at any moment that the knowledge presents itself, regardless of how the agent is involved at the time, or even involved at all, and regardless of what the agent is doing. 
+
+Some sources of learning should include:
+* Observe through own action
+* Observe through others action
+* Observe through external force executing own action (eg: hands being moved by other) 
+* Observe through being told / reading
+* Infer from other knowledge 
+
+Acquired knowledge from the above sources include:
+* States - > rewards 
+* States - > States (actions / time) 
+* States - > labels
+* Labels - > labels (relations) 
+
+
 # Working Memory
 
 In humans, working memory appears to be a decentralised process. But we don't necessarily need to repeat that for an AI. We could perhaps achieve the same thing with a single 'working memory' (WM) component. One option is the main executive control (EC) system passes some of its output into working memory, and the current state of working memory feeds into EC as an input sense.
@@ -601,7 +675,29 @@ Move efficiently with planning:
 * Time penalty for complete inaction
 * Measure efficiency and duration of physical action so tries to go faster
 * Measure pain so it doesn't go too fast and fall over
-* Efficiency of effort alone should provide greyscale reward towards walking upright with best gate: walking on all fours requires more movement, running takes more effort, crawling is too slow. 
+* Efficiency of effort alone should provide greyscale reward towards walking upright with best gate: walking on all fours requires more movement, running takes more effort, crawling is too slow.
+
+Learn action / reward relationships:
+* State: in a room plus hungry
+* Bayesian model needs to predict target state, given hungry: eating. 
+* Assume previous learning:
+	* Previously observed action/outcome relationship: press Red button, food appears in front.
+    * Planning model needs to predict the "press red button" action given that state as goal. But how to draw connection? 
+	* Assume that food just has to be near mouth, and chew action kicks in automatically. 
+	* Food initially given by trainer.
+	* Model updated based on observation that food-near-mouth + chew = reward
+	* So can predict chew action or ('chewing' state) given food-near-mouth.
+    
+Learning through observation:
+* Observe someone else push red button and food appears. 
+* Agent to learn that relation without carrying it out itself, so that it can use that knowledge later when trying to feed itself. 
+
+Clustering:
+* Our solution needs clustering, so want some tasks that require that. Identifying discrete objects in observed scene. Identifying object continuity through time. Note that humans take a long time to develop this, suggesting they use slow NN mechanism. But bayesian logic still needed to rationalise about the objects later. 
+
+Single-shot learning:
+* Purpose of using bayes is to draw inferences / govern action from minimal or just one training example (something NN cannot do). So focus on problems in that area. With or without NN pretraining, want to give only minimal examples for bayes to adjust to. 
+
 
 # References
 
