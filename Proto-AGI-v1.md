@@ -9,6 +9,7 @@ This page makes reference to content within other pages:
 * [[Biological basis for proto AGI]]
 * [[General Intelligence Classifications]]
 * [[Executive Control in a proto AGI]]
+* [[Autonomous Monitoring and Control]]
 
 Also see:
 * [[Survey of Reinforcement Learning]]
