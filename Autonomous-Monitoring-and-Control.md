@@ -95,6 +95,10 @@ Theory of Mind may be useful to adjust what rewards are given to the target agen
 
 Example from human context: as a parent of a child I adjust when and how I give feedback to my child based on what I think she is thinking, and on my observations about what helps her learn most efficiently. For example, if she makes a mistake, I ask her to correct the mistake herself immediately, rather than just telling her what she should have done; because I've found that she remembers better this way. 
 
+## Target Agent Behaviour Model
+
+![target-behaviour-model](files/Autonomous-monitoring-and-control-target-behaviour-model.png)
+
 # Autonomous Monitoring and Control
 
 Here I introduce the concept of _Intentional Autonomous Monitoring and Control_ (I-AMC). I-AMC refers to an agent that performs monitoring and control of itself, autonomously, and with active intent. In other words, using the same logic and inference processes that it would typically use for interaction with the external environment, it can determine the need and carry out actions in order to make changes to its own tuning parameters.
