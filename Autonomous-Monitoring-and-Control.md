@@ -107,6 +107,21 @@ Example from human context: as a parent of a child I adjust when and how I give 
 
 ![goal-selection](files/Autonomous-monitoring-and-control-goal-selection.png)
 
+## Cost Modelling
+
+![honeypots-vs-jackpots](files/Autonomous-monitoring-and-control-honeypot-vs-jackpot.png)
+
+![goal-value](files/Autonomous-monitoring-and-control-goal-value.png)
+
+## Rewards
+
+![reward-options](files/Autonomous-monitoring-and-control-reward-options.png)
+
+## Measuring success
+
+![close-enough-measure](files/Autonomous-monitoring-and-control-close-enough-measure.png)
+
+
 # Autonomous Monitoring and Control
 
 Here I introduce the concept of _Intentional Autonomous Monitoring and Control_ (I-AMC). I-AMC refers to an agent that performs monitoring and control of itself, autonomously, and with active intent. In other words, using the same logic and inference processes that it would typically use for interaction with the external environment, it can determine the need and carry out actions in order to make changes to its own tuning parameters.
