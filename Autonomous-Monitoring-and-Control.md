@@ -115,11 +115,19 @@ The controller can observe `s_env` and `s_ext`, both before and after a target's
 
 Like the target, the controller does not directly know the true values of `s_env` and `s_ext`, but makes observations and forms beliefs about those states. To avoid confusion with the target's beliefs, we will refer here to the controller's observations only. Thus we have: `o_env` and `o_ext` referring to the controller's observations about those states. Lastly, the controller observes the target action `a` as `o_a`.
 
-Thus, we have the following generative model for the controller's observations:
+Thus, we have the following generative model for the controller's observations at time `t`:
 
 ![target-behaviour-model](files/Autonomous-monitoring-and-control-target-behaviour-model.png)
 
 ## Controller Reward Model
+
+The controller receives the professor's feedback in the form of rewards, so how does the controller interpret the underlying meaning behind those rewards?
+
+Being able to understand an the objective is an area of great concern for AGI and adaptability. Actions, trajectories, environment state, and many other things all play a big part here. In a real-world human scenario, the objective and rewards take the form of communication with high-fidelity and nuanced details that the controller interprets through its past experiences and understanding of the world (ie: a "world model"). Furthermore, in a real-world human scenario, the professor may not supply a reward at all, as it is often up to the individual to infer for themselves that the objective was met.
+
+A scalar reward value is a low-fidelity proxy for communication. Thus we will only produce really interesting behaviour once we introduce true communication into the mix. However, a controller architecture built around low-fidelity rewards should extend to support more detailed communication and world modelling. So for now we will focus on just low-fidelity rewards.
+
+Thus, we have the following "true" and simplified generative models for the controller rewards provided by the controller environment / professor, and we will assume the simplified model for now:
 
 ![controller-reward-model](files/Autonomous-monitoring-and-control-controller-reward.png)
 
@@ -133,13 +141,26 @@ Thus, we have the following generative model for the controller's observations:
 
 ![goal-value](files/Autonomous-monitoring-and-control-goal-value.png)
 
-## Rewards
+## Target Rewards
 
 ![reward-options](files/Autonomous-monitoring-and-control-reward-options.png)
 
 ## Measuring success
 
 ![close-enough-measure](files/Autonomous-monitoring-and-control-close-enough-measure.png)
+
+## State Representation
+
+The discussions above ignore an important concern about the state representation. A state is a single (vector) point in a multidimensional space. However it actually encodes a combination of many independent and only partially-dependent features. For example in a single snapshot of vision observed by an autonomous car on a road: location of road relative to agent, location of centre line, colour of road, texture of road, grass vs buildings on the side of the road, whether it's raining/overcast/sunny/windy/snowing, people on the pavement, cats on the road in front, etc. etc.
+
+Any solution that is worthwhile must not just naively cluster whole state values, but will need to segment the state values, identifying those individual features. Clustering and modelling against those features makes a lot more sense. Additionally, clustering against features makes even more sense when you consider that different features will have different clustering needs, and different relative importance to the agent. For example it has been suggested that, in this context, clustering of states is best driven by the actions needed at those states (Rigoli, 2017).
+
+This discussion is entering into a research field that deals with object detection and learning object representations. This makes a lot of sense for the purpose of an AGI, but for now we'll keep things simple and continue to ignore the fact that states are an aggregate of independent features.
+
+
+# Internal RMC
+
+As the controller is performing much of the work discussed in [[Executive Control in a proto AGI]] regarding goal selection and bayesian modelling, for simplicity, let us assume that the target uses only a naive deep neural network and reinforcement learning algorithm.
 
 
 # Autonomous Monitoring and Control
@@ -154,3 +175,8 @@ Random:
 * Some components directly output rewards, so it may be easy to directly apply those for the use of the RL algorithm.
 * AMC part of agent takes responsibility for providing reward signals to internal, even when there are external signals available. Because it is the AMC module that _interprets_ the external reward signals given the sense inputs. Ie: the AMC module uses a generative model of latent reward state -> features -> observations, and then infers the latent reward from the sense inputs. It thus may sometimes ignore external sense inputs that appear to be rewards because its inference is that they are not.
 * Might be possible for the RMC module to judge goal success where the goal is represented using some abstract representation that is different to the state representation. If so, then once move into AMC we won't have to measure goal success via a primitive operative, and won't have to force that goals uses the state representation.
+
+
+# References
+
+Rigoli, F., Pezzulo, G., Dolan, R., & Friston, K. (2017). A Goal-Directed Bayesian Framework for Categorization. Frontiers in psychology, 8, 408. https://doi.org/10.3389/fpsyg.2017.00408
