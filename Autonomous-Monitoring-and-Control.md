@@ -97,6 +97,26 @@ Example from human context: as a parent of a child I adjust when and how I give 
 
 ## Target Agent Behaviour Model
 
+The controller will need to observe the target's behaviour, in order to build up predictions about its future actions. So we now look at how the controller might model the target's behaviour. 
+
+The target will choose actions based on the value of three state variables:
+* `s_env` - the environment state, eg: door is open/closed, location of cup
+* `s_ext` - the target agent's state with respect to its external environment, eg: location, heading, standing/sitting/lying, position of limbs, whether it's holding a cup.
+* `s_int` - the target agent's internal state, eg: policy network configuration and weights, executive control state (eg: working memory), memory that influences adaptations.
+
+From the point of view of the target, states `s_env` and `s_ext` are hidden latent variables that the target only makes indirect observations about. Thus its actions will be based on _belief_ (`b_env` and `b_ext`) about those states. For the target's internal state, we assume that `s_int` directly affects target actions without the extra indirection of observation and belief.
+
+An action by the target, results in a change in any or all of those state variables:
+* `s_env` - interactions that affect the environment, eg: change the state of the door, move the cup
+* `s_ext` - physical actions of the target agent itself, eg: move its limbs, face a different direction, move from lying to standing, drop the cup
+* `s_int` - internal changes that cause the agent's behaviour to be different for the same `s_env` and `s_ext`.
+
+The controller can observe `s_env` and `s_ext`, both before and after a target's action, the controller cannot at any point observe `s_int`. In an advanced system, the controller would build up a "Theory of Mind" about the target's internal state. For now, we will simplify this by accepting that the target's behaviour is affected by a hidden latent variable that will change over time, and thus the target's behaviour will change over time.
+
+Like the target, the controller does not directly know the true values of `s_env` and `s_ext`, but makes observations and forms beliefs about those states. To avoid confusion with the target's beliefs, we will refer here to the controller's observations only. Thus we have: `o_env` and `o_ext` referring to the controller's observations about those states. Lastly, the controller observes the target action `a` as `o_a`.
+
+Thus, we have the following generative model for the controller's observations:
+
 ![target-behaviour-model](files/Autonomous-monitoring-and-control-target-behaviour-model.png)
 
 ## Controller Reward Model
