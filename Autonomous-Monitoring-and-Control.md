@@ -133,9 +133,53 @@ Thus, we have the following "true" and simplified generative models for the cont
 
 ## Goal Selection
 
+The controller will select a goal, indicate that goal to the target in some way, and reward the target for achieving that goal. How should the controller select goals?
+
+Goal selection can be based on a number of factors. In order to prioritise attainable goals, the controller can select goals from the set of past observed states. Additionaly, in order to increase likelihood of discovering new and useful states, the controller may sometimes select previously unseen states as goals - eg: a good method for doing that is via _active inference_ (Friston _et al_, 2013; Tschantz _et al_, 2020). Where the controller has been able to infer something about the controller environment's objectives (ie: professor's objectives) then it will additionally consider that when selecting goals.
+
+An important aspect of goal selection is the likelihood of maximising controller reward through the continuation of the current goal vs picking another. This needs to be driven by estimates of maximising the controller's _long term_ accumulation of rewards. For examle, after observing the first controller reward, should it seek to keep replicating that one observation, or should it explore further to see if greater rewards are possible? The controller probably will never know for certain whether it has observed the greatest possible reward, and it will probably never know with any certainty the likelihood of obtaining further rewards in new states. It must build up a prediction of the likelihood of that, based on its past observations, and on built-in priors.
+
+In order to begin to break that down, let's first segregate the options available:
+
 ![goal-selection](files/Autonomous-monitoring-and-control-goal-selection.png)
 
+|Current selection|Seen states|Unseen states|No goal|
+|---|---|---|---|
+|Stay with current goal.|Pick a goal out of set of past observed states. Includes states that did/did not produce a reward when last observed. Based on prior, may still consider there to be a possibility of future reward in a given state.|Stochastically generate new hypothetical state value as goal, somehow based on belief about plausible state values.|"Free play". For a period of time, select no goal and allow target to explore unencumbered from any interference by controller.|
+|Expectation of controller reward based on prior belief about benefit of goal, plus current trajectory|Expectation of reward based on past observations about reward at that state, plus belief in variability of rewards.|Expectation of reward based on belief about possibility of reward at previously unseen states, plus belief in achievability of target reaching the state.|Expectation of reward based around likelihood of encountering previously unseen states, and certainty of those new states being acheivable.|
+| |Lower chance of discovering new rewards.|Chance of discovering states not otherwise likely to be encountered.|Highest likelihood of discovering new states.|
+| |Higher chance of reproducing past controller rewards (good and bad).|Chance of encountering new rewards along with those new states.|Chance of encountering new rewards along with those new states.|
+
+### Should the controller stay with the current goal?
+We want to avoid the case where the controller never stays on one goal long enough for the target to reach it. So, let's look explicitly at the decision to stay with the current goal. Considerations include:
+* accruing cost of steps taken so far without expected reward
+* closeness to achieving goal - ie: updated likelihood of achieving the goal within `x` time steps, given the current state and trajectory so far (ie: target's recent behaviour).
+* expected total value in short term minus opportunity cost of not changing.
+* long term benefit (in terms of likelihood of increasing long term aggregate controller reward) of training target to efficiently reach goals set by controller.
+
+### Benefit of goal exploration
+Some attention also needs to be given to the selection of a goal with no past observed reward. This includes previously seen states that issued no reward and unseen states. One benefit of setting a goal is the hope of obtaining controller reward upon reaching that goal. A second benefit of setting a goal is to train the agent to follow goals. A previously rewardful state provides both those two benefits, however it offers only a potentially very small sample of the set of plausible attainable states. Consequently, training the target against those goal states alone may not generalise well.
+
+To put this in a slightly different way, the value of a rewardless goal is (through training) to reduce uncertainty in the target's ability to reach an arbitrary goal set by the controller. The subsequent value is to maximise our future likelihood of being able to reproduce future observations of high reward on so far unseen states. Based on lots of observations by the deep learning community, we assume _a priori_ that generalisation will be maximised by training against lots of different goals. 
+
+This is also how we trade off exploration of random rewardless goals vs known rewardfull goals. It becomes yet another term in the prediction of the value of a potential goal state.
+
+### Exploitation vs exploration trade-off
+The expectation of long term benefit from exploration vs preference for short term gain will be a tuning parameter. It could be dynamically adjusted by the controller as it observes results over time, but this still requires an _a priori_ expectation of ideal frequency of rewards. So it's the same problem in a different guise, and we'll need to look deeper to decide which representation is easier to work with. 
+
+It's informative to note this same tuning problem occurs for humans, and (perhaps simplistically) it would appear that we see this in the variation of different individual's risk-taking vs risk-averse behaviours. For humans, however, there is a mechanism in play that helps convergence towards a narrower range than would otherwise occur. Individuals learn from others by consciously and subconsciously comparing themselves to others. They take note of those others' relative better successes or worse failures, and adjust their own risk taking profile as a result. Effectively, this mechanism leverages a population level sampling effect for the benefit of the individual. Of course, there are also genetic factors at play.
+
+### Length of trajectory
+There is a particular benefit of the controller explicitly setting goals. The controller knows exactly when the goal was selected and indicated to the target. Thus, any consideration of trajectory, accrued cost and rewards, can all start from the moment of the goal change.
+
+This offers a nice advantage of naive reinforcement learning that never knows whether an action had any part in the received reward, and thus simplistically distributes the reward across all "recent" events, with decreasing weight the further in the past the event was, according to some arbitrary hyperparameter.
+
+## Goal Indication
+
+
 ## Cost Modelling
+
+todo: Measured cost to start accruing from change of goal.
 
 ![honeypots-vs-jackpots](files/Autonomous-monitoring-and-control-honeypot-vs-jackpot.png)
 
@@ -143,11 +187,17 @@ Thus, we have the following "true" and simplified generative models for the cont
 
 ## Target Rewards
 
+todo: If distributing rewards across a trajectory, that trajectory should start at the change of goal.
+
 ![reward-options](files/Autonomous-monitoring-and-control-reward-options.png)
 
 ## Measuring success
 
 ![close-enough-measure](files/Autonomous-monitoring-and-control-close-enough-measure.png)
+
+## Reviewing total Goal Value
+
+![goal-value2](files/Autonomous-monitoring-and-control-goal-value2.png)
 
 ## State Representation
 
@@ -179,4 +229,8 @@ Random:
 
 # References
 
+Friston, K., Schwartenbeck, P., FitzGerald, T., Moutoussis, M., Behrens, T., Dolan, R. J. (2013). The anatomy of choice: active inference and agency. Front. Hum. Neurosci. 7:598 10.3389/fnhum.2013.00598. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3782702/
+
 Rigoli, F., Pezzulo, G., Dolan, R., & Friston, K. (2017). A Goal-Directed Bayesian Framework for Categorization. Frontiers in psychology, 8, 408. https://doi.org/10.3389/fpsyg.2017.00408
+
+Tschantz, A., Baltieri, M., Seth, A., & Buckley, C. (2020). Scaling Active Inference. 2020 International Joint Conference on Neural Networks (IJCNN), 1-8.
