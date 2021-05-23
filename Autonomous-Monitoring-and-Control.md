@@ -143,7 +143,6 @@ The value of any given goal is represented as follows:
 
 ![goal-value](files/Autonomous-monitoring-and-control-goal-value.png)
 
-
 In order to begin to break that down, let's first segregate the options available:
 
 ![goal-selection](files/Autonomous-monitoring-and-control-goal-selection.png)
@@ -179,7 +178,33 @@ There is another benefit of the controller explicitly setting goals. The control
 
 This offers a nice advantage over naive reinforcement learning which never knows whether an action had any part in the received reward, and thus simplistically distributes the reward across all "recent" events, with decreasing weight the further in the past the event was, according to some arbitrary hyperparameter.
 
-## Cost Modelling
+## Detailed Benefit Modelling
+_tbd_
+
+## Detailed Cost Modelling
+
+### Cost types
+What kinds of costs must we deal with?
+
+Costs primarily associated with the controller include:
+* Time elapsed - ie: "professor impatience"
+* Opportunity cost - risk of reduced controller rewards
+* Risk of negative rewards
+
+Costs primarily associated with the target include:
+* Energy use - eg: faster energy use leads to needing to recharge/feed/rest sooner.
+* Injury - injury either slows down the target agent, or prevents it from carrying out any further actions.
+* Entrapment - risk of becoming stuck and unable to reach any further goals.
+* Opportunity cost - risk of reduced target rewards, eg:
+    * if target moves towards location that is furthest from majority of goal locations, then reaching those goals will become more costly in the future;
+    * if target leaves/places something in a state that must be rectified later at a cost (eg: dropping cup to floor)
+    
+Opportunity cost is a particularly interesting case. Klyubin _et al_ (2005) introduced the concept of "empowerment" to address this, whereby the agent favours states that provide greater opportunity for future rewards. That is incorporated into the exploration/exploitation trade-off via the simple mantra of their paper's title "All else being equal, be empowered". So when weighing up the relative benefits of two actions with similar costs/benefits in the short term, choose the action that leads to greater empowerment in the long term. There has been a lot of subsequent research in this area, so we will be able to leverage that in our solution.
+
+It's also interesting to observe that humans don't seem to intentionally optimise for empowerment when first performing actions. Rather, they often only recognise the empowerment cost after the fact. They use hindsight to recognise that a particular choice during task A subsequently made task B harder to achieve; and they remember this when next doing task A. This appears to be a sensible approach given the extra computational cost of predicting likely effects on possible later tasks for every action made now.
+
+### Exploitation vs exploration trade-off
+_tbd_: combine with equivalent section above.
 
 We want to maximise the total controller reward while minimising cost, aggregated over time. Over what time frame? If time is infinite, then the most efficient method might be to explore all possible states first, accumulating cost in the short term, and then afterwards exploit the knowledge for maximum gain. But the agent's lifetime may not be infinite, and there may be a maximum cost that it can accrue without sufficient rewards to balance them (eg: hunger leading to death without sufficient food to balance the energy use).
 
@@ -207,27 +232,6 @@ The issue here is an assumption of infinite time, once again. One solution is to
 Overall, I think we'll find that the active inference approach will cover much of the above.
 
 _tbd_: go into active inference in more detail. But maybe need to cover off further down when we combine goal value and cost model in more unified way.
-
-### Cost types
-What kinds of costs must we deal with?
-
-Costs primarily associated with the controller include:
-* Time elapsed - ie: "professor impatience"
-* Opportunity cost - risk of reduced controller rewards
-* Risk of negative rewards
-
-Costs primarily associated with the target include:
-* Energy use - eg: faster energy use leads to needing to recharge/feed/rest sooner.
-* Injury - injury either slows down the target agent, or prevents it from carrying out any further actions.
-* Entrapment - risk of becoming stuck and unable to reach any further goals.
-* Opportunity cost - risk of reduced target rewards, eg:
-    * if target moves towards location that is furthest from majority of goal locations, then reaching those goals will become more costly in the future;
-    * if target leaves/places something in a state that must be rectified later at a cost (eg: dropping cup to floor)
-    
-Opportunity cost is a particularly interesting case. Klyubin _et al_ (2005) introduced the concept of "empowerment" to address this, whereby the agent favours states that provide greater opportunity for future rewards. That is incorporated into the exploration/exploitation trade-off via the simple mantra of their paper's title "All else being equal, be empowered". So when weighing up the relative benefits of two actions with similar costs/benefits in the short term, choose the action that leads to greater empowerment in the long term. There has been a lot of subsequent research in this area, so we will be able to leverage that in our solution.
-
-It's also interesting to observe that humans don't seem to intentionally optimise for empowerment when first performing actions. Rather, they often only recognise the empowerment cost after the fact. They use hindsight to recognise that a particular choice during task A subsequently made task B harder to achieve; and they remember this when next doing task A. This appears to be a sensible approach given the extra computational cost of predicting likely effects on possible later tasks for every action made now.
-
 
 ## Measuring success
 
