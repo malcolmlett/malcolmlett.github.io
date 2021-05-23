@@ -238,6 +238,8 @@ The value of the goal is also a result of measures that estimate the long-term b
 * Target improves ability to reach goal states
 * Target becomes more efficient at reaching goal states
 
+Finally, the value of a goal depends on how long we attempt that goal for, as measured by the length of the trajectory from "now".
+
 If already attempting the goal, this measures the value of continuing further. For example:
 * If nearing the goal state, the expected cost until reaching the goal reduces.
 * If already very close to the goal state, the likelihood of getting closer tends towards zero, and thus the likelihood of obtaining further rewards tends towards zero. At the same time, the uncertainty around the distribution of rewards in that area reduces towards zero. So the small but non-zero cost of trying further eventually exceeds the benefit, and this triggers the selection of a new goal.
