@@ -139,6 +139,11 @@ Goal selection can be based on a number of factors. In order to prioritise attai
 
 An important aspect of goal selection is the likelihood of maximising controller reward through the continuation of the current goal vs picking another. This needs to be driven by estimates of maximising the controller's _long term_ accumulation of rewards. For examle, after observing the first controller reward, should it seek to keep replicating that one observation, or should it explore further to see if greater rewards are possible? The controller probably will never know for certain whether it has observed the greatest possible reward, and it will probably never know with any certainty the likelihood of obtaining further rewards in new states. It must build up a prediction of the likelihood of that, based on its past observations, and on built-in priors.
 
+The value of any given goal is represented as follows:
+
+![goal-value](files/Autonomous-monitoring-and-control-goal-value.png)
+
+
 In order to begin to break that down, let's first segregate the options available:
 
 ![goal-selection](files/Autonomous-monitoring-and-control-goal-selection.png)
@@ -174,25 +179,55 @@ There is another benefit of the controller explicitly setting goals. The control
 
 This offers a nice advantage over naive reinforcement learning which never knows whether an action had any part in the received reward, and thus simplistically distributes the reward across all "recent" events, with decreasing weight the further in the past the event was, according to some arbitrary hyperparameter.
 
-## Goal Indication
-
-In a physical environment with External-RMC the controller needs to manipulate the environment in order to indicate a goal to the target, and the likelihood of the target reaching the goal depends on its ability to understand the meaning of that indication. When we consider Internal-RMC this might be replaced with direct manipulation of target state. Thus the question of goal indication in a physical environment will be largely glossed over here.
-
-We will assume that goals are indicated by some physical marker placed into the environment at the goal location, and which is immediately and always observable by the target. We will also assume that it has sufficient fidelity to indicate a range of different goals (eg: different shaped markers to indicate different required actions at the goal location).
-
 ## Cost Modelling
 
-todo: Measured cost to start accruing from change of goal.
+We want to maximise the total controller reward while minimising cost, aggregated over time. Over what time frame? If time is infinite, then the most efficient method might be to explore all possible states first, accumulating cost in the short term, and then afterwards exploit the knowledge for maximum gain. But the agent's lifetime may not be infinite, and there may be a maximum cost that it can accrue without sufficient rewards to balance them (eg: hunger leading to death without sufficient food to balance the energy use).
+
+The biggest problem here is that the controller does not know in advance what rewards are possible. Given a certain amount of exploration, the observations it has made fall into the category of "known knowns" plus some amount of "known unknowns"; however what might be possible in the future falls under the category of "unknown unknowns", making it hard to reason about.
+
+Within commercial software development practices today it is common to break a large problem into small 2-week chunks of work. It has been found that performing frequent reviews of the solution leads to more reliable chance of success, than hoping for a "big bang" success at the end. This can be seen as different approaches to the exploration / exploitation dilemma (Berger-Tal _et al_, 2014).
 
 ![honeypots-vs-jackpots](files/Autonomous-monitoring-and-control-honeypot-vs-jackpot.png)
 
-![goal-value](files/Autonomous-monitoring-and-control-goal-value.png)
+So there must be an ideal balance between expolation and exploitation. If we could model the problem sufficiently we would probably find that some sort of tuning parameter would fall out that we could adjust to reflect our _a priori_ assumptions about that ideal balance.
 
-## Target Rewards
+### Cost limit
+A first step can be to define a limit on acceptable cost accrual. Let's assume that cost is measured on the same scale as reward, so that we can measure them as separate values but compare them easily. We define the maximum acceptible cost accrual by stating that, within a specified time frame `t_it` (for "iteration" length), accumulated reward must exceed accumulated cost. Thus, in expectation, we require:
 
-todo: If distributing rewards across a trajectory, that trajectory should start at the change of goal.
+* `E[Σr - Σc] > 0` over time period `t_it`
 
-![reward-options](files/Autonomous-monitoring-and-control-reward-options.png)
+The time frame `t_it` is the tuning parameter here which encodes our _a priori_ assumptions about the short-term time frame over which an agent can tolerate a negative balance (of `E[Σr - Σc]`) in order to maximise gain over a longer time frame. In humans `t_it` might be 1 day, for example, ignoring a lot of subtleties. For our agent, `t_it` might be something like `1,000` time steps.
+
+### Exploration limit
+So a naive approach now is to break activity into iterations of length `t_it`, to explore in order to maximise long term `E[Σr - Σc]`, while exploiting sufficiently in order to ensuring `(Σr - Σc) > 0` for each iteration. However, this will still lead to a sub-optimal solution, as the agent will seek to be only slightly positive in its gain, and otherwise will continue to explore.
+
+The issue here is an assumption of infinite time, once again. One solution is to make an _a priori_ assumption about the lifetime of the agent, for example that agents on average survive for `M` iterations. Alternatively, we could build in an assumption that an agent will typically observe the state space sufficiently by `N` iterations (N < M). Thus, after `N` iterations the agent can assume that it has observed the possible range of reward values and thus should focus more on exploitation. This is a biologically plausible approach. For example, by 20 years a human typically will have sufficient understanding of the world that they have an accurate model of the range and distribution of possible rewards, and that only minor tunings on that model will subsequently be possible. An alternative could be to use some sort of discounting factor that favours shorter term exploitable rewards over the potential of longer term greater rewards.
+
+### Active inference
+Overall, I think we'll find that the active inference approach will cover much of the above.
+
+_tbd_: go into active inference in more detail. But maybe need to cover off further down when we combine goal value and cost model in more unified way.
+
+### Cost types
+What kinds of costs must we deal with?
+
+Costs primarily associated with the controller include:
+* Time elapsed - ie: "professor impatience"
+* Opportunity cost - risk of reduced controller rewards
+* Risk of negative rewards
+
+Costs primarily associated with the target include:
+* Energy use - eg: faster energy use leads to needing to recharge/feed/rest sooner.
+* Injury - injury either slows down the target agent, or prevents it from carrying out any further actions.
+* Entrapment - risk of becoming stuck and unable to reach any further goals.
+* Opportunity cost - risk of reduced target rewards, eg:
+    * if target moves towards location that is furthest from majority of goal locations, then reaching those goals will become more costly in the future;
+    * if target leaves/places something in a state that must be rectified later at a cost (eg: dropping cup to floor)
+    
+Opportunity cost is a particularly interesting case. Klyubin _et al_ (2005) introduced the concept of "empowerment" to address this, whereby the agent favours states that provide greater opportunity for future rewards. That is incorporated into the exploration/exploitation trade-off via the simple mantra of their paper's title "All else being equal, be empowered". So when weighing up the relative benefits of two actions with similar costs/benefits in the short term, choose the action that leads to greater empowerment in the long term. There has been a lot of subsequent research in this area, so we will be able to leverage that in our solution.
+
+It's also interesting to observe that humans don't seem to intentionally optimise for empowerment when first performing actions. Rather, they often only recognise the empowerment cost after the fact. They use hindsight to recognise that a particular choice during task A subsequently made task B harder to achieve; and they remember this when next doing task A. This appears to be a sensible approach given the extra computational cost of predicting likely effects on possible later tasks for every action made now.
+
 
 ## Measuring success
 
@@ -201,6 +236,18 @@ todo: If distributing rewards across a trajectory, that trajectory should start 
 ## Reviewing total Goal Value
 
 ![goal-value2](files/Autonomous-monitoring-and-control-goal-value2.png)
+
+## Target Rewards
+
+todo: If distributing rewards across a trajectory, that trajectory should start at the change of goal.
+
+![reward-options](files/Autonomous-monitoring-and-control-reward-options.png)
+
+## Goal Indication
+
+In a physical environment with External-RMC the controller needs to manipulate the environment in order to indicate a goal to the target, and the likelihood of the target reaching the goal depends on its ability to understand the meaning of that indication. When we consider Internal-RMC this might be replaced with direct manipulation of target state. Thus the question of goal indication in a physical environment will be largely glossed over here.
+
+We will assume that goals are indicated by some physical marker placed into the environment at the goal location, and which is immediately and always observable by the target. We will also assume that it has sufficient fidelity to indicate a range of different goals (eg: different shaped markers to indicate different required actions at the goal location).
 
 ## State Representation
 
@@ -231,8 +278,11 @@ Random:
 
 
 # References
+Berger-Tal, O., Nathan, J., Meron, E., Saltz, D. (2014). The Exploration-Exploitation Dilemma: A Multidisciplinary Framework. PLOS ONE 9(4): e95693. https://doi.org/10.1371/journal.pone.0095693
 
 Friston, K., Schwartenbeck, P., FitzGerald, T., Moutoussis, M., Behrens, T., Dolan, R. J. (2013). The anatomy of choice: active inference and agency. Front. Hum. Neurosci. 7:598 10.3389/fnhum.2013.00598. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3782702/
+
+Klyubin, A.S., Polani, D., Nehaniv, C.L. (2005). All Else Being Equal Be Empowered. In: Capcarrère M.S., Freitas A.A., Bentley P.J., Johnson C.G., Timmis J. (eds) Advances in Artificial Life. ECAL 2005. Lecture Notes in Computer Science, vol 3630. Springer, Berlin, Heidelberg. https://doi.org/10.1007/11553090_75. \[[Cite Seer](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.9018&rep=rep1&type=pdf)\]
 
 Rigoli, F., Pezzulo, G., Dolan, R., & Friston, K. (2017). A Goal-Directed Bayesian Framework for Categorization. Frontiers in psychology, 8, 408. https://doi.org/10.3389/fpsyg.2017.00408
 
