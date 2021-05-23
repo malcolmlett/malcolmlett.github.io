@@ -565,8 +565,16 @@ _..more tbd.._
 
 Here I introduce the concept of _Intentional Autonomous Monitoring and Control_ (I-AMC). I-AMC refers to an agent that performs monitoring and control of itself, autonomously, and with active intent. In other words, using the same logic and inference processes that it would typically use for interaction with the external environment, it can determine the need and carry out actions in order to make changes to its own tuning parameters.
 
-Background discussions for this topic can be found here:
+A full AGI solution must surely include many of the components illustrated in the diagram here, and probably many others that have been omitted. From conception to adulthood and beyond, each of these components learns to operate, based on past experience, and each component's learning is carried out within a system full of similar components learning and changing. The system as a whole must be very chaotic. So we must consider how all these components can operate together to produce benefit for the agent as a whole.
+
+It is this observation that sets the background for the topic of _autonomous monitoring and control_ (AMC). 
+
+![amc-motivation](files/Executive-control-amc-motivation.png)
+
+Further detailed background discussions for this topic can be found here:
 * [[Autonomous Monitoring and Control]]
+
+## Solution
 
 _tbd_
 
