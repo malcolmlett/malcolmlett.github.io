@@ -176,13 +176,6 @@ Consider:
 * Chance of getting any closer to goal state and thus obtaining any better rewards for current goal
 * Achievability of goal - likelihood of goal being achieved is higher for closer goals
 
-### Benefit of goal exploration
-Some attention also needs to be given to the selection of a goal with no past observed reward. This includes previously seen states that issued no reward and unseen states. One benefit of setting a goal is the hope of obtaining controller reward upon reaching that goal. A second benefit of setting a goal is to train the agent to follow goals. A previously rewardful state provides both those two benefits, however it offers only a potentially very small sample of the set of plausible attainable states. Consequently, training the target against those goal states alone may not generalise well.
-
-To put this in a slightly different way, the value of a rewardless goal is (through training) to reduce uncertainty in the target's ability to reach an arbitrary goal set by the controller. The subsequent value is to maximise our future likelihood of being able to reproduce future observations of high reward on so far unseen states. Based on lots of observations by the deep learning community, we assume _a priori_ that generalisation will be maximised by training against lots of different goals. 
-
-This is also part of how we can trade off exploration of random rewardless goals vs known rewardfull goals. It becomes yet another term in the prediction of the value of a potential goal state.
-
 ### Measuring success
 How do we tell when the target has achieved the goal set by the controller? For that matter, how do we tell when the target is "on course" vs "deviating" away from the goal state? Assuming a continuous state space, the target will only ever reach a point close to the goal state, never exactly on it. It's going to be hard to know exactly what point is the best point to accept as "success". Furthermore, it's impossible to do anything much that's very advanced without a detailed model of the environment and the state space.
 
@@ -195,6 +188,18 @@ More formally, we need to examine the cost of trying further against the likelih
 ![close-enough-measure](files/Autonomous-monitoring-and-control-close-enough-measure.png)
 
 It's useful to note that this problem becomes easier in cases where forms of hindsight can be used (such as in offline training). So for Internal-RMC and AMC, we may find a better solution.
+
+### Benefit of goal repitition
+Practice on existing known rewardful goals can reduce the cost on subsequent attempts by making the target more efficient. However the benefit of practice reduces over time. So there is a point where further practice gains no improvement for the future. If we knew the ideal trajectory length/path for a goal from some current state then we could assume for example that each practice will reduce actual cost by 10% closer toward the ideal cost.
+
+Could we use a function approximator `C(s_a -> s_b)` that predicts expected cost based on past experiences? Perhaps we could measure subsequent actual cost against this prediction and use it to judge the benefit of practice? It's not entirely clear how that might actually work, but having such a predictor would be extremely useful for goal selection as it needs to estimate cost without performing planning.
+
+### Benefit of goal exploration
+Some attention also needs to be given to the selection of a goal with no past observed reward. This includes previously seen states that issued no reward, and unseen states. One benefit of setting a goal is the hope of obtaining controller reward upon reaching that goal. A second benefit of setting a goal is to train the agent to follow goals. A previously rewardful state provides both those two benefits, however it offers only a potentially very small sample of the set of plausible attainable states. Consequently, training the target against those goal states alone may not generalise well.
+
+To put this in a slightly different way, the value of a rewardless goal is (through training) to reduce uncertainty in the target's ability to reach an arbitrary goal set by the controller. The subsequent value is to maximise our future likelihood of being able to reproduce future observations of high reward on so far unseen states. Based on lots of observations by the deep learning community, we assume _a priori_ that generalisation will be maximised by training against lots of different goals.
+
+This is also part of how we can trade off exploration of random rewardless goals vs known rewardfull goals. It becomes yet another term in the prediction of the value of a potential goal state.
 
 ## Goal Cost Modelling
 
@@ -220,9 +225,28 @@ It's also interesting to observe that humans don't seem to intentionally optimis
 
 ## Calculating Goal Value
 
-### Total Goal Value
+So, finally, we have the following generative model as an illustration of the value of attempting a particular goal for a particular length of time, as measured from "now".
+
+The value of a goal is a result of short-term measures that estimate the probability distributions of accumulated results from "now" until termination of the goal:
+* Expected accumulated controller reward
+* Expected accumulated controller cost
+* Expected accumulated target cost
+
+The value of the goal is also a result of measures that estimate the long-term benefit for future goals:
+* Reduced uncertainty in probability distribution of controller rewards being received in association with certain states
+* Reduced uncertainty in target's ability to reach goal states and in the expected elapsed time required
+* Target improves ability to reach goal states
+* Target becomes more efficient at reaching goal states
+
+If already attempting the goal, this measures the value of continuing further. For example:
+* If nearing the goal state, the expected cost until reaching the goal reduces.
+* If already very close to the goal state, the likelihood of getting closer tends towards zero, and thus the likelihood of obtaining further rewards tends towards zero. At the same time, the uncertainty around the distribution of rewards in that area reduces towards zero. So the small but non-zero cost of trying further eventually exceeds the benefit, and this triggers the selection of a new goal.
+* In order to avoid re-selecting that same achieved goal soon after leaving it, we may need to incorporate some sort of boredom measure, such as preferring selection of goals with less certainty.
 
 ![goal-value2](files/Autonomous-monitoring-and-control-goal-value2.png)
+
+### Relevance of Target Rewards and Costs
+For the controller's choice of goal, how relevant is measuring the expected target's rewards and costs? The answer lies in whether the controller emits those values. For target reward, the controller provides those to the target in order to encourage the target to learn to achieve the goal. There is no benefit in incorporating that into the cost model of a goal. The target cost, however, is a factor of the environment and the target itself. The controller does not consider that target cost in any other way. Thus consideration of target cost within calculation of goal value appears to be sensible.
 
 ### Exploitation vs exploration trade-off
 The expectation of long term benefit from exploration vs preference for short term gain will be a tuning parameter. It could be dynamically adjusted by the controller as it observes results over time, but this still requires an _a priori_ expectation of ideal frequency of rewards. So it's the same problem in a different guise, and we'll need to look deeper to decide which representation is easier to work with. 
