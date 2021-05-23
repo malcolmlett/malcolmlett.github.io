@@ -139,11 +139,11 @@ Goal selection can be based on a number of factors. In order to prioritise attai
 
 An important aspect of goal selection is the likelihood of maximising controller reward through the continuation of the current goal vs picking another. This needs to be driven by estimates of maximising the controller's _long term_ accumulation of rewards. For examle, after observing the first controller reward, should it seek to keep replicating that one observation, or should it explore further to see if greater rewards are possible? The controller probably will never know for certain whether it has observed the greatest possible reward, and it will probably never know with any certainty the likelihood of obtaining further rewards in new states. It must build up a prediction of the likelihood of that, based on its past observations, and on built-in priors.
 
-The value of any given goal is represented as follows:
+The value of any given goal comes down to its expected rewards and costs, relative to that of other goal options. This can be represented as follows:
 
 ![goal-value](files/Autonomous-monitoring-and-control-goal-value.png)
 
-In order to begin to break that down, let's first segregate the options available:
+In order to begin to break that down, let's first assume that goals are just selections of specific states, and segregate the goals available:
 
 ![goal-selection](files/Autonomous-monitoring-and-control-goal-selection.png)
 
@@ -161,27 +161,42 @@ We want to avoid the case where the controller never stays on one goal long enou
 * expected total value in short term minus opportunity cost of not changing.
 * long term benefit (in terms of likelihood of increasing long term aggregate controller reward) of training target to efficiently reach goals set by controller.
 
+### Trajectory starts at goal change
+There is another benefit of the controller explicitly setting goals. The controller knows exactly when the goal was selected and indicated to the target. Thus, any consideration of trajectory, accrued cost and rewards, can all start from the moment of the goal change.
+
+This offers a nice advantage over naive reinforcement learning which never knows whether an action had any part in the received reward, and thus simplistically distributes the reward across all "recent" events, with decreasing weight the further in the past the event was, according to some arbitrary hyperparameter.
+
+## Goal Benefit Modelling
+Goals are measured in terms of the benefit to the controller. eg:
+* Short-term chance to reproduce past controller rewards
+* Medium-term chance to discover new rewardful states
+* Long-term chance to maximise ability to obtain future rewards by training target to follow controller's commands
+
+Consider:
+* Chance of getting any closer to goal state and thus obtaining any better rewards for current goal
+* Achievability of goal - likelihood of goal being achieved is higher for closer goals
+
 ### Benefit of goal exploration
 Some attention also needs to be given to the selection of a goal with no past observed reward. This includes previously seen states that issued no reward and unseen states. One benefit of setting a goal is the hope of obtaining controller reward upon reaching that goal. A second benefit of setting a goal is to train the agent to follow goals. A previously rewardful state provides both those two benefits, however it offers only a potentially very small sample of the set of plausible attainable states. Consequently, training the target against those goal states alone may not generalise well.
 
 To put this in a slightly different way, the value of a rewardless goal is (through training) to reduce uncertainty in the target's ability to reach an arbitrary goal set by the controller. The subsequent value is to maximise our future likelihood of being able to reproduce future observations of high reward on so far unseen states. Based on lots of observations by the deep learning community, we assume _a priori_ that generalisation will be maximised by training against lots of different goals. 
 
-This is also how we trade off exploration of random rewardless goals vs known rewardfull goals. It becomes yet another term in the prediction of the value of a potential goal state.
+This is also part of how we can trade off exploration of random rewardless goals vs known rewardfull goals. It becomes yet another term in the prediction of the value of a potential goal state.
 
-### Exploitation vs exploration trade-off
-The expectation of long term benefit from exploration vs preference for short term gain will be a tuning parameter. It could be dynamically adjusted by the controller as it observes results over time, but this still requires an _a priori_ expectation of ideal frequency of rewards. So it's the same problem in a different guise, and we'll need to look deeper to decide which representation is easier to work with. 
+### Measuring success
+How do we tell when the target has achieved the goal set by the controller? For that matter, how do we tell when the target is "on course" vs "deviating" away from the goal state? Assuming a continuous state space, the target will only ever reach a point close to the goal state, never exactly on it. It's going to be hard to know exactly what point is the best point to accept as "success". Furthermore, it's impossible to do anything much that's very advanced without a detailed model of the environment and the state space.
 
-It's informative to note this same tuning problem occurs for humans, and (perhaps simplistically) it would appear that we see this in the variation of different individual's risk-taking vs risk-averse behaviours. For humans, however, there is a mechanism in play that helps convergence towards a narrower range than would otherwise occur. Individuals learn from others by consciously and subconsciously comparing themselves to others. They take note of those others' relative better successes or worse failures, and adjust their own risk taking profile as a result. Effectively, this mechanism leverages a population level sampling effect for the benefit of the individual. Of course, there are also genetic factors at play.
+For now we will assume a naive euclidean interpretation of the state space (with or without some explicit regularization process to make this assumption more reasonable). Perhaps we can use some acceptable error limit, `ε`, and conclude "achievement" of goal for any state that has `|target state - goal state| < ε`.
 
-### Length of trajectory
-There is another benefit of the controller explicitly setting goals. The controller knows exactly when the goal was selected and indicated to the target. Thus, any consideration of trajectory, accrued cost and rewards, can all start from the moment of the goal change.
+One purpose of setting goals is to reproduce past controller rewards. Where a goal has been selected from past observed rewardful states, then the goal selector has predicted a certain `p(r_ctrl|s_tgt)` distribution. However we do not know what error margin the environment/professor allows before issuing the expected controller reward. The best overall approach is to judge the target's ability to do better vs the cost of trying further. A simply approach may be to pick _a priori_ some ε (initially small), and keep trying, measuring the accumulated cost. Over several runs, use past experience to update the posterior ε, increasing it until a balance is struck on average that the controller doesn't wait any longer than is worth the gain.
 
-This offers a nice advantage over naive reinforcement learning which never knows whether an action had any part in the received reward, and thus simplistically distributes the reward across all "recent" events, with decreasing weight the further in the past the event was, according to some arbitrary hyperparameter.
+More formally, we need to examine the cost of trying further against the likelihood of doing better; to consider the likelihood of attaining the past reward if the agent does better by some amount; and to consider the magnitude of that expected extra reward. At this point, it starts to look like a component of goal selection, and in particular the choice between sticking with the current goal vs choosing another.
 
-## Detailed Benefit Modelling
-_tbd_
+![close-enough-measure](files/Autonomous-monitoring-and-control-close-enough-measure.png)
 
-## Detailed Cost Modelling
+It's useful to note that this problem becomes easier in cases where forms of hindsight can be used (such as in offline training). So for Internal-RMC and AMC, we may find a better solution.
+
+## Goal Cost Modelling
 
 ### Cost types
 What kinds of costs must we deal with?
@@ -202,6 +217,17 @@ Costs primarily associated with the target include:
 Opportunity cost is a particularly interesting case. Klyubin _et al_ (2005) introduced the concept of "empowerment" to address this, whereby the agent favours states that provide greater opportunity for future rewards. That is incorporated into the exploration/exploitation trade-off via the simple mantra of their paper's title "All else being equal, be empowered". So when weighing up the relative benefits of two actions with similar costs/benefits in the short term, choose the action that leads to greater empowerment in the long term. There has been a lot of subsequent research in this area, so we will be able to leverage that in our solution.
 
 It's also interesting to observe that humans don't seem to intentionally optimise for empowerment when first performing actions. Rather, they often only recognise the empowerment cost after the fact. They use hindsight to recognise that a particular choice during task A subsequently made task B harder to achieve; and they remember this when next doing task A. This appears to be a sensible approach given the extra computational cost of predicting likely effects on possible later tasks for every action made now.
+
+## Calculating Goal Value
+
+### Total Goal Value
+
+![goal-value2](files/Autonomous-monitoring-and-control-goal-value2.png)
+
+### Exploitation vs exploration trade-off
+The expectation of long term benefit from exploration vs preference for short term gain will be a tuning parameter. It could be dynamically adjusted by the controller as it observes results over time, but this still requires an _a priori_ expectation of ideal frequency of rewards. So it's the same problem in a different guise, and we'll need to look deeper to decide which representation is easier to work with. 
+
+It's informative to note this same tuning problem occurs for humans, and (perhaps simplistically) it would appear that we see this in the variation of different individual's risk-taking vs risk-averse behaviours. For humans, however, there is a mechanism in play that helps convergence towards a narrower range than would otherwise occur. Individuals learn from others by consciously and subconsciously comparing themselves to others. They take note of those others' relative better successes or worse failures, and adjust their own risk taking profile as a result. Effectively, this mechanism leverages a population level sampling effect for the benefit of the individual. Of course, there are also genetic factors at play.
 
 ### Exploitation vs exploration trade-off
 _tbd_: combine with equivalent section above.
@@ -233,25 +259,21 @@ Overall, I think we'll find that the active inference approach will cover much o
 
 _tbd_: go into active inference in more detail. But maybe need to cover off further down when we combine goal value and cost model in more unified way.
 
-## Measuring success
-
-![close-enough-measure](files/Autonomous-monitoring-and-control-close-enough-measure.png)
-
-## Reviewing total Goal Value
-
-![goal-value2](files/Autonomous-monitoring-and-control-goal-value2.png)
-
-## Target Rewards
-
-todo: If distributing rewards across a trajectory, that trajectory should start at the change of goal.
-
-![reward-options](files/Autonomous-monitoring-and-control-reward-options.png)
-
 ## Goal Indication
 
 In a physical environment with External-RMC the controller needs to manipulate the environment in order to indicate a goal to the target, and the likelihood of the target reaching the goal depends on its ability to understand the meaning of that indication. When we consider Internal-RMC this might be replaced with direct manipulation of target state. Thus the question of goal indication in a physical environment will be largely glossed over here.
 
 We will assume that goals are indicated by some physical marker placed into the environment at the goal location, and which is immediately and always observable by the target. We will also assume that it has sufficient fidelity to indicate a range of different goals (eg: different shaped markers to indicate different required actions at the goal location).
+
+## Rewarding Target
+
+todo: If distributing rewards across a trajectory, that trajectory should start at the change of goal.
+
+![reward-options](files/Autonomous-monitoring-and-control-reward-options.png)
+
+As discussed above, it is tricky to identify a specific exact point where the target "achieves" a goal, because of the continuous nature of the state space. The conclusion was rather to weigh up cost and benefits, and to choose a new goal when the target is not likely to "achieve" the goal any better than it already has. So this change of goal becomes the trigger for rewarding the goal achievement.
+
+Alternatively, we could not bother with trying to reward goal achievement, and instead focus on rewarding intermediate states (ie: based on state clustering).
 
 ## State Representation
 
@@ -280,8 +302,16 @@ Random:
 * AMC part of agent takes responsibility for providing reward signals to internal, even when there are external signals available. Because it is the AMC module that _interprets_ the external reward signals given the sense inputs. Ie: the AMC module uses a generative model of latent reward state -> features -> observations, and then infers the latent reward from the sense inputs. It thus may sometimes ignore external sense inputs that appear to be rewards because its inference is that they are not.
 * Might be possible for the RMC module to judge goal success where the goal is represented using some abstract representation that is different to the state representation. If so, then once move into AMC we won't have to measure goal success via a primitive operative, and won't have to force that goals uses the state representation.
 
+### Dealing with dynamic state representation
+For AMC, the true state is not available. Only the belief about state. However the representation of belief in state changes over time as the target learns. It is especially unstable during the initial phase of learning. So we cannot guarantee that an observed state value from the past is achievable now nor that it is likely to produce the same reward, because it may now represent a different state.
+
+May need some way to translate. Eg: store past state as raw inputs instead of high-level representations. If only selecting states to store after the fact, then perhaps could use some sort of predictive network to estimate the raw inputs that caused the observed high-level state. Such as in offline "sleep" processes.
+
+Alternatively, we could just accept the error margin but minimise it by discarding past observed states older than some limit such as `T/2` (ie: only keep the second half of observations since the agent's time began).
+
 
 # References
+
 Berger-Tal, O., Nathan, J., Meron, E., Saltz, D. (2014). The Exploration-Exploitation Dilemma: A Multidisciplinary Framework. PLOS ONE 9(4): e95693. https://doi.org/10.1371/journal.pone.0095693
 
 Friston, K., Schwartenbeck, P., FitzGerald, T., Moutoussis, M., Behrens, T., Dolan, R. J. (2013). The anatomy of choice: active inference and agency. Front. Hum. Neurosci. 7:598 10.3389/fnhum.2013.00598. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3782702/
