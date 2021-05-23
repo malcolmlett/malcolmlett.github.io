@@ -227,6 +227,8 @@ It's also interesting to observe that humans don't seem to intentionally optimis
 
 So, finally, we have the following generative model as an illustration of the value of attempting a particular goal for a particular length of time, as measured from "now".
 
+![goal-value2](files/Autonomous-monitoring-and-control-goal-value2.png)
+
 The value of a goal is a result of short-term measures that estimate the probability distributions of accumulated results from "now" until termination of the goal:
 * Expected accumulated controller reward
 * Expected accumulated controller cost
@@ -244,8 +246,6 @@ If already attempting the goal, this measures the value of continuing further. F
 * If nearing the goal state, the expected cost until reaching the goal reduces.
 * If already very close to the goal state, the likelihood of getting closer tends towards zero, and thus the likelihood of obtaining further rewards tends towards zero. At the same time, the uncertainty around the distribution of rewards in that area reduces towards zero. So the small but non-zero cost of trying further eventually exceeds the benefit, and this triggers the selection of a new goal.
 * In order to avoid re-selecting that same achieved goal soon after leaving it, we may need to incorporate some sort of boredom measure, such as preferring selection of goals with less certainty.
-
-![goal-value2](files/Autonomous-monitoring-and-control-goal-value2.png)
 
 ### Relevance of Target Rewards and Costs
 For the controller's choice of goal, how relevant is measuring the expected target's rewards and costs? The answer lies in whether the controller emits those values. For target reward, the controller provides those to the target in order to encourage the target to learn to achieve the goal. There is no benefit in incorporating that into the cost model of a goal. The target cost, however, is a factor of the environment and the target itself. The controller does not consider that target cost in any other way. Thus consideration of target cost within calculation of goal value appears to be sensible.
