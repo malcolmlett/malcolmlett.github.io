@@ -234,13 +234,19 @@ The value of a goal is a result of short-term measures that estimate the probabi
 * Expected accumulated controller cost
 * Expected accumulated target cost
 
-The value of the goal is also a result of measures that estimate the long-term benefit for future goals:
+The value of a goal is also a result of measures that estimate the intermediate-term effect on subsequent goals:
+* Expected controller opportunity cost (or benefit)
+* Expected target opportunity cost (or benefit)
+
+And the value of the goal is also a result of measures that estimate the long-term benefit for future goals:
 * Reduced uncertainty in probability distribution of controller rewards being received in association with certain states
 * Reduced uncertainty in target's ability to reach goal states and in the expected elapsed time required
 * Target improves ability to reach goal states
 * Target becomes more efficient at reaching goal states
 
-Finally, the value of a goal depends on how long we attempt that goal for, as measured by the length of the trajectory from "now".
+Finally, the value of a goal depends on how long we attempt that goal for, as measured by the length of the trajectory from "now", and affecting:
+* Certainty of reaching goal (ie: closer goals are more likely to be reached)
+* Controller and target cost (ie: closer goals cost less)
 
 If already attempting the goal, this measures the value of continuing further. For example:
 * If nearing the goal state, the expected cost until reaching the goal reduces.
@@ -293,10 +299,48 @@ We will assume that goals are indicated by some physical marker placed into the 
 
 ## Rewarding Target
 
-todo: If distributing rewards across a trajectory, that trajectory should start at the change of goal.
+The controller must provide rewards to the target in order to encourage target learning. We want to choose target rewards that maximise long term gain. The selection of appropriate rewards will be based on some model about the world and the target, priors, and observations.
+
+As we know when the goal changes, reward calculation can focus on the trajectory from the start of the current goal.
+
+Some options for different timing of target rewards include:
+* **Goal achievement**: emit online reward upon goal achievement/failure. May or may not use hindsight about the trajectory just taken to adjust the reward. If this is the only reward, and the target is a simple deep neural network-based RL solution, then depends on RL processes within the target to distribute the inferred loss across past actions.
+* **Frequent online**: emit frequent online rewards based on estimate of whether the target is moving towards or away from the goal. This may be per time step or based on clustered states, for example emitting one reward for each state cluster.
+* *Frequent offline**: apply offline rewards against notable points along trajectories, or for each time step, based on hindsight. For ExternalRMC this would degrade to rewarding at goal achievement only, but for InternalRMC it could be quite beneficial.
+
+There are two different "structural" variations across possible rewards:
+* **Preemptive**: rewards placed into the environment before target activity, which the target is capable of observing prior to receiving the reward. eg: food (positive reward), zappers (negative reward).
+    * These will tend to act as markers (positive: "beacons"; negative: "danger signs") that affect the target's behaviour in the same way that a goal indicator would.
+    * They encourage rapid adaptation in the short term. eg: leveraging existing ability to follow beacons.
+    * Can be used to encourage habitual learning of trajectories.
+    * Can be used to discover far off rewards that the target might not otherwise encounter. eg: particularly good for use of previously unseen states as goals.
+    * However, may lead to a dependency on markers, such that the target never learns to approach a goal without them.
+* **Posthoc**: rewards given to the target only after some activity and otherwise unknown to the target.
+    * Depends more on target's exploration in order to encounter for the first time, and then on target's exploitation to re-encounter them.
+    * Teaches target to seek indicated goals.
+    * Leverages intermediate and long term forms of adaptation.
+    * However, takes longer to cause behavioural changes.
 
 ![reward-options](files/Autonomous-monitoring-and-control-reward-options.png)
 
+### Assumptions
+Let's declare some assumptions about rewards:
+* A greater frequency (online or offline) of rewards will converge the target faster, and thus increase controller rewards.
+* Erroneous target rewards will make convergence slower, and thus decrease controller rewards. This includes for example rewards that might somehow confuse the target into heading towards an old goal.
+* Hindsight-based offline rewards will be more accurate than online rewards (which are inherently predictive in nature).
+* There is a difference in consequence when the target goes off course when close to reaching a goal vs being far away, but it's hard to set a general rule about this. Thus it's better to attempt to judge the likelihood of reaching the goal given the current state/action.
+
+### Reward appropriateness uncertainty
+It's clear from the above that we need to model the uncertainty about appropriateness of a calculated reward. Furthermore, ideally we would also model the expected effect of a reward on the target, in order for example to avoid rewards that are otherwise appropriate but might be erroneously interpreted by the target.
+
+For an initial simple model of reward effect on target behaviour, we assume that rewards of correct sign are good, and rewards of the wrong sign are bad. So, we need to estimate the likelihood of a reward having the correct sign and only emit rewards with > 50% certainty of the sign being correct. Note here that although we talk about the sign of a reward, in practice reward values within RL are often all within the positive number range. Thus, we interpret positive/negative rewards as being relative to some mean reward value.
+
+### Learning goal indication
+The target will need to learn the meaning of goal indicators. Initially it won't even know that the "goal indicator" indicates a goal. Ideally, we would first train the target to understand the concept of goals via some in-built memory and modelling capability within the target. But in the absence of that capability, we will need to use frequent preemptive or posthoc rewards and depend on the RL algorithm to do gradient descent.
+
+So we will need to initially set goals that the target will bump into by accident, in order that it can build up an association between goal indicators and the need to move towards them.
+
+### Rewarding goal achievement
 As discussed above, it is tricky to identify a specific exact point where the target "achieves" a goal, because of the continuous nature of the state space. The conclusion was rather to weigh up cost and benefits, and to choose a new goal when the target is not likely to "achieve" the goal any better than it already has. So this change of goal becomes the trigger for rewarding the goal achievement.
 
 Alternatively, we could not bother with trying to reward goal achievement, and instead focus on rewarding intermediate states (ie: based on state clustering).
@@ -336,9 +380,18 @@ May need some way to translate. Eg: store past state as raw inputs instead of hi
 Alternatively, we could just accept the error margin but minimise it by discarding past observed states older than some limit such as `T/2` (ie: only keep the second half of observations since the agent's time began).
 
 
+# Advancements
+
+....
+
+There is evidence that biology has encoded an understanding of 3D space. eg: place cells. eg: "backward sweep" activity related to location, seen in fRMI when an individual is planning (Dolan & Dayan, 2013).
+
+
 # References
 
 Berger-Tal, O., Nathan, J., Meron, E., Saltz, D. (2014). The Exploration-Exploitation Dilemma: A Multidisciplinary Framework. PLOS ONE 9(4): e95693. https://doi.org/10.1371/journal.pone.0095693
+
+Dolan, R. J., & Dayan, P. (2013). Goals and habits in the brain. Neuron, 80(2), 312–325. https://doi.org/10.1016/j.neuron.2013.09.007
 
 Friston, K., Schwartenbeck, P., FitzGerald, T., Moutoussis, M., Behrens, T., Dolan, R. J. (2013). The anatomy of choice: active inference and agency. Front. Hum. Neurosci. 7:598 10.3389/fnhum.2013.00598. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3782702/
 
