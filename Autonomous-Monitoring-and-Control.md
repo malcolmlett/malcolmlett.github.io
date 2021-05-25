@@ -373,6 +373,9 @@ A simple starting point is to reward based on cost. At goal achievement, derive 
 
 ...Perhaps we should scale the value of reward based on the relative certainty of the outcome of the target's actions vs some ideal path.
 
+
+...more tbd....
+
 ## State Representation
 
 The discussions above ignore an important concern about the state representation. A state is a single (vector) point in a multidimensional space. However it actually encodes a combination of many independent and only partially-dependent features. For example in a single snapshot of vision observed by an autonomous car on a road: location of road relative to agent, location of centre line, colour of road, texture of road, grass vs buildings on the side of the road, whether it's raining/overcast/sunny/windy/snowing, people on the pavement, cats on the road in front, etc. etc.
