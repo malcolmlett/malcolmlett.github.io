@@ -254,7 +254,14 @@ If already attempting the goal, this measures the value of continuing further. F
 * In order to avoid re-selecting that same achieved goal soon after leaving it, we may need to incorporate some sort of boredom measure, such as preferring selection of goals with less certainty.
 
 ### Relevance of Target Rewards and Costs
-For the controller's choice of goal, how relevant is measuring the expected target's rewards and costs? The answer lies in whether the controller emits those values. For target reward, the controller provides those to the target in order to encourage the target to learn to achieve the goal. There is no benefit in incorporating that into the cost model of a goal. The target cost, however, is a factor of the environment and the target itself. The controller does not consider that target cost in any other way. Thus consideration of target cost within calculation of goal value appears to be sensible.
+For the controller's choice of goal, how relevant is measuring the expected target's rewards and costs? The answer lies in whether the controller emits those values. For target reward, the controller provides those to the target in order to encourage the target to learn to achieve the goal. There is no benefit in incorporating that into the cost model of a goal.
+
+The target cost, however, is a factor of the environment and the target itself. The controller does not consider that target cost in any other way. Thus consideration of target cost within calculation of goal value appears to be sensible.
+
+### Learning goal indication
+The target will need to learn the meaning of goal indicators. Initially it won't even know that the "goal indicator" indicates a goal. Ideally, we would first train the target to understand the concept of goals via some in-built memory and modelling capability within the target. But in the absence of that capability, we will need to use frequent preemptive or posthoc rewards and depend on the RL algorithm to do gradient descent.
+
+So we will need to initially set goals that the target will bump into by accident, in order that it can build up an association between goal indicators and the need to move towards them.
 
 ### Exploitation vs exploration trade-off
 The expectation of long term benefit from exploration vs preference for short term gain will be a tuning parameter. It could be dynamically adjusted by the controller as it observes results over time, but this still requires an _a priori_ expectation of ideal frequency of rewards. So it's the same problem in a different guise, and we'll need to look deeper to decide which representation is easier to work with. 
@@ -306,7 +313,7 @@ As we know when the goal changes, reward calculation can focus on the trajectory
 Some options for different timing of target rewards include:
 * **Goal achievement**: emit online reward upon goal achievement/failure. May or may not use hindsight about the trajectory just taken to adjust the reward. If this is the only reward, and the target is a simple deep neural network-based RL solution, then depends on RL processes within the target to distribute the inferred loss across past actions.
 * **Frequent online**: emit frequent online rewards based on estimate of whether the target is moving towards or away from the goal. This may be per time step or based on clustered states, for example emitting one reward for each state cluster.
-* *Frequent offline**: apply offline rewards against notable points along trajectories, or for each time step, based on hindsight. For ExternalRMC this would degrade to rewarding at goal achievement only, but for InternalRMC it could be quite beneficial.
+* **Frequent offline**: apply offline rewards against notable points along trajectories, or for each time step, based on hindsight. For ExternalRMC this would degrade to rewarding at goal achievement only, but for InternalRMC it could be quite beneficial.
 
 There are two different "structural" variations across possible rewards:
 * **Preemptive**: rewards placed into the environment before target activity, which the target is capable of observing prior to receiving the reward. eg: food (positive reward), zappers (negative reward).
@@ -324,6 +331,18 @@ There are two different "structural" variations across possible rewards:
 ![reward-options](files/Autonomous-monitoring-and-control-reward-options.png)
 
 ### Assumptions
+We require some models to accurately produce rewards:
+1. A model of how reward will change the target's behaviour.
+2. A world model of how states relate to each other
+    * eg: the distance (or cost) between two states
+3. A world model of states that should be favoured or avoided.
+    * eg: dangerous situations, going off the road, recognising goal indicators.
+
+The target's interpretation of the reward may need to be taken into account (regardless of whether the reward is somehow "correct" or not). That depends on a number of factors, including:
+* Whether the controller is accurate in its assessment of whether the target is moving away from or towards the goal.
+* Whether the target agent's internal representation and/or learning accurately reflects reality.
+* The shape of the state space, eg: whether a straight line motion is sufficient or detours are needed to navigate a maze.
+
 Let's declare some assumptions about rewards:
 * A greater frequency (online or offline) of rewards will converge the target faster, and thus increase controller rewards.
 * Erroneous target rewards will make convergence slower, and thus decrease controller rewards. This includes for example rewards that might somehow confuse the target into heading towards an old goal.
@@ -335,15 +354,24 @@ It's clear from the above that we need to model the uncertainty about appropriat
 
 For an initial simple model of reward effect on target behaviour, we assume that rewards of correct sign are good, and rewards of the wrong sign are bad. So, we need to estimate the likelihood of a reward having the correct sign and only emit rewards with > 50% certainty of the sign being correct. Note here that although we talk about the sign of a reward, in practice reward values within RL are often all within the positive number range. Thus, we interpret positive/negative rewards as being relative to some mean reward value.
 
-### Learning goal indication
-The target will need to learn the meaning of goal indicators. Initially it won't even know that the "goal indicator" indicates a goal. Ideally, we would first train the target to understand the concept of goals via some in-built memory and modelling capability within the target. But in the absence of that capability, we will need to use frequent preemptive or posthoc rewards and depend on the RL algorithm to do gradient descent.
-
-So we will need to initially set goals that the target will bump into by accident, in order that it can build up an association between goal indicators and the need to move towards them.
-
 ### Rewarding goal achievement
 As discussed above, it is tricky to identify a specific exact point where the target "achieves" a goal, because of the continuous nature of the state space. The conclusion was rather to weigh up cost and benefits, and to choose a new goal when the target is not likely to "achieve" the goal any better than it already has. So this change of goal becomes the trigger for rewarding the goal achievement.
 
 Alternatively, we could not bother with trying to reward goal achievement, and instead focus on rewarding intermediate states (ie: based on state clustering).
+
+### Don't mix controller and target rewards
+Controller and target rewards serve different purposes, and won't be mixed. For example, we won't forward any controller rewards directly onto the target. And we won't include target rewards in the calculation of controller gain.
+
+The controller will use the target to explore the state space, for the benefit of knowinging more about the state space, and for the benefit of training the target. During that time the controller will receive rewards/penalties for its actions, and in doing so will learn more about the appropriate objectives for its environment. Where the controller environment metaphorically shouts at the controller, the controller will avoid the applicable region of the state space later.
+
+One particularly concrete aspect of this is the scale of reward values. The controller will receive reward values across some particular range. The reward values produced by the controller for the target will not necessarily have the same range.
+
+In summary, the value of any target's state must always be defined by the controller under its model of success, not by the controller environment.
+
+### A practical solution
+A simple starting point is to reward based on cost. At goal achievement, derive a reward based on how much less or more the total trajectory cost than the controller's estimate of ideal cost. This is particularly susceptible to noise in the early stages of learning while the estimation is unreliable and changing rapidly. An alternative would be to start with a prior assumption of treating the state space as euclidean and cost as some unknown average scaling factor of that euclidean distance. Start with a prior unitary scaling factory. During early stages of learning, adjust scaling factor globally. Later, when discovering more distinction between states, start to break out into different values for scaling factor based on state clustering or a neural network. This encourages steps towards the goal, and discourages steps away.
+
+...Perhaps we should scale the value of reward based on the relative certainty of the outcome of the target's actions vs some ideal path.
 
 ## State Representation
 
