@@ -369,12 +369,24 @@ One particularly concrete aspect of this is the scale of reward values. The cont
 In summary, the value of any target's state must always be defined by the controller under its model of success, not by the controller environment.
 
 ### A practical solution
-A simple starting point is to reward based on cost. At goal achievement, derive a reward based on how much less or more the total trajectory cost than the controller's estimate of ideal cost. This is particularly susceptible to noise in the early stages of learning while the estimation is unreliable and changing rapidly. An alternative would be to start with a prior assumption of treating the state space as euclidean and cost as some unknown average scaling factor of that euclidean distance. Start with a prior unitary scaling factory. During early stages of learning, adjust scaling factor globally. Later, when discovering more distinction between states, start to break out into different values for scaling factor based on state clustering or a neural network. This encourages steps towards the goal, and discourages steps away.
+A simple starting point is to reward based on cost. At any given point, estimate the (ideal or average) cost from that state to the goal state, and reward based on the delta in that estimate due to the target's new state. Emitting a reward each and every time step may be too frequent due to inaccuracies in the cost estimation, and those errors may train the target to diverge from ideal. A good balance can be found by additionally estimating the uncertainty in the cost estimate, and only emitting a reward once there is sufficient certainty in the _sign_ of that delta. In that way, as the target takes some trajectory, it will receive rewards at a "natural" frequency somewhere between once-per-step and once-per-goal.
 
-...Perhaps we should scale the value of reward based on the relative certainty of the outcome of the target's actions vs some ideal path.
+Additionally, if basing rewards on cost, the reward should also take into account the cost accrued. This is important as the source of information to encourage efficient trajectories.
 
+Putting that together gives us this approach for emitting target rewards:
+* Reward is computed as: 'change in estimated remaining cost to goal' - 'accrued cost'
+* Emit rewards when certainty in _sign_ of cost delta exceeds some configured minimum value.
+* Estimated remaining and accrued cost values are computed relative to start of newly selected goal, or last emitted reward, whichever occurred most recently.
 
-...more tbd....
+![reward calculation](files/Autonomous-monitoring-and-control-reward-calculation.png)
+
+Using a generative model representation, the emitted reward is the inferred _value_ (`v`) of the last `x` actions relative to the ideal trajectory for the goal `g`. It is based on three parameters:
+* `Σc_t..t+x` - the accumulated observations of the cost of actions from time `t` to `t+x`;
+* `c_g,t` the ideal cost to reach the goal at time `t`; and
+* `c_g,t+x` the ideal cost to reach the goal at time `t+x`.
+
+With final value estimated as:
+* `v_x,g = E[c_g,t+x] - E[c_g,t] - Σc_t..t+x`
 
 ## State Representation
 
