@@ -201,7 +201,9 @@ To put this in a slightly different way, the value of a rewardless goal is (thro
 
 This is also part of how we can trade off exploration of random rewardless goals vs known rewardfull goals. It becomes yet another term in the prediction of the value of a potential goal state.
 
-## Goal Cost Modelling
+## Cost Modelling
+
+We need to understand and model cost in order to support a number of calculations. We need it to support estimation of goal value, and (as will be seen later on) we need it for calculation of target rewards.
 
 ### Cost types
 What kinds of costs must we deal with?
@@ -218,7 +220,31 @@ Costs primarily associated with the target include:
 * Opportunity cost - risk of reduced target rewards, eg:
     * if target moves towards location that is furthest from majority of goal locations, then reaching those goals will become more costly in the future;
     * if target leaves/places something in a state that must be rectified later at a cost (eg: dropping cup to floor)
+
+### State-state transition cost problem
+What is the cost of executing a trajectory of actions in order to transition from one state to another? For example to transition from the target's current state to the goal state?
+
+If state solely represents coordinates in 2D or 3D space, then simple euclidean equations can be used as a basis for accurate calculation of cost. But our state is likely to combine multiple independent components into a single multi-dimensional vector, and the relative costs of changes in different parts of that state vector will vary. For example, the cost of quickly jumping one metre forward and backward several times may be significantly more (in terms of effort and tiredeness) than spinning on the spot and moving a hand from one position to another one metre apart several times within the same time frame. And the cost of shifting the point of focus for the eyes several times between two points 500 metres apart is significantly less again.
+
+Furthermore, it is unlikely that the state representation has anything even resembling a euclidean space even when looking at only specific components of the state representation. It's more likely to be non-linear and have complex interactions across different components of the state representation.
+
+Lastly, being able to estimate cost is so important for accurate and efficient exploration, that we need a mechanism that can very quickly form belief about the cost function from as few samples as possible.
+
+### State-state transition cost function approximator
+The following approach provides a first practical solution.
+
+Assuming that the state representation is a vector of `1 x m` floating point values, the cost `c` of transitioning from state `s1` to state `s2` is to be estimated as the weighted sum of the absolute differences across the state vector values. In short:
+* `c(s1, s2) = Σ[i=1..m]w_i|s1_i - s2_i|`
+
+This happens to translate naturally into a very simple neural-network of the following structure:
+1. m input nodes
+2. 1 fully-connected output node, with linear activation function
+
+So we initialise all weights to `1.0` under a prior assumption of euclidean space, and use gradient descent to train the weights in order that _average_ cost estimation equals true cost. And we can use the variance to determine uncertainty.
+
+As an advancement, we can later look at performing bayesian-based clustering with each cluster having its own set of weights.
     
+### Opportunity cost and empowerment
 Opportunity cost is a particularly interesting case. Klyubin _et al_ (2005) introduced the concept of "empowerment" to address this, whereby the agent favours states that provide greater opportunity for future rewards. That is incorporated into the exploration/exploitation trade-off via the simple mantra of their paper's title "All else being equal, be empowered". So when weighing up the relative benefits of two actions with similar costs/benefits in the short term, choose the action that leads to greater empowerment in the long term. There has been a lot of subsequent research in this area, so we will be able to leverage that in our solution.
 
 It's also interesting to observe that humans don't seem to intentionally optimise for empowerment when first performing actions. Rather, they often only recognise the empowerment cost after the fact. They use hindsight to recognise that a particular choice during task A subsequently made task B harder to achieve; and they remember this when next doing task A. This appears to be a sensible approach given the extra computational cost of predicting likely effects on possible later tasks for every action made now.
