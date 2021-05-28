@@ -681,6 +681,23 @@ Post-hoc analysis:
 * Infering need to pick and carry an item to a particular location in order for that target location to produce the reward.
 
 
+# Anecdotes
+
+**Getting more toothpaste**:
+* I go to brush my teeth and I discover my toothpaste has run out.
+* A goal bubbles up to my consciousness: get more toothpaste.
+* A suggested course of actions further bubbles up: check cupboard.
+* Upon finding the cupboard empty, I need to decide how/when to go to the shop to get more toothpaste.
+* A thought bubbles up suggesting going for a walk. It's a nice day outside, so it would be nice even though quite far. However, I have to be somewhere soon, and I won't get back in time if I walk.
+* Another thought bubbles up suggesting to use the car. I would get there and back in time and not need to rush. But taking the car for just toothpaste seems a waste.
+* Another thought bubbles up to use my bicycle. That would not be such a waste, it get me there and back in time, and I would enjoy the nice day outside. So I choose that.
+
+I think the above description in reflective of how the brain works to solve a problem:
+1. First a target is produced. In our experience this seems like problem solving, but I think this might be more accurately interpreted as goal selection based on the current state and attention.
+2. Next, planning kicks in suggesting a possible trajectory of actions that might reach the selected goal. The plan is analysed for expected reward/cost tradeoffs, and either accepted and actioned, or rejected.
+3. When a plan is rejected, it is temporarily eliminated from future possible suggestions, and the planning engine runs again to produce an alternative plan towards the same goal.
+
+
 # References
 
 de Wit, S., Watson, P., Harsay, H. A., Cohen, M. X., van de Vijver, I., & Ridderinkhof, K. R. (2012). Corticostriatal connectivity underlies individual differences in the balance between habitual and goal-directed action control. The Journal of neuroscience : the official journal of the Society for Neuroscience, 32(35), 12066–12075. https://doi.org/10.1523/JNEUROSCI.1088-12.2012

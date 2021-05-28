@@ -242,12 +242,39 @@ This happens to translate naturally into a very simple neural-network of the fol
 
 So we initialise all weights to `1.0` under a prior assumption of euclidean space, and use gradient descent to train the weights in order that _average_ cost estimation equals true cost. And we can use the variance to determine uncertainty.
 
-As an advancement, we can later look at performing bayesian-based clustering with each cluster having its own set of weights.
-    
+### Cost of activity
+In order to encourage efficient solutions, it's useful to incorporate the cost of different kinds of actions, and also of just mere time ticking by (in order to discourage too much inaction).
+
+A model for cost could be:
+* cost of time ticking: 0.1
+* cost of mental action only: 0.1
+* cost of physical action: 1.0
+
 ### Opportunity cost and empowerment
 Opportunity cost is a particularly interesting case. Klyubin _et al_ (2005) introduced the concept of "empowerment" to address this, whereby the agent favours states that provide greater opportunity for future rewards. That is incorporated into the exploration/exploitation trade-off via the simple mantra of their paper's title "All else being equal, be empowered". So when weighing up the relative benefits of two actions with similar costs/benefits in the short term, choose the action that leads to greater empowerment in the long term. There has been a lot of subsequent research in this area, so we will be able to leverage that in our solution.
 
 It's also interesting to observe that humans don't seem to intentionally optimise for empowerment when first performing actions. Rather, they often only recognise the empowerment cost after the fact. They use hindsight to recognise that a particular choice during task A subsequently made task B harder to achieve; and they remember this when next doing task A. This appears to be a sensible approach given the extra computational cost of predicting likely effects on possible later tasks for every action made now.
+
+### Future Advancements
+**Clustering**:
+* The 'state-state transition cost function approximator' described above naively assumes that the state space is euclidean.
+* A first step towards more accurately modelling the state space is to apply bayesian-based clustering, and to support different approximator weights for each cluster.
+
+**Trajectory deviation penalty**:
+* The cost-based reward model is simple and relatively effective. It is good at ensuring that the target moves roughly in the right direction. However, it has a drawback in that it is relatively insensitive to trajectory deviations because there's little difference in a straight line vs a curved path if they both reach the goal.
+* If the controller has a good enough model of the state space then it can simulate an ideal trajectory and measure the target's motions against that trajectory, penalising based on the distance from the ideal trajectory.
+* This may involve something like Simultaneous Localisation and Mapping (SLAM), and/or planning.
+
+**Trajectory based goals**:
+* Being able to simulate an ideal trajectory, and being able to judge the targets actual trajectory against the planned one, leads us naturally to start using trajectory-based goals instead of state-based goals.
+* Now the controller also has a far wider range of possible goals to explore.
+* Thus supports more complex and dynamic goals that incorporate specific actions, and could make a further significant step towards more advanced behaviours.
+* Furthermore, it supports the capability we see in humans whereby we can aim to achieve a particular goal with focus just on that required state and some habitually learned ideal trajectory will be token (eg: finger touching nose). Or alternatively, we can consciously decide to take a particular trajectory, overriding the more efficient default (eg: move arm in an arc as part of a ballet dance).
+* Some human-like actions that could be supported through trajectory-based goals include: "swing the axe to chop the wood", "throw the ball".
+
+**Direct loss calculation instead of rewards**:
+* Reinforcement Learning depends on the use of rewards given at random intervals. Those rewards are converted into per-time-step 'value' through a very naive discounted distribution across actions prior to the reward being received. And then training loss is calculated based on those values. This seems somewhat inefficient and inaccurate. What if RL could use loss values from the start?
+* As we extrapolate the design into AMC, and if we use simulated ideal trajectories, we may be able to use deviation from the ideal trajectory as a loss value, and apply that directly against the policy.
 
 ## Calculating Goal Value
 
@@ -290,14 +317,9 @@ The target will need to learn the meaning of goal indicators. Initially it won't
 So we will need to initially set goals that the target will bump into by accident, in order that it can build up an association between goal indicators and the need to move towards them.
 
 ### Exploitation vs exploration trade-off
-The expectation of long term benefit from exploration vs preference for short term gain will be a tuning parameter. It could be dynamically adjusted by the controller as it observes results over time, but this still requires an _a priori_ expectation of ideal frequency of rewards. So it's the same problem in a different guise, and we'll need to look deeper to decide which representation is easier to work with. 
-
-It's informative to note this same tuning problem occurs for humans, and (perhaps simplistically) it would appear that we see this in the variation of different individual's risk-taking vs risk-averse behaviours. For humans, however, there is a mechanism in play that helps convergence towards a narrower range than would otherwise occur. Individuals learn from others by consciously and subconsciously comparing themselves to others. They take note of those others' relative better successes or worse failures, and adjust their own risk taking profile as a result. Effectively, this mechanism leverages a population level sampling effect for the benefit of the individual. Of course, there are also genetic factors at play.
-
-### Exploitation vs exploration trade-off
-_tbd_: combine with equivalent section above.
-
 We want to maximise the total controller reward while minimising cost, aggregated over time. Over what time frame? If time is infinite, then the most efficient method might be to explore all possible states first, accumulating cost in the short term, and then afterwards exploit the knowledge for maximum gain. But the agent's lifetime may not be infinite, and there may be a maximum cost that it can accrue without sufficient rewards to balance them (eg: hunger leading to death without sufficient food to balance the energy use).
+
+The expectation of long term benefit from exploration vs preference for short term gain will be a tuning parameter. It could be dynamically adjusted by the controller as it observes results over time, but this still requires an _a priori_ expectation of ideal frequency of rewards. So it's the same problem in a different guise, and we'll need to look deeper to decide which representation is easier to work with. 
 
 The biggest problem here is that the controller does not know in advance what rewards are possible. Given a certain amount of exploration, the observations it has made fall into the category of "known knowns" plus some amount of "known unknowns"; however what might be possible in the future falls under the category of "unknown unknowns", making it hard to reason about.
 
@@ -306,6 +328,8 @@ Within commercial software development practices today it is common to break a l
 ![honeypots-vs-jackpots](files/Autonomous-monitoring-and-control-honeypot-vs-jackpot.png)
 
 So there must be an ideal balance between expolation and exploitation. If we could model the problem sufficiently we would probably find that some sort of tuning parameter would fall out that we could adjust to reflect our _a priori_ assumptions about that ideal balance.
+
+It's informative to note this same tuning problem occurs for humans, and (perhaps simplistically) it would appear that we see this in the variation of different individual's risk-taking vs risk-averse behaviours. For humans, however, there is a mechanism in play that helps convergence towards a narrower range than would otherwise occur. Individuals learn from others by consciously and subconsciously comparing themselves to others. They take note of those others' relative better successes or worse failures, and adjust their own risk taking profile as a result. Effectively, this mechanism leverages a population level sampling effect for the benefit of the individual. Of course, there are also genetic factors at play.
 
 ### Cost limit
 A first step can be to define a limit on acceptable cost accrual. Let's assume that cost is measured on the same scale as reward, so that we can measure them as separate values but compare them easily. We define the maximum acceptible cost accrual by stating that, within a specified time frame `t_it` (for "iteration" length), accumulated reward must exceed accumulated cost. Thus, in expectation, we require:
@@ -436,6 +460,10 @@ Here I introduce the concept of _Intentional Autonomous Monitoring and Control_ 
 
 _...tbd..._
 
+Types of AMC:
+* Independent AMC
+* Integrated AMC - Uses all same systems, in line with main action control pipeline. Shares same resources, including state (eg working menory) 
+
 Random:
 * Some components directly output rewards, so it may be easy to directly apply those for the use of the RL algorithm.
 * AMC part of agent takes responsibility for providing reward signals to internal, even when there are external signals available. Because it is the AMC module that _interprets_ the external reward signals given the sense inputs. Ie: the AMC module uses a generative model of latent reward state -> features -> observations, and then infers the latent reward from the sense inputs. It thus may sometimes ignore external sense inputs that appear to be rewards because its inference is that they are not.
@@ -451,7 +479,15 @@ Alternatively, we could just accept the error margin but minimise it by discardi
 
 # Advancements
 
-....
+The above provides a framework that supports far more advanced modelling methods to be plugged in. This chapter looks at a few advancements that could be incorporated.
+
+Feedback provides a whole probability distribution, rather than a meaningless reward value that only makes sense relative to other rewards. Eg: "yes, you're doing well" vs "doesn't look like you'll be able to do this". And these can be used to directly update models. 
+
+Planning.
+
+Simultaneous Localisation and Mapping (SLAM).
+
+There's also room for further optimisations inspired by human behaviour. For example, we probably don't recompute and reselect a goal every time step. We probably pick a goal, plot an expected approximate trajectory, and then just watch to look out for unexpected events along the way. That approach saves on mental effort because the monitoring can be done using subconscious processes. and this could absolutely be incorporated into the solution here.
 
 There is evidence that biology has encoded an understanding of 3D space. eg: place cells. eg: "backward sweep" activity related to location, seen in fRMI when an individual is planning (Dolan & Dayan, 2013).
 
