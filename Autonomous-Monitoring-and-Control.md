@@ -53,6 +53,8 @@ Effectively we are focusing on solutions for _training shaping_: adjusting how t
 
 ## Areas for Investigation
 
+![focus areas](files/Autonomous-monitoring-and-control-focus-areas.png)
+
 ### Control Priors
 Let's start with the following assumptions:
 * it's good to maximise the ability for the target agent to do different things (ie: have a multitude of skills)
