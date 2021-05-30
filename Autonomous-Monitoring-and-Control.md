@@ -168,6 +168,16 @@ There is another benefit of the controller explicitly setting goals. The control
 
 This offers a nice advantage over naive reinforcement learning which never knows whether an action had any part in the received reward, and thus simplistically distributes the reward across all "recent" events, with decreasing weight the further in the past the event was, according to some arbitrary hyperparameter.
 
+### A practical approach
+A simple implementation will be to randomly sample a few possible goal states, run value analysis over each, and pick the goal state with the highest value. This has the advantage of being simple to implement, and provides some stochastic variation that avoids the controller repeatedly picking the exact same goal states.
+
+The sampled possible goal states will need to include:
+* the current goal, and
+* items from the set of past observed states, and
+* a random sample from a model of the state space (to generate previously unobserved states).
+
+Where a stochastic model is available, the sampling should be taken from that distribution, in order to increase the likelihood of picking goals with higher expected value. Some mechanism will be required in order to record a represenattion of past states while avoiding storing every single individual state ever observed. And some sort of model of all possible states will be needed too.
+
 ## Goal Benefit Modelling
 Goals are measured in terms of the benefit to the controller. eg:
 * Short-term chance to reproduce past controller rewards
@@ -483,16 +493,23 @@ Alternatively, we could just accept the error margin but minimise it by discardi
 
 The above provides a framework that supports far more advanced modelling methods to be plugged in. This chapter looks at a few advancements that could be incorporated.
 
-Feedback provides a whole probability distribution, rather than a meaningless reward value that only makes sense relative to other rewards. Eg: "yes, you're doing well" vs "doesn't look like you'll be able to do this". And these can be used to directly update models. 
+**Feedback**:
+* Feedback provides a whole probability distribution, rather than a meaningless reward value that only makes sense relative to other rewards. Eg: "yes, you're doing well" vs "doesn't look like you'll be able to do this". And these can be used to directly update models. 
 
-Planning.
+**Planning**:
+* todo
 
-Simultaneous Localisation and Mapping (SLAM).
+**Mapping**:
+* eg: Simultaneous Localisation and Mapping (SLAM). There is evidence that biology has encoded an understanding of 3D space. eg: place cells. eg: "backward sweep" activity related to location, seen in fRMI when an individual is planning (Dolan & Dayan, 2013).
 
-There's also room for further optimisations inspired by human behaviour. For example, we probably don't recompute and reselect a goal every time step. We probably pick a goal, plot an expected approximate trajectory, and then just watch to look out for unexpected events along the way. That approach saves on mental effort because the monitoring can be done using subconscious processes. and this could absolutely be incorporated into the solution here.
+**Optimised Trajectory Monitoring**:
+* There's also room for further optimisations inspired by human behaviour. For example, we probably don't recompute and reselect a goal every time step. We probably pick a goal, plot an expected approximate trajectory, and then just watch to look out for unexpected events along the way. That approach saves on mental effort because the monitoring can be done using subconscious processes. and this could absolutely be incorporated into the solution here.
 
-There is evidence that biology has encoded an understanding of 3D space. eg: place cells. eg: "backward sweep" activity related to location, seen in fRMI when an individual is planning (Dolan & Dayan, 2013).
-
+**Curiosity-based Exploration**:
+* Active inference drives exploration via an objective of reducing uncertainty. But that still won't produce very interesting behaviour if the uncertainty modelling is "inward looking" - ie: based only around uncertainties from past observations, and uncertainties within models.
+* Curiosity is also about uncertainties, but is more "outward looking".
+* Curiosity drives a human to investigate an object that they have not seen before. This may include discovering buttons and nobs and interacting with them. This exploration is driven by uncertainty of the object.
+* Another example is where we observe someone doing something novel (eg: a child seeing someone balance on one foot for the first time). We may then attempt to do perform that same action. This exploration is at least in part driven by uncertainty in our ability to perform the action.
 
 # References
 
