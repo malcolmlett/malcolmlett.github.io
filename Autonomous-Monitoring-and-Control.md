@@ -149,12 +149,12 @@ In order to begin to break that down, let's first assume that goals are just sel
 
 ![goal-selection](files/Autonomous-monitoring-and-control-goal-selection.png)
 
-|Current selection|Seen states|Unseen states|No goal|
-|---|---|---|---|
-|Stay with current goal.|Pick a goal out of set of past observed states. Includes states that did/did not produce a reward when last observed. Based on prior, may still consider there to be a possibility of future reward in a given state.|Stochastically generate new hypothetical state value as goal, somehow based on belief about plausible state values.|"Free play". For a period of time, select no goal and allow target to explore unencumbered from any interference by controller.|
-|Expectation of controller reward based on prior belief about benefit of goal, plus current trajectory|Expectation of reward based on past observations about reward at that state, plus belief in variability of rewards.|Expectation of reward based on belief about possibility of reward at previously unseen states, plus belief in achievability of target reaching the state.|Expectation of reward based around likelihood of encountering previously unseen states, and certainty of those new states being acheivable.|
-| |Lower chance of discovering new rewards.|Chance of discovering states not otherwise likely to be encountered.|Highest likelihood of discovering new states.|
-| |Higher chance of reproducing past controller rewards (good and bad).|Chance of encountering new rewards along with those new states.|Chance of encountering new rewards along with those new states.|
+|Current selection|Objective states|Seen states|Unseen states|No goal|
+|---|---|---|---|---|
+|Stay with current goal.|Pick a goal based on current best interpretation of controller environment objective. May be a previously seen state or a predicted unseen state.|Pick a goal out of set of past observed states. Includes states that did/did not produce a reward when last observed. Based on prior, may still consider there to be a possibility of future reward in a given state.|Stochastically generate new hypothetical state value as goal, somehow based on belief about plausible state values.|"Free play". For a period of time, select no goal and allow target to explore unencumbered from any interference by controller.|
+|Expectation of controller reward based on prior belief about benefit of goal, plus current trajectory|Expectation of reward based on model of objective and associated reward.|Expectation of reward based on past observations about reward at that state, plus belief in variability of rewards.|Expectation of reward based on belief about possibility of reward at previously unseen states, plus belief in achievability of target reaching the state.|Expectation of reward based around likelihood of encountering previously unseen states, and certainty of those new states being acheivable.|
+| | |Lower chance of discovering new rewards.|Chance of discovering states not otherwise likely to be encountered.|Highest likelihood of discovering new states.|
+| | |Higher chance of reproducing past controller rewards (good and bad).|Chance of encountering new rewards along with those new states.|Chance of encountering new rewards along with those new states.|
 
 ### Should the controller stay with the current goal?
 We want to avoid the case where the controller never stays on one goal long enough for the target to reach it. So, let's look explicitly at the decision to stay with the current goal. Considerations include:
@@ -171,7 +171,9 @@ This offers a nice advantage over naive reinforcement learning which never knows
 ### A practical approach
 A simple implementation will be to randomly sample a few possible goal states, run value analysis over each, and pick the goal state with the highest value. This has the advantage of being simple to implement, and provides some stochastic variation that avoids the controller repeatedly picking the exact same goal states.
 
-The sampled possible goal states will need to include:
+For the sake of simplicity, we will ignore the objective states for now.
+
+The sampled possible goal states will include:
 * the current goal, and
 * items from the set of past observed states, and
 * a random sample from a model of the state space (to generate previously unobserved states).
@@ -450,14 +452,6 @@ Using a generative model representation, the emitted reward is the inferred _val
 With final value estimated as:
 * `v_x,g = E[c_g,t+x] - E[c_g,t] - Σc_t..t+x`
 
-## State Representation
-
-The discussions above ignore an important concern about the state representation. A state is a single (vector) point in a multidimensional space. However it actually encodes a combination of many independent and only partially-dependent features. For example in a single snapshot of vision observed by an autonomous car on a road: location of road relative to agent, location of centre line, colour of road, texture of road, grass vs buildings on the side of the road, whether it's raining/overcast/sunny/windy/snowing, people on the pavement, cats on the road in front, etc. etc.
-
-Any solution that is worthwhile must not just naively cluster whole state values, but will need to segment the state values, identifying those individual features. Clustering and modelling against those features makes a lot more sense. Additionally, clustering against features makes even more sense when you consider that different features will have different clustering needs, and different relative importance to the agent. For example it has been suggested that, in this context, clustering of states is best driven by the actions needed at those states (Rigoli, 2017).
-
-This discussion is entering into a research field that deals with object detection and learning object representations. This makes a lot of sense for the purpose of an AGI, but for now we'll keep things simple and continue to ignore the fact that states are an aggregate of independent features.
-
 
 # Internal RMC
 
@@ -511,9 +505,25 @@ The above provides a framework that supports far more advanced modelling methods
 * Curiosity drives a human to investigate an object that they have not seen before. This may include discovering buttons and nobs and interacting with them. This exploration is driven by uncertainty of the object.
 * Another example is where we observe someone doing something novel (eg: a child seeing someone balance on one foot for the first time). We may then attempt to do perform that same action. This exploration is at least in part driven by uncertainty in our ability to perform the action.
 
+**Entity-based State Representation**:
+* The discussions about state ignore an important concern about the state representation. A state is a single (vector) point in a multidimensional space. However it actually encodes a combination of many independent and only partially-dependent entities or features. For example in a single snapshot of vision observed by an autonomous car on a road: location of road relative to agent, location of centre line, colour of road, texture of road, grass vs buildings on the side of the road, whether it's raining/overcast/sunny/windy/snowing, people on the pavement, cats on the road in front, etc. etc.
+* Any solution that is worthwhile must not just naively cluster whole state values, but will need to segment the state values, identifying those individual features. Others have shown that systems that model scenes via entities and their relationships achieve significant benefits over systems that model via global state representations (Bapst _et al_, 2019; Veerapaneni _et al_, 2019). Clustering against features makes even more sense when you consider that different features will have different clustering needs, and different relative importance to the agent. For example it has been suggested that, in this context, clustering of states is best driven by the actions needed at those states (Rigoli, 2017).
+* Thus, a full AGI solution will need a solution for object segmentation, object modelling, and object detection. 
+
+**Modelling Aleatoric vs Epistemic Uncertainty**
+Epistemic uncertainty is the uncertainty about the true function, due to a lack of sufficient data to uniquely determine the underlying system exactly. 
+
+Aleatoric uncertainty, however, arises from the inherent stochasticities of a system, such as process noise, and noise in the method of state observation. As note by Chua _et al_ (2018), "without a way to distinguish epistemic uncertainty from aleatoric, an exploration algorithm (e.g. Bayesian optimization) might mistakingly choose actions with high predicted reward-variance ‘hoping to learn something’ when in fact such variance is caused by persistent and irreducible system stochasticity offering zero exploration value."
+
+Thus the active inference exploration algorithm benefits from explicitly identifying whether uncertainties are aleatoric or epistemic. For example, Chua _et al_ (2018) propose a solution for that via ensemble models. They are able to measure epistemic uncertainties by differences across models, and aleatoric uncertainties through explicit data variance modelling within each model.
+
 # References
 
+Bapst, V., Sanchez-Gonzalez, A., Doersch, C., Stachenfeld, K. L., Kohli, P., Battaglia, P. W., Hamrick, J. B. (2019). Structured agents for physical construction. ICML 2019. https://arxiv.org/abs/1904.03177
+
 Berger-Tal, O., Nathan, J., Meron, E., Saltz, D. (2014). The Exploration-Exploitation Dilemma: A Multidisciplinary Framework. PLOS ONE 9(4): e95693. https://doi.org/10.1371/journal.pone.0095693
+
+Chua, K., Calandra, R., McAllister, R, Levine, S. (2018). Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models. NIPS 2018. https://arxiv.org/abs/1805.12114. [Videos](https://sites.google.com/view/drl-in-a-handful-of-trials/)
 
 Dolan, R. J., & Dayan, P. (2013). Goals and habits in the brain. Neuron, 80(2), 312–325. https://doi.org/10.1016/j.neuron.2013.09.007
 
@@ -524,3 +534,5 @@ Klyubin, A.S., Polani, D., Nehaniv, C.L. (2005). All Else Being Equal Be Empower
 Rigoli, F., Pezzulo, G., Dolan, R., & Friston, K. (2017). A Goal-Directed Bayesian Framework for Categorization. Frontiers in psychology, 8, 408. https://doi.org/10.3389/fpsyg.2017.00408
 
 Tschantz, A., Baltieri, M., Seth, A., & Buckley, C. (2020). Scaling Active Inference. 2020 International Joint Conference on Neural Networks (IJCNN), 1-8.
+
+Veerapaneni, R., Co-Reyes, J. D., Chang, M., Janner, M., Finn, C., Wu, J., Tenenbaum, J. B., Levine, S. (2019). Entity Abstraction in Visual Model-Based Reinforcement Learning. CoRL 2019. https://arxiv.org/abs/1910.12827
