@@ -462,13 +462,31 @@ As the controller is performing much of the work discussed in [[Executive Contro
 
 Here I introduce the concept of _Intentional Autonomous Monitoring and Control_ (I-AMC). I-AMC refers to an agent that performs monitoring and control of itself, autonomously, and with active intent. In other words, using the same logic and inference processes that it would typically use for interaction with the external environment, it can determine the need and carry out actions in order to make changes to its own tuning parameters.
 
-## AMC learning
+## Architectural Options
 
-_...tbd..._
+...tbd...
 
 Types of AMC:
 * Independent AMC
 * Integrated AMC - Uses all same systems, in line with main action control pipeline. Shares same resources, including state (eg working menory) 
+
+### Biological background
+Biology does not build architectures with neat and discrete separations between components. Our understanding of how the brain processes information is still very limited. Contrary to past assumptions about functional specialisation, a growing body of research is revealing some aspects of how any given function is a result of interactions across multiple brain areas (Postle B. R., 2016). One area however, the Prefrontal Cortex (PFC), is still believed to play an more specific role: that of controlling overall behaviour for the "Central Executive" functions (Postle B. R., 2016).
+
+Other research, in particular [Adaptive Resonance Theory (ART)](https://en.wikipedia.org/wiki/Adaptive_resonance_theory), has found and proposed the importance of synchronized cyclic behaviours. These are produced between higher and lower levels through mutual feedback loops controlled by excitatory and inhibitory signals going in both directions.
+
+A plausible interpretation of all this is that: i) the biological architecture of the human brain creates behaviour through distributed processing across multiple regions; ii) the behaviour is also significantly governed by highly co-dependent cross-talk between those regions; iii) that no one region has full overarching control; and iv) that of the various regions involved in executive control, the PFC probably has slightly greater overarching control than the others.
+
+This is depicted as follows:
+
+![biology architecture](files/Autonomous-monitoring-and-control-biology-architecture.png)
+
+The lesson here is that we don't know enough about how the brain functions in order to replicate that within an AI architecture. In fact, our AI architectures today appear vastly different in structure. Thus, we'll have to make our own decisions about what architecture can yield the best results.
+
+## AMC learning
+
+_...tbd..._
+
 
 Random:
 * Some components directly output rewards, so it may be easy to directly apply those for the use of the RL algorithm.
@@ -492,6 +510,10 @@ The above provides a framework that supports far more advanced modelling methods
 
 **Planning**:
 * todo
+
+**Combining Habit with Planning**:
+* Model-based RL solutions tend to produce useful results earlier than model-free solutions, however they often quickly plateau or have slower asymptotic convergence than model-free solutions (Wang _et al_, 2019). This ultimately translates to less efficient or jerkier movement, which becomes particularly noticeable within robotic arm use cases (?citation?). A common solution is to use model-based RL as a first stage of training, and then use it to bootstrap training of a model-free network (Nagabandi _et al_, 2017).
+* Intuitively this seems reasonable in the context of human learning. As we first begin to master a skill we consciously control our actions based on a mental model of what is required (ie: model-based action). These actions are often slow, jerky, inaccurate, and inefficient. This process is mentally taxing, and the brain has evolved to offload that process to habitual control as soon as possible (ie: model-free action). Once under habitual control, and as we repeat the task, our speed increases and the motions become smoother and more accurate.
 
 **Mapping**:
 * eg: Simultaneous Localisation and Mapping (SLAM). There is evidence that biology has encoded an understanding of 3D space. eg: place cells. eg: "backward sweep" activity related to location, seen in fRMI when an individual is planning (Dolan & Dayan, 2013).
@@ -531,8 +553,14 @@ Friston, K., Schwartenbeck, P., FitzGerald, T., Moutoussis, M., Behrens, T., Dol
 
 Klyubin, A.S., Polani, D., Nehaniv, C.L. (2005). All Else Being Equal Be Empowered. In: Capcarrère M.S., Freitas A.A., Bentley P.J., Johnson C.G., Timmis J. (eds) Advances in Artificial Life. ECAL 2005. Lecture Notes in Computer Science, vol 3630. Springer, Berlin, Heidelberg. https://doi.org/10.1007/11553090_75. \[[Cite Seer](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.9018&rep=rep1&type=pdf)\]
 
+Nagabandi, A., Kahn, G., Fearing, R. S., Levine, S. (2017). Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning. ArXiv. https://arxiv.org/abs/1708.02596
+
+Postle B. R. (2016). How does the brain keep information "in mind"?. Current directions in psychological science, 25(3), 151–156. https://doi.org/10.1177/0963721416643063. \[[Website](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5115785/)\]
+
 Rigoli, F., Pezzulo, G., Dolan, R., & Friston, K. (2017). A Goal-Directed Bayesian Framework for Categorization. Frontiers in psychology, 8, 408. https://doi.org/10.3389/fpsyg.2017.00408
 
 Tschantz, A., Baltieri, M., Seth, A., & Buckley, C. (2020). Scaling Active Inference. 2020 International Joint Conference on Neural Networks (IJCNN), 1-8.
 
 Veerapaneni, R., Co-Reyes, J. D., Chang, M., Janner, M., Finn, C., Wu, J., Tenenbaum, J. B., Levine, S. (2019). Entity Abstraction in Visual Model-Based Reinforcement Learning. CoRL 2019. https://arxiv.org/abs/1910.12827
+
+Wang, T., Bao, X., Clavera, I., Hoang, J., Wen, Y., Langlois, E., Zhang, S., Zhang, G., Abbeel, P., Ba, J. (2019). Benchmarking Model-Based Reinforcement Learning. CoRR, volume 1907.02057. https://arxiv.org/abs/1907.02057. \[[Website](http://www.cs.toronto.edu/~tingwuwang/mbrl.html)\]
