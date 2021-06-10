@@ -113,8 +113,20 @@ Past theories had proclaimed that some or all of the above memories had specific
 
 Importantly, the same appears to be the case for working memory. Very little is understood how and where the brain retains the short-term temporary data required for thought. It is believed that the data is stored via recurrent networks - excitation that loops repeatedly for the duration of the data retention. Past theories claimed the Prefrontal Cortex (PFC) was the storage of working memory, but subsequent research has disproved this (Postle B. R., 2016).
 
+## Push model of Memory
+* tbd
+* eg: current thought trajectory triggers spontaneous recall of a memory about the past experienced consequence of the trajectory. Can lead to re-planning following re-evaluation of the value of the current trajectory.
+
 
 # Executive Control
+
+To be clear, I use the term _executive control_ to refer specifically to consciously intentioned internal and external behaviours. The proposition is that executive control is only part of the high-order functions required for thought. With that, we can clarify some related terminology:
+
+* **High-order thought** - Any thought that can be consciously observed by the individual either at the time or recalled after the fact.
+* **High-order functions** - Any of the mechanisms behind high-order thought itself, and other capabilities that directly feed information into high-order thought.
+* **Executive control** - A high-order function or set of functions through which high-order thought and external behaviour is consciously and intentionally executed.
+
+## Distributed Architecture
 
 Biology does not build architectures with neat and discrete separations between components. Our understanding of how the brain processes information is still very limited. Contrary to past assumptions about functional specialisation, a growing body of research is revealing some aspects of how any given function is a result of interactions across multiple brain areas (Postle B. R., 2016). One area however, the Prefrontal Cortex (PFC), is still believed to play an more specific role: that of controlling overall behaviour for the "Central Executive" functions (Postle B. R., 2016).
 
@@ -126,6 +138,41 @@ This is depicted as follows:
 
 ![pfc cooperation](files/Biological-basis-for-proto-AGI-pfc-cooperation.png)
 
+## Active/Passive Model of Executive Control
+It's well known that the majority of thought occurs without much conscious control. Largely it ebbs and flows with only occasional explicit adjustment from the most conscious part of our executive control system. Put this into consideration with the growing evidence discussed above of how behaviour is governed through distributed processes even more than previously thought. It starts to suggest that executive control might have an active and a passive mode of operation, and that it spends most the time in its passive mode.
+
+The model might be something like this:
+* The executive control process spends much of it's time passively monitoring other high-order processes.
+* Occassionaly the executive control actively controls other high-order processes through tuning and inhibition of specific functions or data.
+* Active control occurs in response to a trigger - such as detection that the thought trajectory is deviating significantly from a previously calculated predicted path.
+
+![active passive executive control](files/Biological-basis-for-proto-AGI-active-passive-ec.png)
+
+### Target processes
+The target of executive control is the set of other processing capabilities that make up the rest of high-order thought, eg: planning, reasoning, etc. These capabilities are assumed to produce integrated behaviour via a combined cooperative / competitive model (Dolan & Dayan, 2013).
+
+### Monitoring
+The conscious feedback (CF) loop makes thought potentially executively observable (ie: within visceral loop), and at the same time available for monitoring by executive control. Thought also enters episodic memory, which may be later reviewed by executive control. However, thought may not be consciously experienced at the time because it may not have attentional focus.
+
+So, while in passive mode, executive control merely monitors the behaviours of the high-order capabilities and the results that they are producing. A question remains about the exact pathways that executive control uses to monitor the behaviour of the individual capabilities.
+
+### Activation
+Executive control enters active model upon a trigger. For example:
+* thought trajectories that diverge significantly from predicted paths.
+* spontaneous memory recall of past experiences associated with the particular trajectory and which significantly change the predicted value of the trajectory.
+
+Even when active, the executive control process does very little in terms of actually producing the result of any thought process. At the extreme view, executive control can only adjust tuning of the capabilities via inhibition and exhitation signals.
+
+What about goal setting? At the extreme view of above, goal inference may be one of the capabilities that executive control can increase the strength of when it concludes that new goal needs to be chosen. Alternatively, it may be goal setting is one of the few direct influences that executive control has over the data content of thought processes - by emitting a goal into the current state being processed.
+
+Upon further thought, executive control probably has degrees of activation. An intermediate level enables us to actively observe thought in real time, without being involved in primary thought. This suggests a degree of parallel processing, which seems totally plausible. In contrast, full activation might cause all other thought processes to stop and to be explicitly governed by executive control.
+
+When consciously examining the thought process under full activation, the reasoning is actuall performed based on a memory of past thought, rather than on thought that is occurring at the time.
+
+### Training 
+Assume that the behaviour of other high-order capabilities, including thier cooperation and competition, is trained through experience and hebbian learning. How does executive control apply training?
+
+Where executive control is involved, its involvement applies a training pressure too. For example, consider a habitual bad thought process that is actively inhibited by executive control. That reduction in firing leads to exhitation weight reduction within brain regions associated with that capability.
 
 
 # Examples
@@ -178,6 +225,8 @@ To some extent though, you can learn to do that on auto-pilot. The simple act of
 # References
 
 Developmental Psychology, ch 4. Lumen Learning. https://courses.lumenlearning.com/suny-hccc-ss-152-1/chapter/physical-development/
+
+Dolan, R. J., & Dayan, P. (2013). Goals and habits in the brain. Neuron, 80(2), 312–325. https://doi.org/10.1016/j.neuron.2013.09.007
 
 McLeod, S. A. 2019, April 09. Sensorimotor stage. Simply Psychology. https://www.simplypsychology.org/sensorimotor.html
 
