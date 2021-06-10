@@ -466,22 +466,11 @@ Here I introduce the concept of _Intentional Autonomous Monitoring and Control_ 
 
 ...tbd...
 
+We don't know enough about how the brain functions in order to replicate that within an AI architecture. In fact, our AI architectures today appear vastly different in structure. Thus, we'll have to make our own decisions about what architecture can yield the best results.
+
 Types of AMC:
 * Independent AMC
 * Integrated AMC - Uses all same systems, in line with main action control pipeline. Shares same resources, including state (eg working menory) 
-
-### Biological background
-Biology does not build architectures with neat and discrete separations between components. Our understanding of how the brain processes information is still very limited. Contrary to past assumptions about functional specialisation, a growing body of research is revealing some aspects of how any given function is a result of interactions across multiple brain areas (Postle B. R., 2016). One area however, the Prefrontal Cortex (PFC), is still believed to play an more specific role: that of controlling overall behaviour for the "Central Executive" functions (Postle B. R., 2016).
-
-Other research, in particular [Adaptive Resonance Theory (ART)](https://en.wikipedia.org/wiki/Adaptive_resonance_theory), has found and proposed the importance of synchronized cyclic behaviours. These are produced between higher and lower levels through mutual feedback loops controlled by excitatory and inhibitory signals going in both directions.
-
-A plausible interpretation of all this is that: i) the biological architecture of the human brain creates behaviour through distributed processing across multiple regions; ii) the behaviour is also significantly governed by highly co-dependent cross-talk between those regions; iii) that no one region has full overarching control; and iv) that of the various regions involved in executive control, the PFC probably has slightly greater overarching control than the others.
-
-This is depicted as follows:
-
-![biology architecture](files/Autonomous-monitoring-and-control-biology-architecture.png)
-
-The lesson here is that we don't know enough about how the brain functions in order to replicate that within an AI architecture. In fact, our AI architectures today appear vastly different in structure. Thus, we'll have to make our own decisions about what architecture can yield the best results.
 
 ## AMC learning
 

@@ -1,11 +1,11 @@
 This page forms part of the [[Proto AGI v1]] series.
 
-It summarises some of the known neuroscience, observations, and assumed mechanisms that underly the proto AGI design.
+Here we shall review how the brain achieves its behaviours. We shall focus on both external behaviour (eg: that leads to physical motion) and internal behaviour (eg: thought). The purpose here is not to provide a complete or even accurate account of existing research. Rather, the purpose here is to identify principles that might need to be incorporated within an AI solution in order to build an AGI. Thus the content of this page is based on a mixture of neuroscience research, personal observations, and a careful selection of reasonable assumptions.
+
+We will discover some important ways in which the current AI techniques of neural networks, reinforcement learning, and bayesian inferrence all fall short.
 
 
-# Neuroscience
-
-## Brain development
+# Brain development
 
 Brain size increases from birth, reaching full size at about 7 years. The number of neurons and quality of connections change drastically during that time too (Developmental Psychology, ch 4), as summarised in the following table:
 
@@ -18,7 +18,7 @@ Brain size increases from birth, reaching full size at about 7 years. The number
 |13-18 years|100%|Prefrontal cortext experiences additional growth spurt. Experience shapes which connections are strengthened or lost, and by maturity about 40% of prefrontal connections are lost. This is the last part of the brain to mature, and eventually comprises 85% of total brain weight. Myelin levels reach maturity during this time.|
 
 
-## Sensorimotor System
+# Sensorimotor System
 
 Approximate layers:
 ![layers](files/Biological-basis-for-proto-AGI-layers.png)
@@ -95,7 +95,7 @@ See:
 * http://www.scholarpedia.org/article/Corollary_discharge_in_primate_vision
 
 
-## Memory
+# Memory
 
 The kinds of memory in humans have been categorised in order to try to understand them. The categories are ([source](https://www.predictivesafety.com/blog/the-7-types-of-memory-and-how-to-improve-them)):
 * Short-term Memory: memory that lasts for only about 20 to 30 seconds.
@@ -105,9 +105,27 @@ The kinds of memory in humans have been categorised in order to try to understan
 
 Within that categorisation, we have the following concrete forms of memory:
 * Working Memory: a short-term memory
-* Episodic Memory (aka Autiobiographical Memory): long-term explicit memory that stores experienced events. The details of events stored vary widely depending on the significance at the time, and on how often we access the memory. Eposidic memories are not stored in a literal form, but are _re-constructed_ at the time of access. Episodic memories fade over time. 
+* Episodic Memory (aka Autiobiographical Memory): long-term explicit memory that stores experienced events. The details of events stored vary widely depending on the significance at the time, and on how often we access the memory. Eposidic memories are not stored in a literal form, but are reconstructed at the time of access. Episodic memories fade over time. 
 * Semantic Memory: long-term explicit memory that represents general knowledge about the world. These are vey stable once learned, in contrast to episodic memories. Semantic memory declines only very slowly as we age.
 * Procedural Memory: long-term implicit memory about how to do things. Better thought of as learned skill than a memory. eg: riding a bike, speaking a language.
+
+Past theories had proclaimed that some or all of the above memories had specific brain regions primarily devoted to their storage. Increasingly that is shown to be false (Postle B. R., 2016). For example, it is now understood that upon recall of episodic memory, the past episode is _reconstructed_ through a distributed effort. If a memory included smell, vision, and physical activity, then the respective brain regions devoted to understanding smell, vision, and motion control are involved in reconstructing those aspects of the memory (_citation_).
+
+Importantly, the same appears to be the case for working memory. Very little is understood how and where the brain retains the short-term temporary data required for thought. It is believed that the data is stored via recurrent networks - excitation that loops repeatedly for the duration of the data retention. Past theories claimed the Prefrontal Cortex (PFC) was the storage of working memory, but subsequent research has disproved this (Postle B. R., 2016).
+
+
+# Executive Control
+
+Biology does not build architectures with neat and discrete separations between components. Our understanding of how the brain processes information is still very limited. Contrary to past assumptions about functional specialisation, a growing body of research is revealing some aspects of how any given function is a result of interactions across multiple brain areas (Postle B. R., 2016). One area however, the Prefrontal Cortex (PFC), is still believed to play an more specific role: that of controlling overall behaviour for the "Central Executive" functions (Postle B. R., 2016).
+
+Other research, in particular [Adaptive Resonance Theory (ART)](https://en.wikipedia.org/wiki/Adaptive_resonance_theory), has found and proposed the importance of synchronized cyclic behaviours. These are produced between higher and lower levels through mutual feedback loops controlled by excitatory and inhibitory signals going in both directions.
+
+A plausible interpretation of all this is that: i) the biological architecture of the human brain creates behaviour through distributed processing across multiple regions; ii) the behaviour is also significantly governed by highly co-dependent cross-talk between those regions; iii) that no one region has full overarching control; and iv) that of the various regions involved in executive control, the PFC probably has slightly greater overarching control than the others.
+
+This is depicted as follows:
+
+![pfc cooperation](files/Biological-basis-for-proto-AGI-pfc-cooperation.png)
+
 
 
 # Examples
