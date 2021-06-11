@@ -139,14 +139,20 @@ This is depicted as follows:
 ![pfc cooperation](files/Biological-basis-for-proto-AGI-pfc-cooperation.png)
 
 ## Active/Passive Model of Executive Control
+
 It's well known that the majority of thought occurs without much conscious control. Largely it ebbs and flows with only occasional explicit adjustment from the most conscious part of our executive control system. Put this into consideration with the growing evidence discussed above of how behaviour is governed through distributed processes even more than previously thought. It starts to suggest that executive control might have an active and a passive mode of operation, and that it spends most the time in its passive mode.
 
 The model might be something like this:
-* The executive control process spends much of it's time passively monitoring other high-order processes.
+* The executive control process acts as a mediator of other high-order processes, that is largely passive most of the time.
+* During its passive mode, it monitors the other high-order processes.
 * Occassionaly the executive control actively controls other high-order processes through tuning and inhibition of specific functions or data.
-* Active control occurs in response to a trigger - such as detection that the thought trajectory is deviating significantly from a previously calculated predicted path.
+* Active control occurs in response to some sort of trigger.
 
 ![active passive executive control](files/Biological-basis-for-proto-AGI-active-passive-ec.png)
+
+This also makes sense when viewed in terms of evolution. A very simple nervous system is unlikely to need an overarching control system. For example, useful behaviour can be obtained from a simple state machine that acts as a function of external input and retained state. This is observed across the animal kingdom, and across human evolution with variations in the relative size of structures involved with inhibiting habitual action - eg: the prefrontal cortex in humans. So, in that context, the concept of executive control relates to an ability to monitor one's own behaviours, to detect when certain behaviours are not providing sufficient value, or are predicted to not provide sufficient value, to inhibit those processes, and perhaps also to encourage specific alternative processes.
+
+It's informative to note here that in most past and modern usage of AI neural-networks, the neural-network is nothing more than the very simple nervous system described above. That includes recurrent neural networks, which add internal state, but still amount to nothing more than a naive habitual action learner. It is thus no surprise that many modern AI papers refer to neural networks as "function approximators".
 
 ### Target processes
 The target of executive control is the set of other processing capabilities that make up the rest of high-order thought, eg: planning, reasoning, etc. These capabilities are assumed to produce integrated behaviour via a combined cooperative / competitive model (Dolan & Dayan, 2013).
