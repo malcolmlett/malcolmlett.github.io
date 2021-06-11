@@ -143,19 +143,23 @@ This is depicted as follows:
 It's well known that the majority of thought occurs without much conscious control. Largely it ebbs and flows with only occasional explicit adjustment from the most conscious part of our executive control system. Put this into consideration with the growing evidence discussed above of how behaviour is governed through distributed processes even more than previously thought. It starts to suggest that executive control might have an active and a passive mode of operation, and that it spends most the time in its passive mode.
 
 The model might be something like this:
-* The executive control process acts as a mediator of other high-order processes, that is largely passive most of the time.
+* The executive control process acts as a mediator of other high-order processes, and is largely passive most of the time.
 * During its passive mode, it monitors the other high-order processes.
-* Occassionaly the executive control actively controls other high-order processes through tuning and inhibition of specific functions or data.
+* Occasionaly the executive control process actively controls other high-order processes through tuning and inhibition of specific functions or data.
 * Active control occurs in response to some sort of trigger.
-
-![active passive executive control](files/Biological-basis-for-proto-AGI-active-passive-ec.png)
 
 This also makes sense when viewed in terms of evolution. A very simple nervous system is unlikely to need an overarching control system. For example, useful behaviour can be obtained from a simple state machine that acts as a function of external input and retained state. This is observed across the animal kingdom, and across human evolution with variations in the relative size of structures involved with inhibiting habitual action - eg: the prefrontal cortex in humans. So, in that context, the concept of executive control relates to an ability to monitor one's own behaviours, to detect when certain behaviours are not providing sufficient value, or are predicted to not provide sufficient value, to inhibit those processes, and perhaps also to encourage specific alternative processes.
 
-It's informative to note here that in most past and modern usage of AI neural-networks, the neural-network is nothing more than the very simple nervous system described above. That includes recurrent neural networks, which add internal state, but still amount to nothing more than a naive habitual action learner. It is thus no surprise that many modern AI papers refer to neural networks as "function approximators".
+This is illustrated in the diagram that follows. Multiple processing capabilities act on some sort of input signal in order to produce on output result, which may be subsequently further processed. An executive control system monitors the inputs, results, and possibly the behaviours of individual processes or regions, and adjusts their functioning via inhibitory and excitatory signals.
+
+![active passive executive control](files/Biological-basis-for-proto-AGI-active-passive-ec.png)
+
+It's informative to note here that in most past and modern usage of AI neural-networks, the neural-network is nothing more than the very simple nervous system without overarching control that is described further above. That includes recurrent neural networks, which add internal state, but still amount to nothing more than a naive habitual action learner. It is no surprise that with increased usage of neural networks to solve larger AI problems, they are increasingly referred to as "function approximators".
 
 ### Target processes
-The target of executive control is the set of other processing capabilities that make up the rest of high-order thought, eg: planning, reasoning, etc. These capabilities are assumed to produce integrated behaviour via a combined cooperative / competitive model (Dolan & Dayan, 2013).
+The target of executive control is the set of other processing capabilities that make up the rest of high-order thought, eg: planning, reasoning, etc.
+
+No assumption needs to be made about the specific architecture of individual processing capabilities - each may be localised to a specific functional region of the brain, or may be the result of distributed interactions across multiple brain regions. They are assumed to produce integrated behaviour via a combined cooperative / competitive model (Dolan & Dayan, 2013).
 
 ### Monitoring
 The conscious feedback (CF) loop makes thought potentially executively observable (ie: within visceral loop), and at the same time available for monitoring by executive control. Thought also enters episodic memory, which may be later reviewed by executive control. However, thought may not be consciously experienced at the time because it may not have attentional focus.
@@ -167,18 +171,42 @@ Executive control enters active model upon a trigger. For example:
 * thought trajectories that diverge significantly from predicted paths.
 * spontaneous memory recall of past experiences associated with the particular trajectory and which significantly change the predicted value of the trajectory.
 
-Even when active, the executive control process does very little in terms of actually producing the result of any thought process. At the extreme view, executive control can only adjust tuning of the capabilities via inhibition and exhitation signals.
-
-What about goal setting? At the extreme view of above, goal inference may be one of the capabilities that executive control can increase the strength of when it concludes that new goal needs to be chosen. Alternatively, it may be goal setting is one of the few direct influences that executive control has over the data content of thought processes - by emitting a goal into the current state being processed.
+Even when active, the executive control process does very little in terms of actually producing the result of any thought process. At the extreme view, executive control can only adjust tuning of the capabilities via inhibition and excitation signals.
 
 Upon further thought, executive control probably has degrees of activation. An intermediate level enables us to actively observe thought in real time, without being involved in primary thought. This suggests a degree of parallel processing, which seems totally plausible. In contrast, full activation might cause all other thought processes to stop and to be explicitly governed by executive control.
 
-When consciously examining the thought process under full activation, the reasoning is actuall performed based on a memory of past thought, rather than on thought that is occurring at the time.
+When consciously examining the thought process under full activation, the reasoning would actually be focused on a memory of past thought, rather than on thought that is occurring at the time.
 
 ### Training 
 Assume that the behaviour of other high-order capabilities, including thier cooperation and competition, is trained through experience and hebbian learning. How does executive control apply training?
 
-Where executive control is involved, its involvement applies a training pressure too. For example, consider a habitual bad thought process that is actively inhibited by executive control. That reduction in firing leads to exhitation weight reduction within brain regions associated with that capability.
+Where executive control is involved, its involvement applies a training pressure too. For example, consider a habitual bad thought process that is actively inhibited by executive control. Based on the theory of hebbian learning, that reduction in firing leads to excitation weight reduction within brain regions associated with that capability.
+
+### Goal setting
+How does this system set goals and follow them? At the extreme view of the above, goal setting may be one of the capabilities that executive control can increase the strength of when it needs to step in to force a new goal selection. Alternatively, it may be that goal setting is one of the few direct influences that executive control has over the data content of thought processes - by emitting a goal into the current state being processed.
+
+Let's examine the former case in more detail.
+
+Goal setting is as complex as many other processes. This complexity suggests that goal setting is a whole-of-brain undertaking - ie: one of the distributed processing capabilities. For example, it involves a number of steps - which won't necessarily happen in a simple predictable order - including:
+1. identification of need for goal selection,
+2. generation of one or more possible goals,
+3. evaluation of their relative merit,
+4. committment to a selected goal, 
+5. monitoring of progress, 
+6. termination of goal (eg: when completed or failed), and
+7. overall process governance.
+
+Once a goal has been selected, where is it stored so that it can influence subsequent action? As discussed within the section on _Memory_, it is now understood that working memory is broken into its modal components (sound, vision, motor, etc.) and distributed between functional regions that specialise in those different modalities. It thus seems reasonable to conclude that the selected goal is distributed out to the functional region or regions that relate to its mixture of modalities. Those functional regions then hold the goal state in retention via internal recurrent networks, and use the goal state for adjusting their behaviour. The overall goal remains the focus at the aggregate level via the normal cooperative/competitive interactions between functional areas.
+
+The following adapts the prior diagram to focus on goal setting. It draws a distinction between "functional regions" (regions within the brain with a dominant specialised function) and "distributed processing capabilities" (behavioural capabilities that are the result of distributed interactions throughout the brain).
+
+![active/passive goal setting](files/Biological-basis-for-proto-AGI-active-passive-goals.png)
+
+### Further research
+Some areas for further research to elucidate the processes here better include:
+* Models of cooperation/competition.
+    * What do we know about how the brain manages cooperation/competition between capabilities and functional areas.
+    * What theories have been implemented in AI settings?
 
 
 # Examples
