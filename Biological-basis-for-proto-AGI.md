@@ -5,6 +5,11 @@ Here we shall review how the brain achieves its behaviours. We shall focus on bo
 We will discover some important ways in which the current AI techniques of neural networks, reinforcement learning, and bayesian inferrence all fall short.
 
 
+# Nervous System Evolution
+
+_tbd_: see https://www.britannica.com/science/nervous-system
+
+
 # Brain development
 
 Brain size increases from birth, reaching full size at about 7 years. The number of neurons and quality of connections change drastically during that time too (Developmental Psychology, ch 4), as summarised in the following table:
@@ -202,6 +207,11 @@ The following adapts the prior diagram to focus on goal setting. It draws a dist
 
 ![active/passive goal setting](files/Biological-basis-for-proto-AGI-active-passive-goals.png)
 
+### Attention
+Another way in which executive control may directly influence behaviour is through attention. There appears to be many things that influence attentional focus, spanning from high-order thought processes to primitive reflexive actions in response to sudden unexpected events within the environment. Thus executive control certainly does not have primary control over attention. However, it seems reasonable to conclude that executive control has some influence over attention and that it uses this to drive the direction of thought when in an active mode.
+
+For a detailed review of attention, see Lindsay (2020).
+
 ### Further research
 Some areas for further research to elucidate the processes here better include:
 * Models of cooperation/competition.
@@ -261,6 +271,8 @@ To some extent though, you can learn to do that on auto-pilot. The simple act of
 Developmental Psychology, ch 4. Lumen Learning. https://courses.lumenlearning.com/suny-hccc-ss-152-1/chapter/physical-development/
 
 Dolan, R. J., & Dayan, P. (2013). Goals and habits in the brain. Neuron, 80(2), 312–325. https://doi.org/10.1016/j.neuron.2013.09.007
+
+Lindsay, G. W. (2020) Attention in Psychology, Neuroscience, and Machine Learning. Front. Comput. Neurosci. 14:29. https://doi.org/10.3389/fncom.2020.00029. \[[Website](https://www.frontiersin.org/articles/10.3389/fncom.2020.00029/full)\]
 
 McLeod, S. A. 2019, April 09. Sensorimotor stage. Simply Psychology. https://www.simplypsychology.org/sensorimotor.html
 
