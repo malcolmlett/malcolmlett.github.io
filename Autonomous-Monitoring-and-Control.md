@@ -457,14 +457,60 @@ With final value estimated as:
 
 As the controller is performing much of the work discussed in [[Executive Control in a proto AGI]] regarding goal selection and bayesian modelling, for simplicity, let us assume that the target uses only a naive deep neural network and reinforcement learning algorithm.
 
+_tbd_
+
 
 # Autonomous Monitoring and Control
 
-Here I introduce the concept of _Intentional Autonomous Monitoring and Control_ (I-AMC). I-AMC refers to an agent that performs monitoring and control of itself, autonomously, and with active intent. In other words, using the same logic and inference processes that it would typically use for interaction with the external environment, it can determine the need and carry out actions in order to make changes to its own tuning parameters.
+For RMC, the controller and target were independent agents with distinctly different architectures and processes. We now turn to _Autonomous Monitoring and Control_ (AMC), where a single agent incorporates its own controller in order to govern its own behaviours.
+
+In this scenario, the processes of controller and target may be overlayed upon each other, and upon a shared architecture.
+
+## Terminology
+
+For RMC, terminology used assumed a physical distinction between controller and target. For AMC, we need to redefine our terminology set a little.
+
+Thus, for AMC, we will use the following terminology:
+* **Agent** - there is no longer a separate controller or target agent; there is just one _agent_.
+* **Objective** - the set of conditions placed on the agent for actions or outcomes that relate to its interactions with the environment. These conditions may be systemic to the agent's physical form (eg: the need for energy sustenance in order to prolong activity; the need to avoid injury), implicit within the environment (eg: if a door is closed, you cannot go through it), or may be explicit requirements imposed by the environment (eg: tasks set by an external actor within the environment; signages indicating the need to avoid certain outcomes).
+* **External Task** - a component of the objective. An explicit requirement imposed by the environment (typically by an external actor within the environment) for the agent to achieve a certain outcome or perform a certain action.
+* **Internal Goal** - the agent's internally selected goal. The goal will typically relate in some way to the agent's drive either to better understand the objective, or to meet some aspect of the objective. The goal may or may not relate in any way to the current external task imposed upon the agent.
+* **External Reward** - a reward obtained by the agent from the environment, typically in relation to the agent's objective. May take many forms and may relate to any part of the agent's objective, including systemic (eg: obtaining an energy source), implicit (eg: a significant reduction in effort or unlikelihood remaining to complete the task due to the door being unlocked), or explicit (eg: sweets granted upon completion of a task; punishment for stepping out of bounds).
+* **Internal Reward** - an agent spontaneously rewards itself for achieving its own internal goals, and for making progress towards or diverging away from those goals. The internal reward is typically defined in terms of a prediction of reduction in some cost measure, either in terms of predicted future effort or uncertainty within models.
+* **Cost** - the cost experienced by the agent for an action or outcome, including opportunity cost.
+* **State** - as before, state is sub-divided into: environment state, external state, and internal state.
+
+## External Reward
+
+### Definition of external reward
+The definition of _external reward_ deserves some contemplation.
+
+External rewards will not always take the form of explicit "rewards" and "punishments" as in their common english meaning. They may, for example, include changes to the environment that increase or decrease the agent's future opportunities. They may too include changes to the agent itself that increase or decrease its future opportunities.
+
+The external reward almost always involves the environment. It will typically directly involve the agent, but not always. It may significantly affect the agent immediately, or it may only predominantly affect future outcomes.
+
+Definition of _external reward_:
+> Any change in the environment, or the agent's external, or internal state, that is initiated by or obtained from the environment, and that has a measurable positive or negative effect on the agent's ability for efficiently and/or accurately targeting the objective.
+
+Possible external rewards are numerous and vary with the kind of environment, kind of agent, and kind of interactions possible. Some examples include:
+* Food/energy supplied to the agent by the environment or an actor within the environment
+* Visual and verbal communication (eg: encouragement, discouragement)
+* Opportunities being made easier/harder (eg: doors being opened/closed)
+* Physical features being added to or removed from the agent
+    
+For some other interactions, it is less clear whether they represent external rewards, and they may need some further revisement later. For example:
+* When an agent feeds itself from a backpack that it carries and in which it has previously stashed food. Further, if the agent previously obtained the food as an external reward, does that change the classification of the interaction when the agent later uses that to feed itself?
+
+### Detection of external reward
+For a biological agent, is food a reward? Perhaps. Does the agent have to consume it first before it becomes a reward? What if the food is laced with a deadly toxin, and the agent knows this? What about a red rectangle within the visual field? In the game of soccer a "red card" is a clear punishment. However, different coloured squares are often used in animal experiments of intelligence, where they typically indicate a task rather than a reward.
+
+As per the definition above of external reward, anything could be a reward if it influences the agent with respect to the objective. Thus the agent must form an inference model of observations and how they relate to effects against its ability to target the objective. In order to tolerate the effects of learning and the desire for meaningful behaviour from an early stage, we must incorporate some _a priori_ primitive reward mechanisms, including for example satiation and pain. These will be used to bootstrap learning of the observation-benefit model, whereby higher-order concepts are later used to understand rewards. This would seem biologically plausible, and reveals some explanation for the "Pavlov dog" salivation effect.
+
+..._tbd_...
 
 ## Architectural Options
 
-...tbd...
+..._tbd_...
 
 We don't know enough about how the brain functions in order to replicate that within an AI architecture. In fact, our AI architectures today appear vastly different in structure. Thus, we'll have to make our own decisions about what architecture can yield the best results.
 
@@ -521,12 +567,15 @@ The above provides a framework that supports far more advanced modelling methods
 * Any solution that is worthwhile must not just naively cluster whole state values, but will need to segment the state values, identifying those individual features. Others have shown that systems that model scenes via entities and their relationships achieve significant benefits over systems that model via global state representations (Bapst _et al_, 2019; Veerapaneni _et al_, 2019). Clustering against features makes even more sense when you consider that different features will have different clustering needs, and different relative importance to the agent. For example it has been suggested that, in this context, clustering of states is best driven by the actions needed at those states (Rigoli, 2017).
 * Thus, a full AGI solution will need a solution for object segmentation, object modelling, and object detection. 
 
-**Modelling Aleatoric vs Epistemic Uncertainty**
-Epistemic uncertainty is the uncertainty about the true function, due to a lack of sufficient data to uniquely determine the underlying system exactly. 
+**Modelling Aleatoric vs Epistemic Uncertainty**:
+* Epistemic uncertainty is the uncertainty about the true function, due to a lack of sufficient data to uniquely determine the underlying system exactly. 
+* Aleatoric uncertainty, however, arises from the inherent stochasticities of a system, such as process noise, and noise in the method of state observation. As note by Chua _et al_ (2018), "without a way to distinguish epistemic uncertainty from aleatoric, an exploration algorithm (e.g. Bayesian optimization) might mistakingly choose actions with high predicted reward-variance ‘hoping to learn something’ when in fact such variance is caused by persistent and irreducible system stochasticity offering zero exploration value."
+* Thus the active inference exploration algorithm benefits from explicitly identifying whether uncertainties are aleatoric or epistemic. For example, Chua _et al_ (2018) propose a solution for that via ensemble models. They are able to measure epistemic uncertainties by differences across models, and aleatoric uncertainties through explicit data variance modelling within each model.
 
-Aleatoric uncertainty, however, arises from the inherent stochasticities of a system, such as process noise, and noise in the method of state observation. As note by Chua _et al_ (2018), "without a way to distinguish epistemic uncertainty from aleatoric, an exploration algorithm (e.g. Bayesian optimization) might mistakingly choose actions with high predicted reward-variance ‘hoping to learn something’ when in fact such variance is caused by persistent and irreducible system stochasticity offering zero exploration value."
-
-Thus the active inference exploration algorithm benefits from explicitly identifying whether uncertainties are aleatoric or epistemic. For example, Chua _et al_ (2018) propose a solution for that via ensemble models. They are able to measure epistemic uncertainties by differences across models, and aleatoric uncertainties through explicit data variance modelling within each model.
+**Multi-system Cooperation**:
+* Building in some mechanism for the architecture to support multiple systems of processing (eg: habitual action vs planning, habitual prediction vs bayesion inference, memory interactions), and to enable cooperative / competitive interactions.
+* Learning, in particular, can get much harder in this architecture.
+* So it needs a solid theoretical foundation.
 
 # References
 
