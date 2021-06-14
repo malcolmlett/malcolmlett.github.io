@@ -292,7 +292,7 @@ It's also interesting to observe that humans don't seem to intentionally optimis
 
 ## Calculating Goal Value
 
-So, finally, we have the following generative model as an illustration of the value of attempting a particular goal for a particular length of time, as measured from "now".
+So, finally, we have the following generative model of value across multiple goals and time-frames. Within the set of goal + time-frame options, the chosen option should be the one with the highest value.
 
 ![goal-value2](files/Autonomous-monitoring-and-control-goal-value2.png)
 
@@ -433,7 +433,7 @@ One particularly concrete aspect of this is the scale of reward values. The cont
 In summary, the value of any target's state must always be defined by the controller under its model of success, not by the controller environment.
 
 ### A practical solution
-A simple starting point is to reward based on cost. At any given point, estimate the (ideal or average) cost from that state to the goal state, and reward based on the delta in that estimate due to the target's new state. Emitting a reward each and every time step may be too frequent due to inaccuracies in the cost estimation, and those errors may train the target to diverge from ideal. A good balance can be found by additionally estimating the uncertainty in the cost estimate, and only emitting a reward once there is sufficient certainty in the _sign_ of that delta. In that way, as the target takes some trajectory, it will receive rewards at a "natural" frequency somewhere between once-per-step and once-per-goal.
+A simple starting point is to reward based on changes to expected future cost. At any given point, estimate the (ideal or average) cost from that state to the goal state, and reward based on the delta in that estimate due to the target's new state. Emitting a reward each and every time step may be too frequent due to inaccuracies in the cost estimation, and those errors may train the target to diverge from ideal. A good balance can be found by additionally estimating the uncertainty in the cost estimate, and only emitting a reward once there is sufficient certainty in the _sign_ of that delta. In that way, as the target takes some trajectory, it will receive rewards at a "natural" frequency somewhere between once-per-step and once-per-goal.
 
 Additionally, if basing rewards on cost, the reward should also take into account the cost accrued. This is important as the source of information to encourage efficient trajectories.
 
