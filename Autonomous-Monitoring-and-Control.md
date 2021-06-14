@@ -330,6 +330,8 @@ The target will need to learn the meaning of goal indicators. Initially it won't
 
 So we will need to initially set goals that the target will bump into by accident, in order that it can build up an association between goal indicators and the need to move towards them.
 
+Part of that initial training process will be to initially bias the goal selection towards goal states that are very near to the target's current state, and to extend them further and further away as training progresses. This is actually already incorporated into the goal selection, measured as the likelihood of the target reaching the goal.
+
 ### Exploitation vs exploration trade-off
 We want to maximise the total controller reward while minimising cost, aggregated over time. Over what time frame? If time is infinite, then the most efficient method might be to explore all possible states first, accumulating cost in the short term, and then afterwards exploit the knowledge for maximum gain. But the agent's lifetime may not be infinite, and there may be a maximum cost that it can accrue without sufficient rewards to balance them (eg: hunger leading to death without sufficient food to balance the energy use).
 
@@ -497,9 +499,10 @@ Possible external rewards are numerous and vary with the kind of environment, ki
 * Visual and verbal communication (eg: encouragement, discouragement)
 * Opportunities being made easier/harder (eg: doors being opened/closed)
 * Physical features being added to or removed from the agent
+* Reduction in discomfort (ie: reduction in pain or other warning-sense signals)
     
 For some other interactions, it is less clear whether they represent external rewards, and they may need some further revisement later. For example:
-* When an agent feeds itself from a backpack that it carries and in which it has previously stashed food. Further, if the agent previously obtained the food as an external reward, does that change the classification of the interaction when the agent later uses that to feed itself?
+* When an agent feeds itself from a backpack that it carries and in which it has previously stashed food. Further, if the agent previously obtained the food as an external reward, does that change the classification of the later interaction when the agent uses that to feed itself?
 
 ### Detection of external reward
 For a biological agent, is food a reward? Perhaps. Does the agent have to consume it first before it becomes a reward? What if the food is laced with a deadly toxin, and the agent knows this? What about a red rectangle within the visual field? In the game of soccer a "red card" is a clear punishment. However, different coloured squares are often used in animal experiments of intelligence, where they typically indicate a task rather than a reward.
