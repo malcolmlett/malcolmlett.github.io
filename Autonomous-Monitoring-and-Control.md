@@ -579,6 +579,7 @@ The above provides a framework that supports far more advanced modelling methods
 * Building in some mechanism for the architecture to support multiple systems of processing (eg: habitual action vs planning, habitual prediction vs bayesion inference, memory interactions), and to enable cooperative / competitive interactions.
 * Learning, in particular, can get much harder in this architecture.
 * So it needs a solid theoretical foundation.
+* See [[Cooperative Competitive Systems]] for an exploration of this.
 
 # References
 
