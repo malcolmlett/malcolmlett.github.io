@@ -71,15 +71,28 @@ In biology, a reflex machinism can be primarily inactive, but when needed it can
 
 ## Amplitude-based Selection
 
-This template is a generalisation of the Vetoing Reflex solution. It uses relative signal strength from two or more processors, without any implied precedence.
+This template is a generalisation of the Vetoing Reflex solution. It uses relative signal strength from two or more processors, without any implied precedence. It would typically be used where multiple processors compete that have different architectures, different inputs, or different behavioural purposes. The later case requires that the processors are independently trained.
 
-...tbd...
+If all processors are the same, and differ only in random initialization values, then this simplifies to an ensemble model.
 
-## Priming
+![amplitude-based selection](files/Cooperative-competitive-systems-amplitude-based-selection.png)
 
-...tbd...
+For each `i`-th processor, it's output `o_i` is a vector of length `m`, and the amplitude `a_i` of that output is calculated as `L1(o_i)/m` (ie: the average of absolute value of each component of the vector). Soft arg-max (typically referred to as just 'softmax') is applied to the amplitudes `a_0` ... `a_n`, producing weights `w_0` ... `w_1`: `w_i = e^a_i / Σ(e^a_j)`.
 
-Add internal state to components (eg: via RNN), so that they can be primed via prior time steps, and then can apply that priming to their behaviour in subsequent time steps. Eg: within reviewer/selection components.
+The softmax function provides a smooth way of switching between selecting just one processor output and combining the output of multiple processors. So, finally, the output is produced as: `Σ(w_i * o_i)`.
+
+### Training
+The softmax function allows some backpropagation from output to all processors. However that backpropagation is heavily attenuated for processors that produced low amplitude values. Best results will likely be achieved where some training pressure can be directly applied to each processor output.
+
+## State
+This template simply adds internal state to components, such as through the use of RNN components.
+
+This can be used for useful behaviours such as:
+* Priming - eg: where a Reviewer component is "primed" in past time steps to be biased towards a particular outcome.
+* Distributed Working Memory - eg: inputs from other components is stored into the components local state, for use in subsequent time steps.
+
+### Training
+It is naively assumed that RL processes are sufficient to produce meaningful results. However, this remains to be seen. It is unlikely to be as affective as RNN in simple sequential data processing, where the RNN is trained against a high frequency of data.
 
 ## Evaluation Loop
 
