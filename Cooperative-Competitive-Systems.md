@@ -92,6 +92,13 @@ This can be used for useful behaviours such as:
 * Priming - eg: where a Reviewer component is "primed" in past time steps to be biased towards a particular outcome.
 * Distributed Working Memory - eg: inputs from other components is stored into the components local state, for use in subsequent time steps.
 
+### Priming
+Priming is an important feature for avoiding unnecessary reevalutions and improving reaction times. One suggestion of attention is that it is driven by expected value (Lindsay, 2020). It is computationally expensive to evaluate expected value across across multiple potential focuses and to make a selection from those evalutions. Thus unnecessary repitition of that evalution process must be avoided.
+
+Priming enables the affected functional areas to retain focus without reevalution.
+
+Priming also enables pre-evaluations to prepare (or "prime") functional areas for immediate response upon expected stimuli, shortening response times.
+
 ### Training
 It is naively assumed that RL processes are sufficient to produce meaningful results. However, this remains to be seen. It is unlikely to be as affective as RNN in simple sequential data processing, where the RNN is trained against a high frequency of data.
 
@@ -114,7 +121,11 @@ Being able to remember recent computed results without having to recompute them.
 
 ## Attention
 
-Plays into distributed WM, by enabling components to hold multiple items within their internal state, but attention selecting 
+Plays into distributed WM, by enabling components to hold multiple items within their internal state, but only working on one or two at a time.
+
+Plays into priming to avoid unnecessary reevalutions.
+
+Reevaluations of attention triggered by predictive errors encountered between bottom-up and top-down attentional pressures. Consistent with ART.
 
 ## Conscious Feedback
 
