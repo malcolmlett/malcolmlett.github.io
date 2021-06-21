@@ -2,6 +2,7 @@ This page forms part of the [[Proto AGI v1]] series.
 
 
 # Introduction
+...tbd...
 
 ## Principles
 
@@ -96,3 +97,63 @@ It is naively assumed that RL processes are sufficient to produce meaningful res
 
 ## Evaluation Loop
 
+Uses include:
+* goal selection within [[Autonomous Monitoring and Control]] (AMC).
+* planning
+
+
+# Training Stages
+...tbd...
+
+
+# Future Enhancements
+
+## Memoisation
+
+Being able to remember recent computed results without having to recompute them.
+
+## Attention
+
+Plays into distributed WM, by enabling components to hold multiple items within their internal state, but attention selecting 
+
+## Conscious Feedback
+
+With no centralised data channel, the nature of Conscious Feedback (CF) becomes clearer. [[Autonomous Monitoring and Control]] (AMC) requires a single unified view of brain activity so that it can monitor the trajectory that the activity takes, and take corrective action when necessary. Without a centralised data channel that represents the unified output of everything, CF performs a _summarising_ role. It must collect samples of activity from different brain regions, summarise them into a single unified state, and feed that into AMC.
+
+
+# Anecdotes
+
+## Solving a simple Maths Problem
+I set myself a simple maths problem: to find the integer `?` that most closely solved `3 * ? = 27`. I intentionally constrained myself to a trial-and-error style approach.
+
+My thought processes went like this:
+1. The number `8` pops into my head.
+1. I can't remember what `3 * 8` is, but I know that I'll know `2 * 8` so I first try to remember that: `16` appears.
+1. I notice that there's a gap of `4` between `16` and `20`, which uses up half of the remaining `8`. That leaves another `4` to add to `20`, making `24` as the answer.
+1. What number was I trying to reach again? `27`. Oh nice, `24` is pretty close to `27`, so `8` was a good guess.
+1. Is `24` as close as I'm going to get to `27`? They seem pretty close, but maybe it's worth trying one more. (The idea of calculating the difference between `24` and `27` didn't cross my mind, as I had already primed myself to only consider trial-and-error.)
+1. What was I trying to do again? `3 * ? = 27`. Right, I'll try the next number, `9`.
+1. `3 * 9`? Don't remember. Ok, `2 * 9`? I remember `18`. Then I remember the trick with adding `9`s: each time I add `9` I simply jump to the next tens place and drop one. So, `18` ... `28` ... `27`. Oh wow, that's the number I'm trying to get.
+1. Ok, quick, I must now review how I got here so I can write this down.
+
+Some observations of the above:
+* I had no logical reason to start with `8` as my first try. That number just appeared. Presumably it was generated from some heuristic prediction mechanism, as it was clearly very close.
+* Assuming that functional areas hold their own working memory, then that same area must hold the original problem `3 * ? = 27`, along with the number being tried, e.g. `8`, while simultaneously working on the problem of how to calculate `3 * 8`. At the peak depth of calculation, that functional area could be holding as much as 5 layers of numbers and expressions: `3 * ? = 27`, `8`, `16`, `16 -> 20 = 4`, `4 remaining from 8`.
+* Of all those numbers and expressions in working memory, only one or two are actively attended to at a time. While thinking about `2 * 8` I was no longer consciously aware of the original `3 * ? = 27` problem, or even of the `3 * 8` problem that I was partially solving via `2 * 8`.
+
+Now, if each functional area holds WM that relates to it, we can see above that each functional area still needs to be available for other processing, even while holding onto its WM state. Could it be that each functional area has a little side storage for WM, and that attention mechanisms trigger the functional area to pull out specific values at certain times?
+
+In the [biased competition theory](https://en.wikipedia.org/wiki/Biased_Competition_Theory) of attention (Desimone & Duncan, 1995; Beck & Kastner 2009; Turova and Rolls, 2019), attention is a biproduct of top-down biasing and bottom-up triggers. Additionally, there is some suggestion that competition for attention might be resolved within the targeted functional areas (Lindsay, 2020). I wonder, in the anecdote above, whether the maths functional area was the target of attention, or whether it was the source of the bottom-up claim for attention. In a decentralised system, perhaps any brain region can be the triggering source of activity. In which case, perhaps that functional area took "control" for a little while, continually firing signals into the rest of the brain indicating that there was a maths problem to focus on.
+
+Of course, an open question affecting all this is how this supposed "maths functional area" is truly distributed within the brain, as it is unlikely to be a single focused brain region.
+
+
+# References
+
+Beck, D.M., Kastner, S. (2009). Top-down and Bottom-up mechanisms in biasing competition in the human brain. ‘’Vision Research, 49’’, 1154-1165.
+
+Desimone, R., Duncan, J. (1995). Neural Mechanism of Selective Visual Attention. Annual Review of Neuroscience, 18, 193-222.
+
+Lindsay, G. W. (2020). Attention in Psychology, Neuroscience, and Machine Learning. Front. Comput. Neurosci. 14:29. https://doi.org/10.3389/fncom.2020.00029.
+
+Turova, T., Rolls, E.T. (2019). Analysis of Biased Competition and Cooperation for Attention in the Cerebral Cortex. Front. Comput. Neurosci. 13:51. https://doi.org/10.3389/fncom.2019.00051
