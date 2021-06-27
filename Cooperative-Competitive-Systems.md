@@ -1,14 +1,34 @@
 This page forms part of the [[Proto AGI v1]] series.
 
-
 # Introduction
-...tbd...
+
+Our best understanding of the brain architecture today recognises that its behaviour is controlled via a mixture of bottom-up, top-down, and horizontal signals. That principle seems to apply most regions of the brain, both at large scales and at small scales. This is true even when considering the supposed higher-order control from the prefrontal cortex - it "competes" for control in the same way as everything else. In effect, the brain appears to operate as a decentralised system of smaller components that produce meaningful results through a finely tuned mixture of competition and cooperation.
+
+This is a very different architecture to what we are experienced in producing within computers and AI. As such we have very little experience with creating such a decentralised architecture. The ideas discussed within the main [[Proto AGI v1]] pages would likely benefit from being discussed in the frame of a decentralised architecture. In particular, the ideas within [[Autonomous Monitoring and Control]] clearly need to be incorporated within a decentralised control system in order to emulate the kind of fully integrated control experience that we have as humans.
+
+This page explores some ideas of how we can produce an AI architecture with decentralised control through competition and cooperation between components.
 
 ## Principles
 
-* Distributed working memory
-* Distributed control via mutual competition and cooperation, and shared learning.
-* Reusable templates
+The following principles are adhered to throughout the discussions here. These model assumptions about the organisation of the brain that we might be able to emulate.
+
+**Distributed control**
+
+* As much as possible, we try to eschew top-down control, and prefer behaviour that is the result of mutual competition and cooperation between components.
+
+**Distributed working memory**
+
+* Growing evidence suggests that the brain does not have a single shared region for storing "working memory" (Postle, 2016). Rather, it is likely that each region that focuses on a particular functional purpose encodes working state within its own circuts as recurrent loops. Further to this, the experience of having a "working memory" is likely the result of attention (see [Biased Competition Theory](https://en.wikipedia.org/wiki/Biased_Competition_Theory)).
+
+**Reusable templates**
+
+* It turns out that the solutions for specific use cases provide re-usable templates. So, rather than focusing on specific problems, this page focuses on those re-usable templates.
+
+## Biological Plausibility
+
+The approaches outlined here aren't necessarily biologically plausible. Rather, they are an attempt to step towards a biological plausible solution that draws inspiration from our current inderstanding, but is ultimately driven by the desire to produce something that we can implement using existing AI capabilities.
+
+To become biologically plausible, we need a better understanding of the underlying mechanisms of the brain than we currently have. We need theories with the level of concrete detail such as proposed within the Thousand Brains Theory (Hawkins _et al_, 2019) and GLOM (Hinton, 2021). We need those theories confirmed. And then we can consider how the templates proposed in the sections below may be implemented in real biological fashion.
 
 
 # Templates
@@ -109,10 +129,6 @@ Uses include:
 * planning
 
 
-# Training Stages
-...tbd...
-
-
 # Future Enhancements
 
 ## Memoisation
@@ -130,6 +146,25 @@ Reevaluations of attention triggered by predictive errors encountered between bo
 ## Conscious Feedback
 
 With no centralised data channel, the nature of Conscious Feedback (CF) becomes clearer. [[Autonomous Monitoring and Control]] (AMC) requires a single unified view of brain activity so that it can monitor the trajectory that the activity takes, and take corrective action when necessary. Without a centralised data channel that represents the unified output of everything, CF performs a _summarising_ role. It must collect samples of activity from different brain regions, summarise them into a single unified state, and feed that into AMC.
+
+## Primitive Behavioural Limitations
+
+If you were to place a completely untrained AI network into a fully formed robot, you would not like the result. It would thrash around wildly smashing into things, and probably damage itself in the process. Researchers who train with robots usually either work in very constrained problem spaces, or employ a simulated environment for the earlier stage of training.
+
+Biological organisms don't have such a luxury, but they have evolved different mechanisms to prevent immediate injury or death from the effect of an untrained neural network. There are probably a number of such mechanisms at play. Some include:
+
+* Limited strength
+    * An infant's muscles have very limited strength. Consequently, they are not mobile, and they cannot hurt themselves through self infliction. This also makes it easier for the infant's parents to care for it, as they can overpower it with ease.
+* Flexible joints
+    * It's joints are initially very flexible, as the bones remain soft in infants and some of the joints are just a very soft form of cartilage. 
+* Staged brain development
+    * Not all capabilities of the brain are "switched on" initially. It is well accepted that the brain undergoes stages of development, with different regions of the brain "maturing" at different rates, with some taking 2 or 3 decades to reach full maturity. For example, some aspects of the so called "[executive functions](https://en.wikipedia.org/wiki/Executive_functions)", that enable an individual to maintain self-control, are believed to only begin developing during adolescence.
+    
+When considering the development of a neural-network based intelligence, with only one life, it is clear that a mechanism (or multiple) is required to limit its initial behaviours. As its neural-network is trained and becomes more reliable, those limitations can be gradually relaxed - and they likely need to be relaxed in order to enable tho network to learn from mistakes. Eventually, the neural-network should be sufficiently trained that it can proved a more accurate and trustworthy force for behaviour limitations and avoidance of injury or death than the presumably simplistic primitive mechanisms that may have initially protected it.
+
+![behaviour space limits](files/Cooperative-competitive-systems-behaviour-space-limits.png)
+
+Furthermore, a cooperative-competitive style of decentralised control is likely to lead to far greater initial chaotic behaviour than a neural-network based on centralised control. Thus, some such mechanism may need to be considered, particularly if wishing to produce a single-lifetime learning agent.
 
 
 # Anecdotes
@@ -165,6 +200,13 @@ Beck, D.M., Kastner, S. (2009). Top-down and Bottom-up mechanisms in biasing com
 
 Desimone, R., Duncan, J. (1995). Neural Mechanism of Selective Visual Attention. Annual Review of Neuroscience, 18, 193-222.
 
+Hawkins, J., Lewis, M., Klukas, M., Purdy, S., Ahmad, S. (2019). A Framework for Intelligence and Cortical Function Based on Grid Cells in the Neocortex. Front. Neural Circuits 12:121. https://doi.org/10.3389/fncir.2018.00121
+
+Hinton, G. (2021). How to represent part-whole hierarchies in a neural network. ArXiv. https://arxiv.org/abs/2102.12627.
+
 Lindsay, G. W. (2020). Attention in Psychology, Neuroscience, and Machine Learning. Front. Comput. Neurosci. 14:29. https://doi.org/10.3389/fncom.2020.00029.
 
+Postle, B. R. (2016). How does the brain keep information "in mind"?. Current directions in psychological science, 25(3), 151–156. https://doi.org/10.1177/0963721416643063.
+
 Turova, T., Rolls, E.T. (2019). Analysis of Biased Competition and Cooperation for Attention in the Cerebral Cortex. Front. Comput. Neurosci. 13:51. https://doi.org/10.3389/fncom.2019.00051
+
