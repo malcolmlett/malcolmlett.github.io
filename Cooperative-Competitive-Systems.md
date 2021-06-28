@@ -110,6 +110,7 @@ This template simply adds internal state to components, such as through the use 
 
 This can be used for useful behaviours such as:
 * Priming - eg: where a Reviewer component is "primed" in past time steps to be biased towards a particular outcome.
+* Action simulation - eg: via primed decision to not execute actions.
 * Distributed Working Memory - eg: inputs from other components is stored into the components local state, for use in subsequent time steps.
 
 ### Priming
@@ -160,11 +161,15 @@ Biological organisms don't have such a luxury, but they have evolved different m
 * Staged brain development
     * Not all capabilities of the brain are "switched on" initially. It is well accepted that the brain undergoes stages of development, with different regions of the brain "maturing" at different rates, with some taking 2 or 3 decades to reach full maturity. For example, some aspects of the so called "[executive functions](https://en.wikipedia.org/wiki/Executive_functions)", that enable an individual to maintain self-control, are believed to only begin developing during adolescence.
     
-When considering the development of a neural-network based intelligence, with only one life, it is clear that a mechanism (or multiple) is required to limit its initial behaviours. As its neural-network is trained and becomes more reliable, those limitations can be gradually relaxed - and they likely need to be relaxed in order to enable tho network to learn from mistakes. Eventually, the neural-network should be sufficiently trained that it can proved a more accurate and trustworthy force for behaviour limitations and avoidance of injury or death than the presumably simplistic primitive mechanisms that may have initially protected it.
+When considering the development of a neural-network based intelligence, with only one life, it is clear that a mechanism (or multiple) is required to limit its initial behaviours. As its neural-network is trained and becomes more reliable, those limitations can be gradually relaxed - and they likely need to be relaxed in order to enable the network to learn from mistakes. Eventually, the neural-network should be sufficiently trained that it can proved a more accurate and trustworthy force for behaviour limitations and avoidance of injury or death than the presumably simplistic primitive mechanisms that may have initially protected it.
 
 ![behaviour space limits](files/Cooperative-competitive-systems-behaviour-space-limits.png)
 
-Furthermore, a cooperative-competitive style of decentralised control is likely to lead to far greater initial chaotic behaviour than a neural-network based on centralised control. Thus, some such mechanism may need to be considered, particularly if wishing to produce a single-lifetime learning agent.
+A second important benefit of behaviour limitation during early stages is to improve training efficiency by a reduction in search space. With a large neural network the search space is tremendous. By initially narrowing the range of behaviour the agent first learns behaviours that have a greater long term benefit. In biology, it is effectively a way of combining evolutionarily gained experience with the training experience of an individual - evolutionary forces find the optimimum initial narrow range of behavour and the optimimum rate at which those limitations should be relaxed.
+
+A cooperative-competitive style of decentralised control is likely to lead to far greater initial chaotic behaviour than a neural-network based on centralised control. Thus, some such mechanism may need to be considered, particularly if wishing to produce a single-lifetime learning agent.
+
+For example, the ability to choose between performing physical actions or just simulating them could lead to a suboptimal training path during initial stages when the agent needs to learn about its body through physical actions. During the early stage of training it could be beneficial to somehow disable the simulation of actions - or at least bias away from simulation.
 
 
 # Anecdotes
