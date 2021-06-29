@@ -8,6 +8,10 @@ This is a very different architecture to what we are experienced in producing wi
 
 This page explores some ideas of how we can produce an AI architecture with decentralised control through competition and cooperation between components.
 
+## Purpose
+
+Unlike most other pages under the [[Proto AGI v1]], I don't necessarily intend to apply anything here. It's more of an exploration out of interest. Furthermore, it's likely too incomplete to be of use, and probably also too far removed from any theory based on biology or other AI research.
+
 ## Principles
 
 The following principles are adhered to throughout the discussions here. These model assumptions about the organisation of the brain that we might be able to emulate.
@@ -32,6 +36,10 @@ To become biologically plausible, we need a better understanding of the underlyi
 
 
 # Templates
+
+Throughout the sections that follow, the following conventions apply:
+
+![key](files/Cooperative-competitive-systems-key.png)
 
 ## Gated Output Selection
 
@@ -92,7 +100,7 @@ In biology, a reflex machinism can be primarily inactive, but when needed it can
 
 ## Amplitude-based Selection
 
-This template is a generalisation of the Vetoing Reflex solution. It uses relative signal strength from two or more processors, without any implied precedence. It would typically be used where multiple processors compete that have different architectures, different inputs, or different behavioural purposes. The later case requires that the processors are independently trained.
+This template is a generalisation of the Vetoing Reflex solution. It uses relative signal strength from two or more processors, without any implied precedence. It would typically be used where multiple processors compete that have different architectures, different inputs, or different behavioural purposes. The latter case requires that the processors are independently trained.
 
 If all processors are the same, and differ only in random initialization values, then this simplifies to an ensemble model.
 
@@ -106,6 +114,7 @@ The softmax function provides a smooth way of switching between selecting just o
 The softmax function allows some backpropagation from output to all processors. However that backpropagation is heavily attenuated for processors that produced low amplitude values. Best results will likely be achieved where some training pressure can be directly applied to each processor output.
 
 ## State
+
 This template simply adds internal state to components, such as through the use of RNN components.
 
 This can be used for useful behaviours such as:
@@ -122,6 +131,20 @@ Priming also enables pre-evaluations to prepare (or "prime") functional areas fo
 
 ### Training
 It is naively assumed that RL processes are sufficient to produce meaningful results. However, this remains to be seen. It is unlikely to be as affective as RNN in simple sequential data processing, where the RNN is trained against a high frequency of data.
+
+## One-shot Buffer
+
+The purpose of the one-shot buffer is to grant an associated reviewer component the time to make a decision, in contrast to having to draw a conclusion "in line" with the output signal from the source processor.
+
+![one shot buffer](files/Cooperative-competitive-systems-one-shot-buffer.png)
+
+Upon receiving a trigger signal, the buffer emits whatever last vector it received from the processor above, and then forgets the state. The buffer likely also forgets state after some expiry period. Trigger signals have no effect if there is no state stored within the buffer.
+
+### Variations
+* The reviewer may act upon the initial output from the source processor, which only occurs at the moment that processor produces the output. Alternatively it may "peek" the one-shot buffer's current state - which will remain constant for a period provided that no new output is emitted from the source processor.
+
+* An alternative usage is to use the "peek" output as the primary output signal that feeds into subsequent processors. This turns it into a gated persistent buffer. The source processor "clears" the buffer by sending a trigger signal and having the buffer send its main output to nothing.
+
 
 ## Evaluation Loop
 
