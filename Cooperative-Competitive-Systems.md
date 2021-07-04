@@ -152,6 +152,13 @@ Uses include:
 * goal selection within [[Autonomous Monitoring and Control]] (AMC).
 * planning
 
+![evaluation loop](files/Cooperative-competitive-systems-evaluation-loop.png)
+
+
+# A Review of Auto-Decoders
+
+Within the _Distributed Architecture_ section of [[Biological basis for proto AGI]], I suggest how the theories of predictive coding, replicated units, and distributed collaboration through competition create unified model of brain architecture.
+
 
 # Future Enhancements
 

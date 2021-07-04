@@ -131,18 +131,6 @@ To be clear, I use the term _executive control_ to refer specifically to conscio
 * **High-order functions** - Any of the mechanisms behind high-order thought itself, and other capabilities that directly feed information into high-order thought.
 * **Executive control** - A high-order function or set of functions through which high-order thought and external behaviour is consciously and intentionally executed.
 
-## Distributed Architecture
-
-Biology does not build architectures with neat and discrete separations between components. Our understanding of how the brain processes information is still very limited. Contrary to past assumptions about functional specialisation, a growing body of research is revealing some aspects of how any given function is a result of interactions across multiple brain areas (Postle B. R., 2016). One area however, the Prefrontal Cortex (PFC), is still believed to play an more specific role: that of controlling overall behaviour for the "Central Executive" functions (Postle B. R., 2016).
-
-Other research, in particular [Adaptive Resonance Theory (ART)](https://en.wikipedia.org/wiki/Adaptive_resonance_theory), has found and proposed the importance of synchronized cyclic behaviours. These are produced between higher and lower levels through mutual feedback loops controlled by excitatory and inhibitory signals going in both directions.
-
-A plausible interpretation of all this is that: i) the biological architecture of the human brain creates behaviour through distributed processing across multiple regions; ii) the behaviour is also significantly governed by highly co-dependent cross-talk between those regions; iii) that no one region has full overarching control; and iv) that of the various regions involved in executive control, the PFC probably has slightly greater overarching control than the others.
-
-This is depicted as follows:
-
-![pfc cooperation](files/Biological-basis-for-proto-AGI-pfc-cooperation.png)
-
 ## Active/Passive Model of Executive Control
 
 It's well known that the majority of thought occurs without much conscious control. Largely it ebbs and flows with only occasional explicit adjustment from the most conscious part of our executive control system. Put this into consideration with the growing evidence discussed above of how behaviour is governed through distributed processes even more than previously thought. It starts to suggest that executive control might have an active and a passive mode of operation, and that it spends most the time in its passive mode.
@@ -183,7 +171,7 @@ Upon further thought, executive control probably has degrees of activation. An i
 When consciously examining the thought process under full activation, the reasoning would actually be focused on a memory of past thought, rather than on thought that is occurring at the time.
 
 ### Training 
-Assume that the behaviour of other high-order capabilities, including thier cooperation and competition, is trained through experience and hebbian learning. How does executive control apply training?
+Assume that the behaviour of other high-order capabilities, including their cooperation and competition, is trained through experience and hebbian learning. How does executive control apply training?
 
 Where executive control is involved, its involvement applies a training pressure too. For example, consider a habitual bad thought process that is actively inhibited by executive control. Based on the theory of hebbian learning, that reduction in firing leads to excitation weight reduction within brain regions associated with that capability.
 
@@ -196,7 +184,7 @@ Goal setting is as complex as many other processes. This complexity suggests tha
 1. identification of need for goal selection,
 2. generation of one or more possible goals,
 3. evaluation of their relative merit,
-4. committment to a selected goal, 
+4. commitment to a selected goal, 
 5. monitoring of progress, 
 6. termination of goal (eg: when completed or failed), and
 7. overall process governance.
@@ -219,16 +207,95 @@ Some areas for further research to elucidate the processes here better include:
     * What theories have been implemented in AI settings?
 
 
+# Distributed Architecture
+
+Biology does not build architectures with neat and discrete separations between components. Our understanding of how the brain processes information is still very limited. Contrary to past assumptions about functional specialisation, a growing body of research is revealing some aspects of how any given function is a result of interactions across multiple brain areas (Postle B. R., 2016). One area however, the Prefrontal Cortex (PFC), is still believed to play an more specific role: that of controlling overall behaviour for the "Central Executive" functions (Postle B. R., 2016).
+
+Other research, in particular [Adaptive Resonance Theory (ART)](https://en.wikipedia.org/wiki/Adaptive_resonance_theory), has found and proposed the importance of synchronized cyclic behaviours. These are produced between higher and lower levels through mutual feedback loops controlled by excitatory and inhibitory signals going in both directions.
+
+A plausible interpretation of all this is that: i) the biological architecture of the human brain creates behaviour through distributed processing across multiple regions; ii) the behaviour is also significantly governed by highly co-dependent cross-talk between those regions; iii) that no one region has full overarching control; and iv) that of the various regions involved in executive control, the PFC probably has slightly greater overarching control than the others.
+
+This is depicted as follows:
+
+![pfc cooperation](files/Biological-basis-for-proto-AGI-pfc-cooperation.png)
+
+## Unification of Theories
+
+A number of different theories, when seen together, are beginning to produce a cohesive theory of brain function at the low-level. These theories roughly follow three streams of thought:
+
+* Replicated units
+    * These theories hold that most regions of the brain have the same underlying low-level architecture, and that this architecture is made up of repeated units. Therefore the connectivity between regions is the only reason why different regions are more closely associated with different functions.
+    * The most common example of this theory is that of [cortical columns](https://en.wikipedia.org/wiki/Cortical_column), first proposed by Vernon Mountcastle. In his theory, the neocortex is composed of approximately 150K columns, with each having a cross-section of about 1mm^2 and containing about 100K neurons (_tbd: citation_).
+* Predictive coding
+    * [Predictive coding](https://en.wikipedia.org/wiki/Predictive_coding) holds that the brain is continually predicting its environment, that actual input signals produce a prediction error, and that the prediction error is used to update its prediction.
+    * Sense interpretation is the classic example of this. Further research has suggested that the same mechanism may be used for other purposes that we would not traditionally think of as a prediction problem - for example, motor control.
+* Distributed behaviour through Competition
+    * These theories hold that behaviour is not governed top-down by a central point of control. Rather, behaviour is the outcome of the collaboration of many independent systems, and that most collaboration is competitive in nature.
+    * This was first proposed as the [Biased Competition Theory](https://en.wikipedia.org/wiki/Biased_Competition_Theory) of the brain.
+    * This theory takes on even more prominence when one remembers that, unlike for modern AI neural networks, the [neural coding](https://en.wikipedia.org/wiki/Neural_coding) architecture of biological neurons does not require them to always produce an output signal. 
+    
+These three streams of thought are not just mutually compatible; they build on each other to produce a unified view of brain function. This unified theory states that the main bulk of the brain mass is a largely homogeneous mass of repeated predictive coding units; that regions of this mass take on functional domains as a result of high-level course-grained connectivity patterns; and that behaviour is a distributed collaboration across brain regions, mediated through mutual competition.
+
+I would make the claim that the above represents our best starting point for understanding and replicating brain behaviour. But I would also add some further enhancements that I'm certain will become more significant as we gain a more accurate understanding:
+* That small heterogeneous variations will be found across different brain regions. These will be the result of evolutionary processes that modify both the low-level and high-level connectivities. For example, they will lead to different biases in the low-level, representing evolutionarily learned priors. (The [cortical columns](https://en.wikipedia.org/wiki/Cortical_column) wikipedia article discusses a number of such heterogenities already discovered.)
+* That some brain regions will still be found to have distinct functional purposes, eg: the Thalamus.
+* That behaviour has different levels of centralisation vs decentralisation, depending on various factors such as attention and the state of the sympathetic nervous system.
+
+On the last point, I believe that the behaviour can be attributed roughly to one of three modes:
+1. Executive Control Mode
+    * This is the most "self-actualised" behaviour that only occurs when attention specifically activates it.
+    * The high-level choice of behaviour is primarily centralised; governed by explicit conscious thought.
+    * Fine-detailed aspects of that behaviour is usually still driven through distributed mechanisms. However, aspects of fine-detailed behaviour may be overridden by centralised control.
+2. Default Mode
+    * The majority of behaviour occurs from this mode.
+    * The high-level choice of behaviour is achieved without explicit conscious thought, and is the result of distributed competition.
+    * In terms of competitive forces, this is the weakest of the modes. It easily gives way to commands from either executive control or the sympathetic nervous system.
+3. Fight or Flight Mode
+    * Here the sympathetic nervous system gains the primary control over behaviour, usually only for a short period of time.
+    * The high-level choice of behaviour is primarily centralised.
+    * Aspects of fine-detailed behaviour are also centralised, driven by the sympathetic nervous system.
+
+## Replicated units
+
+Some of the most concrete low-level theories of brain activity treat the neocortex as a largely uniform mosaic of replicated units. Simulations based on such principles have produced very good replications of observed behaviour. Further to that, some research suggests that the 6-layer neocortex evolved by replicating and stacking the 3-layer hippocampus with the piriform cortex (Jarvis _et al._, 2005; Luzatti, 2015), which further explains the uniformity of low-level architecture.
+
+_tbd_: also see ideas talked about here:
+* https://www.slideshare.net/numenta/location-location-location-a-framework-for-intelligence-and-cortical-computation
+
+A small sample of simulations and applications to AI include:
+* **capsules** (_citation needed, see GLOM for references_).
+* **GLOM** (Hinton, 2021) - based on object recognition in vision
+* **The Thousand Brains Theory** (Hawkins, 2019) - based on grid-cells
+
+### Grid Cells
+A classic case is that of grid-cells, one of the most well understood cells in the brain. Regions of cells reliably fire in relation the organism's position within the environment. These cells form a grid. And multiple collections of cells from grids at different scales. In this way a position can be uniquely encoded through the combination of grid cells that are active at the time. 
+
+_(Image courtesy of wikipedia on [grid cells](https://en.wikipedia.org/wiki/Grid_cell))_
+
+![grid cells](files/grid-cells-autocorrelation.jpg)
+
+Each active cell exhibits an inhibitory signal radially outwards that weakens over distance. This leads to the intensity of activity coinciding with a stable triangular grid.
+
+_tbd_: good summary of background here:
+* https://www.slideshare.net/numenta/location-location-location-a-framework-for-intelligence-and-cortical-computation
+* https://deepmind.com/blog/article/grid-cells
+
+## Waves of activity
+Some such research has even replicated and given an explanation for the typical 10hz alpha waves seen in brain activity (Ananthaswamy, 2021). That research is based on the idea of the brain as a _predictive machine_, constructed as a multi-layered predictive network that combines top-down prediction with bottom-up error signals produces. It was found that such a network produces waves of signals that flow from bottom-to-top in the presence of a strong signal, and from top-to-bottom when an input signal is absent.
+
+The tell-tale triangular grid cell activity distribution is a result of regions of horizontal mutual inhibition across nearby space. It seems reasonable to theorise that the moving wave phenomenon is a result of similar mechanisms. In this case, the mutual inhibition spans across vertical layers. A wave could be produced if a layers (or group of layers acting together) alternates between agreement and disagreement with the layers immediately above and below.
+
+
 # Examples
 
-* Wilderbeast calves can [walk within minutes of their birth](https://en.wikipedia.org/wiki/Wildebeest#Breeding_and_reproduction). While many aspects of walking (muscle development, basic muscle control) can be developed while in the womb; there is no way that the complicated act of walking (coordinating motion, maintaining balance) can be learned from experience while in the womb. The systems involved with walking are very complex. Importantly, they cannot be governed by hard-wired basic signals - like for reflexes. They require the use of complex trained neural networks. Surely the only reasonable explanation here is that evolution has encoded the exact neural configuration (including synaptic strengths) into the DNA, for those systems that are required immediately upon birth.
+* Wildebeest calves can [walk within minutes of their birth](https://en.wikipedia.org/wiki/Wildebeest#Breeding_and_reproduction). While many aspects of walking (muscle development, basic muscle control) can be developed while in the womb; there is no way that the complicated act of walking (coordinating motion, maintaining balance) can be learned from experience while in the womb. The systems involved with walking are very complex. Importantly, they cannot be governed by hard-wired basic signals - like for reflexes. They require the use of complex trained neural networks. Surely the only reasonable explanation here is that evolution has encoded the exact neural configuration (including synaptic strengths) into the DNA, for those systems that are required immediately upon birth.
 
 
 # Building up a theory
 
 ## Low level motor control and senses
 
-During fetal development, the mammallian brain does not know about the existence of its limbs, nor about how to interpret the senses it receives. As it does not know about the existence of its limbs, it cannot intentionally attempt to move them and to use the observed error to train itself. It's a classic _chicken-and-egg_ problem problem. So how to bootstrap learning about limb movement (ie: motor control) and sense interpretation?
+During foetal development, the mammallian brain does not know about the existence of its limbs, nor about how to interpret the senses it receives. As it does not know about the existence of its limbs, it cannot intentionally attempt to move them and to use the observed error to train itself. It's a classic _chicken-and-egg_ problem problem. So how to bootstrap learning about limb movement (ie: motor control) and sense interpretation?
 
 One observation I made about my own child during their first few months is that their legs and arms flailed around a lot, seemingly without intent. Over time I observed that the flailing seemed to become more intentional. Eventually the flailing was altogether replaced by intentional controlled movement. It turns out that this flailing may have a definite purpose in bootstrapping development (citation needed), as it acts as a form of exploration of the motor control signal space, and simultaneously provides a source of data labelling to correlate with sense inputs.
 
@@ -268,11 +335,21 @@ To some extent though, you can learn to do that on auto-pilot. The simple act of
 
 # References
 
+Ananthaswamy, A. (2021). Psychedelics open a new window on the mechanisms of perception. Knowledgable Magazine. \[[Website](https://knowablemagazine.org/article/mind/2021/psychedelics-open-new-window-mechanisms-perception)\]
+
 Developmental Psychology, ch 4. Lumen Learning. https://courses.lumenlearning.com/suny-hccc-ss-152-1/chapter/physical-development/
 
 Dolan, R. J., & Dayan, P. (2013). Goals and habits in the brain. Neuron, 80(2), 312–325. https://doi.org/10.1016/j.neuron.2013.09.007
 
+Hawkins, J., Lewis, M., Klukas, M., Purdy, S., Ahmad, S. (2019). A Framework for Intelligence and Cortical Function Based on Grid Cells in the Neocortex. Front. Neural Circuits 12:121. https://doi.org/10.3389/fncir.2018.00121
+
+Hinton, G. (2021). How to represent part-whole hierarchies in a neural network. ArXiv. https://arxiv.org/abs/2102.12627
+
+Jarvis, E. D., Gunturkun, O., Bruce, L., Csillag, A. A., Karten, H. J., Kuenzel, W., et al. (2005). Avian brains and a new understanding of vertebrate brain evolution. Nat. Rev. Neurosci. 6, 151–159. https://doi.org/10.1038/nrn1606
+
 Lindsay, G. W. (2020) Attention in Psychology, Neuroscience, and Machine Learning. Front. Comput. Neurosci. 14:29. https://doi.org/10.3389/fncom.2020.00029. \[[Website](https://www.frontiersin.org/articles/10.3389/fncom.2020.00029/full)\]
+
+Luzzati, F. (2015). A hypothesis for the evolution of the upper layers of the neocortex through co-option of the olfactory cortex developmental program. Frontiers in Neuroscience. https://doi.org/10.3389/fnins.2015.00162
 
 McLeod, S. A. 2019, April 09. Sensorimotor stage. Simply Psychology. https://www.simplypsychology.org/sensorimotor.html
 
