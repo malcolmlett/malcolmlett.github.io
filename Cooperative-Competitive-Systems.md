@@ -157,7 +157,36 @@ Uses include:
 
 # A Review of Auto-Decoders
 
-Within the _Distributed Architecture_ section of [[Biological basis for proto AGI]], I suggest how the theories of predictive coding, replicated units, and distributed collaboration through competition create unified model of brain architecture.
+Within the _Distributed Architecture_ section of [[Biological basis for proto AGI]], I suggest how the theories of predictive coding, replicated units, and distributed collaboration through competition create a unified model of neocortex architecture.
+
+This suggests a need to review the design of auto-encoders within ANNs.
+
+_tbd_ - diagram: auto-encoder vs predictive encoder
+* structure
+* error propagation vs gradient descent learning
+
+## Predictive Encoder
+Let's propose a modified version of an auto-encoder, that we shall refer to as a _predictive encoder_
+
+_tbd_: probably already done - find existing research. eg: look at model used by research that simulated 10hz waves  (Ananthaswamy, 2021).
+
+_tbd_ - diagram
+
+## Motor control via predictive-encoders
+
+_tbd_ - diagram: both input and output of somatosensory as predictive coding networks.
+
+_tbd_ - discussion how to implement this via predictive-encoders
+
+source: Hawkins suggestion that _all_ somatosensory regions have both sense input and motor output.
+
+source: Active Inference discussion here https://en.wikipedia.org/wiki/Predictive_coding#Active_inference
+
+source: challenges discussed here https://en.wikipedia.org/wiki/Predictive_coding
+
+## Executive control thought via predictive-encoders
+
+_tbd_ - diagram and discussion: senses, motor control, and executive control as three prongs of predictive coding networks.
 
 
 # Future Enhancements
@@ -230,6 +259,8 @@ Of course, an open question affecting all this is how this supposed "maths funct
 
 
 # References
+
+Ananthaswamy, A. (2021). Psychedelics open a new window on the mechanisms of perception. Knowledgable Magazine. \[[Website](https://knowablemagazine.org/article/mind/2021/psychedelics-open-new-window-mechanisms-perception)\]
 
 Beck, D.M., Kastner, S. (2009). Top-down and Bottom-up mechanisms in biasing competition in the human brain. ‘’Vision Research, 49’’, 1154-1165.
 
