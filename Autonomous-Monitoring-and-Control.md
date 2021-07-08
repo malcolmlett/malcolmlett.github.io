@@ -575,11 +575,12 @@ The above provides a framework that supports far more advanced modelling methods
 * Aleatoric uncertainty, however, arises from the inherent stochasticities of a system, such as process noise, and noise in the method of state observation. As note by Chua _et al_ (2018), "without a way to distinguish epistemic uncertainty from aleatoric, an exploration algorithm (e.g. Bayesian optimization) might mistakingly choose actions with high predicted reward-variance ‘hoping to learn something’ when in fact such variance is caused by persistent and irreducible system stochasticity offering zero exploration value."
 * Thus the active inference exploration algorithm benefits from explicitly identifying whether uncertainties are aleatoric or epistemic. For example, Chua _et al_ (2018) propose a solution for that via ensemble models. They are able to measure epistemic uncertainties by differences across models, and aleatoric uncertainties through explicit data variance modelling within each model.
 
-**Multi-system Cooperation**:
-* Building in some mechanism for the architecture to support multiple systems of processing (eg: habitual action vs planning, habitual prediction vs bayesion inference, memory interactions), and to enable cooperative / competitive interactions.
+**Distributed Multi-system Collaboration**:
+* A distributed multi-system collaboration through competition, based on biology, is discussed within [[Cooperative Competitive Systems]]. But its distributed nature creates a fundamentally unstable dynamic. This is thus a huge motivation for understanding and designing a centralised autonomous monitoring and control system, for its ability to provide a stabilising force.
+* However, the learnings from the distributed architecture discussion is that very few brain processes are truly central. It must be assumed that AMC is distributed in nature too. Thus, the bigger question becomes how AMC can be integrated into a distributed system, while still providing the necessary stabilising force.
+* Understanding how to construct a distributed multi-system architecture is also necessary when considering the need to emulate multiple systems of processing - eg: habitual action vs planning, habitual prediction vs bayesion inference, memory interactions.
 * Learning, in particular, can get much harder in this architecture.
 * So it needs a solid theoretical foundation.
-* See [[Cooperative Competitive Systems]] for an exploration of this.
 
 # References
 

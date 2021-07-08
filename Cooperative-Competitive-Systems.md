@@ -161,16 +161,14 @@ Within the _Distributed Architecture_ section of [[Biological basis for proto AG
 
 This suggests a need to review the design of auto-encoders within ANNs.
 
-_tbd_ - diagram: auto-encoder vs predictive encoder
-* structure
-* error propagation vs gradient descent learning
+![autoencoder vs biology](files/Cooperative-competitive-systems-autodecoder-vs-biology.png)
 
 ## Predictive Encoder
 Let's propose a modified version of an auto-encoder, that we shall refer to as a _predictive encoder_
 
 _tbd_: probably already done - find existing research. eg: look at model used by research that simulated 10hz waves  (Ananthaswamy, 2021).
 
-_tbd_ - diagram
+![predictive encoder](files/Cooperative-competitive-systems-predictive-encoder.png)
 
 ## Motor control via predictive-encoders
 
