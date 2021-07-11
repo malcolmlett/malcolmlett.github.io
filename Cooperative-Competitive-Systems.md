@@ -155,7 +155,7 @@ Uses include:
 ![evaluation loop](files/Cooperative-competitive-systems-evaluation-loop.png)
 
 
-# A Review of Auto-Decoders
+# A Review of Auto-Encoding
 
 Within the _Distributed Architecture_ section of [[Biological basis for proto AGI]], I suggest how the theories of predictive coding, replicated units, and distributed collaboration through competition create a unified model of neocortex architecture.
 
@@ -163,28 +163,47 @@ This suggests a need to review the design of auto-encoders within ANNs.
 
 ![autoencoder vs biology](files/Cooperative-competitive-systems-autodecoder-vs-biology.png)
 
-## Predictive Encoder
-Let's propose a modified version of an auto-encoder, that we shall refer to as a _predictive encoder_
+ANN auto-encoders generate a prediction error at the last layer of the decoder block, and use backpropagation to train all other layers. In biological predictive coding, the encoder and decoder work in parallel. At each layer, the decoder produces a prediction and an error signal from the encoder inhibits false prediction output. So biological predictive coding produces error signals at each individual layer, rather than only at the final output, and thus produces more detailed error signals.
 
-_tbd_: probably already done - find existing research. eg: look at model used by research that simulated 10hz waves  (Ananthaswamy, 2021).
+Now put that into context with hebbian learning: the idea that correlated activity between pairs of neurons increases the firing efficiency of the synapse; or, in other words, increases the connection weight. If a neuron within the prediction pathway produces a false output, the signal's strength will be subsequently reduced through an additional inhibitory input from the encoding pathway. If on average the neuron tends to produce false output and is inhibited, then over time its synaptic weight should be reduced. Conversely, the synaptic weight should increase over time if it tends to produce accurate results. Additionally, the same effect should apply to the decoder pathway.
+
+In effect, the pairing of encoder and decoder pathways produce similar signals to that of backpropagation. This suggests that an ANN autoencoder with backpropagation learning is analogous to predictive coding combined with hebbian learning. This is backed up by a small amount of research in the area (Marino, 2020; Melchior & Wiskott, 2019).
+
+For further research:
+* structure of excitation and inhibition networks in brain
+* look at the model used by research that simulated 10hz waves (Ananthaswamy, 2021).
+* there must be more research comparing autoencoders with predictive coding networks.
+
+## Predictive Encoder
+For the purpose of use as an ANN, let's propose a modified version of an auto-encoder, that we shall refer to as a _predictive encoder_.
 
 ![predictive encoder](files/Cooperative-competitive-systems-predictive-encoder.png)
 
+Some variables remain to be refined:
+* Is an error signal computed as the difference between encoder and decoder pathways? Or is the encoder output merely fed directly into the decoder?
+* Assuming an error signal is computed, which side does the computation? (Knowledge of excitation/inhibition circuits in the brain may give advice on this).
+* Are lateral connections purely horizontal (ie: between same layers), diagonal (ie: between diagonally adjacent layers), or a mixture of both?
+* How to resolve the timing problem of ordering between bottom-up and top-down signals? (Some inspiration can be taken from models of the 10hz waves (Ananthaswamy, 2021), but that may not be sufficient).
+
 ## Motor control via predictive-encoders
 
-_tbd_ - diagram: both input and output of somatosensory as predictive coding networks.
+It has been suggested that all somatosensory regions have both sense input and motor output (Hawkins, 2018). What if these are all architected as predictive coding networks? What might this look like as an ANN solution using predictive encoders?
 
-_tbd_ - discussion how to implement this via predictive-encoders
+![predictive encoder for motor control](files/Cooperative-competitive-systems-pe-for-motor-control.png)
 
-source: Hawkins suggestion that _all_ somatosensory regions have both sense input and motor output.
-
-source: Active Inference discussion here https://en.wikipedia.org/wiki/Predictive_coding#Active_inference
-
-source: challenges discussed here https://en.wikipedia.org/wiki/Predictive_coding
+For example, the theory of _active inference_ re-frames motor control as "descending proprioceptive predictions" ([wikipedia](https://en.wikipedia.org/wiki/Predictive_coding#Active_inference)).
 
 ## Executive control thought via predictive-encoders
 
-_tbd_ - diagram and discussion: senses, motor control, and executive control as three prongs of predictive coding networks.
+If somatosensory regions can all be explained as predictive coding networks, then what about executive control, aka _thought_? It is harder to conceive of what exactly the sense inputs and predictions are, but it seems likely that executive control is indeed a predictive coding network.
+
+Thus, somatosensory, proprioceptive, and _cerebro_ceptive systems would be treated as three prongs of a repeated high-level architecture:
+
+![predictive encoder for executive control](files/Cooperative-competitive-systems-pe-for-executive-control.png)
+
+## Challenges
+
+Predictive coding theory is not yet proven. For a good discussion of challenges, see [wikipedia](https://en.wikipedia.org/wiki/Predictive_coding#Challenges).
 
 
 # Future Enhancements
@@ -264,11 +283,17 @@ Beck, D.M., Kastner, S. (2009). Top-down and Bottom-up mechanisms in biasing com
 
 Desimone, R., Duncan, J. (1995). Neural Mechanism of Selective Visual Attention. Annual Review of Neuroscience, 18, 193-222.
 
+Hawkins, J. (2018). Location, Location, Location - A Framework for Intelligence and Cortical Computation. Johns Hopkins APL Colloquium Series. \[[Video](https://numenta.com/resources/videos/jeff-hawkins-johns-hopkins-apl-talk/)\]. \[[Slides](https://www.slideshare.net/numenta/location-location-location-a-framework-for-intelligence-and-cortical-computation)/]
+
 Hawkins, J., Lewis, M., Klukas, M., Purdy, S., Ahmad, S. (2019). A Framework for Intelligence and Cortical Function Based on Grid Cells in the Neocortex. Front. Neural Circuits 12:121. https://doi.org/10.3389/fncir.2018.00121
 
 Hinton, G. (2021). How to represent part-whole hierarchies in a neural network. ArXiv. https://arxiv.org/abs/2102.12627.
 
 Lindsay, G. W. (2020). Attention in Psychology, Neuroscience, and Machine Learning. Front. Comput. Neurosci. 14:29. https://doi.org/10.3389/fncom.2020.00029.
+
+Marino, J. (2020). Predictive Coding, Variational Autoencoders, and Biological Connections. https://arxiv.org/abs/2011.07464
+
+Melchior, J., Wiskott, L. (2019). Hebbian-Descent. https://arxiv.org/abs/1905.10585
 
 Postle, B. R. (2016). How does the brain keep information "in mind"?. Current directions in psychological science, 25(3), 151–156. https://doi.org/10.1177/0963721416643063.
 

@@ -11,7 +11,7 @@ To make sense of this, we'll first look at a scenario where one agent (the _cont
 # Anecdote
 Consider the following anecdote:
 
-> A research assistant is hired by a professor to help run training experiments against a lab mouse. The mouse is in a training environment, with some aspects of the environment able to be modified. The professor provides a small collection of tools that can be used to variously provide positive and negative rewards to a mouse. However, the professor gives no clear objectives, nor do they give any instructions on how best to train mice. The professor mentions that they'll pop in occassionally to provide further guidance, but in practice the assistant finds that the professor only provides very vague and sparse feedback. Left to their own devices, the assistant decides to make up tasks and to attempt to train the mouse to efficiently action those tasks.
+> A research assistant is hired by a professor to help run training experiments against a lab mouse. The mouse is in a training environment, with some aspects of the environment able to be modified. The professor provides a small collection of tools that can be used to variously provide positive and negative rewards to a mouse. However, the professor gives no clear objectives, nor do they give any instructions on how best to train mice. The professor mentions that they'll pop in occasionally to provide further guidance, but in practice the assistant finds that the professor only provides very vague and sparse feedback. Left to their own devices, the assistant decides to make up tasks and to attempt to train the mouse to efficiently action those tasks.
 >
 > In the absence of any detailed information, the assistant must start by making guesses for a number of important things, and aim to observe and to improve those guesses over time:
 > * **Environment:** the assistant knows that the mouse will operate within a set environment, and that they can modify that environment to some extent, but they do not what changes are possible.
@@ -29,7 +29,7 @@ Consider the following anecdote:
 
 Some specific aspects of this anecdote are worth elaborating:
 * **Priors:** the assistant's initial guesses are priors. And the observations that they make, and posterior likelihoods that they calculate, will enable them to adjust those priors over time. In some cases, such as with the different positive and negative reward options, the assistant will probably assign equal prior likelihood to each option. In an evolutionary setting, where the assistant is an organism's autonomous monitoring and control system, those priors will be shaped by evolution.
-* **Primitive mechanisms:** the mouse itself is embued with some _primitive_ self-learning mechanisms, and the assistant may make assumptions about the existence of those primitive mechanism or infer their existence through observation. Such primitive mechanisms may, for example, include: minimising effort, avoiding injury, hunger/satiation reward association.
+* **Primitive mechanisms:** the mouse itself is imbued with some _primitive_ self-learning mechanisms, and the assistant may make assumptions about the existence of those primitive mechanism or infer their existence through observation. Such primitive mechanisms may, for example, include: minimising effort, avoiding injury, hunger/satiation reward association.
 * **Hindsight:** the assistant will not know the most efficient way for a mouse to carry out a task, and initially will make guesses about that. Having observed a mouse perform a task, the assistant will be able to update their assumptions, and thus may use their "in hindsight" (posterior) model when determining the reward.
 * **Modelling:** there is plenty of avenue in here for very complex hierarchical and classification-based models to be built up over time. Complex models can be used to predict the behaviour of the mouse given different stimuli, and for what training methods are appropriate across different scenarios. Complex models can also be build up to represent the professor's objectives.
 
@@ -152,7 +152,7 @@ In order to begin to break that down, let's first assume that goals are just sel
 |Current selection|Objective states|Seen states|Unseen states|No goal|
 |---|---|---|---|---|
 |Stay with current goal.|Pick a goal based on current best interpretation of controller environment objective. May be a previously seen state or a predicted unseen state.|Pick a goal out of set of past observed states. Includes states that did/did not produce a reward when last observed. Based on prior, may still consider there to be a possibility of future reward in a given state.|Stochastically generate new hypothetical state value as goal, somehow based on belief about plausible state values.|"Free play". For a period of time, select no goal and allow target to explore unencumbered from any interference by controller.|
-|Expectation of controller reward based on prior belief about benefit of goal, plus current trajectory|Expectation of reward based on model of objective and associated reward.|Expectation of reward based on past observations about reward at that state, plus belief in variability of rewards.|Expectation of reward based on belief about possibility of reward at previously unseen states, plus belief in achievability of target reaching the state.|Expectation of reward based around likelihood of encountering previously unseen states, and certainty of those new states being acheivable.|
+|Expectation of controller reward based on prior belief about benefit of goal, plus current trajectory|Expectation of reward based on model of objective and associated reward.|Expectation of reward based on past observations about reward at that state, plus belief in variability of rewards.|Expectation of reward based on belief about possibility of reward at previously unseen states, plus belief in achievability of target reaching the state.|Expectation of reward based around likelihood of encountering previously unseen states, and certainty of those new states being achievable.|
 | | |Lower chance of discovering new rewards.|Chance of discovering states not otherwise likely to be encountered.|Highest likelihood of discovering new states.|
 | | |Higher chance of reproducing past controller rewards (good and bad).|Chance of encountering new rewards along with those new states.|Chance of encountering new rewards along with those new states.|
 
@@ -178,7 +178,7 @@ The sampled possible goal states will include:
 * items from the set of past observed states, and
 * a random sample from a model of the state space (to generate previously unobserved states).
 
-Where a stochastic model is available, the sampling should be taken from that distribution, in order to increase the likelihood of picking goals with higher expected value. Some mechanism will be required in order to record a represenattion of past states while avoiding storing every single individual state ever observed. And some sort of model of all possible states will be needed too.
+Where a stochastic model is available, the sampling should be taken from that distribution, in order to increase the likelihood of picking goals with higher expected value. Some mechanism will be required in order to record a representation of past states while avoiding storing every single individual state ever observed. And some sort of model of all possible states will be needed too.
 
 ## Goal Benefit Modelling
 Goals are measured in terms of the benefit to the controller. eg:
@@ -238,7 +238,7 @@ Costs primarily associated with the target include:
 ### State-state transition cost problem
 What is the cost of executing a trajectory of actions in order to transition from one state to another? For example to transition from the target's current state to the goal state?
 
-If state solely represents coordinates in 2D or 3D space, then simple euclidean equations can be used as a basis for accurate calculation of cost. But our state is likely to combine multiple independent components into a single multi-dimensional vector, and the relative costs of changes in different parts of that state vector will vary. For example, the cost of quickly jumping one metre forward and backward several times may be significantly more (in terms of effort and tiredeness) than spinning on the spot and moving a hand from one position to another one metre apart several times within the same time frame. And the cost of shifting the point of focus for the eyes several times between two points 500 metres apart is significantly less again.
+If state solely represents coordinates in 2D or 3D space, then simple euclidean equations can be used as a basis for accurate calculation of cost. But our state is likely to combine multiple independent components into a single multi-dimensional vector, and the relative costs of changes in different parts of that state vector will vary. For example, the cost of quickly jumping one metre forward and backward several times may be significantly more (in terms of effort and tiredness) than spinning on the spot and moving a hand from one position to another one metre apart several times within the same time frame. And the cost of shifting the point of focus for the eyes several times between two points 500 metres apart is significantly less again.
 
 Furthermore, it is unlikely that the state representation has anything even resembling a euclidean space even when looking at only specific components of the state representation. It's more likely to be non-linear and have complex interactions across different components of the state representation.
 
@@ -343,12 +343,12 @@ Within commercial software development practices today it is common to break a l
 
 ![honeypots-vs-jackpots](files/Autonomous-monitoring-and-control-honeypot-vs-jackpot.png)
 
-So there must be an ideal balance between expolation and exploitation. If we could model the problem sufficiently we would probably find that some sort of tuning parameter would fall out that we could adjust to reflect our _a priori_ assumptions about that ideal balance.
+So there must be an ideal balance between exploration and exploitation. If we could model the problem sufficiently we would probably find that some sort of tuning parameter would fall out that we could adjust to reflect our _a priori_ assumptions about that ideal balance.
 
 It's informative to note this same tuning problem occurs for humans, and (perhaps simplistically) it would appear that we see this in the variation of different individual's risk-taking vs risk-averse behaviours. For humans, however, there is a mechanism in play that helps convergence towards a narrower range than would otherwise occur. Individuals learn from others by consciously and subconsciously comparing themselves to others. They take note of those others' relative better successes or worse failures, and adjust their own risk taking profile as a result. Effectively, this mechanism leverages a population level sampling effect for the benefit of the individual. Of course, there are also genetic factors at play.
 
 ### Cost limit
-A first step can be to define a limit on acceptable cost accrual. Let's assume that cost is measured on the same scale as reward, so that we can measure them as separate values but compare them easily. We define the maximum acceptible cost accrual by stating that, within a specified time frame `t_it` (for "iteration" length), accumulated reward must exceed accumulated cost. Thus, in expectation, we require:
+A first step can be to define a limit on acceptable cost accrual. Let's assume that cost is measured on the same scale as reward, so that we can measure them as separate values but compare them easily. We define the maximum acceptable cost accrual by stating that, within a specified time frame `t_it` (for "iteration" length), accumulated reward must exceed accumulated cost. Thus, in expectation, we require:
 
 * `E[Σr - Σc] > 0` over time period `t_it`
 
@@ -466,7 +466,7 @@ _tbd_
 
 For RMC, the controller and target were independent agents with distinctly different architectures and processes. We now turn to _Autonomous Monitoring and Control_ (AMC), where a single agent incorporates its own controller in order to govern its own behaviours.
 
-In this scenario, the processes of controller and target may be overlayed upon each other, and upon a shared architecture.
+In this scenario, the processes of controller and target may be overlaid upon each other, and upon a shared architecture.
 
 ## Terminology
 
@@ -519,7 +519,7 @@ We don't know enough about how the brain functions in order to replicate that wi
 
 Types of AMC:
 * Independent AMC
-* Integrated AMC - Uses all same systems, in line with main action control pipeline. Shares same resources, including state (eg working menory) 
+* Integrated AMC - Uses all same systems, in line with main action control pipeline. Shares same resources, including state (eg working memory) 
 
 ## AMC learning
 
