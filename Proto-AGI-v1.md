@@ -14,6 +14,7 @@ This page makes reference to content within other pages:
 
 Also see:
 * [[Survey of Reinforcement Learning]]
+* [[Anecdotes for proto AGI]]
 
 ## Principles
 
@@ -23,7 +24,7 @@ It appears that the biological brain largely produces its complex behaviour thro
 The design for this AGI assumes centralised control.
 
 ### Convergence
-A multi-layered system like this will be inherently chaotc. So without explicit consideration it's chances of converging towards a stable and useful outcome are minimal.
+A multi-layered system like this will be inherently chaotic. So without explicit consideration it's chances of converging towards a stable and useful outcome are minimal.
 
 To counteract that the architecture must build in convergent forces that apply at multiple points. These will be applied across all layers, and across multiple time scales.
 
@@ -120,7 +121,7 @@ Now, there are a few gotchas here.
 
 1. Under the rules of probabilities, you cannot flip from `p(s'|s,a)` to `p(a|s,s')` without incorporating some a-prioris about `p(s')` etc.. In practice our approximation will be good enough given that we are only using this to bootstrap learning and we will use other processes to smooth out the errors.
 
-2. Jitter only enables us to observe `s'` for time `t+1`. But when we come to use this policy, goal `g` is quike likely only reachable at some `t+i` where `i > 1`, and our network hasn't received any training for that. For now we'll gloss over that issue with a foolish assumption that our network will generalise well enough to make reasonable guesses for the action at time `t` under those conditions. In the next section we'll use RL to train for `i > 1`.
+2. Jitter only enables us to observe `s'` for time `t+1`. But when we come to use this policy, goal `g` is quite likely only reachable at some `t+i` where `i > 1`, and our network hasn't received any training for that. For now we'll gloss over that issue with a foolish assumption that our network will generalise well enough to make reasonable guesses for the action at time `t` under those conditions. In the next section we'll use RL to train for `i > 1`.
 
 3. Even given that assumption, it is likely that we'll run into problems of overfitting causing bad guesses. The problem is that our network capacity is significantly higher than is needed for the sparse data received so far. In humans, the initial bootstrap learning likely occurs while the brain is still developing and is much smaller than its eventual size. Thus it has less neurons to overfit with and will generalise better. In current ML, we always use fixed size networks, so we will probably need to resolve the overfitting problem here somehow.
 
@@ -151,20 +152,20 @@ As our policy network produces deterministic continuous actions, we'll use the [
 The RL learning discussed here will be alternated with the jitter and supervised learning discussed above. Thus, the low-level MC policy will accurately learn `p(a|s(t),s(t+i)` for all of `1 <= i <= n`.
 
 ### Low level state representation
-How do we train the state representation that the sense intepretation network will output? In the complete architecture, the state representation will be used as input to higher level networks, and possibly the goal representation too. We don't yet know what kind of information the high level networks will require, so we have only a vague notion that the state representation needs to be useful. This can be clarified a little by stating that it must produce a high contrast of outputs for highly different inputs. We paraphrase this vague requirement as requiring the representation to have _high saliency_.
+How do we train the state representation that the sense interpretation network will output? In the complete architecture, the state representation will be used as input to higher level networks, and possibly the goal representation too. We don't yet know what kind of information the high level networks will require, so we have only a vague notion that the state representation needs to be useful. This can be clarified a little by stating that it must produce a high contrast of outputs for highly different inputs. We paraphrase this vague requirement as requiring the representation to have _high saliency_.
 
 There are a number of options available:
 
 **Back-prop pressure from layers above**
-* Depend entirely on training being applied at higher levels, with the back-propogation from that training applying a training pressure to the low level state interpretation network.
-* We want to encourage convergence across multiple layers, whereas this approach depnds entirely on the layer above forcing convergence, so it's not so great on its own.
+* Depend entirely on training being applied at higher levels, with the back-propagation from that training applying a training pressure to the low level state interpretation network.
+* We want to encourage convergence across multiple layers, whereas this approach depends entirely on the layer above forcing convergence, so it's not so great on its own.
 * Additionally, it means that activity that is triggered only within the low-level layer (eg: 'jitter' movements) will not apply any learning pressure.
 
-**Reservour computing**
-* In practice, provided the state interpretation network is initialised with random weights, its initial configuration will provide a meaningful usefulness of representation even without training. This is known as _reservior computing_, and its usefulness is proven and leveraged further in the theory of [Extreme Learning Machines](https://en.wikipedia.org/wiki/Extreme_learning_machine).
+**Reservoir computing**
+* In practice, provided the state interpretation network is initialised with random weights, its initial configuration will provide a meaningful usefulness of representation even without training. This is known as _reservoir computing_, and its usefulness is proven and leveraged further in the theory of [Extreme Learning Machines](https://en.wikipedia.org/wiki/Extreme_learning_machine).
 
 **Future state prediction**
-* Under a sort of adversarial network architecture, tee off the sense interpretation network againts a prediction network. The prediction network would predict the expected state on the next time step, based on the current raw sense inputs and motor control inputs. The error would be the difference between the outputs from two networks. Both networks would be trained against this error, so that they converge to the same representation.
+* Under a sort of adversarial network architecture, tee off the sense interpretation network against a prediction network. The prediction network would predict the expected state on the next time step, based on the current raw sense inputs and motor control inputs. The error would be the difference between the outputs from two networks. Both networks would be trained against this error, so that they converge to the same representation.
 * This approach alone will likely converge towards a 'zero representation', where all inputs lead to a zero output. That would be the easiest path to minimise the training loss. Additionally, assuming that the networks are randomly initialised with a distribution having mean zero, the shared loss will on average encourage both networks towards zero.
 * Thus it will need to be paired up with something to increase saliency. For example the 'gram matrix' used in the [neural style transfer](https://www.tensorflow.org/tutorials/generative/style_transfer) TensorFlow tutorial, or some other mutual-information metric.
 
@@ -179,7 +180,7 @@ There are a number of options available:
 * Like the prediction approaches above, autoencoders tee off two networks against each other. They use the idea that the sense-interpretation network from raw sense to higher level representation is an _encoder_, and thus there can exist a _decoder_ which does the opposite. By feeding the encoder output into the decoder, the final output should be something similar to the raw sense inputs.
 * VAEs are autoencoders with an additional regularization that ensures a smoother representation space. The intuition is that similar raw inputs should lead to similar encoded representations. However, in practice it has been observed that simple autoencoders produce chaotic results with similar raw inputs leading to very different encoded representations. So a regularization term is added to training to smooth that out.
 * This has an added bonus that the representation space now operates as a euclidean space and you can compute _distances_ between two state representations (Nair _et _al_, 2018).
-* The idea of pairing up a forward and a backward facing network seems to fit quite well with the [Adapative resonance theory](https://en.wikipedia.org/wiki/Adaptive_resonance_theory) of biological brains.
+* The idea of pairing up a forward and a backward facing network seems to fit quite well with the [Adaptive resonance theory](https://en.wikipedia.org/wiki/Adaptive_resonance_theory) of biological brains.
 
 I suspect that the best result is a combination of:
 * Variational autoencoders
@@ -386,9 +387,9 @@ A solution is to employ DIAYN at all levels, so that each higher-level layer can
 
 ![reward-layers](files/An-agi-architecture-v1-reward-layers.png)
 
-As each lower-level layer is also learning and changing its behaviour, the overal system will initially be highly chaotic. But the mechanisms applied to encourage convergence at each level indepedently will ultimately result in the whole system converging. That initial chaotic nature serves the highest level well as it executives a broad search for optimum policy. Primitive efficiency error will help to lead to smooth motion.
+As each lower-level layer is also learning and changing its behaviour, the overall system will initially be highly chaotic. But the mechanisms applied to encourage convergence at each level independently will ultimately result in the whole system converging. That initial chaotic nature serves the highest level well as it executives a broad search for optimum policy. Primitive efficiency error will help to lead to smooth motion.
 
-During this time, mental models are also being built up from observations. Eventually the executive control layer will start to produce stable goals and attempt to action them. The goals will initially be based on trying out existing mental models about past learned motol skills, but will later be more driven by goal exploration.
+During this time, mental models are also being built up from observations. Eventually the executive control layer will start to produce stable goals and attempt to action them. The goals will initially be based on trying out existing mental models about past learned motor skills, but will later be more driven by goal exploration.
 
 As goal driven exploration takes over, the DIAYN signal will reduce slowly towards zero. ie: reduced induced random noise and reduced RL loss signal from DIAYN algorithm.
 
@@ -481,7 +482,7 @@ How to measure utility of an explicit conscious feedback loop, vs just depending
 
 We want to prove that we've produced a worthwhile hierarchical RL solution. 
 
-The proposed architecture produces a representational hierarchy. But what about a temporal hierarchy? The time steps are still the same frequency at the lowest and highest levels of the architecture. But maybe the executive control layer copes anyway and produces the effect of a temporal hierarchy. An ideal world be if the executive policy just calculates the goal, based on past inputs, and holds that goal constant until it had been reached. In other words, that it feeds a conatant goal to the intermediate level. 
+The proposed architecture produces a representational hierarchy. But what about a temporal hierarchy? The time steps are still the same frequency at the lowest and highest levels of the architecture. But maybe the executive control layer copes anyway and produces the effect of a temporal hierarchy. An ideal world be if the executive policy just calculates the goal, based on past inputs, and holds that goal constant until it had been reached. In other words, that it feeds a constant goal to the intermediate level. 
 
 We wouldn't achieve much by trying to force that, but we can measure the extent to which it does or does not do that. Treat executive control's output vector as a euclidean space and measure distance to some fixed reference point. The value should be fairly consistent at the moment of achieving a goal, so take that as the reference point and compare the value at all other time steps to that reference. Do the same for all levels. If measuring across a sequence of goals, use that first reference point across all runs
 
