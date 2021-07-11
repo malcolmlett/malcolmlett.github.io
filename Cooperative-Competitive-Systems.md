@@ -148,11 +148,20 @@ Upon receiving a trigger signal, the buffer emits whatever last vector it receiv
 
 ## Evaluation Loop
 
+This template builds on others to create a complex behaviour involving a planner (may not be a NN) proposing a series of possible plans that are each reviewed until one is accepted. The template assumes an overarching iterative execution. The plans could be anything, including fine-detailed time-step by time-step actions, goal states, trajectories; however high-level plans such as goal states are likely to provide better abstractions than low-level motor control actions.
+
 Uses include:
 * goal selection within [[Autonomous Monitoring and Control]] (AMC).
 * planning
 
 ![evaluation loop](files/Cooperative-competitive-systems-evaluation-loop.png)
+
+### Variations
+
+Some variations include:
+* Simple inline reviewer: all processing happens in a single time step. No mechanism to handle longer running valuer or reviewer processes that may require iterations. No mechanism for inhibiting the planner from producing the same result again.
+* Add a buffer: now the reviewer can copy a one-off output from the planner into a buffer and review that multiple times over several iterations. Additionally, the planner can be inhibited from producing the same output again. Requires that the reviewer takes quite an active role in shuffling data around, without accidentally changing that data (eg: inhibition signal).
+* Multi-staged buffers: this takes advantage of primitive gates and buffers so that the reviewer only has to send binary control signals. The planner outputs into a buffer that subsequently immediately inhibits that same output from being generated again. The data from that buffer is only released upon a control signal from the reviewer. Additionally, the reviewer controls a gate and chooses whether to allow the planner's output to move to the output buffer. The exact mechanics of this pattern may require some further finessing, but the basic idea could prove useful.
 
 
 # A Review of Auto-Encoding
