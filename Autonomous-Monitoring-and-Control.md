@@ -482,6 +482,15 @@ Thus, for AMC, we will use the following terminology:
 * **Cost** - the cost experienced by the agent for an action or outcome, including opportunity cost.
 * **State** - as before, state is sub-divided into: environment state, external state, and internal state.
 
+### Architectural Options
+We don't know enough about how the brain functions in order to replicate that within an AI architecture. In fact, our AI architectures today appear vastly different in structure. Thus, we'll have to make our own decisions about what architecture can yield the best results.
+
+Types of AMC:
+* Independent AMC - AMC operates as its own component that doesn't share computational resources with the rest of the agent. Thus AMC doesn't have to compete for attention, simplifying the architecture.
+* Integrated AMC - Uses all same systems, in line with main action control pipeline. Shares same resources, including state (eg working memory). This is the topic of discussion within [[Cooperative Competitive Systems]] and is an open area for research. Unfortunately that area of research is not mature enough to be practical at this stage.
+
+For now, we shall focus on Independent AMC.
+
 ## External Reward
 
 ### Definition of external reward
@@ -501,7 +510,7 @@ Possible external rewards are numerous and vary with the kind of environment, ki
 * Physical features being added to or removed from the agent
 * Reduction in discomfort (ie: reduction in pain or other warning-sense signals)
     
-For some other interactions, it is less clear whether they represent external rewards, and they may need some further revisement later. For example:
+For some other interactions, it is less clear whether they represent external rewards, and they may need some further revision later. For example:
 * When an agent feeds itself from a backpack that it carries and in which it has previously stashed food. Further, if the agent previously obtained the food as an external reward, does that change the classification of the later interaction when the agent uses that to feed itself?
 
 ### Detection of external reward
@@ -511,15 +520,31 @@ As per the definition above of external reward, anything could be a reward if it
 
 ..._tbd_...
 
-## Architectural Options
+## Architecture
 
-..._tbd_...
+### Internal Reward
+Internal rewards will be based on a measure of expected cost. As per an RMC section above, rewards are calculated as 'change in estimated remaining cost to goal' minus 'accrued cost', and are emitted only when the certainty in the sign of the cost delta exceeds some configured minimum value. Estimated and accrued costs are initially calculated relative to the change in goal, and then relative to each last emitted reward.
 
-We don't know enough about how the brain functions in order to replicate that within an AI architecture. In fact, our AI architectures today appear vastly different in structure. Thus, we'll have to make our own decisions about what architecture can yield the best results.
+The emitted reward is the inferred _value_ (`v`) of the last `x` actions relative to the ideal trajectory for the goal `g`. It is based on three parameters:
+* `Σc_t..t+x` - the accumulated observations of the cost of actions from time `t` to `t+x`;
+* `c_g,t` the estimated trajectory cost at time `t` to reach the goal from state `s_t`; and
+* `c_g,t+x` the estimated trajectory cost at time `t+x` to reach the goal from state `s_t+x`.
 
-Types of AMC:
-* Independent AMC
-* Integrated AMC - Uses all same systems, in line with main action control pipeline. Shares same resources, including state (eg working memory) 
+Calculated as:
+* `v_x,g = E[c_g,t+x] - E[c_g,t] - Σc_t..t+x`
+
+### Cost
+Accrued cost to be calculated as:
+* _tbd_
+
+Estimated trajectory cost from state `s_1` to state `s_2`:
+* _tbd_
+
+Estimated goal cost based on:
+* estimated trajectory cost from current state to goal state
+* opportunity cost - to be included via empowerment algorithm
+* exploration/exploitation trade-off - to be included via active inference algorithm
+
 
 ## AMC learning
 
@@ -543,8 +568,10 @@ Alternatively, we could just accept the error margin but minimise it by discardi
 
 The above provides a framework that supports far more advanced modelling methods to be plugged in. This chapter looks at a few advancements that could be incorporated.
 
-**Feedback**:
-* Feedback provides a whole probability distribution, rather than a meaningless reward value that only makes sense relative to other rewards. Eg: "yes, you're doing well" vs "doesn't look like you'll be able to do this". And these can be used to directly update models. 
+**Communication**:
+* Communicated feedback provides a whole probability distribution, rather than a meaningless reward value that only makes sense relative to other rewards. Eg: "yes, you're doing well" vs "doesn't look like you'll be able to do this". And these can be used to directly update models. 
+* It also allows for far more interesting external tasks.
+* However, to really work, it needs a modelling mechanism beyond what we currently understand.
 
 **Planning**:
 * todo
@@ -581,6 +608,11 @@ The above provides a framework that supports far more advanced modelling methods
 * Understanding how to construct a distributed multi-system architecture is also necessary when considering the need to emulate multiple systems of processing - eg: habitual action vs planning, habitual prediction vs bayesion inference, memory interactions.
 * Learning, in particular, can get much harder in this architecture.
 * So it needs a solid theoretical foundation.
+
+**Visceral Loop**:
+* One goal for building a theory of AMC is to prove that it leads to the _visceral loop_ phenomenon. The simplistic reductionist architecture above is unlikely to achieve that. Reason being, the visceral loop is an artefact of a fully integrated distributed architecture. When the AMC process executes within the same system that also executes all other processes, then it becomes necessary to maintain a trajectory cache of recent thought so that the AMC process can access it post-hoc. And a effective attention mechanism is required in order to enable the AMC process to take over when needed.
+* So to fully emulate a visceral loop, this solution needs to be extended to an inline architecture.
+
 
 # References
 
