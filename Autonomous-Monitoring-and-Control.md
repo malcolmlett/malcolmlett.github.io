@@ -362,7 +362,14 @@ The issue here is an assumption of infinite time, once again. One solution is to
 ### Active inference
 Overall, I think we'll find that the active inference approach will cover much of the above.
 
-_tbd_: go into active inference in more detail. But maybe need to cover off further down when we combine goal value and cost model in more unified way.
+_tbd_
+
+Points of note:
+* If using active inference with MPC (model predictive control), explicit penalty for each step (in order to reward efficiency) may not be necessary, as the control algorithm selects Bayes-optimal action sequences (Sajid _et al_, 2021). If however using RL for habitual policy control, then may still require an inefficiency penalty.
+* Active inference works well to explore in the absence of explicit rewards and prior preferences in outcomes (Sajid _et al_, 2021). However, without those, it blindly achieves any terminal outcome (eg: falling into a hole) with equal probability as other outcomes. For an agent to "look after itself", it also needs to consider _empowerment_. We can probably even extend the mathematical representation of empowerment to consider both short term measures (eg: falling into a hole prevents all further choice over actions), and long term measures (eg: eat now or be too low in energy later).
+
+See: [[An Investigation of Active Inference]].
+
 
 ## Goal Indication
 
@@ -568,6 +575,9 @@ Alternatively, we could just accept the error margin but minimise it by discardi
 
 The above provides a framework that supports far more advanced modelling methods to be plugged in. This chapter looks at a few advancements that could be incorporated.
 
+**Structural Modelling**:
+* The ability to understand concepts and the relationships between things. Possibly pseudo-bayesian in nature but might not be. 
+
 **Communication**:
 * Communicated feedback provides a whole probability distribution, rather than a meaningless reward value that only makes sense relative to other rewards. Eg: "yes, you're doing well" vs "doesn't look like you'll be able to do this". And these can be used to directly update models. 
 * It also allows for far more interesting external tasks.
@@ -612,6 +622,23 @@ The above provides a framework that supports far more advanced modelling methods
 **Visceral Loop**:
 * One goal for building a theory of AMC is to prove that it leads to the _visceral loop_ phenomenon. The simplistic reductionist architecture above is unlikely to achieve that. Reason being, the visceral loop is an artefact of a fully integrated distributed architecture. When the AMC process executes within the same system that also executes all other processes, then it becomes necessary to maintain a trajectory cache of recent thought so that the AMC process can access it post-hoc. And a effective attention mechanism is required in order to enable the AMC process to take over when needed.
 * So to fully emulate a visceral loop, this solution needs to be extended to an inline architecture.
+
+
+# Benefits
+
+This section discusses some of the benefits of the approach discussed on this page.
+
+**Goals:**
+* First class understanding of goals enables a multi-goal solution.
+
+**Transfer Learning:**
+* One of the big steps forward for image processing ML was _transfer learning_, and RL has not had the benefit yet.
+* The architecture here enables the use of transfer learning.
+* For example: the ability to see a target and walk efficiently towards it. The target is determined by the dynamic goal. The ability to walk is a habitually learned module that takes the goal as an input. The ability to walk can be transferred.
+
+**Efficient blend of Model-free and Model-based Policy:**
+* Model based planning is computationally intensive. Model-free action policies are computationally efficient, freeing up computational resources for other things. Additionally, model-free policies tend to converge to smoother and more accurate movements than possible via model-based action.
+* The AMC architecture blends model-based and model-free action that leverages their relative strengths, and frees up computational resources for other things.
 
 
 # References

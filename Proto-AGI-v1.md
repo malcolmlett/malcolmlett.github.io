@@ -15,6 +15,7 @@ This page makes reference to content within other pages:
 Also see:
 * [[Survey of Reinforcement Learning]]
 * [[Anecdotes for proto AGI]]
+* [[An Investigation of Active Inference]]
 
 ## Principles
 
