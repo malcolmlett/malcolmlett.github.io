@@ -4,17 +4,22 @@
 
 # Abstract
 
-_tbd_
+Shows that any sufficiently advanced processing system requires loopy processing, which requires regulation, which requires a self-model, and that this structure can lead to self-referential conclusions about an agents own mental faculties and their involvement in its own agency.
 
 # Introduction
 
 Any computational system is limited in the complexity that it can handle within a single computational step. For embodied agents, this appears as a limit on the environmental complexity that they can sufficiently model and respond to within a single "time step" (citation needed). For more complex problems, multiple steps of processing are required in order to determine the next physical action. Such multiple processing steps may entail, for example, further analysis of the environment in order to better model its state; or it may entail action planning over multiple iterations.
 
-In biology, this provides an option for evolutionary pressures to trade off between a more complex brain and a simpler one that takes longer to make decisions.
+In biology, this provides an option for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that takes longer to make some decisions.
 
-According to the _good regulator theory_ (citation needed), and as the most promising AI models today are showing (citationS needed), in order for an agent to operate within a complex environment, it must model that environment (citation needed). Additionally, if an embodied agent has complex actions, it must model its body (citation needed).
+According to the _good regulator theorem_ (citation needed), and as the most promising AI models today are showing (citationS needed), in order for an agent to operate within a complex environment, it must model that environment (citation needed). Additionally, if an embodied agent has complex actions, it must model its body (citation needed).
 
-Agents that incorporate multi-step processing have a second kind of action: one that changes its internal state only, without affecting its physical state. In humans, we call this "thought". Agents with such _non-physical actions_, thus must additionally model their non-physical self.
+Agents that incorporate multi-step processing have a second kind of action: one that changes its internal data state without affecting its physical state. In humans, we call this "thought". Agents with such _non-physical actions_, thus must additionally model their non-physical self. <<tbd: this argument is still a little weak>>.
+
+In order for an agent to model its non-physical self, it requires direct access to the inputs, actions, and outcomes of that non-physical control. To understand this statement, consider the case of fluent aphasia, caused by damage to the Wernicke's area of the brain. Individuals with fluent aphasia can easily produce speech, but it is typically full of many meaningless words and often unnecessarily long winded. Wernicke's area is associated with language comprehension and, as such, provides a corrective mechanism during speech production in a neurotypical individual (_Wernicke's area_).
+
+
+tbd: also needed for corollary discharge?
 
 _tbd_: argue why needing a mental-schema also mandates needing direct awareness of thought.
 
@@ -48,8 +53,31 @@ During iteration 2, the agent makes a self-referential inference about its prior
 The agent has multiple sense inputs, most of which observe either the physical environment in which it exists, or observe its physical body. The agent's ability to observe its own non-physical actions counts as an additional sense input. During iteration 2, the agent explores its memory of its prior action, and produces an inference about that action; specifically, that the action was non-physical and sourced from within the agent's own processing capabilities. In other words, with reference to the agent's mind schema, the action was produced by its own mind schema...
 
 **Iteration 3**:
-_tbd_
+Iteration 3 thought takes that to the next level. The relationship itself becomes the input data that is further processed in relation to the mind schema. With sufficient thought in this category, one can conclude themselves as conscious.
 
+_tbd_: flesh out.
+
+# Formal Description of Visceral Loop
+
+Iteration 1:
+
+1. a sense input or some past state is processed, producing `t`: some output conclusion, decision, action, or intermediate logical step
+
+Iteration 2:
+
+2. prerequisite: `t` is present (in model)
+3. prerequisite: `t` is sourced from 'I' (as indicated through sense labeling)
+4. prerequisite: ∃ memory of producing `t` in past thought
+5. `t` is selected as focus of attention for processing, producing: i) fact of presence of `t`, and ii) relationship of `t` to 'I'
+
+Iteration 3:
+
+6. prerequisite: ∃ some a priori notion about consciousness or experience
+7. prerequisite: model contains i) fact of presence of `t`, and ii) relationship of `t` to 'I'
+8. `t` and its relationship to `I` is selected as focus of attention for processing, producing: "I am conscious of `t`"
+
+
+....
 
 
 Formally, the three iterations of the visceral loop can be represented using a mathematical notation that highlights the inputs to the function, and its result:
@@ -72,6 +100,13 @@ The visceral loop can be used to explain how someone concludes themselves as con
 # Summary and Conclusions
 
 _tbd_
+
+
+# References
+
+Conant, R. C., and Ashby, W. R. (1970). Every good regulator of a system must be a model of that system. Int. J. Systems Sci., vol. 1, No. 2, 89-97.
+
+Wernicke's area. (n.d.). In _Wikepedia_. https://en.wikipedia.org/wiki/Wernicke%27s_area. 
 
 
 ----
