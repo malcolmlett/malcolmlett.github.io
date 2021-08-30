@@ -12,12 +12,27 @@ Any computational system is limited in the complexity that it can handle within 
 
 In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that takes longer to make some decisions.
 
-The _good regulator theorem_ says that "every good regulator of a system must be a model of that system" (Conant & Ashby, 1970). A biological or artificial agent in a system must thus model that system in order to regulate its state within that system. An embodied agent with complex actions must also model its body in order to regulate its actions. This is seen in the brain as the _body schema_ (Proske & Gandevia, 2012).
+An agent that regulates its environment operates within a system described in Fig 1. The environment state `S_env` changes with some ambient dynamics `env dynamics`, and the agent performs action `A_env` against the environment in order to regulate it towards some target. The environment state outcome `O_env` is influenced by both `D_env(t)` and `A_env`. 
+    Fig 1:    
+    {diagram}
+    S_env + D_env(t) + A_env = O_env
+    {diagram}
 
-Agents that incorporate multi-step processing have an additional kind of action: one that changes its internal data state without affecting its physical state. In humans, we call this _thought_. Agents with such _non-physical actions_, thus must additionally model their non-physical self.
+According to the _good regulator theorem_, if the agent is to regulate the environment state it must be a model of the system (Conant & Ashby, 1970). Furthermore, we can say that the efficiency of the agent to regulate its environment depends on its accuracy in modelling the system. Errors in the accuracy of the model result in errors in the regulation of the system. For learning agents, those errors must be used to adjust the model. An agent that must regulate its external environment requires the tuple `<S_env, A, O_env>` in order to adjust its model.
 
-In order for an agent to model its non-physical self, it requires direct access to the inputs, actions, and outcomes of that non-physical control. To understand this statement, consider the case of fluent aphasia, caused by damage to the Wernicke's area of the brain. Individuals with fluent aphasia can easily produce speech, but it is typically full of many meaningless words and often unnecessarily long winded. Wernicke's area is associated with language comprehension and, as such, provides a corrective mechanism during speech production in a neurotypical individual (_Wernicke's area_).
+An embodied agent with complex actions requires an additional level of regulation. Not only must it regulate its external environment, it must also regulate its own physical state. This includes both maintaining homeostasis and controlling action. Such an agent thus operates in a system that additionally has body state `S_body` with ambient dynamics `D_body(t)`. The agent performs action `A_body` against its body, producing outcome `O_body`. Summarised as follows:
 
+    S_body + D_body(t) + A_body = O_body
+    
+The agent's actions are performed in order to regulate it towards some target, which is dynamically inferred based on its requirement for body homeostasis and for environment action `A_env`. Like for regulation of the environment, the agent requires a tuple `<S_body, A_body, O_body>` in order to train its model.
+
+Agents that incorporate multi-step processing have an additional kind of action: one that changes its internal data state without affecting its physical state. Importantly, as such _non-physical_ actions may not elicit any change to `S_body` or `S_env`, this system also requires regulation. Thus the agent has non-physical state `S_mind` with ambient dynamics `D_mind(t)`, and performs action `A_mind` producing outcome `O_mind`, summarised as follows:
+
+    S_mind + D_mind(t) + A_mind = O_mind
+    
+The agent's non-physical actions are performed in order to regulate towards some target, which is dynamically inferred based on its requirement for environment action `A_env`, body action `A_body`, and possibly for some form of non-physical homeostasis. Like for both the environment and body, the agent must train its model for regulation from a tuple `<S_mind, A_mind, O_mind>`.
+
+By way of example, consider the case of fluent aphasia, caused by damage to the Wernicke's area of the brain. Individuals with fluent aphasia can easily produce speech, but it is typically full of many meaningless words and often unnecessarily long winded. Wernicke's area is associated with language comprehension and, as such, provides a corrective mechanism during speech production in a neurotypical individual (_Wernicke's area_).
 
 # Visceral Loop
 
