@@ -10,22 +10,14 @@ Shows that any sufficiently advanced processing system requires loopy processing
 
 Any computational system is limited in the complexity that it can handle within a single computational step. For embodied agents, this appears as a limit on the environmental complexity that they can sufficiently model and respond to within a single "time step" (citation needed). For more complex problems, multiple steps of processing are required in order to determine the next physical action. Such multiple processing steps may entail, for example, further analysis of the environment in order to better model its state; or it may entail action planning over multiple iterations.
 
-In biology, this provides an option for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that takes longer to make some decisions.
+In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that takes longer to make some decisions.
 
-According to the _good regulator theorem_ (citation needed), and as the most promising AI models today are showing (citationS needed), in order for an agent to operate within a complex environment, it must model that environment (citation needed). Additionally, if an embodied agent has complex actions, it must model its body (citation needed).
+The _good regulator theorem_ says that "every good regulator of a system must be a model of that system" (Conant & Ashby, 1970). A biological or artificial agent in a system must thus model that system in order to regulate its state within that system. An embodied agent with complex actions must also model its body in order to regulate its actions. This is seen in the brain as the _body schema_ (Proske & Gandevia, 2012).
 
-Agents that incorporate multi-step processing have a second kind of action: one that changes its internal data state without affecting its physical state. In humans, we call this "thought". Agents with such _non-physical actions_, thus must additionally model their non-physical self. <<tbd: this argument is still a little weak>>.
+Agents that incorporate multi-step processing have an additional kind of action: one that changes its internal data state without affecting its physical state. In humans, we call this _thought_. Agents with such _non-physical actions_, thus must additionally model their non-physical self.
 
 In order for an agent to model its non-physical self, it requires direct access to the inputs, actions, and outcomes of that non-physical control. To understand this statement, consider the case of fluent aphasia, caused by damage to the Wernicke's area of the brain. Individuals with fluent aphasia can easily produce speech, but it is typically full of many meaningless words and often unnecessarily long winded. Wernicke's area is associated with language comprehension and, as such, provides a corrective mechanism during speech production in a neurotypical individual (_Wernicke's area_).
 
-
-tbd: also needed for corollary discharge?
-
-_tbd_: argue why needing a mental-schema also mandates needing direct awareness of thought.
-
-_tbd_: introduce body schema and mind schema.
-
-_tbd_: argue for hierarchical architecture.
 
 # Visceral Loop
 
@@ -108,6 +100,10 @@ Formally, the three iterations of the visceral loop can be represented using a m
 
 # Consciousness
 
+_tbd_: argue for hierarchical architecture.
+
+_tbd_: argue why needing a mental-schema also mandates needing direct awareness of thought.
+
 _tbd_
 
 If we ascribe phenomenal experience as a feeling, and recognise that feelings are just additional data input produced through heuristic predictions, then we see that a simulation of a visceral loop, that we intuit to have no phenomenal experience, is computationally indistinguishable from a biological visceral loop that we know to be accompanied by such phenomenon.
@@ -124,12 +120,16 @@ _tbd_
 
 # References
 
-Conant, R. C., and Ashby, W. R. (1970). Every good regulator of a system must be a model of that system. Int. J. Systems Sci., vol. 1, No. 2, 89-97.
+Conant, R. C., and Ashby, W. R. (1970). Every good regulator of a system must be a model of that system. Int. J. Systems Sci., vol. 1, No. 2, pp 89-97. https://doi.org/10.1080/00207727008920220. \[[Full Text](http://pespmc1.vub.ac.be/books/Conant_Ashby.pdf)\]
+
+Proske, U., and Gandevia, S. C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiological Reviews 2012 92:4, pp 1651-1697. https://doi.org/10.1152/physrev.00048.2011.
 
 Wernicke's area. (n.d.). In _Wikepedia_. https://en.wikipedia.org/wiki/Wernicke%27s_area. 
 
 
 ----
 # Discarded content
+
+tbd: also needed for corollary discharge?
 
 For example, many current artificial _reinforcement learning_ (RL) agents continually choose actions at a fixed rate of one (discrete or continuous) action per time step.
