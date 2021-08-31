@@ -117,12 +117,15 @@ Formally, the three iterations of the visceral loop can be represented using a m
 
 ...
 
-Let's first establish a baseline. I am unable to think of any rationale way in which I may consciously experience something and yet be unable to subsequently think about that experience. I would seem that being able to think about our conscious experiences is a fundamental component of consciousness. This is thus phrased as a claim, without further proof.
+Let's first establish a baseline. I am unable to think of any rationale way in which I may consciously experience something and yet be unable to subsequently think about that experience. I would seem that being able to think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
 
 Claim 1:
 * All conscious experience is subsequently available for further thought.
 
-Note that claim 1 does not require that all conscious experience is thought about; only that it is available for such thought.
+Claim 2:
+* All conscious experience can be knowingly thought about.
+
+Note that claim 1 does not require that all conscious experience is thought about; only that it is available for such thought. Claim 2 extends claim 1 in an important way that depends on the distinction indicated by the keyword _knowingly_. A processing system may process some data and produce a result from it, without being able to subsequently introspect any fact about that operation. Here, _knowingly_ is used to refer to a processor being able to subsequently introspect both the input and output, to know the causal relationship between, and to perform additional processing about the fact that it had performed that operation. Additionally, the act of performing that additional processing must itself be _knowable_.
 
 Theorem 1:
 * ...tbd better: what data is possible to enter visceral loop iteration 2 as inputs defines the maximum set of the content of conscious experience.
