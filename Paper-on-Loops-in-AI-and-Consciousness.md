@@ -118,44 +118,48 @@ Formally, the three iterations of the visceral loop can be represented using a m
 
 # Consciousness
 
-While the concept of the visceral loop may appear simple, it has important implications to understanding consciousness.
-
-Let's first establish a baseline. I am unable to think of any rationale way in which I may consciously experience something and yet be unable to subsequently think about that experience. Thus, it would seem that being able to think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
+While the concept of the visceral loop may appear simple, it has important implications to understanding consciousness. Let's first establish a baseline. I am unable to think of any rationale way in which I may consciously experience something and yet be unable to subsequently think about that experience. Thus, it would seem that being able to think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
 
 Claim 1:
 * All conscious experience is subsequently available for further thought.
 
 Claim 2:
-* All conscious experience can be knowingly thought about.
+* For all thought about conscious experience, the individual can identify that thought as being their own.
 
-Claim 1 is just a re-phrasing of the statements above. Note that it does not require that all conscious experience is thought about; only that it is available for such thought.
+Claim 3:
+* All thought about conscious experience is itself a conscious experience.
 
-Claim 2 requires some further explanation. Here _knowingly_ is defined as meaning that the individual i) has a conscious experience of such thought, and ii) knows that the thought came from them. This is in contrast to a processing system that may process some data and produce a result from it, without being able to subsequently introspect any fact about that operation. Claim 2 is inherently recursive: all thought about conscious experience is itself a conscious experience.
+Note that these claims do not assume that all conscious experience is thought about; only that it is available for such thought.
 
 Theorem 1:
-* ...tbd better: what data is possible to enter visceral loop iteration 2 as inputs defines the maximum set of the content of conscious experience.
+* what data is possible to enter visceral loop iteration 2 as input defines an upper boundary on the content of conscious experience.
 
 Proof:
+* In order for an individual to identify thought as being their own, they must have some beliefs about thought and how it relates to themselves as an individual entity. This is the mind schema of which iteration 2 is focused upon.
 * As per claims 1 and 2, all of conscious experience must be available for further thought and the individual must be able to identify that thought as their own. This requires the ability to process that thought in relation to one's own mind, which is characterised as visceral loop iteration 2.
+* Any supposed experience that is not available for input to iteration 2, is thus not a conscious experience.
 * For any given experience, one of three possibilities is true:
-    a) it is used as input to iteration 2 and thus becomes thought about.
+    a) it is used as input to an iteration 2 processing step.
     b) it is _possible_ for it to be used as input to iteration 2, but current attentional focus avoids that in favour of other processing.
-    c) it is not possible for it to be used as input to iteration 2 (eg: due to some incompatibility of structure or a lack of data path to iteration 2).
+    c) it is not possible for it to be used as input to iteration 2, eg: due to some incompatibility of structure or a lack of data path to iteration 2.
 * Both possibilities (a) and (b) satisfy the theorem. Possibility (c) fails on claim 2, and thus must not be a conscious experience.
+* Possibility (c) fails on claim 2 because the individual
 * 
-
-So an experience must either be thought about in relation to one's own mind, in which case it enters iteration 2 as input, or it must avoid being thought about in relation to one's own mind, in which case the individual is not aware of having had that experience.
-*
 * As conscious experience is characterised by the ability to think about that experience, and there is no experience that we cannot subsequently consciously think about, all of conscious experience must enter iteration 2 or otherwise it cannot be consciously experienced.
 
 
-
 Theorem 2:
-* ...tbd better: what data is possible to exit visceral loop iteration 2 as output defines wholly the content of conscious experience.
+* Inferences produced by visceral loop iteration 2 processing define wholly the content of conscious experience.
 
 Proof:
 * Theorem 2 can only be weakly proven under a further assumption: that there is no meta-physical processing or processing of other sorts via physics or algorithmic capabilities not currently known to modern science.
-* ...tbd better: the ability to think about something, and to know that you think about something requires a recursive ability to process that thing, and the knowledge of that thing, and the knowledge of knowing about that thing, and so forth. Thus data must exit iteration 2 and also exit iteration 3 in order for it to be knowingly consciously experienced. And, as a slight extension of claim 1, it is only consciously experienced if it is knowlingly consciously experienced.
+* An experience must either be thought about in relation to one's own mind, in which case it enters iteration 2 as input and an outcome is produced relating the experience to one's own mind, or it must avoid being thought about in relation to one's own mind, in which case the individual is not aware of having had that experience.
+* ...tbd better: the ability to think about something, and to know that you think about something requires a recursive ability to process that thing, and the knowledge of that thing, and the knowledge of knowing about that thing, and so forth. Thus data must exit iteration 2 and also exit iteration 3 in order for it to be knowingly consciously experienced. And, as a slight extension of claim 1, it is only consciously experienced if it is knowingly consciously experienced.
+
+Theorem 2 summarises the recursive nature of conscious experience.
+
+
+An example of Theorem 2 is where an event occurs that is potentially available for conscious experience, but it does not become an iteration 2 inference at the time. The individual may still have a memory of that past event, and upon recalling that past event may draw an iteration 2 inference about it, at which time it becomes a conscious experience.
 
 
 
