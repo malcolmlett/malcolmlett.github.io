@@ -42,32 +42,53 @@ This paper introduces the concept of a _visceral loop_ as a characterisation of 
 
 Let:
 * `E` be the agent's set of beliefs about the external world
-* `B` be the agent's set of beliefs about its own physical body (drawn from the body schema) and of bodies in general
-* `M` be the agent's set of beliefs about its own mind (drawn from the mind schema) and of minds in general
+* `B` be the agent's set of beliefs about its own physical body (drawn from the body schema) and of bodies in general, and if it has a concept of "I" then this set includes a belief that relates other body beliefs to "I"
+* `M` be the agent's set of beliefs about its own mind (drawn from the mind schema) and of minds in general, and if it has a concept of "I" then this set includes a belief that relates other mind beliefs to "I"
 * `f(..)` be the function executed by the agent on the specified inputs in order to draw inferences
+
+`M` can be thought of as an agent's "theory of mind", because it relates to not such itself but also its ability to predict the hidden mental state of others.
 
 **Iteration 1:**
 
-Given some sense input or past state `s`, and some resultant inference `x`, a processing step is characterised as visceral loop _Iteration 1_ if it is of the following form:
+Let `x` be an inference produced as the result of a processing step, such that it does not draw any reference to `M` (ie: if `x` is a value then `x ∉ M`, or if `x` is a relation of two values then `x = relation{a:b}` such that `a ∉ M` and `b ∉ M`, or if `x` is a relation involving a set then `x = relation{a:B}` such that `a ∉ M` and `B ⊄ M`). Given some sense input or past state `s`, a processing step is characterised as visceral loop _Iteration 1_ if it is of the following form:
 
-* `f(s, E U B) -> x`
+* `f(s, E ∪ B ∪ M) -> x`
 
 **Iteration 2:**
 
 Iteration 2 requires an agent to have sufficient representational capabilities to draw inferences that represent relations involving `M`. Given some prior inference `y`, a processing step is characterised as visceral loop _Iteration 2_ if it is of the following form, and the relation with respect to `M` is non-empty, and it can not be characterised as _Iteration 3_:
 
-* `f(y, M) -> relation{y:M}`
+* `f(y, E ∪ B ∪ M) -> relation{y:M}`
 
 
 **Iteration 3:**
 
 Iteration 3 likewise requires the agent can represent relations involving `M`. Given some prior inference `relation{z, M}`, and some belief `m ∈ M`, a processing step is characterised as visceral loop _Iteration 3_ if it is of the following form and the relation with respect to `M` is non-empty:
 
-* `f(relation{z:M}, M) -> relation{m:M}`
+* `f(relation{z:M}, E ∪ B ∪ M) -> relation{m:M}`
 
 
+Iteration 1 represents the most common kind of data processing, such as spending multiple processing cycles to refine the identification of something within the visual field. While an agent's mind schema may be used to control the thought process, the result of Iteration 1 never makes any reference to the agent's own mind schema.
+
+Iteration 2 processing steps draw conclusions that relate past conclusions to the agent's theory of mind. 
+
+..tbd.. examples...
 
 # Consciousness
+
+The visceral loop can be applied to understand the thought processes whereby an individual concludes themselves as conscious. Consider the following sequence of internal mental observations:
+1. "What's that red blob in the tree? Oh, it's an apple".
+2. "Oh, those thoughts just came from my mind, and not from the outside world".
+3. "That's what consciousness is. I am conscious".
+
+The first observation is a straightforward example of Iteration 1 that does not make any self-reference to the agent's theory of mind (of their own mind or of others).
+
+The second observation is an example of Iteration 2. However it is of specific form, whereby the individual produces an inference that identifies the source of the past thought in relation to their own mind schema (recall that this is a subset of `M`).
+
+The third observation is additionally a specific form of Iteration 3, whereby the individual produces an inference based on the prior specialisation of Iteration 2, and produces an inference as a statement of fact about their own mind-schema. In this observation, the resultant inference is in relation to some _a priori_ conception about consciousness in general.
+
+
+...tbd...segway properly...
 
 While the concept of the visceral loop may appear simple, it has important implications to understanding consciousness. Let's first establish a baseline. I am unable to think of any rationale way in which I may consciously experience something and yet be unable to subsequently knowingly think about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
 
