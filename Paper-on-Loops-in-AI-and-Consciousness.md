@@ -24,9 +24,9 @@ An embodied agent with complex actions requires an additional level of regulatio
 
     S_body + D_body(t) + A_body = O_body
     
-The agent's actions are performed in order to regulate it towards some target, which is dynamically inferred based on its requirement for body homeostasis and for environment action `A_env`. Like for regulation of the environment, the agent requires a tuple `<S_body, A_body, O_body>` in order to train its model.
+The agent's actions are performed in order to regulate it towards some target, which is dynamically inferred based on its requirement for body homeostasis and for environment action `A_env`. Like for regulation of the environment, the agent requires a tuple `<S_body, A_body, O_body>` in order to train its model. Neuroscience has identified such a model in mammals, known as the _body schema_ (Proske & Gandevia, 2012).
 
-Agents that incorporate multi-step processing have an additional kind of action: one that changes its internal data state without affecting its physical state. Importantly, as such _non-physical_ actions may not elicit any change to `S_body` or `S_env`, this system also requires regulation. Thus the agent has non-physical state `S_mind` with ambient dynamics `D_mind(t)`, and performs action `A_mind` producing outcome `O_mind`, summarised as follows:
+Agents that incorporate multi-step processing have a third kind of action: one that changes its internal data state without affecting its physical state. Importantly, as such _non-physical_ actions may not elicit any change to `S_body` or `S_env`, this system also requires regulation. Thus the agent has non-physical state `S_mind` with ambient dynamics `D_mind(t)`, and performs action `A_mind` producing outcome `O_mind`, summarised as follows:
 
     S_mind + D_mind(t) + A_mind = O_mind
     
@@ -34,87 +34,38 @@ The agent's non-physical actions are performed in order to regulate towards some
 
 By way of example, consider the case of fluent aphasia, caused by damage to the Wernicke's area of the brain. Individuals with fluent aphasia can easily produce speech, but it is typically full of many meaningless words and often unnecessarily long winded. Wernicke's area is associated with language comprehension and, as such, provides a corrective mechanism during speech production in a neurotypical individual (_Wernicke's area_).
 
+The need for a mind-regulating agent to model the behaviour of its mind suggests that it must incorporate a functional equivalent of the body schema, which this paper refers to as the _mind schema_. Other research has drawn similar conclusions (Graziano, 2017).
+
 # Visceral Loop
 
-This paper introduces the concept of a _visceral loop_ as a characterisation of processing within a looping biological or AI agent. The visceral loop is so named because it refers to an agent concluding that it experiences consciousness "in a visceral way". It identifies, at the most optimum, the three iterations of a processing loop required for an agent to make such a conclusion.
-
-Consider the following sequence of internal mental observations:
-1. "What's that red blob in the tree? Oh, it's an apple".
-2. "Oh, I those thoughts just came from my mind, and not from the outside world".
-3. "That's what consciousness is. I am conscious".
-
-Those three observations are produced from (at least) three iterations of a high order processing system. However, important distinctions can be drawn between the kinds of data represented as input and result within each of those loop iterations.
-
-The visceral loop characterises those three observations as follows.
-
-**Iteration 1**:
-
-We assume that the agent (biological or otherwise) has some _a priori_ knowledge of the concept of consciousness, but has never previously analysed itself in that respect.
-
-The first step in the thought sequence above is characterised as _Iteration 1_, whereby the agent produces an inference that is non-self-referential in terms of its mind schema. In that example the agent draws an inference about the observed red blob being an apple.
-
-As stated within the introductory section, agents with sufficiently complex self-modelling requirements must have direct observation of their own sequence of thought actions. Thus, iteration 1 inference becomes available for subsequent processing.
-
-**Iteration 2**:
-
-During _Iteration 2_, the agent makes an inference about a prior Iteration 1 mental action, and this inference draws reference to its mind schema. The second step in the thought sequence above is an example of this, whereby the agent realises that it is aware of its own thoughts.
-
-The agent has multiple sense inputs, most of which observe either the physical environment in which it exists, or observe its physical body. The agent's ability to observe its own non-physical actions counts as an additional sense input. During iteration 2, the agent explores its memory of its prior non-physical action, and produces an inference about that action; specifically, i) that the action was non-physical, and ii) that it was sourced from within the agent's own processing capabilities.
-
-The result of Iteration 2 is a relationship between a simple Iteration 1 thought and the agent's mind schema.
-
-**Iteration 3**:
-During _Iteration 3_ that relationship becomes the input data that is further processed in relation to the mind schema. The result is an inferred self-referential relationship about its own mind schema.
-
-In the third observation in the example above, the agent draws upon its memory of its immediately prior thought, and upon its _a priori_ knowledge about the concept of consciousness. Its immediately prior thought was a relationship between a simple thought and its own mind schema. Its _a priori_ knowledge of consciousness is effectively a set of beliefs about mind schemas in general. The conclusion it draws is a statement of belief about its own mind schema.
-
-## Formal Description of Visceral Loop
-
-A formal definition of the visceral loop shall now be presented.
-
-Prerequisites:
-* Ability for symbolic logic  (tbd...)
+This paper introduces the concept of a _visceral loop_ as a characterisation of processing within a looping biological or AI agent. The visceral loop is so named because it refers to an agent concluding that it experiences consciousness "in a visceral way". It identifies that a processing loop with sufficient representational capabilities can, at the most optimum, conclude itself as conscious within three iterations of the loop. Each of those iterations have specific characteristics, and the visceral loop characterises thought as falling into one of those three iterations.
 
 Let:
-* `X` be the agent's set of beliefs about the external world
-* `B` be the agent's set of beliefs about its own physical body
-* `M` be the agent's set of beliefs about minds and it own mind
+* `E` be the agent's set of beliefs about the external world
+* `B` be the agent's set of beliefs about its own physical body (drawn from the body schema) and of bodies in general
+* `M` be the agent's set of beliefs about its own mind (drawn from the mind schema) and of minds in general
 * `f(..)` be the function executed by the agent on the specified inputs in order to draw inferences
-* `x_i` be an inference that results from the execution of `f` (it may be any output conclusion, decision, action, or intermediate logical steps)
 
-Iteration 1:
+**Iteration 1:**
 
-Given `s`, some sense input or past state, iteration 1 inferences are of the following form:
+Given some sense input or past state `s`, and some resultant inference `x`, a processing step is characterised as visceral loop _Iteration 1_ if it is of the following form:
 
-* inference x_1: `f(s, X U B) -> x_1`
+* `f(s, E U B) -> x`
 
-Iteration 2:
+**Iteration 2:**
 
-2. prerequisite: `x_1` is present
-3. prerequisite: `x_1` is sourced from 'I' (as indicated through sense labelling)
-4. prerequisite: ∃ memory of producing `x_1` in past thought
-5. prerequisite: `x_1` is selected as focus of attention for processing
-ie: producing: i) fact of presence of `x_1`, and ii) relationship of `x_1` to mind schema `M`
+Iteration 2 requires an agent to have sufficient representational capabilities to draw inferences that represent relations involving `M`. Given some prior inference `y`, a processing step is characterised as visceral loop _Iteration 2_ if it is of the following form, and the relation with respect to `M` is non-empty, and it can not be characterised as _Iteration 3_:
 
-* inference x_2: `f(x_1, M) -> relationship(x_1 -> M)`
-
-Iteration 3:
-
-6. prerequisite: ∃ some _a priori_ belief about consciousness or experience
-7. prerequisite: model contains i) fact of presence of `x_1`, and ii) relationship of `x_1` to `M`
-8. `x_1` and its relationship to `M` is selected as focus of attention for processing, producing: "I am conscious of `t`"
-
-* inference x_3: `f(x_2, M) = f(relationship(x_1 -> M), M) -> relationship(M -> M)`
+* `f(y, M) -> relation{y:M}`
 
 
-....
+**Iteration 3:**
+
+Iteration 3 likewise requires the agent can represent relations involving `M`. Given some prior inference `relation{z, M}`, and some belief `m ∈ M`, a processing step is characterised as visceral loop _Iteration 3_ if it is of the following form and the relation with respect to `M` is non-empty:
+
+* `f(relation{z:M}, M) -> relation{m:M}`
 
 
-Formally, the three iterations of the visceral loop can be represented using a mathematical notation that highlights the inputs to the function, and its result:
-
-* Iteration 1: f(inputs) -> x - some result of simple thought
-* Iteration 2: f(x, mind-schema) -> relationship(x : mind-schema)
-* Iteration 3: f(relationship(x : mind-schema), mind-schema) -> relationship(mind-schema : mind-schema)
 
 # Consciousness
 
@@ -187,16 +138,9 @@ _tbd_
 
 Conant, R. C., and Ashby, W. R. (1970). Every good regulator of a system must be a model of that system. Int. J. Systems Sci., vol. 1, No. 2, pp 89-97. https://doi.org/10.1080/00207727008920220. \[[Full Text](http://pespmc1.vub.ac.be/books/Conant_Ashby.pdf)\]
 
+Graziano, M. S. A. (2017). The Attention Schema Theory: A Foundation for Engineering Artificial Consciousnes. Front. Robot. AI. https://doi.org/10.3389/frobt.2017.00060.
+
 Proske, U., and Gandevia, S. C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiological Reviews 2012 92:4, pp 1651-1697. https://doi.org/10.1152/physrev.00048.2011.
 
 Wernicke's area. (n.d.). In _Wikepedia_. https://en.wikipedia.org/wiki/Wernicke%27s_area. 
 
-
-----
-# Discarded content
-
-tbd: also needed for corollary discharge?
-
-For example, many current artificial _reinforcement learning_ (RL) agents continually choose actions at a fixed rate of one (discrete or continuous) action per time step.
-
-Here, _knowingly_ is used to refer to a processor being able to subsequently introspect both the input and output, to know the causal relationship between them, and to perform additional processing about the fact that it had performed that operation. Additionally, the act of performing that additional processing must itself be _knowable_.
