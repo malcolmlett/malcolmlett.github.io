@@ -118,7 +118,7 @@ Formally, the three iterations of the visceral loop can be represented using a m
 
 # Consciousness
 
-While the concept of the visceral loop may appear simple, it has important implications to understanding consciousness. Let's first establish a baseline. I am unable to think of any rationale way in which I may consciously experience something and yet be unable to subsequently think about that experience. Thus, it would seem that being able to think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
+While the concept of the visceral loop may appear simple, it has important implications to understanding consciousness. Let's first establish a baseline. I am unable to think of any rationale way in which I may consciously experience something and yet be unable to subsequently knowingly think about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
 
 Claim 1:
 * All conscious experience is subsequently available for further thought.
