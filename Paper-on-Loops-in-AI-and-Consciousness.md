@@ -87,10 +87,9 @@ The second observation is an example of Iteration 2. However it is of specific f
 
 The third observation is additionally a specific form of Iteration 3, whereby the individual produces an inference based on the prior specialisation of Iteration 2, and produces an inference as a statement of fact about their own mind-schema. In this observation, the resultant inference is in relation to some _a priori_ conception about consciousness in general.
 
+The concept of the visceral loop may appear simple, but it has important implications for understanding consciousness. By way of example of its descriptive power, two theorems of consciousness are offered in the text that follows.
 
-...tbd...segway properly...
-
-While the concept of the visceral loop may appear simple, it has important implications to understanding consciousness. Let's first establish a baseline. I am unable to think of any rationale way in which I may consciously experience something and yet be unable to subsequently knowingly think about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
+Let's first establish a baseline. I am unable to think of any rationale way in which I may consciously experience something and yet be unable to subsequently knowingly think about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
 
 Claim 1:
 * All conscious experience is subsequently available for further thought.
@@ -133,26 +132,14 @@ Theorem 2 summarises the recursive nature of conscious experience.
 
 An example of Theorem 2 is where an event occurs that is potentially available for conscious experience, but it does not become an iteration 2 inference at the time. The individual may still have a memory of that past event, and upon recalling that past event may draw an iteration 2 inference about it, at which time it becomes a conscious experience.
 
-
-
-
-
-_tbd_: argue for hierarchical architecture.
-
-_tbd_: argue why needing a mental-schema also mandates needing direct awareness of thought.
-
-_tbd_
-
 If we ascribe phenomenal experience as a feeling, and recognise that feelings are just additional data input produced through heuristic predictions, then we see that a simulation of a visceral loop, that we intuit to have no phenomenal experience, is computationally indistinguishable from a biological visceral loop that we know to be accompanied by such phenomenon.
+
+# Summary and Conclusions
 
 Visceral loop explains why fRMI studies have shown that we become aware of a decision after its made. Because it takes extra processing cycles to consciously consider the fact of the decision being made. In short: we can only think about one thing at a time, so the decision itself and thought about the decision require separate steps.
 
 The visceral loop can be used to explain how someone concludes themselves as conscious. It can also be used to classify the kinds of thought that occur within an agent, and the kinds of thought that it's possible for an agent to have. For example, it may be the case that simpler organisms only ever operate with Iteration 1 thought.
 
-
-# Summary and Conclusions
-
-_tbd_
 
 
 # References

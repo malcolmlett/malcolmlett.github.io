@@ -87,3 +87,13 @@ Formally, the three iterations of the visceral loop can be represented using a m
 * Iteration 1: f(inputs) -> x - some result of simple thought
 * Iteration 2: f(x, mind-schema) -> relationship(x : mind-schema)
 * Iteration 3: f(relationship(x : mind-schema), mind-schema) -> relationship(mind-schema : mind-schema)
+
+
+# Summary
+
+
+_tbd_: argue for hierarchical architecture.
+
+_tbd_: argue why needing a mental-schema also mandates needing direct awareness of thought.
+
+_tbd_
