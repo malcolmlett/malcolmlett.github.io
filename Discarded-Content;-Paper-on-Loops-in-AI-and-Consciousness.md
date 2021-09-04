@@ -89,6 +89,19 @@ Formally, the three iterations of the visceral loop can be represented using a m
 * Iteration 3: f(relationship(x : mind-schema), mind-schema) -> relationship(mind-schema : mind-schema)
 
 
+Theorem 1 proof:
+* For any given experience, one of three possibilities is true:
+    a) it is used as input to an iteration 2 processing step.
+    b) it is _possible_ for it to be used as input to iteration 2, but current attentional focus avoids that in favour of other processing.
+    c) it is not possible for it to be used as input to iteration 2, eg: due to some incompatibility of structure or a lack of data path to iteration 2.
+* In order for an individual to identify thought as being their own, they must have some beliefs about thought and how it relates to themselves as an individual entity. This is the mind schema of which iteration 2 is focused upon.
+* Both possibilities (a) and (b) satisfy the theorem. Possibility (c) fails on claim 2, and thus must not be a conscious experience.
+* Possibility (c) fails on claim 2 because the individual
+* 
+* As conscious experience is characterised by the ability to think about that experience, and there is no experience that we cannot subsequently consciously think about, all of conscious experience must enter iteration 2 or otherwise it cannot be consciously experienced.
+
+
+
 # Summary
 
 
