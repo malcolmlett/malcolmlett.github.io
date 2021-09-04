@@ -100,15 +100,16 @@ Claim 2:
 Note that these claims do not assume that all conscious experience is actually thought about; only that it is available for such thought. Additionally, no assumption is made about other kinds of thought, which may or may not be consciously experienced.
 
 Theorem 1:
-* what data is possible to be identified within a visceral loop iteration 2 inference defines an upper boundary on the content of conscious experience.
+* the content of conscious experience is upper bounded by the data for which visceral loop iteration 2 inferences can be produced.
 
 Proof:
 * The _content of conscious experience_ refers to the set of data represented and/or processed within the brain which is consciously experienced by that individual, in distinction to other data represented and/or processed in the brain which is not consciously experienced.
-* As per claims 1 and 2, all of conscious experience must be available for further thought and the individual must be able to identify that thought as their own.
-* In order for an individual to identify thought as being their own, they must have some beliefs about thought and how it relates to themselves as an individual entity. This is included in the set `M`, which iteration 2 produces inferences in relation to.
-* Imagine some supposed experience for which thought about it cannot be referenced within an inference produced as a result of iteration 2. For example, due to some incompatibility of structure, lack of data path to iteration 2 processing capabilities, or inherent limitations in iteration 2 processing capabilities. That thought cannot be identified in relation to the individual.
-* As such, the supposed experience fails on Claim 2, and any supposed thought about the supposed experience must be in actual fact thought about a non-conscious experience.
-* Thus, any experience that leads to thought that cannot be included in an iteration 2 inference is not a conscious experience.
+* As per claim 1, all of conscious experience must be available for producing subsequent inferences about those conscious experiences.
+* As per claim 2, the individual must be able to identify that they produced those inferences.
+* In order for an individual to identify an inference as being their own, they must have some beliefs about inference capabilities and how they relate to themselves as an individual entity. This is included in the set `M`, which iteration 2 produces inferences in relation to.
+* Imagine some supposed experience, and an inference `i` produced about that experience. Additionally imagine that an iteration 2 inference cannot be produced about `i`, for example, due to some incompatibility of structure, lack of data path to iteration 2 processing capabilities, or inherent limitation in iteration 2 processing capabilities. 
+* The inference `i` cannot be identified in relation to the individual. As such, the supposed experience fails on Claim 2 and `i` must be in actual fact an inference about a non-conscious experience.
+* Thus, any experience that can only lead to inferences which cannot be included in an iteration 2 inference is not a conscious experience.
 
 
 
