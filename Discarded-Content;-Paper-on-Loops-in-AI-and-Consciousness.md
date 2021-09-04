@@ -88,6 +88,11 @@ Formally, the three iterations of the visceral loop can be represented using a m
 * Iteration 2: f(x, mind-schema) -> relationship(x : mind-schema)
 * Iteration 3: f(relationship(x : mind-schema), mind-schema) -> relationship(mind-schema : mind-schema)
 
+Theorem 1 Proof:
+* The _content of conscious experience_ refers to the set of data represented and/or processed within the brain which is consciously experienced by that individual, in distinction to other data represented and/or processed in the brain which is not consciously experienced.
+* As per claims 1 and 2, all of conscious experience must be available for further thought and the individual must be able to identify that thought as their own.
+* In order for an individual to identify thought as being their own, they must have some beliefs about thought and how it relates to themselves as an individual entity. This is the set `M`, which iteration 2 produces inferences in relation to.
+* Any supposed experience that is not available for input to iteration 2 (eg: due to some incompatibility of structure or a lack of data path to iteration 2 processing capabilities) cannot be identified in relation to the individual. As such, it fails on Claim 2, and any supposed thought about the experience must be thought about a non-conscious experience. Thus, any thought that cannot be used as input to an iteration 2 inference is not a conscious experience.
 
 Theorem 1 proof:
 * For any given experience, one of three possibilities is true:
@@ -100,6 +105,30 @@ Theorem 1 proof:
 * 
 * As conscious experience is characterised by the ability to think about that experience, and there is no experience that we cannot subsequently consciously think about, all of conscious experience must enter iteration 2 or otherwise it cannot be consciously experienced.
 
+Theorem 2:
+* Inferences produced by visceral loop iteration 2 processing define wholly the content of conscious experience.
+
+Proof:
+* An experience `x` is either:
+    * immediately or later upon reflection via memory, thought about in relation to one's own mind - in which case it enters iteration 2 as input and an outcome is produced relating the experience to one's own mind.
+    * always avoids being thought about in relation to one's own mind:
+        * may be further thought about, but not in relation to one's own mind.
+        * some subsequent thought `y` about that thought may itself become conscious experience
+        * in which case `x` meets claims 1,2,3, and is thus consciously experienced.
+        * thus, all thought is consciously experienced, even thought that is not conscious. doh!
+
+
+
+Proof:
+* Only a weak proof of Theorem 2 is offered, as it depends on some assumptions that will be discussed later....(tbd)...
+* An experience must either be thought about in relation to one's own mind, in which case it enters iteration 2 as input and an outcome is produced relating the experience to one's own mind, or it must avoid being thought about in relation to one's own mind, in which case the individual is not aware of having had that experience.
+* ...tbd better: the ability to think about something, and to know that you think about something requires a recursive ability to process that thing, and the knowledge of that thing, and the knowledge of knowing about that thing, and so forth. Thus data must exit iteration 2 and also exit iteration 3 in order for it to be knowingly consciously experienced. And, as a slight extension of claim 1, it is only consciously experienced if it is knowingly consciously experienced.
+
+Weaknesses:
+* Theorem 2 can only be weakly proven under a further assumption: that there is no meta-physical processing or processing of other sorts via physics or algorithmic capabilities not currently known to modern science.
+* The proof of Theorem 2 rests on a recursive processing of thought and thought about thought, and thought about that thought, etc. Where does it stop?
+
+Theorem 2 summarises the recursive nature of conscious experience.
 
 
 # Summary
