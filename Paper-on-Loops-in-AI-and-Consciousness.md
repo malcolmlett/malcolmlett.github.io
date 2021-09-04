@@ -76,20 +76,32 @@ Iteration 2 processing steps draw conclusions that relate past conclusions to th
 
 # Consciousness
 
-The visceral loop can be applied to understand the thought processes whereby an individual concludes themselves as conscious. Consider the following sequence of internal mental observations:
+The concept of the visceral loop may appear simple, but it has important implications for understanding consciousness. Two examples of its descriptive power are presented here.
+
+## Example 1
+
+In the first example, the visceral loop is applied to understand the thought processes whereby an individual concludes themselves as conscious. Consider the following sequence of internal mental observations:
 1. "What's that red blob in the tree? Oh, it's an apple".
 2. "Oh, those thoughts just came from my mind, and not from the outside world".
 3. "That's what consciousness is. I am conscious".
 
-The first observation is a straightforward example of Iteration 1 that does not make any self-reference to the agent's theory of mind (of their own mind or of others).
+The first observation is a straightforward example of Iteration 1 that does not make any reference to the agent's theory of mind (of their own mind or of others). The concepts of "red", "blob", "tree" and "apple" are all contained within the set `E`, and thus the inference in relation to the visual field sense input `s` is of the form `x_1 = relation{s:E}`.
 
-The second observation is an example of Iteration 2. However it is of specific form, whereby the individual produces an inference that identifies the source of the past thought in relation to their own mind schema (recall that this is a subset of `M`).
+The second observation contains two examples of Iteration 2 inferences. In the first, the individual's processing capabilities have selected attentional focus upon the prior Iteration 1 inference, and have drawn a subsequent inference about it as being data that can be classified as a "thought". As beliefs about "thought" are contained within `M`, this is an inference of the form `x_2 = relation{x_1:M}`. In the second, the individual draws a subsequent inference about the source of the Iteration 1 inference as being their own mind. The individual's ability to classify inferences in relation to themselves also depends upon `M`, and the inference is of the form `x_3 = relation{x_1:M}`.
 
-The third observation is additionally a specific form of Iteration 3, whereby the individual produces an inference based on the prior specialisation of Iteration 2, and produces an inference as a statement of fact about their own mind-schema. In this observation, the resultant inference is in relation to some _a priori_ conception about consciousness in general.
+The third observation draws upon the individual having an _a priori_ conception about consciousness in general, denoted by `m_c ∈ M`. The individual compares its prior Iteration 2 inferences `x_2` and `x_3` to `m_c`, and produces an inference that `x_2` and `x_3` together satisfy the requirements for consciousness. This is an inference of the form `x_4 = relation{x_2 & x_3:m_c}`. Finally, the individual relates `m_c`, the belief of consciousness in general, to itself, which again depends on `M`. That final inference is thus an inference in the form `x_5 = relation{m_c:M}`.
 
-The concept of the visceral loop may appear simple, but it has important implications for understanding consciousness. By way of example of its descriptive power, a theorem of consciousness is offered in the text that follows.
 
-Let's first establish a baseline. The author is unable to think of any rationale way in which I may consciously experience something and yet be unable to subsequently knowingly think about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
+....TODO: switch to using `m ⊂ M` instead of `m ∈ M`, ie: it3 = `relation{m ⊂ M:M}`??? Does that imply that just 
+being aware of a thought is It3?
+
+
+
+## Example 2
+
+As a second example of the descriptive power of the viscera loop, a theorem is presented about the nature of consciousness.
+
+First an axiomatic baseline must be established. The author is unable to think of any rationale way in which they may consciously experience something and yet be unable to subsequently knowingly think about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
 
 Claim 1:
 * All conscious experience is subsequently available for further thought.
@@ -97,7 +109,7 @@ Claim 1:
 Claim 2:
 * For all thought about conscious experience, the individual can identify that thought as being their own.
 
-Note that these claims do not assume that all conscious experience is actually thought about; only that it is available for such thought. Additionally, no assumption is made about other kinds of thought, which may or may not be consciously experienced.
+Note that these claims do not assume that all conscious experience is actually thought about; only that it is available for such thought. Additionally, no assumption is made about whether other kinds of thought are consciously experienced or not.
 
 Theorem 1:
 * the content of conscious experience is upper bounded by the data for which visceral loop iteration 2 inferences can be produced.
@@ -110,15 +122,6 @@ Proof:
 * Imagine some supposed experience, and an inference `i` produced about that experience. Additionally imagine that an iteration 2 inference cannot be produced about `i`, for example, due to some incompatibility of structure, lack of data path to iteration 2 processing capabilities, or inherent limitation in iteration 2 processing capabilities. 
 * The inference `i` cannot be identified in relation to the individual. As such, the supposed experience fails on Claim 2 and `i` must be in actual fact an inference about a non-conscious experience.
 * Thus, any experience that can only lead to inferences which cannot be included in an iteration 2 inference is not a conscious experience.
-
-
-
-A couple of additional points of interest are worth mentioning....
-
-
-An example of Theorem 2 is where an event occurs that is potentially available for conscious experience, but it does not become an iteration 2 inference at the time. The individual may still have a memory of that past event, and upon recalling that past event may draw an iteration 2 inference about it, at which time it becomes a conscious experience.
-
-If we ascribe phenomenal experience as a feeling, and recognise that feelings are just additional data input produced through heuristic predictions, then we see that a simulation of a visceral loop, that we intuit to have no phenomenal experience, is computationally indistinguishable from a biological visceral loop that we know to be accompanied by such phenomenon.
 
 # Summary and Conclusions
 

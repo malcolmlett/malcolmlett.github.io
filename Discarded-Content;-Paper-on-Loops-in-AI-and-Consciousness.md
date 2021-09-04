@@ -94,6 +94,18 @@ Theorem 1 Proof:
 * In order for an individual to identify thought as being their own, they must have some beliefs about thought and how it relates to themselves as an individual entity. This is the set `M`, which iteration 2 produces inferences in relation to.
 * Any supposed experience that is not available for input to iteration 2 (eg: due to some incompatibility of structure or a lack of data path to iteration 2 processing capabilities) cannot be identified in relation to the individual. As such, it fails on Claim 2, and any supposed thought about the experience must be thought about a non-conscious experience. Thus, any thought that cannot be used as input to an iteration 2 inference is not a conscious experience.
 
+# Consciousness
+
+The first observation is a straightforward example of Iteration 1 that does not make any self-reference to the agent's theory of mind (of their own mind or of others).
+
+The second observation is an example of Iteration 2. However it is of specific form, whereby the individual produces an inference that identifies the source of the past thought in relation to their own mind schema (recall that this is a subset of `M`).
+
+The third observation is additionally a specific form of Iteration 3, whereby the individual produces an inference based on the prior specialisation of Iteration 2, and produces an inference as a statement of fact about their own mind-schema. In this observation, the resultant inference is in relation to some _a priori_ conception about consciousness in general.
+
+
+
+# Theorems
+
 Theorem 1 proof:
 * For any given experience, one of three possibilities is true:
     a) it is used as input to an iteration 2 processing step.
@@ -132,6 +144,14 @@ Theorem 2 summarises the recursive nature of conscious experience.
 
 
 # Summary
+
+
+A couple of additional points of interest are worth mentioning....
+
+
+An example of Theorem 2 is where an event occurs that is potentially available for conscious experience, but it does not become an iteration 2 inference at the time. The individual may still have a memory of that past event, and upon recalling that past event may draw an iteration 2 inference about it, at which time it becomes a conscious experience.
+
+If we ascribe phenomenal experience as a feeling, and recognise that feelings are just additional data input produced through heuristic predictions, then we see that a simulation of a visceral loop, that we intuit to have no phenomenal experience, is computationally indistinguishable from a biological visceral loop that we know to be accompanied by such phenomenon.
 
 
 _tbd_: argue for hierarchical architecture.
