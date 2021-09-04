@@ -87,7 +87,7 @@ The second observation is an example of Iteration 2. However it is of specific f
 
 The third observation is additionally a specific form of Iteration 3, whereby the individual produces an inference based on the prior specialisation of Iteration 2, and produces an inference as a statement of fact about their own mind-schema. In this observation, the resultant inference is in relation to some _a priori_ conception about consciousness in general.
 
-The concept of the visceral loop may appear simple, but it has important implications for understanding consciousness. By way of example of its descriptive power, two theorems of consciousness are offered in the text that follows.
+The concept of the visceral loop may appear simple, but it has important implications for understanding consciousness. By way of example of its descriptive power, a theorem of consciousness is offered in the text that follows.
 
 Let's first establish a baseline. The author is unable to think of any rationale way in which I may consciously experience something and yet be unable to subsequently knowingly think about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
 
