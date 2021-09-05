@@ -56,6 +56,8 @@ Anything that is common amongst the majority of humanity is too consistent to be
  
 Some aspects of human brain behaviour require the pre-wiring of feelings, urges, desires, distastes, etc.. In some cases these can be simple electrical signals that the brain can learn online to work with. In other cases, they must require pre-wiring of network structures -- ie: a whole NN "domain model" encoding. This is feasible from evolution - that some of the NN training is a result of evolution, which amounts to pre-training of the network weights (ie: not just the high level architecture).
 
+There's lots more discussion of this in the [The Meta-Morphogenesis (M-M) Project](https://www.cs.bham.ac.uk/research/projects/cogaff/misc/meta-morphogenesis.html).
+
 
 # Architecture
 

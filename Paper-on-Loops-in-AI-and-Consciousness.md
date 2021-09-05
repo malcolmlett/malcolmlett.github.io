@@ -50,58 +50,52 @@ Let:
 
 **Iteration 1:**
 
-Let `x` be an inference produced as the result of a processing step, such that it does not draw any reference to `M` (ie: if `x` is a value then `x ∉ M`, or if `x` is a relation of two values then `x = relation{a:b}` such that `a ∉ M` and `b ∉ M`, or if `x` is a relation involving a set then `x = relation{a:B}` such that `a ∉ M` and `B ⊄ M`). Given some sense input or past state `s`, a processing step is characterised as visceral loop _Iteration 1_ if it is of the following form:
+Let `x` be an inference produced as the result of a processing step, such that it does not draw any reference to `M` (ie: if `x` is a value then `x ∉ M`, or if `x` is a relation of two values then `x = relation(a, b)` such that `a ∉ M` and `b ∉ M`, or if `x` is a relation involving a set then `x = relation(a, B)` such that `a ∉ M` and `B ⊄ M`). Given some sense input or past state `s`, a processing step is characterised as visceral loop _Iteration 1_ if it is of the following form:
 
 * `f(s, E ∪ B ∪ M) -> x`
 
 **Iteration 2:**
 
-_Iteration 2_ requires an agent to have sufficient representational capabilities to draw inferences that represent relations involving `M`. Given some prior inference `y`, a processing step is characterised as visceral loop Iteration 2 if it is of the following form, and the relation with respect to `M` is non-empty, and it can not be characterised as Iteration 3:
+_Iteration 2_ requires an agent to have sufficient representational capabilities to produce inferences that represent relations involving `M`. Given some prior inference `y`, a processing step is characterised as visceral loop Iteration 2 if it is of the following form, and the relation with respect to `M` is non-empty, and it can not be characterised as Iteration 3:
 
-* `f(y, E ∪ B ∪ M) -> relation{y:M}`
-
+* `f(y, E ∪ B ∪ M) -> relation(y, M)`
 
 **Iteration 3:**
 
-_Iteration 3_ likewise requires the agent can represent relations involving `M`. Given some prior inference `relation{z, M}`, and some belief `m ∈ M`, a processing step is characterised as visceral loop _Iteration 3_ if it is of the following form and the relation with respect to `M` is non-empty:
+_Iteration 3_ likewise requires that the agent can represent relations involving `M`. Given some prior inference `relation(z, M)`, and some subset of beliefs `m ⊂ M`, a processing step is characterised as visceral loop _Iteration 3_ if it is of the following form and the relation with respect to `M` is non-empty:
 
-* `f(relation{z:M}, E ∪ B ∪ M) -> relation{m:M}`
+* `f(relation(z, M), E ∪ B ∪ M) -> relation(m, M)`
 
+Iteration 1 represents the most common kind of data processing, such as spending multiple processing cycles to refine the identification of something within the visual field. While an agent's mind schema may be used to regulate the thought process, the result of Iteration 1 never makes any reference to it.
 
-Iteration 1 represents the most common kind of data processing, such as spending multiple processing cycles to refine the identification of something within the visual field. While an agent's mind schema may be used to control the thought process, the result of Iteration 1 never makes any reference to the agent's own mind schema.
+Iteration 2 processing steps draw conclusions that relate past thought actions and conclusions to the agent's theory of mind and to the agent's concept of its identity. For example, concluding that a past data state or non-physical action is classified as "thought", concluding whether the primary source of a past data state was external or internal, or relating the fact of an internal source to the agent's concept of "I".
 
-Iteration 2 processing steps draw conclusions that relate past conclusions to the agent's theory of mind. 
-
-..tbd.. examples...
+Iteration 3 is a special case of what would otherwise be Iteration 2, but it implies stricter requirements on the agent's introspective and representational capabilities. Iteration 3 covers the ability for the agent to develop a summary of its own mental capabilities (ie: some subset `m ⊂ M`), and to consider that in relation to its conception of mental capabilities in general (ie: `M`).
 
 # Consciousness
 
-The concept of the visceral loop may appear simple, but it has important implications for understanding consciousness. Two examples of its descriptive power are presented here.
+The concept of the visceral loop provides a framework for classifying the capabilities of different processing systems. It also has important implications for understanding consciousness, particularly in its _access consciousness_ interpretation (Block, 1995).
+
+Two examples of the descriptive power of the visceral loop in relation to consciousness are presented here.
 
 ## Example 1
 
-In the first example, the visceral loop is applied to understand the thought processes whereby an individual concludes themselves as conscious. Consider the following sequence of internal mental observations:
+In this first example, the visceral loop is applied to understand the thought processes whereby an individual concludes themselves as conscious. Consider the following sequence of internal mental observations:
 1. "What's that red blob in the tree? Oh, it's an apple".
 2. "Oh, those thoughts just came from my mind, and not from the outside world".
 3. "That's what consciousness is. I am conscious".
 
-The first observation is a straightforward example of Iteration 1 that does not make any reference to the agent's theory of mind (of their own mind or of others). The concepts of "red", "blob", "tree" and "apple" are all contained within the set `E`, and thus the inference in relation to the visual field sense input `s` is of the form `x_1 = relation{s:E}`.
+The first observation is a straightforward example of Iteration 1 that does not make any reference to the agent's theory of mind (of their own mind or of others). The concepts of "red", "blob", "tree" and "apple" are all contained within the set `E`, and thus the inference in relation to the visual field sense input `s` is of the form `x_1 = relation(s, E)`.
 
-The second observation contains two examples of Iteration 2 inferences. In the first, the individual's processing capabilities have selected attentional focus upon the prior Iteration 1 inference, and have drawn a subsequent inference about it as being data that can be classified as a "thought". As beliefs about "thought" are contained within `M`, this is an inference of the form `x_2 = relation{x_1:M}`. In the second, the individual draws a subsequent inference about the source of the Iteration 1 inference as being their own mind. The individual's ability to classify inferences in relation to themselves also depends upon `M`, and the inference is of the form `x_3 = relation{x_1:M}`.
+The second observation contains two examples of Iteration 2 inferences. In the first, the individual's processing capabilities have selected attentional focus upon the prior Iteration 1 inference, and have drawn a subsequent inference about it as being data that can be classified as a "thought". As beliefs about "thought" are contained within `M`, this is an inference of the form `x_2 = relation(x_1, M)`. In the second, the individual draws a subsequent inference about the source of the Iteration 1 inference as being their own mind. The individual's ability to classify inferences in relation to themselves also depends upon `M`, and the inference is of the form `x_3 = relation(x_1, M)`.
 
-The third observation draws upon the individual having an _a priori_ conception about consciousness in general, denoted by `m_c ∈ M`. The individual compares its prior Iteration 2 inferences `x_2` and `x_3` to `m_c`, and produces an inference that `x_2` and `x_3` together satisfy the requirements for consciousness. This is an inference of the form `x_4 = relation{x_2 & x_3:m_c}`. Finally, the individual relates `m_c`, the belief of consciousness in general, to itself, which again depends on `M`. That final inference is thus an inference in the form `x_5 = relation{m_c:M}`.
-
-
-....TODO: switch to using `m ⊂ M` instead of `m ∈ M`, ie: it3 = `relation{m ⊂ M:M}`??? Does that imply that just 
-being aware of a thought is It3?
-
-
+The third observation draws upon the individual having an _a priori_ conception about consciousness in general, denoted by `m_c ⊂ M`. The individual compares its prior Iteration 2 inferences `x_2` and `x_3` to `m_c`, and produces an inference that `x_2` and `x_3` together satisfy the requirements for consciousness. This is another iteration 2 inference of the form `x_4 = relation(x_2 & x_3, m_c)`. Finally, the individual relates `m_c`, the belief of consciousness in general, to itself, which again depends on `M`. That final inference is thus an Iteration 3 inference in the form `x_5 = relation(m_c, M)`.
 
 ## Example 2
 
-As a second example of the descriptive power of the viscera loop, a theorem is presented about the nature of consciousness.
+As a second example of the descriptive power of the viscera loop, a theorem is presented here about the nature of consciousness.
 
-First an axiomatic baseline must be established. The author is unable to think of any rationale way in which they may consciously experience something and yet be unable to subsequently knowingly think about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
+First an axiomatic baseline must be established. The author is unable to think of any rationale way in which they may consciously experience something and yet be unable to subsequently think about that experience and to know that they are thinking about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
 
 Claim 1:
 * All conscious experience is subsequently available for further thought.
@@ -109,29 +103,31 @@ Claim 1:
 Claim 2:
 * For all thought about conscious experience, the individual can identify that thought as being their own.
 
-Note that these claims do not assume that all conscious experience is actually thought about; only that it is available for such thought. Additionally, no assumption is made about whether other kinds of thought are consciously experienced or not.
+Note that these claims do not assume that all conscious experience is actually thought about; only that it is in principle available for such thought. Additionally, no assumption is made about whether other kinds of thought are consciously experienced or not.
 
 Theorem 1:
-* the content of conscious experience is upper bounded by the data for which visceral loop iteration 2 inferences can be produced.
+* the content of conscious experience is upper bounded by the data about which visceral loop iteration 2 inferences can be produced.
 
 Proof:
 * The _content of conscious experience_ refers to the set of data represented and/or processed within the brain which is consciously experienced by that individual, in distinction to other data represented and/or processed in the brain which is not consciously experienced.
 * As per claim 1, all of conscious experience must be available for producing subsequent inferences about those conscious experiences.
 * As per claim 2, the individual must be able to identify that they produced those inferences.
-* In order for an individual to identify an inference as being their own, they must have some beliefs about inference capabilities and how they relate to themselves as an individual entity. This is included in the set `M`, which iteration 2 produces inferences in relation to.
+* In order for an individual to identify an inference as being their own, they must have some beliefs about their inference capabilities and how they relate to themselves as an individual entity. This is included in the set `M`, which iteration 2 produces inferences in relation to.
 * Imagine some supposed experience, and an inference `i` produced about that experience. Additionally imagine that an iteration 2 inference cannot be produced about `i`, for example, due to some incompatibility of structure, lack of data path to iteration 2 processing capabilities, or inherent limitation in iteration 2 processing capabilities. 
 * The inference `i` cannot be identified in relation to the individual. As such, the supposed experience fails on Claim 2 and `i` must be in actual fact an inference about a non-conscious experience.
 * Thus, any experience that can only lead to inferences which cannot be included in an iteration 2 inference is not a conscious experience.
 
 # Summary and Conclusions
 
-Visceral loop explains why fRMI studies have shown that we become aware of a decision after its made. Because it takes extra processing cycles to consciously consider the fact of the decision being made. In short: we can only think about one thing at a time, so the decision itself and thought about the decision require separate steps.
+Visceral loop explains why fRMI studies have shown that we become aware of a decision after its made (tbd: citation needed). Because it takes extra processing cycles to consciously consider the fact of the decision being made. In short: we can only think about one thing at a time, so the decision itself and thought about the decision require separate steps.
 
 The visceral loop can be used to explain how someone concludes themselves as conscious. It can also be used to classify the kinds of thought that occur within an agent, and the kinds of thought that it's possible for an agent to have. For example, it may be the case that simpler organisms only ever operate with Iteration 1 thought.
 
 
 
 # References
+
+Block, N. (1995). On a confusion about a function of consciousness. Brain and Behavioral Sciences, 18(2), 227–247. https://doi.org/10.1017/S0140525X00038188. \[[Full Text](https://www.nyu.edu/gsas/dept/philo/faculty/block/papers/1995_Function.pdf)\]
 
 Conant, R. C., and Ashby, W. R. (1970). Every good regulator of a system must be a model of that system. Int. J. Systems Sci., vol. 1, No. 2, pp 89-97. https://doi.org/10.1080/00207727008920220. \[[Full Text](http://pespmc1.vub.ac.be/books/Conant_Ashby.pdf)\]
 
