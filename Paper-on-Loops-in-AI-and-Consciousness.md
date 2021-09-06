@@ -12,29 +12,25 @@ Any computational system is limited in the complexity that it can handle within 
 
 In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that takes longer to make some decisions.
 
-An agent that regulates its environment operates within a system described in Fig 1. The environment state `S_env` changes with some ambient dynamics `env dynamics`, and the agent performs action `A_env` against the environment in order to regulate it towards some target. The environment state outcome `O_env` is influenced by both `D_env(t)` and `A_env`. 
-    Fig 1:    
-    {diagram}
+An agent that regulates its environment operates within a system containing environment state `S_env`, which changes with some ambient dynamics `D_env(t)`. The agent performs action `A_env` against the environment in order to regulate it towards some target. The environment state outcome `O_env` is influenced by both `D_env(t)` and `A_env`. This can be summarised as such:
+
     S_env + D_env(t) + A_env = O_env
-    {diagram}
 
-According to the _good regulator theorem_, if the agent is to regulate the environment state it must be a model of the system (Conant & Ashby, 1970). Furthermore, we can say that the efficiency of the agent to regulate its environment depends on its accuracy in modelling the system. Errors in the accuracy of the model result in errors in the regulation of the system. For learning agents, those errors must be used to adjust the model. An agent that must regulate its external environment requires the tuple `<S_env, A, O_env>` in order to adjust its model.
+According to the _good regulator theorem_, if the agent is to regulate the environment state it must be a "model of the system" (Conant & Ashby, 1970). Furthermore, we can say that the efficiency of the agent to regulate its environment depends on its accuracy in modelling the system. Errors in the accuracy of the model result in errors in the regulation of the system. In learning agents, those errors can be used for subsequent training of its model.
 
-An embodied agent with complex actions requires an additional level of regulation. Not only must it regulate its external environment, it must also regulate its own physical state. This includes both maintaining homeostasis and controlling action. Such an agent thus operates in a system that additionally has body state `S_body` with ambient dynamics `D_body(t)`. The agent performs action `A_body` against its body, producing outcome `O_body`. Summarised as follows:
+An embodied agent with complex actions requires an additional level of regulation. Not only must it regulate its external environment, it must also regulate its own physical state. This includes both maintaining homeostasis and controlling action for efficiency and effectiveness. Such an agent thus operates in a system that additionally has body state `S_body` with ambient dynamics `D_body(t)`. The agent performs action `A_body` against its body, producing outcome `O_body`, summarised as follows:
 
     S_body + D_body(t) + A_body = O_body
     
-The agent's actions are performed in order to regulate it towards some target, which is dynamically inferred based on its requirement for body homeostasis and for environment action `A_env`. Like for regulation of the environment, the agent requires a tuple `<S_body, A_body, O_body>` in order to train its model. Neuroscience has identified such a model in mammals, known as the _body schema_ (Proske & Gandevia, 2012).
+The agent's actions are performed in order to regulate it towards some target, which is dynamically inferred based on its requirement for body homeostasis and for environment action `A_env`. The inference of the required action at any given moment is based upon a model, and that model is updated from past errors in a learning agent. Psychology and Neuroscience refer to that model in mammals as the _body schema_ (Proske & Gandevia, 2012).
 
-Agents that incorporate multi-step processing have a third kind of action: one that changes its internal data state without affecting its physical state. Importantly, as such _non-physical_ actions may not elicit any change to `S_body` or `S_env`, this system also requires regulation. Thus the agent has non-physical state `S_mind` with ambient dynamics `D_mind(t)`, and performs action `A_mind` producing outcome `O_mind`, summarised as follows:
+Agents that incorporate multi-step processing have a third kind of action: one that changes its internal data state without affecting its physical state. Importantly, this system also requires regulation for the same reasons as for environment and body, but such _non-physical_ actions may not elicit any change to `S_body` or `S_env`. Thus the agent must regulate its non-physical state `S_mind`, having ambient dynamics `D_mind(t)`. In order to do so it performs action `A_mind`, producing outcome `O_mind`, summarised as follows:
 
     S_mind + D_mind(t) + A_mind = O_mind
     
-The agent's non-physical actions are performed in order to regulate towards some target, which is dynamically inferred based on its requirement for environment action `A_env`, body action `A_body`, and possibly for some form of non-physical homeostasis. Like for both the environment and body, the agent must train its model for regulation from a tuple `<S_mind, A_mind, O_mind>`.
+The agent's non-physical actions are performed in order to regulate towards some target, which is dynamically inferred based on its requirement for environment action `A_env`, body action `A_body`, and possibly for some form of non-physical homeostasis. Like for environment and body regulation, in order for the agent to efficiently regulate its mind state, it must model its behaviour. This suggests that it must incorporate a functional equivalent of the body schema, which this paper refers to as the _mind schema_. Other research has drawn similar conclusions (Graziano, 2017).
 
-By way of example, consider the case of fluent aphasia, caused by damage to the Wernicke's area of the brain. Individuals with fluent aphasia can easily produce speech, but it is typically full of many meaningless words and often unnecessarily long winded. Wernicke's area is associated with language comprehension and, as such, provides a corrective mechanism during speech production in a neurotypical individual (_Wernicke's area_).
-
-The need for a mind-regulating agent to model the behaviour of its mind suggests that it must incorporate a functional equivalent of the body schema, which this paper refers to as the _mind schema_. Other research has drawn similar conclusions (Graziano, 2017).
+By way of example of the importance of such mind regulation, consider the case of fluent aphasia, caused by damage to the Wernicke's area of the brain. Individuals with fluent aphasia can easily produce speech, but it is typically full of many meaningless words and often unnecessarily long winded. Wernicke's area is associated with language comprehension and, as such, provides a corrective mechanism during speech production in a neurotypical individual (_Wernicke's area_).
 
 # Visceral Loop
 
@@ -50,27 +46,27 @@ Let:
 
 **Iteration 1:**
 
-Let `x` be an inference produced as the result of a processing step, such that it does not draw any reference to `M` (ie: if `x` is a value then `x ∉ M`, or if `x` is a relation of two values then `x = relation(a, b)` such that `a ∉ M` and `b ∉ M`, or if `x` is a relation involving a set then `x = relation(a, B)` such that `a ∉ M` and `B ⊄ M`). Given some sense input or past state `s`, a processing step is characterised as visceral loop _Iteration 1_ if it is of the following form:
+_Iteration 1_ represents the most common kind of data processing, such as spending multiple processing cycles to refine the identification of something within the visual field. While an agent's mind schema may be used to regulate the thought process, the result of Iteration 1 never makes any reference to it.
+
+Let `x` be an inference produced as the result of a processing step, such that it does not draw any reference to `M` (ie: if `x` is a value then `x ∉ M`, or if `x` is a relation of two values then `x = relation(a, b)` such that `a ∉ M` and `b ∉ M`, or if `x` is a relation involving a set then `x = relation(a, B)` such that `a ∉ M` and `B ⊄ M`). Given some sense input or past state `s`, a processing step is characterised as visceral loop Iteration 1 if it is of the following form:
 
 * `f(s, E ∪ B ∪ M) -> x`
 
 **Iteration 2:**
 
-_Iteration 2_ requires an agent to have sufficient representational capabilities to produce inferences that represent relations involving `M`. Given some prior inference `y`, a processing step is characterised as visceral loop Iteration 2 if it is of the following form, and the relation with respect to `M` is non-empty, and it can not be characterised as Iteration 3:
+_Iteration 2_ processing steps draw conclusions that relate past thought actions and conclusions to the agent's theory of mind and to the agent's concept of its identity. For example, concluding that a past data state or non-physical action is classified as "thought", concluding whether the primary source of a past data state was external or internal, or relating the fact of an internal source to the agent's concept of "I".
+
+Iteration 2 requires an agent to have sufficient representational capabilities to produce inferences that represent relations involving `M`. Given some prior inference `y`, a processing step is characterised as visceral loop Iteration 2 if it is of the following form, and the relation with respect to `M` is non-empty, and it can not be characterised as Iteration 3:
 
 * `f(y, E ∪ B ∪ M) -> relation(y, M)`
 
 **Iteration 3:**
 
-_Iteration 3_ likewise requires that the agent can represent relations involving `M`. Given some prior inference `relation(z, M)`, and some subset of beliefs `m ⊂ M`, a processing step is characterised as visceral loop _Iteration 3_ if it is of the following form and the relation with respect to `M` is non-empty:
+_Iteration 3_ is a special case of what would otherwise be Iteration 2, but it implies stricter requirements on the agent's introspective and representational capabilities. Iteration 3 covers the ability for the agent to develop a summary of its own mental capabilities (ie: some subset `m ⊂ M`), and to consider that in relation to its conception of mental capabilities in general (ie: `M`).
+
+Given some prior inference `relation(z, M)`, and some subset of beliefs `m ⊂ M`, a processing step is characterised as visceral loop _Iteration 3_ if it is of the following form and the relation with respect to `M` is non-empty:
 
 * `f(relation(z, M), E ∪ B ∪ M) -> relation(m, M)`
-
-Iteration 1 represents the most common kind of data processing, such as spending multiple processing cycles to refine the identification of something within the visual field. While an agent's mind schema may be used to regulate the thought process, the result of Iteration 1 never makes any reference to it.
-
-Iteration 2 processing steps draw conclusions that relate past thought actions and conclusions to the agent's theory of mind and to the agent's concept of its identity. For example, concluding that a past data state or non-physical action is classified as "thought", concluding whether the primary source of a past data state was external or internal, or relating the fact of an internal source to the agent's concept of "I".
-
-Iteration 3 is a special case of what would otherwise be Iteration 2, but it implies stricter requirements on the agent's introspective and representational capabilities. Iteration 3 covers the ability for the agent to develop a summary of its own mental capabilities (ie: some subset `m ⊂ M`), and to consider that in relation to its conception of mental capabilities in general (ie: `M`).
 
 # Consciousness
 
