@@ -1,14 +1,14 @@
 # PREPRINT DRAFT
 
-## Title: A Characterisation of processing loops in AI and biological neural networks and its implications for understanding Consciousness
+## Title: A Characterisation of processing loops in AI and biological systems and its implications for understanding Consciousness
 
 # Abstract
 
-Shows that any sufficiently advanced processing system requires loopy processing, which requires regulation, which requires a self-model, and that this structure can lead to self-referential conclusions about an agents own mental faculties and their involvement in its own agency.
+The claim is made that cycles of non-physical "mental" actions are required in agents that operate within sufficiently complex environments, and that such actions require regulation through the use of a model. A framework is proposed, named the _Visceral Loop_, that identifies three distinct kinds of processing within such a system in terms of how it uses that model. It is shown that this can be used to characterise human thought, including about thought itself, and how it is involved when an individual concludes that they are conscious. A proof is given relating an upper bound on data available within access consciousness to the visceral loop characterisations of thought.
 
 # Introduction
 
-Any computational system is limited in the complexity that it can handle within a single computational step. For embodied agents, this appears as a limit on the environmental complexity that they can sufficiently model and respond to within a single "time step" (citation needed). For more complex problems, multiple steps of processing are required in order to determine the next physical action. Such multiple processing steps may entail, for example, further analysis of the environment in order to better model its state; or it may entail action planning over multiple iterations.
+Any computational system is limited in the complexity that it can handle within a single computational step. For embodied agents, this appears as a limit on the environmental complexity that they can sufficiently model and respond to within a single observe-infer-act cycle. For more complex problems, multiple steps of processing are required in order to determine the next physical action. Such multiple processing steps may entail, for example, further analysis of the environment in order to better model its state; or it may entail action planning over multiple iterations.
 
 In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that takes longer to make some decisions.
 
@@ -16,13 +16,13 @@ An agent that regulates its environment operates within a system containing envi
 
     S_env + D_env(t) + A_env = O_env
 
-According to the _good regulator theorem_, if the agent is to regulate the environment state it must be a "model of the system" (Conant & Ashby, 1970). Furthermore, we can say that the efficiency of the agent to regulate its environment depends on its accuracy in modelling the system. Errors in the accuracy of the model result in errors in the regulation of the system. In learning agents, those errors can be used for subsequent training of its model.
+According to the _good regulator theorem_, if the agent is to regulate the environment state it must be a "model of the system" (Conant & Ashby, 1970). Furthermore, we can say that the efficiency of the agent to regulate its environment depends on its accuracy in modelling the system. Errors in the accuracy of the model result in errors in the regulation of the system. In learning agents, those errors can be used for subsequent training of the model.
 
 An embodied agent with complex actions requires an additional level of regulation. Not only must it regulate its external environment, it must also regulate its own physical state. This includes both maintaining homeostasis and controlling action for efficiency and effectiveness. Such an agent thus operates in a system that additionally has body state `S_body` with ambient dynamics `D_body(t)`. The agent performs action `A_body` against its body, producing outcome `O_body`, summarised as follows:
 
     S_body + D_body(t) + A_body = O_body
     
-The agent's actions are performed in order to regulate it towards some target, which is dynamically inferred based on its requirement for body homeostasis and for environment action `A_env`. The inference of the required action at any given moment is based upon a model, and that model is updated from past errors in a learning agent. Psychology and Neuroscience refer to that model in mammals as the _body schema_ (Proske & Gandevia, 2012).
+The agent's body actions are performed in order to regulate it towards some target, which is dynamically inferred based on its requirement for body homeostasis and for environment action `A_env`. In learning agents, the inference of the required action at any given moment is based upon some sort of model. For example, Psychology and Neuroscience refer to a _body schema_ (Proske & Gandevia, 2012) in humans as an explicit representational model.
 
 Agents that incorporate multi-step processing have a third kind of action: one that changes its internal data state without affecting its physical state. Importantly, this system also requires regulation for the same reasons as for environment and body, but such _non-physical_ actions may not elicit any change to `S_body` or `S_env`. Thus the agent must regulate its non-physical state `S_mind`, having ambient dynamics `D_mind(t)`. In order to do so it performs action `A_mind`, producing outcome `O_mind`, summarised as follows:
 
@@ -34,27 +34,27 @@ By way of example of the importance of such mind regulation, consider the case o
 
 # Visceral Loop
 
-This paper introduces the concept of a _visceral loop_ as a characterisation of processing within a looping biological or AI agent. The visceral loop is so named because it refers to an agent concluding that it experiences consciousness "in a visceral way". It identifies that a processing loop with sufficient representational capabilities can, at the most optimum, conclude itself as conscious within three iterations of the loop. Each of those iterations have specific characteristics, and the visceral loop characterises thought as falling into one of those three iterations.
+This paper introduces the concept of a _visceral loop_ as a characterisation of processing within a looping biological or AI agent of the sort described in the introduction. The visceral loop is so named because it refers to an agent concluding that it experiences consciousness "in a visceral way". It identifies that an agent with sufficient representational capabilities can, at the most optimum, conclude itself as conscious within three iterations of the loop. Each of those iterations have specific characteristics, and the visceral loop characterises thought as falling into one of those three iterations.
 
 Let:
 * `E` be the agent's set of beliefs about the external world
-* `B` be the agent's set of beliefs about its own physical body (drawn from the body schema) and of bodies in general, and if it has a concept of "I" then this set includes a belief that relates other body beliefs to "I"
-* `M` be the agent's set of beliefs about its own mind (drawn from the mind schema) and of minds in general, and if it has a concept of "I" then this set includes a belief that relates other mind beliefs to "I"
+* `B` be the agent's set of beliefs about its own physical body (drawn from the body schema) and of bodies in general, and if it has a concept of its identity then this set includes a belief that relates other body beliefs to its identity
+* `M` be the agent's set of beliefs about its own mind (drawn from the mind schema) and of minds in general, and if it has a concept of its identity then this set includes a belief that relates other mind beliefs to its identity
 * `f(..)` be the function executed by the agent on the specified inputs in order to draw inferences
 
-`M` can be thought of as an agent's "theory of mind", because it relates to not such itself but also its ability to predict the hidden mental state of others.
+`M` can be thought of as an agent's "theory of mind", because it relates not only to itself but also to its ability to predict the hidden mental state of others.
 
 **Iteration 1:**
 
 _Iteration 1_ represents the most common kind of data processing, such as spending multiple processing cycles to refine the identification of something within the visual field. While an agent's mind schema may be used to regulate the thought process, the result of Iteration 1 never makes any reference to it.
 
-Let `x` be an inference produced as the result of a processing step, such that it does not draw any reference to `M` (ie: if `x` is a value then `x ∉ M`, or if `x` is a relation of two values then `x = relation(a, b)` such that `a ∉ M` and `b ∉ M`, or if `x` is a relation involving a set then `x = relation(a, B)` such that `a ∉ M` and `B ⊄ M`). Given some sense input or past state `s`, a processing step is characterised as visceral loop Iteration 1 if it is of the following form:
+Let `x` be an inference produced as the result of a processing step, such that it does not draw any reference to `M` (ie: `x ∉ M`, and if `x` is a relation then `x = relation(α,β)` such that `α ∉ M` and `β ∉ M` and `α ⊄ M` and `β ⊄ M`). Given some sense input or past state `s`, a processing step is characterised as visceral loop Iteration 1 if it is of the following form:
 
 * `f(s, E ∪ B ∪ M) -> x`
 
 **Iteration 2:**
 
-_Iteration 2_ processing steps draw conclusions that relate past thought actions and conclusions to the agent's theory of mind and to the agent's concept of its identity. For example, concluding that a past data state or non-physical action is classified as "thought", concluding whether the primary source of a past data state was external or internal, or relating the fact of an internal source to the agent's concept of "I".
+_Iteration 2_ processing steps draw conclusions that relate past non-physical actions and conclusions to the agent's theory of mind and to the agent's concept of its identity. For example, concluding that a past data state or non-physical action is classified as "thought", concluding whether the primary source of a past data state was external or internal, or relating the fact of an internal source to the agent's concept of its identity.
 
 Iteration 2 requires an agent to have sufficient representational capabilities to produce inferences that represent relations involving `M`. Given some prior inference `y`, a processing step is characterised as visceral loop Iteration 2 if it is of the following form, and the relation with respect to `M` is non-empty, and it can not be characterised as Iteration 3:
 
@@ -62,7 +62,7 @@ Iteration 2 requires an agent to have sufficient representational capabilities t
 
 **Iteration 3:**
 
-_Iteration 3_ is a special case of what would otherwise be Iteration 2, but it implies stricter requirements on the agent's introspective and representational capabilities. Iteration 3 covers the ability for the agent to develop a summary of its own mental capabilities (ie: some subset `m ⊂ M`), and to consider that in relation to its conception of mental capabilities in general (ie: `M`).
+_Iteration 3_ is a special case of what would otherwise be Iteration 2, but it implies stricter requirements on the agent's introspective and representational capabilities. Iteration 3 covers the ability for the agent to develop a summary of its own mental capabilities (ie: some subset `m ⊂ M`), and to consider that in relation to its conception of mental capabilities in general or to its identity (ie: `M`). Iteration 3 is involved in an agent concluding itself as conscious, as will be seen in the section below.
 
 Given some prior inference `relation(z, M)`, and some subset of beliefs `m ⊂ M`, a processing step is characterised as visceral loop _Iteration 3_ if it is of the following form and the relation with respect to `M` is non-empty:
 
@@ -72,7 +72,7 @@ Given some prior inference `relation(z, M)`, and some subset of beliefs `m ⊂ M
 
 The concept of the visceral loop provides a framework for classifying the capabilities of different processing systems. It also has important implications for understanding consciousness, particularly in its _access consciousness_ interpretation (Block, 1995).
 
-Two examples of the descriptive power of the visceral loop in relation to consciousness are presented here.
+Two examples of the descriptive power of the visceral loop in relation to human consciousness are presented here.
 
 ## Example 1
 
@@ -89,7 +89,7 @@ The third observation draws upon the individual having an _a priori_ conception 
 
 ## Example 2
 
-As a second example of the descriptive power of the viscera loop, a theorem is presented here about the nature of consciousness.
+As a second example of the descriptive power of the viscera loop, a theorem is presented here about the nature of human consciousness.
 
 First an axiomatic baseline must be established. The author is unable to think of any rationale way in which they may consciously experience something and yet be unable to subsequently think about that experience and to know that they are thinking about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
 
@@ -109,27 +109,36 @@ Proof:
 * As per claim 1, all of conscious experience must be available for producing subsequent inferences about those conscious experiences.
 * As per claim 2, the individual must be able to identify that they produced those inferences.
 * In order for an individual to identify an inference as being their own, they must have some beliefs about their inference capabilities and how they relate to themselves as an individual entity. This is included in the set `M`, which iteration 2 produces inferences in relation to.
-* Imagine some supposed experience, and an inference `i` produced about that experience. Additionally imagine that an iteration 2 inference cannot be produced about `i`, for example, due to some incompatibility of structure, lack of data path to iteration 2 processing capabilities, or inherent limitation in iteration 2 processing capabilities. 
-* The inference `i` cannot be identified in relation to the individual. As such, the supposed experience fails on Claim 2 and `i` must be in actual fact an inference about a non-conscious experience.
+* Imagine some supposed experience, and an inference `i` produced about that experience. Additionally imagine that an iteration 2 inference cannot be produced about `i`, for example, due to some incompatibility of structure, lack of data path to iteration 2 processing capabilities, or inherent limitation in iteration 2 processing capabilities. The inference `i` cannot be identified in relation to the individual. As such, the supposed experience fails on Claim 2 and `i` must be in actual fact an inference about a non-conscious experience.
 * Thus, any experience that can only lead to inferences which cannot be included in an iteration 2 inference is not a conscious experience.
 
 # Summary and Conclusions
 
-Visceral loop explains why fRMI studies have shown that we become aware of a decision after its made (tbd: citation needed). Because it takes extra processing cycles to consciously consider the fact of the decision being made. In short: we can only think about one thing at a time, so the decision itself and thought about the decision require separate steps.
+The claim has been made that sufficiently complex environments and agent bodies require a trade-off between the inferential computing power of a single processing step versus the use of multi-step processing. In order to be a "good regulator" of its own non-physical actions, the agent must model its non-physical behaviours. Various different forms of such modelling are possible, and the characterisations offered by the Visceral Loop provide an insight into what kinds of self-referential thought are possible depending on the kind of model in use.
 
-The visceral loop can be used to explain how someone concludes themselves as conscious. It can also be used to classify the kinds of thought that occur within an agent, and the kinds of thought that it's possible for an agent to have. For example, it may be the case that simpler organisms only ever operate with Iteration 1 thought.
+In deep reinforcement learning, agents are classified as being model-free or model-based (Lazaridis, Fachantidis, & Vlahavas, 2020). A model-free agent, which implicitly _is_ a model, but which does not _contain_ an explicit representational model, may never exceed Iteration 1 processing as there is no explicit model for it to introspect. A typical model-based RL agent of the sort used in most research today has an explicit model, but it's own inferential capabilities would not directly introspect that model. However, it should not require much effort to enable a model-based RL agent to access its model and to draw inferences from it.
 
+The Visceral Loop has been shown to offer significant insight into consciousness. More work is required here. The author believes that a stronger claim about the data available within consciousness can yet be made. It should be noted that there are aspects of consciousness that the Visceral Loop makes no claim over. In particular, it offers no explanation for the so called "hard problem" of phenomenal consciousness (Chalmers, 1995) - the "what it feels like" aspect of consciousness.
 
+The Visceral Loop can be used to understand other aspects of thought. For example, it explains why fRMI studies have suggested that we become aware of a decision after it is made (Soon, Brass, Heinze & Haynes, 2008): because it takes extra processing cycles to consciously consider the fact of the decision being made. In short: we can only think about one thing at a time, so the decision itself and thought about the decision require separate steps.
+
+The work presented here has implications for understanding consciousness, for the design of AI systems, and perhaps forms one of the necessary building blocks towards artificial general intelligence (AGI).
 
 # References
 
 Block, N. (1995). On a confusion about a function of consciousness. Brain and Behavioral Sciences, 18(2), 227–247. https://doi.org/10.1017/S0140525X00038188. \[[Full Text](https://www.nyu.edu/gsas/dept/philo/faculty/block/papers/1995_Function.pdf)\]
 
+Chalmers, D. J. (1995). Facing up to the problem of consciousness. Journal of Consciousness Studies 2(3): 200-19. http://dx.doi.org/10.1093/acprof:oso/9780195311105.003.0001. \[[Full Text](http://consc.net/papers/facing.pdf)\]
+
 Conant, R. C., and Ashby, W. R. (1970). Every good regulator of a system must be a model of that system. Int. J. Systems Sci., vol. 1, No. 2, pp 89-97. https://doi.org/10.1080/00207727008920220. \[[Full Text](http://pespmc1.vub.ac.be/books/Conant_Ashby.pdf)\]
 
 Graziano, M. S. A. (2017). The Attention Schema Theory: A Foundation for Engineering Artificial Consciousnes. Front. Robot. AI. https://doi.org/10.3389/frobt.2017.00060.
 
+Lazaridis, A., Fachantidis, A., & Vlahavas, I. (2020). Deep Reinforcement Learning: A State-of-the-Art Walkthrough. J. Artif. Intell. Res., 69, 1421-1471. https://doi.org/10.1613/jair.1.12412. \[[Full Text](https://jair.org/index.php/jair/article/view/12412/26638)\]
+
 Proske, U., and Gandevia, S. C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiological Reviews 2012 92:4, pp 1651-1697. https://doi.org/10.1152/physrev.00048.2011.
+
+Soon, C. S., Brass, M., Heinze, H. J., & Haynes, J. D. (2008). Unconscious determinants of free decisions in the human brain. Nature neuroscience, 11(5), 543–545. https://doi.org/10.1038/nn.2112. \[[Full Text](https://www.researchgate.net/publication/5443390_Unconscious_determinants_of_free_decisions_in_the_human_brain)/]
 
 Wernicke's area. (n.d.). In _Wikepedia_. https://en.wikipedia.org/wiki/Wernicke%27s_area. 
 
