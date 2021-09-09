@@ -4,7 +4,7 @@
 
 # Abstract
 
-The claim is made that cycles of non-physical "mental" actions are required in agents that operate within sufficiently complex environments, and that such actions require regulation through the use of a model. A framework is proposed, named the _Visceral Loop_, that identifies three distinct kinds of processing within such a system in terms of how it uses that model. It is shown that this can be used to characterise human thought, including about thought itself, and how it is involved when an individual concludes that they are conscious. A proof is given relating an upper bound on data available within access consciousness to the visceral loop characterisations of thought.
+The claim is made that cycles of non-physical "mental" actions are required in agents that operate within sufficiently complex environments, and that such actions require regulation through the use of a model. A framework is proposed, named the _Visceral Loop_, that identifies three distinct kinds of processing within such a system in terms of how it uses that model. It is shown that this can be used to characterise human thought, including about thought itself, and how it is involved when an individual concludes that they are conscious. A proof is given relating an upper bound on data available within access consciousness to the Visceral Loop characterisations of thought.
 
 # Introduction
 
@@ -34,7 +34,7 @@ By way of example of the importance of such mind regulation, consider the case o
 
 # Visceral Loop
 
-This paper introduces the concept of a _visceral loop_ as a characterisation of processing within a looping biological or AI agent of the sort described in the introduction. The visceral loop is so named because it refers to an agent concluding that it experiences consciousness "in a visceral way". It identifies that an agent with sufficient representational capabilities can, at the most optimum, conclude itself as conscious within three iterations of the loop. Each of those iterations have specific characteristics, and the visceral loop characterises thought as falling into one of those three iterations.
+This paper introduces the concept of a _Visceral Loop_ as a characterisation of processing within a looping biological or AI agent of the sort described in the introduction. The Visceral Loop is so named because it refers to an agent concluding that it experiences consciousness "in a visceral way". It identifies that an agent with sufficient representational capabilities can, at the most optimum, conclude itself as conscious within three iterations of the loop. Each of those iterations have specific characteristics, and the Visceral Loop characterises thought as falling into one of those three iterations.
 
 Let:
 * `E` be the agent's set of beliefs about the external world
@@ -48,7 +48,7 @@ Let:
 
 _Iteration 1_ represents the most common kind of data processing, such as spending multiple processing cycles to refine the identification of something within the visual field. While an agent's mind schema may be used to regulate the thought process, the result of Iteration 1 never makes any reference to it.
 
-Let `x` be an inference produced as the result of a processing step, such that it does not draw any reference to `M` (ie: `x ∉ M`, and if `x` is a relation then `x = relation(α,β)` such that `α ∉ M` and `β ∉ M` and `α ⊄ M` and `β ⊄ M`). Given some sense input or past state `s`, a processing step is characterised as visceral loop Iteration 1 if it is of the following form:
+Let `x` be an inference produced as the result of a processing step, such that it does not draw any reference to `M` (ie: `x ∉ M`, and if `x` is a relation then `x = relation(α,β)` such that `α ∉ M` and `β ∉ M` and `α ⊄ M` and `β ⊄ M`). Given some sense input or past state `s`, a processing step is characterised as Visceral Loop Iteration 1 if it is of the following form:
 
 * `f(s, E ∪ B ∪ M) -> x`
 
@@ -56,7 +56,7 @@ Let `x` be an inference produced as the result of a processing step, such that i
 
 _Iteration 2_ processing steps draw conclusions that relate past non-physical actions and conclusions to the agent's theory of mind and to the agent's concept of its identity. For example, concluding that a past data state or non-physical action is classified as "thought", concluding whether the primary source of a past data state was external or internal, or relating the fact of an internal source to the agent's concept of its identity.
 
-Iteration 2 requires an agent to have sufficient representational capabilities to produce inferences that represent relations involving `M`. Given some prior inference `y`, a processing step is characterised as visceral loop Iteration 2 if it is of the following form, and the relation with respect to `M` is non-empty, and it can not be characterised as Iteration 3:
+Iteration 2 requires an agent to have sufficient representational capabilities to produce inferences that represent relations involving `M`. Given some prior inference `y`, a processing step is characterised as Visceral Loop Iteration 2 if it is of the following form, and the relation with respect to `M` is non-empty, and it can not be characterised as Iteration 3:
 
 * `f(y, E ∪ B ∪ M) -> relation(y, M)`
 
@@ -64,19 +64,19 @@ Iteration 2 requires an agent to have sufficient representational capabilities t
 
 _Iteration 3_ is a special case of what would otherwise be Iteration 2, but it implies stricter requirements on the agent's introspective and representational capabilities. Iteration 3 covers the ability for the agent to develop a summary of its own mental capabilities (ie: some subset `m ⊂ M`), and to consider that in relation to its conception of mental capabilities in general or to its identity (ie: `M`). Iteration 3 is involved in an agent concluding itself as conscious, as will be seen in the section below.
 
-Given some prior inference `relation(z, M)`, and some subset of beliefs `m ⊂ M`, a processing step is characterised as visceral loop _Iteration 3_ if it is of the following form and the relation with respect to `M` is non-empty:
+Given some prior inference `relation(z, M)`, and some subset of beliefs `m ⊂ M`, a processing step is characterised as Visceral Loop _Iteration 3_ if it is of the following form and the relation with respect to `M` is non-empty:
 
 * `f(relation(z, M), E ∪ B ∪ M) -> relation(m, M)`
 
 # Consciousness
 
-The concept of the visceral loop provides a framework for classifying the capabilities of different processing systems. It also has important implications for understanding consciousness, particularly in its _access consciousness_ interpretation (Block, 1995).
+The concept of the Visceral Loop provides a framework for classifying the capabilities of different processing systems. It also has important implications for understanding consciousness, particularly in its _access consciousness_ interpretation (Block, 1995).
 
-Two examples of the descriptive power of the visceral loop in relation to human consciousness are presented here.
+Two examples of the descriptive power of the Visceral Loop in relation to human consciousness are presented here.
 
 ## Example 1
 
-In this first example, the visceral loop is applied to understand the thought processes whereby an individual concludes themselves as conscious. Consider the following sequence of internal mental observations:
+In this first example, the Visceral Loop is applied to understand the thought processes whereby an individual concludes themselves as conscious. Consider the following sequence of internal mental observations:
 1. "What's that red blob in the tree? Oh, it's an apple".
 2. "Oh, those thoughts just came from my mind, and not from the outside world".
 3. "That's what consciousness is. I am conscious".
@@ -102,7 +102,7 @@ Claim 2:
 Note that these claims do not assume that all conscious experience is actually thought about; only that it is in principle available for such thought. Additionally, no assumption is made about whether other kinds of thought are consciously experienced or not.
 
 Theorem 1:
-* the content of conscious experience is upper bounded by the data about which visceral loop iteration 2 inferences can be produced.
+* the content of conscious experience is upper bounded by the data about which Visceral Loop iteration 2 inferences can be produced.
 
 Proof:
 * The _content of conscious experience_ refers to the set of data represented and/or processed within the brain which is consciously experienced by that individual, in distinction to other data represented and/or processed in the brain which is not consciously experienced.
