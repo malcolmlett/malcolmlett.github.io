@@ -89,7 +89,7 @@ The third observation draws upon the individual having an _a priori_ conception 
 
 ## Example 2
 
-As a second example of the descriptive power of the Viscera Loop, a theorem is presented here about the nature of human consciousness.
+As a second example of the descriptive power of the Visceral Loop, a theorem is presented here about the nature of human consciousness.
 
 First an axiomatic baseline must be established. The author is unable to think of any rationale way in which they may consciously experience something and yet be unable to subsequently think about that experience and to know that they are thinking about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement, without further proof:
 
