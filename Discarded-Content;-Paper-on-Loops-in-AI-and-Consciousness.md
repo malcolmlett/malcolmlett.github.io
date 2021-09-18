@@ -5,6 +5,31 @@ For example, many current artificial _reinforcement learning_ (RL) agents contin
 
 Here, _knowingly_ is used to refer to a processor being able to subsequently introspect both the input and output, to know the causal relationship between them, and to perform additional processing about the fact that it had performed that operation. Additionally, the act of performing that additional processing must itself be _knowable_.
 
+# Models
+
+|(a)|(b)|
+|---|---|
+|![conant and ashby figure 1](files/conant-and-ashby-figure1.png)|![conant and ashby figure 2](files/conant-and-ashby-figure2.png)|
+
+> **Figure 1: copied from Conant and Ashby (1970).** (a) is general case. (b) indicates special case with limited ability where regulator reacts based on result after system has been disturbed. _tbd_: draw own versions of this.
+
+_tbd_: introduce good regulator in detail, and discuss difference between disturber-based and error-based (and using correct terms from their paper).
+
+Different kinds of model are possible, as illustrated by Figure 2. The simplest model is a function `f`, that takes some sense input `x` and directly produces the regulation action as `f(x)`. A simple mechanical thermostat is an example of this: a bi-metallic strip bends in one of two directions depending on the temperature, switching connection to the power source on or off. The function (the bi-metallic strip here) directly controls the resultant action, without any additional controller required to enforce the output of the function. The mechanical thermostat models the underlying system in a very simple way: if the environment is too hot, then it can be cooled by removing the heat source; if it is too cold, then it can be warmed by applying the heat source. In the truest sense, it can be said that the thermostat _is_ a model of the system that it regulates (although, in the terminology of Conant and Ashby, it is not a "good" regulator, as it allows much fluctuation in the system that it attempts to regulate). Another example of a this kind of model is a biological neural network that observes its environment through senses and produces physical actions in order to regulate it. Like the thermostat, the neural network produces actions directly from its inputs (and its internal state); it does not require some external system to execute actions _based on_ the model inherent within the neural network.
+
+A second kind of model, illustrated in Figure 2b, requires a controller. In this kind, the model is some set of data, `D`, that represents knowledge about the target system. The model has no inherent executional capability, and thus requires a controller, indicated here as a function `g`. The controller queries the model in some way with request to the current input state, obtaining `d ⊂ D` that represents information pertinent to the situation at hand. The controller then uses `d` along with the original input `x` to calculate an appropriate action as `g(x,d)`. It can be said that the regulator made up of `D` plus `g` both _is_ a model of the system, and _has_ a model of that system. It is not clear that biology would use this exact kind of model, as biological brains don't appear to just _hold_ data in arbitrary data structures and allow some other system to randomly access them.
+
+A variant of the second kind, illustrated in Figure 2c, is more likely from a biological perspective. Rather than the model just storing data, it incorporates a function `f` that somehow infers data about the underlying system, based on some sort of query. This can be seen as a cross between (a) and (b), as the model is an executable function, but it requires a controller to apply it in context. Within modern AI, a model-based deep reinforcement learning agent is an example of this second kind: an artificial neural network is trained to predict the outcome of actions given known states, and a separate controller algorithm uses that neural network to plan the best sequence of actions towards the goal.
+
+A fourth kind of model is also possible, which is also biologically plausible, and which combines (a) with (c). In this system, a functional model `f` executes inputs to produce actions of some sort, while an independent controller needs the ability to inspect the underlying model. As the controller is independent, it builds up its own model of the functional model `f`, as `f'`, and uses it in the same form as in (c). As mentioned, this is actually biologically plausible. For example, the separation between `f` and `g` may be the `g` uses its model `f'` to predict the best command to issue to `f` in order to produce a desired action. This is the core feature of Higher Order Thought Theory (HOTT), and is also used as the basis for Hierarchical Predictive Coding (citations).
+
+Some analysis of the above can now be offered. The first point is that all variations are functionally equivalent in terms of the actions that may be produced. All of the above variations can be approximated as some function, `h`, that takes the input `x` and produces the `h(x)` as the output action. A second point is that where they differ is in the implementational ease of building up a representational model from experience and in inspecting that model for abstract rationalisations.
+
+![models](files/Paper-on-Loops-in-AI-and-Consciousness-models.png)
+
+> **Figure 2: Model variants.** (a) simple action policy that is merely a function, `f`, of the input. (b) explicit model, `D`, that contains data about the target being modelled, and which requires a separate controller function, `g`, to execute actions based on the model by querying the model and obtaining a subset `d` that is subsequently used in action generation. (c) function `f` as an approximation of `D`. (d) function `f` generates actions, and a separate system `f'` and `g` as per (c) model function `f`, such as to predict the actions generated from `f` or to infer best input to generate for `f` that will produce the desired outcome (ie: if `x = g(y, f'(q))`).
+
+
 
 ## Visceral Loop
 

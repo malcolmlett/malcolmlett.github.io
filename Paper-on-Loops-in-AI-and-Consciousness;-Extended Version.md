@@ -32,31 +32,8 @@ The agent's non-physical actions are performed in order to regulate towards some
 
 By way of example of the importance of such mind regulation, consider the case of fluent aphasia, caused by damage to the Wernicke's area of the brain. Individuals with fluent aphasia can easily produce speech, but it is typically full of many meaningless words and often unnecessarily long winded. Wernicke's area is associated with language comprehension and, as such, provides a corrective mechanism during speech production in a neurotypical individual (_Wernicke's area_).
 
+
 # Models
-
-|(a)|(b)|
-|---|---|
-|![conant and ashby figure 1](files/conant-and-ashby-figure1.png)|![conant and ashby figure 2](files/conant-and-ashby-figure2.png)|
-
-> **Figure 1: copied from Conant and Ashby (1970).** (a) is general case. (b) indicates special case with limited ability where regulator reacts based on result after system has been disturbed. _tbd_: draw own versions of this.
-
-_tbd_: introduce good regulator in detail, and discuss difference between disturber-based and error-based (and using correct terms from their paper).
-
-Different kinds of model are possible, as illustrated by Figure 2. The simplest model is a function `f`, that takes some sense input `x` and directly produces the regulation action as `f(x)`. A simple mechanical thermostat is an example of this: a bi-metallic strip bends in one of two directions depending on the temperature, switching connection to the power source on or off. The function (the bi-metallic strip here) directly controls the resultant action, without any additional controller required to enforce the output of the function. The mechanical thermostat models the underlying system in a very simple way: if the environment is too hot, then it can be cooled by removing the heat source; if it is too cold, then it can be warmed by applying the heat source. In the truest sense, it can be said that the thermostat _is_ a model of the system that it regulates (although, in the terminology of Conant and Ashby, it is not a "good" regulator, as it allows much fluctuation in the system that it attempts to regulate). Another example of a this kind of model is a biological neural network that observes its environment through senses and produces physical actions in order to regulate it. Like the thermostat, the neural network produces actions directly from its inputs (and its internal state); it does not require some external system to execute actions _based on_ the model inherent within the neural network.
-
-A second kind of model, illustrated in Figure 2b, requires a controller. In this kind, the model is some set of data, `D`, that represents knowledge about the target system. The model has no inherent executional capability, and thus requires a controller, indicated here as a function `g`. The controller queries the model in some way with request to the current input state, obtaining `d ⊂ D` that represents information pertinent to the situation at hand. The controller then uses `d` along with the original input `x` to calculate an appropriate action as `g(x,d)`. It can be said that the regulator made up of `D` plus `g` both _is_ a model of the system, and _has_ a model of that system. It is not clear that biology would use this exact kind of model, as biological brains don't appear to just _hold_ data in arbitrary data structures and allow some other system to randomly access them.
-
-A variant of the second kind, illustrated in Figure 2c, is more likely from a biological perspective. Rather than the model just storing data, it incorporates a function `f` that somehow infers data about the underlying system, based on some sort of query. This can be seen as a cross between (a) and (b), as the model is an executable function, but it requires a controller to apply it in context. Within modern AI, a model-based deep reinforcement learning agent is an example of this second kind: an artificial neural network is trained to predict the outcome of actions given known states, and a separate controller algorithm uses that neural network to plan the best sequence of actions towards the goal.
-
-A fourth kind of model is also possible, which is also biologically plausible, and which combines (a) with (c). In this system, a functional model `f` executes inputs to produce actions of some sort, while an independent controller needs the ability to inspect the underlying model. As the controller is independent, it builds up its own model of the functional model `f`, as `f'`, and uses it in the same form as in (c). As mentioned, this is actually biologically plausible. For example, the separation between `f` and `g` may be the `g` uses its model `f'` to predict the best command to issue to `f` in order to produce a desired action. This is the core feature of Higher Order Thought Theory (HOTT), and is also used as the basis for Hierarchical Predictive Coding (citations).
-
-Some analysis of the above can now be offered. The first point is that all variations are functionally equivalent in terms of the actions that may be produced. All of the above variations can be approximated as some function, `h`, that takes the input `x` and produces the `h(x)` as the output action. A second point is that where they differ is in the implementational ease of building up a representational model from experience and in inspecting that model for abstract rationalisations.
-
-![models](files/Paper-on-Loops-in-AI-and-Consciousness-models.png)
-
-> **Figure 2: Model variants.** (a) simple action policy that is merely a function, `f`, of the input. (b) explicit model, `D`, that contains data about the target being modelled, and which requires a separate controller function, `g`, to execute actions based on the model by querying the model and obtaining a subset `d` that is subsequently used in action generation. (c) function `f` as an approximation of `D`. (d) function `f` generates actions, and a separate system `f'` and `g` as per (c) model function `f`, such as to predict the actions generated from `f` or to infer best input to generate for `f` that will produce the desired outcome (ie: if `x = g(y, f'(q))`).
-
-# Models (take 2)
 
 The systems described above are all of the form `S + D(t) + A = O`. The production of the action `A` for a given situation can be said as being computed by a function, `f`, that takes the state `S` as input. In that way, function `f` becomes a model of the dynamics `D(t)`. There are many different ways of constructing such a function, with implications on how much its inherent model can be introspected for purposes other than merely computing the next action.
 
@@ -66,7 +43,7 @@ Consider the following function. This function is, for example, effective at pre
     
 Alternatively, consider the following diagram, which shows an _abstract syntax tree_ (AST) of the function above, of the sort used in computer science to parse an expression within a software compiler (_Abstract syntax tree_). It is a more explicit model of the dynamics being regulated. A regulator could use this AST instead of the function above to calculate its next action. In the AST, the components of the original function are represented individually, and thus they can be individually queried. So it can be introspected, and much more can be derived from it, for example that: i) the target is `3`, ii) the input signal `x` is scaled by a factor of 2, and iii) it depends on the operations of _subtraction_ and _multiplication_.
 
-![ast](Paper-on-Loops-in-AI-and-Consciousness-ast.png)
+![ast](files/Paper-on-Loops-in-AI-and-Consciousness-ast.png)
 
 The function and the AST are two forms of model, but with very different introspective opportunities. Consider the task of constructing a set, `F`, that contains all beliefs that may be drawn from the model. In the case of the function, pairs of input and output action values are all that can be drawn from the model, ie: `<0,3>, <2,-1>, <-3,9>, <-1,5>`, etc. The AST supports that those pairs and input and action values can also be drawn from it. However the AST also supports that many other beliefs may be drawn from the model and added to `F`, such as the examples of target `3`, `x` scaled by `2`, and subtraction and multiplication operations.
 
@@ -139,7 +116,7 @@ The third observation draws upon the individual having an _a priori_ conception 
 
 As a second example of the descriptive power of the Visceral Loop, a theorem is presented here about the nature of human consciousness.
 
-First an axiomatic baseline must be established. The author is unable to think of any rationale way in which they may consciously experience something and yet be unable to subsequently think about that experience and to know that they are thinking about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement without further proof:
+First an axiomatic baseline must be established. The author is unable to think of any rationale way in which they may consciously experience something and yet be unable to subsequently think about that experience and to know that they are thinking about that experience. Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement without further proof (the veracity of these claims will be discussed in the next section):
 
 Claim 1:
 * All conscious experience is subsequently available for further thought.
@@ -160,6 +137,18 @@ Proof:
 * In order for an individual to identify an inference as being their own, they must have some beliefs about their inference capabilities and how they relate to themselves as an individual entity. This is included in the set `M`, which iteration 2 produces inferences in relation to, and which is not directly accessible for inferences within iteration 1.
 * Imagine some supposed experience, and an inference `i` produced about that experience. Additionally imagine that an iteration 2 inference cannot be produced about `i`, for example, due to some incompatibility of structure, lack of data path to iteration 2 processing capabilities, or inherent limitation in iteration 2 processing capabilities. The inference `i` cannot be identified in relation to the individual. As such, the supposed experience fails on Claim 2 and `i` must be in actual fact an inference about some sort of non-conscious experience.
 * Thus, an experience is not a conscious experience if it can only lead to inferences which cannot be included in an iteration 2 inference.
+
+# Analysis
+
+Claim 1 in the prior section calls to a conflict between two different intuitions about the natures of how P-Cs and A-Cs interact. ....tbd...describe them individually.....
+
+Some authors hold to the notion that P-Cs and A-Cs are distinct, potentially relating to different processing structures within the brain, and fulfil different functions (..citations..).
+
+Others hold to the notion that P-Cs and A-Cs correlate, and that P-Cs is the phenomenal experience of the data held and/or processed within A-Cs.
+
+Thus the theorem offered in the prior section cannot be proven absolutely until the issue of these two notions of consciousness are resolved. However, there is a middleground that can be taken until such time. While it is indeed plausible that P-Cs and A-Cs are uncorrelated, there remains a strong overlap. Most of P-Cs is available to A-Cs, and vice versa (..citation...). Thus, while the theorem above is not true 100% of the time, it still remains a useful tool for understanding at least _most_ of thought. Furthermore, the Viscera Loop is a descriptive tool......(tbd)...
+
+(tbd if needed, "uncorrelated" vs "correlated" theories)
 
 # Summary and Conclusions
 
