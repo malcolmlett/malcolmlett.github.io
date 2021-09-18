@@ -97,7 +97,7 @@ Given some prior inference `relation(z, M)`, and some subset of beliefs `m ⊂ M
 
 The concept of the Visceral Loop provides a framework for classifying the capabilities of different processing systems. It also has important implications for understanding consciousness, particularly in its _access consciousness_ interpretation (Block, 1995).
 
-Two examples of the descriptive power of the Visceral Loop in relation to human consciousness are presented here.
+Three examples of the descriptive power of the Visceral Loop in relation to human consciousness are presented here.
 
 ## Example 1
 
@@ -138,27 +138,27 @@ Proof:
 * Imagine some supposed experience, and an inference `i` produced about that experience. Additionally imagine that an iteration 2 inference cannot be produced about `i`, for example, due to some incompatibility of structure, lack of data path to iteration 2 processing capabilities, or inherent limitation in iteration 2 processing capabilities. The inference `i` cannot be identified in relation to the individual. As such, the supposed experience fails on Claim 2 and `i` must be in actual fact an inference about some sort of non-conscious experience.
 * Thus, an experience is not a conscious experience if it can only lead to inferences which cannot be included in an iteration 2 inference.
 
+# Example 3
+
+The Visceral Loop can be used to understand other aspects of thought. For example, it explains why fRMI studies have suggested that we become aware of a decision after it is made (Soon, Brass, Heinze & Haynes, 2008) - because it takes extra processing cycles to consciously consider the fact of the decision being made. In short, we can only think about one thing at a time, so the decision itself and thought about the decision require separate steps.
+
+
 # Analysis
 
-Claim 1 in the prior section calls to a conflict between two different intuitions about the natures of how P-Cs and A-Cs interact. ....tbd...describe them individually.....
+The theorem offered above is likely acceptable to some, but will seem unreasonable to others. The issue lies is  Claim 1, which calls to a conflict between two different intuitions about the nature of interaction between _Phenomenal Consciousness_ (P-Cs) and _Access Consciousness_ (A-Cs). P-Cs is generally recognised as some sort of "what it is like-ness" of having experiences of senses, thoughts, and/or states. A-Cs refers to detailed executive control, such as rational thought. Block defines A-Cs states as "(1) ... poised for use as a premise in reasoning, (2) poised for rational control of action, and (3) poised for rational control of speech" (Block, 1955, p. 231).
 
-Some authors hold to the notion that P-Cs and A-Cs are distinct, potentially relating to different processing structures within the brain, and fulfil different functions (..citations..).
+Some authors hold to a notion that P-Cs and A-Cs fulfil different functions and as such one may exist without the other; although it is recognised that they seem to coincide most of the time (..citations..). Let's call this the "uncorrelated theorem". Others hold to the notion that P-Cs is the phenomenal experience of the data held and/or processed within A-Cs. Let's call this the "correlated theory".
 
-Others hold to the notion that P-Cs and A-Cs correlate, and that P-Cs is the phenomenal experience of the data held and/or processed within A-Cs.
-
-Thus the theorem offered in the prior section cannot be proven absolutely until the issue of these two notions of consciousness are resolved. However, there is a middleground that can be taken until such time. While it is indeed plausible that P-Cs and A-Cs are uncorrelated, there remains a strong overlap. Most of P-Cs is available to A-Cs, and vice versa (..citation...). Thus, while the theorem above is not true 100% of the time, it still remains a useful tool for understanding at least _most_ of thought. Furthermore, the Viscera Loop is a descriptive tool......(tbd)...
-
-(tbd if needed, "uncorrelated" vs "correlated" theories)
+Claim 1 is consistent with the correlated theorem. However, it is not consistent with the uncorrelated theorem, which holds that it is possible to phenominally experience something without having access to it for thought. Thus Theorem 1 cannot be proven with certainty until the issue of these two notions of consciousness are resolved. However, there is a middleground that can be taken until such a time is reached. While it is indeed plausible that P-Cs and A-Cs are uncorrelated, there remains a strong overlap: most of P-Cs is available to A-Cs, and vice versa (..citation...). Thus, while Theorem 1 may not be true 100% of the time, it still remains a useful tool for understanding at least _most_ of thought. Furthermore, the Viscera Loop as a descriptive tool still offers tremendous benefit.
 
 # Summary and Conclusions
 
 The claim has been made that sufficiently complex environments and agent bodies require a trade-off between the inferential computing power of a single processing step versus the use of multi-step processing. In order to be a "good regulator" of its own non-physical actions, the agent must model its non-physical behaviours. Various different forms of such modelling are possible, and the characterisations offered by the Visceral Loop provide an insight into what kinds of self-referential thought are possible depending on the kind of model in use.
 
-In deep reinforcement learning, agents are classified as being model-free or model-based (Lazaridis, Fachantidis, & Vlahavas, 2020). A model-free agent, which implicitly _is_ a model, but which does not _contain_ an explicit representational model, may never exceed Iteration 1 processing as there is no explicit model for it to introspect. A typical model-based RL agent of the sort used in most research today has an explicit model, but it's own inferential capabilities would not directly introspect that model. However, it should not require much effort to enable a model-based RL agent to access its model and to draw inferences from it.
+_(TBD: needs revision)_ In deep reinforcement learning, agents are classified as being model-free or model-based (Lazaridis, Fachantidis, & Vlahavas, 2020). A model-free agent, which implicitly _is_ a model, but which does not _contain_ an explicit representational model, may never exceed Iteration 1 processing as there is no explicit model for it to introspect. A typical model-based RL agent of the sort used in most research today has an explicit model, but it's own inferential capabilities would not directly introspect that model. However, it should not require much effort to enable a model-based RL agent to access its model and to draw inferences from it.
 
 The Visceral Loop has been shown to offer significant insight into consciousness. More work is possible here. It should be noted that there are aspects of consciousness that the Visceral Loop makes no claim over. In particular, it offers no explanation for the so called "hard problem" of phenomenal consciousness (Chalmers, 1995) - the "what it feels like" aspect of consciousness. However, the author believes that stronger claims about the natures of both access consciousness and phenomenal consciousness can yet be made, based on the framework of the Visceral Loop.
 
-The Visceral Loop can be used to understand other aspects of thought. For example, it explains why fRMI studies have suggested that we become aware of a decision after it is made (Soon, Brass, Heinze & Haynes, 2008) - because it takes extra processing cycles to consciously consider the fact of the decision being made. In short, we can only think about one thing at a time, so the decision itself and thought about the decision require separate steps.
 
 _tbd_:
 * _Tie VL to need for computational models, as discussed by (Michael D. Colagrosso, Michael C. Mozer. 2004. Theories Of Access Consciousness. NIPS.)_
@@ -169,9 +169,9 @@ The work presented here has implications for understanding consciousness, for th
 
 # References
 
-Block, N. (1995). On a confusion about a function of consciousness. Brain and Behavioral Sciences, 18(2), 227–247. https://doi.org/10.1017/S0140525X00038188. \[[Full Text](https://www.nyu.edu/gsas/dept/philo/faculty/block/papers/1995_Function.pdf)\]
+Block, N. (1995). On a confusion about a function of consciousness. Brain and Behavioral Sciences, 18(2), pp 227–247. https://doi.org/10.1017/S0140525X00038188. \[[Full Text](https://www.nyu.edu/gsas/dept/philo/faculty/block/papers/1995_Function.pdf)\]
 
-Chalmers, D. J. (1995). Facing up to the problem of consciousness. Journal of Consciousness Studies 2(3): 200-19. http://dx.doi.org/10.1093/acprof:oso/9780195311105.003.0001. \[[Full Text](http://consc.net/papers/facing.pdf)\]
+Chalmers, D. J. (1995). Facing up to the problem of consciousness. Journal of Consciousness Studies 2(3): pp 200-19. http://dx.doi.org/10.1093/acprof:oso/9780195311105.003.0001. \[[Full Text](http://consc.net/papers/facing.pdf)\]
 
 Conant, R. C., and Ashby, W. R. (1970). Every good regulator of a system must be a model of that system. Int. J. Systems Sci., vol. 1, No. 2, pp 89-97. https://doi.org/10.1080/00207727008920220. \[[Full Text](http://pespmc1.vub.ac.be/books/Conant_Ashby.pdf)\]
 
