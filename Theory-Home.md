@@ -11,7 +11,7 @@ I've been wondering about human consciousness since 2014. In particular I'm inte
 
 # Papers
 * [[Paper on Loops in AI and Consciousness]]
-* [[Paper on Loops in AI and Consciousness - Extended Version]]
+* [[Paper on Loops in AI and Consciousness; Extended Version]]
 
 # Other Topics
 * [[Background to A Theory of Mind]]
