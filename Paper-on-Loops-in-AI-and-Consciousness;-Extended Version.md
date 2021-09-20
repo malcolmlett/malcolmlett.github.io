@@ -154,6 +154,9 @@ The Visceral Loop can be used to understand other aspects of thought. For exampl
 Theorem 1 is obviously applicable to access consciousness. The extent to which it is also applicable to phenomenal consciousness depends on the reader's preferred theory of consciousness.
 
 ...
+...todo: look through these authors' works to classify their views into correlated vs uncorrelated:
+> (source: https://plato.stanford.edu/entries/consciousness-higher/) Some claim that for a state to be conscious in the relevant sense is for it to be poised to have an impact on the organism’s decision-making processes (Kirk 1994; Dretske 1995; Tye 1995, 2000), perhaps also with the additional requirement that those processes should be distinctively rational ones (Block 1995). Others think that the relevant requirement for access-consciousness is that the state should be suitably related to higher-order representations—experiences and/or thoughts—of that very state (Armstrong 1968, 1984; Rosenthal 1986, 1993, 2005; Dennett 1978a, 1991; Carruthers 1996, 2000, 2005; Lycan 1987, 1996; Gennaro 2012).
+...
 
 
 The theorem offered above is likely acceptable to some, but will seem unreasonable to others. The issue lies in  Claim 1, which calls to a conflict between two different intuitions about the nature of interaction between _Phenomenal Consciousness_ (P-Cs) and _Access Consciousness_ (A-Cs). P-Cs is generally recognised as some sort of "what it is like-ness" of having experiences of senses, thoughts, and/or states (citation: Nagal). A-Cs refers to detailed executive control, such as rational thought. Block defines A-Cs states as "(1) ... poised for use as a premise in reasoning, (2) poised for rational control of action, and (3) poised for rational control of speech" (1955, p. 231).
