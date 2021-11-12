@@ -18,6 +18,8 @@ The rest of this paper is structured as follows. The Regulation, Model, and Sche
 
 # Regulation
 
+_tbd_: needs a better intro in this first section, current starting is a bit jarring. eg: "Agents that operate within an external environment for the purpose of manipulating that environment, or part thereof, towards a target can be described as _regulators_ of that environment."
+
 An agent that regulates its environment operates within a system containing environment state `S_env` which changes with some ambient dynamics `D_env(t)`. The agent must perform an action, `A_env`, against the environment in order to regulate itself towards some target. After an action has been executed the environment state outcome `O_env` is influenced by both `D_env(t)` and `A_env`. This can be summarised as the following equation:
 
     S_env + D_env(t) + A_env = O_env
