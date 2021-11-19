@@ -109,7 +109,7 @@ Given some prior inference `relation(z, M)`, and some subset of beliefs `m ⊂ M
 
 # Consciousness
 
-The Visceral Loop has important implications for understanding consciousness, particularly in its _access consciousness_ interpretation (Block, 1995). Three examples of the descriptive power of the Visceral Loop in relation to human consciousness are presented here.
+The Visceral Loop has important implications for understanding consciousness, particularly in terms of the data content of conscious experience - ie: what we are aware of versus what we are not. Three examples of the descriptive power of the Visceral Loop in relation to human consciousness are presented here.
 
 ## Concluding oneself as conscious
 
@@ -126,9 +126,9 @@ The third observation draws upon the individual having an _a priori_ conception 
 
 ## Content of conscious thought
 
-As a second example of the descriptive power of the Visceral Loop, a theorem is presented here about the nature of human consciousness.
+As a second example of the descriptive power of the Visceral Loop, a theorem is now presented that makes the claim that the Visceral Loop explains the data content of phenomenal conscious experience. The later Analysis section discusses some shortcomings with the theory.
 
-First an axiomatic baseline must be established. The author is unable to think of any rationale way in which they may consciously experience something and yet be unable to subsequently think about that experience and to know that they are thinking about that experience. This is the _transitivity principle_ of Rosenthal (1997). Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement without further proof (the veracity of these claims will be discussed in the next section):
+First an axiomatic baseline must be established. The author is unable to think of any rationale way in which they may consciously experience something and yet be unable to subsequently think about that experience and to know that they are thinking about that experience. Indeed, this is consistent with the _transitivity principle_ of Rosenthal (1997). Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement:
 
 Claim 1:
 * All conscious experience is subsequently available for further thought.
@@ -136,7 +136,7 @@ Claim 1:
 Claim 2:
 * For all thought about conscious experience, the individual can identify that thought as being their own.
 
-Note that these claims do not assume that all conscious experience is actually thought about; only that it is in principle available for such thought. Additionally, no assumption is made about whether other kinds of thought are consciously experienced or not.
+Note that these claims do not assume that all conscious experience is actually thought about; only that it is in principle available for such thought.
 
 Theorem 1:
 * the content of conscious experience is upper bounded by the data about which Visceral Loop iteration 2 inferences can be produced.
@@ -150,16 +150,25 @@ Proof:
 * Imagine some supposed experience, and an inference `i` produced about that experience. Additionally imagine that an iteration 2 inference cannot be produced about `i`, for example, due to some incompatibility of structure, lack of data path to iteration 2 processing capabilities, or inherent limitation in iteration 2 processing capabilities. The inference `i` cannot be identified in relation to the individual. As such, the supposed experience fails on Claim 2 and `i` must be in actual fact an inference about some sort of non-conscious experience.
 * Thus, an experience is not a conscious experience if it can only lead to inferences which cannot be included in an iteration 2 inference.
 
+
 # Delayed awareness of decisions
 
-The Visceral Loop can be used to understand other aspects of thought. For example, it explains why fRMI studies have suggested that we become aware of a decision after it is made (Soon, Brass, Heinze & Haynes, 2008) - because it takes extra processing cycles to consciously consider the fact of the decision being made.
+The Visceral Loop can be used to understand other aspects of thought. For example, fRMI studies have suggested that we become aware of a decision after it is made (Soon, Brass, Heinze & Haynes, 2008). At first glance this would seem to suggest that our conscious thought is just some sort of after-the-fact passive summarisation. The Visceral Loop provides a different interpretation.
+
+The framework of the Visceral Loop provides a different interpretation. It explains that the act of making a decision and the awareness of making that decision occur in different processing cycles. First one or more processing cycles are used to reach the decision, and subsequently the individual using one or more additional processing cycles to examine their most recent inference in relation to themselves. So it is entirely predictable that the individual would activate brain regions for reporting the decision after a measurable delay from the decision itself being made.
 
 In short, we can only think about one thing at a time, so the decision itself and thought about the decision require separate steps.
 
 
 # Analysis
 
-Theorem 1 is obviously applicable to access consciousness. The extent to which it is also applicable to phenomenal consciousness depends on the reader's preferred theory of consciousness.
+The Visceral Loop describes thought as a _semiotic process_, whereby the system is constantly alternating between building representations and interpreting those representations. Some such representations relate to the external environment, or to the individual's physical body, while other representations relate to the individual's mind, and the brain must allocate its limited resources to the construction of representations that have the most practical use at the time. Thus we must limit how much time we allocate to actively thinking about being aware of our experiences.
+
+The Visceral Loop suggests that this semiotic process constructs the content of conscious experience in the form of representations about the individual's own experiences that are subsequently interpreted. That is likely acceptable to some, but will seem unreasonable to others. The issue lies in  Claim 1, which calls to a conflict between two different intuitions about the nature of interaction between _Phenomenal Consciousness_ (P-Cs) and _Access Consciousness_ (A-Cs). P-Cs is generally recognised as some sort of "what it is like-ness" of having experiences of senses, thoughts, and/or states (citation: Nagal). A-Cs refers to detailed executive control, such as rational thought. Block defines A-Cs states as "(1) ... poised for use as a premise in reasoning, (2) poised for rational control of action, and (3) poised for rational control of speech" (1955, p. 231).
+
+Some theorists hold to a notion that P-Cs and A-Cs fulfil different functions and that one may exist without the other; although it is recognised that they seem to coincide most of the time (..citations..). Let's call this the "uncorrelated theorem". Others hold to the notion that P-Cs is the phenomenal experience of the data held and/or processed within A-Cs. Let's call this the "correlated theory".
+
+Claim 1 is consistent with the correlated theorem. However, it is not consistent with the uncorrelated theorem, which holds that it is possible to phenomenally experience something without having access to it for thought. Thus Theorem 1 cannot be proven with certainty until the issue of these two notions of consciousness are resolved. However, there is a middle ground that can be taken until such a time is reached. While it is indeed plausible that P-Cs and A-Cs are uncorrelated, there remains a strong overlap: most of P-Cs is available to A-Cs, and vice versa (..citation...). Thus, while Theorem 1 may not be true 100% of the time, it still remains a useful tool for understanding at least _most_ of thought.
 
 ...
 ...todo: look through these authors' works to classify their views into correlated vs uncorrelated:
@@ -167,11 +176,7 @@ Theorem 1 is obviously applicable to access consciousness. The extent to which i
 ...
 
 
-The theorem offered above is likely acceptable to some, but will seem unreasonable to others. The issue lies in  Claim 1, which calls to a conflict between two different intuitions about the nature of interaction between _Phenomenal Consciousness_ (P-Cs) and _Access Consciousness_ (A-Cs). P-Cs is generally recognised as some sort of "what it is like-ness" of having experiences of senses, thoughts, and/or states (citation: Nagal). A-Cs refers to detailed executive control, such as rational thought. Block defines A-Cs states as "(1) ... poised for use as a premise in reasoning, (2) poised for rational control of action, and (3) poised for rational control of speech" (1955, p. 231).
 
-Some theorists hold to a notion that P-Cs and A-Cs fulfil different functions and that one may exist without the other; although it is recognised that they seem to coincide most of the time (..citations..). Let's call this the "uncorrelated theorem". Others hold to the notion that P-Cs is the phenomenal experience of the data held and/or processed within A-Cs. Let's call this the "correlated theory".
-
-Claim 1 is consistent with the correlated theorem. However, it is not consistent with the uncorrelated theorem, which holds that it is possible to phenomenally experience something without having access to it for thought. Thus Theorem 1 cannot be proven with certainty until the issue of these two notions of consciousness are resolved. However, there is a middleground that can be taken until such a time is reached. While it is indeed plausible that P-Cs and A-Cs are uncorrelated, there remains a strong overlap: most of P-Cs is available to A-Cs, and vice versa (..citation...). Thus, while Theorem 1 may not be true 100% of the time, it still remains a useful tool for understanding at least _most_ of thought. Furthermore, the Viscera Loop as a descriptive tool still offers tremendous benefit.
 
 # Summary
 
