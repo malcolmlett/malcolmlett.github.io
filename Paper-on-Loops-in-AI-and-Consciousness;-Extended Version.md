@@ -153,48 +153,28 @@ Proof:
 
 # Delayed awareness of decisions
 
-The Visceral Loop can be used to understand other aspects of thought. For example, fRMI studies have suggested that we become aware of a decision after it is made (Soon, Brass, Heinze & Haynes, 2008). At first glance this would seem to suggest that our conscious thought is just some sort of after-the-fact passive summarisation. The Visceral Loop provides a different interpretation.
+The Visceral Loop can be used to understand other aspects of thought. For example, fRMI and EEG studies have suggested that we become aware of a decision after it is made (Soon _et al_, 2008; Libet _et al_, 1983). At first glance this might seem to suggest that our conscious thought is just some sort of after-the-fact passive summarisation.
 
-The framework of the Visceral Loop provides a different interpretation. It explains that the act of making a decision and the awareness of making that decision occur in different processing cycles. First one or more processing cycles are used to reach the decision, and subsequently the individual using one or more additional processing cycles to examine their most recent inference in relation to themselves. So it is entirely predictable that the individual would activate brain regions for reporting the decision after a measurable delay from the decision itself being made.
+The framework of the Visceral Loop provides a different interpretation. It explains that the act of making a decision and the conscious consideration of having made that decision occur in different processing cycles. First one or more processing cycles are used to reach the decision, and subsequently the individual may use one or more additional processing cycles to examine their most recent inference in relation to themselves. So it is entirely predictable that the individual would activate brain regions for reporting the decision after a measurable delay from the decision itself being made.
 
-In short, we can only think about one thing at a time, so the decision itself and thought about the decision require separate steps.
-
-
-# Analysis
-
-The Visceral Loop describes thought as a _semiotic process_, whereby the system is constantly alternating between building representations and interpreting those representations. Some such representations relate to the external environment, or to the individual's physical body, while other representations relate to the individual's mind, and the brain must allocate its limited resources to the construction of representations that have the most practical use at the time. Thus we must limit how much time we allocate to actively thinking about being aware of our experiences.
-
-The Visceral Loop suggests that this semiotic process constructs the content of conscious experience in the form of representations about the individual's own experiences that are subsequently interpreted. That is likely acceptable to some, but will seem unreasonable to others. The issue lies in  Claim 1, which calls to a conflict between two different intuitions about the nature of interaction between _Phenomenal Consciousness_ (P-Cs) and _Access Consciousness_ (A-Cs). P-Cs is generally recognised as some sort of "what it is like-ness" of having experiences of senses, thoughts, and/or states (citation: Nagal). A-Cs refers to detailed executive control, such as rational thought. Block defines A-Cs states as "(1) ... poised for use as a premise in reasoning, (2) poised for rational control of action, and (3) poised for rational control of speech" (1955, p. 231).
-
-Some theorists hold to a notion that P-Cs and A-Cs fulfil different functions and that one may exist without the other; although it is recognised that they seem to coincide most of the time (..citations..). Let's call this the "uncorrelated theorem". Others hold to the notion that P-Cs is the phenomenal experience of the data held and/or processed within A-Cs. Let's call this the "correlated theory".
-
-Claim 1 is consistent with the correlated theorem. However, it is not consistent with the uncorrelated theorem, which holds that it is possible to phenomenally experience something without having access to it for thought. Thus Theorem 1 cannot be proven with certainty until the issue of these two notions of consciousness are resolved. However, there is a middle ground that can be taken until such a time is reached. While it is indeed plausible that P-Cs and A-Cs are uncorrelated, there remains a strong overlap: most of P-Cs is available to A-Cs, and vice versa (..citation...). Thus, while Theorem 1 may not be true 100% of the time, it still remains a useful tool for understanding at least _most_ of thought.
-
-...
-...todo: look through these authors' works to classify their views into correlated vs uncorrelated:
-> (source: https://plato.stanford.edu/entries/consciousness-higher/) Some claim that for a state to be conscious in the relevant sense is for it to be poised to have an impact on the organism’s decision-making processes (Kirk 1994; Dretske 1995; Tye 1995, 2000), perhaps also with the additional requirement that those processes should be distinctively rational ones (Block 1995). Others think that the relevant requirement for access-consciousness is that the state should be suitably related to higher-order representations—experiences and/or thoughts—of that very state (Armstrong 1968, 1984; Rosenthal 1986, 1993, 2005; Dennett 1978a, 1991; Carruthers 1996, 2000, 2005; Lycan 1987, 1996; Gennaro 2012).
-...
-
-
+In short, we can only think about one thing at a time, so the decision itself and thought about the decision require separate processing steps.
 
 
 # Summary
 
-The claim has been made that sufficiently complex environments and agent bodies require a trade-off between the inferential computing power of a single processing step versus the use of multi-step processing. In order to be a "good regulator" of its own non-physical actions, the agent must model its non-physical behaviours. Various different forms of such modelling are possible, and the characterisations offered by the Visceral Loop provide an insight into what kinds of self-referential thought are possible depending on the kind of model in use.
+As bemoaned by Colograsso & Mozer (2004), in the fields attempting to understand consciousness, solid computational models are rare. The work presented here has implications for understanding consciousness, for the design of AI systems, and perhaps forms one of the necessary building blocks towards artificial general intelligence (AGI).
+
+The claim has been made that agents operating within complex environments and with complex bodies require a trade-off between the inferential computing power of a single processing step versus the use of multi-step processing. In order to be a "good regulator" of its own non-physical actions, the agent must model its non-physical behaviours. Various different forms of such modelling are possible, and the characterisations offered by the Visceral Loop provide an insight into what kinds of self-referential thought are possible depending on the kind of model in use.
+
+The Visceral Loop describes thought as a _semiotic process_, whereby the system is constantly alternating between building representations and interpreting those representations. Some such representations relate to the external environment or to the individual's physical body, while other representations relate to the individual's mind. The brain must allocate its limited resources to the construction of representations that have the most practical use at the time. For an individual to consider their own awareness and to report on that awareness, the brain must alternate between drawing practical inferences and drawing meta-inferences about those inferences. 
+
+The Visceral Loop is also closely related to the Higher-Order Thought Theory of Rosenthal (1997, 2006). The Visceral Loop is best understood ....._tbd_...
+
+Further work would be to phrase the Visceral Loop in the terms of predictive coding (Seth, Suzuki, & Critchley, 2012; Millidge, Seth, Buckley, 2021).
+
+
 
 The Visceral Loop has been shown to offer significant insight into consciousness. More work is possible here. It should be noted that there are aspects of consciousness that the Visceral Loop makes no claim over. In particular, it offers no explanation for the so called "hard problem" of phenomenal consciousness (Chalmers, 1995) - the "what it feels like" aspect of consciousness. However, the author believes that stronger claims about the natures of both access consciousness and phenomenal consciousness can yet be made, based on the framework of the Visceral Loop.
-
-
-The Visceral Loop provides a framework for classifying the capabilities of different processing systems.
-
-_tbd_: closely related to the Higher-Order Thought Theory of Rosenthal (1997, 2006).
-
-_tbd_:
-* _Tie VL to need for computational models, as discussed by (Michael D. Colagrosso, Michael C. Mozer. 2004. Theories Of Access Consciousness. NIPS.)_
-* _elaborate further on ramifications of VL_.
-* Look for "Libet et al, 1983" as another example of becoming aware of something after the fact: "S is aware of something (P-consciousness) he mistakenly believes caused his response when, in fact, the latter was triggered by cerebral events which occurred prior to its phenomenal representation (see Libet eta!. 1983)."
-
-The work presented here has implications for understanding consciousness, for the design of AI systems, and perhaps forms one of the necessary building blocks towards artificial general intelligence (AGI).
 
 # References
 
@@ -203,6 +183,8 @@ Abstract syntax tree (n.d.). In _Wikepedia_. In https://en.wikipedia.org/wiki/Ab
 Block, N. (1995). On a confusion about a function of consciousness. Brain and Behavioral Sciences, 18(2), pp 227–247. https://doi.org/10.1017/S0140525X00038188. \[[Full Text](https://www.nyu.edu/gsas/dept/philo/faculty/block/papers/1995_Function.pdf)\]
 
 Chalmers, D. J. (1995). Facing up to the problem of consciousness. Journal of Consciousness Studies 2(3): pp 200-19. http://dx.doi.org/10.1093/acprof:oso/9780195311105.003.0001. \[[Full Text](http://consc.net/papers/facing.pdf)\]
+
+Colagrosso, M. D., and Mozer, M. C. (2004). Theories Of Access Consciousness. NIPS 2004. \[[Full Text](https://proceedings.neurips.cc/paper/2004/file/ff2cc3b8c7caeaa068f2abbc234583f5-Paper.pdf)/]
 
 Conant, R. C., and Ashby, W. R. (1970). Every good regulator of a system must be a model of that system. Int. J. Systems Sci., vol. 1, No. 2, pp 89-97. https://doi.org/10.1080/00207727008920220. \[[Full Text](http://pespmc1.vub.ac.be/books/Conant_Ashby.pdf)\]
 
@@ -216,6 +198,10 @@ Graziano, M. S. A. (2017). The Attention Schema Theory: A Foundation for Enginee
 
 Lazaridis, A., Fachantidis, A., & Vlahavas, I. (2020). Deep Reinforcement Learning: A State-of-the-Art Walkthrough. J. Artif. Intell. Res., 69, 1421-1471. https://doi.org/10.1613/jair.1.12412. \[[Full Text](https://jair.org/index.php/jair/article/view/12412/26638)\]
 
+Libet, B., Gleason, C. A., Wright, E. W., & Pearl, D. K. (1983). Time of conscious intention to act in relation to onset of cerebral activity (readiness-potential). The unconscious initiation of a freely voluntary act. Brain : a journal of neurology, 106 (Pt 3), 623–642. https://doi.org/10.1093/brain/106.3.623. \[[Full Text](https://www.researchgate.net/publication/16556603_Time_of_Conscious_Intention_to_Act_in_Relation_to_Onset_of_Cerebral_Activity_Readiness-Potential_The_Unconscious_Initiation_of_a_Freely_Voluntary_Act)\]
+
+Millidge, B., Seth, A., Buckley, C. L. Predictive Coding: a Theoretical and Experimental Review. https://arxiv.org/abs/2107.12979
+
 Morasso, P., Casadio, M., Mohan, V., Rea, F., and Zenzeri, J. (2015). Revisiting the body-schema concept in the context of whole-body postural-focal dynamics. Front. Hum. Neurosci. 9:83. https://doi.org/10.3389/fnhum.2015.00083
 
 Proske, U., and Gandevia, S. C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiological Reviews 2012 92:4, pp 1651-1697. https://doi.org/10.1152/physrev.00048.2011.
@@ -225,6 +211,8 @@ Rosenthal, D. M. (1997). A Theory of Consciousness. In N. Block, O. Flanagan, & 
 Rosenthal, D. (2006). Consciousness and Higher‐Order Thought. https://doi.org/10.1002/0470018860.s00149.
 
 Safron A. (2020). An Integrated World Modeling Theory (IWMT) of Consciousness: Combining Integrated Information and Global Neuronal Workspace Theories With the Free Energy Principle and Active Inference Framework; Toward Solving the Hard Problem and Characterizing Agentic Causation. Frontiers in artificial intelligence, 3, 30. https://doi.org/10.3389/frai.2020.00030
+
+Seth AK, Suzuki K and Critchley HD (2012) An interoceptive predictive coding model of conscious presence. Front. Psychology 2:395. doi: 10.3389/fpsyg.2011.00395
 
 Soon, C. S., Brass, M., Heinze, H. J., & Haynes, J. D. (2008). Unconscious determinants of free decisions in the human brain. Nature neuroscience, 11(5), 543–545. https://doi.org/10.1038/nn.2112. \[[Full Text](https://www.researchgate.net/publication/5443390_Unconscious_determinants_of_free_decisions_in_the_human_brain)/]
 
