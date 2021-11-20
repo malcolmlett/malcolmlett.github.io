@@ -18,7 +18,7 @@ In biology, this provides scope for evolutionary pressures to trade off between 
 
 This paper makes the claim that an agent that employs _multi-step processing_ (ie: multiple cycles of processing without producing physical action) also must employ a model of its own processing capabilities in order to regulate its _non-physical actions_. Different agentive architectures support different abilities for the agent to introspect the internal structure of that model. A framework, the _Visceral Loop_, is offered as a way to characterise an agent's ability to introspect those models and to use it for drawing inferences about itself. Some examples of the descriptive power of the Visceral Loop will be given. Of particular interest is that the Visceral Loop shows how an agent, such as a human individual, may reach the conclusion that they are conscious.
 
-The rest of this paper is structured as follows. The Regulation, Model, and Schemas sections set the scene by elaborating further the need for regulating models, and suggest how they are manifested within humans. The Visceral Loop section presents the core thesis of this paper. The Consciousness and Analysis sections examine how the Visceral Loop can be applied to understanding aspects of consciousness. Final thoughts are presented in the Summary section.
+The rest of this paper is structured as follows. The Regulation, Model, and Schemas sections set the scene by elaborating further the need for regulating models, and suggest how they are manifested within humans. The Visceral Loop section presents the core thesis of this paper. The Consciousness section examines how the Visceral Loop can be applied to understanding aspects of consciousness. Final thoughts are presented in the Summary section.
 
 # Regulation
 
@@ -170,11 +170,10 @@ The Visceral Loop describes thought as a _semiotic process_, whereby the system 
 
 The Visceral Loop is also closely related to the Higher-Order Thought Theory of Rosenthal (1997, 2006). The Visceral Loop is best understood ....._tbd_...
 
-Further work would be to phrase the Visceral Loop in the terms of predictive coding (Seth, Suzuki, & Critchley, 2012; Millidge, Seth, Buckley, 2021).
+Further work would be to phrase the Visceral Loop in the terms of predictive coding (Seth, Suzuki, & Critchley, 2012; Millidge, Seth, Buckley, 2021)...._tbd_...
 
 
-
-The Visceral Loop has been shown to offer significant insight into consciousness. More work is possible here. It should be noted that there are aspects of consciousness that the Visceral Loop makes no claim over. In particular, it offers no explanation for the so called "hard problem" of phenomenal consciousness (Chalmers, 1995) - the "what it feels like" aspect of consciousness. However, the author believes that stronger claims about the natures of both access consciousness and phenomenal consciousness can yet be made, based on the framework of the Visceral Loop.
+..._tbd_... The Visceral Loop has been shown to offer significant insight into consciousness. More work is possible here. It should be noted that there are aspects of consciousness that the Visceral Loop makes no claim over. In particular, it offers no explanation for the so called "hard problem" of phenomenal consciousness (Chalmers, 1995) - the "what it feels like" aspect of consciousness. However, the author believes that stronger claims about the natures of both access consciousness and phenomenal consciousness can yet be made, based on the framework of the Visceral Loop.
 
 # References
 
