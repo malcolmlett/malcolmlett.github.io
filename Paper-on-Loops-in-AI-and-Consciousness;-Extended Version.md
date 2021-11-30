@@ -4,17 +4,15 @@
 
 # Abstract
 
-The claim is made that cycles of non-physical "mental" actions are required in agents that operate within complex environments, and that such actions require regulation through the use of a model. A framework is proposed, named the _Visceral Loop_, that identifies three distinct kinds of processing within such a system in terms of how it uses that model. It is shown that this can be used to characterise human thought, including about thought itself, and how it is involved when an individual concludes that they are conscious. A proof is given relating an upper bound on data available within access consciousness to the Visceral Loop characterisations of thought.
+The claim is made that recurrent cycles of non-physical "mental" actions are required in agents that operate within complex environments, and that in order to maintain stability such actions require regulation through the use of a model. The _Visceral Loop_ is proposed as a novel framework for characterising three distinct kinds of processing within such a system in terms of how the system uses that model. It is shown how this can be used to characterise human thought, including about thought itself, and to explain the semiotic process when an individual concludes that they are conscious. A proof is given relating an upper bound on data available within access consciousness to the Visceral Loop characterisations of thought.
 
 # Introduction
 
 _tbd_: should this be rephrased in terms of recurrency?
 
-Any computational system is limited in the complexity that it can handle within a single computational step. For embodied agents, this appears as a limit on the environmental complexity that they can sufficiently model and respond to within a single observe-infer-act cycle. For more complex problems, multiple steps of processing are required in order to determine the next physical action. Such multiple processing steps may entail, for example, further analysis of the environment in order to better model its state; or it may entail action planning over multiple iterations.
+Any computational system is limited in the complexity that it can handle within a single computational step. For embodied agents, this appears as a limit on the environmental complexity that they can sufficiently model and respond to within a single observe-infer-act cycle. For more complex problems, multiple iterations of processing are required in order to determine the next physical action. Such recurrency in processing may entail, for example, further analysis of the environment in order to better model its state; or consideration of alternative action plans.
 
-_TBD_: add references to biology papers showing strong use of recurrence.
-
-In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that takes longer to make some decisions. Van Bergen & Kriegeskorte (2020) make the case that recurrency is indeed employed in biology for that very reason.
+In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that takes longer to make some decisions. Van Bergen & Kriegeskorte (2020) make the case that recurrency is indeed employed in biology for that very reason. A growing body of research in artificial intelligence is also now employing recurrency and is showing that complex results can be achieved with shallower networks when using recurrency, for example that of Kubilius _et al_ (2019) and Wen _et al_ (2018).
 
 This paper makes the claim that an agent that employs _multi-step processing_ (ie: multiple cycles of processing without producing physical action) also must employ a model of its own processing capabilities in order to regulate its _non-physical actions_. Different agentive architectures support different abilities for the agent to introspect the internal structure of that model. A framework, the _Visceral Loop_, is offered as a way to characterise an agent's ability to introspect those models and to use it for drawing inferences about itself. Some examples of the descriptive power of the Visceral Loop will be given. Of particular interest is that the Visceral Loop shows how an agent, such as a human individual, may reach the conclusion that they are conscious.
 
@@ -159,6 +157,9 @@ The framework of the Visceral Loop provides a different interpretation. It expla
 
 In short, we can only think about one thing at a time, so the decision itself and thought about the decision require separate processing steps.
 
+_tbd_: see Biology of Consciousness (Edelman, Gally, Baars). https://www.frontiersin.org/articles/10.3389/fpsyg.2011.00004/full:
+* ""It should be added that consciousness itself is not causal (Velmans, 1993; Kim, 2000). It is the neural structures underlying conscious experience that are causal. The conscious individual can therefore be described as responding to a causal illusion, one that is an entailed evolutionary outcome of selection for animals able to make plans involving multiple discriminations."
+
 
 # Summary
 
@@ -195,6 +196,8 @@ Graziano, M. S. A., and Kastner, S. (2011). Human consciousness and its relation
 
 Graziano, M. S. A. (2017). The Attention Schema Theory: A Foundation for Engineering Artificial Consciousnes. Front. Robot. AI. https://doi.org/10.3389/frobt.2017.00060.
 
+Kubilius, J., Schrimpf, M., Kar, K., Rajalingham, R., Hong, H., Majaj, N., Issa, E., Bashivan, P., Prescott-Roy, J., Schmidt, K., Nayebi, A., Bear, D., Yamins, D. L., DiCarlo, J.J. (2019). Brain-like object recognition with high-performing shallow recurrent anns. Advances in Neural Information Processing Systems, pp. 12805-12816. https://papers.nips.cc/paper/2019/hash/7813d1590d28a7dd372ad54b5d29d033-Abstract.html.
+
 Lazaridis, A., Fachantidis, A., & Vlahavas, I. (2020). Deep Reinforcement Learning: A State-of-the-Art Walkthrough. J. Artif. Intell. Res., 69, 1421-1471. https://doi.org/10.1613/jair.1.12412. \[[Full Text](https://jair.org/index.php/jair/article/view/12412/26638)\]
 
 Libet, B., Gleason, C. A., Wright, E. W., & Pearl, D. K. (1983). Time of conscious intention to act in relation to onset of cerebral activity (readiness-potential). The unconscious initiation of a freely voluntary act. Brain : a journal of neurology, 106 (Pt 3), 623–642. https://doi.org/10.1093/brain/106.3.623. \[[Full Text](https://www.researchgate.net/publication/16556603_Time_of_Conscious_Intention_to_Act_in_Relation_to_Onset_of_Cerebral_Activity_Readiness-Potential_The_Unconscious_Initiation_of_a_Freely_Voluntary_Act)\]
@@ -219,4 +222,6 @@ van Bergen, R. S., Kriegeskorte, N. (2020). Going in circles is the way forward:
 
 Webb, T. W., and Graziano, M. S. A. (2015). The attention schema theory: a mechanistic account of subjective awareness. Front. Psychol. 6:500. doi:10.3389/fpsyg.2015.00500
 
-Wernicke's area. (n.d.). In _Wikepedia_. https://en.wikipedia.org/wiki/Wernicke%27s_area. 
+Wen, H., Han, K., Shi, J., Zhang, Y., Culurciello, E., Liu, Z. (2018). Deep predictive coding network for object recognition. https://arxiv.org/abs/1802.04762. https://proceedings.mlr.press/v80/wen18a.html
+
+Wernicke's area. (n.d.). In _Wikepedia_. https://en.wikipedia.org/wiki/Wernicke%27s_area
