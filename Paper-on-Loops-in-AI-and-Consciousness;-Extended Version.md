@@ -160,7 +160,6 @@ In short, we can only think about one thing at a time, so the decision itself an
 _tbd_: see Biology of Consciousness (Edelman, Gally, Baars). https://www.frontiersin.org/articles/10.3389/fpsyg.2011.00004/full:
 * ""It should be added that consciousness itself is not causal (Velmans, 1993; Kim, 2000). It is the neural structures underlying conscious experience that are causal. The conscious individual can therefore be described as responding to a causal illusion, one that is an entailed evolutionary outcome of selection for animals able to make plans involving multiple discriminations."
 
-
 # Summary
 
 As bemoaned by Colograsso & Mozer (2004), in the fields attempting to understand consciousness, solid computational models are rare. The work presented here has implications for understanding consciousness, for the design of AI systems, and perhaps forms one of the necessary building blocks towards artificial general intelligence (AGI).
