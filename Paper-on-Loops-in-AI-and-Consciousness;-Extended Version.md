@@ -106,6 +106,14 @@ Given some prior inference `relation(z, M)`, and some subset of beliefs `m ⊂ M
 
 # Consciousness
 
+_tbd: flesh out and clean up this intro_
+
+In the consideration of conscious experience, two forms have been identified.
+
+_Access consciousness_ (A-Cs) is described by Block as "that which is ....available.....". It refers to the data content that has a direct influence on subsequent thought, and thus can be reported about via speech or other external indication. Generally the data content of access consciousness can be directly consciously thought about, although research suggests that some information can influence our subsequent thought without us being aware of it (citation).
+
+_Phenomenal consciousness_ (P-Cs) refers to the question of why a physical bundle of matter should experience anything at all. It is generally described as the "what it feels like" to be conscious.... In general, P-Cs is the phenomenal aspect that relates to the data content of access consciousness. However, some authors have raised the question of exactly how closely one-to-one that association is.....
+
 The Visceral Loop has important implications for understanding consciousness, particularly in terms of the data content of conscious experience - ie: what we are aware of versus what we are not. Three examples of the descriptive power of the Visceral Loop in relation to human consciousness are presented here.
 
 ## Concluding oneself as conscious
@@ -157,6 +165,19 @@ In short, we can only think about one thing at a time, so the decision itself an
 
 _tbd: see Biology of Consciousness (Edelman, Gally, Baars). https://www.frontiersin.org/articles/10.3389/fpsyg.2011.00004/full:_
 * _"It should be added that consciousness itself is not causal (Velmans, 1993; Kim, 2000). It is the neural structures underlying conscious experience that are causal. The conscious individual can therefore be described as responding to a causal illusion, one that is an entailed evolutionary outcome of selection for animals able to make plans involving multiple discriminations."_
+
+
+# Analysis
+
+_tbd: flesh out and clean up this section_
+
+The VL is consistent with some existing theories of cognition and consciousness.
+
+Higher-Order Thought Theory (HOTT) describes mental processes as hierarchical. In HOTT, consciousness forms the highest layer of the hierarchy, and has access to the output from the immediate layer below, but not of further lower layers. Thus the information available for conscious thought is a unified high level abstract representation of many sub-processes. The VL does not require a HOTT architecture, but it explains how a HOTT architecture results in the specific nature of human experience in terms of what internal processes are and are not directly observable.
+
+The VL views thought as biosemiotic. Semiotics is the study of signs and their interpretations, and biosemiotics looks at how semiotics plays out within biology, including neural cognition. A semiotic process has three components: a _referent_, the object for which a sign or representation will be made; a _representamen_, which is a representation of the _referent_, a.k.a. a "sign"; and a _interpretant_, the interpretation made from the _representamen_.  The _intepretant_ may or may not reflect the _referent_, depending on the quality of _representamen_, and on the ability of the system to infer information about the _referent_ from the _representamen_. From an external point of view, the brain acts as a semiotic process against the environment. The environment is the _referent_, with a concrete and actual state that the brain does not have direct awareness of. Instead, the brain uses he physical senses as a _representamen_ of that environment, and from that representation produces an _interpretant_. The VL is interested in a more internal semiotic process within the brain. The _interpretant_ from before must itself be encoded in a representation that is subject to the constraints imposed by the specific characteristics of the underlying biological substrate. In order for the brain to subsequently use that representation, it must decode its meaning. Thus an inner semiotic process is activated, where the prior inference becomes the _referent_, which is encoded as a _representamen_, and subsequently decoded as a new _interpretant_, possibly after combining with additional information from other sources. The semiotic interpretation of cognition is important  for a number of reasons. Firstly, it explains that data state is meaningless without a process that interprets the data state - even if the process generated the data state in the first place, that data state is still meaningless to the process without re-interpreting it. Thus, while the brain must include considerable machinery for the interpretation of external stimuli, it must also include considerable machinery for the interpretation of its own outputs. _tbd: more?_. The VL builds on this by describing the kinds of interpretations that may be generated depending on the what information is available within the _representamen_ and on the capabilities of the process.
+	- citation: https://en.wikipedia.org/wiki/Semiotics, Pearce.
+
 
 # Summary
 
