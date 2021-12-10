@@ -106,15 +106,17 @@ Given some prior inference `relation(z, M)`, and some subset of beliefs `m ⊂ M
 
 # Consciousness
 
-_tbd: flesh out and clean up this intro_
+In the consideration of conscious experience, two closely incident but distinct forms have been identified:
 
-In the consideration of conscious experience, two forms have been identified.
+* _Access consciousness_ (A-Cs) is described by Block as "that which is ....available....." (_tbd_) (1995). It refers to the data content that has a direct influence on subsequent thought. For example, generally the data content of access consciousness can be directly consciously thought about and reported on via speech or other actions; although research suggests that some information can influence our subsequent thought without us being aware of it (citation).
 
-_Access consciousness_ (A-Cs) is described by Block as "that which is ....available.....". It refers to the data content that has a direct influence on subsequent thought, and thus can be reported about via speech or other external indication. Generally the data content of access consciousness can be directly consciously thought about, although research suggests that some information can influence our subsequent thought without us being aware of it (citation).
+* _Phenomenal consciousness_ (P-Cs) refers to the question of why a physical bundle of matter should experience anything at all. It is often described as "what it feels like" to be conscious. In general terms, P-Cs is the phenomenal aspect of having experience of the data content of access consciousness. Some authors believe that there is not an exact one-to-one relation between A-Cs and P-Cs; that, while they largely correlate, one can have P-Cs without A-Cs, and vice versa. That remains an open question, for which this paper offers no insight.
 
-_Phenomenal consciousness_ (P-Cs) refers to the question of why a physical bundle of matter should experience anything at all. It is generally described as the "what it feels like" to be conscious.... In general, P-Cs is the phenomenal aspect that relates to the data content of access consciousness. However, some authors have raised the question of exactly how closely one-to-one that association is.....
+The Visceral Loop has implications for understanding consciousness, particularly in terms of A-Cs. As will be seen, based on the Visceral Loop, one can make a strong argument that associates the behaviours of the underlying modelling mechanism to limits on the ability for self-reference and to the ability for an individual to recognise their own consciousness. In a weaker form that can be related to the content of P-Cs.
 
-The Visceral Loop has important implications for understanding consciousness, particularly in terms of the data content of conscious experience - ie: what we are aware of versus what we are not. Three examples of the descriptive power of the Visceral Loop in relation to human consciousness are presented here.
+To avoid confusion in the sections that follow, this paper uses the term "data content" when talking about both A-Cs and P-Cs. In that context, it is used to draw a distinction between what is present or included within A-Cs or P-Cs, respectively, and what is not. For example whether or not someone can see and report on something within their visual field refers to the data content of A-Cs, and whether or not someone phenomenally experiences pain refers to the data content of P-Cs.
+
+What follows are three examples of the descriptive power of the Visceral Loop applied to consciousness.
 
 ## Concluding oneself as conscious
 
@@ -131,9 +133,9 @@ The third observation draws upon the individual having an _a priori_ conception 
 
 ## Content of conscious thought
 
-As a second example of the descriptive power of the Visceral Loop, a theorem is now presented that makes the claim that the Visceral Loop explains the data content of phenomenal conscious experience. Later analysis discusses some shortcomings with the theory.
+As a second example of the descriptive power of the Visceral Loop, a set of theorems is now presented that makes the claim that the Visceral Loop explains the data content of conscious experience. Later analysis discusses some shortcomings with the theory.
 
-First an axiomatic baseline must be established. The author is unable to think of any rationale way in which they may consciously experience something and yet be unable to subsequently think about that experience and to know that they are thinking about that experience. Indeed, this is consistent with the _transitivity principle_ of Rosenthal (1997). Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement without further proof:
+First an axiomatic baseline must be established. The author is unable to think of any rational way in which they may consciously experience something and yet be unable to subsequently think about that experience and to know that they are thinking about that experience. Indeed, this is consistent with the _transitivity principle_ of Rosenthal (1997). Thus, it would seem that being able to knowingly think about our conscious experiences is a fundamental component of consciousness. The following claims are derived from this statement without further proof:
 
 Claim 1:
 * All conscious experience is subsequently available for further thought.
@@ -168,6 +170,8 @@ _tbd: see Biology of Consciousness (Edelman, Gally, Baars). https://www.frontier
 
 
 # Analysis
+
+The examples above show that it is possible to mathematically reason about thought processes, their sequencing, and what can/cannot be thought about depending on the capabilities of the underlying thought processing system.
 
 _tbd: flesh out and clean up this section_
 
