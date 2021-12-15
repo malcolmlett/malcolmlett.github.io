@@ -66,8 +66,6 @@ This paper hypothesises the existence of a second kind of schema, the _mind sche
 
 The suggestion of a mind schema has also been made in the form of the _Attention Schema Theory_ (Graziano & Kastner, 2011; Webb & Graziano, 2015; Graziano, 2017), although the meaning there is perhaps narrower than what is proposed in this paper.
 
-_tbd: discard? - On first reading this may seem counterintuitive. Likely the greatest reason for seeming counterintuitive is that physical space is euclidean and, being subject to our tools of objective analysis, we are able to understand how things relate to each other within euclidean space. Thus we can envisage and even replicate how a neural network might model those underlying euclidean relationships. In contrast, we have very limited ability to understand the shape of the state space of the mind, and it is harder to imagine how those same neural networks might model that state space. The argument offered here is that such a conclusion is drawn merely from the lack of our imagination; a neural network is suitable for modeling non-euclidean state space too. A detailed analysis and stronger argument for the existence of a mind schema is outside the scope of this paper. The intent here was simply to show the importance of models for the purpose of the regulation of non-physical actions (a.k.a. thought), and to highlight the fact that we have some sort of introspective capability towards those models. For the remainder of this paper, the term _mind schema_ is intended to refer to that introspective capability without specifically trying to define the underlying mechanisms._
-
 # Visceral Loop
 
 This paper introduces the _Visceral Loop_ as a novel framework for the characterisation of inferences drawn by a processing loop within a biological or AI agent. The Visceral Loop is so named because it refers to an agent concluding that it experiences consciousness in a visceral way. It identifies that an agent with sufficient representational capabilities can, at the most optimum, conclude itself as conscious within three iterations of the processing loop. Each of those iterations have specific characteristics, and the Visceral Loop can be used to characterise any thought as falling into one of those three iterations.
@@ -108,9 +106,12 @@ Given some prior inference `relation(z, M)`, and some subset of beliefs `m ⊂ M
 
 In the consideration of conscious experience, two closely incident but distinct forms have been identified:
 
-* _Access consciousness_ (A-Cs) is described by Block as "that which is ....available....." (_tbd_) (1995). It refers to the data content that has a direct influence on subsequent thought. For example, generally the data content of access consciousness can be directly consciously thought about and reported on via speech or other actions; although research suggests that some information can influence our subsequent thought without us being aware of it (citation).
+* _Access consciousness_ (A-Cs) refers to state representations that are "(1) inferentially
+promiscuous, that is, poised for use as a premise in reasoning, (2) poised for rational control of action, and (3) poised for rational control of speech." (Block, 1995). In other words, A-Cs is the data content that has a direct influence on subsequent thought. For example, generally the data content of access consciousness can be directly consciously thought about and reported on via speech or other actions; although research suggests that some information can influence our subsequent thought without us being aware of it, such as in the example of blindsight (Block, 1995).
 
-* _Phenomenal consciousness_ (P-Cs) refers to the question of why a physical bundle of matter should experience anything at all. It is often described as "what it feels like" to be conscious. In general terms, P-Cs is the phenomenal aspect of having experience of the data content of access consciousness. Some authors believe that there is not an exact one-to-one relation between A-Cs and P-Cs; that, while they largely correlate, one can have P-Cs without A-Cs, and vice versa. That remains an open question, for which this paper offers no insight.
+* _Phenomenal consciousness_ (P-Cs) refers to the question of why a physical bundle of matter should have a subjective experience anything at all. It is often described as "what it is like" (Nagel, 1974) to be a conscious organism. In approximate terms, P-Cs is the phenomenal aspect of having experience of access consciousness. Some authors believe that there is not an exact one-to-one relation between A-Cs and P-Cs; that, while they largely correlate, one can have P-Cs without A-Cs, and vice versa. That remains an open question, for which this paper does not attempt to address.
+
+_tbd: need to revise following section if don't manage to split A-Cs and P-Cs in theory section._
 
 The Visceral Loop has implications for understanding consciousness, particularly in terms of A-Cs. As will be seen, based on the Visceral Loop, one can make a strong argument that associates the behaviours of the underlying modelling mechanism to limits on the ability for self-reference and to the ability for an individual to recognise their own consciousness. In a weaker form that can be related to the content of P-Cs.
 
@@ -168,10 +169,6 @@ The framework of the Visceral Loop provides a different interpretation. It expla
 
 In short, we can only think about one thing at a time, so the decision itself and thought about the decision require separate processing steps.
 
-_tbd: see Biology of Consciousness (Edelman, Gally, Baars). https://www.frontiersin.org/articles/10.3389/fpsyg.2011.00004/full:_
-* _"It should be added that consciousness itself is not causal (Velmans, 1993; Kim, 2000). It is the neural structures underlying conscious experience that are causal. The conscious individual can therefore be described as responding to a causal illusion, one that is an entailed evolutionary outcome of selection for animals able to make plans involving multiple discriminations."_
-
-
 # Analysis
 
 The examples above show that it is possible to mathematically reason about thought processes, their sequencing, and what can/cannot be thought about depending on the capabilities of the underlying thought processing system. This section examines the Visceral Loop (VL) against some existing theory.
@@ -212,7 +209,7 @@ Block, N. (1995). On a confusion about a function of consciousness. Brain and Be
 
 Chalmers, D. J. (1995). Facing up to the problem of consciousness. Journal of Consciousness Studies 2(3): pp 200-19. http://dx.doi.org/10.1093/acprof:oso/9780195311105.003.0001. \[[Full Text](http://consc.net/papers/facing.pdf)\]
 
-Colagrosso, M. D., and Mozer, M. C. (2004). Theories Of Access Consciousness. NIPS 2004. \[[Full Text](https://proceedings.neurips.cc/paper/2004/file/ff2cc3b8c7caeaa068f2abbc234583f5-Paper.pdf)/]
+Colagrosso, M. D., and Mozer, M. C. (2004). Theories Of Access Consciousness. NIPS 2004. \[[Full Text](https://proceedings.neurips.cc/paper/2004/file/ff2cc3b8c7caeaa068f2abbc234583f5-Paper.pdf)\]
 
 Conant, R. C., and Ashby, W. R. (1970). Every good regulator of a system must be a model of that system. Int. J. Systems Sci., vol. 1, No. 2, pp 89-97. https://doi.org/10.1080/00207727008920220. \[[Full Text](http://pespmc1.vub.ac.be/books/Conant_Ashby.pdf)\]
 
@@ -233,6 +230,8 @@ Libet, B., Gleason, C. A., Wright, E. W., & Pearl, D. K. (1983). Time of conscio
 Millidge, B., Seth, A., Buckley, C. L. Predictive Coding: a Theoretical and Experimental Review. https://arxiv.org/abs/2107.12979
 
 Morasso, P., Casadio, M., Mohan, V., Rea, F., and Zenzeri, J. (2015). Revisiting the body-schema concept in the context of whole-body postural-focal dynamics. Front. Hum. Neurosci. 9:83. https://doi.org/10.3389/fnhum.2015.00083
+
+Nagel, T. (1974). What Is It Like to Be a Bat?. The Philosophical Review, 83(4), 435–450. https://doi.org/10.2307/2183914. \[[Full Text](https://warwick.ac.uk/fac/cross_fac/iatl/study/ugmodules/humananimalstudies/lectures/32/nagel_bat.pdf)\]
 
 Proske, U., and Gandevia, S. C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiological Reviews 2012 92:4, pp 1651-1697. https://doi.org/10.1152/physrev.00048.2011.
 
