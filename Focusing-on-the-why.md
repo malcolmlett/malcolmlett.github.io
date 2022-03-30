@@ -32,7 +32,8 @@ So the task at hand is to use the "design stance" to theoretically (or actually)
 # Background
 
 See:
-* [[Focusing on the why for Animal Kingdom]]
+* [[Focusing on the Why for Animal Kingdom]]
+* [[Predictive Coding]]
 
 ## How to train your Network 
 

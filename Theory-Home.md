@@ -8,6 +8,7 @@ I've been wondering about human consciousness since 2014. In particular I'm inte
 # Major Topics
 * [[A Theory of Consciousness]]
 * [[Proto AGI v1]]
+* [[Focusing on the Why]]
 
 # Papers
 * [[Paper on Loops in AI and Consciousness]]
