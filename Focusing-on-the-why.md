@@ -94,7 +94,7 @@ Why:
 - dimensionality reduction
 
 
-![predictive coding](files/Focusing-on-the-why-predictive coding.png)
+![predictive coding](files/Focusing-on-the-why-predictive-coding.png)
 
 
 # Stages of Improvement 
