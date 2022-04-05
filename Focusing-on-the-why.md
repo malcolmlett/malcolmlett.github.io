@@ -223,7 +223,7 @@ And the apparent central integrated one-representation-to-rule-them-all that we 
 
 From a bayesian inference point of view, it makes sense that there is indeed a central subjective representation. In the bayesian inference phrasing, the goal is to infer the latent state of the environment using all available information (ie: all sense modalities). And that single consistent latent state is then a better source of information for choosing action etc. In particular, inference of latent state that uses all sensory modalities is better than inference using only one.
 
-### Conclusion
+### Summary of attention so far
 (note: duplicate of Sensory Integration as Global Workspace section below) 
 Why:
 - Action control is more effective if based on inference of latent state, rather than merely driving based on raw perception.
@@ -240,15 +240,288 @@ What:
 - Sensory integration through a lossy bandwidth bottleneck (ie: doesn't attempt to produce full predictive generation of all input sense data)
 - Learns to filter based on utility to higher-level control.
 - The sensory integration step above probably includes this by default, but not necessary, so this is listed as a separate step.
-- see section "Sensory Integration as Attention" below.
 
-## Attention
+### Sensory Integration as Attention
+One first form of attention could occur through sensory integration itself.
+In the following architecture, each sense modality has its own variational auto-encoder (VAE) to produce a higher-level representation. Those are all fed into a "sensory integrator" that produces a single output representation. Importantly, the output bandwidth of the "sensory integrator" is considerably less than its input bandwidth. Furthermore, it is just a standard feed-forward network, and thus is not forced to accurately represent all inputs (which would be the case if it was a also a VAE). The sensory integrator is instead trained as part of reinforcement applied to the control processes and the actions they produce.
+
+Naturally we would expect the sensory integrator to produce representations that are tailored to productiveness for action control. And such representations will naturally represent certain features across the sense modalities, while ignoring others. Likewise, we can imagine that for certain problem states, certain features across the sense modalities will be more important than others. After sufficient training we would thus not be surprised to find that the representation produced by the sensory integrator changes in its relative accuracy towards each sense modality.
+
+The last point may not be a given, but it could be confirmed objectively through mutual-information measures. eg: the mutual information between sense modality 1's VAE output vs the output of the sensory integrator.
+
+Assuming that such an outcome is achieved, this architecture would produce a simple form of attention.
+
+![sensory integration](files/Focusing-on-the-why-sensory-integration.png)
+
+Note that the same outcome can be achieved where the sensory integrator uses predictive coding, provided that it either has a representation of uncertainty, or has a form of "interest masking" in its backward prediction, so that it can still choose to represent only a subset of the sense data without training forcing it to do better at representing everything.
+
+Where is the limitation with such an approach for attention?
+
+One limitation is that the filtering applied by the sensory integrator is relative static. Aside from slow learning mechanics, the filter includes/excludes the same things regardless of the goal that the controller is trying to achieve. The filter that is good for one particular goal (say: catching a ball), will be bad for a completely different goal (eg: listening to music). The filter's only input is the sense inputs, and so effectively it is a static filter "per environment".
+
+What's missing is input from the controller into the sensory integrator to manipulate how it filters. That seems like the evolutionary step that produces attention in the form we are aware of today.
+
+Conclusion:
+- attention requires data from perceptual inputs
+- plus data from control output
+
+## Active Attention
 - Why: Minimises bandwidth requirements and learning complexity within higher-level control mechanisms in a more complex organism.
 - Why: Incorporates "goal" feedback from higher-level control processes to dynamically control the filtering, in order to improve the utility of the filtered data (relative to naive attention).
 - Implies a form of centralised control in this sense:
 	- that there is only one (ie: "central") aggregate interpretation of the current external + internal state
 - ie: this is the second part of the answer to why: centralised control?.
 - Still doesn't necessarily have meta control. 
+
+### Sensory Integration as Global Workspace
+Baars (2021) notes a number of properties about the global workspace, some of which can be explained much better through the lenses of "sensory integration" and "predictive coding". Such properties include:
+- multiple senses are integrated if they co-occur within the a ~100ms cycle time.
+- conscious percepts are internally consistent
+- raw sensory perceptions and other events compete for access to the global workspace (aka compete for attention).
+
+This can all be elegantly explained as follows....
+
+Predictive coding methods are used to integrate senses, whereby a higher-order representation is constructed that summarises the integrated senses. The higher-order representation is conversely compared against the raw percepts and updated if it causes too much error. This can lead to multiple iterations, and the time required for stability varies depending on the level of novelty.
+
+Masking is applied according to attention, so that feedback errors only trigger re-evaluation of higher-order representations if they are included within the mask. Attention itself is likely also fine-tuned over the course of the same stabilisation iterations.
+
+The higher-order representation must also be of maximum utility for further analysis. A jumbled mess that most accurately correlates to the raw percepts is of little utility because it bares least resemblance to any past experience and thus least resemblance to any past solutions. Thus the ambiguity in such a high-level representation  creates a maximally difficult problem to solve. Instead, if the higher-order representation is also constrained to tend towards consistency with existing knowledge, then it has more utility because it is simpler for subsequent processing, leads to quicker decisions, and is more effective in aiding the individual from potential threats. All of that, despite the fact that it may be less accurate. In other words, a self-consistent best guess with high precision, is better than an accurate jumble.
+
+In the end, a single higher-order representation is achieved that correlates to the raw sensory perceptions to the maximum extent possible within its constraints, AND correlates most strongly to a consistent model from existing knowledge. Thus, sensory percepts that correlate to the most attention-grabbing event, and which are consistent with each other, tend to be integrated.
+
+This thought experiment has led to a very useful additional conclusion:
+- Predictive coding is not just between: raw percepts <--> higher-order representation
+- It is between three levels - with the bottom and top being static for any given moment, and the dynamic component in the middle:
+	- raw percepts <--> higher-order representation <--> existing knowledge
+- It is likely that the level of novelty affects how much of this equation requires error correcting recurrency cycles.
+
+In apparent contrast, Baars suggests that frames (Baars, 2021, part 3, section 4.3.4) are the explanation for the self-consistent nature of conscious experience. That frames themselves are self-consistent, and that we can only accept one dominant frame stack at any given moment, and that frames shape our perception. Thus, where perceptual conflict or gaps arise, the dominant self-consistent frame is used to resolve the ambiguity or fill in the gaps. This looks very much like the "existing knowledge" reference I make above.
+
+So, frames are the existing knowledge to which I refer. But, importantly, this shows that "existing knowledge" does not refer to a global absolute and static set of knowledge. Rather, it refers to a subset of prior knowledge, dynamically selected based on priming effects.
+
+## Perceptual Memory 
+First add RNN-style in flight "running state" memory. Better for handling inferences from temporally dynamic behaviour. 
+
+Next add short term episodic perceptual memory. Ie: held in individual modality processors. Good for further ability to handle temporally dynamic behaviour. Also good for re-broadcasting into global workspace if prior important perceived event has not been attended to. 
+
+This then enables a form of partially hidden working memory. The phenomenon that we can visually recall a prompted for letter in a grid of 9 that was presented too quickly for unprompted recall.  Ie: it seemed to be lost, but with the right association it w still available. However, if never prompted the perceptual memory fades quickly. 
+
+Might first appear before sensory integration. Additionally, following sensory integration, it creates a natural space for a higher level perceptual memory that follows the same mechanisms.
+
+This could be the next evolutionary stage in the development of a working memory. The integrated perceptual memory is normally hidden, but things can be recalled from it if associated to in the right way (which is easier, as this level of abstraction more closely matches with the abstraction level of executive control). When recalling an integrated event, it could leverage the individual perceptual memories for low level sensory recall, and also for reconstruction (generation) of needed. 
+
+This could be extended to "rational perception". So that the result of rational / abstract thought can also have the same temporary storage. 
+
+Somehow goals might be encoded and retained through this architecture too. Goals are usually high level, but have a degree of domain specificity. Perhaps goals are also encoded into the perceptual memory (including "rational thought" perception). 
+
+Thus, this alone could explain the whole behaviour of working memory: temporary, contains more than we are conscious of, detailed, domain specific. 
+
+It also influences a theory of how to integrate executive control with specialised processors for prediction (in predictive coding), because it shows more ways in which that bidirectional communication needs to operate and to support more use cases. 
+
+![dynamic state](files/Focusing-on-the-why-dynamic-state.png)
+
+## Perceptual Memory + Future Prediction 
+Each sense modality has :
+- Predictive Coding for perception
+- Recent history sensory memory
+	- either as a sliding window,
+	- or as an RNN-style accumulated current state.
+- Predictive context (based on predicted future utility) 
+	- Much of what Baars talks about as the purpose of "frames" (Baars, 2021)
+
+But a first cut just wraps the before and after into a single "context". For example a feedforward RNN network that aggregated the most recent events, plus takes in applicable "common knowledge", and summarises all that as a running state for input into perception. Trained via error signals where the agent makes a mistake due to bad context data, it is thus trained to optimise "utility", and thus the "context" does not directly encode the past, or future, but some selection of both.
+
+From a bayesian point of view, that representation presumably encodes another latent state. In other words, the immediate perception is the latent state at the instant, given only the raw perception at that moment; it is the instantaneous-latent-state. Whereas the "context" is inference of the latent state of the same generative source, but with focus on its dynamic nature; it is the dynamic-latent-state. The latter considers the state trajectory taken by the generative source up until now, and the expected state trajectory from now.
+
+Thus, it is equally a predictive coding process in just the same way as for instantaneous latent state inference, but it operates primarily over the temporal dimension (whereas the instantaneous latent state inference operates primarily over the spacial dimension).
+
+### Dynamic Predictive Coding
+For dynamic predictive processing we have the following components:
+- raw input data: the instantaneous state (likely operating across multiple layers, and thus spans raw instantaneous through to latent instantaneous representations)
+- inferred output data: identification of latent dynamic state - ie: trajectory, position, and rate of change.
+- recognition step: feedforward from observation to identification of parameters of dynamic state
+- generation + error step: feedback from dynamic parameters to generation of expected observation, plus detection of errors between prediction and real observation.
+- both recognition and generation steps occur over the sequence of recent observations, requiring a sequence buffer.
+- (note that this requirement for a sequence buffer is no different to the buffer required to supply the visual stream for processing. They both enable the execution of a correlation matrix, just that one operates over the spatial dimension and the other temporal. Perhaps with the usual AI difference CNN and RNN in terms of fixed vs dynamic correlation matrix size and approximations thereof).
+- These steps should be rationalisable in bayesian terms in just the same way as for current state predictive coding. However, there may be useful literature that focuses on more temporal processing optimisations. Such as suggested in "Predictive coding: an account of the mirror neuron system" (James M. Kilner, Karl J. Friston, and Chris D. Frith) (see note: Predictive Coding):
+	- "It is not about forecasting (i.e., predicting the sensory states in the future, given the sensory state now), aka prospective coding (see Schultz-Bosbach and Wolfgang Prinz 2007 this issue for a review of this topic)."
+
+Papers:
+- https://arxiv.org/pdf/2106.07156.pdf "Temporal Predictive Coding For Model-Based Planning In Latent Space"
+
+Examples:
+- I see a tail extending from behind a tree in the Sahara, I infer the instantaneous latent state as: adult leopard.
+- I see it flattening its back and squatting down, I infer the dynamic latent state as: getting ready to strike. I predict that in about 2 to 5 seconds it will suddenly pounce forwards very quickly, jumping about 2 metres in front of where it currently is.
+- I hear a voice with certain pitch, timbre, and speed. I infer the instantaneous state as: it is a human, my friend, named Joe.
+- I hear the recent sequence of voice. I infer the dynamic state as: they are talking about catching the train, and that they are about to tell me what time the train arrives.
+- I have previously inferred that the light in a room is strongly hued red (context frame), thus when I observe a lightly red disk, I infer the instantaneous latent state as: white disk (Gelb effect).
+
+### Summary
+Why:
+- ...
+- So need something that infers context, with the representation optimised to provide the best utility. 
+
+How:
+- It turns out that inference of dynamic state is a good choice. Particularly because it can use predictive coding, and thus gain the benefits of rapid convergence, and stability. 
+- One implementation keeps a sliding window of the most recent perceptions. This is actually biologically plausible: it's a simple network with each layer forwarding on its state to the next layer as it receives a new state. Then each layer is fed as input into the inference process. 
+- Presumably each layer of main system holds temporal data over different time scales. 
+
+A nice side effect of this implementation is that it also explains perceptual memory. If that sliding window can also be used query and reconstruct past perceptions.
+
+### Proprioception 
+All of the above can also apply to tracking of the instantaneous and dynamic state of our own limbs. Proprioception plus visual and tactile senses combine to build an inferred latent state. The dynamic model used in dynamic state inference can then also be used in motor control. 
+
+### Representation
+Are these a single state representation or independent things? :
+- Instantaneous state
+- Dynamic state
+
+Inference:
+- They need different input sources and different runtime and training objectives
+- so their inference is most likely independent. 
+- Mind you, dynamic state depends partly on the immediately current instantaneous state. So one is an input to the other. 
+- Instantaneous state inference can also depend on the current inferred dynamic state. But, rightly or wrongly, I am doing that through context frames at the moment. 
+
+Final representation 
+- Could just be two concatenated vectors. 
+
+Usage
+- Do they get used in different ways? 
+- By different consumers? 
+- Against different measures? 
+
+## Framing
+Why:
+- Resolves spatial and temporal ambiguity, and
+- Speeds up recognition. 
+What:
+- Acts over spatial and temporal dimensions
+- Over multiple scales. 
+- Human examples :
+	- Local spatial "filling in" (eg: extending borders in perception of a line or box), via recurrent + lateral connections. Ie: a spatial + temporal mechanism aiding perception across spatial dimension. 
+	- Short term perceptual context. Eg: while listening to spoken sentence, the first words provide context to resolve ambiguities in subsequent words. 
+	- Medium term perceptual context. Eg: being told that you're looking from the bottom of a room resolving ambiguity in a Necker cube. Eg: Gelb effect for interpretation of colour (inference of an objects colour requires knowledge of the colour of light shone onto it). 
+	- Medium term conceptual context. 
+	- Long term context. Eg: "common knowledge" being used to resolve ambiguity
+How:
+- Sharing of information across both spatial and temporal dimensions, over multiple scales. 
+- Lateral and recurrent connections.
+- At multiple levels.
+
+There's a strong overlap with perceptual memory. Suggests that perhaps a predictive coding model works here too. Whereby "frames" exist at all levels, holding contextual state that is continually recurrently being updated based on the outputs of each layer of the main perception. At the highest levels, the predictive aspect tries to load relevant "common knowledge".
+
+### Mechanism
+Thus, temporal frames are a continual revisement of contextual state across all levels. It operates in the background, taking input from current events (at all levels). In essence, it matches well with the current incarnation of RNNs in AI. 
+
+Spatial frames are a result of lateral connections, and predictive coding at the low level sensory perception. 
+
+### Predictive or not? 
+It's hard to tell to what extent a predictive process takes part. RNNs naively transfer recent state into the present, without any consideration to the future. A predictive equivalent would seek to augment that with the most relevant common knowledge that would help to prepare for the future. 
+
+### Unconscious vs Conscious Reframing
+On the face of it, at this faux evaluationary stage, there is no reason for a "reframing" event to elicit any special conscious awareness (if such a model existed). However Baars (2021, part 3, section 4.2) suggests that reframing is a point-in - time event that occurs as a result of conflict between the frame and experience. He further suggests that it always elicits a conscious event, as it is the conscious cognitive process rat is required to resolve the conflict through selection of a new frame. 
+
+I suggest a middle ground:
+- The majority of framing is continually revised across all levels, without conscious involvement or awareness. Its purpose is to provide stable context, biased towards to current best prediction of what will be useful for future processing (in the short term). It thus dynamically adapts to the changing environment and agent state. This includes automatically resolving most ambiguities in selection of the best frame, via predictive processing-like mechanisms. 
+- For novel situations, the autonomous reframing fails, and triggers an alert for cognitive processes to resolve the issue. The difference being that the cognitive processes can take control and orchestrate much wider groups of processes in the aid of resolving the ambiguity. 
+
+### Example: surprise
+Baars says that "“Surprise” may be a resetting of conscious frames due to competition between incompatible frames" (2021,part 3, ch 4). Surprise is just a prediction error, and the level of error is the level of surprise. Also, the breadth of error (across layers and different processors) affects the amount of surprise. 
+
+Under predictive coding, a truly unexpected event leads to a cascade of re-predictions. This results in a disconnect in what is otherwise a smoothly transitioning stream of consciousness, as the context state is updated at all layers. A brief period of chaos occurs as the predictions resynchronise and resettle. Baars states something similar: "...if the input requires a deep revision of our current framing contexts, we do not experience it either — it is too confusing or disorganized to experience as such, though we may experience fragments and tentative interpretations of the input." (2021).
+
+This seems entirely consistent with experience.
+
+### Example why: rationally chosen context
+One of the biggest benefits of framing is that it provides dynamic high-level context - ie: adaptation. Of particular benefit is that it enables a mechanism for the rational processes of cognitive function to influence subsequent low-level unconscious processes.
+
+An example is an agent learning for itself about the effects of seasons. In the first few years of life, the agent has observed too many samples across seasons for it to produce a habituated learned response to them. However, through memory and executive function, it can consciously identify one season from another, and remember that certain things vary between them. For example, the memory that certain items of food are plentiful at the start of spring, where the best food sources can be found during winter, or what places provide the best shelter from cold during winter. Upon consciously identifying the season, those memories become part of the dynamic background knowledge that influences unconscious foraging behaviour, sensory priming in search of the expected food sources, and the interpretation of usefulness of different observed objects (ie: the difference in perceived benefit between a thick bushy shrub in winter vs summer).
+
+### Empowered Frames
+Baars suggests that frames somehow cooperate to form a stable state that they continually emit and is used in perceptual inference. How do they cooperate? 
+
+One way of looking at this is: what state should the agent be in, in order to effectively handle the input? 
+
+If you are about to be faced with planks and nails, you'll be better off if equipped with a hammer already in hand. If heading off for a week in the bush, you'll be better off if equipped with a 20kg backpack containing all assortment of gear, despite the obvious short term disadvantage of the effort to do the packing and the extra weight carried. 
+
+Note that, having decided upon such a state, actions are often required to transition the agent from its current state, to the desired state. 
+
+In the mental context, the same principle can apply. Based on the current best estimate of the static and dynamic latent state of the environment, what mental state is best suited to handling the unknown next input?
+
+The goal of such a state is thus to maximise "empowerment". 
+
+What process could be used to construct such an empowered state?
+
+Such a state can be viewed in terms of another latent variable space. The act of infering that empowered state might be done via predictive coding or normalization flow. And, like both of those, it could operate hierarchically, such desired empowered states held across all levels of the hierarchy. This, these states form the "frames" in GWT.
+
+The predictive coding that drives the frame state needs an objective to drive it, and the model of empowerment provides that objective. 
+
+Such states can also represent goals, if they are not immediately achievable. Thus, frames and goals are potentially even more closely related than Baars thought.
+
+![frames](files/Focusing-on-the-why-frames.png)
+
+#### Attention
+In a column-based architecture, each column infers a single (multi-dimensional) latent variable. Frames would tweak the priors of each column.
+
+Something also needs to control which latent variables are currently relevant - ie: attention. Frames may be the logical place for control of attention. In addition to outputting a prior, a frame node could output an attention signal that attenuates and strengthens the signals of different columns.
+
+![frame attention](files/Focusing-on-the-why-frame-attention.png)
+
+It's also possible that no extra signal is required, as Friston claims that attention is encoded via priors.
+
+#### Hierarchy
+The frame state inference will be distributed and hierarchical in the same way as perceptual inference. Continually updating and re-synching in response to events. Thus, this mechanism should explain all of the frame phenomena that Baars lists.
+
+Its kind of like two pyramids, one upside down and on top of the other, so that their points meet in the middle. Perceptual inference starts at the bottom and moves up towards simpler higher order representations; while empowered state inference starts off the broad top, moving down with increasingly simpler and higher representations. And where they meet in the middle, final env latent state is concluded, influenced by both. Finally, out of that central meeting point, actions are decided.
+
+Actually, its more like two parallel pyramids with lots of cross talk, and both moving up together. In order to support that cross-talk, they would need be interlaced: alternating latent state inference columns and contextual frame columns.
+
+![hierarchical frames](files/Focusing-on-the-why-hierarchical-frames.png)
+
+### Review
+Empowered frames take as input:
+- Instantaneous and dynamic perceptual state of env / body
+- Instantaneous and dynamic mental state (introspective perception) 
+- Possibly also unconscious frame state,in order to smooth out changes by hysteresis. Or perhaps as RNN-style network. 
+Objective:
+- Maximise agent empowerment through maximising mental empowerment. 
+- No other objective. Eg: doesn't directly try to achieve any specific goals. That would require greater domain knowledge. Instead, mostly only focuses on mental empowerment. 
+- Mental empowerment alone might lead to some negative behaviours. That could be resolved through conscious rationality.
+- Alternatively , observe agent body empowerment, and build an inference model linking that to mental empowerment. Use that to weight the mental empowerment model. This fits the usual hierarchical inference architecture, so seems plausible. 
+Outputs:
+- Unconscious frame, encoding:
+	- Priors for perception inference microcapsules
+	- Weighting across perceptual inference outputs. Ie: attention. 
+- Represents:
+	- Background knowledge for interpreting perceptions
+	- Knowledge of current env (eg: Sahara vs City) setting prios across expected perceptions (eg: lion vs rug) 
+	- Current assumptions
+	- Current expectations 
+	- Current goals (hierarchical) 
+	- Disabling of useless outcomes. 
+	- Physical and conceptual for all of above.
+    
+### Implementation
+Physical empowerment tries to maximise the mutual information between the agent's possible actions and the resulting state, given the agent's current state. A low empowered current state has less available actions, or the actions achieve lower variety of outcome states. To improve empowerment, the agent needs to model the relative empowerments of different states, and act to move towards one with higher empowerment than its current state. 
+
+Thus the state is the variable under control, and the control is factored by the current state and the actions. 
+
+For mental empowerment, we want to maximise cognitive empowerment. What does that mean? It can mean a reduction in surprise - better priors lead to less surprise, and more efficient inference. It could perhaps also mean a greater variety of cognitive outcomes are possible. For example if all sense inputs lead to a confused state, then the agent has low cognitive empowered. Likewise, if all sense inputs lead to the agent concluding the same result (confirmation bias) then it also has low empowerment. 
+
+... Details, how did I make this jump?..
+
+It may be simpler yet.
+
+If all we want to do is tune the priors, then we just need to model a simple relation: given the current context, what's the range of values for a given latent variable 'z'. Put this into a physical example of a language translation service that reads hand writing. If it is told a priori the source language, then it can narrow its expectations over the range of characters. This resolves potential ambiguities between similar characters in different languages. The learning of the model is relatively straightforward too: after several practice runs it should discover that the language selection implies that certain subsets of characters become more likely within the same document. 
+
+In a hierarchical structure, the highest level may provide that broad context information, when then tunes the priors on the lower levels. Thus, this may simply be the mechanism for supplying the priors down the hierarchy in predictive coding. 
+
+### Empowered Goals
+Baars (2021, Part IV, section 6.0) suggests that goal frames somehow recruit the right processors to obtain an answer, and that if they can't find an answer they instead recruit other processes that produce intermediate subgoals. 
+
+I think that instead both outcomes are addresses by a single predictive mechanism: to infer the most empowered mental state given the contexts of the goal frame and current state. The generative valuation takes each produced outcome and measures its likely outcome vs the goal. 
+
+The resultant state does not strictly classify into solution vs subgoal. It doesn't need to. It's a fluid space. 
 
 ## Multi-cycle processing recurrent network
 - Can include multiple processing cycles "pre-action" - ie: before choosing to act on the inference. eg: consideration of multiple options before choosing best one.
@@ -284,10 +557,10 @@ What:
 
 # Unclassified 
 
-Some other improvements with inobvious location.
+Some other improvements with unobvious location.
 
 ## Uncertainty 
-- At some point around about here, representation of uncertainty is needed. For example in controlling the level of over training induced from errors in predictive coding feedbacks. And in the optimal inferences drawn from varyingly accurate senses - eg: whether it's safe to strike on something when you aren't certain of its size. Or to flee when you aren't certain of the threat (there's a cost of unnecessary fleeing). 
+- At some point around about here, representation of uncertainty is needed. For example in controlling the level of over training induced from errors in predictive coding feedback. And in the optimal inferences drawn from varyingly accurate senses - eg: whether it's safe to strike on something when you aren't certain of its size. Or to flee when you aren't certain of the threat (there's a cost of unnecessary fleeing). 
 
 ## Later stage - Emotions
 tbd
