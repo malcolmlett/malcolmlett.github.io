@@ -57,6 +57,8 @@ Thus, predictive coding is equivalent to the learning algorithm of a feed forwar
 
 Another way of looking at this, is that  predictive coding simultaneously trains a forward recognition model and a backward generative model, and trains them against each other. A feed forward model, in contrast, is only a recognition model, with the environment acting as the generative model  (see below for elaboration of this) and providing error signal with less frequency and lower precision. 
 
+![feedforward vs predictive](files/Focusing-on-the-why-feedforward-vs-predictive.png)
+
 RNN: The purposes of this article, I treat RNNs as a special case of feed forward. Their recurrency is at a micro level. They're really just the temporal equivalent of the spatial convolution network (CNN) - ie: they employ information about the most recent events to adjust their output. But they don't operate at a macro-scale like a state machine. They don't follow an iterative process such as employed by predictive coding. And they don't have a generative model.
 
 This distinction between feed forward and predictive mechanisms will play out in many places throughout what follows. 
@@ -90,6 +92,9 @@ Why:
 - easier to model p(R) by factorising as a gaussian mixture models (GMM)
 - opportunity to train some layers from multiple sources (eg: learning actions from other people via mirror neurons)
 - dimensionality reduction
+
+
+![predictive coding](files/Focusing-on-the-why-predictive coding.png)
 
 
 # Stages of Improvement 
@@ -146,6 +151,8 @@ Current state + goal ---> desired state:
 - It's even possible that predictive coding evolved as: sense --> current latent state  + desired latent state --> action first, with current --> desired using simple gradient descent.
 - ie: it's gradient descent with environment as the generative model, but operating at a higher-order representation. This still seems like an evolutionary advantage.
 
+![predictive action](files/Focusing-on-the-why-predictive-action.png)
+
 ### Predictive Coding for Desired State Trajectory
 Another possibility alluded to by (1), is that the desired state is represented as a trajectory.
 Thus, we have:
@@ -164,6 +171,8 @@ Presumably biology initially evolved a direct inference from raw percept to raw 
 1. sense --> action
 2. sense --> latent state --> action
 3. sense --> current latent state --> desired latent state --> action
+
+![evolution of action inference](files/Focusing-on-the-why-evolution-of-action-inference.png)
 
 Without the hierarchical bayes, the modelling must employ approximations, so the first two stages presumably can be mathematically understood in that way.
 
@@ -355,6 +364,8 @@ Examples:
 - I hear a voice with certain pitch, timbre, and speed. I infer the instantaneous state as: it is a human, my friend, named Joe.
 - I hear the recent sequence of voice. I infer the dynamic state as: they are talking about catching the train, and that they are about to tell me what time the train arrives.
 - I have previously inferred that the light in a room is strongly hued red (context frame), thus when I observe a lightly red disk, I infer the instantaneous latent state as: white disk (Gelb effect).
+
+![hierarchical dynamic state](files/Focusing-on-the-why-hierarchical-dynamic-state.png)
 
 ### Summary
 Why:
