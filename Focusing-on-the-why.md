@@ -214,6 +214,8 @@ Perhaps attention also had the goal of taking those disparate data sources and t
 - Why: aggregate is more than sum of parts: eg: identify features as relationships between features in modalities. 
 - Flies may be here.
 
+![sensory integration](files/Focusing-on-the-why-sensory-integration.png)
+
 ### Sensory Integration Details
 Motivating question: what is the difference between our raw sense perception (that we may not have subjective experience of), and the integrated summary that we are aware of within our subjective experience?
 
@@ -259,8 +261,6 @@ Naturally we would expect the sensory integrator to produce representations that
 The last point may not be a given, but it could be confirmed objectively through mutual-information measures. eg: the mutual information between sense modality 1's VAE output vs the output of the sensory integrator.
 
 Assuming that such an outcome is achieved, this architecture would produce a simple form of attention.
-
-![sensory integration](files/Focusing-on-the-why-sensory-integration.png)
 
 Note that the same outcome can be achieved where the sensory integrator uses predictive coding, provided that it either has a representation of uncertainty, or has a form of "interest masking" in its backward prediction, so that it can still choose to represent only a subset of the sense data without training forcing it to do better at representing everything.
 
