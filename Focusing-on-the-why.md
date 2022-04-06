@@ -213,7 +213,7 @@ Desired state ---> motor action:
 - Uses empirical bayesian inference, factorising p(A) as p(A|θA)p(θA), where θA is basically the selector for the specific action model within the GMM of the latent space.
 - Thus estimates A via iterative successive improvements of p(A|R) and p(θA|A).
 
-### Predictive Coding for Desired State Inference
+## Predictive Coding for Desired State Inference
 Current state + goal ---> desired state:
 - Goal may be explicit and dynamic or implicit and static.
 - I'm not sure about this inference. Maybe it's predictive coding too, maybe it's not.
@@ -222,7 +222,7 @@ Current state + goal ---> desired state:
 
 ![predictive action](files/Focusing-on-the-why-predictive-action.png)
 
-### Predictive Coding for Desired State Trajectory
+## Predictive Coding for Desired State Trajectory
 Another possibility alluded to by (1), is that the desired state is represented as a trajectory.
 Thus, we have:
 - desired state trajectory  ---> an action is inferred
@@ -275,7 +275,7 @@ Perhaps attention also had the goal of taking those disparate data sources and t
 
 ![sensory integration](files/Focusing-on-the-why-sensory-integration.png)
 
-### Sensory Integration Details
+## Sensory Integration Details
 Motivating question: what is the difference between our raw sense perception (that we may not have subjective experience of), and the integrated summary that we are aware of within our subjective experience?
 
 One possible answer may lie in a seemingly unrelated observation: that all our senses are fictitious:
@@ -293,7 +293,7 @@ And the apparent central integrated one-representation-to-rule-them-all that we 
 
 From a bayesian inference point of view, it makes sense that there is indeed a central subjective representation. In the bayesian inference phrasing, the goal is to infer the latent state of the environment using all available information (ie: all sense modalities). And that single consistent latent state is then a better source of information for choosing action etc. In particular, inference of latent state that uses all sensory modalities is better than inference using only one.
 
-### Summary of attention so far
+## Summary of attention so far
 (note: duplicate of Sensory Integration as Global Workspace section below) 
 Why:
 - Action control is more effective if based on inference of latent state, rather than merely driving based on raw perception.
@@ -311,7 +311,7 @@ What:
 - Learns to filter based on utility to higher-level control.
 - The sensory integration step above probably includes this by default, but not necessary, so this is listed as a separate step.
 
-### Sensory Integration as Attention
+## Sensory Integration as Attention
 One first form of attention could occur through sensory integration itself.
 In the following architecture, each sense modality has its own variational auto-encoder (VAE) to produce a higher-level representation. Those are all fed into a "sensory integrator" that produces a single output representation. Importantly, the output bandwidth of the "sensory integrator" is considerably less than its input bandwidth. Furthermore, it is just a standard feed-forward network, and thus is not forced to accurately represent all inputs (which would be the case if it was a also a VAE). The sensory integrator is instead trained as part of reinforcement applied to the control processes and the actions they produce.
 
@@ -341,7 +341,7 @@ Conclusion:
 - ie: this is the second part of the answer to why: centralised control?.
 - Still doesn't necessarily have meta control. 
 
-### Sensory Integration as Global Workspace
+## Sensory Integration as Global Workspace
 Baars (2021) notes a number of properties about the global workspace, some of which can be explained much better through the lenses of "sensory integration" and "predictive coding". Such properties include:
 - multiple senses are integrated if they co-occur within the a ~100ms cycle time.
 - conscious percepts are internally consistent
