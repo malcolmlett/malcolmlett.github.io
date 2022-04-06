@@ -57,6 +57,8 @@ Aa good example of that last point is that our current state of the art deep lea
 - Why: Different perceptual modalities (eg: sight, sound, touch, smell, proprioception, sonar, electrical fields) have very different characteristics. Thus, latent state inference from each modality individually produces very different latent state representations. This is the case even when observing the same environmental source. This increases the bandwidth requirements of top-level action control - in order to pull all the available information together and to infer action, it requires a larger network that is slower to train.
 - How: additional layer that integrates intermediate individual modality latent states into a single unified latent state.
 
+- Flies may be here.
+
 This could be the beginnings of a hierarchical architecture with higher-order representations.
 
 ### Attention
@@ -236,6 +238,64 @@ All of that probably occurs within the latent state space, as a much easier mode
 Reference 1: Predictive coding: an account of the mirror neuron system. James M. Kilner, Karl J. Friston, and Chris D. Frith. (see note: Predictive Coding).
 
 
+# Sensory Integration
+## Multi-modality sensory, effector, and internal state integration
+- Predictive-coding to integrate multiple sensory modalities.
+- Predictive-coding + afference copy to identify the difference between self-caused sensory change versus external environmental changes.
+- Improved coordination for more complex environments / behaviours - but still all behaviour is reflexive / reactive.
+- Some room for variations between decentralised and centralised processing models. However, this suggests a start towards a centralised control model.
+- ie: this is the first part of the answer to why: centralised control?.
+
+Resolve some ambiguities (but not ones requiring reconsideration over multiple loop cycles). 
+Aggregate is more than sum of parts: eg: identify features as relationships between features in modalities. 
+
+![sensory integration](files/Focusing-on-the-why-sensory-integration.png)
+
+## Sensory Integration Details
+Motivating question: what is the difference between our raw sense perception (that we may not have subjective experience of), and the integrated summary that we are aware of within our subjective experience?
+
+One possible answer may lie in a seemingly unrelated observation: that all our senses are fictitious:
+- We see in colours. And yet in physics, they don't exist. At a stretch you could say that the primary colours exist, but the non-primary colours (especially white), totally do not exist. In physics, there is only distributions of superimposed electromagnetic radiation at different frequencies. Our perception of colour is a completely artificial representation, constructed from sampling certain points along the frequency range.
+- Sounds are very similar. All that occurs in physics is air particles being shoved around by a motely mix of waves emanating from different sources with different frequencies. We accurately infer the source of those sounds. But what we actually hear doesn't necessarily bare any resemblance to what you could arguably call the real physical sound. Correlation, yes. But resemblance, no.
+- Touch. There are so many different kinds of touch and touch-like sensations. Some use similar kinds of cells for touch perception, while others use differing kinds of cells.  And we experience them in different ways. It's hard to say what the "real" touch is, and how similar or different our perception is.
+- Taste and smell. These are just like colours. Taste and smell do not exist in a physical sense. Mixtures of different compounds are in the food/water we consume, and in the air we breath, and chemical reactions occur that trigger a mixture of different nerve impulses, and we represent all that through what we experience as taste and smell. There's every reason to believe that the representations that we subjectively experience are entirely hallucinatory.
+
+Importantly, in our subjective experience, each sense has its own unique characteristics. They feel different. This suggests that the subjectively experienced representations are constructed in different regions of the brain, with each region devoted to that particular kind of sense->processing->representation system.
+
+Global workspace theory hypothesises that the content of the global workspace defines the content of our subjective experience. Since we experience the sense representations discussed above, it seems likely that they are the contents of the global workspace. And since we've also claimed that they are managed by different brain regions, finally we can conclude that it is likely that the global workspace is not a unified central representation, but rather a collaboration of multiple distributed representations.
+
+And the apparent central integrated one-representation-to-rule-them-all that we have at the centre of subjective experience? Perhaps that is another illusion. In the same way that we perceive a vast solid image in front of us, but our eye takes in only a narrow field of view at a time, and the perceived image is combined together from multiple takes - perhaps our perception of a single unified representation is a the result of trickery.
+...mind you, the vision example implies a mechanism that specifically holds and builds up the whole image. So the same would be needed for the central subjective representation.
+
+From a bayesian inference point of view, it makes sense that there is indeed a central subjective representation. In the bayesian inference phrasing, the goal is to infer the latent state of the environment using all available information (ie: all sense modalities). And that single consistent latent state is then a better source of information for choosing action etc. In particular, inference of latent state that uses all sensory modalities is better than inference using only one.
+
+## Sensory Integration as Global Workspace
+Baars (2021) notes a number of properties about the global workspace, some of which can be explained much better through the lenses of "sensory integration" and "predictive coding". Such properties include:
+- multiple senses are integrated if they co-occur within the a ~100ms cycle time.
+- conscious percepts are internally consistent
+- raw sensory perceptions and other events compete for access to the global workspace (aka compete for attention).
+
+This can all be elegantly explained as follows....
+
+Predictive coding methods are used to integrate senses, whereby a higher-order representation is constructed that summarises the integrated senses. The higher-order representation is conversely compared against the raw percepts and updated if it causes too much error. This can lead to multiple iterations, and the time required for stability varies depending on the level of novelty.
+
+Masking is applied according to attention, so that feedback errors only trigger re-evaluation of higher-order representations if they are included within the mask. Attention itself is likely also fine-tuned over the course of the same stabilisation iterations.
+
+The higher-order representation must also be of maximum utility for further analysis. A jumbled mess that most accurately correlates to the raw percepts is of little utility because it bares least resemblance to any past experience and thus least resemblance to any past solutions. Thus the ambiguity in such a high-level representation  creates a maximally difficult problem to solve. Instead, if the higher-order representation is also constrained to tend towards consistency with existing knowledge, then it has more utility because it is simpler for subsequent processing, leads to quicker decisions, and is more effective in aiding the individual from potential threats. All of that, despite the fact that it may be less accurate. In other words, a self-consistent best guess with high precision, is better than an accurate jumble.
+
+In the end, a single higher-order representation is achieved that correlates to the raw sensory perceptions to the maximum extent possible within its constraints, AND correlates most strongly to a consistent model from existing knowledge. Thus, sensory percepts that correlate to the most attention-grabbing event, and which are consistent with each other, tend to be integrated.
+
+This thought experiment has led to a very useful additional conclusion:
+- Predictive coding is not just between: raw percepts <--> higher-order representation
+- It is between three levels - with the bottom and top being static for any given moment, and the dynamic component in the middle:
+	- raw percepts <--> higher-order representation <--> existing knowledge
+- It is likely that the level of novelty affects how much of this equation requires error correcting recurrency cycles.
+
+In apparent contrast, Baars suggests that frames (Baars, 2021, part 3, section 4.3.4) are the explanation for the self-consistent nature of conscious experience. That frames themselves are self-consistent, and that we can only accept one dominant frame stack at any given moment, and that frames shape our perception. Thus, where perceptual conflict or gaps arise, the dominant self-consistent frame is used to resolve the ambiguity or fill in the gaps. This looks very much like the "existing knowledge" reference I make above.
+
+So, frames are the existing knowledge to which I refer. But, importantly, this shows that "existing knowledge" does not refer to a global absolute and static set of knowledge. Rather, it refers to a subset of prior knowledge, dynamically selected based on priming effects.
+
+
 # Attention
 
 Inspiration:
@@ -261,37 +321,6 @@ Processing inputs include 5 external senses, proprioceptive, vestibular, gustati
 Additionally, as Friston showed, greater filtering and layering leads to less dimensionality of learning search. So it's more efficient to do with less. Thus, the task of attention is to filter out less important information so that main processing only has to deal with the most important stuff. 
 
 Perhaps attention also had the goal of taking those disparate data sources and translating to a single unified representation. Because there's only one cognitive pipeline. But it doesn't explain why there's only one pipeline. 
-
-## Multi-modality sensory, effector, and internal state integration
-- Predictive-coding to integrate multiple sensory modalities.
-- Predictive-coding to 
-- Predictive-coding + afference copy to identify the difference between self-caused sensory change versus external environmental changes.
-- Improved coordination for more complex environments / behaviours - but still all behaviour is reflexive / reactive.
-- Some room for variations between decentralised and centralised processing models. However, this suggests a start towards a centralised control model.
-- ie: this is the first part of the answer to why: centralised control?.
-- Why: resolve some ambiguities (but not ones requiring reconsideration over multiple loop cycles). 
-- Why: aggregate is more than sum of parts: eg: identify features as relationships between features in modalities. 
-- Flies may be here.
-
-![sensory integration](files/Focusing-on-the-why-sensory-integration.png)
-
-## Sensory Integration Details
-Motivating question: what is the difference between our raw sense perception (that we may not have subjective experience of), and the integrated summary that we are aware of within our subjective experience?
-
-One possible answer may lie in a seemingly unrelated observation: that all our senses are fictitious:
-- We see in colours. And yet in physics, they don't exist. At a stretch you could say that the primary colours exist, but the non-primary colours (especially white), totally do not exist. In physics, there is only distributions of superimposed electromagnetic radiation at different frequencies. Our perception of colour is a completely artificial representation, constructed from sampling certain points along the frequency range.
-- Sounds are very similar. All that occurs in physics is air particles being shoved around by a motely mix of waves emanating from different sources with different frequencies. We accurately infer the source of those sounds. But what we actually hear doesn't necessarily bare any resemblance to what you could arguably call the real physical sound. Correlation, yes. But resemblance, no.
-- Touch. There are so many different kinds of touch and touch-like sensations. Some use similar kinds of cells for touch perception, while others use differing kinds of cells.  And we experience them in different ways. It's hard to say what the "real" touch is, and how similar or different our perception is.
-- Taste and smell. These are just like colours. Taste and smell do not exist in a physical sense. Mixtures of different compounds are in the food/water we consume, and in the air we breath, and chemical reactions occur that trigger a mixture of different nerve impulses, and we represent all that through what we experience as taste and smell. There's every reason to believe that the representations that we subjectively experience are entirely hallucinatory.
-
-Importantly, in our subjective experience, each sense has its own unique characteristics. They feel different. This suggests that the subjectively experienced representations are constructed in different regions of the brain, with each region devoted to that particular kind of sense->processing->representation system.
-
-Global workspace theory hypothesises that the content of the global workspace defines the content of our subjective experience. Since we experience the sense representations discussed above, it seems likely that they are the contents of the global workspace. And since we've also claimed that they are managed by different brain regions, finally we can conclude that it is likely that the global workspace is not a unified central representation, but rather a collaboration of multiple distributed representations.
-
-And the apparent central integrated one-representation-to-rule-them-all that we have at the centre of subjective experience? Perhaps that is another illusion. In the same way that we perceive a vast solid image in front of us, but our eye takes in only a narrow field of view at a time, and the perceived image is combined together from multiple takes - perhaps our perception of a single unified representation is a the result of trickery.
-...mind you, the vision example implies a mechanism that specifically holds and builds up the whole image. So the same would be needed for the central subjective representation.
-
-From a bayesian inference point of view, it makes sense that there is indeed a central subjective representation. In the bayesian inference phrasing, the goal is to infer the latent state of the environment using all available information (ie: all sense modalities). And that single consistent latent state is then a better source of information for choosing action etc. In particular, inference of latent state that uses all sensory modalities is better than inference using only one.
 
 ## Summary of attention so far
 (note: duplicate of Sensory Integration as Global Workspace section below) 
@@ -340,32 +369,6 @@ Conclusion:
 	- that there is only one (ie: "central") aggregate interpretation of the current external + internal state
 - ie: this is the second part of the answer to why: centralised control?.
 - Still doesn't necessarily have meta control. 
-
-## Sensory Integration as Global Workspace
-Baars (2021) notes a number of properties about the global workspace, some of which can be explained much better through the lenses of "sensory integration" and "predictive coding". Such properties include:
-- multiple senses are integrated if they co-occur within the a ~100ms cycle time.
-- conscious percepts are internally consistent
-- raw sensory perceptions and other events compete for access to the global workspace (aka compete for attention).
-
-This can all be elegantly explained as follows....
-
-Predictive coding methods are used to integrate senses, whereby a higher-order representation is constructed that summarises the integrated senses. The higher-order representation is conversely compared against the raw percepts and updated if it causes too much error. This can lead to multiple iterations, and the time required for stability varies depending on the level of novelty.
-
-Masking is applied according to attention, so that feedback errors only trigger re-evaluation of higher-order representations if they are included within the mask. Attention itself is likely also fine-tuned over the course of the same stabilisation iterations.
-
-The higher-order representation must also be of maximum utility for further analysis. A jumbled mess that most accurately correlates to the raw percepts is of little utility because it bares least resemblance to any past experience and thus least resemblance to any past solutions. Thus the ambiguity in such a high-level representation  creates a maximally difficult problem to solve. Instead, if the higher-order representation is also constrained to tend towards consistency with existing knowledge, then it has more utility because it is simpler for subsequent processing, leads to quicker decisions, and is more effective in aiding the individual from potential threats. All of that, despite the fact that it may be less accurate. In other words, a self-consistent best guess with high precision, is better than an accurate jumble.
-
-In the end, a single higher-order representation is achieved that correlates to the raw sensory perceptions to the maximum extent possible within its constraints, AND correlates most strongly to a consistent model from existing knowledge. Thus, sensory percepts that correlate to the most attention-grabbing event, and which are consistent with each other, tend to be integrated.
-
-This thought experiment has led to a very useful additional conclusion:
-- Predictive coding is not just between: raw percepts <--> higher-order representation
-- It is between three levels - with the bottom and top being static for any given moment, and the dynamic component in the middle:
-	- raw percepts <--> higher-order representation <--> existing knowledge
-- It is likely that the level of novelty affects how much of this equation requires error correcting recurrency cycles.
-
-In apparent contrast, Baars suggests that frames (Baars, 2021, part 3, section 4.3.4) are the explanation for the self-consistent nature of conscious experience. That frames themselves are self-consistent, and that we can only accept one dominant frame stack at any given moment, and that frames shape our perception. Thus, where perceptual conflict or gaps arise, the dominant self-consistent frame is used to resolve the ambiguity or fill in the gaps. This looks very much like the "existing knowledge" reference I make above.
-
-So, frames are the existing knowledge to which I refer. But, importantly, this shows that "existing knowledge" does not refer to a global absolute and static set of knowledge. Rather, it refers to a subset of prior knowledge, dynamically selected based on priming effects.
 
 
 # Perceptual Memory 
