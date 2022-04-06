@@ -44,58 +44,58 @@ Aa good example of that last point is that our current state of the art deep lea
 
 ![overview](files/Focusing-on-the-why-overview.png)
 
-## Feed-forward Network
+### Feed-forward Network
 
-## Predictive Coding
+### Predictive Coding
 
-## Dynamic Latent State Inference
+### Dynamic Latent State Inference
 - Why: ...
 - How: It turns out that inference of dynamic state is a good choice. Particularly because it can use predictive coding, and thus gain the benefits of rapid convergence, and stability. 
 
-## Multi-model sensory integration
+### Multi-model sensory integration
 - What: Given a single source perceived simultaneously via multiple sensory modalities (eg: sight, sound and touch while looking at a rock and scratching a fingernail along it) humans perceive all three sense modalities as correlated together.
 - Why: Different perceptual modalities (eg: sight, sound, touch, smell, proprioception, sonar, electrical fields) have very different characteristics. Thus, latent state inference from each modality individually produces very different latent state representations. This is the case even when observing the same environmental source. This increases the bandwidth requirements of top-level action control - in order to pull all the available information together and to infer action, it requires a larger network that is slower to train.
 - How: additional layer that integrates intermediate individual modality latent states into a single unified latent state.
 
 This could be the beginnings of a hierarchical architecture with higher-order representations.
 
-## Attention
+### Attention
 - Why: bandwidth
 
-## Contextual State Inference
+### Contextual State Inference
 - Why: Instantaneous perception requires a lot of ambiguity resolution requiring longer inference times. It's inefficient and unnecessary to continually repeat that for the same input.
 - Why: Different environmental circumstances require different behaviours, so perceptual and action inference needs fine-tuning for those different circumstances. - ie: greater adaptation.
 - How: Frame nodes that tweak the priors of the main inference processes. Frame inferred from recent perceptions. It's also advantageous to incorporate other contextual knowledge, eg from memory.
 
 Likely the catalyst for evolution of memory.
 
-## Multi-cycle processing recurrent network
+### Multi-cycle processing recurrent network
 - Why: Inference via a single pass is limited in its bandwidth. Thus such an agent cannot handle more complex environments and behaviours. eg: social interactions, resolving complex ambiguities, rational thought.
 - How: state-machine with processing over multiple loop cycles with non-physical actions.
 
 Can include multiple processing cycles "pre-action" - ie: before choosing to act on the inference. eg: consideration of multiple options before choosing best one. However, this level of processing likely requires many of the remaining evolutionary steps. So the exact position and nature of this stage needs some refining. eg: not obvious whether this can exist without meta-management, or whether meta-management could exist without multi-cycle processing.
 
-## Global Workspace
+### Global Workspace
 - Why: individual processors tend to work in relative isolation. This is efficient, but it's unable to deal with novel situations.
 - How: centrally orchestrated cooperation of all processors through Global Workspace (a la Baars).
 
-## Uncertainty 
+### Uncertainty 
 - What: At some point around about here, representation of uncertainty is needed. For example in controlling the level of training induced from errors in predictive coding feedback. And in the optimal inferences drawn from varyingly accurate senses - eg: whether it's safe to strike on something when you aren't certain of its size. Or to flee when you aren't certain of the threat (there's a cost of unnecessary fleeing).
 - Why: tbd
 
-## Meta-management
+### Meta-management
 - What: self governance of learning. Eg: identification of learning opportunities. Hindsight identification/improvement of success measures. 
 
-## Rational thought 
+### Rational thought 
 - Why: at some point the env interactions and agent behaviours need to be more advanced than simplistic pattern matching. 
 
-## Later stage - memory 
+### Later stage - memory 
 - Why: greater adaptation.
 - Why: population of frames from information gathered over longer timeframes.
 
 Likely catalysed by evolution of contextual frames. Initial frames could be determined by perceptual memory. This could be extended over longer and longer timeframes by first introducing separate short term memory and then later via long term associative-recall memory.
 
-## Later stage - Emotions
+### Later stage - Emotions
 tbd
 
 
