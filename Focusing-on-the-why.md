@@ -35,9 +35,73 @@ See:
 * [[Focusing on the Why for Animal Kingdom]]
 * [[Predictive Coding]]
 
-## How to train your Network 
 
-An example for consideration is the difference between a feed forward network, and one that uses predictive coding. Feed forward networks are the predominant type of network in AI today. After decades of research, we now have very efficient and effective learning mechanisms for large scale feed forward networks. This depends on the back propagation algorithm. In AI, it is governed by external control which : records a buffer of past observations, and uses automatic differentiation to propagate the errors.
+# Stages of Improvement 
+
+This section attempts to list a likely path from simplest to most complex architecture. At each stage, I'm trying to produce a "why" that the stage is an answer to. Or better put, I'm trying to find a "need" that earlier stages cannot fulfil, and that the newer stage does somehow. What variety of cognitive process and agent behaviours is possible with a given stage? When processes and behaviours are not feasible at that stage, or would be simpler if implemented on an architecture with a later stage?
+
+Aa good example of that last point is that our current state of the art deep learning networks are often still feedfoward-only, the simplest of the networks, and one that correlates with the cognitive architecture of plants - but we've scaled up that architecture way beyond the capabilities of plants or the animal kingdom. That's because the animal kingdom found a more efficient architecture (a more advanced one) to achieve the same capabilities. (In this case, efficiency probably expands to "efficiency of learning").
+
+![overview](files/Focusing-on-the-why-overview.png)
+
+## Feed-forward Network
+
+## Predictive Coding
+
+## Dynamic Latent State Inference
+- Why: ...
+- How: It turns out that inference of dynamic state is a good choice. Particularly because it can use predictive coding, and thus gain the benefits of rapid convergence, and stability. 
+
+## Multi-model sensory integration
+- What: Given a single source perceived simultaneously via multiple sensory modalities (eg: sight, sound and touch while looking at a rock and scratching a fingernail along it) humans perceive all three sense modalities as correlated together.
+- Why: Different perceptual modalities (eg: sight, sound, touch, smell, proprioception, sonar, electrical fields) have very different characteristics. Thus, latent state inference from each modality individually produces very different latent state representations. This is the case even when observing the same environmental source. This increases the bandwidth requirements of top-level action control - in order to pull all the available information together and to infer action, it requires a larger network that is slower to train.
+- How: additional layer that integrates intermediate individual modality latent states into a single unified latent state.
+
+This could be the beginnings of a hierarchical architecture with higher-order representations.
+
+## Attention
+- Why: bandwidth
+
+## Contextual State Inference
+- Why: Instantaneous perception requires a lot of ambiguity resolution requiring longer inference times. It's inefficient and unnecessary to continually repeat that for the same input.
+- Why: Different environmental circumstances require different behaviours, so perceptual and action inference needs fine-tuning for those different circumstances. - ie: greater adaptation.
+- How: Frame nodes that tweak the priors of the main inference processes. Frame inferred from recent perceptions. It's also advantageous to incorporate other contextual knowledge, eg from memory.
+
+Likely the catalyst for evolution of memory.
+
+## Multi-cycle processing recurrent network
+- Why: Inference via a single pass is limited in its bandwidth. Thus such an agent cannot handle more complex environments and behaviours. eg: social interactions, resolving complex ambiguities, rational thought.
+- How: state-machine with processing over multiple loop cycles with non-physical actions.
+
+Can include multiple processing cycles "pre-action" - ie: before choosing to act on the inference. eg: consideration of multiple options before choosing best one. However, this level of processing likely requires many of the remaining evolutionary steps. So the exact position and nature of this stage needs some refining. eg: not obvious whether this can exist without meta-management, or whether meta-management could exist without multi-cycle processing.
+
+## Global Workspace
+- Why: individual processors tend to work in relative isolation. This is efficient, but it's unable to deal with novel situations.
+- How: centrally orchestrated cooperation of all processors through Global Workspace (a la Baars).
+
+## Uncertainty 
+- What: At some point around about here, representation of uncertainty is needed. For example in controlling the level of training induced from errors in predictive coding feedback. And in the optimal inferences drawn from varyingly accurate senses - eg: whether it's safe to strike on something when you aren't certain of its size. Or to flee when you aren't certain of the threat (there's a cost of unnecessary fleeing).
+- Why: tbd
+
+## Meta-management
+- What: self governance of learning. Eg: identification of learning opportunities. Hindsight identification/improvement of success measures. 
+
+## Rational thought 
+- Why: at some point the env interactions and agent behaviours need to be more advanced than simplistic pattern matching. 
+
+## Later stage - memory 
+- Why: greater adaptation.
+- Why: population of frames from information gathered over longer timeframes.
+
+Likely catalysed by evolution of contextual frames. Initial frames could be determined by perceptual memory. This could be extended over longer and longer timeframes by first introducing separate short term memory and then later via long term associative-recall memory.
+
+## Later stage - Emotions
+tbd
+
+
+# Feed-forward Networks
+
+An example for consideration is the difference between a feed forward network, and one that uses predictive coding. Feed forward networks are the predominant type of network in AI today. After decades of research, we now have very efficient and effective learning mechanisms for large scale feed forward networks. This depends on the back propagation algorithm. In AI, it is governed by external control which records a buffer of past observations, and uses automatic differentiation to propagate the errors.
 
 This approach is generally considered to be not biologically plausible. 
 
@@ -49,7 +113,7 @@ It can be shown that predictive coding is mathematically equivalent to empirical
 
 Another way of looking at this is that the top-down network calculates the back propagated errors. 
 
-Thus, predictive coding is equivalent to the learning algorithm of a feed forward network. Except that PC is :
+Thus, predictive coding is equivalent to the learning algorithm of a feed forward network. Except that predictive coding is:
 - Biologically plausible, and
 - Doesn't require an external system to drive the learning, and
 - In an ART configuration has better protection against catastrophic forgetting, and, copes better with noise, and
@@ -63,7 +127,20 @@ RNN: The purposes of this article, I treat RNNs as a special case of feed forwar
 
 This distinction between feed forward and predictive mechanisms will play out in many places throughout what follows. 
 
-## Predictive Coding
+## Feed-forward only network
+- May include some micro scale recurrence (ie: recurrent loops of signalling between nearby layers only), but not in a way that it can take from near the final output layer and feed back into near the input layer prior to producing an action.
+- Almost all feedforward-only networks have "re-action" (a kind of recurrence) in the form of the sense-infer-act-effect cycle, but there is no macro-scale recurrence at a pre-action level.
+- Many of our current state of art deep learning agents, trained through RL, fall into this first Naive category. 
+- Recently shown to be very inefficient from learning point of view. 
+- Notice also that RL is orchestrated externally using biologically implausible mechanisms. If the RL algorithm was reimplemented via NN as part of the agent, then it would no longer be in this class. 
+- All behaviour is reflexive / reactive.
+- It's hard to imagine how such an organism can exhibit any adaptation / learning, but it is likely that nature finds a way. 
+- Most jelly fish fit into this class. 
+- Inferences:
+	- sense --> action: error propagation via environment as generative model
+
+
+# Predictive Coding
 
 We don't really know how to practically build predictive coding yet. VAE are a simplified version, but they don't provide quite they level of dynamic behaviour that we're after. 
 
@@ -75,7 +152,6 @@ The best is a combination of the two.
 So it's best to refer to "PD/ART" in place of either, however, for the remainder of notes here, any reference to predictive coding is assumed to refer to "PD/ART".
 
 ## Predictive Coding as Bayesian Inference
-
 It is useful here to think of predictive coding as an implementation of Empirical Bayesian Inference running over a model that was optimised via either Expectation Maximisation or Markov Chain Monte Carlo. Note: TensorFlow has some built-in support for these sorts of things: https://www.tensorflow.org/probability/.
 
 In biology and in AI, it is useful to break the problem down into a hierarchical bayesian network.
@@ -96,26 +172,7 @@ Why:
 
 ![predictive coding](files/Focusing-on-the-why-predictive-coding.png)
 
-
-# Stages of Improvement 
-
-This section attempts to list a likely path from simplest to most complex architecture. At each stage, I'm trying to produce a "why" that the stage is an answer to. Or better put, I'm trying to find a "need" that earlier stages cannot fulfil, and that the newer stage does somehow. What variety of cognitive process and agent behaviours is possible with a given stage? When processes and behaviours are not feasible at that stage, or would be simpler if implemented on an architecture with a later stage?
-
-Aa good example of that last point is that our current state of the art deep learning networks are often still feedfoward-only, the simplest of the networks, and one that correlates with the cognitive architecture of plants - but we've scaled up that architecture way beyond the capabilities of plants or the animal kingdom. That's because the animal kingdom found a more efficient architecture (a more advanced one) to achieve the same capabilities. (In this case, efficiency probably expands to "efficiency of learning").
-
-## Feed-forward only network
-- May include some micro scale recurrence (ie: recurrent loops of signalling between nearby layers only), but not in a way that it can take from near the final output layer and feed back into near the input layer prior to producing an action.
-- Almost all feedforward-only networks have "re-action" (a kind of recurrence) in the form of the sense-infer-act-effect cycle, but there is no macro-scale recurrence at a pre-action level.
-- Many of our current state of art deep learning agents, trained through RL, fall into this first Naive category. 
-- Recently shown to be very inefficient from learning point of view. 
-- Notice also that RL is orchestrated externally using biologically implausible mechanisms. If the RL algorithm was reimplemented via NN as part of the agent, then it would no longer be in this class. 
-- All behaviour is reflexive / reactive.
-- It's hard to imagine how such an organism can exhibit any adaptation / learning, but it is likely that nature finds a way. 
-- Most jelly fish fit into this class. 
-- Inferences:
-	- sense --> action: error propagation via environment as generative model
-
-## Predictive network for Perception
+## Predictive Coding for Perception
 - ie: adaptive resonance / predictive coding based networks.
 - This is a form of macro-scale recurrence, but in a specific form limited to a cyclic swing between perception & prediction that "settles" over time (ie: over multiple cycles). Thus, on its own, it is closer to a feedforward-network than to a network with meta-management.
 - Gives more chance for learning and thus behaviour adaptation, including some forms of rapid adaptation, but only in simplistic ways.
@@ -132,6 +189,18 @@ Sense --> representation:
 - p(R) is assumed prior, or given a bias by framing (eg: looking for something, or convinced to expect a certain thing) 
 - p(R) is factorised as p(R|θ)p(θ), where θ is basically the selector for the specific model within the GMM of the latent space.
 - Uses empirical bayesian inference to alternatively improve estimate in p(R|S) and p(θ|R).
+
+## Predictive Coding for Direct Perception -> Action Inference
+Presumably biology initially evolved a direct inference from raw percept to raw action, and only slowly added the different steps:
+1. sense --> action
+2. sense --> latent state --> action
+3. sense --> current latent state --> desired latent state --> action
+
+![evolution of action inference](files/Focusing-on-the-why-evolution-of-action-inference.png)
+
+Without the hierarchical bayes, the modelling must employ approximations, so the first two stages presumably can be mathematically understood in that way.
+
+Without the translation going on between current and desired latent state, there is less option for developing a consistent state space that can learn from multiple sources. Thus it presumably devolves into simple gradient descent. At that point, the environment is used for the generative model: actions are immediately executed, and error detections used to drive the direction of gradient descent. Thus, a neural net can indeed be used in stages 1 and 2, but they do not reflect true predictive coding.
 
 ## Predictive Coding for Action
 Our entire experience of action is through our senses. We learn the effect of an action command by observing the result. Thus, under an assumption of Active Inference, it makes sense that action is achieved by desiring a particular observation, and letting the action system infer the correct commands. Further, the request itself is not constructed in terms of raw sense observations. Rather, it is constructed in terms of latent state - the same latent state that is inferred from predictive coding for perception. Thus, an action request is encoded as a latent state representation, which implies some strong (high confidence) requirements about certain areas of sense space, and doesn't care about others. eg: I want my hand to move to the cup, but I don't care about what's happening in the background or what my feet are doing.
@@ -166,20 +235,10 @@ All of that probably occurs within the latent state space, as a much easier mode
 
 Reference 1: Predictive coding: an account of the mirror neuron system. James M. Kilner, Karl J. Friston, and Chris D. Frith. (see note: Predictive Coding).
 
-### Predictive Coding for Direct Perception -> Action Inference
-Presumably biology initially evolved a direct inference from raw percept to raw action, and only slowly added the different steps:
-1. sense --> action
-2. sense --> latent state --> action
-3. sense --> current latent state --> desired latent state --> action
 
-![evolution of action inference](files/Focusing-on-the-why-evolution-of-action-inference.png)
+# Attention
 
-Without the hierarchical bayes, the modelling must employ approximations, so the first two stages presumably can be mathematically understood in that way.
-
-Without the translation going on between current and desired latent state, there is less option for developing a consistent state space that can learn from multiple sources. Thus it presumably devolves into simple gradient descent. At that point, the environment is used for the generative model: actions are immediately executed, and error detections used to drive the direction of gradient descent. Thus, a neural net can indeed be used in stages 1 and 2, but they do not reflect true predictive coding.
-
-## Attention
-Inspiration 
+Inspiration:
 - From Baars, 2022: " The idea that consciousness is a gateway — something that creates access to a vast unconscious mind — has interesting implications for understanding learning. It suggests that learning just requires us to point our consciousness at some material we want to learn,"
 - This suggests an interpretation that attention is a "movable" thing, like a physical limb, and it needs similar control processes and learning. Likewise, it may be guided through Active Inference. 
 
@@ -308,7 +367,9 @@ In apparent contrast, Baars suggests that frames (Baars, 2021, part 3, section 4
 
 So, frames are the existing knowledge to which I refer. But, importantly, this shows that "existing knowledge" does not refer to a global absolute and static set of knowledge. Rather, it refers to a subset of prior knowledge, dynamically selected based on priming effects.
 
-## Perceptual Memory 
+
+# Perceptual Memory 
+
 First add RNN-style in flight "running state" memory. Better for handling inferences from temporally dynamic behaviour. 
 
 Next add short term episodic perceptual memory. Ie: held in individual modality processors. Good for further ability to handle temporally dynamic behaviour. Also good for re-broadcasting into global workspace if prior important perceived event has not been attended to. 
@@ -344,7 +405,7 @@ From a bayesian point of view, that representation presumably encodes another la
 
 Thus, it is equally a predictive coding process in just the same way as for instantaneous latent state inference, but it operates primarily over the temporal dimension (whereas the instantaneous latent state inference operates primarily over the spacial dimension).
 
-### Dynamic Predictive Coding
+## Dynamic Predictive Coding
 For dynamic predictive processing we have the following components:
 - raw input data: the instantaneous state (likely operating across multiple layers, and thus spans raw instantaneous through to latent instantaneous representations)
 - inferred output data: identification of latent dynamic state - ie: trajectory, position, and rate of change.
@@ -367,22 +428,18 @@ Examples:
 
 ![hierarchical dynamic state](files/Focusing-on-the-why-hierarchical-dynamic-state.png)
 
-### Summary
-Why:
-- ...
-- So need something that infers context, with the representation optimised to provide the best utility. 
+## Implementation
+Need something that infers context, with the representation optimised to provide the best utility. 
 
-How:
-- It turns out that inference of dynamic state is a good choice. Particularly because it can use predictive coding, and thus gain the benefits of rapid convergence, and stability. 
 - One implementation keeps a sliding window of the most recent perceptions. This is actually biologically plausible: it's a simple network with each layer forwarding on its state to the next layer as it receives a new state. Then each layer is fed as input into the inference process. 
 - Presumably each layer of main system holds temporal data over different time scales. 
 
 A nice side effect of this implementation is that it also explains perceptual memory. If that sliding window can also be used query and reconstruct past perceptions.
 
-### Proprioception 
+## Proprioception 
 All of the above can also apply to tracking of the instantaneous and dynamic state of our own limbs. Proprioception plus visual and tactile senses combine to build an inferred latent state. The dynamic model used in dynamic state inference can then also be used in motor control. 
 
-### Representation
+## Representation
 Are these a single state representation or independent things? :
 - Instantaneous state
 - Dynamic state
@@ -401,7 +458,9 @@ Usage
 - By different consumers? 
 - Against different measures? 
 
-## Framing
+
+# Framing
+
 Why:
 - Resolves spatial and temporal ambiguity, and
 - Speeds up recognition. 
@@ -421,34 +480,34 @@ How:
 
 There's a strong overlap with perceptual memory. Suggests that perhaps a predictive coding model works here too. Whereby "frames" exist at all levels, holding contextual state that is continually recurrently being updated based on the outputs of each layer of the main perception. At the highest levels, the predictive aspect tries to load relevant "common knowledge".
 
-### Mechanism
+## Mechanism
 Thus, temporal frames are a continual revisement of contextual state across all levels. It operates in the background, taking input from current events (at all levels). In essence, it matches well with the current incarnation of RNNs in AI. 
 
 Spatial frames are a result of lateral connections, and predictive coding at the low level sensory perception. 
 
-### Predictive or not? 
+## Predictive or not? 
 It's hard to tell to what extent a predictive process takes part. RNNs naively transfer recent state into the present, without any consideration to the future. A predictive equivalent would seek to augment that with the most relevant common knowledge that would help to prepare for the future. 
 
-### Unconscious vs Conscious Reframing
+## Unconscious vs Conscious Reframing
 On the face of it, at this faux evaluationary stage, there is no reason for a "reframing" event to elicit any special conscious awareness (if such a model existed). However Baars (2021, part 3, section 4.2) suggests that reframing is a point-in - time event that occurs as a result of conflict between the frame and experience. He further suggests that it always elicits a conscious event, as it is the conscious cognitive process rat is required to resolve the conflict through selection of a new frame. 
 
 I suggest a middle ground:
 - The majority of framing is continually revised across all levels, without conscious involvement or awareness. Its purpose is to provide stable context, biased towards to current best prediction of what will be useful for future processing (in the short term). It thus dynamically adapts to the changing environment and agent state. This includes automatically resolving most ambiguities in selection of the best frame, via predictive processing-like mechanisms. 
 - For novel situations, the autonomous reframing fails, and triggers an alert for cognitive processes to resolve the issue. The difference being that the cognitive processes can take control and orchestrate much wider groups of processes in the aid of resolving the ambiguity. 
 
-### Example: surprise
+## Example: surprise
 Baars says that "“Surprise” may be a resetting of conscious frames due to competition between incompatible frames" (2021,part 3, ch 4). Surprise is just a prediction error, and the level of error is the level of surprise. Also, the breadth of error (across layers and different processors) affects the amount of surprise. 
 
 Under predictive coding, a truly unexpected event leads to a cascade of re-predictions. This results in a disconnect in what is otherwise a smoothly transitioning stream of consciousness, as the context state is updated at all layers. A brief period of chaos occurs as the predictions resynchronise and resettle. Baars states something similar: "...if the input requires a deep revision of our current framing contexts, we do not experience it either — it is too confusing or disorganized to experience as such, though we may experience fragments and tentative interpretations of the input." (2021).
 
 This seems entirely consistent with experience.
 
-### Example why: rationally chosen context
+## Example why: rationally chosen context
 One of the biggest benefits of framing is that it provides dynamic high-level context - ie: adaptation. Of particular benefit is that it enables a mechanism for the rational processes of cognitive function to influence subsequent low-level unconscious processes.
 
 An example is an agent learning for itself about the effects of seasons. In the first few years of life, the agent has observed too many samples across seasons for it to produce a habituated learned response to them. However, through memory and executive function, it can consciously identify one season from another, and remember that certain things vary between them. For example, the memory that certain items of food are plentiful at the start of spring, where the best food sources can be found during winter, or what places provide the best shelter from cold during winter. Upon consciously identifying the season, those memories become part of the dynamic background knowledge that influences unconscious foraging behaviour, sensory priming in search of the expected food sources, and the interpretation of usefulness of different observed objects (ie: the difference in perceived benefit between a thick bushy shrub in winter vs summer).
 
-### Empowered Frames
+## Empowered Frames
 Baars suggests that frames somehow cooperate to form a stable state that they continually emit and is used in perceptual inference. How do they cooperate? 
 
 One way of looking at this is: what state should the agent be in, in order to effectively handle the input? 
@@ -471,7 +530,7 @@ Such states can also represent goals, if they are not immediately achievable. Th
 
 ![frames](files/Focusing-on-the-why-frames.png)
 
-#### Attention
+## Frames for Attention
 In a column-based architecture, each column infers a single (multi-dimensional) latent variable. Frames would tweak the priors of each column.
 
 Something also needs to control which latent variables are currently relevant - ie: attention. Frames may be the logical place for control of attention. In addition to outputting a prior, a frame node could output an attention signal that attenuates and strengthens the signals of different columns.
@@ -480,7 +539,7 @@ Something also needs to control which latent variables are currently relevant - 
 
 It's also possible that no extra signal is required, as Friston claims that attention is encoded via priors.
 
-#### Hierarchy
+## Hierarchy
 The frame state inference will be distributed and hierarchical in the same way as perceptual inference. Continually updating and re-synching in response to events. Thus, this mechanism should explain all of the frame phenomena that Baars lists.
 
 Its kind of like two pyramids, one upside down and on top of the other, so that their points meet in the middle. Perceptual inference starts at the bottom and moves up towards simpler higher order representations; while empowered state inference starts off the broad top, moving down with increasingly simpler and higher representations. And where they meet in the middle, final env latent state is concluded, influenced by both. Finally, out of that central meeting point, actions are decided.
@@ -489,7 +548,7 @@ Actually, its more like two parallel pyramids with lots of cross talk, and both 
 
 ![hierarchical frames](files/Focusing-on-the-why-hierarchical-frames.png)
 
-### Review
+## Review of Frames
 Empowered frames take as input:
 - Instantaneous and dynamic perceptual state of env / body
 - Instantaneous and dynamic mental state (introspective perception) 
@@ -512,7 +571,7 @@ Outputs:
 	- Disabling of useless outcomes. 
 	- Physical and conceptual for all of above.
     
-### Implementation
+## Implementation
 Physical empowerment tries to maximise the mutual information between the agent's possible actions and the resulting state, given the agent's current state. A low empowered current state has less available actions, or the actions achieve lower variety of outcome states. To improve empowerment, the agent needs to model the relative empowerments of different states, and act to move towards one with higher empowerment than its current state. 
 
 Thus the state is the variable under control, and the control is factored by the current state and the actions. 
@@ -527,28 +586,26 @@ If all we want to do is tune the priors, then we just need to model a simple rel
 
 In a hierarchical structure, the highest level may provide that broad context information, when then tunes the priors on the lower levels. Thus, this may simply be the mechanism for supplying the priors down the hierarchy in predictive coding. 
 
-### Empowered Goals
+## Empowered Goals
 Baars (2021, Part IV, section 6.0) suggests that goal frames somehow recruit the right processors to obtain an answer, and that if they can't find an answer they instead recruit other processes that produce intermediate subgoals. 
 
 I think that instead both outcomes are addresses by a single predictive mechanism: to infer the most empowered mental state given the contexts of the goal frame and current state. The generative valuation takes each produced outcome and measures its likely outcome vs the goal. 
 
 The resultant state does not strictly classify into solution vs subgoal. It doesn't need to. It's a fluid space. 
 
-## Multi-cycle processing recurrent network
-- Can include multiple processing cycles "pre-action" - ie: before choosing to act on the inference. eg: consideration of multiple options before choosing best one.
-- However, this level of processing likely requires many of the remaining evolutionary steps. So the exact position and nature of this stage needs some refining.
-- eg: not obvious whether this can exist without meta-management, or whether meta-management could exist without multi-cycle processing.
-- Why: resolve complex ambiguities that require reconsideration over multiple loop cycles. 
 
-## Central executive control
-- Why: handle novel situations. Eg: through deliberative selection of success measures (most habitual action embeds a fixed success measure). 
-- Why: final say in unresolved competition. 
-- Why: error handling (esp. as triggered by habituated error detection: Eg when missed a step in a normally habituated sequence and have a "feeling" of something being wrong but not conscious of it yet), and error detection in novel situations.
+# Global Workspace
 
-## Meta-management
-- Why: self governance of learning. Eg: identification of learning opportunities. Hindsight identification/improvement of success measures. 
+- Individual processors tend to work in relative isolation. This is efficient, but it's unable to deal with novel situations.
+- Centrally orchestrated cooperation of all processors through Global Workspace (a la Baars).
 
-## Rational thought 
+- Handle novel situations. Eg: through deliberative selection of success measures (most habitual action embeds a fixed success measure). 
+- Final say in unresolved competition. 
+- Error handling (esp. as triggered by habituated error detection: Eg when missed a step in a normally habituated sequence and have a "feeling" of something being wrong but not conscious of it yet), and error detection in novel situations.
+
+
+# Rational thought 
+
 - Ability to perform some form of rational thought, at a higher level than brute slowly learned bayesian inference. Or perhaps this is bayesian inference at the high level. It's somehow different to brute pattern matching that NN do. 
 - Not implying logical soundness. 
 - Eg: ability to consider a mixture of pro- and anti- relationships in order to conclude something. 
@@ -559,19 +616,12 @@ The resultant state does not strictly classify into solution vs subgoal. It does
 - Is it something like a loop with  representation of problem + potential relation as input (recalled via associative memory) plus matching and generative abilities based on the relations. Then, by looping and generating/recalling subsequent relations it can proceed rationally. 
 - Understanding this will likely put further dependency and constraints on sensory/representational integration (global workspace) and meta management. For example, is it only possible with memory? 
 
-## Later stage - memory 
+
+# Later stage - memory
+
 - How does a recalled memory cause a network to behave differently? Eg: how does recalled relation cause a generative process to produce a different result, or a matching process a different result? The process is a learned one that trains neural weights. Does the memory change the weights in a very dynamic system, something akin to fast single shot familiarity learning? Or, does the memory act as an input in a standardised representation? 
 - For the latter, this would likely suggest that global workspace contents, particularly from memory recall, is held in a decentralised fashion, with parts stored in each brain Region devoted to that part of the data. This raises questions for what the central integrated experience is. 
 - How does the central integrated representation get back out to the appropriate regions? Each region could do its own integration, but that could lead to ambiguous competing results. And it seems the role of central integration is to resolve ambiguities. 
 - It suggests that perhaps central integration is : 1) only necessary for input to meta management. 2) still necessary for combining multiple senses, but then reprocessed and distributed back out to individual regions again.
 
-
-# Unclassified 
-
 Some other improvements with unobvious location.
-
-## Uncertainty 
-- At some point around about here, representation of uncertainty is needed. For example in controlling the level of over training induced from errors in predictive coding feedback. And in the optimal inferences drawn from varyingly accurate senses - eg: whether it's safe to strike on something when you aren't certain of its size. Or to flee when you aren't certain of the threat (there's a cost of unnecessary fleeing). 
-
-## Later stage - Emotions
-tbd
