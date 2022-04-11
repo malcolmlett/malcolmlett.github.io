@@ -766,6 +766,7 @@ This calls to the hierarchical nature of our brain's processing and state repres
 
 That's at one layer. Another example is where we cannot infer a stable internal representation
 
+
 # Artificial Implementation
 
 ## Inverted Active Inference as Top-Level Loss Function
@@ -784,3 +785,51 @@ An alternative to the above would be to note that active inference and predictiv
 Perhaps active inference can be directly implemented as a predictive coding network.
 
 But I'm going to keep things simple for now.
+
+
+# Other Random Notes
+
+The following sections are further notes that I wrote down while putting this together. They don't directly relate to the topic of this page, but I don't have a better place for them right now.
+
+## Novelty Detection
+As mentioned by Baars (2021, Part III, Ch 1), Sokolov (1963) found that animals have an "Orienting Response" to novelty - including subtle changes in a normally consistent repeated stimulus. This requires a detailed remembered representation of the stimulus, along with comparison mechanisms.
+
+Predictive Coding can account for the comparison. But on its own it doesn't account for the expectation of a certain stimulus.
+
+## Delusional Subjective Experience
+As Kant points out, all of our experience of the world is filtered and transformed by our perceptual system. We infer (read as "guess") the outside world, we don't observe it. 
+
+Philosophers don't accept materialist explanations because they believe certain properties of PCs aren't explained. But they are deluded about those properties by the fact of subjective experience being Kantian "spectacles". Those properties may only exist as an inference, but not exist in reality. 
+
+Likewise, as elucidated by both global workspace theory and visceral loop theory, the same is true for our perception of our internal mental state. This is true for two reasons. Firstly, our introceptive awareness is a high level integrative summary of the many low level raw states and perceptions actually held/produced by many separate components (we don't have access to the real state). Secondly as semiotics explains, a state representation is meaningless on its own. It must be interpreted. That interpretation may be no more reliable than the inference we perform about the outside world. 
+
+Taken together, we must accept that our inference of our internal mental state is likely as far removed from reality as is our inference of our external environment. 
+
+There is acknowledgement of this in the fields too. As is the case of posthoc rationalisation: we often think we did something for different reasons than why we really did (https://www.google.com/amp/s/www.psychologytoday.com/us/blog/thoughts-thinking/201907/why-do-people-rationalise-poor-decisions%3famp). 
+
+Now, many of us are convinced that there is something special about the feeling of subjective experience. As per Chalmers, there is nothing in our current understanding of physics that could possibly create subjective experience. 
+
+But our judgement of the nature of subjective experience is a judgment based on our perception of that phenomena. Our perception is not observation; it is inference. Our perception can be deluded. 
+
+Thus, our perception of the phenomena of subjective experience may be a delusion. 
+It should even be possible to create a computer which experiences similar delusions about its own subjective experience. 
+
+This is not proof of that outcome, as this argument still allows the possibility that our perception is an accurate model of reality. But it shows how it is plausible that we could be in the state where subjective experience does not exist and yet we are convinced that it does. 
+
+Aside: why we have confirmation bias
+https://www.newyorker.com/magazine/2017/02/27/why-facts-dont-change-our-minds
+
+
+## Exogenous Endogenous Representation Theory
+Inspiration:
+- "For present purposes we will also speak of abstract but immediately expressible concepts as conscious — including our currently expressible beliefs, intentions, meanings, knowledge, and expectations. Notice that these abstract concepts are experienced differently from perceptual and imaginal events (Natsoulas, 1982a; Baars, 1986b, and throughout this book). Abstract concepts do not have the same rich, clear, consistent qualities that we find in the visual experience of this book: no color, texture, warmth, size, location, clear beginning and ending, etc. Perceptual and imaginal experiences are characterized by such qualities. Conceptual events are not. In contrast to qualitative conscious experiences, we will sometimes refer to abstract conceptual events in terms of conscious access. This issue is closely related to the question of focal vs. peripheral consciousness." (Baars, 2021)
+
+Some internal endogenous representations are "accurately reportable" (Baars, 2021). Internal representation of senses, particularly auditory and visual.  Others are not, particularly abstract concepts. 
+
+My theory is theory is that this is an unsurprising result of the fact that the accurately reportable perceptions have clear physical representations, while the abstract perceptions do not. 
+
+For perceptions of external things, the brain uses predictive coding to fine tune its internal representation. When imagining or remembering, the same physical brain region is employed and so uses the same representation. When reporting on such imagined images, we can easily translate into universally recognisable references. 
+
+Abstract concepts are different. Logic. Belief. Feelings. There is no external reference point for guiding the internal representation. Any predictive coding processes employed during training will operate against other internal representations, rather than external ones. Thus, these abstract representations will be less universally consistent, and less "accurately reportable". 
+
+Additionally, due to the lack of a stable, consistent, external reference point, learning of the representation and associated cognitive processes will take longer and be more error prone. 
