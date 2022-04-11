@@ -597,14 +597,65 @@ I think that instead both outcomes are addresses by a single predictive mechanis
 The resultant state does not strictly classify into solution vs subgoal. It doesn't need to. It's a fluid space. 
 
 
-# Global Workspace
+# Executive Control
 
+Aka: metacognition.
+
+Why:
 - Individual processors tend to work in relative isolation. This is efficient, but it's unable to deal with novel situations.
 - Centrally orchestrated cooperation of all processors through Global Workspace (a la Baars).
-
+- Decentralised unconscious processes operate in a relative solo, with only their own processing capabilities. When they run into unresolvable ambiguities, and when the problem at hand is bigger than any one group of cooperating processes, the inherent division and thus competition of this architecture is inefficient (wasted processing cycles and energy) and ineffective (unable to resolve the problem). 
+How:
+- Global workspace.
+What:
+- At these moments, a centrally controlled architecture is better. It can take control of the processes needed, and orchestrate their actions. 
+- Solves the big problem of the relative pros and cons of centralised vs decentralised processing. 
 - Handle novel situations. Eg: through deliberative selection of success measures (most habitual action embeds a fixed success measure). 
 - Final say in unresolved competition. 
 - Error handling (esp. as triggered by habituated error detection: Eg when missed a step in a normally habituated sequence and have a "feeling" of something being wrong but not conscious of it yet), and error detection in novel situations.
+
+Comparison:
+- unconscious decisions - automatic, rapid, driven by isolated unconscious processors, automatized, slowly adapting.
+- conscious decisions - slow, non-automatized, driven by the outcome of whole-of-brain conscious rational thought, rapidly adapting. Uses the key advantage of conscious thought -- rational processing that takes control of the whole-of-brain to use all capacities to reach the best outcome, for cases where isolated unconscious processors have been deemed insufficient.
+
+See Baars, 2021, ch 8: metacognition.
+
+First iteration:
+- Start with Naive attention architecture described above. 
+- Have central control be just the output stage. Feed forward. Controls the action based on the sense inputs (after integration and filtering). 
+- Reinforcement learning to train control plus sensory integration networks. 
+- Naive attention has problems as outlined above. 
+- Feed forward control has only slow adaption.
+- Its poor at generalisation because it can only train on (state, goal, action, effect) tuples. That has high dimensionality. Eg: it is hard to get enough training samples to generalise to different goals given the same state. 
+
+Second iteration (a) 
+- Goal driven dynamic attention (as part section above). 
+- How does control network know how to control its own attention? 
+- Control is still stateless at this point, so each cycle may choose a different goal, and the attention will flicker chaoticly accordingly. 
+
+Second iteration (b) 
+- Use predictive coding in control network. 
+- Should help to control attention better. 
+- But: what is it predicting? It needs to predict the expected new sense input. 
+- Maybe it could predict the high level state representation: (state, action, new state). 
+- It's not really predictive coding though. It's more of a way of training a model through trial and error. 
+- But: we already have a model - the predictive coding model in the sense side. 
+
+Third iteration (a):
+- Simple sense predictive coding produces a model (raw, high) + (high, raw). 
+- It will also need to deal with dynamics, including afference copy. 
+- Perhaps it's really modeling (raw, action, new high). 
+- That's useful, because it's a generative model in the sense of model-based reinforcement learning. We could use that in the control network to reduce its dimensionality and improve its generalisation ability. 
+- This fits beautifully with the Active Inference model of action control: that the action is inferred based on the query (state, new state). 
+- We could try to build a generative model that's specific for the purpose of control and not shared with perception, but it would seem that we'd loose out from the cost of duplication, the complexity of the domain, and the specialisation of each sense. 
+- So, finally, this implies the use of predictive coding that spans from control, down through sense integration, to the sense network. 
+
+Third iteration (b):
+- How does this now work? 
+- It's going to take some work to figure out. 
+- But one seemingly obvious answer is staring at us : a global workspace. 
+- It provides a location for bidirectional message passing. 
+- It provides a place to hold state to smooth out attentional flickering. 
 
 
 # Rational thought 
@@ -616,15 +667,120 @@ The resultant state does not strictly classify into solution vs subgoal. It does
 - Eg: perhaps related to numbers. 
 - We are lacking a fundamental theory of this kind of thought so it's hard to define accurately.
 - Why: at some point the env interactions and agent behaviours need to be more advanced than simplistic pattern matching. 
-- Is it something like a loop with  representation of problem + potential relation as input (recalled via associative memory) plus matching and generative abilities based on the relations. Then, by looping and generating/recalling subsequent relations it can proceed rationally. 
+- Is it something like a loop with representation of problem + potential relation as input (recalled via associative memory) plus matching and generative abilities based on the relations. Then, by looping and generating/recalling subsequent relations it can proceed rationally. 
 - Understanding this will likely put further dependency and constraints on sensory/representational integration (global workspace) and meta management. For example, is it only possible with memory? 
 
+Central because needs to handle disparate domains, and thus needs to leverage same specialised processors normally devoted to habituated processes. 
 
-# Later stage - memory
+Actually needs to commandeer one or more processes during deliberation. While doing that, the other processes can continue independently in the background. Evidenced by example of being able to multitask across different domains but not the same domains. 
 
+In addition to perceptual processes, also activates the rational thought processes, which presumably are dormant otherwise. 
+
+## Difference to Executive Control
+Rational thought does not have to be part of executive control. It could be an unconscious process like most others. The reason why it becomes part of executive control, eg in humans, is probably because it needs to use the capabilities of disparate processors - ie: it needs the global workspace.
+
+## Rational Thought as Emergent Property
+Rational thought may just be a consequence of GW + latent state representations + mental state /action. 
+
+
+# Isolated Hierarchical Layers 
+
+What:
+- Each layer primarily only understands itself, and the interface it shares with the layers above and below. 
+Why:
+- Enables local-only learning, which is more efficient and more stable than global learning that needs to train across multiple layers towards a shared objective. 
+How:
+- Each layer only preforms inference against the sensory motor representation of the layer immediately below. 
+- Each layer produces its own output representation (latent state) according to its own objectives. The level of granularity, precision, and scope of that representation is defined entirely through the effects of connectivity (ie: as per modules). 
+- Consistent with Ideomotor Theory (but with less emphasis on needing a visual image) 
+
+How do we know to do the things we can do? Most of the actions we perform, both physical and mental, involve a vague desire for something to occur, and the expectation that it will "just happen". We are surprised if it doesn't "just happen", and when it goes wrong (eg: slips of tongue). Most of what we do is "automatised", and we only consciously control it at the very high level. In fact, we only have very high level visibility of the operation of the actions. In the case of mental actions, often we are only aware of the end product. 
+
+I believe this suggests that the top conscious layer has no a priori knowledge of the properties of the layer below. In order to use those "processors", as Baars call it, we use an inference model to predict what request signals will elicit the result we want, and the rest we leave to magic. We build up the inference model through exploration (active inference).
+
+## Human experience of architecture
+Basically, we discover that it's possible to do certain things if the hold our conscious thought in the right way. We don't know how or why it happens, but we find it useful and so we apply it whenever we want.
+
+More than that, our conscious introspection doesn't even get to see what the magic request format is. That's also abstracted away through a reverse inference: something infers the right request structure to send down, based on the high level conscious representation. 
+
+See Baars, 2021,section 7.1.2 for more on this. And section 7.3 where James' Ideomotor theory is explained. 
+
+## Top Level Representation
+With all this, what is the top-level representation? For example, that is used within executive control, and perhaps in rational thought too?
+
+What if the content of consciousness is simply that final top level latent state? 
+
+Which one though? Perceptual? Framing? Action? How do they ultimately interact at the top? 
+
+Even assuming that perception includes input of current mental state. But it probably also includes perception of chosen actions (mental + physical). 
+
+Baars suggests that frames are unconscious. On that basis, the entire process of inferring the most empowered mental state, acting to move towards that state, and actually being in that state are inaccessible. Rather, only the effect is accessible : in terms of the resultant perceptual inference, that was unconsciously biased by the mental state. 
+
+
+# Other Systems and Capabilities
+
+A number of significant systems and capabilities are missing from the faux evolutional stages above, some of which would be fundamental for an agent to operate within a dynamic environment.
+
+## High-frequency sequencing
+The cerebellum plays an important role of translating low to medium-frequency instructions into high-frequency micro-coordination. Such micro-coordination probably doesn't operate under a predictive coding regime, as it would be too slow. In short, the cognitive and planning structures of the brain are too slow to keep up with the dynamics of the world, and need to hand off to something fast and efficient to manage the gaps.
+
+## High-frequency sequence matching
+The cerebellum plays the same role for recognition of high-frequency perception, eg: speech perception.
+
+## Alert system
+In a truly adaptive self-sufficient agent, low-level evolutionarily-hard-wired mechanisms are required to "take over" the higher-level cognitive processes in emergency situations.
+
+## Memory
 - How does a recalled memory cause a network to behave differently? Eg: how does recalled relation cause a generative process to produce a different result, or a matching process a different result? The process is a learned one that trains neural weights. Does the memory change the weights in a very dynamic system, something akin to fast single shot familiarity learning? Or, does the memory act as an input in a standardised representation? 
 - For the latter, this would likely suggest that global workspace contents, particularly from memory recall, is held in a decentralised fashion, with parts stored in each brain Region devoted to that part of the data. This raises questions for what the central integrated experience is. 
 - How does the central integrated representation get back out to the appropriate regions? Each region could do its own integration, but that could lead to ambiguous competing results. And it seems the role of central integration is to resolve ambiguities. 
 - It suggests that perhaps central integration is : 1) only necessary for input to meta management. 2) still necessary for combining multiple senses, but then reprocessed and distributed back out to individual regions again.
 
 Some other improvements with unobvious location.
+
+## Learning through mimicry
+Why:
+- more sources of learning, for faster learning.
+- more efficient than learning through self-discovery - narrows the search space
+
+
+# Examples
+
+## Reading handwritten word.
+Ambiguity in recognition of characters. In untrained reader one part looks like a chair with a dot (t + i). Experiences reader uses all context and wide vocabulary to recognise the whole word (eg: unstick), without needing to recognise individual chars. When asked about the chair char, draws attention to that part of the word. Prior inference provides priming context for recognition of t + I rather than chair with dot. 
+
+## Inertia
+I'm languishing in a hot bath thinking that it is about time I got out, but my state of relaxation applies an inertia - my body fails to act on the impetus. I hear the sound of water splashing, and the sight of my hands and arms lifting out of the water, as by body raises itself towards a standing position. And yet none of that happens, I am only imagining it. But there was no intent to imagine such a thing. I had only desired to physically get out, and instead a movie played out briefly of what would have been.
+
+Baars (2011), and James (...) would interpret this as ideomotive action control. That the auditory and visual endogenous maginations would a signal of the desired outcome, intended to trigger physical action of the muscles in the aid of achieving such a desired target state.
+
+I propose an alternative explanation. The auditory and visual maginations where the result of predictive systems, for the purpose of setting expectations about events as they unfold. This forms part of the predictive action system, that simultaneously predicts actions to achieve an outcome, and the outcomes following an action, using the latter compared against actual observations in order to fine tune the action control and to detect unexpected outcomes that may need further cognitive analysis. Thus, the movie was triggered by the expected actual action. In normal operation, the action is carried out simultaneously with the movie of expected outcomes, and the perception of actual outcomes overpowers any perception of the "expectation movie". In those rare occasions where our will requests an outcome, and fully assumes that the outcome should occur, but where some other more primitive system vetos the action, only then do we hear the "expectation movie" playing loud enough to be aware of it.
+
+## On the Tip of the Tongue
+Tip of the tongue "feeling of knowing" (FOK).
+
+Baars (2021, Part III, ch 6) quotes W. James:
+	"Suppose we try to recall a forgotten name. The state of our consciousness is peculiar. There is a gap therein; but no mere gap. It is a gap that is intensely active. A sort of a wraith of the name is in it, beckoning us in a given direction, making us at moments tingle with the sense of our closeness, and then letting us sink back without the longed-for term. If wrong names are proposed to us, this singularly definite gap acts immediately so as to negate them. They do not fit into its mould."
+	
+This calls to the hierarchical nature of our brain's processing and state representations. The TOT state occurs when we have a clear goal ( to convey the identity of a person, or to convey a concept), and an internal (conscious) representation of the person's identity or concept, but we fail to translate that into spoken language. This is a failing of the prediction (bottom-up) half of the language inference. The generation (top down) half still works, thus it can validate a suggestion as correct or not. It's a mild form of catastrophic forgetting. 
+
+That's at one layer. Another example is where we cannot infer a stable internal representation
+
+# Artificial Implementation
+
+## Inverted Active Inference as Top-Level Loss Function
+
+Most parts of the system described above use local-learning rules where the loss function is well defined - reduce the prediction error. However, the top-level executive control system still needs some sort of loss function to govern its learning. That loss function directly or indirectly controls the preferences for actions. In a predictive-coding-for-action model, the loss function directly controls the preferences for outcomes.
+
+Active Inference has been shown as a very effective model for top-level executive control. Unfortunately, Active Inference generates actions via a mathematical formula that models the uncertainty distribution. That doesn't lead easily to a NN implementation. However, what if we flip that on its head: instead of using Active Inference to generate actions, use it _measure_ the actions of an agent as a loss function.
+
+So, the agent would generate actions using a NN method, which may simply be a randomly initialised NN. Measure the extent to which the actions match the Active Inference distribution, and use that as the error function for gradient descent. 
+
+The nice feature of this approach is that it can be proven out in a simple Reinforcement Learning model first, without all the predictive coding complexities.
+
+## Predictive Coding for Active Inference at Top-Level
+
+An alternative to the above would be to note that active inference and predictive coding are closely related.
+Perhaps active inference can be directly implemented as a predictive coding network.
+
+But I'm going to keep things simple for now.
