@@ -1,3 +1,5 @@
+My apologies dear reader, for this page is in a "brain-dump" form and may not be the easiest to read.
+
 # Introduction
 
 Much of the research into consciousness had asked the question "what". And much had been gained from that question. But I think it's time to focus more on the "why". 
@@ -45,8 +47,12 @@ Aa good example of that last point is that our current state of the art deep lea
 ![overview](files/Focusing-on-the-why-overview.png)
 
 ### Feed-forward Network
+- What: First simple evolution using simple feed-forward network, or perhaps with some micro-scale recurrence of the sort found in LSTM, but without adaptive predictive mechanisms. Many of our current state of art deep learning agents, trained through RL, fall into this first Naive category.
+- Why: More complex behaviours.
+- How: Evolutionarily hard-coded.
 
 ### Predictive Coding
+tbd
 
 ### Dynamic Latent State Inference
 - Why: ...
@@ -57,9 +63,7 @@ Aa good example of that last point is that our current state of the art deep lea
 - Why: Different perceptual modalities (eg: sight, sound, touch, smell, proprioception, sonar, electrical fields) have very different characteristics. Thus, latent state inference from each modality individually produces very different latent state representations. This is the case even when observing the same environmental source. This increases the bandwidth requirements of top-level action control - in order to pull all the available information together and to infer action, it requires a larger network that is slower to train.
 - How: additional layer that integrates intermediate individual modality latent states into a single unified latent state.
 
-- Flies may be here.
-
-This could be the beginnings of a hierarchical architecture with higher-order representations.
+This could be the beginnings of the development of hierarchical architecture with different lower-order and higher-order representations.
 
 ### Attention
 - Why: bandwidth
@@ -131,13 +135,15 @@ This distinction between feed forward and predictive mechanisms will play out in
 
 ## Feed-forward only network
 - May include some micro scale recurrence (ie: recurrent loops of signalling between nearby layers only), but not in a way that it can take from near the final output layer and feed back into near the input layer prior to producing an action.
-- Almost all feedforward-only networks have "re-action" (a kind of recurrence) in the form of the sense-infer-act-effect cycle, but there is no macro-scale recurrence at a pre-action level.
-- Many of our current state of art deep learning agents, trained through RL, fall into this first Naive category. 
+- Almost all feedforward-only networks have "re-action" (a kind of recurrence) in the form of the sense-infer-act-effect cycle, but there is no macro-scale state-machine recurrence at a pre-action level.
+- Many of our current state of art deep learning agents, trained through RL, fall into this first Naive category.
 - Recently shown to be very inefficient from learning point of view. 
+    * citation: Going in circles is the way forward: the role of recurrence in visual inference. https://www.sciencedirect.com/science/article/pii/S0959438820301768. See "Paper Refs - Loopy AI and implications for characterising.."
 - Notice also that RL is orchestrated externally using biologically implausible mechanisms. If the RL algorithm was reimplemented via NN as part of the agent, then it would no longer be in this class. 
 - All behaviour is reflexive / reactive.
 - It's hard to imagine how such an organism can exhibit any adaptation / learning, but it is likely that nature finds a way. 
-- Most jelly fish fit into this class. 
+- Plankton and most jelly fish fit into this class. 
+- In particular, the simplest forms of animals even have the sensor-adjustor-effector trio rolled up into single cells (see [[Focusing on the Why for Animal Kingdom]] for background).
 - Inferences:
 	- sense --> action: error propagation via environment as generative model
 

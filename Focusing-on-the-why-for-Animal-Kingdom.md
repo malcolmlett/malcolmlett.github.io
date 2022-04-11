@@ -6,6 +6,14 @@ Note: In deciding which stage a particular animal / insect fits, I'm trying to a
 - What's the simplest architecture that could emulate the behaviours?
 Thus, a fly, for example, may employ attention control, but it may not. So I will assume for now that it does not, until I find a strong reason to believe that it needs attention control and for what reason.
 
+
+# Background
+
+To discuss:
+* sensor-adjustor-effector biologies
+    * See https://journals.biologists.com/jeb/article/214/8/1215/10743/Do-jellyfish-have-central-nervous-systems, and https://www.sciencedaily.com/releases/1999/04/990415064510.htm, in note: "Biol. Summ. - Animals and Evolution"
+
+
 # A Progression through the Biological Kingdom
 
 ## Plants
@@ -47,3 +55,7 @@ The next "why" question receives some answers from the following question:
 - If a flies behaviour was entirely genetically hard-coded, with no learning even from birth, what would it be missing?
 - What learning is required to support adaptation?
 - What learning is required because it would be more efficient / accurate to learn post-birth rather than being genetically hard-coded?
+
+However, I think I saw an article that found that flies have attention too.
+
+Plus, while the behaviours of a fly may seem simple, the environment that they operate in is almost as complex as it is for humans. So in practice they may need many of the same systems.
