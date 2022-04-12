@@ -2,7 +2,7 @@ My apologies dear reader, for this page is in a "brain-dump" form and may not be
 
 # Introduction
 
-Much of the research into consciousness had asked the question "what". And much had been gained from that question. But I think it's time to focus more on the "why". 
+Much of the research into consciousness had asked the question "what". And much had been gained from that question. But I think it's time to focus more on the "why".
 
 Many aspects of the "what" have already been answered. We have vague high level understanding of what kinds of processes assets happening within the brain. We have a good collection of well studied correlates of consciousness, so that we know to some extent which parts of the brain are involved and in what ways. We have strong evidence of the resonant form of brain activity. But much of that leads to high level explanations, without specifics. We can see that dreams seem to be a form of half - consciousness, but we don't understand it. We can see and observe in fMRI when things make it into conscious awareness versus not, but we don't understand the specifics of why some things make it to conscious awareness and others don't. 
 
@@ -10,25 +10,25 @@ The best model we have to date is surprisingly easy to construct out of the vari
 
 The Visceral Loop begins to directly tackle that. But more needs to be done. 
 
-A detailed investigation of the why needs to produce, with mathematical accuracy, a schematic of a self organising, self architecting, self learning, agent. In a multi layered cognitive architecture, each lower layer is trained by the layer above. Boyd what trains the top most layer? Active Inference, in combination with evolutionarily preconfigured loss measures and  attractors are part of this. But to really design such a system requires answering many more nuanced and detailed questions. Answering those, is answering the question of "why". 
+A detailed investigation of the why needs to produce, with mathematical accuracy, a schematic of a self organising, self architecting, self learning, agent. In a multi layered cognitive architecture, each lower layer is trained by the layer above. But what trains the top most layer? Active Inference, in combination with evolutionarily pre-configured loss measures and attractors are part of this. But to really design such a system requires answering many more nuanced and detailed questions. Answering those, is answering the question of "why". 
 
 It will answer:
-- with greater specificity and clarity, why are we conscious at all (phenomenal consciousness)
-- why we are conscious of some things and not others (access consciousness)
+- With greater specificity and clarity, why are we conscious at all (phenomenal consciousness)
+- Why we are conscious of some things and not others (access consciousness)
 	- "The big puzzle is, why is the conscious aspect so limited, and the unconscious part so vast? What is the meaning of this odd conjunction?" (Baars, 2022)
-- why we have the perception of volitional control (free will)
-- why we have conscious subjective experience of dreams. If it is something to do with learning, why is learning so tied to subjective experience?
+- Why we have the perception of volitional control (free will)
+- Why we have conscious subjective experience of dreams. If it is something to do with learning, why is learning so tied to subjective experience?
 - Why conscious priming is apparently needed to trigger learning and unconscious problem solving (as mentioned by Baars, 2021). Ie: we just hold something in awareness and we magically learn from it, or magically produce a solution to the question.
-- to what level infants are conscious. Eg: probably fully conscious so that the system can learn too. 
+- To what level infants are conscious. Eg: probably fully conscious so that the system can learn too. 
 - Why Cs is a single stream, not multiple parallel Cs streams. 
-- if consciousness is a meta management system, why is it aware of not just the main processes that it is tasked with managing, but of itself as well. Exactly what learning measure or loss function requires that such meta self reference is available? 
-- why such a system doesn't need infinite regress on its meta meta-ness.
+- If consciousness is a meta management system, why is it aware of not just the main processes that it is tasked with managing, but of itself as well. Exactly what learning measure or loss function requires that such meta self reference is available? 
+- Why such a system doesn't need infinite regress on its meta meta-ness.
 
 ## How
 
 Having recognised a "why", in the form of a need for better capabilities, the next thing to address is "how". What biologically plausible mechanism may provide the necessary capability? 
 
-So the task at hand is to use the "design stance" to theoretically (or actually) build such a system. It needs to incorporate the Visceral Loop. It needs to be able to operate within a sufficiently complex environment. It needs to be able to learn (long term). It needs to be able to adapt (short term) and presumably it needs to meta-adapt (ie: adapt its meta management).
+So the task at hand is to use the "design stance" to theoretically (or actually) build such a system. It should produces the behaviours of the Visceral Loop. It needs to be able to operate within a sufficiently complex environment. It needs to be able to learn (long term). It needs to be able to adapt (short term) and presumably it needs to meta-adapt (ie: adapt its meta management).
 
 
 # Background
@@ -40,19 +40,30 @@ See:
 
 # Stages of Improvement 
 
-This section attempts to list a likely path from simplest to most complex architecture. At each stage, I'm trying to produce a "why" that the stage is an answer to. Or better put, I'm trying to find a "need" that earlier stages cannot fulfil, and that the newer stage does somehow. What variety of cognitive process and agent behaviours is possible with a given stage? When processes and behaviours are not feasible at that stage, or would be simpler if implemented on an architecture with a later stage?
+This section attempts to list a likely path from simplest to most complex architecture. At each stage, I'm trying to produce a "why" that the stage is an answer to. Or better put, I'm trying to find a "need" that earlier stages cannot fulfil, and that the newer stage does somehow. What variety of cognitive process and agent behaviours is possible with a given stage? What processes and behaviours are not feasible at that stage? What processes and behaviours could be equally achieved but in a simpler way if implemented on an architecture with a later stage?
 
-Aa good example of that last point is that our current state of the art deep learning networks are often still feedfoward-only, the simplest of the networks, and one that correlates with the cognitive architecture of plants - but we've scaled up that architecture way beyond the capabilities of plants or the animal kingdom. That's because the animal kingdom found a more efficient architecture (a more advanced one) to achieve the same capabilities. (In this case, efficiency probably expands to "efficiency of learning").
+As good example of that last point is that our current state of the art deep learning networks are often still simple feed-forward networks, the simplest of the networks. This correlates with the cognitive architecture of plants. But we've scaled up that architecture way beyond the capabilities of plants or the animal kingdom. That's because the animal kingdom found a more efficient architecture (a more advanced one) to achieve the same capabilities. In this case, efficiency probably expands to "elapsed time and energy expenditure per amount of learning".
 
 ![overview](files/Focusing-on-the-why-overview.png)
 
+### No network
+Agents without a neural network employ evolutionarily-trained pre-configured simple chemical and electrical signalling. The sensor-adjustor-effector triad (see [[Focusing on the Why for Animal Kingdom]]) are typically collapsed into a single cell that merely reacts to its immediate environment, without any global coordination.
+
+These range from bacteria to some simple zooplankton species.
+
+Such agents are significantly limited in their range of behaviours, and their ability to adapt at the individual level. They are also constrained in the size and complexity of their body - the larger and more complex the body, the more a coordinated musculature is required, that cannot be controlled without a nervous system to convey messages across the body.
+
 ### Feed-forward Network
-- What: First simple evolution using simple feed-forward network, or perhaps with some micro-scale recurrence of the sort found in LSTM, but without adaptive predictive mechanisms. Many of our current state of art deep learning agents, trained through RL, fall into this first Naive category.
-- Why: More complex behaviours.
-- How: Evolutionarily hard-coded.
+- What: First simple evolution using simple feed-forward network, or perhaps with some micro-scale recurrence of the sort found in LSTM, but without adaptive predictive mechanisms. Many of our current state of art deep learning agents, trained through RL, fall into this first naive category.
+- Why: Larger bodies, more complex behaviour, the beginnings of individual adaptation.
+- How: Network configuration and signal strengths likely to be primarily evolutionarily hard-coded. Perhaps with some minimal adaptation at individual neuron level.
+
+More complex zooplankton species, and simple jellyfish are examples of feed-forward networks.
 
 ### Predictive Coding
 tbd
+
+More advanced jellyfish fit here.
 
 ### Dynamic Latent State Inference
 - Why: ...
@@ -711,6 +722,21 @@ More than that, our conscious introspection doesn't even get to see what the mag
 
 See Baars, 2021,section 7.1.2 for more on this. And section 7.3 where James' Ideomotor theory is explained. 
 
+## Local Learning
+Most modern AI uses a _global learning rule_. A single loss function is applied at the output, and this is used to propagate a gradient back through all layers until it reaches the input. Aside from not being biologically plausible, it's very inefficient, both computationally and in terms of the number of training iterations required. A particular reason for the latter is that there is very little constraint applied to the representations used by the hidden layers. Over the course of training, the hidden layers can freely move around through representational space. With insufficient constraints there are many equally optimal locations throughout that representational space. Thus, the system converges slowly.
+
+In contrast, a neural system can be constructed of individual sub-parts where each sub-part has its own mechanism for convergence. In such a system, the individual sub-parts are simple and can naturally converge very quickly. That per-sub-part convergence applies an extra constraint missing from the one described in the paragraph above. And the system as a whole also converges quickly.
+
+One huge advantage of the predictive coding architecture is that it can be trained almost entirely through local learning. And this results in the efficient convergence described above. Each predictive coding cortical column learns to model its own latent state. Latent state output from one layer fed as input into another layer naturally builds up a higher-order latent state, without the need for a global learning rule across both layers. Ultimately, in the large network in the brain, this culminates in a collection of highest-order latent states that are subsequently used for decision making and action generation.
+
+![local learning](files/Focusing-on-the-why-local-training.drawio.png)
+
+Internal columns likely employ a sort of _reservoir computing_ model - randomness in initial dentritic strengths leads to columns modelling different input features and different latent states. With sufficient numbers of columns, the full range of latent states required to provide sufficient utility to the agent will be uncovered. Thus, again, no global learning rule is needed to ensure that the latent states learned by the system are of sufficient utility. The brain also employs some form of normalization, through inter-column inhibition, that seems to ensure a relatively smooth variation from one column to an adjacent column to the next. And this may too act to ensure a full range of utility. Unfortunately we don't understand that yet.
+
+In the mammalian brain, columns are oriented on the vertical axis, from inner-most to outer-most. A single hierarchical layer of columns roughly spans sideways (left/right) across the brain. Hierarchical layers are stacked on the forward/backward axis. This is indicated by this diagram pinched without authorisation from Marino (2021):
+
+![forward and backward connections](files/forward-and-backward-connections-in-brain-marino-2021.png)
+
 ## Top Level Representation
 With all this, what is the top-level representation? For example, that is used within executive control, and perhaps in rational thought too?
 
@@ -830,7 +856,7 @@ https://www.newyorker.com/magazine/2017/02/27/why-facts-dont-change-our-minds
 Inspiration:
 - "For present purposes we will also speak of abstract but immediately expressible concepts as conscious — including our currently expressible beliefs, intentions, meanings, knowledge, and expectations. Notice that these abstract concepts are experienced differently from perceptual and imaginal events (Natsoulas, 1982a; Baars, 1986b, and throughout this book). Abstract concepts do not have the same rich, clear, consistent qualities that we find in the visual experience of this book: no color, texture, warmth, size, location, clear beginning and ending, etc. Perceptual and imaginal experiences are characterized by such qualities. Conceptual events are not. In contrast to qualitative conscious experiences, we will sometimes refer to abstract conceptual events in terms of conscious access. This issue is closely related to the question of focal vs. peripheral consciousness." (Baars, 2021)
 
-Some internal endogenous representations are "accurately reportable" (Baars, 2021). Internal representation of senses, particularly auditory and visual.  Others are not, particularly abstract concepts. 
+Some internal endogenous representations are "accurately reportable" (Baars, 2021). Internal representation of senses, particularly auditory and visual. Others are not, particularly abstract concepts and "feelings of knowing" (FOKs).
 
 My theory is theory is that this is an unsurprising result of the fact that the accurately reportable perceptions have clear physical representations, while the abstract perceptions do not. 
 
@@ -839,3 +865,11 @@ For perceptions of external things, the brain uses predictive coding to fine tun
 Abstract concepts are different. Logic. Belief. Feelings. There is no external reference point for guiding the internal representation. Any predictive coding processes employed during training will operate against other internal representations, rather than external ones. Thus, these abstract representations will be less universally consistent, and less "accurately reportable". 
 
 Additionally, due to the lack of a stable, consistent, external reference point, learning of the representation and associated cognitive processes will take longer and be more error prone. 
+
+
+# References
+
+Marino, J. (2021). Predictive Coding, Variational Autoencoders, and Biological Connections. Neural Comput 2021; 34 (1): 1–44. doi: https://doi.org/10.1162/neco_a_01458. \[[Full Text](https://direct.mit.edu/neco/article/34/1/1/107911/Predictive-Coding-Variational-Autoencoders-and)/]
+
+Mountcastle, V. B. (1997). The columnar organization of the neocortex. Brain (1997), 120, 701–722
+\[[Full Text](https://academic.oup.com/brain/article-pdf/120/4/701/17863573/1200701.pdf)\]

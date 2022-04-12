@@ -20,6 +20,9 @@ Columnar direction and axis (Mountcastle, 1997):
 
 ![Hierarchical columns](files/Predictive-coding-hierarchical-columns.png)
 
+In the mammalian brain, columns are oriented on the vertical axis, from inner-most to outer-most. A single hierarchical layer of columns roughly spans sideways (left/right) across the brain. Hierarchical layers are stacked on the forward/backward axis. This is indicated by this diagram pinched without authorisation from Marino (2021):
+
+[!forward and backward connections](files/forward-and-backward-connections-in-brain-marino-2021.png)
 
 # Bayesian Background
 

@@ -18,14 +18,13 @@ To discuss:
 
 ## Plants
 
-These use hormonal (ie: chemical) signalling. While there is a level of macro-scale feedback, it is via a sense-infer-act-outcome cycle, rather than a pre-action cognitive feedback. Thus, it is of the form of a feedforward-only network.
+These use hormonal (ie: chemical) signalling. While there is a level of macro-scale feedback, it is via a sense-act-outcome cycle, rather than a pre-action cognitive feedback. Thus, it is of the form of a feedforward-only network.
 In other words, our current "state of the art" deep neural networks, are just scaled-out versions of plant-cognition.
 
 ## Plankton and single-celled organisms
+The simplest animals (eg: bacteria and simple plankton) have no neural connections. They employ evolutionarily-trained pre-configured simple chemical and electrical signalling. The sensor-adjustor-effector triad are typically collapsed into cilia (micro appendages on the surface of cells) that merely react to their immediate environment, without any global coordination.
 
-Background:
-- See note "Biology Summary - Animals"
-These have extremely simple nervous systems, including cases where the sensory nerve directly controls the effector.
+Without any means for accurate long-range signalling between parts, such organisms typically repeat the same sensory capability across its surface, in order to control the span of cilia. This is inefficient. Some zooplankton species have been found to employ simple neural connections that would appear to improve the cellular efficiency - ie: less unnecessary duplication (Jékely, 2011; Conzelmann et al, 2011). These neural connections a likely merely pass-through, providing no computational benefit.
 
 ## Jellyfish
 
@@ -59,3 +58,10 @@ The next "why" question receives some answers from the following question:
 However, I think I saw an article that found that flies have attention too.
 
 Plus, while the behaviours of a fly may seem simple, the environment that they operate in is almost as complex as it is for humans. So in practice they may need many of the same systems.
+
+
+# References
+
+Jékely, G. (2011). Origin and early evolution of neural circuits for the control of ciliary locomotion. Proceedings. Biological sciences, 278(1707), 914–922. https://doi.org/10.1098/rspb.2010.2027. \[[Full Text](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3049052/)\]
+
+Conzelmann, M., Offenburger, S., Asadulina, A., Keller, T., Münch, T. A., and Jékely, G. (2011). Neuropeptides regulate swimming depth of Platynereis larvae. PNAS, doi: 10.1073/pnas.1109085108. \[[Website](https://www.mpg.de/4606470/cells_regulate_swimming_depth_marine_plankton)]
