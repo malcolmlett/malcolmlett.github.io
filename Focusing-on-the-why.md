@@ -746,6 +746,11 @@ Under this model, the sensorimotor system (the older evolutionarily) can often f
 
 The cognitive system therefore must have something about its processing that is distinctly different. One such aspect is that something about its specific architecture and the architecture of the whole means that the cognitive system can orchestrate wider groups of sub-processes in order to solve harder problems. A second aspect may be that it incorporates _rational thought_ (discussed later), whatever that is.
 
+### Interaction control
+tbd:
+* Variable switching
+* decentralised empowerment.
+
 ### Default Mode
 An additional benefit of the separate cognitive system is the addition of _default mode thought_. When the cognitive system is not required to aid the sensorimotor system, what should it do? Should it just shut down? A more effective use of the capability is to use it against hard background problems. So the default mode is a way of cognitively re-processing past events in order to maximise future empowerment. ie: the autonomous system selects things to re-process based on what things offer the greatest chances for improving future expected empowerment or reward.
 
