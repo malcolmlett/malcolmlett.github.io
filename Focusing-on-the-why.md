@@ -613,6 +613,60 @@ I think that instead both outcomes are addresses by a single predictive mechanis
 
 The resultant state does not strictly classify into solution vs subgoal. It doesn't need to. It's a fluid space. 
 
+## Distributed Empowerment
+Just a neural network can be a distributed system with many inputs and outputs at different layers and even different architectures across those different layers. Empowerment calculations and enforcement can probably be done via distributed predictive coding. So there's no need for centralised calculation and enforcement.
+
+Thus, empowerment can be used to **independently** drive different parts of the system, while still resulting in an optimally empowered whole.
+
+
+# Isolated Hierarchical Layers 
+
+What:
+- Each layer primarily only understands itself, and the interface it shares with the layers above and below. 
+Why:
+- Enables local-only learning, which is more efficient and more stable than global learning that needs to train across multiple layers towards a shared objective. 
+How:
+- Each layer only preforms inference against the sensory motor representation of the layer immediately below. 
+- Each layer produces its own output representation (latent state) according to its own objectives. The level of granularity, precision, and scope of that representation is defined entirely through the effects of connectivity (ie: as per modules). 
+- Consistent with Ideomotor Theory (but with less emphasis on needing a visual image) 
+
+How do we know to do the things we can do? Most of the actions we perform, both physical and mental, involve a vague desire for something to occur, and the expectation that it will "just happen". We are surprised if it doesn't "just happen", and when it goes wrong (eg: slips of tongue). Most of what we do is "automatised", and we only consciously control it at the very high level. In fact, we only have very high level visibility of the operation of the actions. In the case of mental actions, often we are only aware of the end product. 
+
+I believe this suggests that the top conscious layer has no a priori knowledge of the properties of the layer below. In order to use those "processors", as Baars call it, we use an inference model to predict what request signals will elicit the result we want, and the rest we leave to magic. We build up the inference model through exploration (active inference).
+
+## Human experience of architecture
+Basically, we discover that it's possible to do certain things if the hold our conscious thought in the right way. We don't know how or why it happens, but we find it useful and so we apply it whenever we want.
+
+More than that, our conscious introspection doesn't even get to see what the magic request format is. That's also abstracted away through a reverse inference: something infers the right request structure to send down, based on the high level conscious representation. 
+
+See Baars, 2021,section 7.1.2 for more on this. And section 7.3 where James' Ideomotor theory is explained. 
+
+## Local Learning
+Most modern AI uses a _global learning rule_. A single loss function is applied at the output, and this is used to propagate a gradient back through all layers until it reaches the input. Aside from not being biologically plausible, it's very inefficient, both computationally and in terms of the number of training iterations required. A particular reason for the latter is that there is very little constraint applied to the representations used by the hidden layers. Over the course of training, the hidden layers can freely move around through representational space. With insufficient constraints there are many equally optimal locations throughout that representational space. Thus, the system converges slowly.
+
+In contrast, a neural system can be constructed of individual sub-parts where each sub-part has its own mechanism for convergence. In such a system, the individual sub-parts are simple and can naturally converge very quickly. That per-sub-part convergence applies an extra constraint missing from the one described in the paragraph above. And the system as a whole also converges quickly.
+
+One huge advantage of the predictive coding architecture is that it can be trained almost entirely through local learning. And this results in the efficient convergence described above. Each predictive coding cortical column learns to model its own latent state. Latent state output from one layer fed as input into another layer naturally builds up a higher-order latent state, without the need for a global learning rule across both layers. Ultimately, in the large network in the brain, this culminates in a collection of highest-order latent states that are subsequently used for decision making and action generation.
+
+![local learning](files/Focusing-on-the-why-local-training.drawio.png)
+
+Internal columns likely employ a sort of _reservoir computing_ model - randomness in initial dentritic strengths leads to columns modelling different input features and different latent states. With sufficient numbers of columns, the full range of latent states required to provide sufficient utility to the agent will be uncovered. Thus, again, no global learning rule is needed to ensure that the latent states learned by the system are of sufficient utility. The brain also employs some form of normalization, through inter-column inhibition, that seems to ensure a relatively smooth variation from one column to an adjacent column to the next. And this may too act to ensure a full range of utility. Unfortunately we don't understand that yet.
+
+In the mammalian brain, columns are oriented on the vertical axis, from inner-most to outer-most. A single hierarchical layer of columns roughly spans sideways (left/right) across the brain. Hierarchical layers are stacked on the forward/backward axis. This is indicated by this diagram pinched without authorisation from Marino (2021):
+
+![forward and backward connections](files/forward-and-backward-connections-in-brain-marino-2021.png)
+
+## Top Level Representation
+With all this, what is the top-level representation? For example, that is used within executive control, and perhaps in rational thought too?
+
+What if the content of consciousness is simply that final top level latent state? 
+
+Which one though? Perceptual? Framing? Action? How do they ultimately interact at the top? 
+
+Even assuming that perception includes input of current mental state. But it probably also includes perception of chosen actions (mental + physical). 
+
+Baars suggests that frames are unconscious. On that basis, the entire process of inferring the most empowered mental state, acting to move towards that state, and actually being in that state are inaccessible. Rather, only the effect is accessible : in terms of the resultant perceptual inference, that was unconsciously biased by the mental state. 
+
 
 # Executive Control
 
@@ -674,8 +728,35 @@ Third iteration (b):
 - It provides a location for bidirectional message passing. 
 - It provides a place to hold state to smooth out attentional flickering. 
 
+## Cognitive Loop
+Here's an idea: that the conscious cognitive process in humans is the secondary system. The real primary system is the autonomous sensorimotor system. We only think that the cognitive process is primary because we experience it due to its meta-cognition.
 
-# Rational thought 
+Component parts:
+* Cognitive Loop
+    * The frames, goals, subsystems involved are all driven by _cognitive empowerment_: empowerment of non-physical actions.
+* Integrative layer
+    * Switching driven by empowerment, and by prediction errors/surprise from sensorimotor loop
+* Sensorimotor Loop
+    * aka Sensor-Adjustor-Effector Loop
+    * Frames driven by _physical action empowerment_
+
+![sensorimotor and cognitive loops](files/Focusing-on-the-why-sensorimotor-and-cognitive-loops.png)
+
+Under this model, the sensorimotor system (the older evolutionarily) can often function on its own. It only uses the cognitive system when needed due to high uncertainty or prediction-observation-errors. So in simple evolutionary terms, the cognitive system provides an extra adaptive layer.
+
+The cognitive system therefore must have something about its processing that is distinctly different. One such aspect is that something about its specific architecture and the architecture of the whole means that the cognitive system can orchestrate wider groups of sub-processes in order to solve harder problems. A second aspect may be that it incorporates _rational thought_ (discussed later), whatever that is.
+
+### Default Mode
+An additional benefit of the separate cognitive system is the addition of _default mode thought_. When the cognitive system is not required to aid the sensorimotor system, what should it do? Should it just shut down? A more effective use of the capability is to use it against hard background problems. So the default mode is a way of cognitively re-processing past events in order to maximise future empowerment. ie: the autonomous system selects things to re-process based on what things offer the greatest chances for improving future expected empowerment or reward.
+
+Note:
+* We could use "pure empowerment" to refer to the purist idea of empowerment as merely increasing the number of actionable options available to the agent in the future.
+* We could also use "positive empowerment" to refer to maximising the positive actions, and to minimising the negative outcomes. ie: positive actions are ones that increase the agent's likelihood of preferred outcomes, and negative actions are ones that increase the agent's likelihood of outcomes that it wishes to avoid. These should apply even where the outcomes have net zero difference in terms of pure empowerment. In biology, preferred and un-preferred outcomes would be measured by serotonin, pain, emotions, etc.
+
+So, the cognitive system ultimately comes down to improving empowerment. When not needed in the short term, it focuses on improving long term empowerment. When the sensorimotor system cannot handle the immediate circumstances, the cognitive system is used to improve empowerment in the short term.
+
+
+# Rational thought
 
 - Ability to perform some form of rational thought, at a higher level than brute slowly learned bayesian inference. Or perhaps this is bayesian inference at the high level. It's somehow different to brute pattern matching that NN do. 
 - Not implying logical soundness. 
@@ -693,60 +774,11 @@ Actually needs to commandeer one or more processes during deliberation. While do
 
 In addition to perceptual processes, also activates the rational thought processes, which presumably are dormant otherwise. 
 
-## Difference to Executive Control
+## Rational Thought versus Executive Control
 Rational thought does not have to be part of executive control. It could be an unconscious process like most others. The reason why it becomes part of executive control, eg in humans, is probably because it needs to use the capabilities of disparate processors - ie: it needs the global workspace.
 
 ## Rational Thought as Emergent Property
 Rational thought may just be a consequence of GW + latent state representations + mental state /action. 
-
-
-# Isolated Hierarchical Layers 
-
-What:
-- Each layer primarily only understands itself, and the interface it shares with the layers above and below. 
-Why:
-- Enables local-only learning, which is more efficient and more stable than global learning that needs to train across multiple layers towards a shared objective. 
-How:
-- Each layer only preforms inference against the sensory motor representation of the layer immediately below. 
-- Each layer produces its own output representation (latent state) according to its own objectives. The level of granularity, precision, and scope of that representation is defined entirely through the effects of connectivity (ie: as per modules). 
-- Consistent with Ideomotor Theory (but with less emphasis on needing a visual image) 
-
-How do we know to do the things we can do? Most of the actions we perform, both physical and mental, involve a vague desire for something to occur, and the expectation that it will "just happen". We are surprised if it doesn't "just happen", and when it goes wrong (eg: slips of tongue). Most of what we do is "automatised", and we only consciously control it at the very high level. In fact, we only have very high level visibility of the operation of the actions. In the case of mental actions, often we are only aware of the end product. 
-
-I believe this suggests that the top conscious layer has no a priori knowledge of the properties of the layer below. In order to use those "processors", as Baars call it, we use an inference model to predict what request signals will elicit the result we want, and the rest we leave to magic. We build up the inference model through exploration (active inference).
-
-## Human experience of architecture
-Basically, we discover that it's possible to do certain things if the hold our conscious thought in the right way. We don't know how or why it happens, but we find it useful and so we apply it whenever we want.
-
-More than that, our conscious introspection doesn't even get to see what the magic request format is. That's also abstracted away through a reverse inference: something infers the right request structure to send down, based on the high level conscious representation. 
-
-See Baars, 2021,section 7.1.2 for more on this. And section 7.3 where James' Ideomotor theory is explained. 
-
-## Local Learning
-Most modern AI uses a _global learning rule_. A single loss function is applied at the output, and this is used to propagate a gradient back through all layers until it reaches the input. Aside from not being biologically plausible, it's very inefficient, both computationally and in terms of the number of training iterations required. A particular reason for the latter is that there is very little constraint applied to the representations used by the hidden layers. Over the course of training, the hidden layers can freely move around through representational space. With insufficient constraints there are many equally optimal locations throughout that representational space. Thus, the system converges slowly.
-
-In contrast, a neural system can be constructed of individual sub-parts where each sub-part has its own mechanism for convergence. In such a system, the individual sub-parts are simple and can naturally converge very quickly. That per-sub-part convergence applies an extra constraint missing from the one described in the paragraph above. And the system as a whole also converges quickly.
-
-One huge advantage of the predictive coding architecture is that it can be trained almost entirely through local learning. And this results in the efficient convergence described above. Each predictive coding cortical column learns to model its own latent state. Latent state output from one layer fed as input into another layer naturally builds up a higher-order latent state, without the need for a global learning rule across both layers. Ultimately, in the large network in the brain, this culminates in a collection of highest-order latent states that are subsequently used for decision making and action generation.
-
-![local learning](files/Focusing-on-the-why-local-training.drawio.png)
-
-Internal columns likely employ a sort of _reservoir computing_ model - randomness in initial dentritic strengths leads to columns modelling different input features and different latent states. With sufficient numbers of columns, the full range of latent states required to provide sufficient utility to the agent will be uncovered. Thus, again, no global learning rule is needed to ensure that the latent states learned by the system are of sufficient utility. The brain also employs some form of normalization, through inter-column inhibition, that seems to ensure a relatively smooth variation from one column to an adjacent column to the next. And this may too act to ensure a full range of utility. Unfortunately we don't understand that yet.
-
-In the mammalian brain, columns are oriented on the vertical axis, from inner-most to outer-most. A single hierarchical layer of columns roughly spans sideways (left/right) across the brain. Hierarchical layers are stacked on the forward/backward axis. This is indicated by this diagram pinched without authorisation from Marino (2021):
-
-![forward and backward connections](files/forward-and-backward-connections-in-brain-marino-2021.png)
-
-## Top Level Representation
-With all this, what is the top-level representation? For example, that is used within executive control, and perhaps in rational thought too?
-
-What if the content of consciousness is simply that final top level latent state? 
-
-Which one though? Perceptual? Framing? Action? How do they ultimately interact at the top? 
-
-Even assuming that perception includes input of current mental state. But it probably also includes perception of chosen actions (mental + physical). 
-
-Baars suggests that frames are unconscious. On that basis, the entire process of inferring the most empowered mental state, acting to move towards that state, and actually being in that state are inaccessible. Rather, only the effect is accessible : in terms of the resultant perceptual inference, that was unconsciously biased by the mental state. 
 
 
 # Other Systems and Capabilities
