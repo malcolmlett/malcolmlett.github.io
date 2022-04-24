@@ -728,6 +728,13 @@ Third iteration (b):
 - It provides a location for bidirectional message passing. 
 - It provides a place to hold state to smooth out attentional flickering. 
 
+## Parallel Processing
+What's going on with our ability to do things unconsciously? What does that mean for our conscious state? What is our conscious / meta cognitive system doing when it's not needed. 
+
+Empowered frames may choose whether the best outcomes are achieved most efficiently by unconscious or conscious processes. So what's gained by not using the meta cognitive processes? Does it mean that they can be allocated to something else. Perhaps this is what the "default mode" is all about. That the human architecture explicitly supports parallelisation when not all brain processes are needed for the one problem. Unconscious processes can carry on with simple perceptual and action inference. In order to enable a conscious process for something hard. Our, if there is nothing else to do then default mode kicks in - because its more empowering to use those spares brain cycles to work on some background low priority problem. 
+
+Right. So what architecture supports this? For starters, it needs a working memory with a level of indirection from the unconscious processes. Frame state needs to be divided too. 
+
 ## Cognitive Loop
 Here's an idea: that the conscious cognitive process in humans is the secondary system. The real primary system is the autonomous sensorimotor system. We only think that the cognitive process is primary because we experience it due to its meta-cognition.
 
@@ -747,9 +754,12 @@ Under this model, the sensorimotor system (the older evolutionarily) can often f
 The cognitive system therefore must have something about its processing that is distinctly different. One such aspect is that something about its specific architecture and the architecture of the whole means that the cognitive system can orchestrate wider groups of sub-processes in order to solve harder problems. A second aspect may be that it incorporates _rational thought_ (discussed later), whatever that is.
 
 ### Interaction control
-tbd:
-* Variable switching
-* decentralised empowerment.
+What mechanism controls the amount of sensorimotor/cognitive system interaction?
+At a simplistic level, the interactions need to occur as follows:
+* Input into the cognitive loop needs to vary between the current sensory information and the cognitive loop's own state.
+* Output from the cognitive loop needs to influence sensorimotor output to a varying extent.
+
+So there needs to be a kind of _variable switch_ at both the input and output regions of the cognitive loop, and something needs to control the switches. This can be achieved if we view the whole as a dynamical system that achieves stable oscillation - something of the form described within Integrated World Modeling Theory (IWMT) (Safron, 2020a/b). The dynamical system could be controlled, for example, through _decentralised empowerment_.
 
 ### Default Mode
 An additional benefit of the separate cognitive system is the addition of _default mode thought_. When the cognitive system is not required to aid the sensorimotor system, what should it do? Should it just shut down? A more effective use of the capability is to use it against hard background problems. So the default mode is a way of cognitively re-processing past events in order to maximise future empowerment. ie: the autonomous system selects things to re-process based on what things offer the greatest chances for improving future expected empowerment or reward.
@@ -759,6 +769,15 @@ Note:
 * We could also use "positive empowerment" to refer to maximising the positive actions, and to minimising the negative outcomes. ie: positive actions are ones that increase the agent's likelihood of preferred outcomes, and negative actions are ones that increase the agent's likelihood of outcomes that it wishes to avoid. These should apply even where the outcomes have net zero difference in terms of pure empowerment. In biology, preferred and un-preferred outcomes would be measured by serotonin, pain, emotions, etc.
 
 So, the cognitive system ultimately comes down to improving empowerment. When not needed in the short term, it focuses on improving long term empowerment. When the sensorimotor system cannot handle the immediate circumstances, the cognitive system is used to improve empowerment in the short term.
+
+## Cognitive System
+The next task is to figure out the architecture of the cognitive system.
+
+In simple terms, a cognitive system can be similar in structure to a sensorimotor system. Both should approximately have a sensor-adjustor-effector structure, the difference being that the cognitive system works against virtual state and produces virtual actions that modify the virtual state.
+
+One possible interpretation, particularly inspired by Global Workspace Theory, is a combination of a single shared state (global workspace) with multiple functionally specialised processors. The enablement of specific processors could be chose through framing.
+
+![cognitive system](files/Focusing-on-the-why-cognitive-system.png)
 
 
 # Rational thought
@@ -910,3 +929,7 @@ Marino, J. (2021). Predictive Coding, Variational Autoencoders, and Biological C
 
 Mountcastle, V. B. (1997). The columnar organization of the neocortex. Brain (1997), 120, 701–722
 \[[Full Text](https://academic.oup.com/brain/article-pdf/120/4/701/17863573/1200701.pdf)\]
+
+Safron A. (2020a). An Integrated World Modeling Theory (IWMT) of Consciousness: Combining Integrated Information and Global Neuronal Workspace Theories With the Free Energy Principle and Active Inference Framework; Toward Solving the Hard Problem and Characterizing Agentic Causation. Frontiers in artificial intelligence, 3, 30. https://doi.org/10.3389/frai.2020.00030
+
+Safron A. (2020b). Integrated World Modeling Theory (IWMT) Implemented: Towards Reverse Engineering Consciousness with the Free Energy Principle and Active Inference. In: Verbelen T., Lanillos P., Buckley C.L., De Boom C. (eds) Active Inference. IWAI 2020. Communications in Computer and Information Science, vol 1326. Springer, Cham. https://doi.org/10.1007/978-3-030-64919-7_15
