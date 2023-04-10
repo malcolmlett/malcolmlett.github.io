@@ -70,6 +70,18 @@ Todo - brain parts etc
 
 # Part II - Problem Analysis
 
+# II.1 Complexity and Loops
+
+_todo_
+
+# II.2 Multi-step Path Planning and the Need for Meta-management
+
+_todo_
+
+# II.3 Meta-management and Feedback Loop Options
+
+_todo_
+
 # II.4 Interlude: Environment, Body, and Cognitive Processes
 
 Before continuing, it'll be useful to do a deep dive into the interactions between the three key systems of: external environment, body, and the cognitive processes. This is key because it explains the importance of independent modelling of env, body and CP, and thus why "I" becomes so prominent in the computation that produces subjective experience.
@@ -284,3 +296,39 @@ The modalities of environmental pressures requires some further discussion. Disc
 One further learning layer exists on top. With such advanced and flexible learning and meta-management comes a high degree of freedom. For example, many different modes of behaviour are potentially equally effective. Most negative short-term outcomes can be adapted to, so that the total outcomes is net positive. This can lead to a high degree of instability - if so many modes of behaviour are equality advantageous, there is little learning pressure to maintain a consistent mode of behaviour. In turn, that can lead to constant re-learning within the habitual system. Ultimately, the individual may converge extremely slowly towards its most optimum set of behaviours. It has been suggested...[citations, including Damasio's emotion book].... that society plays an important role here.
 
 Effectively, society is a collective behavioural exploration and learning system that spans a longer time scale than that of an individual. There are many possible systems of societal norms, and the societies that thrive will tend to have produced systems of societal norms that benefit the society and the individuals within it and those systems will tend to remain relatively stable over time. Through constant feedback from adults and peers, a naive individual's higher order processes are trained to produce behaviours that are consistent with the norms of the society in which they live. That societal pressure thus provides a significant portion of the narrowing convergent boundary exerted by the environment on the individual's learning, particularly for its rational systems including meta-management.
+
+# II.6 Semiotics
+
+_todo_
+
+
+---
+
+
+# Part III - Solution
+
+_todo_
+
+
+---
+
+
+# Part IV - The Intuitional Gap
+
+_todo_
+
+
+---
+
+
+# Part V - Predictions
+
+_todo_
+
+
+---
+
+
+# Part VI - Next Steps
+
+_todo_
