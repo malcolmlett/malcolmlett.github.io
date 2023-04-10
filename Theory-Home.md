@@ -9,7 +9,7 @@ I've been wondering about human consciousness since 2014. In particular I'm inte
 * [[A Theory of Consciousness]]
 * [[Proto AGI v1]]
 * [[Focusing on the Why]]
-* [[A Coherent Theory of Consciousness]]
+* [[A Coherent Materialistic Theory of Consciousness]]]
 
 # Papers
 * [[Paper on Loops in AI and Consciousness]]
