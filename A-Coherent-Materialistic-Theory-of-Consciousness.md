@@ -68,7 +68,7 @@ Todo - brain parts etc
 ---
 
 
-# Part II - Problem Analysis
+# Part II - Problems in simple synthetic control processes
 
 # II.1 Complexity and Loops
 
@@ -78,11 +78,24 @@ _todo_
 
 _todo_
 
-# II.3 Meta-management and Feedback Loop Options
+
+---
+
+
+# Part III - Problems in complex synthetic control processes
+# III.1 Interlude: Meta-management in Deliberative Systems
 
 _todo_
 
-# II.4 Interlude: Environment, Body, and Cognitive Processes
+# III.3 Meta mgmt and feedback loop options
+
+
+---
+
+
+# Part IV - Problems in biological control processes
+
+# IV.1 Interlude: Environment, Body, and Cognitive Processes
 
 Before continuing, it'll be useful to do a deep dive into the interactions between the three key systems of: external environment, body, and the cognitive processes. This is key because it explains the importance of independent modelling of env, body and CP, and thus why "I" becomes so prominent in the computation that produces subjective experience.
 
@@ -208,7 +221,7 @@ _todo_
 
 In combination with body schema and cognitive schema, labelling of events leads to a strong association between an event and the schema of its source. So, when I think a thought and subsequently think about having that thought, I know that "I" had that thought.
 
-# II.5 Deeper Dive into Meta-management
+# IV.3 Deeper Dive into Meta-management
 
 In a section above I introduced the idea of meta-management and looked at some of the possible architectures, but I was unable to clearly articulate why one possible architecture is really any different to another. I shall now explain that, by looking more closely at the mechanisms of control and learning.
 
@@ -279,6 +292,8 @@ The rational meta-management process still appears fundamentally unstable. What 
 
 _todo: the description of "narrowing convergent boundaries" and how I've used it aren't quite aligned._
 
+_todo: also describe habitual and rational systems as being part of an adversarial co-training system - the level to which they are co-convergent indicates how accurate or inaccurate they are. This is probably the first thing to mention. And then go into the narrowing convergent boundaries are a more specific concrete description of that._
+
 I suspect that interactions between the habitual system, the rational system, and pressures from the external environment, create an effect of narrowing convergent boundaries. With respect to a single learning system, negative and positive feedback from its surroundings causes it to converge towards an optimum behaviour, but that convergence may be slow. If, at the same time, a second system builds up a model of the surroundings and its feedbacks, and if it applies additional feedback on the first system, then it applies a kind of an additional soft boundary against that first system. More importantly, as that second system gradually improves its model, the boundary that it applies to the first also converges. Thus, the range of behaviours of the first system that are allowed by the second system gradually narrows over time.
 
 Panel A in the diagram below illustrates how the external environment and the rational system may act to apply narrowing convergent boundaries against the learning within the habitual system. Feedback signals received from the environment apply an after-the-fact convergent pressure, in the form of negative and positive rewards and in the form of prediction error. When the rational system is operating near its optimum it provides a before-the-fact convergent pressure, in the form of prevention (usually to avoid a catastrophic error occurring) and in the form of encouraging exploration. For example, the individual may have developed a habit of walking a particular route through the forest to the nearest watering hole, but the rational system will prevent that habituated path because it remembers that a tree had fallen and blocked the path at a location that is currently out of sight.
@@ -297,7 +312,7 @@ One further learning layer exists on top. With such advanced and flexible learni
 
 Effectively, society is a collective behavioural exploration and learning system that spans a longer time scale than that of an individual. There are many possible systems of societal norms, and the societies that thrive will tend to have produced systems of societal norms that benefit the society and the individuals within it and those systems will tend to remain relatively stable over time. Through constant feedback from adults and peers, a naive individual's higher order processes are trained to produce behaviours that are consistent with the norms of the society in which they live. That societal pressure thus provides a significant portion of the narrowing convergent boundary exerted by the environment on the individual's learning, particularly for its rational systems including meta-management.
 
-# II.6 Semiotics
+# IV.4 Semiotics
 
 _todo_
 
@@ -305,7 +320,7 @@ _todo_
 ---
 
 
-# Part III - Solution
+# Part V - Solution
 
 _todo_
 
@@ -313,7 +328,7 @@ _todo_
 ---
 
 
-# Part IV - The Intuitional Gap
+# Part VI - The Intuitional Gap
 
 _todo_
 
@@ -321,7 +336,7 @@ _todo_
 ---
 
 
-# Part V - Predictions
+# Part VII - Predictions
 
 _todo_
 
@@ -329,6 +344,6 @@ _todo_
 ---
 
 
-# Part VI - Next Steps
+# Part VIII - Next Steps
 
 _todo_
