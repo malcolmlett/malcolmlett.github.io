@@ -45,7 +45,7 @@ What is consciousness? This a question that has been considered for a long time.
 _Todo later: extend out as suitable intro for someone totally new to the question._
 
 
-# I.1 Theories of Consciousness
+# II.1 Theories of Consciousness
 
 Many theories exist about the nature of consciousness. A summary of such theories will be given here. To provide some uniformity, the explanatory framework of a stack of theoretical layers is used, illustrated in the following diagram. Here, the physical biology of the brain is viewed as a substrate that might potentially be replaced or emulated via some other substrate (eg: silicon neurons). Built upon that substrate are many non-conscious processes. Either directly from the underlying substrate, or as a result of the non-conscious processes, some mental states are associated with subjective experience. The blue boxes represent potential layers involved in that subjective experience. For example, some non-conscious processes may produce representations that are associated with subjective experience. Such representations may or may not require specific functional structures in order to lead to subjective experience. Additionally, even with appropriate functional structures, something extra special may or may not be needed in order for those representations to be associated with subjective experience.
 
@@ -83,7 +83,7 @@ _todo: references and more details from:_
 
 Ned Block and various other's variations propose that consciousness is divided into access consciousness and phenomenal consciousness, and that access-consciousness variously stops somewhere below the "something special" layer, with various arguments about where it stops. Such arguments down to differences in opinion about the relation between access and phenomenal consciousness: i) are they one-to-one: all access conscious events have phenomenal consciousness, ii) can some access conscious events lead to external behaviour without the individual having subjective experience?, or iii) can some phenomenal conscious events occur that have no access consciousness: for example that the individual experiences in the moment but cannot have any memory of it and cannot report on it.
 
-# I.2 Biology and Neuroscience 
+# II.2 Biology and Neuroscience 
 
 Todo - brain parts etc
 
@@ -91,9 +91,9 @@ Todo - brain parts etc
 ---
 
 
-# Part II - Problems in simple synthetic control processes
+# Part III - Problems in simple synthetic control processes
 
-# II.1 Complexity and the need for Processing Loops
+# III.1 Complexity and the need for Processing Loops
 
 In most artificial neural network (ANN) based reinforcement learning (RL) agents today, each input is associated with an immediately produced output. This means that in an embodied agent the choice of the next physical action is made by a single pass through its ANN(s): input nodes are populated with current sensory signals, matrix operations are carried out that permute and transform those input node values through the multi-layer network of weights, and the values produced by the output nodes are immediately taken as the chosen next action. This is true even for Recurrent Neural Networks (RNN). RNNs are _recurrent_ in the sense that state from a previous pass is made available to influence the output on the next pass with the next input value. In this way, when a time-bound signal stream is fed into the RNN, it produces an output stream where each value in the output stream is influenced not just by the current input but by all inputs received up until that point. However, the RNN still produces exactly one output for every input, and each output is produced by a single pass through its network.
 
@@ -130,7 +130,7 @@ _todo: I use the term multi-step processing to clarify that I am referring to a 
 _Todo: To avoid confusion with micro-level recurrency, this article uses the term "multi-step processing". 
 or should I use multi-iteration processing everywhere instead?_
 
-# II.2 State in a Multi-step Processor
+# III.2 State in a Multi-step Processor
 
 The course taken by an agent to get from a past state to its current state is its _state trajectory_. Analogous to the path taken by an agent while walking through a maze, the state trajectory describes the path of the agent through state space. Here the state space can refer to its possible locations in physical space, such as in the maze example, or to more abstract possible states, such as an encapsulation of all measurable aspects of the agent's body parts.
 
@@ -185,7 +185,7 @@ A detailed discussion for all the possible reasons for meta management will be c
 
 In conclusion, a multi-step processor requires meta-management. For the most simple multi-step processors, meta-management can be in the form of simple parameter optimisation algorithms applied during a learning phase post execution. For more advanced multi-step processors, a much more advanced and active form of meta-management is required, one which might even have comparable complexity to the primary control process itself.
 
-# II.3 Interlude: Control Options
+# III.3 Interlude: Control Options
 What form might meta-management take. In order to answer that question I shall first present a review of different architectures for standard control (ie: non meta-management). 
 
 _..todo...maybe now diagram all the component parts of an AI RL learning algorithm, so we can see what meta-management is already incorporated._
@@ -257,7 +257,7 @@ This control process is not discussed much in the literature, but I believe it i
 ## Expectation-Maximisation / Iterative Convergent Control Processes
 ...todo..
 
-# II.4 Control options in Meta-management
+# III.4 Control options in Meta-management
 
 What options are available for a control process to be meta-managed? We have already mentioned parameter optimisation. Here we shall look at some other options. The goal is not to provide an exhaustive list, but to build up a case for the need to observe the control process and to draw out what kinds of observation might be needed.
 
@@ -311,20 +311,20 @@ Many meta-management processes can be implicit or explicit. Implicit meta-manage
 ---
 
 
-# Part III - Problems in complex synthetic control processes
-# III.1 Interlude: Meta-management in Deliberative Systems
+# Part IV - Problems in complex synthetic control processes
+# IV.1 Interlude: Meta-management in Deliberative Systems
 
 _todo_
 
-# III.3 Meta mgmt and feedback loop options
+# IV.3 Meta mgmt and feedback loop options
 
 
 ---
 
 
-# Part IV - Problems in biological control processes
+# Part V - Problems in biological control processes
 
-# IV.1 Interlude: Environment, Body, and Cognitive Processes
+# V.1 Interlude: Environment, Body, and Cognitive Processes
 
 Before continuing, it'll be useful to do a deep dive into the interactions between the three key systems of: external environment, body, and the cognitive processes. This is key because it explains the importance of independent modelling of env, body and CP, and thus why "I" becomes so prominent in the computation that produces subjective experience.
 
@@ -450,7 +450,7 @@ _todo_
 
 In combination with body schema and cognitive schema, labelling of events leads to a strong association between an event and the schema of its source. So, when I think a thought and subsequently think about having that thought, I know that "I" had that thought.
 
-# IV.3 Deeper Dive into Meta-management
+# V.3 Deeper Dive into Meta-management
 
 In a section above I introduced the idea of meta-management and looked at some of the possible architectures, but I was unable to clearly articulate why one possible architecture is really any different to another. I shall now explain that, by looking more closely at the mechanisms of control and learning.
 
@@ -541,7 +541,7 @@ One further learning layer exists on top. With such advanced and flexible learni
 
 Effectively, society is a collective behavioural exploration and learning system that spans a longer time scale than that of an individual. There are many possible systems of societal norms, and the societies that thrive will tend to have produced systems of societal norms that benefit the society and the individuals within it and those systems will tend to remain relatively stable over time. Through constant feedback from adults and peers, a naive individual's higher order processes are trained to produce behaviours that are consistent with the norms of the society in which they live. That societal pressure thus provides a significant portion of the narrowing convergent boundary exerted by the environment on the individual's learning, particularly for its rational systems including meta-management.
 
-# IV.4 Semiotics
+# V.4 Semiotics
 
 _todo_
 
@@ -549,7 +549,7 @@ _todo_
 ---
 
 
-# Part V - Solution
+# Part VI - Solution
 
 _todo_
 
@@ -557,7 +557,7 @@ _todo_
 ---
 
 
-# Part VI - The Intuitional Gap
+# Part VII - The Intuitional Gap
 
 _todo_
 
@@ -565,7 +565,7 @@ _todo_
 ---
 
 
-# Part VII - Predictions
+# Part VIII - Predictions
 
 _todo_
 
@@ -573,6 +573,6 @@ _todo_
 ---
 
 
-# Part VIII - Next Steps
+# Part IX - Next Steps
 
 _todo_
