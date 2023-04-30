@@ -257,13 +257,9 @@ _...todo...use this to introduce the idea of a biologically plausible NN-based p
 ...todo..
 
 
-# IV.3 Options for Meta-management
-
-What options are available for a control process to be meta-managed? We have already mentioned parameter optimisation. Here we shall look at some other options. The goal is not to provide an exhaustive list, but to build up a case for the need to observe the control process and to draw out what kinds of observation might be needed.
-
-But first, to help motivate the discussion, let's first specify a useful example to have in mind....
-
 ## A Biologically Plausible Planning Control Process
+
+_...todo...But first, to help motivate the discussion, let's first specify a useful example to have in mind...._
 
 The control algorithms considered were taken directly from AI research, but not all of the implementations are biologically plausible in the same form as used within AI research. It is reasonable to consider that an ability to do planning is very important for biological agents just as much as it is for artificial agents. But biological agents are unlikely to be imbued with a fully-formed pre-built planning engine. And even if such a thing was partially or fully formed, it is more likely to built using the same kind of neural network structures found throughout the rest of the brain.
 
@@ -285,16 +281,17 @@ But how stable would it be? Would it need a meta-management process to help it c
 
 _...todo...Also present argument that meta-management only makes sense in the context of a planner such as this, because it has multiple steps where it doesn't produce actions, whereas all the variations of reactive function always produce body actions.  That motivates why the next section considers meta-management in the context of a planner._
 
-## Control options in meta-management
+# IV.3 Control Options for Meta-management
+
+What options are available for a control process to be meta-managed? We have already mentioned parameter optimisation. Here we shall look at some other options. The goal is not to provide an exhaustive list, but to build up a case for the need to observe the control process and to draw out what kinds of observation might be needed.
 
 ![meta-management control options](files/A-coherent-theory-v1-mm-cntrl-options.drawio.png)
 
-<ul>
-<li style="list-style-type: none;"><i><b>How meta-management can influence the control process.</b> Identification of some ways in which a control process may be meta-managed. </i></li>
-</ul>
+* _**How meta-management can influence the control process.** Identification of some ways in which a control process may be meta-managed._
 
+Let's examine some options:
 
-- **Parameter optimisation.** As a quick reminder, our first example of meta-management was "after the fact" parameter optimisation. This occurs as a training process guided by feedback following execution of the control process against some problem. Through processes such as gradient descent and back-propagation the parameters of the control process can be optimised so that future attempts are improved.
+- **Parameter optimisation.** Our first example of meta-management was "after the fact" parameter optimisation. This occurs as a training process guided by feedback following execution of the control process against some problem. Through processes such as gradient descent and back-propagation the parameters of the control process can be optimised so that future attempts are improved.
 - **Strategy selection.** The control process may develop multiple strategies for solving different kinds of problems. For example there are multiple ways to do path planning. Selection of the most appropriate strategy for a given problem at hand is an example of meta-management. 
 - **Goal selection.** Real world agents don't have hard-coded goals. They change goals according to situation.
 - **Bias control.** The biological brain is believed to incorporate a predictive coding architecture....[citations, and elaboration]. Inferences incorporate biases. Those biases can be manipulated by some explicit meta-management process. An example can be seen in mammals with interactions between the sympathetic and parasympathetic nervous systems influencing thought processes.
@@ -308,7 +305,7 @@ A few general notes can be said about the above. Firstly, parameter optimisation
 
 Many meta-management processes can be implicit or explicit. Implicit meta-management occurs as a side-effect of the reactive mechanisms of the control process. Explicit meta-management is driven by a separate process that somehow influences the control process. For example, in AI, parameter optimisation is typically carried out as an "offline" process by a learning algorithm that is entirely separate from the processes used when executing the control process. In contrast, within biological brains, it is believed that _hebbian learning_ occurs as the primary learning mechanism and that it primarily occurs as "online" learning ....[citation, and further elaboration].
 
-## Observation options in meta-management
+# IV.4 Observation Options for Meta-Management
 
 In order to carry out any of the meta-management control mechanisms described in the section above, any explicit meta-management processes need to observe the behaviour of the main control process. We look now at a brief review of some of those observation options.
 
@@ -330,12 +327,14 @@ Mechanisms for meta-management processes to observe the control process include:
 
 Of particular note is the fact that many of these mechanisms described are the same kinds of systems that would be used in an advanced agent for the observation, inference, and manipulation of interactions between the agents limbs, and between the agent and the environment.
 
-## Architectural options in meta-management
+# IV.5 Architectural Options for Meta-management
 
 ..todo..
 
+![meta-management architecture options](files/A-coherent-theory-v1-mm-architectures.drawio.png)
 
-* _**Meta-management Architectures.** Three possible architectures for meta-management.  A) Tuning - the meta-management process observes the behaviour of the main control process and adjusts its behaviour via tuning signals that bias its behaviours and via controlling weight updates during learning. The main control process has no direct knowledge of the existence of the meta-management process. B) Manipulator - the meta-management process controls via manipulation of the input signals to the main control process, including supplying an additional input signal. The meta-management process observes and predicts the behaviour of the main control process and manipulates the input signals in order to obtain the desired behaviour. C) Inline - no independent meta-management process; rather the state and trajectory of the main control process is fed back into the main control process as an additional sensory input, likely with some degree of dimensionality reduction. The main control process learns to use that additional information and applies it inline with its other sensory inputs to achieve the desired outcomes._
+
+* _**Meta-management Architectures.** Three broad architectures for meta-management.  A) Tuning - the meta-management process observes the behaviour of the main control process and adjusts its behaviour via tuning signals that bias its behaviours and via controlling weight updates during learning. The main control process has no direct knowledge of the existence of the meta-management process. B) Manipulator - the meta-management process controls via manipulation of the input signals to the main control process, including supplying an additional input signal. The meta-management process observes and predicts the behaviour of the main control process and manipulates the input signals in order to obtain the desired behaviour. C) Inline - no independent meta-management process; rather the state and trajectory of the main control process is fed back into the main control process as an additional sensory input, likely with some degree of dimensionality reduction. The main control process learns to use that additional information and applies it inline with its other sensory inputs to achieve the desired outcomes._
 
 
 **Implicit Meta-management**
@@ -345,6 +344,13 @@ Of particular note is the fact that many of these mechanisms described are the s
 
 **Inline Meta-management**
 
+**Chapter Summary**
+
+All of the meta-management architectures described above may be valid. In fact, biological brains probably incorporate a mixture of all of them, and perhaps with other mechanisms that have not been thought of. But we are interested in the most significant form of meta-management that might be at play in the context of subjective experience. Subjective experience seems to be tightly correlated with higher order executive control, and so we are interested in the most significant form of meta-management as it pertains to that higher-order executive control.
+
+When looking at generic control problems, there is no architecture that is clearly more effective or more realistic than the others. Perhaps the answer depends too much on how the control process itself functions. The devil is in the details, as they say. The functioning of the control process depends also on what kinds of control are required, and the more interesting kinds of control process occur in more complex agents. For that reason, the next part drills deeper into more complex control process requirements and mechanisms. After that we will be in a better position to circle back to re-address the question of meta-management architecture.
+
+In the interim, however, there is some anecdotal evidence to suggest that the Inline meta-management architecture is at play within humans. It is said that humans have 5 senses of touch, taste, smell, sight, and hearing. That list has since grown with the recognition of proprioception, balance, and other internal senses ..[citation, and use of accurate terminology]. While it is not often classified as such, our awareness of our own mental state is another sense. The extent to which we can attend to each of those senses varies by modality (eg: while we have proprioceptive sense, it doesn't seem to carry the same ability to flood our consciousness than, say, our vision), but they are clearly all available for observation, integration, differentiation, correlation, modeling, and reaction-to within that higher-order executive control process that seems to be associated with subjective experience. This suggests the feedback loop described within the inline meta-management architecture.
 
 ---
 
