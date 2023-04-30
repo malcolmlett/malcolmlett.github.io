@@ -312,7 +312,7 @@ Many meta-management processes can be implicit or explicit. Implicit meta-manage
 
 In order to carry out any of the meta-management control mechanisms described in the section above, any explicit meta-management processes need to observe the behaviour of the main control process. We look now at a brief review of some of those observation options.
 
-![meta-management observation options](files/A-coherent-theory-v1-mm-observation-options.drawio.drawio.png)
+![meta-management observation options](files/A-coherent-theory-v1-mm-observation-options.drawio.png)
 
 * _**How meta-management can observe the control process.** Illustration of the sorts of things that explicit meta-management may need to observe, and the processes that might be involved to draw inferences from that information._
 
