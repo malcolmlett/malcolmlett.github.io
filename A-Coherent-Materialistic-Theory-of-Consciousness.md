@@ -585,6 +585,7 @@ _todo_
 
 In combination with body schema and cognitive schema, labelling of events leads to a strong association between an event and the schema of its source. So, when I think a thought and subsequently think about having that thought, I know that "I" had that thought.
 
+
 # V.3 Deeper Dive into Meta-management
 
 In a section above I introduced the idea of meta-management and looked at some of the possible architectures, but I was unable to clearly articulate why one possible architecture is really any different to another. I shall now explain that, by looking more closely at the mechanisms of control and learning.
