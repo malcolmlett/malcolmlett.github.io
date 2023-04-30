@@ -196,9 +196,91 @@ In conclusion, a multi-step processor requires meta-management. For the most sim
 
 
 # Part IV - Problems in Complex Synthetic Control Processes
-# IV.1 Interlude: Meta-management in Deliberative Systems
 
-_todo_
+We now turn our attention to deliberative artificial embodied agents that might operate within the real world.
+
+# IV.1 Meta-management in Deliberative Systems
+
+_todo: needs a clear strategy for referring to "main/standard/first-order control process"_
+
+
+Why might we need to add meta-management processes to connectionist architectures? Deep AI techniques have had many successes of late [citation]. However, these networks still lack some of the most basic adaptive capabilities that we see in many biological organisms (citations, eg: sloman). A key feature lacking from AI today is _deliberation_. Deliberation can be thought of as an extension of multi-iteration processing to more human-like thought that incorporates modelling of multiple problem domains, selection of goals, the ability to break problems into smaller sub-goals, and the ability to select between multiple strategies for problem solving.
+
+A number of potential control problems have been identified in systems with such deliberative capabilities (Beaudoin, 1994):
+- **Oscillation between decisions.** Wasteful re-assessments of decision points, leading to a meta-stable (oscillating) but stagnant state (ultimately achieving nothing useful).
+- **Insistent goal disruption.** Repeatedly getting distracted by competing goals that have been previously disregarded.
+- **High busyness.** Attempting to multi-task between too many goals, leading to poor outcomes.
+- **Digressions.** Choosing to deliberate over some sub-goal, and then loosing track of the "big picture" by forgetting to return to the overarching goal.
+- **Maundering.** Getting stuck deliberating over the details of a goal without making a decision.
+
+Here some specific meta-management features are discussed in the context of how they might improve connectionist computational systems with deliberative capabilities. This "design stance" is useful as a means for teasing out the lower level mechanisms that may underlie much higher-order behaviours such as meta-cognition.
+
+## State Trajectory Control during Body Action
+Actions by an embodied agent occur over time. During the time it takes for an agent to move its arm through space from the arm's initial position to target position, the agent will make many observations about the environment and body states. The agent's goal and action plan must be relatively persistent during that time. Otherwise the agent's behaviour will be chaotic, with rapid goal and action changes.
+
+Thus, while the agent manages (controls) the trajectory of its body state through the use of its computational state (eg: the given goal and action-plan at the time), it must also meta-manage the trajectory of that computational state. In this case, the agent's computational state must to some extent resist change influenced by new observations.
+
+## State Trajectory Control during Multi-iteration Processing
+During multi-iteration processing the control process navigates through computational state space, without performing body actions.
+
+This state trajectory needs to be managed just the same as for the body state trajectory. In order to maintain stability the agent needs to i) observe the state trajectory, ii) apply some objective measure to decide upon the relative effectiveness of the trajectory, and iii) act to change the trajectory if a better one is available.
+
+## State Trajectory Control during Iterative Inference
+A special case of multi-iteration processing is that of _iterative inference_, where the control process takes multiple iterations to interpret some input signal. Here a representation of the input signal may need to be held persistent for the duration of the inference, even if the original input signal has ceased. For example in an animal context where a fleeting glimpse of a potential predator has been observed but that observation needs re-review before being certain.
+
+In that case, some portion of the state must be held stable, while the rest is free to change significantly. Something needs to manage
+
+## State trajectory control in summary
+_todo: do I really need this summary?_
+
+As discussed in detail in an earlier chapter, there is a strong case for the need to actively manage the trajectory of the agent's computational state. Three contexts have been highlighted for this need:
+- during iterative prediction (micro-scale recurrency)
+- during looping multi-step execution (macro-scale recurrency)
+- while waiting for actions to play out.
+
+Mechanisms underlying state trajectory control can include:
+- Observing performance over time
+- Predicting future outcomes from current trajectory
+- Predicting expected future utility of current trajectory, and comparing against that of other predicted possible trajectories.
+- Applying tuning control where current trajectory is sub-optimal.
+
+## Objective learning
+How does a continuously learning embodied agent know which actions are better than others? This decision is tied to the agent's objective: it's ultimate goal that influences all other goals. For example, to eat and stay healthy in order to survive. Or to produce as many staples as possible in as little time as possible (citation). If the agent is not pre-configured with its objective, then it must learn that objective.
+
+An agent in the human world requires the use of inedible metal tokens (coins), which are used in complex ways for the purpose of life preservation. The involvement of such an inedible metal token as part of some process (eg: doing a job and being payed) does not necessarily immediately result in a life sustaining outcome. Thus, without any other information, it is hard for the agent to learn the relationship between that inedible metal token, the processes that it must be involved in, and the life sustaining result. This is known in the AI community as _sparse feedback_, and it poses a particularly difficult problem for continuously learning agents (citation needed).
+
+Another problem for a continuously learning agent is known as the "exploration-exploitation dilemma" (citation needed). The agent gains knowledge about its world and itself by exploring places and things, and by experimenting with novel behaviours. When the agent needs to achieve a goal, it may know that it can achieve the goal via its existing knowledge (exploitation), but it may be able to achieve that goal in some better way if it were to explore more first; it also may not. The dilemma concerns how the agent chooses between exploration and exploitation at any given moment.
+
+Sparse feedback and the exploration-exploitation dilemma make objective learning difficult. One solution is for the agent to build simplified models of its environment, itself, the behaviours it can perform, and how those behaviours influence different outcomes. Simplified models have fewer degrees of freedom than found in the raw first-order signals. This means that the models can be built up from fewer examples, and they are easier to change as learning progresses. These models become the agent's "knowledge", and somewhere within that knowledge a continuously learning agent builds a structure that ultimately governs its behaviours and goals – that is, an objective that it infers over time.
+
+_todo: remove....Importantly, those models can have different forms, and their forms influence what kinds of inferences the agent can draw from the knowledge, and consequently how they can be used for other management and meta-management purposes. A discussion of different models is presented in a later section._
+
+_todo: needs revising....Objective learning becomes a meta-management concern for two reasons. Firstly, the objective governs all lower level concerns, including meta-management. Secondly, as will be seen later, meta-management necessarily operates at a higher-order representation, and is thus an appropriate framework upon which to build objective learning._
+
+## Mode control
+A number of seemingly distinctly different behavioural outcomes share a single principle, referred to here as _mode control_. Mode control involves a decision being made between multiple alternatives and that decision influencing the way in which a subsequent process or decision is carried out.
+
+Examples of mode control include:
+- **Strategy selection.** Choosing between multiple previously learned strategies (ie: sequences of processing) that may be useful for solving the particular problem at hand. The selected strategy may affect goal selection and/or it may bias the outcomes of certain processes.
+- **Goal selection.** Choosing the next target state, for example based on an interpretation of external signals, or from weighed up options in an ambiguous situation. The chosen target state thus becomes the reference point for generation of actions.
+- **Context.** Context plays a huge part in the interpretation of sparse signals. A visual patch of yellow with dark spots, when seen in the Savannah, may indicate a leopard, but the same patch on the beach may simply indicate sea shells. Context is not always available from direct sense of the external environment. Most perceptual interpretation also receives context from short-term and/or long-term term memory. Thus meta-management plays a role in inferring that context from a mixture of current sensory signals plus memory.
+- **Attention.** As suggested in the chapter on embodied state machines, the bandwidth of any computational system is limited, and the complexity of the environment may exceed the agent's computational bandwidth. One solution is to focus on only the most salient features of the environment, ignoring the rest. What the agent considers salient differs depending on things in the environment, the context in which the agent is operating, and on the agent's knowledge. Attention has a significant impact on the processes executed by the main control process – a change in attention changes the input to the control process, and thus to its output.
+- **Exploration vs exploitation.** Already introduced in an earlier discussion on objective learning, the choice between exploration and exploitation affects sub-goal selection and the actions taken by the agent. Where an agent chooses its actions based on certainty of expected outcome, an exploration mode may for example bias the agent towards preferring expected outcomes with less certainty.
+
+## Mode identification
+For mode selection to be possible, the agent must identify the modes that can be selected from, whether they be discrete or a range of continuous values. This requires two important features of the meta-management system: i) that it has sufficient access to observe the things that it needs to control, the outcomes of the control, and the values used in control; and ii) that it can model those observations and later use that model to choose the control mode.
+
+In some cases this may involve modelling the relationships between different components of the first-order control process. Timmermans et al (2012) give the example of meta-cognitive processes learning cause-effect relationships between the supplementary motor cortex and the primary motor cortex and using this to infer what signals to send from higher order areas.
+
+## Distributed cooperation
+Some theories of brain function describe the brain as having multiple independent processes that are in constant competition. For example the biased-competition theory of attention (citations) assumes multiple processors, each interpreting their own local sub-scene out of a larger visual scene. It pits those different sub-scene interpretations against each other, until a single unified scene interpretation wins out. Global Workspace Theory adds the option for groups of otherwise competing processes to cooperate (citation), with the outcome being that a group of processes can collectively win the competition for attention when each process individually would loose.
+
+This seems like an obvious situation in which meta-management has a part to play – in managing the competition and cooperation between those processes. One possible mechanism is the same as discussed in the section above on Mode selection – by adjusting priors.
+
+Curiously, as observed by Baars (citation, pp ref), humans don't appear to have experiential awareness of this competition / cooperation process. Rather, we observe only a sort of stabilized outcome. So perhaps this is a first-order concern, at least in humans. But in principle it could also be a meta-management concern.
+
+## Certainty measurement / reaction
+todo: Eg: low level simulations linking certainty encoding to attention. Not sure how used for meta mgtmt, but has a plausible low level mechanism.
 
 # IV.2 Interlude: Mechanisms of Standard Control Processes
 
@@ -487,6 +569,10 @@ In combination with body schema and cognitive schema, labelling of events leads 
 
 In a section above I introduced the idea of meta-management and looked at some of the possible architectures, but I was unable to clearly articulate why one possible architecture is really any different to another. I shall now explain that, by looking more closely at the mechanisms of control and learning.
 
+_..todo..introduce concept of layered architecture with: i) innate, ii) habitual, iii) rational systems._
+
+_todo: standardise on standard/main/first-order control_
+
 ## Habitual Standard Control Management
 
 Consider the processes required to manage body actions, in what shall here be referred to as standard control management in order to distinguish from meta-management. In the simplest form, a neural network learns a function that maps an action signal from the difference between the desired and actual states. Illustrated below, this is the basis for a habitual system - one that slowly learns to act appropriately for its own advantage over many trial-and-error executions. It lacks any understanding of the mechanisms underlying the environment in which it operates. It lacks the ability to predict accurately in an entirely novel situation. And it lacks the ability to adapt rapidly, should the environment suddenly change in a substantial way.
@@ -549,6 +635,8 @@ What kinds of processes are meta-management made from? Suppose the brain was div
 The complexity of the rational processes suggests that a large neuronal mass must be required for it to operate. The overlap of domain knowledge required by by both standard control and meta-management processes suggests that they must share access to the same repository system. All up, it seems unlikely that meta-management could evolve in animals as an independent process. The extra neuronal mass required for meta-management to employ its own independent rational system is too energy inefficient to be evolutionarily likely. The complexity of sharing a domain knowledge repository between two independent target systems also seems unlikely. Rather, meta-management must be a fully integrated / inline process with standard control processes.
 
 ## Convergence of Meta-Management
+
+_todo: this is not really relevant to my goal of explaining subjective experience. It's just apologetics on my theory of inline meta-management architecture. It can be useful to include, but it needs to be introduced as going outside of scope of what I'm trying to focus on._
 
 The rational meta-management process still appears fundamentally unstable. What learning pressures make it converge towards stability and utility? At this stage I can only offer a few suggestions.
 
