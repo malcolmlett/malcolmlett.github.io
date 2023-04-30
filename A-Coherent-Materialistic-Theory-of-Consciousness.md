@@ -91,9 +91,14 @@ Todo - brain parts etc
 ---
 
 
-# Part III - Problems in simple synthetic control processes
+# Part III - Problems in Simple Synthetic Control Processes
 
-# III.1 Complexity and the need for Processing Loops
+# III.1 Interlude: Environment, Body, and Control Processes (first part)
+
+_...todo..._
+
+
+# III.2 Complexity and the need for Processing Loops
 
 In most artificial neural network (ANN) based reinforcement learning (RL) agents today, each input is associated with an immediately produced output. This means that in an embodied agent the choice of the next physical action is made by a single pass through its ANN(s): input nodes are populated with current sensory signals, matrix operations are carried out that permute and transform those input node values through the multi-layer network of weights, and the values produced by the output nodes are immediately taken as the chosen next action. This is true even for Recurrent Neural Networks (RNN). RNNs are _recurrent_ in the sense that state from a previous pass is made available to influence the output on the next pass with the next input value. In this way, when a time-bound signal stream is fed into the RNN, it produces an output stream where each value in the output stream is influenced not just by the current input but by all inputs received up until that point. However, the RNN still produces exactly one output for every input, and each output is produced by a single pass through its network.
 
@@ -130,7 +135,8 @@ _todo: I use the term multi-step processing to clarify that I am referring to a 
 _Todo: To avoid confusion with micro-level recurrency, this article uses the term "multi-step processing". 
 or should I use multi-iteration processing everywhere instead?_
 
-# III.2 State in a Multi-step Processor
+
+# III.3 State Trajectories in a Multi-iteration Processor
 
 The course taken by an agent to get from a past state to its current state is its _state trajectory_. Analogous to the path taken by an agent while walking through a maze, the state trajectory describes the path of the agent through state space. Here the state space can refer to its possible locations in physical space, such as in the maze example, or to more abstract possible states, such as an encapsulation of all measurable aspects of the agent's body parts.
 
@@ -185,7 +191,17 @@ A detailed discussion for all the possible reasons for meta management will be c
 
 In conclusion, a multi-step processor requires meta-management. For the most simple multi-step processors, meta-management can be in the form of simple parameter optimisation algorithms applied during a learning phase post execution. For more advanced multi-step processors, a much more advanced and active form of meta-management is required, one which might even have comparable complexity to the primary control process itself.
 
-# III.3 Interlude: Control Options
+
+---
+
+
+# Part IV - Problems in Complex Synthetic Control Processes
+# IV.1 Interlude: Meta-management in Deliberative Systems
+
+_todo_
+
+# IV.2 Interlude: Mechanisms of Standard Control Processes
+
 What form might meta-management take. In order to answer that question I shall first present a review of different architectures for standard control (ie: non meta-management). 
 
 _..todo...maybe now diagram all the component parts of an AI RL learning algorithm, so we can see what meta-management is already incorporated._
@@ -237,27 +253,11 @@ _- In most AI research today, a planning control process is still a single-step 
 
 _...todo...use this to introduce the idea of a biologically plausible NN-based planner._
 
-## Observing control process
-_[citations, need to find out if anyone has actually done this]_
-
-_..todo...do I still include this?_
-
-_...todo...make the description here more generic to refer to all versions of hybridisation:_
-- just observing
-- selection between full reactive and full planning
-- options for the parts to learn off each other
-- why this may/may not be biologically plausible for simple standard control of env+body
-
-A different optimisation is possible that combines the best of reactive and planning control processes. I call this an _observing control process_. Here, a reactive control process is used for most actions most of the time. In parallel with that control process, a planning-based process predicts the most likely outcome given the existing trajectory being carried out by the reactive process. Those predictions are compared against the actual trajectory as it pans out. Predicted negative outcomes and major errors between prediction and observation are used to trigger a more extensive and detailed planning process to take over. Both reactive and planning processes learn their underlying models, and can help to train each other. Thus their respective behaviours converge towards each other over time.
-
-The planning process here operates at a high-level. It can also adaptively increase or decrease its frequency of execution depending on how well the reactive process is performing. That way it can balance the needs for adaptability against the computational cost of planning.
-
-This control process is not discussed much in the literature, but I believe it is an important control process in humans. It is also an important control process to discuss because it begins to incorporate meta-management. Here we have dynamic changes to the control process, based on observation of how the control process is performing.
-
 ## Expectation-Maximisation / Iterative Convergent Control Processes
 ...todo..
 
-# III.4 Control options in Meta-management
+
+# IV.3 Options for Meta-management
 
 What options are available for a control process to be meta-managed? We have already mentioned parameter optimisation. Here we shall look at some other options. The goal is not to provide an exhaustive list, but to build up a case for the need to observe the control process and to draw out what kinds of observation might be needed.
 
@@ -285,7 +285,7 @@ But how stable would it be? Would it need a meta-management process to help it c
 
 _...todo...Also present argument that meta-management only makes sense in the context of a planner such as this, because it has multiple steps where it doesn't produce actions, whereas all the variations of reactive function always produce body actions.  That motivates why the next section considers meta-management in the context of a planner._
 
-## Control Options
+## Control options in meta-management
 
 ![meta-management control options](files/A-coherent-theory-v1-mm-cntrl-options.drawio.png)
 
@@ -308,21 +308,48 @@ A few general notes can be said about the above. Firstly, parameter optimisation
 
 Many meta-management processes can be implicit or explicit. Implicit meta-management occurs as a side-effect of the reactive mechanisms of the control process. Explicit meta-management is driven by a separate process that somehow influences the control process. For example, in AI, parameter optimisation is typically carried out as an "offline" process by a learning algorithm that is entirely separate from the processes used when executing the control process. In contrast, within biological brains, it is believed that _hebbian learning_ occurs as the primary learning mechanism and that it primarily occurs as "online" learning ....[citation, and further elaboration].
 
+## Observation options in meta-management
+
+In order to carry out any of the meta-management control mechanisms described in the section above, any explicit meta-management processes need to observe the behaviour of the main control process. We look now at a brief review of some of those observation options.
+
+![meta-management observation options](files/A-coherent-theory-v1-mm-observation-options.drawio.drawio.png)
+
+* _**How meta-management can observe the control process.** Illustration of the sorts of things that explicit meta-management may need to observe, and the processes that might be involved to draw inferences from that information._
+
+Mechanisms for meta-management processes to observe the control process include:
+- **Inputs.** Including any goal selection supplied from systems outside of the scope of discussion. Needed in order to associate CP behaviour with certain kinds of input.
+- **Outputs.** Needed in order to observe CP behaviour.
+- **State.** For multi-step control processes, their internal hidden state may be the only thing that changes from step to step. It is the trajectory of the CP state that we first called out above as needing meta-management.
+- **Whether outputs lead to body action or not.* Useful in order to measure the "efficiency" of the multi-step process for producing useful body actions.
+- **Feedback.**
+- **Trajectory caches.** Unlike the control process itself, meta-management may need to track the trajectory of CP behaviours over time. Likely across multiple timeframes. This will involve some mechanism to represent those trajectories. For example, the trajectory in the context of the current problem at hand in order to monitor whether it is leading towards a solution. And for example tracking of the control process's overall abilities and over time, and whether it tends to produce useful results or tends to be "wrong" (for some definition of "wrong").
+- **Modelling.** Modelling of CP behaviour and how meta-control signals affect them, in order to infer the most appropriate meta-control signals.
+- **Predicting.** For example predicting whether the current CP state trajectory is likely to lead towards a beneficial outcome or not.
+- **Associative memory.** Used to recognise frequent and infrequent CP behaviours that need specific meta-management. For example, situations in which the multi-step CP tends to get "stuck in a loop", where it would repeat a particular cyclic sequence of steps ad-infinitum without any intervention.
+- **Measuring error rate.** Recording and tracking how beneficial the CP behaviours are, such as would be needed to attenuate CP output strength in early stages of CP training.
+
+Of particular note is the fact that many of these mechanisms described are the same kinds of systems that would be used in an advanced agent for the observation, inference, and manipulation of interactions between the agents limbs, and between the agent and the environment.
+
+## Architectural options in meta-management
+
+..todo..
+
+
+* _**Meta-management Architectures.** Three possible architectures for meta-management.  A) Tuning - the meta-management process observes the behaviour of the main control process and adjusts its behaviour via tuning signals that bias its behaviours and via controlling weight updates during learning. The main control process has no direct knowledge of the existence of the meta-management process. B) Manipulator - the meta-management process controls via manipulation of the input signals to the main control process, including supplying an additional input signal. The meta-management process observes and predicts the behaviour of the main control process and manipulates the input signals in order to obtain the desired behaviour. C) Inline - no independent meta-management process; rather the state and trajectory of the main control process is fed back into the main control process as an additional sensory input, likely with some degree of dimensionality reduction. The main control process learns to use that additional information and applies it inline with its other sensory inputs to achieve the desired outcomes._
+
+
+**Implicit Meta-management**
+
+**Independent Meta-management**
+
+
+**Inline Meta-management**
+
+
 ---
 
 
-# Part IV - Problems in complex synthetic control processes
-# IV.1 Interlude: Meta-management in Deliberative Systems
-
-_todo_
-
-# IV.3 Meta mgmt and feedback loop options
-
-
----
-
-
-# Part V - Problems in biological control processes
+# Part V - Problems in Biological Control Processes
 
 # V.1 Interlude: Environment, Body, and Cognitive Processes
 
