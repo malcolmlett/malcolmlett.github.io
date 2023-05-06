@@ -443,6 +443,13 @@ _todo: either here or somewhere else, I need to draw correlation between the inl
 
 # Part IV - Problems in Biological Control Processes
 
+The focus of this article now shifts from generic "agents" of any form to biological organisms with complex brains. I shall start by reviewing some human concerns that relate to meta-management and for which suggestions have been made about their connection to human consciousness. This will be followed by an examination of potential meta-management processes within human brains.
+
+Like many others, I focus on humans in order to avoid the ambiguity and uncertainty inherent with topics such as intelligence and subjective experience within the larger animal kingdom. This should not be taken to imply any statement about that larger animal kingdom. In fact I do make a few points in relation to other animals in a later part.
+
+Now that this article is focused on biology, and humans in particular, the reader will also notice that some of the terminology shifts to be more human-centric.
+
+
 # IV.1 Interlude: Environment, Body, and Cognitive Processes
 
 Before continuing, it'll be useful to do a deep dive into the interactions between the three key systems of: external environment, body, and the cognitive processes. This is key because it explains the importance of independent modelling of env, body and CP, and thus why "I" becomes so prominent in the computation that produces subjective experience.
@@ -568,72 +575,66 @@ In combination with body schema and cognitive schema, labelling of events leads 
 
 # IV.3 Deeper Dive into Meta-management
 
-In a section above I introduced the idea of meta-management and looked at some of the possible architectures, but I was unable to clearly articulate why one possible architecture is really any different to another. I shall now explain that, by looking more closely at the mechanisms of control and learning.
+By the end of Part III it was clear that complex multi-iteration control processes require meta-management, and we were able to identify some possible architectures that capture the interaction between control processes and meta-management, but we are left with an outstanding question: how do we identify which meta-management architecture is more likely in humans? The question is important to our end goal because, as will be seen, the answer impacts our ability to explain subjective experience.
 
-_..todo..introduce concept of layered architecture with: i) innate, ii) habitual, iii) rational systems._
+In order to answer that question, we now look at learning in humans.
 
-_todo: standardise on standard/main/first-order control_
+The controversies surrounding meta-cognition research stems from one problem: that it's not just one system that controls meta-cognitive processes. The meta-cognitive research discussed above generally acknowledge two systems: first-order non-conscious processes and high-order conscious processes. Debates about whether a behaviour is meta-cognitive or not hangs on an assumption that only conscious processes can be classified as meta-cognitive. We can avoid getting caught up in such debates when we acknowledge that all behaviour is an outcome of interactions between all systems. What we need to investigate is what those systems are, their underlying mechanisms, and how they interact to produce that behaviour.
 
+..todo..introduce concept of layered architecture with: i) innate, ii) habitual, iii) rational systems.
+...todo : there must be lots of research on this already.....review that and then write this section.
 
 ![three systems of control](files/A-coherent-theory-v1-bio-3-systems.drawio.png)
 
 * _**Three Systems of Control.** Innate control and innate feedback interpretation bootstrap learning of habitual and rational systems. Habitual and rational systems interact in order to produce learned behaviour._
 
 ## Innate Control
-
 todo - features:
-* encoded in genetics, can change over lifetime but not from learning
+* encoded in genetics, can change over lifetime due to genetic and environmental factors, but not from learning
+* provides a backstop to prevent habitual and rational control processes from doing stupid things
+* bootstraps the learning of the habitual and rational control processes
 * interpretation of primitive feedback signals, eg: hunger, pain, satiation, pleasure
 * applies basic learning pressure against habitual and rational systems: maximising integral of ....that word that means how positive/negative the experience was...
 penalising energy expenditure and time costs.
 
 eg: reflexive actions, thermo-regulation, heart-rate, hormone production
 
+## Habitual Standard Control
+points:
+* this is the "reactive" control process described earlier
+* habitual system learns by repeated experience, but learning is relatively slow
+* initially learns off innate feedback
 
-## Habitual Standard Control Management
+Now that this article is focused on biology, and humans in particular, I use the term "habitual". But I am referring to the same thing that I called "reactive control" when being agnostic to the kind of agent involved.
 
-Consider the processes required to manage body actions, in what shall here be referred to as standard control management in order to distinguish from meta-management. In the simplest form, a neural network learns a function that maps an action signal from the difference between the desired and actual states. Illustrated below, this is the basis for a habitual system - one that slowly learns to act appropriately for its own advantage over many trial-and-error executions. It lacks any understanding of the mechanisms underlying the environment in which it operates. It lacks the ability to predict accurately in an entirely novel situation. And it lacks the ability to adapt rapidly, should the environment suddenly change in a substantial way.
+The habitual system learns by repeated experience. Initially, learning is driven by environmental and body feedback that is interpreted by the innate system. Pain signals are interpreted by the innate system as negative feedback, and used to effect neuronal weight changes that reduce the likelihood of that same behaviour in the future. Satiation following hunger is interpreted as positive feedback and likewise used to effect neuronal weight changes, but in order to increase the likelihood of that behaviour.
+
+Significantly, habitual learning is slow. A habitual system alone would be unable to produce the kinds of rapid adaptation that we see in humans.
+
+For more complex situations, the rational system influences behaviour. As those more complex situations are repeatedly encountered, the habitual system learns the new behaviours, freeing up the rational system for other things. In that way, habitual system learning is driven by a combination of bottom-up pressure from the innate system, and from top-down pressure from the rational system.
 
 ![Habitual standard management](files/A-coherent-theory-v1-habitual-std-mgmt.drawio.png)
 
-* _**Habitual System.** A neural network predicts the best action given the difference between desired state and actual state. Prediction errors spontaneously cause updates to the relative strengths of neuronal connections._
-
-Such a system can be extended, for example, to contain an explicit model of the environment and to explicitly model the behaviours and limitations of its own body. With more direct modelling of those independent systems, the system has a greater ability for generalisation, and thus a greater ability to adapt to novel situations. But the system is still fundamentally a habitual one that learns through exposure to many repeated trial-and-error executions.
-
-Learning in such a system is carried out in a relatively well understood way. Prediction errors and positive and negative rewards are fed through the system in the reverse direction (ie: from output layer towards input layer) and they adjust the relative weighting between different neuronal connections. Subsequently, outputs that were associated with more negative outcomes are less likely to occur and outputs that were associated with more positive outcomes are more likely to occur for the same input. The interpretation of feedback signals and application of those learning mechanisms can be orchestrated through innate processes that evolve over thousands and millions of years.
-
-Learning pressure received by the individual may be in the form of pure positive and negative rewards such as satiation of hunger through the finding and consumption of food and such as the pain associated with bodily injury.
-
-Several researchers have suggested that a learned reward system may be layered on top, based on the higher-order modelling of the environment discussed above......[citations, incl. Damasio's book on emotion]........[todo: details]....Those learned feedbacks are particularly useful because they act to shorten the feedback horizon ...[needs explanation]... - by modelling what actions will ultimately lead to future positive and negative rewards, the learned processes provide more frequent feedback than the environment alone. An example is via hormones produced by the endocrine system such as associated with anticipation of reward. This is known to affect learning...[citation]......
-
-_todo: I think this needs to elaborate more on how this system learns and converges, and in particular how it is "inherently convergent":_
-- simple innate learning pressure
-- active inference as a way of balancing exploration vs exploitation
-- simple modelling as a predictive process (inherently convergent)
-- simple modelling as input into active inference, and thus providing higher-order learned reward system
+* _**Habitual System.** ...todo...._
 
 ## Rational Standard Control Management
+The _rational system_ is a significantly more elaborate system than the habitual system. It's purpose is to enable rapid adaptation through high-level modelling and reasoning.
 
-Anecdotally, humans seem to possess an additional system that operates in an entirely different way. One which in some cases can produce suitable behaviour from only a single observation of another's behaviour. For shall refer to this as the _rational system_.
+As our knowledge of rational processes is still in its infancy, we can only guess at the underlying mechanisms. In order to motivate some of the discussion that follows I shall hazard a guess at some of its features, illustrated in the diagram below. As discussed above already, control processes must utilise multi-iteration processing, and I believe that is a key part of the rational system. As part of that multi-iteration processing, I suspect it also learns a repertoire of strategies for navigating CP state space given different problem domains. It incorporates short term and long term memories. It incorporates modelling of other systems, in a way that it can somehow incorporate new information from few or even a single example. And it includes the ability simulate and examine environmental, body, and mental behaviours without actioning them.
 
-We are still a long way from understanding how this system operates, so in order to motive some of the discussion that follows I shall hazard a guess at some of its features, illustrated in the diagram below. As discussed above already, the CPs must utilise multi-step processing, and I believe that is a key part of the rational system. As part of that multi-step processing, I suspect it also learns (likely in a habitual way) a repertoire of strategies for navigating possible CP state paths given different problem domains. It clearly incorporates both short term and long term memories. It also incorporates modelling of other systems, in a way that somehow can incorporate new information from few or even a single example. I believe a key part of that few-shot modelling is based on building up randomly accessible associative relations of higher-order abstract concepts. For example that rain and wetness are associated. And for example, given that relation and a few others, that it is possible to trick another individual into thinking it is raining by spraying water from a hose over their head while they are looking away.
+The product of the rational system is likely a goal selection that is then applied against habitual processes in order to produce desired behaviour.
 
 ![Rational standard management](files/A-coherent-theory-v1-rational-std-mgmt.drawio.png)
 
-* _**Rational System.** Some of the features that might underly rational thought._
+* _**Rational System.** Some of the features that might underlie rational thought._
 
-For an individual that lives in a complex environment, the state space trajectories being managed include simple spontaneous sense-action events, and long chains of observation collection, consideration, planning, and sequences of actions. The latter requires rational management in order to cope with the dynamic nature of the environment, and to be able to act on new information after receiving it only once. It also requires rational management in order to cope with complex abstractions in the environment (eg: labels, logic, etc).
+The learning processes within the rational system may be very complex. While for any given problem domain the models that it operates against are likely very high-level and efficient, and thus require only a few neurons, the brain mass required to operate such an elaborate and adaptive system is likely very large. ......_todo: details of suggested parts of brain involved and percentage of brain neuronal mass_... Correspondingly, while in a well developed brain the training required for any given problem domain may be small, the training required to reach a point where the rational system is effective may require a very long time due its overall complexity. In early infancy, the rational system is likely extremely chaotic. I expect that developmental processes attenuate the rational system during the infant period of a baby's life.
 
-_todo: elaborate more on convergence of rational systems:_
-- learned learning pressure
-- unlikely to have innate pressures
-- learning predictive modelling (inherently convergent)
-- but few-shot processes may be inherently unstable
-- very complex, so large neuronal mass in brain (lots of training required)
-- all closely related to why human brain takes so long to mature
+In that way, the rational system may be "held to account" by i) the innate system which prevents the rational system from sending the individual outside of a safe operating range, ii) developmental processes that only let the rational system take control once it is ready to do so, and iii) the habitual system that actually carries out most actions and which is itself constrained by innate feedback mechanisms.
+
+Daniel Kahneman describes thought as being either rapid with immediate conclusion without deliberation (_System I thinking_) or deliberative (_System II thinking_) [citation]. I suspect that habitual and rational control coincide very closely with System I and System II thinking, respectively, if not exactly coincident. Where any ambiguity may arise is in the underlying mechanisms of habitual and rational control. For example, the learned strategies that I mention as part of rational control could be described as learned habits of thought.
 
 ## Habitual and Rational Meta-management
-
 What kinds of processes are meta-management made from? Suppose the brain was divided discretely into a habitual region and a rational region, which regions are required for meta-management?
 
 **Habitual processes:**
