@@ -16,6 +16,8 @@ Some provide mechanistic explanations, but often either only at a philosophical 
 
 # Part I - Introduction
 
+# I.1 Summary of Thesis
+
 I believe that three things go hand-in-hand: general intelligence, meta-management, and consciousness. Further, understanding these systems must proceed in that order. Thus, in order to understand why we have subjective experience, we need to begin to develop a theory of general intelligence and of the processes that restrain it from cascading into chaos. This article presents an end-to-end argument following that thread. The entire argument is first presented here in brief, with background explanations omitted for the sake of brevity. The rest of the article is devoted to detailed explanations of each of the logical steps in the argument thread.
 
 Any computational system is limited in the complexity that it can handle within a single execution of its computational process. For embodied agents, this appears as a limit on the environmental complexity that they can sufficiently model and respond to within a single executional iteration. For more complex problems, multiple iterations of processing are required in order to determine the next physical action. Such recurrency in processing may for example entail further analysis of the environment in order to better model its state; or consideration of alternative action plans. In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that takes longer to make some decisions. Van Bergen & Kriegeskorte (2020) make the case that recurrency is indeed employed in biology for that very reason.
@@ -35,25 +37,17 @@ The metaphor of a _philosophical zombie_ was introduced to hypothesise a human-l
 Finally, I argue that our disgruntlement with such an explanation is not an _explanatory gap_ [citation], but an _intuitional gap_. Nagal famously pointed out that we have no conception of and no way of developing a conception of what it is like to be anything other than ourselves [citation]. But that does not stop us making assumptions about what should and should not experience subjective experience. It took us a very long time to accept that animals could have any form of consciousness and subjective experience, and likely many still deny that outcome [details, citations]. If we have no way to conceive of the experience held by an animal, why should we be so adamant about its properties? The answer simply is our deluded intuition. Our brains excel at finding patterns and extrapolating from them. This works well when the physical environment around us is there to provide an error signal. But when no error signal is available, we are prone to delusion. Our minds create such a strong sense of self vs other by keying that information into every sensory signal that we ever receive, so that our senses seem to take on an extra quality of realness, of subjectiveness, of _qualia_ [citation]. That seeming extra quality is further processed by the same system that produced it, reinforcing the delusion that the qualia is something extra, beyond mere sensory information. And thus we are deluded into the intuition that subjective experience is somehow more than can be produced by mere computational processing.
 
 
----
-
-
-# Part II - Background
-
+# I.2 Background - Theories of Consciousness
 What is consciousness? This a question that has been considered for a long time. When Chalmers now famously re-phrased it as the "hard problem of consciousness", he went so far as to claim that no currently known mechanism can produce the phenomenon of subjective experience.
 
-_Todo later: extend out as suitable intro for someone totally new to the question._
+_todo later: extend out as suitable intro for someone totally new to the question._
 
-
-# II.1 Theories of Consciousness
 
 Many theories exist about the nature of consciousness. A summary of such theories will be given here. To provide some uniformity, the explanatory framework of a stack of theoretical layers is used, illustrated in the following diagram. Here, the physical biology of the brain is viewed as a substrate that might potentially be replaced or emulated via some other substrate (eg: silicon neurons). Built upon that substrate are many non-conscious processes. Either directly from the underlying substrate, or as a result of the non-conscious processes, some mental states are associated with subjective experience. The blue boxes represent potential layers involved in that subjective experience. For example, some non-conscious processes may produce representations that are associated with subjective experience. Such representations may or may not require specific functional structures in order to lead to subjective experience. Additionally, even with appropriate functional structures, something extra special may or may not be needed in order for those representations to be associated with subjective experience.
 
 ![theory layers](files/A-coherent-theory-v1-theory-layers.drawio.png)
 
-<ul>
-<li style="list-style-type: none;"><i><b>Layers common to many theories of consciousness.</b> Theories of consciousness can be discussed in terms of which of these stacked layers that they focus on. Many theories focus on just one of these layers</i></li>
-</ul>
+* _**Layers common to many theories of consciousness.** Theories of consciousness can be discussed in terms of which of these stacked layers that they focus on. Many theories focus on just one of these layers_
 
 **Substrate:** Everything is constructed within a physical substrate such as biological neurons. Identity Theory posits that there may be something special about biological neurons that give rise to subjective experience; or in other words, that functional isomorphisms of biological neurons such as silicon neurons or computer simulated neurons will never produce subjective experience. Inspired by the peculiar behaviour of quantum mechanics, some have suggested that the physical substrate produces quantum entanglement and that this quantum entanglement may be the underlying mechanism behind subjective experience, such as  ...{insert name of Microtubules theory}.... Such theories are quiet on which of the other layers are required. Those theories bare some similarity to that of Pan-Psychism, the theory that consciousness is fundamental in the same way that physical forces and energies are fundamental. Under Pan-psychism, some non-conscious processes lead directly to subjective experience with pan-psychist properties providing the "something special" without necessarily requiring specific representations or functional structures. However, pan-psychism is unable to explain why only certain processes are associated with subjective experience while others are not. An obvious explanation would be to require that only certain representations and associated functional structures are sufficient to "combine" the conscious properties of independent neurons / molecules / atoms, but this still leads many open questions about what those representations and/or functional structures might be that have such a power over this underlying fundamental consciousness.
 
@@ -83,7 +77,7 @@ _todo: references and more details from:_
 
 Ned Block and various other's variations propose that consciousness is divided into access consciousness and phenomenal consciousness, and that access-consciousness variously stops somewhere below the "something special" layer, with various arguments about where it stops. Such arguments down to differences in opinion about the relation between access and phenomenal consciousness: i) are they one-to-one: all access conscious events have phenomenal consciousness, ii) can some access conscious events lead to external behaviour without the individual having subjective experience?, or iii) can some phenomenal conscious events occur that have no access consciousness: for example that the individual experiences in the moment but cannot have any memory of it and cannot report on it.
 
-# II.2 Biology and Neuroscience 
+# I.3 Background - Biology and Neuroscience 
 
 Todo - brain parts etc
 
@@ -91,22 +85,20 @@ Todo - brain parts etc
 ---
 
 
-# Part III - Problems in Simple Synthetic Control Processes
+# Part II - Problems in Simple Synthetic Control Processes
 
-# III.1 Interlude: Environment, Body, and Control Processes (first part)
+# II.1 Interlude: Environment, Body, and Control Processes (first part)
 
 _...todo..._
 
 
-# III.2 Complexity and the need for Processing Loops
+# II.2 Complexity and the need for Processing Loops
 
 In most artificial neural network (ANN) based reinforcement learning (RL) agents today, each input is associated with an immediately produced output. This means that in an embodied agent the choice of the next physical action is made by a single pass through its ANN(s): input nodes are populated with current sensory signals, matrix operations are carried out that permute and transform those input node values through the multi-layer network of weights, and the values produced by the output nodes are immediately taken as the chosen next action. This is true even for Recurrent Neural Networks (RNN). RNNs are _recurrent_ in the sense that state from a previous pass is made available to influence the output on the next pass with the next input value. In this way, when a time-bound signal stream is fed into the RNN, it produces an output stream where each value in the output stream is influenced not just by the current input but by all inputs received up until that point. However, the RNN still produces exactly one output for every input, and each output is produced by a single pass through its network.
 
 ![single iteration anns](files/A-coherent-theory-v1-single-iteration-anns.drawio.png)
 
-<ul>
-<li style="list-style-type: none;"><i><b>Single-iteration Artificial Neural Networks (ANN).</b> Each of these networks produce one output for each input, via a single pass pass through the network. In the context of an embodied agent, this means that the agent has no option for further deliberation of the same input.</i></li>
-</ul>
+* _**Single-iteration Artificial Neural Networks (ANN).** Each of these networks produce one output for each input, via a single pass pass through the network. In the context of an embodied agent, this means that the agent has no option for further deliberation of the same input._
 
 Another form of recurrency is to execute multiple passes through the same network before producing an output. This form is common in hand-rolled algorithms, where it is usually referred to as processing _loops_. When an algorithm employs a processing loop, a single output may be produced for each input, but only after a variable length delay. Some inputs may lead to updates of internal algorithm state only, without producing an output. Or a single input may produce multiple outputs. Examples abound, but one familiar to those in the AI research community is the Expectation Maximisation algorithm. It takes as input a set of data points, produces as output a set of parameters that describes the input data set, and employs multiple iterations of alternating calculation of log-likelihood expectations and parameter optimisation. The alternating expectation and parameter optimisation loop is stopped according to a _halting rule_ that is either based on detecting diminishing returns in the improvement of log likelihoods or on completing a fixed number of iterations.
 
@@ -120,9 +112,7 @@ An architecture that employs multiple passes through its network can be conceptu
 
 ![multi-iteration ann](files/A-coherent-theory-v1-multi-iteration-ann.drawio.png)
 
-<ul>
-<li style="list-style-type: none;"><i><b>Multi-iteration network.</b> Panel A: a multi-iteration network with the result from its output layer fed back as input. Panel B: an equivalent single pass network by unrolling the iterations into a deeper network assuming 3 iterations. Notice that in the depth-unrolled network, weights are shared between sections.</i></li>
-</ul>
+* **Multi-iteration network.** Panel A: a multi-iteration network with the result from its output layer fed back as input. Panel B: an equivalent single pass network by unrolling the iterations into a deeper network assuming 3 iterations. Notice that in the depth-unrolled network, weights are shared between sections.
 
 So, it can be said that there is a limit on the complexity that can be handled by a single pass through any computational process. While that computational process can be extended with more parameters, there are practical limitations to how much it can be extended. For embodied agents, this appears as a limit on the complexity of the environmental and of their own body that they can sufficiently model and respond to within a single processing iteration. In biological terms, this practical limit is manifested in terms of both the energy costs of larger brains and in terms of the time required to reach maturity of brain function.
 
@@ -136,7 +126,7 @@ _Todo: To avoid confusion with micro-level recurrency, this article uses the ter
 or should I use multi-iteration processing everywhere instead?_
 
 
-# III.3 State Trajectories in a Multi-iteration Processor
+# II.3 State Trajectories in a Multi-iteration Processor
 
 The course taken by an agent to get from a past state to its current state is its _state trajectory_. Analogous to the path taken by an agent while walking through a maze, the state trajectory describes the path of the agent through state space. Here the state space can refer to its possible locations in physical space, such as in the maze example, or to more abstract possible states, such as an encapsulation of all measurable aspects of the agent's body parts.
 
@@ -145,9 +135,7 @@ Not all state trajectories are good ones. The figure below illustrates a number 
 
 ![good and bad state trajectories](files/A-coherent-theory-v1-good-and-bad-trajectories.drawio.png)
 
-<ul>
-<li style="list-style-type: none;"><i><b>Good and bad state trajectories.</b> Examples of some possible state trajectories from start state A, to goal state G, while avoiding obstacle X. The shortest and smoothest trajectory is assumed to be the best: the most energy-efficient, the quickest, the least stresses applied to the mechanics of the agent.</i></li>
-</ul>
+* _**Good and bad state trajectories.** Examples of some possible state trajectories from start state A, to goal state G, while avoiding obstacle X. The shortest and smoothest trajectory is assumed to be the best: the most energy-efficient, the quickest, the least stresses applied to the mechanics of the agent._
 
 In a multi-step control process, the controller traverses a state space independent of the state of the body that it controls, as illustrated below. It needs to incorporate mechanisms to control its own state. Those mechanisms are referred to as _meta-management_, because they relate to management of the controller's own processes, rather than to management of the primary thing that the controller acts against (the agent's body in this case).
 
@@ -163,9 +151,7 @@ The learning processes involved with a multi-step processor may be very similar 
 
 ![cp state with meta-management](files/A-coherent-theory-v1-cp-state-with-mm.drawio.png)
 
-<ul>
-<li style="list-style-type: none;"><i><b>Control Process with state.</b> A control process (CP) that has state needs to act to manage its own state as well as the actions and state of the body that it controls. In some cases, this may require an additional _meta-management_ process. Some interactions omitted from the diagram for simplicity.</i></li>
-</ul>
+* _**Control Process with state.** A control process (CP) that has state needs to act to manage its own state as well as the actions and state of the body that it controls. In some cases, this may require an additional _meta-management_ process. Some interactions omitted from the diagram for simplicity._
 
 For simple control processes, those same mechanisms can be applied to parameter optimisation affecting the control process state trajectories. For example, the same low-level evolved processes can encourage efficient CP state trajectories by attempting to minimise the number of CP actions that don't produce body actions, without degrading the quality of the body state trajectories. Likewise, they may encourage "smooth" CP state trajectories in order to avoid disorganised chaotic processing.
 
@@ -195,11 +181,11 @@ In conclusion, a multi-step processor requires meta-management. For the most sim
 ---
 
 
-# Part IV - Problems in Complex Synthetic Control Processes
+# Part III - Problems in Complex Synthetic Control Processes
 
 We now turn our attention to deliberative artificial embodied agents that might operate within the real world.
 
-# IV.1 Meta-management in Deliberative Systems
+# III.1 Meta-management in Deliberative Systems
 
 _todo: needs a clear strategy for referring to "main/standard/first-order control process"_
 
@@ -282,7 +268,7 @@ Curiously, as observed by Baars (citation, pp ref), humans don't appear to have 
 ## Certainty measurement / reaction
 todo: Eg: low level simulations linking certainty encoding to attention. Not sure how used for meta mgtmt, but has a plausible low level mechanism.
 
-# IV.2 Interlude: Mechanisms of Standard Control Processes
+# III.2 Interlude: Mechanisms of Standard Control Processes
 
 What form might meta-management take. In order to answer that question I shall first present a review of different architectures for standard control (ie: non meta-management). 
 
@@ -294,9 +280,7 @@ _...todo...update wording below to use "policy" instead of "function"._
 
 ![standard control algorithms](files/A-coherent-theory-v1-std-control-algs.drawio.png)
 
-<ul>
-<li style="list-style-type: none;"><i><b>Control algorithms.</b> A graduation of increasingly adaptive control algorithms in an embodied controller. Training algorithm connectivities simplified or it is entirely omitted for the sake of simplicity. A) A so called "model-free" parameterised function that produces action without awareness of its own state. B) Model-free parameterised function that is aware of its own state. C) A so called "model-based" planner that predicts entire trajectories in order to choose the best action, with or without awareness of its own state. D) a hybrid that employs model-free control with a planner to observe and protect against major errors.</i></li>
-</ul>
+* _**Control algorithms.** A graduation of increasingly adaptive control algorithms in an embodied controller. Training algorithm connectivities simplified or it is entirely omitted for the sake of simplicity. A) A so called "model-free" parameterised function that produces action without awareness of its own state. B) Model-free parameterised function that is aware of its own state. C) A so called "model-based" planner that predicts entire trajectories in order to choose the best action, with or without awareness of its own state. D) a hybrid that employs model-free control with a planner to observe and protect against major errors._
 
 
 _..todo.. for all of the sections that follow:_
@@ -361,7 +345,7 @@ But how stable would it be? Would it need a meta-management process to help it c
 
 _...todo...Also present argument that meta-management only makes sense in the context of a planner such as this, because it has multiple steps where it doesn't produce actions, whereas all the variations of reactive function always produce body actions.  That motivates why the next section considers meta-management in the context of a planner._
 
-# IV.3 Meta-control Options in Meta-management
+# III.3 Meta-control Options in Meta-management
 
 What options are available for a control process to be meta-managed? We have already mentioned parameter optimisation. Here we shall look at some other options. The goal is not to provide an exhaustive list, but to build up a case for the need to observe the control process and to draw out what kinds of observation might be needed.
 
@@ -385,7 +369,7 @@ A few general notes can be said about the above. Firstly, parameter optimisation
 
 Many meta-management processes can be implicit or explicit. Implicit meta-management occurs as a side-effect of the reactive mechanisms of the control process. Explicit meta-management is driven by a separate process that somehow influences the control process. For example, in AI, parameter optimisation is typically carried out as an "offline" process by a learning algorithm that is entirely separate from the processes used when executing the control process. In contrast, within biological brains, it is believed that _hebbian learning_ occurs as the primary learning mechanism and that it primarily occurs as "online" learning ....[citation, and further elaboration].
 
-# IV.4 Meta-observation Options in Meta-Management
+# III.4 Meta-observation Options in Meta-Management
 
 In order to carry out any of the meta-control mechanisms described in the section above, any explicit meta-management processes need to observe the behaviour of the main control process. We look now at a brief review of some of those meta-observation options.
 
@@ -407,7 +391,7 @@ Mechanisms for meta-management processes to observe the control process include:
 
 Of particular note is the fact that many of these mechanisms described are the same kinds of systems that would be used in an advanced agent for the observation, inference, and manipulation of interactions between the agents limbs, and between the agent and the environment.
 
-# IV.5 Architectural Options for Meta-management
+# III.5 Architectural Options for Meta-management
 
 ..todo: intro..
 
@@ -457,9 +441,9 @@ _todo: either here or somewhere else, I need to draw correlation between the inl
 ---
 
 
-# Part V - Problems in Biological Control Processes
+# Part IV - Problems in Biological Control Processes
 
-# V.1 Interlude: Environment, Body, and Cognitive Processes
+# IV.1 Interlude: Environment, Body, and Cognitive Processes
 
 Before continuing, it'll be useful to do a deep dive into the interactions between the three key systems of: external environment, body, and the cognitive processes. This is key because it explains the importance of independent modelling of env, body and CP, and thus why "I" becomes so prominent in the computation that produces subjective experience.
 
@@ -487,9 +471,7 @@ With that said, let's examine what these three systems can do:
 
 ![env, body, and CP high level](files/A-coherent-theory-v1-env-body-cp-why.drawio.png)
 
-<ul>
-<li style="list-style-type: none;"><i><b>Some pathways of how the environment, body, and cognitive processes are leveraged to support the needs of the body.</b> Solid arrows indicate the most significant relationships, with dotted arrows indicating supporting processes.</i></li>
-</ul>
+* _**Some pathways of how the environment, body, and cognitive processes are leveraged to support the needs of the body.** Solid arrows indicate the most significant relationships, with dotted arrows indicating supporting processes._
 
 **Environment:**
 - The environment is a source of nourishment, of pleasure, and of danger. Some components of the environment (eg: family members) have a vested interest in helping the individual. While others (eg: predators and bacteria) have a vested interest in using the body of the individual in ways that would be detrimental to the survival of the individual.
@@ -532,9 +514,7 @@ With that said, let's examine what these three systems can do:
 
 ![env, body, and CP interactions](files/A-coherent-theory-v1-env-body-cp.drawio.png)
 
-<ul>
-<li style="list-style-type: none;"><i><b>Environment, body, and CP interactions.</b> todo - description.</i></li>
-</ul>
+* _**Environment, body, and CP interactions.** todo - description._
 
 [Braindump] Points on above diagram:
 - Body and CPs have their own homeostatic needs and in many cases this requires CPs to coordinate the necessary actions and other processes to meet those homeostatic needs.
@@ -586,7 +566,7 @@ _todo_
 In combination with body schema and cognitive schema, labelling of events leads to a strong association between an event and the schema of its source. So, when I think a thought and subsequently think about having that thought, I know that "I" had that thought.
 
 
-# V.3 Deeper Dive into Meta-management
+# IV.3 Deeper Dive into Meta-management
 
 In a section above I introduced the idea of meta-management and looked at some of the possible architectures, but I was unable to clearly articulate why one possible architecture is really any different to another. I shall now explain that, by looking more closely at the mechanisms of control and learning.
 
@@ -594,15 +574,29 @@ _..todo..introduce concept of layered architecture with: i) innate, ii) habitual
 
 _todo: standardise on standard/main/first-order control_
 
+
+![three systems of control](files/A-coherent-theory-v1-bio-3-systems.drawio.png)
+
+* _**Three Systems of Control.** Innate control and innate feedback interpretation bootstrap learning of habitual and rational systems. Habitual and rational systems interact in order to produce learned behaviour._
+
+## Innate Control
+
+todo - features:
+* encoded in genetics, can change over lifetime but not from learning
+* interpretation of primitive feedback signals, eg: hunger, pain, satiation, pleasure
+* applies basic learning pressure against habitual and rational systems: maximising integral of ....that word that means how positive/negative the experience was...
+penalising energy expenditure and time costs.
+
+eg: reflexive actions, thermo-regulation, heart-rate, hormone production
+
+
 ## Habitual Standard Control Management
 
 Consider the processes required to manage body actions, in what shall here be referred to as standard control management in order to distinguish from meta-management. In the simplest form, a neural network learns a function that maps an action signal from the difference between the desired and actual states. Illustrated below, this is the basis for a habitual system - one that slowly learns to act appropriately for its own advantage over many trial-and-error executions. It lacks any understanding of the mechanisms underlying the environment in which it operates. It lacks the ability to predict accurately in an entirely novel situation. And it lacks the ability to adapt rapidly, should the environment suddenly change in a substantial way.
 
 ![Habitual standard management](files/A-coherent-theory-v1-habitual-std-mgmt.drawio.png)
 
-<ul>
-<li style="list-style-type: none;"><i><b>Habitual System.</b> A neural network predicts the best action given the difference between desired state and actual state. Prediction errors spontaneously cause updates to the relative strengths of neuronal connections.</i></li>
-</ul>
+* _**Habitual System.** A neural network predicts the best action given the difference between desired state and actual state. Prediction errors spontaneously cause updates to the relative strengths of neuronal connections._
 
 Such a system can be extended, for example, to contain an explicit model of the environment and to explicitly model the behaviours and limitations of its own body. With more direct modelling of those independent systems, the system has a greater ability for generalisation, and thus a greater ability to adapt to novel situations. But the system is still fundamentally a habitual one that learns through exposure to many repeated trial-and-error executions.
 
@@ -626,9 +620,7 @@ We are still a long way from understanding how this system operates, so in order
 
 ![Rational standard management](files/A-coherent-theory-v1-rational-std-mgmt.drawio.png)
 
-<ul>
-<li style="list-style-type: none;"><i><b>Rational System.</b> Some of the features that might underly rational thought.</i></li>
-</ul>
+* _**Rational System.** Some of the features that might underly rational thought._
 
 For an individual that lives in a complex environment, the state space trajectories being managed include simple spontaneous sense-action events, and long chains of observation collection, consideration, planning, and sequences of actions. The latter requires rational management in order to cope with the dynamic nature of the environment, and to be able to act on new information after receiving it only once. It also requires rational management in order to cope with complex abstractions in the environment (eg: labels, logic, etc).
 
@@ -671,9 +663,7 @@ Panel A in the diagram below illustrates how the external environment and the ra
 
 ![Narrowing convergent boundaries](files/A-coherent-theory-v1-mm-convergence.drawio.png)
 
-<ul>
-<li style="list-style-type: none;"><i><b>Narrowing convergent boundaries.</b> ...todo...</i></li>
-</ul>
+* _**Narrowing convergent boundaries.**_ ...todo...
 
 When the rational system is not operating near its optimum, the environment and habitual system act to apply a narrowing convergent boundary, illustrated in Panel B. The external environment applies after-the-fact feedback in the form of positive and negative rewards that the rational system can use for future improvement through both rational adaptation and through whatever underlying learning mechanisms it operates on. As actions become more strongly habituated, it becomes harder for the rational system to counteract them, thus applying a before-the-fact prevention against the most catastrophic errors.
 
@@ -683,7 +673,7 @@ One further learning layer exists on top. With such advanced and flexible learni
 
 Effectively, society is a collective behavioural exploration and learning system that spans a longer time scale than that of an individual. There are many possible systems of societal norms, and the societies that thrive will tend to have produced systems of societal norms that benefit the society and the individuals within it and those systems will tend to remain relatively stable over time. Through constant feedback from adults and peers, a naive individual's higher order processes are trained to produce behaviours that are consistent with the norms of the society in which they live. That societal pressure thus provides a significant portion of the narrowing convergent boundary exerted by the environment on the individual's learning, particularly for its rational systems including meta-management.
 
-# V.4 Semiotics
+# IV.4 Semiotics
 
 _todo_
 
@@ -691,7 +681,7 @@ _todo_
 ---
 
 
-# Part VI - Solution
+# Part V - Solution
 
 _todo_
 
@@ -699,7 +689,7 @@ _todo_
 ---
 
 
-# Part VII - The Intuitional Gap
+# Part VI - The Intuitional Gap
 
 _todo_
 
@@ -707,7 +697,7 @@ _todo_
 ---
 
 
-# Part VIII - Predictions
+# Part VII - Predictions
 
 _todo_
 
@@ -715,7 +705,7 @@ _todo_
 ---
 
 
-# Part IX - Next Steps
+# Part VII - Next Steps
 
 _todo_
 
