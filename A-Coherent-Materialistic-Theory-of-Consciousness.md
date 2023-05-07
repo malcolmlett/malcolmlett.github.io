@@ -573,7 +573,7 @@ _todo_
 In combination with body schema and cognitive schema, labelling of events leads to a strong association between an event and the schema of its source. So, when I think a thought and subsequently think about having that thought, I know that "I" had that thought.
 
 
-# IV.3 Deeper Dive into Meta-management
+# IV.3 Deeper Dive into Control Process Learning
 
 By the end of Part III it was clear that complex multi-iteration control processes require meta-management, and we were able to identify some possible architectures that capture the interaction between control processes and meta-management, but we are left with an outstanding question: how do we identify which meta-management architecture is more likely in humans? The question is important to our end goal because, as will be seen, the answer impacts our ability to explain subjective experience.
 
@@ -632,7 +632,7 @@ In that way, the rational system may be "held to account" by i) the innate syste
 
 Daniel Kahneman describes thought as being either rapid with immediate conclusion without deliberation (_System I thinking_) or deliberative (_System II thinking_) [citation]. I suspect that habitual and rational control coincide very closely with System I and System II thinking, respectively, if not exactly coincident. Where any ambiguity may arise is in the underlying mechanisms of habitual and rational control. For example, the learned strategies that I mention as part of rational control could be described as learned habits of thought.
 
-## Habitual and Rational Meta-management
+# IV.4 Deeper Dive into Meta-management
 points:
 * domain knowledge, complex, lots of neural mass
 * domain knowledge at time of meta-management same as domain knowledge in effect within CP at that time, so if there is any mechanism that "loads" domain knowledge in order to hold it is context during execution, then that same domain knowledge may be at play in both systems.
@@ -642,11 +642,56 @@ points:
 * what exactly does it incorporate?
     - ......have I repeated that already?
 
+So, the brain leverages both habitual and rational mechanisms in order to strike a balance between their relative strengths. Habitual systems are slow to adapt, but efficient to execute. Rational systems are fast to adapt, but complex and slow to execute. Independent habitual systems seem to be distributed throughout the human brain, as multiple habitually controlled behaviours can be executed simultaneously, eg: talking while driving. In contrast, there appears to be only one rational system, which can only operate against one task at a time.
+
+What differences are there in the meta-management of these two different systems? Might meta-management itself also employ both mechanisms? And does that help us identify the architecture of meta-management?
+
+As we proceed, remember that by the definitions as they stand, standard control is related to how the individual governs actions against their body and the environment, whereas meta-management is related to how the individual governs the execution of the computational processes involved with the former. If, by the end of this section, you are beginning to suspect that this distinction is somewhat arbitrary, then you will be well towards grasping the central thesis of this article.
+
+## Components of Habitual and Rational Meta-management
+Habitual mechanisms could well help to solve meta-management needs. _Habitual mechanisms of meta-management_ (HMMM) would be an individual's learned automatic behaviours with respect to meta-management. Some examples might include:
+* Higher-order production and interpretation of feedback. Providing more frequent feedback for RL algorithms. Providing better understanding of feedback with broader contexts. Influences: habitual standard control, rational standard control.
+* Strategy execution within rational system -- it's meta-management, but it's implemented through habitual mechanisms.
+* Strategy selection within rational system - will be a mixture of habitual and rational meta-management, depending on familiarity with problem domain.
+* detecting when habitual standard control behaviour has resulted in unexpected outcomes that require rational systems to take over in order to correct the situation
+* Learned meta-learning behaviours - observed by others as an individual's position on the sliding scale of "learning mindset" to "fixed mindset".
+* ..others..
+
+Rational mechanisms are equally important for meta-management. _Rational mechanisms of meta-management_ (RMMM) would leverage all of the higher-order modelling and deliberative capabilities. Some examples might include:
+* modelling the behaviours of the habitual and rational standard control processes, including tracking of their abilities (in other words, effectiveness) against different problem domains.
+* rational selection of problem solving strategy based on above modelling
+* domain knowledge, complex, lots of neural mass
+* domain knowledge at time of meta-management same as domain knowledge in effect within CP at that time, so if there is any mechanism that "loads" domain knowledge in order to hold it is context during execution, then that same domain knowledge may be at play in both systems.
+* In short, this is all the most advanced meta-learning, meta-cognitive thought processes that we can think of. This is the magic sauce that enables abstract thought.
+
+_todo: review other lists, eg from my notebook._
+
+## Reusable Domain Knowledge
+...
+
+## State Representation
+- representation: state + state trajectory + other context -> dimensionality reduced -> higher-order representation
+
+- learning pressure: standard control representations trained to accurately represent the problem state w.r.t. the mechanisms needed to solve them. Rational control representations trained to represent all of the inner workings with the minimal amount of information needed to attain sufficient stability.
+
+- pathways: RNN vs meta-management feedback loop
+
+## Summary of Meta-management Architecture
+_todo: avoid temptation to relate this back to subjective experience. That'll come in the solution part._
+
+We are now finally in a position to place our bets on the most likely architecture of meta-management, that of _inline meta-management_, incorporating both habitual and rational systems.
+
+diagram: habitual with standard + meta-management intermingled, rational with standard + meta-management intermingled.
+
+
 # IV.4 Semiotics
 
 _todo_: don't worry about wrapping up overall architecture. Almost just do a background interlude on semiotics, but with focus on its relation to meta-management. Then let next part pull it all together.
 
-_todo_
+_todo_:
+* background of semiotics
+* what semiotics tells us about the architecture of standard control -> no self-interpretation loop
+* what semiotics tells us about the meta-management architecture -> self-interpretation loop
 
 
 ---
