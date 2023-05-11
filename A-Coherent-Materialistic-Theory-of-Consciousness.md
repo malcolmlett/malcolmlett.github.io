@@ -737,6 +737,36 @@ _todo_:
 * what semiotics tells us about the architecture of standard control -> no self-interpretation loop
 * what semiotics tells us about the meta-management architecture -> self-interpretation loop
 
+## Objects, Representations, and Interpretations
+..todo..intro to semiotics, including different classes of representation.
+
+A single object may have different representations - eg: stop sign in red or yellow.
+
+## Examples
+Example: stop sign - object is all the aspects of the local road rules and the reasons why they exist to avoid accidents and ensure a smooth flow of traffic. Representation is a stop sign, simple, designed to be easy to identify from a difference. Interpretation is a recollection of all of those related road rules providing the rationale for why an action is required, plus observation about the current context, and a realisation of the need to put foot to brake at just the right rate at just the right timing so that the car comes to a stop at the line.
+
+Example: language - extend the point of how the object can be significantly more nuanced and deep than the representation, but that the interpretation can be fairly close to the original object.
+
+A semiotic process doesn't have to stop at one iteration. A semiotic loop [todo, is this an official term?] can keep iterating, with the interpretation becoming the object of the next.
+
+Example: DNA as a semiotic loop.
+
+Example: In the human context, an example of the semiotic process is in how the body gathers and interprets information about the environment. The environment is the _object_, and its true state is what the individual hopes to attain knowledge of. But the individual will never gain such knowledge as they do not directly perceive the environmental state. Signals obtained from the classic five senses of sight, sound, smell, touch, taste _represent_ the environment. That collective representation captures only a narrow and shallow aspect of the true state of the environment: for example that our visual sense only reports on a small field of view at any given time, and that too only about the external surface of whatever thing is being looked at. Finally, the network of neurons within the visual context, .....todo: etc....., _interpret_ the state of the environment from those representations. 
+
+...then, those interpretations are needed for further processing within the brain. Thus, they become the object, perhaps in combination with some underlying goal, and a representation of the interpretation is sent to some other system in the form of neural firings. That other system interprets the representation.
+
+## Semiotic Analysis of Control Processes
+The objects of standard control include the environment, the body, and the goal state. The representation is information garnered about the state of the environment and the body, and some neural signal conveying the goal at the time. The interpretation is some conclusion about those states and the next actions required in order to move towards the goal state.
+
+This plays out within a semiotic loop, with the interpretations produced at each iteration feeding as objects into the next iteration. At each step, representations and interpretations are tuned towards the needs related to standard control.
+
+When the individual is performing some externally focused task, such as clay sculpting, the objects at play within standard control are entirely external. This is particularly true when they are already skilled at such a task - for elaborate meta-management processes are not required to observe their learning progress and decide upon meta-corrective actions. Thus they need not _attend_ to the object of their own capabilities, nor even of their own identity as separate from the things surrounding them. The individual enters an experiential state known as _flow_ [citation].
+
+For meta-management processing, the object is the control process and its behaviours. For an inline meta-management architecture, the representation is the signal supplied via the meta-management feedback loop. The interpretation is produced by the process that receives that representation.
+
+## ....
+
+..point of all this: that only meta-management needs the kind of representations that we get in subjective experience, and that it creates a self-observing loop.
 
 ---
 
@@ -745,6 +775,12 @@ _todo_:
 
 _todo_
 
+## Conditions of Consciousness
+
+## Conditions of Evolution of Consciousness
+
+## Interplay with attention and memory
+...maybe...
 
 ---
 
