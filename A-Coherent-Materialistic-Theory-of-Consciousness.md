@@ -763,17 +763,28 @@ Let us analyse control processes and their meta-management in terms of semiotics
 * task-focused CP state trajectory control
 * meta-learning
 
-The objects of standard control include the environment, the body, and the goal state.  They also include the set of all possible actions and consequent actions, including what is best for the individual. Remember that the individual has no direct access to any of that. The representation is information garnered about the state of the environment and the body, via the senses, and some neural signal conveying the goal at the time. The interpretation is some conclusion about those states and the next best action required in order to move towards the goal state.
+Here it will be helpful to work backwards from the interpretation to the object, as the object is inherently unknown to the process. For the sake of clarity we will define the interpretation produced by a process as the _effect_ of processing: any changes to state, any actions that are triggered directly by the process, and any new representation that it produces.
 
-This plays out within a semiotic loop, with the interpretations produced at each iteration feeding as objects into the next iteration. At each step, representations and interpretations are tuned towards the needs related to standard control.
+### Standard control
+For multi-iteration standard control, the generated interpretation by habitual processes include CP state updates and body actions. Interpretation from rational processes include modelling of the problem space for later use (ie: modelling of environment and body), deliberative outcomes in terms of environment and body, strategy selection with regards to the overall type of response required against the current environment/body problem, and body actions. 
 
-When the individual is performing some externally focused task, such as clay sculpting, the objects at play within standard control are entirely external. This is particularly true when they are already skilled at such a task - for elaborate meta-management processes are not required to observe their learning progress and decide upon meta-corrective actions. Thus the individual need not _attend_ to the object of their own capabilities, nor even of their own identity as separate from the things surrounding them. The individual enters an experiential state known as _flow_ [citation].
+To make that work, the control process requires information about the environment and body. This includes knowledge about their dynamics. Furthermore, the more the individual knows about the future of the environment and body, the better it can make decisions. These are the attributes of the object, and it is dominated by state that the individual needs but will never have, or will only have after the fact.
 
-During multi-iteration processing meta-management processes govern the immediate CP state trajectory for the duration of the task at hand. Objects: the task at hand, including environment, body, and goal states, plus the state of the control process in the context of that task. Representation: signals about all of the above, including raw senses, and the meta-management feedback loop. Interpretations: inferred state of CP in relation to the task at hand, inferred CP actions necessary to manage the CP state trajectory for the current task.
-_...todo..this is not capturing the distinctions well enough._
+The representation presented to the standard control process includes the individual's raw senses that sample some virtually insignificant portion of information about the environment and body. It includes learned approximate models of the dynamics of the environment and body produced through prior interpretations. And it includes working memory, for example so that a given aspect of state can still be responded to even when no longer in sight.
 
-During meta-learning meta-management, the object is the control process and its current set of behaviours and capabilities across all problem domains. The representations are models of those behaviours and capabilities built up over time from the signal supplied by the meta-management feedback loop. The interpretation is an inference of inadequacies in those CP capabilities and decisions about what should be done to improve them.
+### Meta-management of CP state trajectory
+For meta-management of the state trajectory of multi-iteration control process, the generated interpretation most predominantly includes some action that affects the CP state trajectory. This could be through any of the mechanisms described in section III.3, including but not limited to direct state manipulation, adjusting bayesian biases, or through manipulation of input signals to the control process.
 
+Arguably another form of meta-management against CP state trajectory includes directly initiating body action. This can be seen in the example when someone consciously chooses to avert their eyes to aid in distracting themselves from a thought was associated with the previous visual scene (as opposed to an instinctual revulsion aversion response).
+
+The object in this case is the control process as it performs processing against a particular task, and its progress in doing so.
+
+The representation provided to this meta-management process is that provided by the meta-management feedback loop: a high-level summary of the current CP state, and its trajectory on the current task. The identification of the current task would presumably be represented within the state of the control process itself. So perhaps that representation would be used, or perhaps the meta-management feedback loop includes a higher-order representation more suitable for the needs of meta-management processing.
+
+### Meta-learning
+
+
+### Summary
 Summarised in the below table, we can see from this that different forms of processing have at their heart a different "object of focus" - the object that they are attempting to interpret. So the representations required, and the brain pathways to support those representations and interpretations, differ.
 
 |Process|Forms|
