@@ -782,15 +782,19 @@ The object in this case is the control process as it performs processing against
 The representation provided to this meta-management process is that provided by the meta-management feedback loop: a high-level summary of the current CP state, and its trajectory on the current task. The identification of the current task would presumably be represented within the state of the control process itself. So perhaps that representation would be used, or perhaps the meta-management feedback loop includes a higher-order representation more suitable for the needs of meta-management processing.
 
 ### Meta-learning
+...todo...
 
+- Interpretation (rational): modelling of CP capabilities/behaviours for later use, meta-cognitive decisions of learning goals and to effect those learning goals. 
+- Representation: CP state/trajectory summary as provided by mm feedback loop, plus models
 
 ### Summary
-Summarised in the below table, we can see from this that different forms of processing have at their heart a different "object of focus" - the object that they are attempting to interpret. So the representations required, and the brain pathways to support those representations and interpretations, differ.
 
-|Process|Forms|
-|--|--|
-|...|...|
-
+- Takeaways
+	- Objects of focus differ
+	- Representations used differ substantially. 
+	- Overlap in actions, but sub processes differ substantially
+    
+We can see from this that different forms of processing have at their heart a different "object of focus" - the object that they are attempting to interpret. So the representations required, and the brain pathways to support those representations and interpretations, differ.
 
 ## Trains of Thought
 
