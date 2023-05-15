@@ -742,7 +742,7 @@ _todo_:
 
 A single object may have different representations - eg: stop sign in red or yellow.
 
-## Examples
+## Examples of Semiotics
 Example: stop sign - object is all the aspects of the local road rules and the reasons why they exist to avoid accidents and ensure a smooth flow of traffic. Representation is a stop sign, simple, designed to be easy to identify from a difference. Interpretation is a recollection of all of those related road rules providing the rationale for why an action is required, plus observation about the current context, and a realisation of the need to put foot to brake at just the right rate at just the right timing so that the car comes to a stop at the line.
 
 Example: language - extend the point of how the object can be significantly more nuanced and deep than the representation, but that the interpretation can be fairly close to the original object.
@@ -756,17 +756,32 @@ Example: In the human context, an example of the semiotic process is in how the 
 ...then, those interpretations are needed for further processing within the brain. Thus, they become the object, perhaps in combination with some underlying goal, and a representation of the interpretation is sent to some other system in the form of neural firings. That other system interprets the representation.
 
 ## Semiotic Analysis of Control Processes
-The objects of standard control include the environment, the body, and the goal state. The representation is information garnered about the state of the environment and the body, and some neural signal conveying the goal at the time. The interpretation is some conclusion about those states and the next actions required in order to move towards the goal state.
+_..todo..would it work better just calling these examples?.._
+
+Let us analyse control processes and their meta-management in terms of semiotics. First I must recognise that the distinction I have made between control process and meta-management is now somewhat arbitrary. I can't do justice to a full rectification just yet and so will not attempt it. I will simply note that here it is useful to split meta-management into a short-term form focussed on the immediate task, and a longer-term meta-learning form. As such, we shall now analyse three forms of processing, recognising that this doesn't cover all forms of processing in the brain:
+* standard control
+* task-focused CP state trajectory control
+* meta-learning
+
+The objects of standard control include the environment, the body, and the goal state.  They also include the set of all possible actions and consequent actions, including what is best for the individual. Remember that the individual has no direct access to any of that. The representation is information garnered about the state of the environment and the body, via the senses, and some neural signal conveying the goal at the time. The interpretation is some conclusion about those states and the next best action required in order to move towards the goal state.
 
 This plays out within a semiotic loop, with the interpretations produced at each iteration feeding as objects into the next iteration. At each step, representations and interpretations are tuned towards the needs related to standard control.
 
-When the individual is performing some externally focused task, such as clay sculpting, the objects at play within standard control are entirely external. This is particularly true when they are already skilled at such a task - for elaborate meta-management processes are not required to observe their learning progress and decide upon meta-corrective actions. Thus they need not _attend_ to the object of their own capabilities, nor even of their own identity as separate from the things surrounding them. The individual enters an experiential state known as _flow_ [citation].
+When the individual is performing some externally focused task, such as clay sculpting, the objects at play within standard control are entirely external. This is particularly true when they are already skilled at such a task - for elaborate meta-management processes are not required to observe their learning progress and decide upon meta-corrective actions. Thus the individual need not _attend_ to the object of their own capabilities, nor even of their own identity as separate from the things surrounding them. The individual enters an experiential state known as _flow_ [citation].
 
-For meta-management processing, the object is the control process and its behaviours. For an inline meta-management architecture, the representation is the signal supplied via the meta-management feedback loop. The interpretation is produced by the process that receives that representation.
+During multi-iteration processing meta-management processes govern the immediate CP state trajectory for the duration of the task at hand. Objects: the task at hand, including environment, body, and goal states, plus the state of the control process in the context of that task. Representation: signals about all of the above, including raw senses, and the meta-management feedback loop. Interpretations: inferred state of CP in relation to the task at hand, inferred CP actions necessary to manage the CP state trajectory for the current task.
+_...todo..this is not capturing the distinctions well enough._
 
-## ....
+During meta-learning meta-management, the object is the control process and its current set of behaviours and capabilities across all problem domains. The representations are models of those behaviours and capabilities built up over time from the signal supplied by the meta-management feedback loop. The interpretation is an inference of inadequacies in those CP capabilities and decisions about what should be done to improve them.
 
-..point of all this: that only meta-management needs the kind of representations that we get in subjective experience, and that it creates a self-observing loop.
+Summarised in the below table, we can see from this that different forms of processing have at their heart a different "object of focus" - the object that they are attempting to interpret. So the representations required, and the brain pathways to support those representations and interpretations, differ.
+
+|Process|Forms|
+|--|--|
+|...|...|
+
+
+## Trains of Thought
 
 ---
 
