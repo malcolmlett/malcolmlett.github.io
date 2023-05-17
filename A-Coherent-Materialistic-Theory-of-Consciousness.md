@@ -766,35 +766,48 @@ Let us analyse control processes and their meta-management in terms of semiotics
 Here it will be helpful to work backwards from the interpretation to the object, as the object is inherently unknown to the process. For the sake of clarity we will define the interpretation produced by a process as the _effect_ of processing: any changes to state, any actions that are triggered directly by the process, and any new representation that it produces.
 
 ### Standard control
-For multi-iteration standard control, the generated interpretation by habitual processes include CP state updates and body actions. Interpretation from rational processes include modelling of the problem space for later use (ie: modelling of environment and body), deliberative outcomes in terms of environment and body, strategy selection with regards to the overall type of response required against the current environment/body problem, and body actions. 
+For standard control, the generated interpretation by habitual processes include CP state updates and body actions. Interpretation from rational processes include modelling of the problem space for later use (ie: modelling of environment and body), deliberative outcomes in terms of environment and body, strategy selection with regards to the overall type of response required against the current environment/body problem, and body actions. 
 
-To make that work, the control process requires information about the environment and body. This includes knowledge about their dynamics. Furthermore, the more the individual knows about the future of the environment and body, the better it can make decisions. These are the attributes of the object, and it is dominated by state that the individual needs but will never have, or will only have after the fact.
+To make that work, the control process requires information about the environment and body. This includes knowledge about their dynamics. Furthermore, the more the individual knows about the future of the environment and body, the better it can make decisions. These are the attributes of the object.
 
-The representation presented to the standard control process includes the individual's raw senses that sample some virtually insignificant portion of information about the environment and body. It includes learned approximate models of the dynamics of the environment and body produced through prior interpretations. And it includes working memory, for example so that a given aspect of state can still be responded to even when no longer in sight.
+Notice that the object is dominated by state that the individual needs but will never have, or will only have after the fact. This is a feature of the object in any semiotic system where the interpreter must learn about the object from scratch (more or less). We gain wonderfully complex and nuanced understandings of the world around us and of our own body through experience and through education. But the truly amazing thing about that learned knowledge is just how little we have and yet manage to survive.
+
+The representation presented to the standard control process includes the individual's raw senses that sample some practically insignificant portion of information about the environment and body. It includes learned approximate models of the dynamics of the environment and body produced through prior interpretations. And it includes working memory, for example so that a given aspect of state can still be responded to even when no longer in sight.
 
 ### Meta-management of CP state trajectory
-For meta-management of the state trajectory of multi-iteration control process, the generated interpretation most predominantly includes some action that affects the CP state trajectory. This could be through any of the mechanisms described in section III.3, including but not limited to direct state manipulation, adjusting bayesian biases, or through manipulation of input signals to the control process.
+For meta-management of the state trajectory of a multi-iteration control process, the generated interpretation most predominantly includes some action that affects the CP state trajectory. This could be through any of the mechanisms described in section III.3, including but not limited to direct state manipulation, adjusting bayesian biases, or through manipulation of input signals to the control process.
 
-Arguably another form of meta-management against CP state trajectory includes directly initiating body action. This can be seen in the example when someone consciously chooses to avert their eyes to aid in distracting themselves from a thought was associated with the previous visual scene (as opposed to an instinctual revulsion aversion response).
+Arguably another form of meta-management against CP state trajectory includes directly initiating body action. This can be seen in the example when someone consciously chooses to avert their eyes to aid in distracting themselves from a thought that was associated with the previous visual scene (as opposed to an instinctual revulsion aversion response).
 
-The object in this case is the control process as it performs processing against a particular task, and its progress in doing so.
+The object in this case is the control process as it performs processing against a particular task. That includes its state, the trajectory that it has taken, its progress in relation to the task. The object also includes the CP state trajectory that it will take going forwards on the current task, as knowing that is key to what actions need to be taken now. Of course the future is unknown. So models stand-in as a means to estimate the most likely future.
 
-The representation provided to this meta-management process is that provided by the meta-management feedback loop: a high-level summary of the current CP state, and its trajectory on the current task. The identification of the current task would presumably be represented within the state of the control process itself. So perhaps that representation would be used, or perhaps the meta-management feedback loop includes a higher-order representation more suitable for the needs of meta-management processing.
+The representation provided to this meta-management process includes that provided by the meta-management feedback loop: a high-level summary of the current CP state, and its trajectory so far on the current task. It includes learned dynamic models of CP behaviour. And the identification of the current task would presumably be represented within the state of the control process itself. For inline meta-management, that state could be easily accessed directly or somehow directly influence the meta-management processing. Or perhaps the meta-management feedback loop includes a higher-order representation of the current task if it is more suitable for the needs of meta-management processing.
 
 ### Meta-learning
-...todo...
+For longer term meta-learning, the interpretation includes a broad understanding of the behaviours and abilities of the control process across many problem domains. This includes strengths and weaknesses. It also includes building models of the comparative behaviours, strengths and weaknesses of comparable individuals. And interpretation includes meta-cognitive decisions that drive further learning, such as through setting goals, acknowledging and remembering certain behaviours that need to be avoided, or likewise for behaviours that should be repeated.
 
-- Interpretation (rational): modelling of CP capabilities/behaviours for later use, meta-cognitive decisions of learning goals and to effect those learning goals. 
-- Representation: CP state/trajectory summary as provided by mm feedback loop, plus models
+The object is once again the control process itself, but the focus is on a much longer term. It now encapsulates how effective the control process is against the range of all potential problem domains. Like for the other examples, the object has much than the individual is entirely unaware of, including what the optimum set of behaviours really is, and what the future holds.
+
+Contrast this to the object in the case of CP state trajectory meta-management. There the object was the immediate state trajectory. Here, the object is about the collection of learned abilities and how they can be used in different scenarios.
+
+The meta-management infers what it can about the object through the representations made available via the meta-management feedback loop, and via models. Here the models are built up over time to capture the CP behaviours and abilities on different kinds of problems. Separate models capture the individual's understanding of how other individuals fit against those measures.
 
 ### Summary
+There are a few key takeaways from the above that help us understand the similarities and differences between standard control and meta-management and the effects on how these respective systems could cooperate and coexist, particularly within an inline architecture.
+
+**Objects differ substantially**. The objects described above capture information that the systems can only guess at, but they need to have that information. Thus a tremendous amount of processing (and neural mass) is devoted to approximating that knowledge as closely as possible. These are a key focus of the processing systems. That focus differs significantly for the different processes: a) trying to understand and predict the outside world and how the body interacts with it, b) trying to govern the stability of short-term computational behaviour, c) trying to distinguish different problem domains and how changes in learned behaviour could improve future outcomes against those disparate problem domains.
+
+**Overlapping pathways**. The inferred state of the environment, the inferred state of the body, the inferred state of the control process, and predictive models of the dynamics thereof. In one way or another these are all important information that plays an important part of processing and meta-management. This is likely the case in all scenarios where meta-management is required, because at the end of the day meta-management is a process that helps the individual survive in the environment. The raw representations supplied by these pathways is likely re-used for multiple processing levels.
+
+**Significantly differing interpretations from same representations**. If the similarity between likely pathways is impressive, that is matched equally by the difference in outcomes produced by different forms of processing/meta-management.
+
+
+..todo.. needs a bit more work. Need to get back to ultimate purpose of this section...why am I yakking about this?
 
 - Takeaways
 	- Objects of focus differ
 	- Representations used differ substantially. 
 	- Overlap in actions, but sub processes differ substantially
-    
-We can see from this that different forms of processing have at their heart a different "object of focus" - the object that they are attempting to interpret. So the representations required, and the brain pathways to support those representations and interpretations, differ.
 
 ## Trains of Thought
 
