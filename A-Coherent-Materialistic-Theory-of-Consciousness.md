@@ -457,7 +457,6 @@ Before continuing, it'll be useful to do a deep dive into the interactions betwe
 With respect to an embodied individual, three interacting systems are typically assumed: external environment, body, and mind. In an attempt to be a little more precise, this article uses the term _"cognitive processes"_ (CPs) instead of _"mind"_. In any case, while these systems provide a useful basis for discussion, their exact distinction can become blurred. So some effort is first required to define them more clearly.
 
 ## Classification
-
 In attempting to define the delineation between these three systems, it is important to take a particular perspective: that of evolution. The most simple organisms lack a nervous system but nevertheless have evolved to react sufficiently well in order for their species to continue. We can say with some certainty that they lack cognitive processes of any sort, but they do have a clear delineation between their body and the environment around them - that delineation usually being a semi-permeable membrane. Evolutionary forces have produced such an organism to act in a way that it mostly protects itself from danger long enough to produce offspring. With some organisms, such as jelly fish, a nervous system has evolved that improves the ability of that organism to meet its homeostatic needs (eg: feeding), to protect itself from danger, and to procreate. The nervous system is entirely there to meet the needs of the body as a whole - those same same needs that applied to simple organisms lacking a nervous system. In mammals that nervous system is largely centralised into the brain as a discrete organ and in some cases that brain acts to look after its own homeostatic needs independent of the direct needs of the rest of the body.
 
 So the nervous system is just a part of the body in the same way that a limb is. There is no need to be confused about body vs mind, as in truth the mind is just a physical brain, which is a subset of the body.
@@ -518,7 +517,6 @@ With that said, let's examine what these three systems can do:
   - goals that the individual has decided upon
 
 ## System Interactions
-
 ![env, body, and CP interactions](files/A-coherent-theory-v1-env-body-cp.drawio.png)
 
 * _**Environment, body, and CP interactions.** todo - description._
@@ -535,7 +533,6 @@ With that said, let's examine what these three systems can do:
 - Environment, body, and CP state affect each other, leading to additional indirect pathways for the individual to control state of those systems. Body actions against the environment change the environment state, which can indirectly change the body state; eg: building a house to keep warm. CP actions against the body change the body state, which can indirectly change CP state, eg: turning away from a disturbing sight in order to direct attention away from it.
 
 ## Markov Process Modelling
-
 With such significant differences between the behaviours, predictability, and level of control over each environment, body, and CP, a key feature of any models regarding them will be to distinguish between those three systems. For any given sense and associated inferred hidden state, whether that state is primarily associated with the environment, the body, or with CP has a significant impact on how certain the individual can be about the accuracy of the inference, and about the likelihood that the individual will be able to change the hidden state to a more favourable one.
 
 That information is of particular relevance to meta-management processes. In order for meta-management processes to operate efficiently, they need to operate against a higher-order approximation. Some investigation into how those processes may operate illustrates this point.
@@ -553,7 +550,6 @@ Thus, it is more efficient to apply a high-order re-modelling. In a slight simpl
 As an aside: its worth noting that it is likely not just meta-management processes but higher-order planning as a whole that operates at this higher-order level. So while precise control of limb movement, for example, may require the more detailed modelling; overall coordination of actions across the body and CP probably operate a higher-order level.
 
 ## Identification of Source
-
 So, meta-management operates against a higher-order representation of action, observation, and hidden state spaces. It is also needs to partition those spaces by their mutual level of interaction (aka mutual information).
 
 Actions in the CP space have no impact on the environment. Actions in the body space influence the environment and the body, and have varying levels of influence over the CP space. Thus, when inferring the best action to take to apply a correction against a non-ideal state, the individual needs to model which modalities of actions are effective against different modalities of state.
@@ -561,17 +557,26 @@ Actions in the CP space have no impact on the environment. Actions in the body s
 Thus the higher-order representations have a strong segmentation between environment, body, and CP in both state and action spaces. Effectively, any sensory information that reaches the attention of higher-order executive and meta-management processes will have a sort of labelling associated with it to identify its source. Events that occur in the environment are labelled as occurring external to the body. Events that occur within the body are labelled as such. Events that occur within CPs are correspondingly labelled.
 
 ## Schema
-
 _todo: flesh out:_
 - body schema
 - cognitive schema
-
 
 ## The Ego in "I"
 _todo_
 
 In combination with body schema and cognitive schema, labelling of events leads to a strong association between an event and the schema of its source. So, when I think a thought and subsequently think about having that thought, I know that "I" had that thought.
+    
+_Identity_ is better thought of here as an identification of _independence_. The "I" that refers to me as a whole individual, enables my cognitive models and processes to apply different strategies and belief models to my own state and actions than they would apply to the environment around me. More internally, there are distinctive differences in what can/cannot be observed and changed about my body vs my cognitive state. Thus there is a lot of value in creating an _identity_ for the cognitive state - overlaying a virtual boundary around that cognitive system. Stuff within that boundary can be modelled and changed independently of other things.
 
+## Emotions
+_..todo..may need to cover off emotions too, because it turns out that they're a form of MM too_
+
+## Meaning Attachment
+_todo:_
+* Summarise all of above with the term "meaning attachment" so I can use it later on to refer to all of:
+    * labelling
+    * emotions
+    * relationship to schema
 
 # IV.3 Deeper Dive into Control Process Learning
 
@@ -811,19 +816,111 @@ There are a few key takeaways from the above that help us understand the similar
 
 ## Trains of Thought
 
+
 ---
 
 
 # Part V - Solution
 
-_todo_
+_todo: part intro_
 
-## Conditions of Consciousness
 
-## Conditions of Evolution of Consciousness
+- Basic statement of claim.
+	- MM is cause of SE.
+	- Don't try to go into MM being the only cause of SE - leave for Predictions chapter.
+    
+    
+# V.1 The Architecture of Subjective Experience
+- Setup:
+	- Reminder: the core reason-for-being of this paper is to explain the mechanisms of subjective experience in humans. So don't worry about the bigger more general picture yet. Just pull this all together and show how SE occurs in humans.
+- Architecture
+	- mm feedback loop
+	- habitual and rational processes (incl. in-built modelling)
+		- operates for std ctrl + MM
+	- inline mm
+	- cognitive schema, and "l" labelling
+	- emotions/feelings to attach extra meaning
+	- attention
+	- cycle, with lack of attenuation
+		- topic attenuation avoidance
+        
+# V.2 The Properties of Subjective Experience
+=> Show that this theory works because it explains these properties.
+- apparency of a homonculous
+- visceral
+	- why does it feel so real? why does its presentation consume all expanses of our attention.
+- appears as a stream and always on
+	- -> quite likely will need to pull in that prediction about whether SE is truly continuous or not
+- what's available, what's not.
 
-## Interplay with attention and memory
-...maybe...
+    
+# V.3 A Worked Example
+
+
+# V.4 Sufficient Conditions of Subjective Experience
+- setup:
+	- Describe as part of the process to define the necessary and sufficient conditions.
+	- Tononi's IIT outlines _necessary_ conditions.
+	- 
+	- May work to just have each of the following as sections and to discuss them in terms of variations, sufficiency, necessity, and degree.
+    
+    
+The following outlines _sufficient_ conditions to ensure subjective experience. However, not all may be _necessary_ - to be discussed later.
+    
+## MM feedback loop
+feedback loop that provides summary of CP state and feeds it back in at the level of a sense (ie: with same capacity for applying modelling, and meaning attachment as for any other sense)
+
+## inline mm architecture
+
+## iterative processing
+- any form of recurrent state is sufficient here, including associative memory and episodic memory.
+- though already required the use of a feedback loop
+- there may be a more abstract concept here
+
+## representational and processing capacity
+sufficient complexity in processing capability to be able to represent and interpret, to re-represent and to re-interpret
+
+## topic attenuation avoidance
+
+## attention
+if has an attention system, must choose to attend.
+degree: extend of attention on this topic.
+
+## modelling
+
+## meaning attachment
+- emotions/feelings to attach extra meaning
+- identity identification
+
+
+
+## Conditions for evolution of Subject Experience
+Conditions necessary for the above to evolve in the first place
+	- complexity of environment
+	- limit on depth of brain network requiring evolution of iterative processing - ie: reached some point where it is more efficient to evolve iterative processing than to make the brain network deeper.
+	- 
+
+# V.5 Necessary and Sufficient Conditions of Subjective Experience
+
+Here's a first attempt at defining the general conditions for subjective experience in any agent. Notice that many of the human-like features are missing here, implying that the quality of subjective experience comes in degrees.
+
+conceptual description:
+- any form of representation->interpretation->repeat loop that can observe, represent and process the state of its own process
+
+degrees
+- degree: depends on extent to which that source of info is attended to.
+- degree: depends on extent of application of knowledge of the _identity_ of that process state, as independent from state external to the process
+- degree: depends on breadth/depth of modelling of that information
+- degree: depends on length of _topic attenuation avoidance_
+
+example of alternate mechanical descriptions
+- independent MM, but it MM's itself (MMM😄)
+- only inputs available for cyclic processing is the CP state + MM state -- ie: 100% only cognitive state, no direct access to env/body state. But it would have some idea of env/body state indirectly by what's captured in CP state.
+- probably with its own habitual + rational systems.
+- seems pretty plausible, but it would be different to human experience:
+    - it's like it would have only one core "sense" of external things, like what it "sees" is the standard CP.
+    - there would be nothing special about the env/body state that it could infer from that, and in many cases access would be very vague if even there at all.
+
 
 ---
 
