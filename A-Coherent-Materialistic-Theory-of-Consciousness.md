@@ -81,6 +81,8 @@ Ned Block and various other's variations propose that consciousness is divided i
 
 Todo - brain parts etc
 
+![forward and backward connections](files/forward-and-backward-connections-in-brain-marino-2021.png)
+
 
 ---
 
@@ -105,6 +107,10 @@ Another form of recurrency is to execute multiple passes through the same networ
 Some have begun to experiment with loops in ANNs. Complex results can be achieved with shallower networks when using a loop-style of recurrency [Kubilius et al (2019); Wen et al (2018)]. Loop architectures have been used to adaptively vary the amount of computation time allocated to problems, as Adaptive Computation Time [Graves, 2016], which has been suggested as an important component of next generation language decoder-encoders known as Universal Translators [Dehghani et al, 2018].
 
 There is a practical limit to the complexity that a single-iteration processing architecture can achieve. The network can be made broader (more nodes in each layer) and deeper (more layers), but that increases the number of parameters that need to be optimised during learning. In earlier versions of ANNs, where smooth non-linearity functions such as sigmoid were used within hidden layers, the vanishing gradient problem [citation] meant that practical networks could not be more than a few layers in depth. Current state of the art ANNs obtain non-linearity through piecewise linear functions and enable many more layers before the vanishing gradient problem becomes an issue. However an upper bound on the number of layers is still recommended [details, and citation]. Even GPT 3 only uses 96 layers [citation].
+
+_..todo: any estimate on number of layers in human brain?_
+
+![mountcastle](files/Striate-cortex-modules-mountcastle-1997.png)
 
 Another problem with a single-iteration processing architecture is that its fixed depth implies a tradeoff between the maximum complexity that the architecture can handle and the cost of training in order to cater for the average complexity of situations that the agent must cope with. Additionally, if we consider that such processing may entail multiple stages of processing, the order in which those stages is executed is fixed.
 
@@ -750,6 +756,8 @@ A single object may have different representations - eg: stop sign in red or yel
 ## Examples of Semiotics
 Example: stop sign - object is all the aspects of the local road rules and the reasons why they exist to avoid accidents and ensure a smooth flow of traffic. Representation is a stop sign, simple, designed to be easy to identify from a difference. Interpretation is a recollection of all of those related road rules providing the rationale for why an action is required, plus observation about the current context, and a realisation of the need to put foot to brake at just the right rate at just the right timing so that the car comes to a stop at the line.
 
+![thumbs up](files/Paper-on-Loops-in-AI-and-Consciousness-semiotics.jpg)
+
 Example: language - extend the point of how the object can be significantly more nuanced and deep than the representation, but that the interpretation can be fairly close to the original object.
 
 A semiotic process doesn't have to stop at one iteration. A semiotic loop [todo, is this an official term?] can keep iterating, with the interpretation becoming the object of the next.
@@ -758,7 +766,11 @@ Example: DNA as a semiotic loop.
 
 Example: In the human context, an example of the semiotic process is in how the body gathers and interprets information about the environment. The environment is the _object_, and its true state is what the individual hopes to attain knowledge of. But the individual will never gain such knowledge as they do not directly perceive the environmental state. Signals obtained from the classic five senses of sight, sound, smell, touch, taste _represent_ the environment. That collective representation captures only a narrow and shallow aspect of the true state of the environment: for example that our visual sense only reports on a small field of view at any given time, and that too only about the external surface of whatever thing is being looked at. Finally, the network of neurons within the visual context, .....todo: etc....., _interpret_ the state of the environment from those representations. 
 
+![sensory semiotics](files/Paper-on-Loops-in-AI-and-Consciousness-env-semiotics.jpg)
+
 ...then, those interpretations are needed for further processing within the brain. Thus, they become the object, perhaps in combination with some underlying goal, and a representation of the interpretation is sent to some other system in the form of neural firings. That other system interprets the representation.
+
+![cognitive semiotics](files/Paper-on-Loops-in-AI-and-Consciousness-brain-semiotics.jpg)
 
 ## Semiotic Analysis of Control Processes
 _..todo..would it work better just calling these examples?.._
