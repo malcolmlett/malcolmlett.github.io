@@ -5,18 +5,28 @@ _Please come back later._
 Abstract:
 - Consciousness is produced by a semiotic multi-step planner state machine with meta management. 
 
-This article is interested in resolving the most perplexing question of consciousness..... In an attempt at being as precise as possible, I use the term "subjective experience". Necessary to deflect from our own intuitions and biases and connotations associated with words used in discussion of Cs. Here, we are interested in understanding the mechanisms underlying subjective experience. What produces subjective experience? Why might some structures produce subjective experience while others might not? What are the sufficient and necessary conditions for subjective experience?
-
-Many extent theories invoke non-Materialistic mechanisms. Here I present the case that CS can be fully explained through materialistic means. It just requires that we understand some of how General Intelligence works. 
-
-Some provide mechanistic explanations, but often either only at a philosophical level or only provide part of the story. In many respects, the skill of a researcher in this area is to sieve through the many partial stories and see how they can be linked together. This paper attempts just that. None of the ideas are entirely new. But I believe this to be the most comprehensive attempt to combine theories together at the most detailed level. 
-
 
 ---
 
 # Part I - Introduction
 
-# I.1 Summary of Thesis
+# I.1 A Question of Consciousness
+
+It has been said that the field of neuroscience is data rich, and theory poor. While vast quantities of data are available from the nature of individual neurons to the activity of the brain as a whole, we lack functional theories of cognitive function in order to make sense of that data. While theories exist, they are just not detailed enough [citation, and fleshing out].
+
+That problem is no less poignant for the question of consciousness. What is the basis of consciousness? It's underlying mechanisms? What makes one thing conscious, while another is not? What is this ethereal "something other" that seems to be associated with conscious experience - the "what it feels like" to be conscious [citation, nagal]? We have ample information about so called _correlates of consciousness_ - neurological data about high level brain activity at the time of conscious experience. But we lack an effective functional theory to compare that activity against. While many _theories of consciousness_ (TOC) exist, they lack the details needed to sufficiently explain the neurological data ..._todo: needs some more precise wording_.
+
+One particular attribute of interest is best explained through contrast. When we look at a rock rolling down a hill, many of us would imagine that the rock has no experience of itself or of its current activity in rolling. The rock has nothing in its physical makeup that could behave like neurons, and thus no capability for computational or cognitive processing of any sort in order to capture its state and activity, nor to consider that state and activity. Many who have belief in some kind of spiritual reality also do not imagine the rock to have a form of spirit that could comprehend or somehow sense its existence. In the short, the rock is both not alive and not aware.
+
+A plant is alive. Furthermore, a plant can react to its environment. But again many of us would imagine that the plant produces its reactions without any real "awareness" of what happens to it and what it does in response. Instead, we imagine that the plant is an entirely (bio-chemical) mechanical process that just operates its mechanics as is.
+
+Contrast that to humans. We have some sort of internal experience of the things that happen to us, of the things we do in response, and of and the thoughts that swim around our brain while all of that is happening. That internal experience is variously referred to as _phenomenal consciousness_ [citations] and _subjective experience_ [citations]..._todo: any other terms?_. I shall use the term _subjective experience_ in a hope to avoid some of the debate associated with other terms. What is peculiar about subjective experience is that despite hundreds of years of theorising [citation], we cannot explain a) what the underlying processes are that produce subjective experience, nor b) why we might have subjective experience in the first place.
+
+Chalmers makes the claim that no physical property, mechanical or computational process known to us today can explain subjective experience [citation], and the issue has become known as the _Hard Problem of Consciousness_. This problem is so "hard", that it has led many, Chalmers included, to pose non-materialistic theories: theories that incorporate some form of reality outside of what we can measure through physical means.
+
+This article is interested in resolving that most perplexing question of consciousness. I present the case that subjective experience can be fully explained through materialistic means. Not only that, but I present exactly _why_ and _how_ subjective experience occurs - the underlying mechanisms of subjective experience.
+
+# I.2 Summary of Thesis
 
 I believe that three things go hand-in-hand: general intelligence, meta-management, and consciousness. Further, understanding these systems must proceed in that order. Thus, in order to understand why we have subjective experience, we need to begin to develop a theory of general intelligence and of the processes that restrain it from cascading into chaos. This article presents an end-to-end argument following that thread. The entire argument is first presented here in brief, with background explanations omitted for the sake of brevity. The rest of the article is devoted to detailed explanations of each of the logical steps in the argument thread.
 
@@ -37,13 +47,13 @@ The metaphor of a _philosophical zombie_ was introduced to hypothesise a human-l
 Finally, I argue that our disgruntlement with such an explanation is not an _explanatory gap_ [citation], but an _intuitional gap_. Nagal famously pointed out that we have no conception of and no way of developing a conception of what it is like to be anything other than ourselves [citation]  [is the 'no way of developing a conception' reference due to 'The Harder Problem of Consciousness'?]. But that does not stop us making assumptions about what should and should not experience subjective experience. It took us a very long time to accept that animals could have any form of consciousness and subjective experience, and likely many still deny that outcome [details, citations]. If we have no way to conceive of the experience held by an animal, why should we be so adamant about its properties? The answer simply is our deluded intuition. Our brains excel at finding patterns and extrapolating from them. This works well when the physical environment around us is there to provide an error signal. But when no error signal is available, we are prone to delusion. Our minds create such a strong sense of self vs other by keying that information into every sensory signal that we ever receive, so that our senses seem to take on an extra quality of realness, of subjectiveness, of _qualia_ [citation]. That seeming extra quality is further processed by the same system that produced it, reinforcing the delusion that the qualia is something extra, beyond mere sensory information. And thus we are deluded into the intuition that subjective experience is somehow more than can be produced by mere computational processing.
 
 
-# I.2 Background - Theories of Consciousness
-What is consciousness? This a question that has been considered for a long time. When Chalmers now famously re-phrased it as the "hard problem of consciousness", he went so far as to claim that no currently known mechanism can produce the phenomenon of subjective experience.
+# I.3 Background - Theories of Consciousness
+Many theories exist about the nature of consciousness. A summary of such theories will be given here.
 
 _todo later: extend out as suitable intro for someone totally new to the question._
 
 
-Many theories exist about the nature of consciousness. A summary of such theories will be given here. To provide some uniformity, the explanatory framework of a stack of theoretical layers is used, illustrated in the following diagram. Here, the physical biology of the brain is viewed as a substrate that might potentially be replaced or emulated via some other substrate (eg: silicon neurons). Built upon that substrate are many non-conscious processes. Either directly from the underlying substrate, or as a result of the non-conscious processes, some mental states are associated with subjective experience. The blue boxes represent potential layers involved in that subjective experience. For example, some non-conscious processes may produce representations that are associated with subjective experience. Such representations may or may not require specific functional structures in order to lead to subjective experience. Additionally, even with appropriate functional structures, something extra special may or may not be needed in order for those representations to be associated with subjective experience.
+To provide some uniformity, the explanatory framework of a stack of theoretical layers is used, illustrated in the following diagram. Here, the physical biology of the brain is viewed as a substrate that might potentially be replaced or emulated via some other substrate (eg: silicon neurons). Built upon that substrate are many non-conscious processes. Either directly from the underlying substrate, or as a result of the non-conscious processes, some mental states are associated with subjective experience. The blue boxes represent potential layers involved in that subjective experience. For example, some non-conscious processes may produce representations that are associated with subjective experience. Such representations may or may not require specific functional structures in order to lead to subjective experience. Additionally, even with appropriate functional structures, something extra special may or may not be needed in order for those representations to be associated with subjective experience.
 
 ![theory layers](files/A-coherent-theory-v1-theory-layers.drawio.png)
 
@@ -77,7 +87,7 @@ _todo: references and more details from:_
 
 Ned Block and various other's variations propose that consciousness is divided into access consciousness and phenomenal consciousness, and that access-consciousness variously stops somewhere below the "something special" layer, with various arguments about where it stops. Such arguments down to differences in opinion about the relation between access and phenomenal consciousness: i) are they one-to-one: all access conscious events have phenomenal consciousness, ii) can some access conscious events lead to external behaviour without the individual having subjective experience?, or iii) can some phenomenal conscious events occur that have no access consciousness: for example that the individual experiences in the moment but cannot have any memory of it and cannot report on it.
 
-# I.3 Background - Biology and Neuroscience 
+# I.4 Background - Biology and Neuroscience 
 
 Todo - brain parts etc
 
@@ -834,13 +844,14 @@ There are a few key takeaways from the above that help us understand the similar
 
 # Part V - Solution
 
-_todo: part intro_
+The sections before laid out a sequence of logical inferences. Working from a basic need to cope with complexity, we have seen that this concludes with meta-management processes superimposed over the same systems that perform primary control of the body, enabled through a feedback loop that captures a high-level summary of the state of that control process. And we have seen that this results in the control process state having both a "from the inside" representation and a separate "from the outside" representation.
 
+We are now in a position to state the core thesis of this article, which is this:
+* Subjective experience is the result of the meta-management feedback loop, an inline meta-management architecture, and the cyclic processing of self-referential state interpreted from that feedback loop.
 
-- Basic statement of claim.
-	- MM is cause of SE.
-	- Don't try to go into MM being the only cause of SE - leave for Predictions chapter.
-    
+In more colloquial terms, subjective experience is a _strange loop_ [citation, Hofstadter] produced by the meta-management feedback loop.
+
+This part explores that core thesis in detail. It starts by summarising subjective experience's underlying architecture within the human cognitive processes, and then attempts to define subjective experience in more general terms that might be applicable to arbitrary evolved and synthetic agents. A later part examines some possible statements about subjective experience in the wider animal kingdom.
     
 # V.1 The Architecture of Subjective Experience
 - Setup:
@@ -903,8 +914,6 @@ degree: extend of attention on this topic.
 ## meaning attachment
 - emotions/feelings to attach extra meaning
 - identity identification
-
-
 
 ## Conditions for evolution of Subject Experience
 Conditions necessary for the above to evolve in the first place
