@@ -24,11 +24,18 @@ Contrast that to humans. We have some sort of internal experience of the things 
 
 Chalmers makes the claim that no physical property, mechanical or computational process known to us today can explain subjective experience [citation], and the issue has become known as the _Hard Problem of Consciousness_. This problem is so "hard", that it has led many, Chalmers included, to pose non-materialistic theories: theories that incorporate some form of reality outside of what we can measure through physical means.
 
-This article is interested in resolving that most perplexing question of consciousness. I present the case that subjective experience can be fully explained through materialistic means. Not only that, but I present exactly _why_ and _how_ subjective experience occurs - the underlying mechanisms of subjective experience.
+This article is interested in resolving that most perplexing question of consciousness. I present the case that subjective experience can be fully explained through materialistic means. Not only that, I present a theory that explains _why_ and _how_ subjective experience occurs - the underlying mechanisms of subjective experience.
+
+The theory presented here provides an opportunity for testing against empirical evidence. .....
+
+
+The theory presented is compatible with ...._todo: HOT, IIT, competition theories....._ In fact, many of the ideas presented here are not new. But I believe this to be the most comprehensive attempt to combine ideas together at the most detailed level. I suspect that in many respects, a key skill of anyone doing research in this area is to sieve through the many partial stories and see how they can be linked together.
 
 # I.2 Summary of Thesis
 
-I believe that three things go hand-in-hand: general intelligence, meta-management, and consciousness. Further, understanding these systems must proceed in that order. Thus, in order to understand why we have subjective experience, we need to begin to develop a theory of general intelligence and of the processes that restrain it from cascading into chaos. This article presents an end-to-end argument following that thread. The entire argument is first presented here in brief, with background explanations omitted for the sake of brevity. The rest of the article is devoted to detailed explanations of each of the logical steps in the argument thread.
+I believe that three things go hand-in-hand: general intelligence, meta-management, and consciousness. Further, understanding these systems must proceed in that order. Thus, in order to understand why we have subjective experience, we need to begin to develop a theory of general intelligence and of the processes that restrain it from cascading into chaos. This article presents an end-to-end argument following that thread.
+
+To save the impatient reader from the tedium of waiting till the end, the entire argument is first presented here in brief. Background explanations and some definitions are omitted for the sake of brevity. The rest of the article is devoted to detailed explanations of each of the logical steps in the argument thread here.
 
 Any computational system is limited in the complexity that it can handle within a single execution of its computational process. For embodied agents, this appears as a limit on the environmental complexity that they can sufficiently model and respond to within a single executional iteration. For more complex problems, multiple iterations of processing are required in order to determine the next physical action. Such recurrency in processing may for example entail further analysis of the environment in order to better model its state; or consideration of alternative action plans. In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that takes longer to make some decisions. Van Bergen & Kriegeskorte (2020) make the case that recurrency is indeed employed in biology for that very reason.
 
