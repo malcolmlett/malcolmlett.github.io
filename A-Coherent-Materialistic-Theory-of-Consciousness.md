@@ -765,6 +765,8 @@ _todo_:
 * what semiotics tells us about the architecture of standard control -> no self-interpretation loop
 * what semiotics tells us about the meta-management architecture -> self-interpretation loop
 
+_todo_: actually the key most important point of the reference to semiotics is that a representation on its own does not create anything and certainly not experience. It needs an interpreter to make sense of the representation. And then, for that interpreter's output to make sense to anything, it needs to be re-interpreted. 
+
 ## Objects, Representations, and Interpretations
 ..todo..intro to semiotics, including different classes of representation.
 
