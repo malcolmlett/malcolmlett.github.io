@@ -863,6 +863,12 @@ This part explores that core thesis in detail. It starts by summarising subjecti
 # V.1 The Architecture of Subjective Experience
 - Setup:
 	- Reminder: the core reason-for-being of this paper is to explain the mechanisms of subjective experience in humans. So don't worry about the bigger more general picture yet. Just pull this all together and show how SE occurs in humans.
+    
+    
+![architecture of human subjective experience](files/A-coherent-theory-v1-solution-human-architecture.drawio.png)
+
+* _**Components of subjective experience in humans**. Habitual, rational, and innate control processes receive sensory input about the state of the body and the environment and produce body actions that effect change against the state of the body and environment. Control processes retain state, enabling multi-iteration processing. The current and recent trajectory of control process state (CP state) is captured and a dimensionality reduced high-level representation is made available as an additional sense to the control processes via the meta-management feedback loop. Environment, body, and cognitive schemas attach additional contextual and meaning information to sensory input, for example providing source labelling to the control processes. Emotions/feelings add an extra level of "importance" to some information. Attentional control mechanisms "choose" which sensory information is attended to._
+    
 - Architecture
 	- mm feedback loop
 	- habitual and rational processes (incl. in-built modelling)
@@ -921,6 +927,8 @@ degree: extend of attention on this topic.
 ## meaning attachment
 - emotions/feelings to attach extra meaning
 - identity identification
+
+_todo: emotions......This does not do justice to the full extent to which emotions and feelings play a role in cognition. For a full account see Damasio (...)._
 
 ## Conditions for evolution of Subject Experience
 Conditions necessary for the above to evolve in the first place
