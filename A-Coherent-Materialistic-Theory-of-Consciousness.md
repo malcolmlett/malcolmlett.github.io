@@ -765,7 +765,14 @@ _todo_:
 * what semiotics tells us about the architecture of standard control -> no self-interpretation loop
 * what semiotics tells us about the meta-management architecture -> self-interpretation loop
 
-_todo_: actually the key most important point of the reference to semiotics is that a representation on its own does not create anything and certainly not experience. It needs an interpreter to make sense of the representation. And then, for that interpreter's output to make sense to anything, it needs to be re-interpreted. 
+_todo_: actually the key most important point of the reference to semiotics is that a representation on its own does not create anything and certainly not experience. It needs an interpreter to make sense of the representation. And then, for that interpreter's output to make sense to anything, it needs to be re-interpreted.
+
+
+The claim so far is that the meta-management feedback loop generates a (high-level, and filtered) representation of the state of the goings on within the brain. That representation is then available for processing, which may produce some computational actions as part of meta-management. Assuming an inline meta-management architecture, a logical extension is that the outcome of that meta-management processing result in new state that is subsequently captured by the meta-management feedback loop and fed back as a new representation.
+
+This description begins to mimic what we'd expect of the basis for subjective experience: it provides a self-referential observation, along with a choice about simply observing or reacting so that observation. But the meta-management process only has a few basic things going on: capturing of data, generation of a representation of that data, processing of that representation, and generation of actions in response to that representation. Which of those could possibly produce subjective experience?
+
+The answer is that it's all of those basic steps, taken together, and repeated over and over. But to explain that clearly we need the right language to talk about it. The language that will help us is that of _semiotics_: the study of symbols and their interpretations.
 
 ## Objects, Representations, and Interpretations
 ..todo..intro to semiotics, including different classes of representation.
