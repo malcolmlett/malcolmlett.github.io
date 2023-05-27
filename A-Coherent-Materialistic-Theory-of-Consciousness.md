@@ -346,6 +346,30 @@ _...todo...use this to introduce the idea of a biologically plausible NN-based p
 ...todo..
 
 
+## Hand-written Control Processes in AI vs Biologically Plausible Control
+_todo_:
+* I need to make regular reference to the idea that AI today uses a lot of "hand-written" processes, many of which are imperative in style rather than connectionist. So there are many aspects of AI today that are a) not biologically plausible, and b) conveniently skip some of the problems that I'm trying to identify and propose solutions for.
+* Then draw some specific comparisons and a framework for understanding the biologically plausible equivalents: dynamic layers bootstrapping on top of relatively static layers.
+
+In contemporary AI...... It could be argued that even the primary control process itself is more imperative than it is connectionist. The connectionist architecture is just a "model" - not the real thing, but a data structure that represents some key properties of the real thing. As it is just a data structure, something else must _execute_ it. And the thing that executes is hand-written imperative code.
+
+In its most significant example, and applicable to most implementations today, the main cyclic processing loop - the thing that takes the current sensory input, processes it, and then actions the output - is governed entirely by imperative code. The decision whether or not to feed the output into actuators is governed by hand-written imperative code. The decision whether to start the loop in the first place is governed by hand-written code. The decision of _when_ to stop the loop is governed by hand-written code. That last, most important decision, is not based on anything related to the connectionist model, nor the outputs of the connectionist model, nor even of any sense of "lifespan" of the agent. Rather, it is typically related to either a training "epoch" (an entirely arbitrary time period, usually of only a few seconds) or to a "buffer size" (ie: of how long before some data buffer becomes full and where those hand-coded meta-management processes must kick in).
+
+...
+
+![hard-coded CP and MM in AI](files/A-coherent-theory-v1-hard-coded-cp-and-mm.drawio.png)
+
+* _**Control and meta-management processes in contemporary AI.** A mixture of imperative code hand-written by AI researchers plus connectionist models implement the control and meta-management processes of the agent._
+
+...that is not entirely dissimilar from biology. Biology employs aspects that are "hard-coded" by an individual's genetics. But the key point here is that significantly more of the control and meta-management processes use connectionist solutions that learn. In that way, contemporary AI today avoids some of the difficulties faced by biology. But it also misses out on the opportunities provided by that flexibility.
+
+![biologically plausible CP and MM](files/A-coherent-theory-v1-bio-plaus-cp-and-mm.drawio.png)
+
+* _**Control and meta-management processes in biology.** Layers of increasingly flexible and learning connectionist networks run on top of more static connectionist networks, plus on top of a "hard-coded" body._
+
+_todo: improve diagram by making it just one vertically connected network, with fussy boundaries rather than strict boundaries, and describe the vertical sections as layers._
+
+
 ## A Biologically Plausible Planning Control Process
 
 _...todo...But first, to help motivate the discussion, let's first specify a useful example to have in mind...._
@@ -470,7 +494,7 @@ The focus of this article now shifts from generic "agents" of any form to biolog
 
 Like many others, I focus on humans in order to avoid the ambiguity and uncertainty inherent with topics such as intelligence and subjective experience within the larger animal kingdom. This should not be taken to imply any statement about that larger animal kingdom. In fact I do make a few points in relation to other animals in a later part.
 
-Now that this article is focused on biology, and humans in particular, the reader will also notice that some of the terminology shifts to be more human-centric.
+Now that this article is focused on biology, and humans in particular, the reader will also notice that some of the terminology shifts to be more human-centric. One such shift, with a happy coincidence, is that the abbreviation CP will now be used interchangeably to stand for both _Control Process_ and _Cognitive Process_ - because a cognitive process is just a computational-style of control process, implemented upon a substrate of wet biological neurons.
 
 
 # IV.1 Interlude: Environment, Body, and Cognitive Processes
@@ -480,6 +504,9 @@ Before continuing, it'll be useful to do a deep dive into the interactions betwe
 With respect to an embodied individual, three interacting systems are typically assumed: external environment, body, and mind. In an attempt to be a little more precise, this article uses the term _"cognitive processes"_ (CPs) instead of _"mind"_. In any case, while these systems provide a useful basis for discussion, their exact distinction can become blurred. So some effort is first required to define them more clearly.
 
 ## Classification
+
+_todo: most of this chapter is potentially interesting but a waste of time w.r.t. to the thesis. If I leave this in, it needs to be introduced as such. A key message could be to make the reader aware that the kinds of interactions between env/body/cp are far more nuanced and varied than are discussed in this article generally, but that the article ignores them for the sake of simplicity._
+
 In attempting to define the delineation between these three systems, it is important to take a particular perspective: that of evolution. The most simple organisms lack a nervous system but nevertheless have evolved to react sufficiently well in order for their species to continue. We can say with some certainty that they lack cognitive processes of any sort, but they do have a clear delineation between their body and the environment around them - that delineation usually being a semi-permeable membrane. Evolutionary forces have produced such an organism to act in a way that it mostly protects itself from danger long enough to produce offspring. With some organisms, such as jelly fish, a nervous system has evolved that improves the ability of that organism to meet its homeostatic needs (eg: feeding), to protect itself from danger, and to procreate. The nervous system is entirely there to meet the needs of the body as a whole - those same same needs that applied to simple organisms lacking a nervous system. In mammals that nervous system is largely centralised into the brain as a discrete organ and in some cases that brain acts to look after its own homeostatic needs independent of the direct needs of the rest of the body.
 
 So the nervous system is just a part of the body in the same way that a limb is. There is no need to be confused about body vs mind, as in truth the mind is just a physical brain, which is a subset of the body.
@@ -605,7 +632,9 @@ _todo:_
 
 By the end of Part III it was clear that complex multi-iteration control processes require meta-management, and we were able to identify some possible architectures that capture the interaction between control processes and meta-management, but we are left with an outstanding question: how do we identify which meta-management architecture is more likely in humans? The question is important to our end goal because, as will be seen, the answer impacts our ability to explain subjective experience.
 
-In order to answer that question, we now look at learning in humans.
+To my knowledge, there is no research investigating the relative merits of the proposed possible meta-management architectures within the context of connectionist computational architectures. At this stage, drawing any conclusions from the empirical evidence of neuroscientific data is fraught [citations for general problems of conclusions from fRMI data, or the history of mistakes?]. Thus we are left to postulate based on theoretical analysis._
+
+So, in order to answer that question, we shall now look at learning in humans.
 
 The controversies surrounding meta-cognition research stems from one problem: that it's not just one system that controls meta-cognitive processes. The meta-cognitive research discussed above generally acknowledge two systems: first-order non-conscious processes and high-order conscious processes. Debates about whether a behaviour is meta-cognitive or not hangs on an assumption that only conscious processes can be classified as meta-cognitive. We can avoid getting caught up in such debates when we acknowledge that all behaviour is an outcome of interactions between all systems. What we need to investigate is what those systems are, their underlying mechanisms, and how they interact to produce that behaviour.
 
@@ -795,6 +824,8 @@ The answer is that it's all of those basic steps, taken together, and repeated o
 
 A single object may have different representations - eg: stop sign in red or yellow.
 
+_todo: in the context of a complex system such as cognitive processing, semiotics is a tool that can be applied at whichever level is appropriate for our needs. For example ..............._
+
 ## Examples of Semiotics
 Example: stop sign - object is all the aspects of the local road rules and the reasons why they exist to avoid accidents and ensure a smooth flow of traffic. Representation is a stop sign, simple, designed to be easy to identify from a difference. Interpretation is a recollection of all of those related road rules providing the rationale for why an action is required, plus observation about the current context, and a realisation of the need to put foot to brake at just the right rate at just the right timing so that the car comes to a stop at the line.
 
@@ -821,6 +852,8 @@ Let us analyse control processes and their meta-management in terms of semiotics
 * standard control
 * task-focused CP state trajectory control
 * meta-learning
+
+_todo: define what level we'll use semiotics at, and so declare what we'll define as the object, representation, and interpretation._
 
 Here it will be helpful to work backwards from the interpretation to the object, as the object is inherently unknown to the process. For the sake of clarity we will define the interpretation produced by a process as the _effect_ of processing: any changes to state, any actions that are triggered directly by the process, and any new representation that it produces.
 
