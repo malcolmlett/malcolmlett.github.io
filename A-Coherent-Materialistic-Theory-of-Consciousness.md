@@ -1000,10 +1000,13 @@ _todo_
 
 
 ## Convergence of Meta-Management
+In developing this theory I have been palpably aware of concerns that what I am proposing makes no sense because such a system could never be stable enough to operate effectively. I have made the claim that habitual and rational system learn off each other. That alone can produce unstable results. Indeed, I have made the claim that they are so unstable that they need a meta-management process in order make them stable. But then I've twisted that assumption on its head by claiming that somehow those very same unstable systems can meta-manage themselves. Without sound empirical results what basis do I have to believe that this could possibly work? And if it's not a feasible architecture, then my entire argument for the basis of subjective experience is in question.
 
-_todo: this is not really relevant to my goal of explaining subjective experience. It's just apologetics on my theory of inline meta-management architecture. It can be useful to include, but it needs to be introduced as going outside of scope of what I'm trying to focus on._
+I have attempted to keep this article focused on the theoretical for two reasons. One is that I am not really attempting to prove exactly _how_ the human brain generates subjective experience through material means; but rather merely to prove that it is _plausible_ and _likely_ that material means are sufficient. The detail that I have included hopefully provides a reference point for others to pick up from. The second reason is that I only have so much time in the day. It takes long enough to generate and write about a plausible theory. It takes longer still to do all the empirical research needed to provide data proof behind such a theory. Thus my original intent was not to provide a watertight solution for every question, and I certainly did not intend to prove how such a system could attain stability.
 
-The rational meta-management process still appears fundamentally unstable. What learning pressures make it converge towards stability and utility? At this stage I can only offer a few suggestions.
+So, perhaps it is more to alleviate my own discomfort than that of anyone else that I shall now offer a few suggestions about how such a system could attain stability.
+
+For this endeavour I shall once again borrow from the AI literature, in particular the concept of _convergence_. ......_todo: introduce the AI concept of "convergence": meaning "stable" + "leading towards the desired outcome"_.
 
 _todo: the description of "narrowing convergent boundaries" and how I've used it aren't quite aligned._
 
@@ -1025,6 +1028,10 @@ One further learning layer exists on top. With such advanced and flexible learni
 
 Effectively, society is a collective behavioural exploration and learning system that spans a longer time scale than that of an individual. There are many possible systems of societal norms, and the societies that thrive will tend to have produced systems of societal norms that benefit the society and the individuals within it and those systems will tend to remain relatively stable over time. Through constant feedback from adults and peers, a naive individual's higher order processes are trained to produce behaviours that are consistent with the norms of the society in which they live. That societal pressure thus provides a significant portion of the narrowing convergent boundary exerted by the environment on the individual's learning, particularly for its rational systems including meta-management.
 
+
+![societal convergence pressure](files/A-coherent-theory-v1-societal-convergent-pressure.drawio.png)
+
+* _**Convergence pressures operating against the control systems of an individual.** ..todo.._
 
 ---
 
