@@ -940,7 +940,7 @@ This part explores that core thesis in detail. It starts by summarising subjecti
 	- cycle, with lack of attenuation
 		- topic attenuation avoidance
 
-# V.2a The Construction of the Subjective Experience State
+# V.2a Subjective Experience State
 Subjective experience does not just happen. I hold that, together with circular processing, subject experience is a computational state that represents the presence of subjective experience, a _subjective experience state_. That computational state doesn't just happen either. It must be constructed. And it takes a few steps to get there.
 
 First, you need a topic. We can have subjective experience of anything that we are capable of representing within our computational system. We can stand at the top of a mountain, staring out wordlessly in awe of the beautiful scene before us, and having no apparent thoughts save for a general sense of wonderment. We can loose ourself in the narration of a good book, with words and pictures, sounds, and even smells flowing through our mind like an excitable babbling river. We can examine our past actions and thoughts, searching for the source of a disagreement with a loved one. We can talk to ourselves "in our head", having lengthy and detailed arguments and disagreements with ourselves. At any time during any of those moments we can catch ourselves and ask the question "do I have subjective experience of this moment?" and we will surely acknowledge in the affirmative. Likewise at any time later we can think back to those moments and claim that we were aware of the event at the time and so had subjective experience of it. And, while having such thoughts about our own thoughts, we can catch ourselves and ask the same question: "do I have subjective experience of this moment?". Any of these suffice for a topic that can become part of the subjective experience state.
@@ -949,7 +949,7 @@ Note that I am not considering the truth of statements like "yes, I had subjecti
 
 So the first step is that the brain generates a representation of some topic. Let's call it _x_. The topic _x_ does not itself need to have anything to do with subjective experience, and in order to understand the logic here is best not to think of such an example. I find a good grounding example to be the representational state obtained when I look at an apple on the table and merely notice some particular attribute of the texture of the skin of the apple, with no other specific thought beyond that. So _x_ is, for example, "apple with odd shaped mark, on table". While that could be represented in the form of worded thoughts in the mind, it does not have to be; and I find it best to avoid the temptation to assume an explicit visual or language representation. For those familiar with AI, a good concrete example is obtained from contemporary use of deep networks for image classification. It has been found that a sample taken of the data passing through a layer at about 1/3 towards the output-most layer yields a representation of high-level features [citation] that can be transferred to other tasks, such as image generation. Importantly, there is no simple mapping of the location of a feature within that data structure to any location (or locations) in the original image [citation]. This is the kind of encoding that I imagine for the representation of _x_, one that I suspect is comparable to the kind of representation employed within the brain.
 
-Skipping a few steps and jumping towards the end, when subjective experience of a topic, it is because the brain has constructed a subjective experience state about that topic. The subjective experience state is a (non-language, non-visual) representation of this:
+Skipping a few steps and jumping towards the end, when subjective experience of a topic occurs, it is because the brain has constructed a subjective experience state about that topic. The subjective experience state is a (non-language, non-visual) representation of this:
 * "[I] [OBSERVING] [_x_]".
 
 The "I" here captures a few things, constructed from the schema and meaning attachment processes described above:
@@ -967,44 +967,55 @@ This may sound like some mere play on language, where we take our culturally acq
 
 [citation: there are theories that language affects how we think, there must also be theories that language is a reverse engineered labelling of phenomenon we observe about ourselves]
 
-# V.2b The subsequent processing of a Subjective Experience State
-_todo: this text would be better either i) at the end of this section, ii) within the first chapter of this part, or iii)  within some later summary chapter. The subjective experience state is not itself subjective experience; it is merely the content of the experience. Indeed, there is no single place or point in time where subjective experience occurs. This is true when talking about a functional description of brain processing, and it is true when examining the biological structure of the brain. There is only a state that represents that subjective experience has occurred, and there is action as a result of that state._
+# V.2b Interpretation of Subjective Experience States
+With a representation of a subjective experience state, a few things may happen next. Illustrated in the following diagram.
 
-With that representation, a few things may happen next.
+![SES processing options](files/A-coherent-theory-v1-ses-processing-options.drawio.png)
 
-![diagram](files/diagram.png)
+* _**Options for consequent interpretation of a subjective experience state.** From an example subjective experience state representing "[I] [OBSERVE] [x]". Further thought stemming from the ses. Physical actions that report the existence of the SES. "Storage" to memory, particularly episodic memory. Discarding of the SES without any further processing._
 
-**More thought.** The subjective experience state may be further interpreted resulting in additional thought. For example, the wordless representation of "[I] [OBSERVING] [_x_]" may be turned into a verbal language representation "I am observing _x_" in the mind. Such further thought could also entail logical rationalisation about the fact that I am "aware" of what I observe, leading to more general statements about consciousness.
+**More thought.** The subjective experience state may be further interpreted resulting in additional thought. For example, the wordless representation of "[I] [OBSERVING] [_x_]" may be turned into a verbal language representation "I am observing _x_" in the mind. Such further thought could also entail logical rationalisation about the fact that I am "aware" of what I observe, leading to more general statements about consciousness. Those more general statements could then be further acted upon, such as by constructing subject experience states about, producing physical action, or remembering them for later.
 
-**Physical action.** Alternatively, the subjective experience state may lead to physical action, such as a spoken report or some other physical action (eg: a thumbs up) that acknowledges awareness of observing _x_ [citation, recognition from non-verbal half of split brain patient].
+**Physical action.** The subjective experience state may lead to physical action, such as a spoken report or some other physical action (eg: a thumbs up) that acknowledges awareness of observing _x_ [citation, recognition from non-verbal half of split brain patient].
 
-**Episodic memory.** The subjective experience state may be merely remembered before attention switches to something else. Later, that same subjective experience state (or some approximation thereof [citation, recall is reconstructed]) may be recalled and further processed. Such further processing could be in the form of more thought or physical action.
+**Episodic memory.** The subjective experience state may be merely remembered before attention switches to something else. Later, that same subjective experience state (or some approximation thereof [citation, recall is reconstructed]) may be recalled and further processed. Such further processing could be in the form of more thought or physical action, both of which may be further remembered and recalled.
 
+**Forgotten.** The subjective experience state may be simply discarded, with no further processing, nor memorisation of its existence.
 
+_todo: finish by framing this as a train of thought, that cycles for as long as it does, and that's the extent of subjective experience of x. Perhaps make brief reference to memory for later continuation, but try to avoid going into the whole question of memory creating the impression of past SE_
 
+# V.3a The Properties of Subjective Experience
+=> Show that this theory works because it explains these properties.
+- apparency of a homonculous
+- visceral
+	- why does it feel so real? why does its presentation consume all expanses of our attention.
+- appears as a stream and always on
+	- -> quite likely will need to pull in that prediction about whether SE is truly continuous or not
+- what's available, what's not.
 
+## Does it exist?
+The subjective experience state is not itself subjective experience. It is merely the content of the experience: a statement that the individual has observed whatever is the topic of the so called subjective experience.
 
-....
-.
-.
-.
-.
-..
+The processing that follows is also not itself subjective experience. It is merely the interpretation of the representation, which has as its output another representation. In the brain, that interpretation occurs through the action of millions of individual neurons. There is no place to pinpoint as the thing that has subjective experience.
 
-And then what?
-A: train of thought
-    - duration
-    - memory: as proof
-    
-    
-# V.2c Construction sequences for subjective experience
+There is also no time to pinpoint as the moment of subjective experience. At any given moment in time, the only thing that exists of subjective experience is a representation that subjective experience occurred plus the in-flight action of millions of individual computational units interpreting that representation.
+
+The only evidence we have for the supposed existence of subjective experience is the actions that follow from the above: further thought plus further representations of subjective experience, external actions such as verbal report with regard to our observations, and the subsequently processed memories of the former two.
+
+## Apparency of "always on" subjective experience
+- example of driving/walking with no memory of it
+- Q: are we always SE for the rest of the time?
+- What about when we are lost in thought about a hard problem, are we SE at the time, or is it constructed after the fact when we reflect back on it?
+
 Subjective experience states and associated interpretations may occur in a number of different scenarios, and such states may be constructed through a number of different sequences of events. By examining this, we may be able to form some accurate statements about whether subjective experience can be said to be "always on".
 
 Let us start by considering some initial topic _x_ that has no representation of subjective experience. For example the textured apple on a table from above.
 
 From a processor state representing _x_ a number of things may occur next, illustrated in the following diagram.
 
-![diagram](files/diagram.png)
+![x processing options](files/A-coherent-theory-v1-x-processing-options.drawio.png)
+
+* _**Options for consequent interpretation of a representation of x.** Further thought stemming from x. Physical actions that relate to x in some way. "Storage" to memory, particularly episodic memory. Discarding of x before it has been "stored" to memory._
 
 **More thought.** The representation _x_ may immediately be further processed (interpreted) in some way that produces new representations. Perhaps this results in further representations about different aspects of _x_ ("that apple looks tasty"), or a deeper analysis of _x_ in relation to the individual ("I saw that apple yesterday"). Such thought might gradually or rapidly "wander" from _x_ to something else entirely. It might also involve converting the form of the representation or "enacting" it within the mind, for example as verbal language in the mind.
 
@@ -1020,16 +1031,7 @@ A subjective experience state about _x_ does not need to be constructed at the t
 
 **Forgotten.** Attention may suddenly shift before _x_ has had time to be "stored" into episodic memory, and it is forgotten. For some _x_ that has the potential of leading to a subjective experience state, if it is entirely discarded before being "stored", there may be no evidence available for the absence of the ability to recall that event. So it is entirely possible that there are many moments in our life for which we never have subjective experience. Whether this kind of forgetting without evidence actually occurs in humans, and to what extent it occurs, may not be easy to measure.
 
-
-# V.3a The Properties of Subjective Experience
-=> Show that this theory works because it explains these properties.
-- apparency of a homonculous
-- visceral
-	- why does it feel so real? why does its presentation consume all expanses of our attention.
-- appears as a stream and always on
-	- -> quite likely will need to pull in that prediction about whether SE is truly continuous or not
-- what's available, what's not.
-
+- also, computationally no reason why the brain would waste resources constructing a representation unless it is needed, and there would not seem to be a reason to construct an SES unless there is intent to further process it in some way such as in the above.
     
 # V.3b A Worked Example
 
