@@ -945,19 +945,40 @@ Subjective experience does not just happen. I hold that, together with circular 
 
 First, you need a topic. We can have subjective experience of anything that we are capable of representing within our computational system. We can stand at the top of a mountain, staring out wordlessly in awe of the beautiful scene before us, and having no apparent thoughts save for a general sense of wonderment. We can loose ourself in the narration of a good book, with words and pictures, sounds, and even smells flowing through our mind like an excitable babbling river. We can examine our past actions and thoughts, searching for the source of a disagreement with a loved one. We can talk to ourselves "in our head", having lengthy and detailed arguments and disagreements with ourselves. At any time during any of those moments we can catch ourselves and ask the question "do I have subjective experience of this moment?" and we will surely acknowledge in the affirmative. Likewise at any time later we can think back to those moments and claim that we were aware of the event at the time and so had subjective experience of it. And, while having such thoughts about our own thoughts, we can catch ourselves and ask the same question: "do I have subjective experience of this moment?". Any of these suffice for a topic that can become part of the subjective experience state.
 
+Note that I am not questioning the truth of statements like "yes, I had subjective experience at the time", merely that most individuals would reach that conclusion. The question of accuracy of such statements will be addressed a little later.
+
 So the first step is that the brain generates a representation of some topic that itself does need to have anything to do with subjective experience. Let's call it _x_. If it helps, I find a good grounding example to be the representational state obtained when I look at an apple on the table and merely notice some particular attribute of the texture of the skin of the apple, with no other specific thought beyond that. So _x_ is, for example, "apple with odd shaped mark, on table". While that could be represented in the form of worded thoughts in the mind, it does not have to be; and I find it best to avoid the temptation to assume an explicit visual or language representation. For those familiar with AI, a good concrete example is obtained from contemporary use of deep networks against images. A sample taken of the data passing through a layer at about 1/3 towards the output-most layer yields a representation of high-level features [citation]. Importantly, there is no simple mapping of the location of a feature within the data structure to any location (or locations) in the original image [citation].
 
-Skipping a few steps and jumping towards the end, the subjective experience state that the brain constructs is a (non-language) representation of this:
-* "I am observing _x_".
+Skipping a few steps and jumping towards the end, the brain constructs a subjective experience state about that topic. The subjective experience state is a (non-language) representation of this:
+* "[I] [OBSERVING] [_x_]".
 
 The "I" here captures a few things, constructed from the schema and meaning attachment processes described above:
-* it is a statement (in a figurative sense) of location - ie: the place where the observation is occurring is within the bounds of my body
-* it is a statement of identity - ie: the thing doing the observing is me; it is not some other individual
-* it is a statement of source - ie: the observation came from "my" senses
+* It is a statement (in a figurative sense) of location - ie: the place where the observation is occurring is within the bounds of my body.
+* It is a statement of identity - ie: the thing doing the observing is me; it is not some other individual.
+* It is a statement of source - ie: the observation came from "my" senses.
 
-The representation of "having an observation" is important too. It is not just a statement that _x_ "is". It is an acknowledgement of a relationship: a relationship between _x_ and something else - in this case "I". It is also a statement about action, the act of observation, but I suspect the relationship quality has greater significance. I also do not think this to be some mere play on language, where we take our culturally acquired conceptual baggage and hold it against a word (here the word "observe" or "observation") in order to grant it more meaning than is appropriate for the context in which it is used. On the contrary, I suspect the existence of the word "observe" is an attempt at identifying a phenomenon that is the product of our brain structure and the self-referential representation that it produces - the very representation that I am attempting to identify here.
+At this stage, this is not a worded "I" as in the form of worded thoughts. It is more of a raw feeling, a knowing.
 
+The representation of "observing" is important too. It is not just a statement that _x_ "is". Rather:
+* It is an acknowledgement that a relationship is present: a relationship between _x_ and something else (in this case "I").
+* It is a statement that the relationship is an action that has occurred: the act of observation.
 
+This may sound like some mere play on language, where we take our culturally acquired conceptual baggage and hold it against a word (here the word "observing") in order to grant it more meaning than is appropriate for the context in which it is used. On the contrary, I suspect the existence of the word "observing" is a cultural attempt (a reverse engineering of sorts) at identifying and labelling a phenomenon that exists, and that this phenomenon is the product of our brain structure and the self-referential representation that it produces - the very representation that I am attempting to identify here.
+
+[citation: there are theories that language affects how we think, there must also be theories that language is a reverse engineered labelling of phenomenon we observe about ourselves]
+
+# V.3 The subsequent processing of a Subjective Experience State
+_todo: this text would be better either i) at the end of this section, ii) within the first chapter of this part, or iii)  within some later summary chapter. The subjective experience state is not itself subjective experience; it is merely the content of the experience. Indeed, there is no single place or point in time where subjective experience occurs. This is true when talking about a functional description of brain processing, and it is true when examining the biological structure of the brain. There is only a state that represents that subjective experience has occurred, and there is action as a result of that state._
+
+With that representation, a few things may happen next.
+
+![diagram](files/diagram.png)
+
+**More thought.** The subjective experience state may be further interpreted resulting in additional thought. For example, the wordless representation of "[I] [OBSERVING] [_x_]" may be turned into a verbal language representation "I am observing _x_" in the mind. Such further thought could also entail logical rationalisation about the fact that I am "aware" of what I observe, leading to more general statements about consciousness.
+
+**Physical action.** Alternatively, the subjective experience state may lead to physical action, such as a spoken report or some other physical action (eg: a thumbs up) that acknowledges awareness of observing _x_ [citation, recognition from non-verbal half of split brain patient].
+
+**Episodic memory.** The subjective experience state may be merely remembered before attention switches to something else. Later, that same subjective experience state (or some approximation thereof [citation, recall is reconstructed]) may be recalled and further processed. Such further processing could be in the form of more thought or physical action.
 
 
 
