@@ -939,7 +939,42 @@ This part explores that core thesis in detail. It starts by summarising subjecti
 	- attention
 	- cycle, with lack of attenuation
 		- topic attenuation avoidance
-        
+
+# V.2 The Construction of the Subjective Experience State
+Subjective experience does not just happen. I hold that, together with circular processing, subject experience is a computational state that represents the presence of subjective experience, a _subjective experience state_. That computational state doesn't just happen either. It must be constructed. And it takes a few steps to get there.
+
+First, you need a topic. We can have subjective experience of anything that we are capable of representing within our computational system. We can stand at the top of a mountain, staring out wordlessly in awe of the beautiful scene before us, and having no apparent thoughts save for a general sense of wonderment. We can loose ourself in the narration of a good book, with words and pictures, sounds, and even smells flowing through our mind like an excitable babbling river. We can examine our past actions and thoughts, searching for the source of a disagreement with a loved one. We can talk to ourselves "in our head", having lengthy and detailed arguments and disagreements with ourselves. At any time during any of those moments we can catch ourselves and ask the question "do I have subjective experience of this moment?" and we will surely acknowledge in the affirmative. Likewise at any time later we can think back to those moments and claim that we were aware of the event at the time and so had subjective experience of it. And, while having such thoughts about our own thoughts, we can catch ourselves and ask the same question: "do I have subjective experience of this moment?". Any of these suffice for a topic that can become part of the subjective experience state.
+
+So the first step is that the brain generates a representation of some topic that itself does need to have anything to do with subjective experience. Let's call it _x_. If it helps, I find a good grounding example to be the representational state obtained when I look at an apple on the table and merely notice some particular attribute of the texture of the skin of the apple, with no other specific thought beyond that. So _x_ is, for example, "apple with odd shaped mark, on table". While that could be represented in the form of worded thoughts in the mind, it does not have to be; and I find it best to avoid the temptation to assume an explicit visual or language representation. For those familiar with AI, a good concrete example is obtained from contemporary use of deep networks against images. A sample taken of the data passing through a layer at about 1/3 towards the output-most layer yields a representation of high-level features [citation]. Importantly, there is no simple mapping of the location of a feature within the data structure to any location (or locations) in the original image [citation].
+
+Skipping a few steps and jumping towards the end, the subjective experience state that the brain constructs is a (non-language) representation of this:
+* "I am observing _x_".
+
+The "I" here captures a few things, constructed from the schema and meaning attachment processes described above:
+* it is a statement (in a figurative sense) of location - ie: the place where the observation is occurring is within the bounds of my body
+* it is a statement of identity - ie: the thing doing the observing is me; it is not some other individual
+* it is a statement of source - ie: the observation came from "my" senses
+
+The representation of "having an observation" is important too. It is not just a statement that _x_ "is". It is an acknowledgement of a relationship: a relationship between _x_ and something else - in this case "I". It is also a statement about action, the act of observation, but I suspect the relationship quality has greater significance. I also do not think this to be some mere play on language, where we take our culturally acquired conceptual baggage and hold it against a word (here the word "observe" or "observation") in order to grant it more meaning than is appropriate for the context in which it is used. On the contrary, I suspect the existence of the word "observe" is an attempt at identifying a phenomenon that is the product of our brain structure and the self-referential representation that it produces - the very representation that I am attempting to identify here.
+
+
+
+
+
+
+
+....
+.
+.
+.
+.
+..
+
+And then what?
+A: train of thought
+    - duration
+    - memory: as proof
+
 # V.2 The Properties of Subjective Experience
 => Show that this theory works because it explains these properties.
 - apparency of a homonculous
