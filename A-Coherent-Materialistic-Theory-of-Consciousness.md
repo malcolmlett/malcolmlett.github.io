@@ -925,6 +925,8 @@ This part explores that core thesis in detail. It starts by summarising subjecti
 	- Reminder: the core reason-for-being of this paper is to explain the mechanisms of subjective experience in humans. So don't worry about the bigger more general picture yet. Just pull this all together and show how SE occurs in humans.
     
     
+The following presents a _functional_ description of the major components involved in the construction of subjective experience within humans:
+    
 ![architecture of human subjective experience](files/A-coherent-theory-v1-solution-human-architecture.drawio.png)
 
 * _**Components of subjective experience in humans**. Habitual, rational, and innate control processes receive sensory input about the state of the body and the environment and produce body actions that effect change against the state of the body and environment. Control processes retain state, enabling multi-iteration processing. The current and recent trajectory of control process state (CP state) is captured and a dimensionality reduced high-level representation is made available as an additional sense to the control processes via the meta-management feedback loop. Environment, body, and cognitive schemas attach additional contextual and meaning information to sensory input, for example providing source labelling to the control processes. Emotions/feelings add an extra level of "importance" to some information. Attentional control mechanisms "choose" which sensory information is attended to._
@@ -939,6 +941,11 @@ This part explores that core thesis in detail. It starts by summarising subjecti
 	- attention
 	- cycle, with lack of attenuation
 		- topic attenuation avoidance
+        
+        
+It is important to also clarify what the above description is _not_. As a functional description, it makes no claims about the specific neurological pathways or components involved.....
+
+The meta-management feedback loop may follow a single neurological pathway, forming a single integrated representation, in the style of a _cartesian theatre_ [citation]. Alternatively, it may simple be many independent feedbacks, in the style of Dennetian _multiple-drafts_. Personally, I tend to suspect that it collects from the state of multiple independent regions of the brain but collates that into a single unified representation that is then fed into multiple other regions, more or less like a cartesian theatre. Perhaps, as Dennet claims, this is a lack of my imagination [citation]. Equally possible, despite claiming to use a single line in my diagram as a functional representation independent of any particular neurological physical implementation, is that my own thinking about this question is _framed_ by the image of the diagram, restricting my imagine as Dennet also pointed out [footnote, pg ##].
 
 # V.2a Subjective Experience State
 Subjective experience does not just happen. I hold that, together with circular processing, subject experience is a computational state that represents the presence of subjective experience, a _subjective experience state_. That computational state doesn't just happen either. It must be constructed. And it takes a few steps to get there.
