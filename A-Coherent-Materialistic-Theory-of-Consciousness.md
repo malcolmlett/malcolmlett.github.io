@@ -826,14 +826,42 @@ The claim so far is that the meta-management feedback loop generates a (high-lev
 
 This description begins to mimic what we'd expect of the basis for subjective experience: it provides a self-referential observation, along with a choice about simply observing or reacting so that observation. But the meta-management process only has a few basic things going on: capturing of data, generation of a representation of that data, processing of that representation, and generation of actions in response to that representation. Which of those could possibly produce subjective experience?
 
-The answer is that it's all of those basic steps, taken together, and repeated over and over. But to explain that clearly we need the right language to talk about it. The language that will help us is that of _semiotics_: the study of symbols and their interpretations.
+The answer is that it's all of those basic steps, taken together, and repeated over and over. But to explain that clearly we need the right language to talk about it. The language that will help us is that of _semiotics_: the study of signs and their interpretations.
 
 ## Objects, Representations, and Interpretations
 ..todo..intro to semiotics, including different classes of representation.
+Semiotics studies signs, meaning making, and the processes involving them. There are different formulations but the one that we shall use is through the triad of _Objects_, _Representations_, and _Interpretations_.
+
+**Representation.** Also known as a _signifier_, _representamen_, _sign-vehicle_, and just _sign_. A representation is anything that does or could communicate meaning through some aspect of its presentation. It can be of any form, eg: visual, auditory, tactile, electrical, or as some kind of virtualised information. Three forms of representation are typically identified. _Icons_ share some important quality with the object that they represent, such as by bearing a direct resemblance to that object. For example a cartoon picture of a lion represents an actual lion. _Indices_ share some linkage of fact with the object, such as through a causal relation. Smoke represents fire because fire causes smoke. Unlike the first two, _Symbols_ have no natural relation to the object that they represent. Rather, symbols represent their objects through conventional or cultural knowledge. For example, in phonetic languages (and semi-phonetic languages such as English) written characters represent the sounds they make, not because there is any resemblance in the way that the characters look to the way they sound or because the shape of the characters are somehow caused by their sounds, but because we've all agreed to the convention that these characters make those sounds.
+
+**Objects.** Also known as the _referent_, the object is the underlying thing or concept being represented. For example, the lion, the fire, the sounds that written characters make. It may be some simple physical thing, or be a deep and broad meaning. The object typically has far greater detail and nuance than is ever captured by a representation of it. A cartoon image of a lion captures only a superficial resemblance to the outward appearance of a real lion, omitting all of its internal biological structure, its behaviour, and the fear induced in someone who hears it roar. The varieties of intentions behind the single spoken word "happiness" far exceed  the informational qualities of the sound waves that represent it to the listener. Indeed, in many cases the purpose of a representation is that it indicates the object without consuming the same physical and informational resources as the object it represents. How short our life would be if we needed to explain to a friend that a lion is approaching by explaining in minute detail every molecular property of all the cells in the near (and approaching) vicinity.
+
+**Interpretation.** The interpretation or _interpretant_ is the meaning obtained through the act of interpreting or translating that representation. In some cases the representation exists with the intent to convey the original object as the interpretation. For example, a stop sign on the road is a representation erected with the intent to be interpreted to convey the concept of the original object: all of the traffic rules around stopping at stop signs in order to prevent accidents. In other cases the object and interpretation are different. This is particularly the case for physical objects. For example, the interpretation of smoke is that a fire is present, it does not clone the original fire within the mind of the person seeing the smoke.
+
+A few points are worth drawing out.
+
+If the object is a detailed and nuanced entity with high physical and informational bandwidth, and the representation is a bandwidth bottleneck, the interpretation can be viewed as an up-scaling of bandwidth through re-construction. However, an accurate reconstruction is not always possible.
+
+The construction of an interpretation requires an interpreter....
+
+The object is often unknown....
 
 A single object may have different representations - eg: stop sign in red or yellow.
 
+Semiotics provides a tool for understanding meaning-interpretation processes in different domains, regardless of whether those domains include obvious signs. Today semiotics is used in many fields, either explicitly or implicitly. It can be said that medical diagnosis is the act of interpreting a sign (the symptoms) in order to identify (diagnose) the original object (the underlying condition) (Burnum, 1993; Nessa 1996). It is used extensively in marketing to understand what meanings people are likely to add to different messaging (Borţun & Purcarea, 2013).
+
+The study of Semiotics has a long history, but it's modern structure is most commonly traced to the works of Ferdinand de Saussure and Charles Sanders Peirce. Peirce was the first to introduce it via its triadic formulation. It is informative to note that in Peirce's earlier works he was focused on semiotics as the process underlying cognition (Peirce, 1982, vol 2, pg 56, 213). To that end, Peirce supported an idea of _infinite-semiosis_ within the mind: representations being interpreted, producing new representations that need to be further interpreted, and so forth. This is convenient, as it is an idea that we shall shortly turn to.
+
 _todo: in the context of a complex system such as cognitive processing, semiotics is a tool that can be applied at whichever level is appropriate for our needs. For example ..............._
+
+
+
+References:
+* Borţun, D., & Purcarea, V. L. (2013). Marketing and semiotic approach on communication. Consequences on knowledge of target-audiences. Journal of medicine and life, 6(1), 103–108.
+* Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of internal medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
+* Nessa J. (1996). About signs and symptoms: can semiotics expand the view of clinical medicine?. Theoretical medicine, 17(4), 363–377. https://doi.org/10.1007/BF00489681
+* Peirce (1982-). The Writings of Charles S. Peirce: A Chronological Edition. Volumes 1–6. And 8. Eds. Peirce Edition Project. Bloomington I.N: Indiana University Press.
+
 
 ## Examples of Semiotics
 Example: stop sign - object is all the aspects of the local road rules and the reasons why they exist to avoid accidents and ensure a smooth flow of traffic. Representation is a stop sign, simple, designed to be easy to identify from a difference. Interpretation is a recollection of all of those related road rules providing the rationale for why an action is required, plus observation about the current context, and a realisation of the need to put foot to brake at just the right rate at just the right timing so that the car comes to a stop at the line.
@@ -842,9 +870,11 @@ Example: stop sign - object is all the aspects of the local road rules and the r
 
 Example: language - extend the point of how the object can be significantly more nuanced and deep than the representation, but that the interpretation can be fairly close to the original object.
 
-A semiotic process doesn't have to stop at one iteration. A semiotic loop [todo, is this an official term?] can keep iterating, with the interpretation becoming the object of the next.
+A semiotic process doesn't have to stop at one iteration. A semiotic loop [todo, is this an official term?...infinite semiosis] can keep iterating, with the interpretation becoming the object of the next.
 
 Example: DNA as a semiotic loop.
+
+...Things get a little more nuanced when you start to look at the computational processes underlying interpretation....
 
 Example: In the human context, an example of the semiotic process is in how the body gathers and interprets information about the environment. The environment is the _object_, and its true state is what the individual hopes to attain knowledge of. But the individual will never gain such knowledge as they do not directly perceive the environmental state. Signals obtained from the classic five senses of sight, sound, smell, touch, taste _represent_ the environment. That collective representation captures only a narrow and shallow aspect of the true state of the environment: for example that our visual sense only reports on a small field of view at any given time, and that too only about the external surface of whatever thing is being looked at. Finally, the network of neurons within the visual context, .....todo: etc....., _interpret_ the state of the environment from those representations. 
 
