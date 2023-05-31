@@ -83,6 +83,7 @@ To provide some uniformity, the explanatory framework of a stack of theoretical 
 >
 > Reference: https://www.britannica.com/topic/philosophy-of-mind/Qualitative-states#ref283995
 
+## A point of Central Unification?
 One particular area of debate falls variously under the terms "Cartesian theatre" or "homunculus problem". The Cartesian Theatre ..introduced by ....describes the interactions between supposedly two parts of the mind: the part that has subjective experience (the audience in the theatre), and the part that produces the contents of subjective experience (the actors in the theatre). This has also been described as a "homunculus" or "little man" inside the brain that has the experiences. Both descriptions pose a problem: that the audience/homonculus requires a significant level of intelligence in order to interpret and understand the show being put on; but that same intelligence is required to produce the show in the first place. In the case of homunculus, we can provide two descriptions w.r.t. to the layers described above. In the first description, the non-conscious processes produce a representation that is perceived by the homunculus. Here the problem becomes what mechanisms the homunculus uses to do that perceiving? In the second description, the representation is sufficiently processed by functional structures so that no further processing is required, and that final result is simply perceived-without-processing. In practice this raises more questions than it seeks to address. What kind of thing is it that can perceive-without-processing? In response, the theory of semiotics (discussed in a section below) claims that it is impossible for such a thing to exist, because there is no perception without interpretation, and interpretation necessarily involves processing.
 
 _todo: references and more details from:_
@@ -93,6 +94,12 @@ _todo: references and more details from:_
 - For later: semiotics explains this as being one and the same system.
 
 Ned Block and various other's variations propose that consciousness is divided into access consciousness and phenomenal consciousness, and that access-consciousness variously stops somewhere below the "something special" layer, with various arguments about where it stops. Such arguments down to differences in opinion about the relation between access and phenomenal consciousness: i) are they one-to-one: all access conscious events have phenomenal consciousness, ii) can some access conscious events lead to external behaviour without the individual having subjective experience?, or iii) can some phenomenal conscious events occur that have no access consciousness: for example that the individual experiences in the moment but cannot have any memory of it and cannot report on it.
+
+Others offer alternative ideas focused on how multiple streams of processing become "unified":
+* Winkielman P, Ziembowicz M and Nowak A (2015) The coherent and fluent mind: how unified consciousness is constructed from cross-modal inputs via integrated processing experiences. Front. Psychol. 6:83. doi: 10.3389/fpsyg.2015.00083
+* von der Malsburg, C. (1997). The coherence definition of consciousness. In M. Ito, Y. Miyashita, & E. T. Rolls (Eds.), Cognition, computation, and consciousness (pp. 193–204). Oxford University Press. https://doi.org/10.1037/10247-013
+* von der Malsburg, Christoph (1997) The Coherence Definition of Consciousness. [Book Chapter]
+* keywords: coherent theory of consciousness, coherence theory
 
 # I.4 Background - Biology and Neuroscience 
 
