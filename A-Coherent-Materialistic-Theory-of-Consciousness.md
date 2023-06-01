@@ -812,16 +812,6 @@ As mentioned earlier, to represent the state held by every neuron within the con
 
 
 # IV.5 Semiotics
-_todo_: don't worry about wrapping up overall architecture. Almost just do a background interlude on semiotics, but with focus on its relation to meta-management. Then let next part pull it all together.
-
-_todo_:
-* background of semiotics
-* what semiotics tells us about the architecture of standard control -> no self-interpretation loop
-* what semiotics tells us about the meta-management architecture -> self-interpretation loop
-
-_todo_: actually the key most important point of the reference to semiotics is that a representation on its own does not create anything and certainly not experience. It needs an interpreter to make sense of the representation. And then, for that interpreter's output to make sense to anything, it needs to be re-interpreted.
-
-
 The claim so far is that the meta-management feedback loop generates a (high-level, and filtered) representation of the state of the goings on within the brain. That representation is then available for processing, which may produce some computational actions as part of meta-management. Assuming an inline meta-management architecture, a logical extension is that the outcome of that meta-management processing result in new state that is subsequently captured by the meta-management feedback loop and fed back as a new representation.
 
 This description begins to mimic what we'd expect of the basis for subjective experience: it provides a self-referential observation, along with a choice about simply observing or reacting so that observation. But the meta-management process only has a few basic things going on: capturing of data, generation of a representation of that data, processing of that representation, and generation of actions in response to that representation. Which of those could possibly produce subjective experience?
@@ -862,7 +852,7 @@ The examples mentioned above describe single iterations of a semiotic process: a
 
 Infinite-semiosis is the continued execution of the semiotic process, with the interpretation itself becoming an object that must be represented and further interpreted. Infinite-semiosis is not necessarily infinite in an absolute sense, and in practice never can be, but that the process is in principle capable of continuing "for a long time" before it breaks down in some way.
 
-A fascinating and informative example comes in the form of the life sustaining processes surrounding DNA replication.....
+_todo_: A fascinating and informative example comes in the form of the life sustaining processes surrounding DNA replication.....
 ...Lessons:
 * interpretation doesn't require a "cognitive entity"
 * representation is nothing without interpretation, the interpreter is nothing without the representation.
@@ -877,14 +867,26 @@ Those millions of spike trains are not an end to themselves. Spike trains that w
 
 In order to respond to the environment, the individual interprets those spike trains by applying knowledge of the environment and of the individuals own body. The resultant interpretation: an action plan that is sent as further spike trains via effector nerves to muscles. Or perhaps the individual simply chooses to think more about the environment. Thus the semiotic process forms a repeating cycle of representation and interpretation, as illustrated below. This plays out in the communication between brain regions. It also plays out at the whole system level during multi-iteration processing.
 
-Importantly, spike train representations have the same informational bottleneck effect as discussed earlier. For example, if we consider some localised region of brain, whatever processing that occurs is through the activity of many layers involving hundreds or thousands of neurons. The activity of those neurons, and the synapses between them, is potentially impacted by dynamic static held within the neurons and synapses. In contrast, only a small subset of synapses convey messages to other regions of the brain. Whatever region receives those messages re-constructs meaning through the addition of its own knowledge. That knowledge is inherent through its structure and the learning processes that have tuned it throughout the individuals lifetime.
+Importantly, spike train representations have the same informational bottleneck effect as discussed earlier. For example, if we consider some localised region of brain, whatever processing that occurs is through the activity of many layers involving hundreds or thousands of neurons. The activity of those neurons, and the synapses between them, is potentially impacted by dynamic static held within the neurons and synapses. In contrast, only a small subset of synapses convey messages to other regions of the brain. Whatever region receives those messages re-constructs meaning through the addition of its own knowledge - knowledge that is inherent through its structure and the learning processes that have tuned it throughout the individuals lifetime.
 
 ![cognitive semiotics](files/Paper-on-Loops-in-AI-and-Consciousness-brain-semiotics.jpg)
 
+One question arises. Where is the object in such cyclic semiotic processes? From a computational point of view, the question is not an interesting one as the processes will continue to function regardless of how we understand them - after all, semiotics is just a tool for analysis, rather than a statement about how the world must be. But perhaps from a philosophical perspective we may gain some extra insight, or at the least another reference point for further discussion. From the outside world we have the example of a real physical lion, a cartoon image representing it, and the mental concept created in the mind of the interpreter upon seeing the cartoon image. The object, the lion, is a thing that exists and has a reality extending through time. In a multi-iteration cognitive semiotic process, the object of the next iteration is the interpretation of the current interpretation. But even the interpretation seems nebulous.
+
+The discussion one paragraph before gives the example of a brain region producing a spike train representation that it supplies through its synaptic connection to other brain regions. That is a representation of its interpretation. Where is the interpretation? The interpretation never exists. At least, it never exists as a single whole entity with all its component parts being present at the same time. Rather, as the individual neurons fire, performing their individual proto-computations, they construct individually some small part of the whole interpretation and then immediately forget it. The immediately next neurons pick up from there and construct, individually again, other small parts of the whole interpretation. At the same time, each synaptic connection between individual neurons supplies only a spike-train representation, as part of a semiotic process at a finer level of granularity. By the time that the wave of neural activity reaches the edge of our arbitrarily chosen brain region, only the finer-grained representation of the final outgoing synaptic connections exist.
+
+So, in computational infinite-semiosis, objects are past interpretations, but interpretations are nebulous and exist only as the sequence of activities spanning many neurons over a course of time. And representations are no better - they exist only as a sequence of electrical spikes, spanning many synapses, over a period of time. More brutally, in computational infinite-semiosis, at any given instantaneous moment in time, nothing ever exists in its complete form except the interpreters, with their background (learned) knowledge ready to be applied as representations pass transiently through them.
+
 ## Semiotic Analysis of Control Processes
+_todo_:
+* what semiotics tells us about the architecture of standard control -> no self-interpretation loop
+* what semiotics tells us about the meta-management architecture -> self-interpretation loop
+
 _..todo..would it work better just calling these examples?.._
 
-Let us analyse control processes and their meta-management in terms of semiotics. First I must recognise that the distinction I have made between control process and meta-management is now somewhat arbitrary. I can't do justice to a full rectification just yet and so will not attempt it. I will simply note that here it is useful to split meta-management into a short-term form focussed on the immediate task, and a longer-term meta-learning form. As such, we shall now analyse three forms of processing, recognising that this doesn't cover all forms of processing in the brain:
+I shall now return to the question of control processes and meta-management, by examining them in terms of semiotics. 
+
+First I must recognise that the distinction I have made between control process and meta-management is now somewhat arbitrary. I can't do justice to a full rectification just yet and so will not attempt it. I will simply note that here it is useful to split meta-management into a short-term form focussed on the immediate task, and a longer-term meta-learning form. As such, we shall now analyse three forms of processing, recognising that this doesn't cover all forms of processing in the brain:
 * standard control
 * task-focused CP state trajectory control
 * meta-learning
