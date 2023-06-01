@@ -829,7 +829,6 @@ This description begins to mimic what we'd expect of the basis for subjective ex
 The answer is that it's all of those basic steps, taken together, and repeated over and over. But to explain that clearly we need the right language to talk about it. The language that will help us is that of _semiotics_: the study of signs and their interpretations.
 
 ## Objects, Representations, and Interpretations
-..todo..intro to semiotics, including different classes of representation.
 Semiotics studies signs, meaning making, and the processes involving them. There are different formulations but the one that we shall use is through the triad of _Objects_, _Representations_, and _Interpretations_.
 
 **Representation.** Also known as a _signifier_, _representamen_, _sign-vehicle_, and just _sign_. A representation is anything that does or could communicate meaning through some aspect of its presentation. It can be of any form, eg: visual, auditory, tactile, electrical, or as some kind of virtualised information. Three forms of representation are typically identified. _Icons_ share some important quality with the object that they represent, such as by bearing a direct resemblance to that object. For example a cartoon picture of a lion represents an actual lion. _Indices_ share some linkage of fact with the object, such as through a causal relation. Smoke represents fire because fire causes smoke. Unlike the first two, _Symbols_ have no natural relation to the object that they represent. Rather, symbols represent their objects through conventional or cultural knowledge. For example, in phonetic languages (and semi-phonetic languages such as English) written characters represent the sounds they make, not because there is any resemblance in the way that the characters look to the way they sound or because the shape of the characters are somehow caused by their sounds, but because we've all agreed to the convention that these characters make those sounds.
@@ -858,14 +857,8 @@ Semiotics provides a tool for understanding meaning-interpretation processes in 
 
 The study of Semiotics has a long history, but it's modern structure is most commonly traced to the works of Ferdinand de Saussure and Charles Sanders Peirce. Peirce was the first to introduce it via its triadic formulation. It is informative to note that in Peirce's earlier works he was focused on semiotics as the process underlying cognition (Peirce, 1982, vol 2, pg 56, 213). To that end, Peirce supported an idea of _infinite-semiosis_ within the mind: representations being interpreted, producing new representations that need to be further interpreted, and so forth. This is convenient, as it is an idea to which we shall now turn.
 
-References:
-* Borţun, D., & Purcarea, V. L. (2013). Marketing and semiotic approach on communication. Consequences on knowledge of target-audiences. Journal of medicine and life, 6(1), 103–108.
-* Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of internal medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
-* Nessa J. (1996). About signs and symptoms: can semiotics expand the view of clinical medicine?. Theoretical medicine, 17(4), 363–377. https://doi.org/10.1007/BF00489681
-* Peirce (1982-). The Writings of Charles S. Peirce: A Chronological Edition. Volumes 1–6. And 8. Eds. Peirce Edition Project. Bloomington I.N: Indiana University Press.
-
 ## Infinite semiosis
-The examples mentioned above describe single iterations of a semiotic process: an object exists in some way, a representation of the object is presented, an interpreter constructs an interpretation based on the representation, which may or may not bear a strong relation to the original object.
+The examples mentioned above describe single iterations of a semiotic process: an object exists in some way, a representation of the object is presented, an interpreter constructs an interpretation based on the representation.
 
 Infinite-semiosis is the continued execution of the semiotic process, with the interpretation itself becoming an object that must be represented and further interpreted. Infinite-semiosis is not necessarily infinite in an absolute sense, and in practice never can be, but that the process is in principle capable of continuing "for a long time" before it breaks down in some way.
 
@@ -874,14 +867,17 @@ A fascinating and informative example comes in the form of the life sustaining p
 * interpretation doesn't require a "cognitive entity"
 * representation is nothing without interpretation, the interpreter is nothing without the representation.
 
-Things get a little more nuanced when you look at computational semiotic processes in connectionist paradigms.
-_todo: in the context of a complex system such as cognitive processing, semiotics is a tool that can be applied at whichever level is appropriate for our needs. For example ..............._
+Things get a little more nuanced when you look at computational semiotic processes in connectionist paradigms. When the entire brain is a massive multi-layered network involving many different kinds of processes, some of which talk to each other in some way, but all part of a single larger system, where are the boundaries of object, representation, and interpretation? One answer is that the brain involves many objects, representations and interpretations, layered in deep hierarchies. But more generally, the lesson is that semiotics is a tool. The concepts of object, representation and interpretation help us to understand processes as they occur, and we can apply the tool to whatever layer or part of the process that we need.
 
-Example: In the human context, an example of the semiotic process is in how the body gathers and interprets information about the environment. The environment is the _object_, and its true state is what the individual hopes to attain knowledge of. But the individual will never gain such knowledge as they do not directly perceive the environmental state. Signals obtained from the classic five senses of sight, sound, smell, touch, taste _represent_ the environment. That collective representation captures only a narrow and shallow aspect of the true state of the environment: for example that our visual sense only reports on a small field of view at any given time, and that too only about the external surface of whatever thing is being looked at. Finally, the network of neurons within the visual context, .....todo: etc....., _interpret_ the state of the environment from those representations. 
+As a first example of semiotics in the brain, consider how the body gathers and interprets information about the environment, illustrated in the diagram below. The environment is the _object_, and its true state is what the individual hopes to attain knowledge of. But the individual will never gain such knowledge as they do not directly perceive the environmental state. Signals obtained from the classic five senses of sight, sound, smell, touch, taste _represent_ the environment. That collective representation captures only a narrow and shallow aspect of the true state of the environment. For example, our visual sense only reports on a small field of view at any given time, and that too only about the external surface of whatever thing is being looked at. That representation is interpreted by the network of brain neurons, producing an inference about the state of the environment. What form does this inference take? Millions of _spike trains_ [citation] in some particular pattern of activity.
 
 ![sensory semiotics](files/Paper-on-Loops-in-AI-and-Consciousness-env-semiotics.jpg)
 
-...then, those interpretations are needed for further processing within the brain. Thus, they become the object, perhaps in combination with some underlying goal, and a representation of the interpretation is sent to some other system in the form of neural firings. That other system interprets the representation.
+Those millions of spike trains are not an end to themselves. Spike trains that went only to dead-end neurons would result in nothing happening. Spike trains are themselves just a representation, and thus must be interpreted.
+
+In order to respond to the environment, the individual interprets those spike trains by applying knowledge of the environment and of the individuals own body. The resultant interpretation: an action plan that is sent as further spike trains via effector nerves to muscles. Or perhaps the individual simply chooses to think more about the environment. Thus the semiotic process forms a repeating cycle of representation and interpretation, as illustrated below. This plays out in the communication between brain regions. It also plays out at the whole system level during multi-iteration processing.
+
+Importantly, spike train representations have the same informational bottleneck effect as discussed earlier. For example, if we consider some localised region of brain, whatever processing that occurs is through the activity of many layers involving hundreds or thousands of neurons. The activity of those neurons, and the synapses between them, is potentially impacted by dynamic static held within the neurons and synapses. In contrast, only a small subset of synapses convey messages to other regions of the brain. Whatever region receives those messages re-constructs meaning through the addition of its own knowledge. That knowledge is inherent through its structure and the learning processes that have tuned it throughout the individuals lifetime.
 
 ![cognitive semiotics](files/Paper-on-Loops-in-AI-and-Consciousness-brain-semiotics.jpg)
 
@@ -1208,3 +1204,11 @@ _todo_
 * Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation
     - https://arxiv.org/abs/1308.3432
     - 2013. Yoshua Bengio, Nicholas Léonard, Aaron Courville.
+    
+* Borţun, D., & Purcarea, V. L. (2013). Marketing and semiotic approach on communication. Consequences on knowledge of target-audiences. Journal of medicine and life, 6(1), 103–108.
+
+* Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of internal medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
+
+* Nessa J. (1996). About signs and symptoms: can semiotics expand the view of clinical medicine?. Theoretical medicine, 17(4), 363–377. https://doi.org/10.1007/BF00489681
+
+* Peirce (1982-). The Writings of Charles S. Peirce: A Chronological Edition. Volumes 1–6. And 8. Eds. Peirce Edition Project. Bloomington I.N: Indiana University Press.
