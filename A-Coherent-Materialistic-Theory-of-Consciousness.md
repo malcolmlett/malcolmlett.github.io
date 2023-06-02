@@ -945,10 +945,36 @@ There are a few key takeaways from the above that help us understand the similar
 	- Overlap in actions, but sub processes differ substantially
 
 ## Trains of Thought
-
 [citation, research investigations of how the necessary outcomes of a process lead to certain evolved input representations and representational capacities, thus limiting what can and cannot be captured as input]
 
-There is another key takeaway from the semiotic analysis above that needs a more thorough discussion. ...
+.._todo: do I need to be clearer that "pathways" can include both state, direct feedback, and MM feedback?_...
+
+There is another key takeaway from the semiotic analysis above that needs a more thorough discussion. This regards the kinds of thoughts that are possible.
+
+A common turn of phrase is to refer to a "train of thought". For example, when someone suddenly speaks to us after a period of silence we complain that they "broke our train of thought". There are two notions behind that statement. One is that thought progresses. For example when trying to solve a problem, thought progresses from problem to solution through a series of steps. Another notion refers to there being one particular basic grounding idea, or _topic_, being considered which is held onto for the duration of a period of thought. For example, the topic may be the underlying problem that one is attempting to solve. So that while thought shifts from step to step, and between different possible solutions, the topic remains the same for the duration of that sequence of thoughts. When our train of thought is "broken", our attentional focus shifts from that topic to some other, and we loose some of the details held as temporary state in the progression from problem to solution.
+
+For the discussion that follows, I shall define a _train of thought_ as the finite sequence of processing that occurs while a given topic is attended to, with that train of thought ending and another starting when the attended-to topic changes. A _topic_ is to defined intuitionally from the example given above. The definition here is somewhat vague but that is not important for the discussion to follow. More generally, we can say that a thought belongs to the same train of thought as before to the extent that the topic is similar to before.
+
+Now, given a computational system, and given some particular potential topic and associated train of thought, what is required for that train of thought to inhabit the computational system? Or in other words, is it even possible for the given computational system to produce such a train of thought, and what would be required in order to enable that?
+
+![diagram](files/diagram.png)
+
+* _**Semiotic cycle.** todo_
+
+Illustrated in the above figure, we have seen that all thought is the act of interpreting representations, producing more representations requiring interpretation, in an endless cycle. The questions around trains of thought translates to questions around the capacities of those representations and interpretations. By this I mean that a representation only captures a certain amount of information, about a certain thing. Something that is never represented is never available for interpretation. And a representation with a coarse granularity makes less information available to the intepreter than a fine-grained representation. Likewise, an interpreter can only produce interpretations (or rather, interpretational representations) according to its degree of computational complexity (ie: the number of neurons and synapses that make it up) and the learned knowledge available to it.
+
+Furthermore the question of capacities of those representations and interpretations comes down to their purposes. Despite many historical claims of evolution producing features without utility [citations], most have been eventually debunked [citations]. Thus we have a strong reason to believe that evolution would only produce representational and interpretational capacities that meet the needs of the individual. More specifically, evolution would only produce representational and interpretational capacities that increase the individual's likelihood of producing progeny that also go onto to produce more progeny.
+
+So, what kinds of trains of thought can be entertained by a given computational processing system? Those that provide utility according to the given system's function in maximising evolutionary survival.
+
+There are fascinating philosophical discussions that can stem from this idea, like asking what kinds of thought we have never had and will never have simply because our evolved structures are incapable of entertaining them [citation?]. But I am more interested in something a little more concrete.
+
+The first key message I wish to convey is simply the fact that representational and interpretational capacity is not arbitrarily large - it is finite, and tuned according to specific needs. Thus the trains of thought that are possible according to a given system are _constrained_ by that system.
+
+In our semiotic analysis of control and meta-management processes, we identified three examples where interpretational purposes were very different. Thus, viewed on their own, the multi-iteration pathways involving those interpretations very significantly in the potential trains of thought that they may entertain. Even when their capacities are combined in some way, the potential trains of thoughts are still constrained by the purpose-defined capacities of those components.
+
+Secondly, successive iterations of interpretation, representation, and re-interpretation will tend to _attenuate_ the train of thought down to the capacity of the least complex stage.
+
 
 * Representational capacity
 * topic -> train of thought
