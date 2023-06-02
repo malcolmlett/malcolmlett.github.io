@@ -938,6 +938,7 @@ There are a few key takeaways from the above that help us understand the similar
 
 
 ..todo.. still feels like it's got a bit of course. Need to get back to ultimate purpose of this section...why am I yakking about this?
+* Regarding object: in the sample case the object is the external world. But more realistic understanding is that the object is "what could and should be done to afford best results for the individual" (ie: the ground truth). And the representation & interpretation are all about drawing a best guess about that object. (This description is more inline with the Interface Theory of the human brain)
 
 - Takeaways
 	- Objects of focus differ
