@@ -1124,10 +1124,7 @@ A subjective experience state about _x_ does not need to be constructed at the t
 
 - also, computationally no reason why the brain would waste resources constructing a representation unless it is needed, and there would not seem to be a reason to construct an SES unless there is intent to further process it in some way such as in the above.
 
-# V.5 A Worked Example
-
-
-# V.6 Sufficient Conditions of Subjective Experience
+# V.5 Sufficient Conditions of Subjective Experience
 - setup:
 	- Describe as part of the process to define the necessary and sufficient conditions.
 	- Tononi's IIT outlines _necessary_ conditions.
@@ -1170,7 +1167,7 @@ Conditions necessary for the above to evolve in the first place
 	- limit on depth of brain network requiring evolution of iterative processing - ie: reached some point where it is more efficient to evolve iterative processing than to make the brain network deeper.
 	- 
 
-# V.7 Necessary and Sufficient Conditions of Subjective Experience
+# V.6 Necessary and Sufficient Conditions of Subjective Experience
 
 Here's a first attempt at defining the general conditions for subjective experience in any agent. Notice that many of the human-like features are missing here, implying that the quality of subjective experience comes in degrees.
 
