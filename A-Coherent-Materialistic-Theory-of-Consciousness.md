@@ -1020,7 +1020,7 @@ Memory enables past computational states to be recovered.
         
 Before proceeding further, it is important to briefly clarify what the above description is _not_. As a functional description, it makes no claims about the specific neurological pathways or components involved. For example, the meta-management feedback loop may follow a single neurological pathway, forming a single integrated representation, in the style of a _cartesian theatre_ [citation]. Alternatively, it may be the effect of many independent feedback pathways, for example in the style of Dennetian _multiple-drafts_ [citation]. The functional description presented is focused on the most significant processing underlying subject experience and thus omits a lot of other cognitive processes and even omits other connectivities between processes identified. For example, as identified in an earlier section, the emotions can be viewed as a meta-management process themselves and likely directly influence the behaviour of the identified control processes. I have also not attempted to capture in this illustration _how_ the control processes might perform their meta-management functions.
 
-# V.2a Subjective Experience State
+# V.2 Subjective Experience State
 I believe that the processes described above are entirely sufficient for the creation of all of our subjective experiences. These processes can be used to explain the specific nature of the content of subjective experience, and of the existence of subjective experience in the first place.
 
 Subjective experience does not "just happen" in some mystical way. It is a specific sequence of computational steps. I hold that, together with circular processing forming a train of thought, subject experience is a specific kind of computational state; a state that represents the presence of subjective experience, ie: a _subjective experience state_ (SES). That computational state doesn't just happen either. It must be constructed. And it takes a few steps to get there.
@@ -1051,7 +1051,7 @@ In order to construct this SES, the brain needed to invoke at least two key feat
 
 Secondly, the brain used its schemas and source labelling to identify that the action (the "observing") was performed by the individual. The same statements about modelling apply here. The brain does not require any form of spoken language to understand or represent the concept of "I" or that an action was performed by "I". It is a learned model of cause-effect relationships that associates the kinds of subsequent interactions that are possible.
 
-# V.2b Interpretation of Subjective Experience States
+# V.3 Interpretation of Subjective Experience States
 With a representation of SES, a few things may happen next. Illustrated in the following diagram.
 
 ![SES processing options](files/A-coherent-theory-v1-ses-processing-options.drawio.png)
@@ -1068,7 +1068,7 @@ With a representation of SES, a few things may happen next. Illustrated in the f
 
 The outcomes of all of the above entail the content of subjective experience. Most importantly, this includes the specific property of the content that claims "I am experiencing this". So this also explains the existence of subjective experience - that it is processing of a state that claims "I am experiencing this". And why should we such a state and associated processing occur? Because it is necessary for meta-management.
 
-# V.3a The Properties of Subjective Experience
+# V.4 The Properties of Subjective Experience
 => Show that this theory works because it explains these properties.
 - apparency of a homonculous
 - visceral
@@ -1117,10 +1117,10 @@ A subjective experience state about _x_ does not need to be constructed at the t
 
 - also, computationally no reason why the brain would waste resources constructing a representation unless it is needed, and there would not seem to be a reason to construct an SES unless there is intent to further process it in some way such as in the above.
     
-# V.3b A Worked Example
+# V.5 A Worked Example
 
 
-# V.4 Sufficient Conditions of Subjective Experience
+# V.6 Sufficient Conditions of Subjective Experience
 - setup:
 	- Describe as part of the process to define the necessary and sufficient conditions.
 	- Tononi's IIT outlines _necessary_ conditions.
@@ -1163,7 +1163,7 @@ Conditions necessary for the above to evolve in the first place
 	- limit on depth of brain network requiring evolution of iterative processing - ie: reached some point where it is more efficient to evolve iterative processing than to make the brain network deeper.
 	- 
 
-# V.5 Necessary and Sufficient Conditions of Subjective Experience
+# V.7 Necessary and Sufficient Conditions of Subjective Experience
 
 Here's a first attempt at defining the general conditions for subjective experience in any agent. Notice that many of the human-like features are missing here, implying that the quality of subjective experience comes in degrees.
 
