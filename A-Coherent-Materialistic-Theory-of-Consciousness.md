@@ -7,17 +7,19 @@ Abstract:
 
 Contents:
 
-* [Part I - Introduction](#part-i--introduction)
+[Part I - Introduction](#part-i--introduction)
 * [I.1 A Question of Consciousness](#i1-a-question-of-consciousness)
 * [I.2 Summary of Thesis](#i2-summary-of-thesis)
 * [I.3 Background - Theories of Consciousness](#i3-background--theories-of-consciousness)
   * [A point of Central Unification?](#a-point-of-central-unification)
 * [I.4 Background - Biology and Neuroscience ](#i4-background--biology-and-neuroscience-)
-* [Part II - Problems in Simple Synthetic Control Processes](#part-ii--problems-in-simple-synthetic-control-processes)
+
+[Part II - Problems in Simple Synthetic Control Processes](#part-ii--problems-in-simple-synthetic-control-processes)
 * [II.1 Interlude: Environment, Body, and Control Processes (first part)](#ii1-interlude-environment-body-and-control-processes-first-part)
 * [II.2 Complexity and the need for Processing Loops](#ii2-complexity-and-the-need-for-processing-loops)
 * [II.3 State Trajectories in a Multi-iteration Processor](#ii3-state-trajectories-in-a-multiiteration-processor)
-* [Part III - Problems in Complex Synthetic Control Processes](#part-iii--problems-in-complex-synthetic-control-processes)
+
+[Part III - Problems in Complex Synthetic Control Processes](#part-iii--problems-in-complex-synthetic-control-processes)
 * [III.1 Meta-management in Deliberative Systems](#iii1-metamanagement-in-deliberative-systems)
   * [State Trajectory Control during Body Action](#state-trajectory-control-during-body-action)
   * [State Trajectory Control during Multi-iteration Processing](#state-trajectory-control-during-multiiteration-processing)
@@ -42,7 +44,8 @@ Contents:
   * [Independent Meta-management](#independent-metamanagement)
   * [Inline Meta-management](#inline-metamanagement)
   * [Chapter Summary](#chapter-summary)
-* [Part IV - Problems in Biological Control Processes](#part-iv--problems-in-biological-control-processes)
+
+[Part IV - Problems in Biological Control Processes](#part-iv--problems-in-biological-control-processes)
 * [IV.1 Interlude: Environment, Body, and Cognitive Processes](#iv1-interlude-environment-body-and-cognitive-processes)
   * [Classification](#classification)
   * [System Interactions](#system-interactions)
@@ -74,7 +77,8 @@ Contents:
     * [Meta-learning](#metalearning)
     * [Summary](#summary)
   * [Trains of Thought](#trains-of-thought)
-* [Part V - Solution](#part-v--solution)
+
+[Part V - Solution](#part-v--solution)
 * [V.1 The Architecture of Subjective Experience](#v1-the-architecture-of-subjective-experience)
 * [V.2 Subjective Experience State](#v2-subjective-experience-state)
 * [V.3 Interpretation of Subjective Experience States](#v3-interpretation-of-subjective-experience-states)
@@ -93,12 +97,16 @@ Contents:
   * [meaning attachment](#meaning-attachment)
   * [Conditions for evolution of Subject Experience](#conditions-for-evolution-of-subject-experience)
 * [V.6 Necessary and Sufficient Conditions of Subjective Experience](#v6-necessary-and-sufficient-conditions-of-subjective-experience)
-* [Part VI - The Intuitional Gap](#part-vi--the-intuitional-gap)
-* [Part VII - Predictions](#part-vii--predictions)
+
+[Part VI - The Intuitional Gap](#part-vi--the-intuitional-gap)
+
+[Part VII - Predictions](#part-vii--predictions)
   * [Convergence of Meta-Management](#convergence-of-metamanagement)
   * [Does it exist?](#does-it-exist)
-* [Part VII - Next Steps](#part-vii--next-steps)
-* [References](#references)
+
+[Part VII - Next Steps](#part-vii--next-steps)
+
+[References](#references)
 
 ---
 
