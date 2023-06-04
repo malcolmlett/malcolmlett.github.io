@@ -1069,24 +1069,31 @@ With a representation of SES, a few things may happen next. Illustrated in the f
 The outcomes of all of the above entail the content of subjective experience. Most importantly, this includes the specific property of the content that claims "I am experiencing this". So this also explains the existence of subjective experience - that it is processing of a state that claims "I am experiencing this". And why should we such a state and associated processing occur? Because it is necessary for meta-management.
 
 # V.4 The Properties of Subjective Experience
-=> Show that this theory works because it explains these properties.
-- apparency of a homonculous
-- visceral
-	- why does it feel so real? why does its presentation consume all expanses of our attention.
-- appears as a stream and always on
-	- -> quite likely will need to pull in that prediction about whether SE is truly continuous or not
-- what's available, what's not.
+To show more clearly how the above creates subjective experience, let us examine some specific properties of subjective experience. We shall focus on heterophenomena - [define, cite].
 
-## Does it exist?
-The subjective experience state is not itself subjective experience. It is merely the content of the experience: a statement that the individual has observed whatever is the topic of the so called subjective experience.
+## Homonculous
+...[details and citation of old ideas of homonculous in brain]...
 
-The processing that follows is also not itself subjective experience. It is merely the interpretation of the representation, which has as its output another representation. In the brain, that interpretation occurs through the action of millions of individual neurons. There is no place to pinpoint as the thing that has subjective experience.
+The existence of an impression of a homonculous has a simple explanation:
+* schema, SES constructed from the schema
+* MM needs that source identification in order to model appropriate actions
 
-There is also no time to pinpoint as the moment of subjective experience. At any given moment in time, the only thing that exists of subjective experience is a representation that subjective experience occurred plus the in-flight action of millions of individual computational units interpreting that representation.
+The apparent location of the homonculous within the bounds of our head is curious.
+* the brain constructs body schema to identify the specific location of its senses. This provides the important purpose of guiding where actions should be targeted. Many of our physical senses are hosted within our head (sight, sound, smell, taste), and so the schema naturally locates them as such. Although our vision is purposed to gain information about the world outside, our visual sense organs are located within our head. This affects interpretation of the perspective of our vision (things at the centre of our visual field are at about the height of our head, while things at the bottom of our visual field are below our heads), and of actions we need to take if our visual sense organs are in danger of being damaged. These locations encoded within our schema are learned through exploration of cause and effect.
+* For the cognitive sense, there are no cause and effect relationships that could be explored under normal circumstances in order to build a schema that locates the cognitive senses within the head. So it is not obvious why the brain chooses the head as the location of the cognitive sense. A possible explanation is that it is an artifact of the fact that most of our senses are located within our head. But I suspect the real answer is not so simple.
 
-The only evidence we have for the supposed existence of subjective experience is the actions that follow from the above: further thought plus further representations of subjective experience, external actions such as verbal report with regard to our observations, and the subsequently processed memories of the former two.
+## Conscious and Unconscious Thought
+* Seem to have some thought that is always unconscious, some that can be selectively accessed (even after the fact), and some where we are actively involved.
 
-## Apparency of "always on" subjective experience
+* For most of entirely unconscious thought simply has no need to be represented by the meta-management feedback loop. The meta-management feedback loop will be optimised by evolution to contain the minimal set of information needed for effectively meta-management of control processes. Anything else would serve to consume extra neural capacity without further benefit, and would simply be evolved away. Thus, anything that is not represented, is by extension superfluous - for the purpose of meta-management.
+
+* For some processing, the specific steps used to reach an outcome are not important for meta-management. Perhaps for example this is because the processing occurs as the result of habitual processes that do not need higher-order intervention. For most of us, the answer to the maths question "5 + 3" is recalled rather than worked out - the answer simply appears in our thought some time after we consider the question. There is perhaps a lot of activity occurring in the intermission between originally considering the question and the answer appearing. However, if that activity is the result of habitually learned processes, then meta-management likely applies as a training mechanism that only takes effect once a result is produced.
+
+* For more elaborate multi-iteration processing, and in particular where rational control processes are involved, thought appears to proceed in a more slow-paced sequential way with many intermediate states. And it is exactly this kind of thought where I have argued that meta-management is important. Thus those intermediate states are represented via the meta-management feedback loop.
+
+In summary, conscious thought is the collection of processing iterations where aspects of the processing behaviour require meta-management, and the content information of that conscious thought is constrained to the information that is needed for the purpose of meta-management. So called unconscious thought is all other processing that occurs within the brain.
+
+## Subjective experience is "always on"
 - example of driving/walking with no memory of it
 - Q: are we always SE for the rest of the time?
 - What about when we are lost in thought about a hard problem, are we SE at the time, or is it constructed after the fact when we reflect back on it?
@@ -1116,7 +1123,7 @@ A subjective experience state about _x_ does not need to be constructed at the t
 **Forgotten.** Attention may suddenly shift before _x_ has had time to be "stored" into episodic memory, and it is forgotten. For some _x_ that has the potential of leading to a subjective experience state, if it is entirely discarded before being "stored", there may be no evidence available for the absence of the ability to recall that event. So it is entirely possible that there are many moments in our life for which we never have subjective experience. Whether this kind of forgetting without evidence actually occurs in humans, and to what extent it occurs, may not be easy to measure.
 
 - also, computationally no reason why the brain would waste resources constructing a representation unless it is needed, and there would not seem to be a reason to construct an SES unless there is intent to further process it in some way such as in the above.
-    
+
 # V.5 A Worked Example
 
 
@@ -1235,6 +1242,16 @@ Effectively, society is a collective behavioural exploration and learning system
 
 * _**Convergence pressures operating against the control systems of an individual.** ..todo.._
 
+## Does it exist?
+_todo: better in prediction part_
+
+The subjective experience state is not itself subjective experience. It is merely the content of the experience: a statement that the individual has observed whatever is the topic of the so called subjective experience.
+
+The processing that follows is also not itself subjective experience. It is merely the interpretation of the representation, which has as its output another representation. In the brain, that interpretation occurs through the action of millions of individual neurons. There is no place to pinpoint as the thing that has subjective experience.
+
+There is also no time to pinpoint as the moment of subjective experience. At any given moment in time, the only thing that exists of subjective experience is a representation that subjective experience occurred plus the in-flight action of millions of individual computational units interpreting that representation.
+
+The only evidence we have for the supposed existence of subjective experience is the actions that follow from the above: further thought plus further representations of subjective experience, external actions such as verbal report with regard to our observations, and the subsequently processed memories of the former two.
 ---
 
 
