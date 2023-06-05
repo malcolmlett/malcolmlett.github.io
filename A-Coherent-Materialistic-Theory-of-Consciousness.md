@@ -732,6 +732,8 @@ _Identity_ is better thought of here as an identification of _independence_. The
 ## Emotions
 _..todo..may need to cover off emotions too, because it turns out that they're a form of MM too_
 
+_todo: emotions......This does not do justice to the full extent to which emotions and feelings play a role in cognition. For a full account see Damasio (...)._
+
 ## Meaning Attachment
 _todo:_
 * Summarise all of above with the term "meaning attachment" so I can use it later on to refer to all of:
@@ -1238,62 +1240,54 @@ So, subjective experience is not "always on". It is not a continuous stream. It 
 
 Contrast all of the above to the meta-management feedback loop itself, the real source of SES. As discussed above, we don't have the empirical evidence to be certain about the continuity of the meta-management feedback, but in a first simplistic interpretation, we would expect that the meta-management feedback loop is indeed "always on". So even though SES are only sparsely constructed, any given thought is potentially available for construction of SES.
 
-# V.5 Sufficient Conditions of Subjective Experience
-- setup:
-	- Describe as part of the process to define the necessary and sufficient conditions.
-	- Tononi's IIT outlines _necessary_ conditions.
-	- 
-	- May work to just have each of the following as sections and to discuss them in terms of variations, sufficiency, necessity, and degree.
+# V.5 Conditions of Subjective Experience
+One of the problems plaguing studies of consciousness is that we lack an understanding of the necessary and sufficient conditions for production of subjective experiences. Without that knowledge we are unable to be certain which things exhibit consciousness and which do not.
+
+_todo: survey of attempts to define necessary and sufficient conditions, including Tononi's IIT._
+
+I have so far focused on human subjective experience. The explanation I have proposed has been somewhat tailored towards that human experience. This means that the architecture described is not necessarily the only architecture capable of producing subjective experience.
+
+With that caveat in place, the following attempts to define a first draft of the _necessary_ and _sufficient_  conditions of subjective experience based on the analysis so far. The statements here are somewhat vague, but I believe they offer a good starting point for further refinement.
     
-    
-The following outlines _sufficient_ conditions to ensure subjective experience. However, not all may be _necessary_ - to be discussed later.
-    
-## MM feedback loop
-feedback loop that provides summary of CP state and feeds it back in at the level of a sense (ie: with same capacity for applying modelling, and meaning attachment as for any other sense)
+## Access to computational state
+A feedback loop that provides a summary of CP state and feeds it back in at the level of a sense. In other words, the CP state sense should have the same capacity for applying modelling and meaning attachment as for any other sense.
 
-## inline mm architecture
+In a biological organism defined through evolutionary forces such a feedback loop would only evolve in the context where it meets an evolutionary need. Thus, when considering the conditions for evolution of such a feature, one must also consider that a certain level of environmental and behaviour complexity are required in order to lead to the evolution of multi-iteration processing and the need for access to CP state in order to maintain stability of that multi-iteration processing.
 
-## iterative processing
-- any form of recurrent state is sufficient here, including associative memory and episodic memory.
-- though already required the use of a feedback loop
-- there may be a more abstract concept here
+## Processing of computational state
+The computational state supplied via the feedback loop must be processed in some meaningful way, such as for the purpose of meta-management.
 
-## representational and processing capacity
-sufficient complexity in processing capability to be able to represent and interpret, to re-represent and to re-interpret
+## Subjective experience state
+The computational processes must be capable of taking the feedback loop and constructing a subjective experience state (SES) about at least some kinds of computational state.
 
-## topic attenuation avoidance
+## Representational and processing capacity and qualities
+The representational capacity and qualities of the feedback loop must convey sufficient information to the computation that meaningful computations can be performed about that state. Likewise, the computational processes must be capable of producing new representations about that computational state, and those new representations must be made available via the computational state feedback loop.
 
-## attention
-if has an attention system, must choose to attend.
-degree: extend of attention on this topic.
+Together, repeated through multiple iterations, the representations and processing must be capable of retaining sufficient informational complexity without attenuation for long enough that an SES can be constructed, processed, and acted upon in some way that can be later referenced as evidence that it existed in the first place.
 
-## modelling
+## Modelling
+In order for an SES to be constructed, the computational processes must perform sufficient and sufficiently flexible modelling that they can a) model the existence of a cause-effect relationship involving the observation of computational states, b) identify specific instances of such observations, c) label a specific computational state as being an instance of an observation, and d) further process that label against its associated computational state.
 
-## meaning attachment
-- emotions/feelings to attach extra meaning
-- identity identification
+## Attention
+If the computational processes incorporate a mechanism of attentional focus, then that mechanism too must retain attention long enough that an SES can be constructed and processed in a meaningful way.
 
-_todo: emotions......This does not do justice to the full extent to which emotions and feelings play a role in cognition. For a full account see Damasio (...)._
+## Self-schema
+It helps if the computational processes incorporate a schema of the self. However it is likely not necessary.
 
-## Conditions for evolution of Subject Experience
-Conditions necessary for the above to evolve in the first place
-	- complexity of environment
-	- limit on depth of brain network requiring evolution of iterative processing - ie: reached some point where it is more efficient to evolve iterative processing than to make the brain network deeper.
-	- 
+# V.6 Degrees of Subjective Experience
+There is a lot of room for variations within the statements above. In particular, there is a possibility of variations in _degree_.
 
-# V.6 Necessary and Sufficient Conditions of Subjective Experience
+Representational capacities and qualities can be varied while still meeting the conditions. The degree of representational complexity, the kinds of nuance possible, affect the kinds of SES that can be constructed.
 
-Here's a first attempt at defining the general conditions for subjective experience in any agent. Notice that many of the human-like features are missing here, implying that the quality of subjective experience comes in degrees.
+The extent to which the individual has a concept of their own identity, the complexity of that representation, influences the kinds of information that can be attached to an SES, and the kinds of interpretations that are possible from an SES.
 
-conceptual description:
-- any form of representation->interpretation->repeat loop that can observe, represent and process the state of its own process
+Trains of thought are at constant risk of attenuation due to representational capacity limits or attentional focus shifts. The duration over which a train of thought is possible that covers the topic of a SES affects the depth and complexity of subsequent actions and processing. Where consequent processing is the production of new models capturing concepts of self-awareness, the ability to form those models and the depth of detail to which they can be constructed is affected by the duration of such trains of thought. A sub-human intelligence may observe its own computational state, but be unable to consider it beyond that mere observation.
 
-degrees
-- degree: depends on extent to which that source of info is attended to.
-- degree: depends on extent of application of knowledge of the _identity_ of that process state, as independent from state external to the process
-- degree: depends on breadth/depth of modelling of that information
-- degree: depends on length of _topic attenuation avoidance_
+Thus there are many possible variations of degree of subjective experience, and of degree of representational modelling that can be constructed as a result of that subjective experience.
 
+Does this level of degree extent towards zero? In the information theoretic sense, can you have 1 bit of subjective experience? The answer is no. There is some minimum complexity required in order to meet the conditions described above. To state exactly where that limit lies require further information theoretic work.
+
+# V.7 An example of an alternative consciousness
 example of alternate mechanical descriptions
 - independent MM, but it MM's itself (MMM😄)
 - only inputs available for cyclic processing is the CP state + MM state -- ie: 100% only cognitive state, no direct access to env/body state. But it would have some idea of env/body state indirectly by what's captured in CP state.
@@ -1301,7 +1295,6 @@ example of alternate mechanical descriptions
 - seems pretty plausible, but it would be different to human experience:
     - it's like it would have only one core "sense" of external things, like what it "sees" is the standard CP.
     - there would be nothing special about the env/body state that it could infer from that, and in many cases access would be very vague if even there at all.
-
 
 ---
 
