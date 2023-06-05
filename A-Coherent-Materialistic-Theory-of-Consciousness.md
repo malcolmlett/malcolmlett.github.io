@@ -1288,13 +1288,32 @@ Thus there are many possible variations of degree of subjective experience, and 
 Does this level of degree extent towards zero? In the information theoretic sense, can you have 1 bit of subjective experience? The answer is no. There is some minimum complexity required in order to meet the conditions described above. To state exactly where that limit lies require further information theoretic work.
 
 # V.7 An example of an alternative consciousness
-example of alternate mechanical descriptions
-- independent MM, but it MM's itself (MMM😄)
-- only inputs available for cyclic processing is the CP state + MM state -- ie: 100% only cognitive state, no direct access to env/body state. But it would have some idea of env/body state indirectly by what's captured in CP state.
-- probably with its own habitual + rational systems.
-- seems pretty plausible, but it would be different to human experience:
-    - it's like it would have only one core "sense" of external things, like what it "sees" is the standard CP.
-    - there would be nothing special about the env/body state that it could infer from that, and in many cases access would be very vague if even there at all.
+I shall conclude this part with a thought exercise to consider what it might like to be a consciousness with a slightly different brain architecture. This is largely for a bit of fun, but the particular example I shall use also highlights once again why I believe humans employ an inline meta-management architecture.
+
+Consider your own human introspective experience. You can observe your physical senses of sight, sound, touch etc. Likewise you can observe your own thoughts, images that you imagine, words spoken that only you can hear. You can freely switch attention between any of these, and to some extent even choose to attend to multiple sensory modalities at the same time including both external physical senses and that of your cognitive sense. Importantly, you experience a high degree of detail about the external environment, particularly when you look at it.
+
+As claimed earlier, that is all because of the inline meta-management architecture.
+
+Now consider the independent meta-management architecture described in chapter III.5, and illustrated here:
+
+![diagram](files/diagram.png)
+
+_todo: point out which senses are available where._
+
+* _**Alternative meta-management architecture.** An independent meta-management architecture._
+
+The control process only receives as input the physical senses. It holds state related to the processing of those senses and associated tasks, but does not have access to directly observe that state. Likewise, though the behaviour of the control process is affected by signals from the meta-management processor, it has no direct computational access to those signals. The control process cannot form any conclusions about its own state.
+
+For the meta-management process, its availability of access to information is the opposite as for the control process. It takes as input the computational state of the control process and so has a clear and detailed "view" of that state. In contrast, it has no direct access to the external physical senses. The control process state likely incorporates some information about the external senses, but the representation held within that state is tuned to the needs of subsequent processing rather than for the purpose of representing current environmental and body state. For example, it may be focused more on conclusions drawn such as about the next action that should be taken. Thus the meta-management process has only indirect evidence about the state of the environment and body.
+
+Where does the SES get constructed? The control process has no access to its own state, so necessarily if an SES is to be constructed it will be constructed within the meta-management process. Furthermore, it is reasonable to state for our thought experiment that the meta-management process has its own state, so that it can hold that SES once it has constructed it.
+
+Oh, but if it has state, then its state trajectory needs to be meta-managed. We have already stated that a feedback-loop and specific meta-management processing is required for anything beyond simple reactive/habitual meta-management. So in order to avoid an infinite regress, our meta-management processor will have to have its own inline meta-management for the purpose of meta-meta-management of itself. Well, maybe that's true, maybe it's not, but this is our thought experiment so we can decide what we want. While we're at it, let's assume that this meta-management process has all the same capabilities of modelling and schema generation that we do.
+
+What do we have now? We have a processor, the meta-management processor, that can observe and manage its own computational state in the same way that we humans can. It has an input sense that conveys information about something external to itself: the state of the main control process. The meta-management process has effector capabilities against that control process state, and so it can build cause-effect models encapsulating its ability to "observe" those states. Thus, it considers the control process state to be a part of "itself". However, its awareness of the external physical environment and of the body that contains all this processing is vague at best.
+
+I imagine that the subjective experience of the meta-management process (for that is where the subjective experience occurs in this example), would be something akin to a pilot in an advanced flight simulator but where the computer screens have been turned off and there's no pistons underneath the cabin creating the effect of motion. They can turn knobs and move joysticks, changing their internal state. They can see readouts on the altimeter and compass, indicating their current state. But they would struggle to grasp that any of that relates to anything that might occur "outside".
+
 
 ---
 
