@@ -1296,9 +1296,7 @@ As claimed earlier, that is all because of the inline meta-management architectu
 
 Now consider the independent meta-management architecture described in chapter III.5, and illustrated here:
 
-![diagram](files/diagram.png)
-
-_todo: point out which senses are available where._
+![independent meta-management](files/A-coherent-theory-v1-independent-mm.drawio.png)
 
 * _**Alternative meta-management architecture.** An independent meta-management architecture._
 
