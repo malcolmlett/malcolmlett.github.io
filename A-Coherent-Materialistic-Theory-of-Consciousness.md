@@ -1318,7 +1318,58 @@ I imagine that the subjective experience of the meta-management process (for tha
 
 # Part VI - The Intuitional Gap
 
-_todo_
+
+# VI.1 The Explanatory Gap and the Problem with Intuition
+_todo_:
+* make sure 'materialistic' is fully defined in the intro sections
+* re-read Chalmer's paper and see if there's any attempt at clearly defining the properties that cannot be explained.
+* survey other works for lists of properties
+
+A common issue with materialistic explanations of consciousness is that they suffer from an _explanatory gap_ between the properties that they are capable of explaining and the apparently inexplicable properties of conscious subjective experience. The claim is that none of the physical processes understood today can explain the "raw feels" of consciousness. This "Hard Problem of Consciousness" [chalmers] has been used to justify non-physical explanations such as _pan-psychism_, where consciousness is treated as a fundamental property of nature.
+
+In practice, it is hard to clearly define what these properties are that cannot be explained by materialistic means. Terms like "raw feels" and "what it is like" don't offer much detail. It seems that the best anyone can do is to provide a few examples and then hope that their readers recognise what they are attempting to refer to by considering their own experiences. That is a reasonable starting approach when one lacks a deeper scientific understanding. Generally, as scientific understanding of a topic improves, the use of examples gets replaced by definitions that become more precise over time. Unfortunately, that doesn't seem to be occurring for the study of these non-physical properties of consciousness. We seem to completely lack any basic idea that could even get us started to explain these properties, let alone consciousness itself (Block, 2002).
+
+If we lack any conception of how to handle all this, where do these ideas come from in the first place? Our intuition. We introspect our own minds, examining what we observe, forming ideas about what those things are that we observe, and then try to describe them to others. This all occurs within the nebulous thoughts that float around our heads, so we lack any means to measure those observations, to hold them up and compare them accurately against anything else. We have no way of proving that there is anything special about our internal observations. We just _think_ that there is something special about them.
+
+Now, we know that our minds have their limitations, that they do not always produce rational conclusions [citations]. These ideas that we form about the special nature of subjective experience were constructed by these same irrational minds. If these ideas were formed by one irrational mind examining another, then we might be better off, but unfortunately that is not possible. So these ideas were formed by each irrational mind examining itself, using those same irrational processes to interpret the observations of questionable accuracy made of that irrational behaviour. We are not in a strong position.
+
+It is from here that I provide my explanation. The explanatory gap is not a lack in the explanatory power of materialistic processes. It is an _intuitional gap_: the gap between what is known to exist and what our faulty intuition makes us believe exists.
+
+To make this case, I shall now offer two arguments that support this conclusion.
+
+# VI.2 Argument By Elimination
+P-Zombie that is behaviourally indistinguishable - somebody looking at the behaviours of two individuals could not tell them apart.
+
+P-Zombie that is computationally indistinguishable - two individuals who both somehow have knowledge of what it "feels like" could not find any difference with the internally observable states.
+
+At this point the question of there being any difference between such individuals is a matter of opinion. Does there exist something beyond computational states? My answer is why would there be? There is nothing extra required in order to obtain all the human-like characteristics, including the internal experiential behaviour of humans.
+
+So, by okkams razor, I claim that this it it!
+
+## Pain
+By way of concrete example, let's look at pain...
+
+Animals of all sizes, from flies to mammals, squirm violently if they are subjected to intense pain. Within the mind of a human individual, the pain becomes all encompassing. The mind races with every millisecond straining to find any way to remove itself from the pain. When we observe another organism suffering in such a way, our heart weeps in sympathy. The subjective experience of pain is as real as it gets. ...and yet we have evidence that pain sometimes yields false-positive effects: that it may not be "real".
+
+We did not evolve to writhe in anguish from pain as the end goal. The goal is to motivate the organism to escape from the likelihood of further harm. The greater the damage received already, the more urgent the need to avoid further injury, and thus the more intense the pain and its effect on involuntary motor actions and cognition. 
+
+The feeling of helpless writhing, is a result of those involuntary actions attempting to move the body away from harm, both in a physical body action way, and in a computational way (employing computational capabilities to examine better options for moving away from harm - if there are involuntary motor actions, why would there not be involuntary brain actions).  And then, in such a state, an SES is constructed, identifying that all systems are orienting towards avoidance of pain.
+
+So pain has at its heart an intrinsically functional purpose. All other aspects of the subjective experience of pain are subservient to that purpose. Thus, pain and its motor and cognitive effects would be equally useful in an embodied artificial agent that needs to protect its own physical substrate. This claims to reduce even the subjective experience of intense pain (and by extension pleasure) to a mechanistic paradigm. 
+
+And yet, it still seems so counterintuitive that such subjective experiences are produced by mechanistic means. So let's look at that intuition itself ... 
+
+# VI.3 Argument By Delusion
+Research that shows that evolution does not produce systems that observe reality. Donald Hoffman,  "User Interface Theory of Evolution". 
+
+One way to make this argument stronger is to consider hallucinations and other delusions. It is common enough for the brain to be thoroughly convinced of something which is clearly wrong to everyone else. Furthermore, even with the evidence clearly presented and accepted by the individual, they refuse to change their deluded conclusion. Perhaps our intuition of our own CS being something more than possible via mechanistic means is just a delusion. This delusion is due to the integration of the following factors:
+- Single unified representation / interpretation
+- Source labelling
+- Modelling of oneself
+- Feelings associated with one's own self model
+
+So we observe our own thoughts, identify them as our own, and feel strongly about that identification and all that is connoted by it. 
+
 
 
 ---
@@ -1385,11 +1436,16 @@ _todo_
 * Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation
     - https://arxiv.org/abs/1308.3432
     - 2013. Yoshua Bengio, Nicholas Léonard, Aaron Courville.
-    
+
+* Block, N. (2002). The Harder Problem of Consciousness. The Journal of Philosophy, 99(8), 391–425. https://doi.org/10.2307/3655621
+
 * Borţun, D., & Purcarea, V. L. (2013). Marketing and semiotic approach on communication. Consequences on knowledge of target-audiences. Journal of medicine and life, 6(1), 103–108.
 
 * Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of internal medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
 
+* Levine, J. (1983). Materialism and the Qualia: The Explanatory Gap. Pacific Philosophical Quarterly, LXIV, 354-61.
+
 * Nessa J. (1996). About signs and symptoms: can semiotics expand the view of clinical medicine?. Theoretical medicine, 17(4), 363–377. https://doi.org/10.1007/BF00489681
 
 * Peirce (1982-). The Writings of Charles S. Peirce: A Chronological Edition. Volumes 1–6. And 8. Eds. Peirce Edition Project. Bloomington I.N: Indiana University Press.
+
