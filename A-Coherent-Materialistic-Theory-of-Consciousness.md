@@ -1364,16 +1364,13 @@ More generally, I believe that the mechanisms described within this article are 
 
 So, can a materialistic computational p-zombie construct the same computational states as humans? Absolutely.
 
+With the first question answered in the affirmative, the second question reduces to asking whether there exists anything _beyond_ computational state. Here we hit up firmly against the intuitional gap. For many, there absolutely must be something extra beyond computational state [citations, and details]. Many claim that our mental experience cannot be reduced to computational state, that there is some part of thought that occurs _beyond_ the confines of computations. I have already combated that claim to the best of my ability while answering the first question.
 
+There are also those who accept that materialistic computation is sufficient for control of our human bodies and mind states, but that there is still something extra. This leads to the curious case of epiphenomenalism, where subjective experience and consciousness in general are considered non-causal - having no impact on those computations [citations, and details]. This is easily discarded as absurd. If consciousness is non-causal then it should not influence my report that I am conscious. But I do report that I am conscious, which either means that my consciousness _caused_ that, or that something else caused my report and that my consciousness is reduced to...well...something that I am not even aware of.
 
-Second....asks whether there is anything beyond computational state...
-Second....has lead to epiphenomenalism.
+_todo: read up more about epiphenomenalism and decide whether to rebut it or ignore it_.
 
-
-
-At this point the question of there being any difference between such individuals is a matter of opinion. Does there exist something beyond computational states? My answer is why would there be? There is nothing extra required in order to obtain all the human-like characteristics, including the internal experiential behaviour of humans.
-
-So, by okkams razor, I claim that this is it!
+At this point this second questions turns on itself. Does there exist anything beyond computational state? Why would there be? If all human behaviour, external and internal, can be explained through materialistic processes, what need could there possibly be that invokes "something extra"? By occam's razor, I claim that there is none.
 
 ## Pain
 By way of concrete example, let's look at pain...
