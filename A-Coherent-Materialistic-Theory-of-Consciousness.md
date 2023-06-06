@@ -1392,6 +1392,11 @@ So we observe our own thoughts, identify them as our own, and feel strongly abou
 
 _todo_
 
+purpose:
+* fill out some of the details of explanations presented earlier that otherwise would have made them longer
+* a chance to deal with some of the likely rebuttals
+* an opportunity to be a little more speculative
+
 
 ## Convergence of Meta-Management
 In developing this theory I have been palpably aware of concerns that what I am proposing makes no sense because such a system could never be stable enough to operate effectively. I have made the claim that habitual and rational system learn off each other. That alone can produce unstable results. Indeed, I have made the claim that they are so unstable that they need a meta-management process in order make them stable. But then I've twisted that assumption on its head by claiming that somehow those very same unstable systems can meta-manage themselves. Without sound empirical results what basis do I have to believe that this could possibly work? And if it's not a feasible architecture, then my entire argument for the basis of subjective experience is in question.
@@ -1437,6 +1442,7 @@ The processing that follows is also not itself subjective experience. It is mere
 There is also no time to pinpoint as the moment of subjective experience. At any given moment in time, the only thing that exists of subjective experience is a representation that subjective experience occurred plus the in-flight action of millions of individual computational units interpreting that representation.
 
 The only evidence we have for the supposed existence of subjective experience is the actions that follow from the above: further thought plus further representations of subjective experience, external actions such as verbal report with regard to our observations, and the subsequently processed memories of the former two.
+
 ---
 
 
