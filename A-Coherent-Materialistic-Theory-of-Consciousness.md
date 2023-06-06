@@ -1174,6 +1174,14 @@ With a representation of SES, a few things may happen next. Illustrated in the f
 
 The outcomes of all of the above entail the content of subjective experience. Most importantly, this includes the specific property of the content that claims "I am experiencing this". So this also explains the existence of subjective experience - that it is processing of a state that claims "I am experiencing this". And why should we such a state and associated processing occur? Because it is necessary for meta-management.
 
+## Rounding it out
+_todo_
+
+Finally, we become convinced of the existence and specific nature of SES by anything subsequent that offers proof that it existed at the time. eg:
+* by way of its effect on subsequent processing
+* memory and subsequent recall
+* physical behaviour that reports its existence
+
 # V.4 The Properties of Subjective Experience
 To show more clearly how the above creates subjective experience, let us examine some specific properties of subjective experience. We shall focus on heterophenomena - [define, cite].
 
@@ -1338,9 +1346,30 @@ It is from here that I provide my explanation. The explanatory gap is not a lack
 To make this case, I shall now offer two arguments that support this conclusion.
 
 # VI.2 Argument By Elimination
-P-Zombie that is behaviourally indistinguishable - somebody looking at the behaviours of two individuals could not tell them apart.
+The notion of a _philosophical zombie_ (p-zombie for short) offers as a tool for examining some questions of consciousness [citation, and details]. It works like this. Firstly, you imagine two individuals, one a real human being, and the other a zombie that walks and talks like a human but is claimed to be missing some important aspect of its experiential inner life. Then you use this hypothetical example to argue one way or another about the nature of those missing aspects of its inner life and to what extent they serve a purpose.
 
-P-Zombie that is computationally indistinguishable - two individuals who both somehow have knowledge of what it "feels like" could not find any difference with the internally observable states.
+Let us use such a tool, building up from a simple example to a more complex one, and see what we find.
+
+The first p-zombie is an anthropomorphised Turing-test passer. It looks, walks, talks like a normal human and in all other ways behaves just like a normal human. It is _behaviourally indistinguishable_ from a normal human being - anyone attempting to determine whether this individual was a real human or a philosophical zombie would be unable to make a determination with any confidence between 50%. And that is where the similarities stop. The zombie controls all of its behaviour through processes that do not produce subjective experience of any sort or degree. Perhaps for example the structure of its brain is such that it has no access to its own thoughts in any direct way. Where it produces the appropriate external behaviours with regards to thought, it is done via a kind of blindsight (here I am making reference to experiments showing that some people with specific kinds of damage to their visual processing can still react to visual scenes, even though they don't know that they do it [citations]). If we were to attempt to imagine the inner life of the zombie, it would be as if it was permanently in a dreamless sleep - and all of its behaviour was done while sleepwalking.
+
+Such an example is not hard to imagine. For many centuries people believed that humans were entirely different from animals. Even when it was recognised that humans are also an animal, it was still believed that humans were the only animal to have consciousness [citations?]. So the above is just an animal that looks like a human. Well, looks, walks, talks and behaves in all ways like a human. Maybe that's stretching the analogy a little too far. How about an alien? Surely there are aliens that we may one day meet that have entirely different kinds of brains, employing entirely different kinds of structures and processing. Maybe one of those alien species is like a p-zombie - it controls all of its behaviour without the need to observe its own internal processing state. Mind you, it wouldn't look or behave like a human, and if we're trying to use this to gain an understanding of the "extra stuff" that is added with subjective experience then there's just too many other things that are different here too. While we're questioning the efficacy of our own hypothetical scenarios, it's worth taking a second look at this blindsight-powered verbal report of thought. Does that really make any sense? Dennet calls these these experiments _intuition pumps_ [citation], and the problem with them is that they seem to make sense on face value but break down when you look deeper. If our p-zombie can report on its own thought, and report on the fact that it has thoughts, and report on its thought about thought, just like any human could, how could it possibly do that without the same internal reporting mechanisms that are available to humans?
+
+Let us give up on that example and move to something more advanced. Where the first p-zombie was behaviourally indistinguishable from a normal human, the second p-zombie is additionally _computationally indistinguishable_. To whatever extent that it might be theoretically possible here or anywhere in the future to examine all of the computational processes within the mind of this p-zombie, and to compare them to a normal human, no difference would be found. Furthermore, the p-zombie has introspective access to its own computational state. The representations it constructs about those computational states, and the interpretations that it is capable of making from those representations are indistinguishable from the kinds of representations and interpretations possible within a normal human. The the greatest extent this p-zombie _is_ a normal human. The only limitation imposed on it is that its computational state can only be derived from materialistic physical processes that we understand today.
+
+Now we get to ask two very interesting questions about our second p-zombie. Firstly, is it possible for a collection of entirely materialistic computational processes to produce the same kinds of computational results as a human? Secondly, what, if anything, does the human have that the p-zombie does not?
+
+Many past issues with materialistic explanations of consciousness have been based on the claim that the answer to the first question is "no". I believe that we are finally in the position to strongly affirm the answer "yes". Some of the past struggles have been a failure to find any explanation for the functional purpose of consciousness. To that we have the explanation of multi-iteration processing, complexity, and meta-management. Other struggles have been due to an inability to find a plausible explanation for what kinds of states subjective experience is. For that we have cause-effect models of observation, subjective experience states representing that an observation has taken place, and interpretation of those SES producing further representations that an SES has been experienced.
+
+More generally, I believe that the mechanisms described within this article are capable of producing all of the computational states that we know and love and call subjective experience. This includes the "raw feels" of that subjective experience, which itself is just another representation and associated interpretation. Moreover, not only are these mechanisms _capable_ of producing such computational states, but they are _likely_ to produce such computational states, given sufficient modelling capabilities and mind-wondering characteristics that are typical of humans.
+
+So, can a materialistic computational p-zombie construct the same computational states as humans? Absolutely.
+
+
+
+Second....asks whether there is anything beyond computational state...
+Second....has lead to epiphenomenalism.
+
+
 
 At this point the question of there being any difference between such individuals is a matter of opinion. Does there exist something beyond computational states? My answer is why would there be? There is nothing extra required in order to obtain all the human-like characteristics, including the internal experiential behaviour of humans.
 
