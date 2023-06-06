@@ -1372,19 +1372,6 @@ _todo: read up more about epiphenomenalism and decide whether to rebut it or ign
 
 At this point this second questions turns on itself. Does there exist anything beyond computational state? Why would there be? If all human behaviour, external and internal, can be explained through materialistic processes, what need could there possibly be that invokes "something extra"? By occam's razor, I claim that there is none.
 
-## Pain
-By way of concrete example, let's look at pain...
-
-Animals of all sizes, from flies to mammals, squirm violently if they are subjected to intense pain. Within the mind of a human individual, the pain becomes all encompassing. The mind races with every millisecond straining to find any way to remove itself from the pain. When we observe another organism suffering in such a way, our heart weeps in sympathy. The subjective experience of pain is as real as it gets. ...and yet we have evidence that pain sometimes yields false-positive effects: that it may not be "real".
-
-We did not evolve to writhe in anguish from pain as the end goal. The goal is to motivate the organism to escape from the likelihood of further harm. The greater the damage received already, the more urgent the need to avoid further injury, and thus the more intense the pain and its effect on involuntary motor actions and cognition. 
-
-The feeling of helpless writhing, is a result of those involuntary actions attempting to move the body away from harm, both in a physical body action way, and in a computational way (employing computational capabilities to examine better options for moving away from harm - if there are involuntary motor actions, why would there not be involuntary brain actions).  And then, in such a state, an SES is constructed, identifying that all systems are orienting towards avoidance of pain.
-
-So pain has at its heart an intrinsically functional purpose. All other aspects of the subjective experience of pain are subservient to that purpose. Thus, pain and its motor and cognitive effects would be equally useful in an embodied artificial agent that needs to protect its own physical substrate. This claims to reduce even the subjective experience of intense pain (and by extension pleasure) to a mechanistic paradigm. 
-
-And yet, it still seems so counterintuitive that such subjective experiences are produced by mechanistic means. So let's look at that intuition itself ... 
-
 # VI.3 Argument By Delusion
 Research that shows that evolution does not produce systems that observe reality. Donald Hoffman,  "User Interface Theory of Evolution". 
 
