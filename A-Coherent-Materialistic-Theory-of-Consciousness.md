@@ -1333,7 +1333,7 @@ If we lack any conception of how to handle all this, where do these ideas come f
 
 Now, we know that our minds have their limitations, that they do not always produce rational conclusions [citations]. These ideas that we form about the special nature of subjective experience were constructed by these same irrational minds. If these ideas were formed by one irrational mind examining another, then we might be better off, but unfortunately that is not possible. So these ideas were formed by each irrational mind examining itself, using those same irrational processes to interpret the observations of questionable accuracy made of that irrational behaviour. We are not in a strong position.
 
-It is from here that I provide my explanation. The explanatory gap is not a lack in the explanatory power of materialistic processes. It is an _intuitional gap_: the gap between what is known to exist and what our faulty intuition makes us believe exists.
+It is from here that I provide my explanation. The explanatory gap is not a lack in our ability to explain the things that _are_ through materialistic processes. It is an _intuitional gap_: the gap between what is known to exist and what our faulty intuition makes us believe exists.
 
 To make this case, I shall now offer two arguments that support this conclusion.
 
@@ -1344,7 +1344,7 @@ P-Zombie that is computationally indistinguishable - two individuals who both so
 
 At this point the question of there being any difference between such individuals is a matter of opinion. Does there exist something beyond computational states? My answer is why would there be? There is nothing extra required in order to obtain all the human-like characteristics, including the internal experiential behaviour of humans.
 
-So, by okkams razor, I claim that this it it!
+So, by okkams razor, I claim that this is it!
 
 ## Pain
 By way of concrete example, let's look at pain...
