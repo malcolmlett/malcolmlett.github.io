@@ -1188,6 +1188,8 @@ To show more clearly how the above creates subjective experience, let us examine
 ## Homonculous
 ...[details and citation of old ideas of homonculous in brain]...
 
+_todo_
+
 The existence of an impression of a homonculous has a simple explanation:
 * schema, SES constructed from the schema
 * MM needs that source identification in order to model appropriate actions
@@ -1197,6 +1199,9 @@ The apparent location of the homonculous within the bounds of our head is curiou
 * For the cognitive sense, there are no cause and effect relationships that could be explored under normal circumstances in order to build a schema that locates the cognitive senses within the head. So it is not obvious why the brain chooses the head as the location of the cognitive sense. A possible explanation is that it is an artifact of the fact that most of our senses are located within our head. But I suspect the real answer is not so simple.
 
 ## Conscious and Unconscious Thought
+_todo_
+
+
 * Seem to have some thought that is always unconscious, some that can be selectively accessed (even after the fact), and some where we are actively involved.
 
 * For most of entirely unconscious thought simply has no need to be represented by the meta-management feedback loop. The meta-management feedback loop will be optimised by evolution to contain the minimal set of information needed for effectively meta-management of control processes. Anything else would serve to consume extra neural capacity without further benefit, and would simply be evolved away. Thus, anything that is not represented, is by extension superfluous - for the purpose of meta-management.
@@ -1211,6 +1216,9 @@ In summary, conscious thought is the collection of processing iterations where a
 - example of driving/walking with no memory of it
 - Q: are we always SE for the rest of the time?
 - What about when we are lost in thought about a hard problem, are we SE at the time, or is it constructed after the fact when we reflect back on it?
+
+_todo_
+
 
 SES and associated interpretations may occur in a number of different scenarios, and such states may be constructed through a number of different sequences of events. By examining this, we may be able to form some accurate statements about whether subjective experience can be said to be "always on".
 
