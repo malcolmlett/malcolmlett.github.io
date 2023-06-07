@@ -1395,22 +1395,18 @@ Unfortunately, a system that evolves to maximise such a tenuous, abstract, and m
 
 In the famous case of the mathematician John Nash, who experienced hallucinations, voices, and irrational thoughts for much of his career, he was able to "intellectually reject" his hallucinations [citation, wikipedia]. This is not particularly hard for visual and audial hallucinations - you can step forward and check that the visual hallucination can be interacted with in the normal way, or ask someone for a second opinion. It is harder, but also possible, for one to identify mental hallucinations and irrational thoughts through similar means. In general it requires a stable ("sane") reference point - being able to compare ones own thoughts to that of others. It is much harder still if are no sane reference points because everyone around you is also delusional in the same way.
 
-The notion that our subjective experience carries any extra "raw feels", and our intuition that materialistic processes cannot explain those raw feels, is a delusion. A collective delusion. A delusion that stems quite naturally from the fact that our perceptions are optimised for fitness not accuracy, and from the specific architecture of our brain.
+The notion that our subjective experience carries any extra "raw feels" beyond computational representation and interpretation, and our intuition that materialistic processes cannot explain those raw feels, is a delusion. A collective delusion. A delusion that stems quite naturally from the fact that our perceptions are optimised for fitness not accuracy and from the specific architecture of our brain.
 
-_todo: needs more work_
+How else could our perception be of our internal computational state? What other kinds of "raw feels" might it be possible for one to experience. Could there be any computational way of observing our own computational state without "raw feels"? Perhaps a significant component of "raw feels" is that we seem to observe our inner state at a certain point within its processing - not exactly at the true raw sensory inputs, but after a significant amount of interpretational processing has already occurred; and not every consequent processing step, but just at certain sampling points afterwards. The lack of observational access to all those intermediate computations creates an impression that certain things "just are". What would it be like if we could observe the electrochemical interactions within each and every rod and cone receptor in the eye, observe each resultant electrical impulse as it leaves the receptor and travels down the optic nerve, watch as millions of such signals reach the visual processing centers of the brain [citation, number of synapses in optic nerve], and continue to observe each and every neuronal computation that ultimately results in the brain forming a representation of an apple on a table followed by an abstract thought about that visual image? Firstly, any meaning that we form from our observations is driven by the models that we construct through experience, and the specific structure and content of those models is driven by the information available at the times of our experiences. So the mental models that we form about the concept of "observe" would be completely different if we had such detailed access. For example, our concept of "observe" would probably be more like a concept of "process". Secondly, unlike the joyful ride that is the 2014 Hollywood movie "Lucy", evolution would never produce an individual that had such access to their internal processes. Ignoring the obvious issue with infinite regress on the number of neurons required to process all that information, there is simply no need to observe the internal operations of the brain processes to such an extent. Evolution creates a "user interface" to our computational state that is as simple as possible, and at the most suitable level of abstraction, in order to meet the needs that they serve.
 
-More specifically, the "delusion of raw feels" is due to the integration of the following factors:
-- Single unified representation / interpretation
-- Source labelling
-- Modelling of oneself
-- Feelings associated with one's own self model
-- cause-effect modelling that constructs concepts of "I" and of "observe" with specific properties
+What about other aspects of "raw feels"? I find it very hard to be more specific at this point because we don't have a good description of the apparent properties of "raw feels". So until someone comes up with a good list, a more general statement will have to suffice. The "delusion of raw feels" and the specific properties of that delusion are due to the compounding effect of all of the computational processes within the human brain. Not the least of those processes and their effects include:
+* cause-effect modelling that constructs concepts of "I" as different from other individuals, and the specific properties of the constructed models
+* cause-effect modelling that constructs concepts of "observe" from a) the fact that I can obtain information about the external world independent of others, b) the fact that I can obtain information about the state of my own computational processing that others cannot obtain, and c) that in both cases that information can be useful to me.
+* meaning attachment that associates "I" with "observe"
+* feelings/emotions that serve other utilitarian functions through the action of attaching further contextual information to the combined concept of "I observe".
 
-So we observe our own thoughts, identify them as our own, and feel strongly about that identification and all that is connoted by it. Alternative architectures would construct different concepts and produce different effects, but for humans the particular concepts and effects that we produce are a foregone conclusion.
+So we observe our own thoughts, identify them as our own, and feel strongly about that identification and all that is connoted by it. Alternative architectures would construct different concepts and produce different effects, but for humans the particular concepts and effects that we produce in relation to "raw feels" are a foregone conclusion driven by our evolution and the societies in which we live.
 
-References:
-* Kant, Immanuel, Critique Of Pure Reason, 1781. Translated by Norman Kemp Smith, London: Macmillan, 1929. Koestler, Arthur, The Act of Creation, London: Pan Books, 1970.
-* Hoffman (?). https://sites.socsci.uci.edu/~ddhoff/interface.pdf
 
 ---
 
@@ -1488,6 +1484,10 @@ _todo_
 * Borţun, D., & Purcarea, V. L. (2013). Marketing and semiotic approach on communication. Consequences on knowledge of target-audiences. Journal of medicine and life, 6(1), 103–108.
 
 * Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of internal medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
+
+* Kant, Immanuel, Critique Of Pure Reason, 1781. Translated by Norman Kemp Smith, London: Macmillan, 1929. Koestler, Arthur, The Act of Creation, London: Pan Books, 1970.
+
+* Hoffman (?). The Interface Theory of Perception. https://sites.socsci.uci.edu/~ddhoff/interface.pdf
 
 * Levine, J. (1983). Materialism and the Qualia: The Explanatory Gap. Pacific Philosophical Quarterly, LXIV, 354-61.
 
