@@ -1182,6 +1182,12 @@ Finally, we become convinced of the existence and specific nature of SES by anyt
 * memory and subsequent recall
 * physical behaviour that reports its existence
 
+_todo: maybe_:
+* The subjective experience state is not itself subjective experience. It is merely the content of the experience: a statement that the individual has observed whatever is the topic of the so called subjective experience.
+* The processing that follows is also not itself subjective experience. It is merely the interpretation of the representation, which has as its output another representation. In the brain, that interpretation occurs through the action of millions of individual neurons. There is no place to pinpoint as the thing that has subjective experience.
+* There is also no time to pinpoint as the moment of subjective experience. At any given moment in time, the only thing that exists of subjective experience is a representation that subjective experience occurred plus the in-flight action of millions of individual computational units interpreting that representation.
+* The only evidence we have for the supposed existence of subjective experience is the actions that follow from the above: further thought plus further representations of subjective experience, external actions such as verbal report with regard to our observations, and the subsequently processed memories of the former two.
+
 # V.4 The Properties of Subjective Experience
 To show more clearly how the above creates subjective experience, let us examine some specific properties of subjective experience. We shall focus on heterophenomena - [define, cite].
 
@@ -1411,15 +1417,31 @@ So we observe our own thoughts, identify them as our own, and feel strongly abou
 ---
 
 
-# Part VII - Predictions
+# Part VII - Predictions and Conclusions
 
-_todo_
+In this final part I shall take a little time to draw out some of the consequences of my theory of subjective experience. There are a few reasons for doing so. Firstly as a place to fill out some of the details of explanations presented earlier that otherwise would have made them longer. Secondly as a chance to deal with some of the likely rebuttals. And lastly as an opportunity to be a little more speculative.
 
-purpose:
-* fill out some of the details of explanations presented earlier that otherwise would have made them longer
-* a chance to deal with some of the likely rebuttals
-* an opportunity to be a little more speculative
+Top priority:
+* Convergence of Meta-Management
+* Brain structures
+    * Why would there only be one subjective experience within the brain?
+    * Effect of split-brains
 
+Then:
+* Consciousness in the animal kingdom and artificial consciousness
+* Causality
+* Blindsight
+* Cartesian Theatres vs other models
+    * Have I re-created a cartesian theatre? Maybe.
+
+Dropped:    
+* Abstract thought
+    * Meta-management leads to abstract thought and general intelligence
+* Content type of memory
+    * That meta-management feedback loop becomes the central language
+    * => Nah. It's too tied to having a central point, ignoring decentralised processing.
+* Continuous stream or just a blip?
+    * => already covered.
 
 ## Convergence of Meta-Management
 In developing this theory I have been palpably aware of concerns that what I am proposing makes no sense because such a system could never be stable enough to operate effectively. I have made the claim that habitual and rational system learn off each other. That alone can produce unstable results. Indeed, I have made the claim that they are so unstable that they need a meta-management process in order make them stable. But then I've twisted that assumption on its head by claiming that somehow those very same unstable systems can meta-manage themselves. Without sound empirical results what basis do I have to believe that this could possibly work? And if it's not a feasible architecture, then my entire argument for the basis of subjective experience is in question.
@@ -1454,24 +1476,6 @@ Effectively, society is a collective behavioural exploration and learning system
 ![societal convergence pressure](files/A-coherent-theory-v1-societal-convergent-pressure.drawio.png)
 
 * _**Convergence pressures operating against the control systems of an individual.** ..todo.._
-
-## Does it exist?
-_todo: better in prediction part_
-
-The subjective experience state is not itself subjective experience. It is merely the content of the experience: a statement that the individual has observed whatever is the topic of the so called subjective experience.
-
-The processing that follows is also not itself subjective experience. It is merely the interpretation of the representation, which has as its output another representation. In the brain, that interpretation occurs through the action of millions of individual neurons. There is no place to pinpoint as the thing that has subjective experience.
-
-There is also no time to pinpoint as the moment of subjective experience. At any given moment in time, the only thing that exists of subjective experience is a representation that subjective experience occurred plus the in-flight action of millions of individual computational units interpreting that representation.
-
-The only evidence we have for the supposed existence of subjective experience is the actions that follow from the above: further thought plus further representations of subjective experience, external actions such as verbal report with regard to our observations, and the subsequently processed memories of the former two.
-
----
-
-
-# Part VII - Next Steps
-
-_todo_
 
 # References
 
