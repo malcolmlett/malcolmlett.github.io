@@ -124,6 +124,8 @@ A plant is alive. Furthermore, a plant can react to its environment. But again m
 
 Contrast that to humans. We have some sort of internal experience of the things that happen to us, of the things we do in response, and of and the thoughts that swim around our brain while all of that is happening. That internal experience is variously referred to as _phenomenal consciousness_ [citations] and _subjective experience_ [citations]..._todo: any other terms?_. I shall use the term _subjective experience_ in a hope to avoid some of the debate associated with other terms. What is peculiar about subjective experience is that despite hundreds of years of theorising [citation], we cannot explain a) what the underlying processes are that produce subjective experience, nor b) why we might have subjective experience in the first place.
 
+_todo: clarify that I consider any kind of experience as potentially having subjective experience, including but not limited to: sensory perception, bodily awareness, memory, imagination, emotion, desire, action, and thought. And clarify that I am referring to all aspects of subjective experience, including awareness of that experience and any kind of "something extra" or "raw feels" associated with it.
+
 Chalmers makes the claim that no physical property, mechanical or computational process known to us today can explain subjective experience [citation], and the issue has become known as the _Hard Problem of Consciousness_. This problem is so "hard", that it has led many, Chalmers included, to pose non-materialistic theories: theories that incorporate some form of reality outside of what we can measure through physical means.
 
 This article is interested in resolving that most perplexing question of consciousness. I present the case that subjective experience can be fully explained through materialistic means. Not only that, I present a theory that explains _why_ and _how_ subjective experience occurs - the underlying mechanisms of subjective experience.
@@ -208,6 +210,11 @@ Others offer alternative ideas focused on how multiple streams of processing bec
 Todo - brain parts etc
 
 ![forward and backward connections](files/forward-and-backward-connections-in-brain-marino-2021.png)
+
+Purpose:
+* highlight that processing occurs at the system level, dependent on all the systems involved, that no system on its own can really do anything much
+* highlight the micro-recurrent "wave style" of communication
+* provide a very brief high-level summary of what regions of the brain are believed to be involved with consciousness
 
 
 ---
@@ -1442,6 +1449,37 @@ Dropped:
     * => Nah. It's too tied to having a central point, ignoring decentralised processing.
 * Continuous stream or just a blip?
     * => already covered.
+    
+## On the Causality of Consciousness
+Many debates have raged over the question of whether consciousness _causes_ anything. ........[citation and details]
+But those debates have necessarily all been speculative in nature, because they were argued without a clear understanding of the functional purpose of consciousness and its underlying mechanisms.
+
+We can now add something more concrete to the debate by examining the effects of the claims of this article.
+
+Firstly, subjective experience is created from a sequence of computations. There is not just one kind of computational sequence but a few discrete kinds of sequence that we need to consider:
+1. sequences of events that for some meaningful duration were controlled entirely through habitual processes with minimal or no use of the meta-management feedback loop
+2. sequences of events that employ significant meta-management processing, but form no subjective experience states (SES)
+3. sequences of events that produce SES
+
+Clearly in the first case subjective experience was not causal as there was no subjective experience in the situation, no SES was constructed and interpreted. The events may be later recalled, and an SES constructed from them, and at that point there will be a subjective experience of the memory of the events. But at the time of the events in question, there was no subjective experience.
+
+Let us turn to the third case, skipping the second case for now for reasons that will become clear shortly. In the third case, an SES is constructed. An SES is always _about_ something, and that something always occurs _prior_ to the construction of the SES. In the overly simplistic case of an SES about seeing an apple, clearly the SES is in no way causal in terms of the seeing of the apple. Likewise, an SES about a decision to eat that apple is also non-causal in terms of that particular decision.
+
+But this does not mean that SES are non-causal in absolute terms. On the contrary, SES may be further interpreted. Whatever result is produced by that interpretation is _caused_ by the SES (in conjunction with the specific nature of the interpretation process executed). That result could be the start of a lengthy thought process about the nature of self-awareness, it could be a body action reporting that you observe whatever the target of the SES was, it could be a decision to eat an apple in order to produce SES about eating apples, or it could be any number of other more subtle effects, all of which would be caused by the presence of that original SES.
+
+What happens if an SES is constructed but not interpreted?. SES are just representational states after all. An SES is entirely non-causal with regards to any computational results that are produced at that moment if it is constructed and merely "stored" to memory before attention switches to something else. But it still _causes_ something - the particular episodic memory of that SES. If that same SES was constructed and then immediately discarded without memory storage, then the answer is a little less clear. Did that particular SES _cause_ the subsequent processing outcome that concluded that attention should be shifted elsewhere? If yes, then the SES caused something. On the other hand, if the SES was discarded due to some other attentional control process that was entirely unaffected by whatever state happened to already be present, then we can say that the SES _caused_ nothing.
+
+Another nuance comes from remembering that processing in the human brain is not so step-wise as it is in von Neumann computers. The events entailing seeing an apple and then deciding to eat the apple do not occur as two discrete processing steps. Rather, the latter processing outcome is reached through a continuous motion of waves of neural signalling spanning many regions of brain with multiple repeated and varied interactions. If anything, the conclusion "eat the apple" slowly resolves from a vague proto-decision until it is clearly defined enough that actions can be initiated from it. And even then the proto-decision may still resolve further while action is already in play, perhaps to further refine the action plan. Likewise, the computational state that holds the representation of that proto-decision is not a discrete one-thing-holder like in von Neumann computers. It is a mass of neurons that represents through whatever fluffy organic mess of a means that evolution has stumbled upon. So we have every reason to suspect that it is quite capable of holding multiple proto-anythings at the same time, including a proto-decision-to-eat-apple and a proto-ses. The decision to eat the apple may have been caused in some way by the SES that was being constructed at the same time. That is not to say that an SES would always be constructed in parallel, but that it could be.
+
+One last nuance considers that the only way that we can know that an SES was constructed is through its effects. An SES that is entirely discarded before producing any effect is merely a representational state that was never interpreted. At the very least it must be "stored" into episodic memory so that it can be later recalled and reacted to. The question of whether SES are causal collapses to a tautology.
+
+In conclusion, for many cases SES are not the cause of the things that they are about, but rather are produced after that thing occurred. However, it is entirely plausible that sometimes SES are constructed (through gradual resolution) in parallel with the thing that they are about and as such contribute to the causal history of that thing. Furthermore, SES often cause subsequent processing outcomes, which themselves may or may not produce further SES about those subsequent processing outcomes. Finally, some SES are entirely non-causal, both with respect to the thing that they are about, and with respect to any subsequent outcomes.
+
+If we accept that the SES is the closest concrete thing we can attribute to the more nebulous idea of subjective experience, then we can say that subjective experience is a mixture of causal and non-causal natures in the exact ways as described in the prior paragraph, except for the last sentence. 
+
+With respect to the last sentence, whether you can have entirely non-causal subjective experiences becomes a definitional problem - how do you define the mapping from the nebulous idea of subjective experience to the concrete mechanisms surrounding SES? Most consider that subjective experience must be reportable in some way, even if only through private introspection. I would argue that, by definition, subjective experience only exists if the individual is aware that it existed, otherwise it was not subjective experience in the first place. That awareness occurs in the form of the underlying SES causing some further result. But this is not the only way of defining subjective experience and not the only way to map from it to SES. So I will leave the question of whether subjective experience can be entirely non-causal, considering it to be only a matter of definitional opinion.
+
+
 
 ## Convergence of Meta-Management
 In developing this theory I have been palpably aware of concerns that what I am proposing makes no sense because such a system could never be stable enough to operate effectively. I have made the claim that habitual and rational system learn off each other. That alone can produce unstable results. Indeed, I have made the claim that they are so unstable that they need a meta-management process in order make them stable. But then I've twisted that assumption on its head by claiming that somehow those very same unstable systems can meta-manage themselves. Without sound empirical results what basis do I have to believe that this could possibly work? And if it's not a feasible architecture, then my entire argument for the basis of subjective experience is in question.
