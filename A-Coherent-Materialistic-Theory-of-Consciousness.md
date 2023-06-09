@@ -1486,26 +1486,34 @@ Effectively, society is a collective behavioural exploration and learning system
 * _**Convergence pressures operating against the control systems of an individual.** ..todo.._
 
 ## On the Causality of Consciousness
-_todo: summarise existing discussions on causality and flesh out the intro to the discussion_
+Many of the debates around the causal nature of consciousness are in the form of deep metaphysical ontological questions about mind-states, physical-states, and the kinds of relationships between them (Yablo, 2002; Kim, 2002; Robb et al 2023; Robinson & William, 2019). Those debates arise even assuming a materialistic basis for those mind-states. I have neither the skill nor the inclination to attempt a response to those philosophical questions. I merely hope that those more philosophically skilled will find my scientific explanations as a useful grounding for their metaphysical arguments - hopefully in support of my own conclusions.
 
-Many debates have raged over the question of whether consciousness _causes_ anything. ........[citation and details]
+To the more practical scientific questions of causation is what I shall devote some time here.
 
-It is said that subjective experience is always _of_ something. The thing that subjective experience is of is referred to as its intent. It is important to understand that the word "intent" here does not have its usual english meaning that implies a decision or a goal to achieve a certain outcome. Rather, it is best thought of as a target or a focus.
+In now famous work by Libet, it was found that electrophysiological readiness potentials (RPs) that reliably indicated the beginnings of cerebral function leading to a decision to act occurred between 350ms to 400ms prior to the individual being consciously aware of that decision (Libet, 1985 & 2004). This seemed to suggest that conscious awareness of a decision is an "after the fact" event, and worse yet that it may be epiphenomenal - having no causal effect. Libet softened the blow a little in that same work in the discovery that subjects could "veto" the motor performance if a counter-decision is made (supposedly consciously) within 150ms after the conscious recognition of the first decision. That work is further backed up by observations of causal chains of brain activity that occur over several seconds leading up to a conscious decision, and that the specific patterns of activity can be used by an observer to predict the selection given a predefined set of available choices (Haynes, 2013; Soon et al 2008).
 
-The question of causality is actually two questions:
-1. Is subjective experience the _cause_ of its intent? This is clearer in the case of thought: is the subjective experience of thought the cause of that thought, or does it occur afterwards?
-2. Does subjective experience have any causal power of thought at all? Or is it epiphenomenal?
+Other experiments have found that people can judge themselves to have at least partial control of a movement that in fact they lacked control of (Wegner and Wheatley, 1999; Wegner, 2002; Linser and Goschke, 2007). And to the more abstract examples, it has been found that people will sometimes confabulate their reasons for judgments  - unknowingly giving false reasons for their conclusions, when the experimenter knows that their judgements were made for other reasons (Nisbett and Wilson, 1977a & 1977b).
 
-Those debates have necessarily all been speculative in nature, because they were argued without a clear understanding of the functional purpose of consciousness and its underlying mechanisms. We can now add something more concrete to the debate by examining the effects of the claims of this article.
+I can see two questions of interest here with respect to consciousness and causality, stated as such:
+1. Is subjective experience the _cause_ of its intent?
+2. Does the act of having a subjective experience have any effect on the individual's subsequent state?
 
-Firstly, subjective experience is created from a sequence of computations. There is not just one kind of computational sequence but a few discrete kinds of sequence that we need to consider:
+Both of these questions need some clarification before I continue.
+
+Within philosophical circles, and while there are exceptions, it is generally said that subjective experience is always _of_ something. The thing that subjective experience is _of_ is referred to as its _intent_. The word "intent" here does not take its usual english meaning, which would suggest that a subjective experience is itself autonomous and has its own desires or goals. Rather, it is best thought of as a target or a focus. This is clearest in the case of thought: is the subjective experience of thought the cause of that thought, or does it occur afterwards? Replace "thought" with "decision" and you have the questions posed by Libet. Conveniently that mirrors my definition of a subjective experience state (SES).
+
+In order to provide some clarity to the second question, I shall rephrase it with a slightly different meaning and it will be to this meaning that I attempt to provide an answer: is it ever the case that the state of having a subjective experience has causal effect on subsequent computations?
+
+The empirical results that we have from the works of Libet and others is a good start to begin to answer these questions, but their interpretation is still speculative in nature because we lack a clear understanding of the functional purpose of consciousness and its underlying mechanisms. Perhaps we can now add something more concrete to the debate by examining the effects of the claims of this article.
+
+Firstly, as claimed, subjective experience is created from a sequence of computations. There is not just one kind of computational sequence that we need to consider, but perhaps several. I shall consider the following kinds of sequence:
 1. sequences of events that for some meaningful duration were controlled entirely through habitual processes with minimal or no use of the meta-management feedback loop
-2. sequences of events that employ significant meta-management processing, but form no subjective experience states (SES)
-3. sequences of events that produce SES
+2. sequences of events that produce SES
+3. sequences of events that employ significant meta-management processing, but form no subjective experience states (SES)
 
 Clearly in the first case subjective experience was not causal as there was no subjective experience in the situation, no SES was constructed and interpreted. The events may be later recalled, and an SES constructed from them, and at that point there will be a subjective experience of the memory of the events. But at the time of the events in question, there was no subjective experience.
 
-Let us turn to the third case, skipping the second case for now for reasons that will become clear shortly. In the third case, an SES is constructed. An SES is always _about_ something, and that something always occurs _prior_ to the construction of the SES. In the overly simplistic case of an SES about seeing an apple, clearly the SES is in no way causal in terms of the seeing of the apple. Likewise, an SES about a decision to eat that apple is also non-causal in terms of that particular decision.
+In the second case, an SES is constructed. An SES is always _about_ something, and that something always occurs _prior_ to the construction of the SES. In the overly simplistic case of an SES about seeing an apple, clearly the SES is in no way causal in terms of the seeing of the apple. Likewise, an SES about a decision to eat that apple is also non-causal in terms of that particular decision.
 
 But this does not mean that SES are non-causal in absolute terms. On the contrary, SES may be further interpreted. Whatever result is produced by that interpretation is _caused_ by the SES (in conjunction with the specific nature of the interpretation process executed). That result could be the start of a lengthy thought process about the nature of self-awareness, it could be a body action reporting that you observe whatever the target of the SES was, it could be a decision to eat an apple in order to produce SES about eating apples, or it could be any number of other more subtle effects, all of which would be caused by the presence of that original SES.
 
@@ -1515,9 +1523,9 @@ Another nuance comes from remembering that processing in the human brain is not 
 
 One last nuance considers that the only way that we can know that an SES was constructed is through its effects. An SES that is entirely discarded before producing any effect is merely a representational state that was never interpreted. At the very least it must be "stored" into episodic memory so that it can be later recalled and reacted to. If that does not occur, then no subsequent computational processes are affected by the SES. From a computational point of view, the question of whether SES are causal collapses to a tautology. But that is not the end of it. The construction of the SES used energy resources, resulting in changes to blood flow. An experimenter examining the activity of the individual's brain via fRMI would see, ever so briefly, those associated blood flow changes. If, perhaps in the future, we had some advanced scanning technology that reveals the precise state of individual neurons, we would see even more clearly the brief existence of that SES within the mind of the individual. And all the while, the individual would claim that no such SES existed at that time, because they have no computational evidence that it existed.
 
-Of the three computational sequences that above, I have delayed consideration of the second case because it quickly becomes convoluted by questions around how we map this new mechanistic understanding onto our more nebulous conception of subjective experience. A hint of the issue is already found in the preceding paragraph. In many respects, this is a definitional problem and thus heavily affected by opinion, but let us now attempt examine this to some extent. Meta-management processes, when they occur, are causal of what comes next (at least to every extent worth considering at this point). But meta-management processes do not always produce SES. So we likely would not choose to pin the definition of subjective experience to meta-management processes per se. Additionally, the construction of SES do not require that meta-management actions be undertaken at the time. SES are constructed not from the interpretive processes that is meta-management, but rather from any processing that incorporates sensory data supplied by the feedback loop. We can also say that sometimes that sensory data provided by the feedback loop is processed without any kind of subsequent processing that recognises that the feedback loop was used. In other words, the computational state can be observed (via the feedback loop) without an SES being constructed about that observation. So we can say that an SES is just a recognition that an observation took place, but that the observation still took place regardless of whether an SES is constructed about it.
+There is one last kind of computational sequence to consider, where significant meta-management processing is employed but forms no subjective experience states (SES). I have included this case last because it quickly becomes convoluted by questions around how we map this new mechanistic understanding onto our more nebulous conception of subjective experience. A hint of the issue has already appeared in the preceding paragraph. In many respects, this is a definitional problem and thus heavily affected by opinion, but let us now attempt to examine this to some extent. Meta-management processes, when they occur, are causal of what comes next (at least to every extent worth considering at this point). But meta-management processes do not always produce SES, so we likely would not choose to pin the definition of subjective experience to the action of meta-management processes per se. Additionally, the construction of SES do not require that meta-management actions be undertaken at the time. SES are constructed not from the interpretive processes that is meta-management, but rather from any processing that incorporates sensory data supplied by the feedback loop. We can also say that sometimes that sensory data provided by the feedback loop is processed without any kind of subsequent processing that recognises that the feedback loop was used. In other words, the computational state can be observed (via the feedback loop) without an SES being constructed about that observation. So we can say that an SES is just a recognition that an observation took place, but that the observation still took place regardless of whether an SES is constructed about it.
 
-Now, that observation was indeed causal. By my definition, the act of computationally processing the signal from the feedback loop is the observation, and the computational process always produces an outcome (ignoring the moment when the energy levels required to convey electrical spikes across synaptic junctions drop towards zero as the individual dies), and thus the observation is always causal with respect to subsequent events. In contrast, the observation may _not_ be causal with respect to the thing being observed - because the thing being observed is the dimensionality reduced representation of the computational state of the immediately prior iteration. However, that assumes a von Neumann style architecture where capturing of computational state occurs as a separate step after the fact. The observation and the thing being observed could resolve together as per the same argument for SES.
+Now, that observation was indeed causal. By my definition, the act of computationally processing the signal from the feedback loop _is_ the observation, and the computational process always produces an outcome (ignoring the moment when the energy levels required to convey electrical spikes across synaptic junctions drop towards zero as the individual dies), and thus the observation is always causal with respect to subsequent events. In contrast, the observation may _not_ be causal with respect to the thing being observed - because the thing being observed is the dimensionality reduced representation of the computational state of the immediately prior iteration. However, that assumes a von Neumann style architecture where capturing of computational state occurs as a separate step after the fact. The observation and the thing being observed could resolve together as per the same argument for SES.
 
 So, an SES is a state that represents a prior causal state, certainly at least with respect to subsequent events. What is subjective experience? As best as I can say here, it's an awareness of our own computational states. That's what an SES is. But an SES is just a representation. It has to be interpreted to have any meaning or effect. Well, arguably the SES _is_ the interpretation, of the original observation; the original observation that we've said is causal of subsequent events, while not being casual of the thing being observed. It's not clear whether to pick the observation or the SES of that observation as subjective experience.
 
@@ -1525,14 +1533,10 @@ In summary, for many cases observations and their SES are not the cause of the t
 
 If we pick (somewhat arbitrarily) that the construction of an SES is the closest concrete thing we can attribute to subjective experience, then we can say that subjective experience is a mixture of causal and non-causal natures in the exact ways as described in the prior paragraph, except for the last sentence. 
 
-With respect to the last sentence, whether you can have entirely non-causal subjective experiences is another example of the problem of defining the mapping from our concept of subjective experience to the concrete mechanisms surrounding observation and SES. I would argue that, by definition, subjective experience only exists if the individual is aware that it existed, otherwise it was not subjective experience in the first place. And I would argue that this awareness occurs in the form of the underlying SES having a causal effect on some further result. But this is not the only way of defining subjective experience and not the only way to map from it to the mechanisms explained here. So I will leave any further discussion of whether there exists entirely non-causal subjective experience as a matter of definitional opinion.
+With respect to the last sentence, whether you can have entirely non-causal subjective experiences is another example of the problem of defining the mapping from our concept of subjective experience to the concrete mechanisms surrounding observation and SES. I would argue that, by definition, subjective experience only exists if the individual is aware that it existed, otherwise it was not subjective experience in the first place. And I would argue that this awareness occurs in the form of the underlying SES having a causal effect on some further result. But this is not the only way of defining subjective experience and not the only way to map from it to the mechanisms explained here. So I will leave any further discussion of whether there exists entirely non-causal subjective experience as a matter of definitional opinion and metaphysical debate.
 
 
 # References
-
-* Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation
-    - https://arxiv.org/abs/1308.3432
-    - 2013. Yoshua Bengio, Nicholas Léonard, Aaron Courville.
 
 * Block, N. (2002). The Harder Problem of Consciousness. The Journal of Philosophy, 99(8), 391–425. https://doi.org/10.2307/3655621
 
@@ -1540,13 +1544,38 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of internal medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
 
-* Kant, Immanuel, Critique Of Pure Reason, 1781. Translated by Norman Kemp Smith, London: Macmillan, 1929. Koestler, Arthur, The Act of Creation, London: Pan Books, 1970.
+* Haynes, J-D. (2013). Beyond Libet: Long-Term Prediction of Free Choices from Neuroimaging Signals. In A. Clark, J. Kiverstein and T. Vierkant (eds.), Decomposing the Will, Oxford: Oxford University Press.
 
 * Hoffman (?). The Interface Theory of Perception. https://sites.socsci.uci.edu/~ddhoff/interface.pdf
 
+* Kim, J. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford and New York: Oxford University Press, 170-179.
+
+* Kant, Immanuel, Critique Of Pure Reason, 1781. Translated by Norman Kemp Smith, London: Macmillan, 1929. Koestler, Arthur, The Act of Creation, London: Pan Books, 1970.
+
 * Levine, J. (1983). Materialism and the Qualia: The Explanatory Gap. Pacific Philosophical Quarterly, LXIV, 354-61.
+
+* Libet, B. (1985). Unconscious Cerebral Initiative and the Role of Conscious Will. In Voluntary Action, Behavioral and Brain Sciences, 8: 529–566.
+
+* Libet, B. (2004). Mind Time: The Temporal Factor in Consciousness. Cambridge, MA: Harvard University Press.
+
+* Linser, K and Goschke, T. (2007). Unconscious modulation of the conscious experience of voluntary control, Cognition, 104: 459–475.
 
 * Nessa J. (1996). About signs and symptoms: can semiotics expand the view of clinical medicine?. Theoretical medicine, 17(4), 363–377. https://doi.org/10.1007/BF00489681
 
+* Nisbett, R. E. & Wilson, T. D. (1977a). Telling More Than We Can Know: Verbal Reports on Mental Processes. Psychological Review, 84: 231–259.
+
+* Nisbett, R. E. & Wilson, T. D. (1977b). The halo effect: evidence for unconscious alteration of judgments. Journal of Personality and Social Psychology, 35: 250–256.
+
 * Peirce (1982-). The Writings of Charles S. Peirce: A Chronological Edition. Volumes 1–6. And 8. Eds. Peirce Edition Project. Bloomington I.N: Indiana University Press.
 
+* Robb, David, John Heil, and Sophie Gibb (2023). Mental Causation. The Stanford Encyclopedia of Philosophy (Spring 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/spr2023/entries/mental-causation/>
+
+* Robinson, William (2019). Epiphenomenalism. The Stanford Encyclopedia of Philosophy (Summer 2019 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2019/entries/epiphenomenalism/>.
+
+* Soon, C., Brass, M., Heinze, H-J., and Haynes, J-D. (2008). Unconscious determinants of free decisions in the human brain. Nature Neuroscience, 11: 543–545. https://doi.org/10.1038/nn.2112
+
+* Yablo, S. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford and New York: Oxford University Press, 179-197.
+
+* Wegner, D. M. and Wheatley, T., 1999, “Apparent mental causation: sources of the experience of will”, American Psychologist, 54: 480–492.
+
+* Wegner, D. M., 2002, The Illusion of Conscious Will, Cambridge, MA: MIT Press/Bradford.
