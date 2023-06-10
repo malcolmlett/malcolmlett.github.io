@@ -159,9 +159,42 @@ Finally, I argue that our disgruntlement with such an explanation is not an _exp
 
 
 # I.3 Background - Theories of Consciousness
-Many theories exist about the nature of consciousness. A summary of such theories will be given here.
+Many theories exist about the nature of consciousness. A summary of such theories will be given here. This serves two purposes. Firstly, to provide a background to readers who are not familiar with the topic. Secondly, to define clearly the particular meanings that I will use for various key terms throughout the rest of the article.
 
 _todo later: extend out as suitable intro for someone totally new to the question._
+
+The word "consciousness" is an overloaded term, ie: that it has many meanings, with the particular meaning depending on context. Furthermore, consciousness of the sort that I wish to talk about here is an ill-defined concept. For example, consider the following working definition proposed by Searle:
+
+> By consciousness I simply mean those subjective states of awareness or sentience that begin when one wakes in the morning and continue throughout the period that one is awake until one falls into a dreamless sleep, into a coma, or dies or is otherwise, as they say, unconscious. (Searle 1990)
+
+Firstly, this is not a definition, but an example. One that implores the reader to refer to their own intuition in order to guess the author's meaning. Secondly it leaves ambiguous the case of dreams, which many might argue also carry some extent of conscious-like awareness. But this is typical of any research in this field, and I shall do no better.
+
+Here's my attempt at defining consciousness of the form that shall be discussed here. Consciousness is not just the state of being awake. It is the collection of first-person experiences that we have while awake. Not only do we have such experiences, but we can be aware of the fact that we are having or have had those experiences. We also have first-person experiences while dreaming, and thus consciousness refers to those experiences too. In contrast, consciousness is absent when in deep sleep, and presumably when in vegetative comas. Likewise we are not conscious of everything that happens in our brain, even at the best of times. For example, when you look across the room and observe a chair, you have no awareness of any of the processes that just occurred within the brain that took the visual sensory information and identified that a chair was present. So, consciousness includes the things that you aware of, and excludes those things that you are not aware of.
+
+Unfortunately there is still much ambiguity there. But it will suffice for now.
+
+For the study of consciousness, we have three broad questions that we wish to answer, that we can paraphrase as "what, why and how?":
+
+* **What:** are the defining characteristics and properties of consciousness? ie: what do we look for in order to identify whether some thing or some creature experiences consciousness, or to distinguish whether a particular mental state is conscious? Also, what kinds of properties are we trying to explain through an explanation of consciousness?
+* **Why:** does it exist? ie: why did it evolve? what functional benefit does it offer over and above a creature that lacks consciousness?
+* **How:** does it occur? ie: what are the underlying mechanisms that produce consciousness?
+
+The definitions given above are examples of attempts to answer the "what" question, but there are many more details yet to be elaborated on.
+
+Spanning across the "what, why, and how" questions are a different set of questions, often categorised as questions of _creature consciousness_ and _state consciousness_:
+* **Creature Consciousness:** what is it about certain things (humans, creatures, maybe other kinds of things) that means that they are conscious, while others are not?
+* **State Consciousness:**  ....
+
+This leads to different variants of the "what" question, two examples of which are a) what are the characteristics associated with creature consciousness? b) what kinds of things are we conscious of?
+
+A good answer to the former requires us to answer the questions of why and how. But the latter is more open to investigation on its own.....kinds of experiences....
+
+
+References:
+- Searle, J. R. (1990). Who is computing with the brain? Behavioral and Brain Sciences, 13:4:632-64.
+
+
+
 
 To provide some grounding to the summary and to aid in comparing theories, a framework of a stack of conceptual layers is used, illustrated in the diagram that follows. This is not meant to imply a priori anything about the actual structure of consciousness and its underlying mechanisms. For example, none of the layers are assumed necessarily to exist a priori, nor is the particular illustrated order appropriate in every case.
 
