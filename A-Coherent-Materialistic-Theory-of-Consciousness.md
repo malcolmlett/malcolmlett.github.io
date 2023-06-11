@@ -172,6 +172,7 @@ Here's my attempt at defining consciousness of the form that shall be discussed 
 
 Unfortunately there is still much ambiguity and room for disagreement. But it will suffice as a start so that I can refine some ideas as we go along.
 
+## Questions of Consciousness
 For the study of consciousness, we have three broad questions that we wish to answer, that we can paraphrase as "what, why and how?":
 
 * **What:** are the defining characteristics and properties of consciousness? ie: what do we look for in order to identify whether some thing or some creature experiences consciousness, or to distinguish whether a particular mental state is conscious? Also, what kinds of properties are we trying to explain through an explanation of consciousness?
@@ -224,8 +225,10 @@ Articles on Consciousness > From Rosenthal David. 2012. Higher-order awareness, 
 
 https://www.frontiersin.org/articles/10.3389/fpsyg.2022.913309/full
 
+> * The furthest logical extension is that of _epiphenomenalism_ which posits that no functional mental processes are caused by subjective experience. Rather, subjective experience is posited as being some sort of non-causal summary of internal and external events. A significant problem with epiphenomenalism is why subjective experience, and indeed consciousness at all, would have evolved if it can provide no functional / causal benefit to the individual. In that sense, epiphenomenalism only makes any sense if viewed in conjunction with with metaphysical dualistic theories where some "spirit" that exists on another plane of reality are perceiving the experiences for some grander purpose outside of the context of the corporeal reality.
 
-## Theories of Consciousness
+
+## General Theories of Consciousness
 I now describe some generic and specific theories of consciousness. To provide some grounding to the summary and to aid in comparing theories, a framework of a stack of conceptual layers is used, illustrated in the diagram that follows. This is not meant to imply a priori anything about the actual structure of consciousness and its underlying mechanisms. For example, none of the layers are assumed necessarily to exist a priori, nor is the particular illustrated order appropriate in every case.
 
 ![theory layers](files/A-coherent-theory-v1-theory-layers.drawio.png)
@@ -254,12 +257,17 @@ A deeper philosophical question exists about whether representation and function
 If all the representational and functional structures are in place for an individual to have both the external behaviours and internal mental behaviours of an individual in intense pain, can we even conceive it to be possible that they would not have the typical associated subjective experience of the pain?
 
 ## Specific Theories of Consciousness
+
+HOT, GNWT, IIT.
+
+
 > todo:
 > * Inspired by the peculiar behaviour of quantum mechanics, some have suggested that the physical substrate produces quantum entanglement and that this quantum entanglement may be the underlying mechanism behind subjective experience, such as  ...{insert name of Microtubules theory}....
->
+
+> todo:
 > * Those theories bare some similarity to that of Pan-Psychism, the theory that consciousness is fundamental. The term _fundamental_ here refers to the way that physical forces and energies are fundamental: they are features of reality that cannot be explained as a product of anything else more fundamental. Under Pan-psychism, all matter has some degree of consciousness or proto-consciousness at the micro-scale, and that these micro-scale consciousnesses or proto-consciousnesses combine into larger consciousnesses when the micro-scale parts of matter combine to form larger material objects [citation, chalmers]. In that way, certain processes lead directly to subjective experience with pan-psychist properties providing the "something special" without necessarily requiring specific representations or functional structures. However, pan-psychism is unable to explain why only certain processes are associated with subjective experience while others are not. An obvious explanation would be to require that only certain representations and associated functional structures are sufficient to "combine" the conscious properties of independent neurons / molecules / atoms, but this still leads many open questions about what those representations and/or functional structures might be that have such a power over this underlying fundamental consciousness.
->
-> * The furthest logical extension is that of _epiphenomenalism_ which posits that no functional mental processes are caused by subjective experience. Rather, subjective experience is posited as being some sort of non-causal summary of internal and external events. A significant problem with epiphenomenalism is why subjective experience, and indeed consciousness at all, would have evolved if it can provide no functional / causal benefit to the individual. In that sense, epiphenomenalism only makes any sense if viewed in conjunction with with metaphysical dualistic theories where some "spirit" that exists on another plane of reality are perceiving the experiences for some grander purpose outside of the context of the corporeal reality.
+
+Illusionism / Eliminitivism.
 
 
 ## A point of Central Unification?
