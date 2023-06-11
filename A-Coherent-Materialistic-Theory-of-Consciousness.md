@@ -158,10 +158,8 @@ The metaphor of a _philosophical zombie_ was introduced to hypothesise a human-l
 Finally, I argue that our disgruntlement with such an explanation is not an _explanatory gap_ [citation], but an _intuitional gap_. Nagal famously pointed out that we have no conception of and no way of developing a conception of what it is like to be anything other than ourselves [citation]  [is the 'no way of developing a conception' reference due to 'The Harder Problem of Consciousness'?]. But that does not stop us making assumptions about what should and should not experience subjective experience. It took us a very long time to accept that animals could have any form of consciousness and subjective experience, and likely many still deny that outcome [details, citations]. If we have no way to conceive of the experience held by an animal, why should we be so adamant about its properties? The answer simply is our deluded intuition. Our brains excel at finding patterns and extrapolating from them. This works well when the physical environment around us is there to provide an error signal. But when no error signal is available, we are prone to delusion. Our minds create such a strong sense of self vs other by keying that information into every sensory signal that we ever receive, so that our senses seem to take on an extra quality of realness, of subjectiveness, of _qualia_ [citation]. That seeming extra quality is further processed by the same system that produced it, reinforcing the delusion that the qualia is something extra, beyond mere sensory information. And thus we are deluded into the intuition that subjective experience is somehow more than can be produced by mere computational processing.
 
 
-# I.3 Background - Theories of Consciousness
-Many theories exist about the nature of consciousness. A summary of such theories will be given here. This serves two purposes. Firstly, to provide a background to readers who are not familiar with the topic. Secondly, to define clearly the particular meanings that I will use for various key terms throughout the rest of the article.
-
-_todo later: extend out as suitable intro for someone totally new to the question._
+# I.3 Background - Consciousness
+Many theories exist about the nature of consciousness. A very brief summary of such theories will be given here. This serves two purposes. Firstly, to provide a background to readers who are not familiar with the topic. Secondly, to define clearly the particular meanings that I will use for various key terms throughout the rest of the article.
 
 The word "consciousness" is an overloaded term, ie: that it has many meanings, with the particular meaning depending on context. Furthermore, consciousness of the sort that I wish to talk about here is an ill-defined concept. For example, consider the following working definition proposed by Searle:
 
@@ -169,7 +167,7 @@ The word "consciousness" is an overloaded term, ie: that it has many meanings, w
 
 Firstly, this is not a definition, but an example. One that implores the reader to refer to their own intuition in order to guess the author's meaning. Secondly it leaves ambiguous the case of dreams, which many might argue also carry some extent of conscious-like awareness. But this is typical of any research in this field, and I shall do no better.
 
-Here's my attempt at defining consciousness of the form that shall be discussed here. Consciousness is not just the state of being awake. It is the collection of first-person experiences that we have while awake. Not only do we have such experiences, but we can be aware of the fact that we are having or have had those experiences. We also have first-person experiences while dreaming, and thus consciousness refers to those experiences too. In contrast, consciousness is absent when in deep sleep, and presumably when in vegetative comas. Likewise we are not conscious of everything that happens in our brain, even at the best of times. For example, when you look across the room and observe a chair, you have no awareness of any of the processes that just occurred within the brain that took the visual sensory information and identified that a chair was present. So, consciousness includes the things that you aware of, and excludes those things that you are not aware of.
+Here's my attempt at defining consciousness of the form that shall be discussed here. Consciousness is not just the state of being awake. It is the collection of first-person subjective experiences that we have while awake. Not only do we have such experiences, but we can be aware of the fact that we are having or have had those experiences. We also have first-person subjective experiences while dreaming, and thus consciousness refers to those experiences too. In contrast, consciousness is absent when in deep sleep, and presumably when in vegetative comas. Likewise we are not conscious of everything that happens in our brain, even at the best of times. For example, when you look across the room and observe a chair, you have no awareness of any of the processes that just occurred within the brain that took the visual sensory information and identified that a chair was present. So, consciousness includes the things that you aware of, and excludes those things that you are not aware of.
 
 Unfortunately there is still much ambiguity there. But it will suffice for now.
 
@@ -181,40 +179,64 @@ For the study of consciousness, we have three broad questions that we wish to an
 
 The definitions given above are examples of attempts to answer the "what" question, but there are many more details yet to be elaborated on.
 
-Spanning across the "what, why, and how" questions are a different set of questions, often categorised as questions of _creature consciousness_ and _state consciousness_:
-* **Creature Consciousness:** what is it about certain things (humans, creatures, maybe other kinds of things) that means that they are conscious, while others are not?
-* **State Consciousness:**  ....
+Spanning across the "what, why, and how" questions are a different set of questions, often referred to as questions of _creature consciousness_ and _state consciousness_:
+* **Creature Consciousness:** what is it about certain things (humans, animals, maybe other kinds of things) that results in them having consciousness, while other things do not?
+* **State Consciousness:** what is it about certain brain states that mean that the individual has conscious experience of those states? And which aspects of those states are associated with consciousness?
 
 This leads to different variants of the "what" question, two examples of which are a) what are the characteristics associated with creature consciousness? b) what kinds of things are we conscious of?
 
-A good answer to the former requires us to answer the questions of why and how. But the latter is more open to investigation on its own.....kinds of experiences....
+A good answer to the former requires us to answer the questions of why and how. But the latter is more open to investigation on its own. A few kinds of experience have been identified:
+* **perception:** specifically via the traditional five senses of sight, sound, smell, taste, touch that give us information about the world external to us
+* **bodily awareness:** this includes strong feelings such as pains and pleasures, and more subtle body-state awareness such as balance and proprioception
+* **memory:** recalling past experiences, where that past experience may be any of the sorts described here
+* **imagination:** conjuring images (and perhaps via other modalities) within our mind of things that do not exist
+* **emotion:** the experience of feeling one's emotional state
+* **desire:** the awareness of ones goals and desires
+* **action:** experience and awareness of one's actions, or of the intent to act
+* **thought:** an awareness of the sequence of thoughts, particularly via internal imagined worded vocalisations
 
+The term "experience" itself is sometimes attributed to only a subset of the above, but I shall use it here to refer to any of the above where one could be said as being consciously aware of that experience. Or in other words, I take it that we can consciously experience all of the above "experiences".
 
-References:
-- Searle, J. R. (1990). Who is computing with the brain? Behavioral and Brain Sciences, 13:4:632-64.
+We can also ask what it is about experiences that make them somehow _special_. Again an appeal to intuition is necessary. If a modern computer can produce interesting behaviour but we take it as granted that it has no conscious experience, and in fact nothing we would even call "experience" of any sort, then what are the properties of experience that are lacking in the computer? Another example uses a so called _philosophical zombie_ (or p-zombie for short), which is identical to a conscious human in every respect except that they have no conscious experience [citation: enc. phil; chalmers]. In particular, they behave in every way like a human, including having all the same conversations as a human, but all of their behaviour is produced in some way more comparable to the modern computer - there "no light on upstairs". We can say that the states of both the human mind and p-zombie include everything they need to include in order to produce behaviour, but that the state of the human mind also includes properties of experience that are lacking in the p-zombie.
 
+These properties are the _phenomological properties_ of experience, also known as _qualia_ (Tye, 2021). Frustratingly, it has been painfully difficult to pin down these properties. They are often summarised simply as the "what it's like" to have experience [citation, Nagel] or the "raw feels" of consciousness. Another problem with discussions of qualia is that such discussions often get caught up with the observation that perceptions don't always correlate exactly with reality; a case that is seen clearly with the way that our perception of colour of a particular object is only tenuously associated with the physics of light and its interactions with that object. How our perception correlates or fails to correlate with reality is an important question, and not entirely unrelated to the former question, but it is somewhat of a distraction when we are trying to define what qualia are in the first place.
 
+One such property is that experiences seem to "look through" to other things (Siewert, 2004). While many debates exist, we seemingly always have experiences _of_ something (Siegel, 2021; Siewert 2022). That _something_ that experience is _of_ is referred to as the _intent_ of the experience (Crane, 2009). A key feature of the intent is that it is relatively easy to conceive how it is constructed through entirely mechanistic processes. That stands in stark contrast to the experience itself. Other properties that could perhaps be associated with experience itself include the individual's awareness of themself, and a sense of agency or purpose (Smith, 2018).
 
+A problem that arises is whether the experience of its intent and the intent itself can be separated. This has led some to consider a conceptual separation, and perhaps even an actual separation, between the following (Block, 1995):
+* **Access Consciousness:** awareness of the perception, body sensation, memory, imagination, emotion, desire, action, or thought, to a sufficient extent that the individual can in some way react to the experience
+* **Phenomenal Consciousness:** the first-person subjective experience of those things.
 
-To provide some grounding to the summary and to aid in comparing theories, a framework of a stack of conceptual layers is used, illustrated in the diagram that follows. This is not meant to imply a priori anything about the actual structure of consciousness and its underlying mechanisms. For example, none of the layers are assumed necessarily to exist a priori, nor is the particular illustrated order appropriate in every case.
+In general the two are tied together. Access consciousness excludes non-conscious processes, such as by being restricted to awareness of experiences that have a phenomenal nature. Phenomenal consciousness has a content, and that content is access consciousness. But many debates exist, resting on more detailed analysis and on attempts to define these terms more accurately. There are claims that some phenomenal conscious experiences carry no representational qualities of the sort that characterise access consciousness, and thus we can have phenomenal consciousness without access consciousness. [....todo example from block....]. Likewise, some definitions of access consciousness make it possible to have access consciousness without phenomenal consciousness.
+
+I subscribe to the view that access consciousness and phenomenal consciousness are just different ways of looking at the same thing. Specifically, that access consciousness is a reference to the processes that construct the specific _content_ of consciousness, including not just the intent but also its "raw feels", while phenomenal consciousness refers to the _question_ of why that specific content became conscious and others did not. Mind you, this is not a standard view; most would associate the raw feels with phenomenal consciousness.
+
+## Theories of Consciousness
+I now describe some generic and specific theories of consciousness. To provide some grounding to the summary and to aid in comparing theories, a framework of a stack of conceptual layers is used, illustrated in the diagram that follows. This is not meant to imply a priori anything about the actual structure of consciousness and its underlying mechanisms. For example, none of the layers are assumed necessarily to exist a priori, nor is the particular illustrated order appropriate in every case.
 
 ![theory layers](files/A-coherent-theory-v1-theory-layers.drawio.png)
 
 * _**Conceptual layers used here to summarise theories of consciousness.** Substrate: the physical biology of the brain is viewed as a substrate that "hosts" other processes, such as computational processes. In some theories the substrate might potentially be replaced or emulated via some other substrate (eg: silicon neurons). A-conscious processes: all processes built upon the particular substrate (eg: neural signalling) that produce behaviour and/or affect the state of the brain. Some of these processes or their results are somehow associated with conscious experience, while others are not. Representation: some theories hold that particular kinds of representations are associated with conscious experience. Functional Structures: some theories hold that certain kinds of structure are key to conscious experience. Something Special: some claim that conscious experience is an effect that cannot be explained via purely materialistic means, or that we need some new kind of understanding to explain it. Subjective Experience: the ultimate effect of consciousness that we wish to understand._
 
-In the most obvious example of consciousness, Humans, our brain is clearly the most significant component of our behaviour and thought. The underlying "technology" of the brain is biological neurons. That is the _substrate_. The conscious mind is somehow _realized_ upon that substrate. But that may not be the only possible substrate upon which consciousness could arise. If consciousness is _multi-realizable_, then a being that is in all other respects equivalent to a human but which has silicon neurons would also experience consciousness. Even more radically, perhaps the operation of those neurons could be _simulated_ within a super computer, and the simulated brain would also by conscious. By extension, any _functional isomorphism_ of a biological human brain should be conscious. In contrast, _Type-Type Identity Theory_ posits that there may be something special about biological neurons that give rise to subjective experience, and that non-biological functional isomorphisms would not have such experiences (Van Gulick, 2022).
+The _substrate_ is the (generally physical) thing in which the processes of the mind are carried out. For example, biology and neuroscience has taught us that biological neurons are the substrate of the human mind. There is a conceptual difference between the thing that "hosts" the processes, and the processes themselves. Historically there has been three broad views with regards to the substrate. Perhaps the oldest view is the _dualist_ view of Descartes. In their view  there was the physical substrate, entailing the body and brain, and there was some other non-physical substance that hosted the mind, independent of the physical body (Descartes, 1644; Van Gulick, 2022). While few hold to that view today, it made more sense at the time when Descartes first proposed it. Reportedly Aristotle 
+believed that the purpose of the brain was to cool the blood (Smart, 2022). Most today hold to a _monist_ view that there is only one substrate, and that this substrate is physical, for example the biological neurons of the brain. More generally, such _physicalistic_ or _materialistic_ views hold that the properties of physical substances and their interactions are entirely sufficient from which to base an explanation of everything about consciousness, even if we don't know enough about those properties just yet (Stoljar, 2023). An alternative monist view, that of _idealism_, is that nothing is physical and that everything we perceive exists only within our minds (Guyer and Horstmann, 2023).
 
-These are all examples of _monistic_ statements with respect to the substrate; ie: that only one kind of substrate is in play. In particular, theories that claim ....... are known as _physicalist_. Other monistic theories exist, such as that of _Idealism_........................
+Returning to the materialistic view, ..............
+In the most obvious example of consciousness, Humans, our brain is clearly the most significant component of our behaviour and thought. The underlying "technology" of the brain is biological neurons. That is the _substrate_. The conscious mind is somehow _realized_ upon that substrate. But that may not be the only possible substrate upon which consciousness could arise. If consciousness is _multi-realizable_, then a being that is in all other respects equivalent to a human but which has silicon neurons would also experience consciousness. Even more radically, perhaps the operation of those neurons could be _simulated_ within a super computer, and the simulated brain would also by conscious. By extension, any _functional isomorphism_ of a biological human brain should be conscious. In contrast, _Psycho-Physical Identity Theory_ posits that there may be something special about biological neurons that give rise to subjective experience, and that non-biological functional isomorphisms would not have such experiences (Van Gulick, 2022) [also see citations listed here: https://plato.stanford.edu/entries/functionalism/].
 
-Other theories with respect to the substrate exist. In the original _Dualistic_ theory of Descartes, there were two substrates. There was the physical, entailing the body and brain, and there was some other non-physical substance that hosted the mind, independent of the physical body (Descartes, 1644; Van Gulick, 2022).
+
+References:
+* Descartes, R. (1644/1911). The Principles of Philosophy. Translated by E. Haldane and G. Ross. Cambridge: Cambridge University Press.
+* Guyer, P., and Horstmann, R-P. (2023). Idealism. The Stanford Encyclopedia of Philosophy (Spring 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/spr2023/entries/idealism/>.
+* Van Gulick, R. (2022). Consciousness. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/consciousness/>.
+* Smart, J. J. C. (2022). The Mind/Brain Identity Theory. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/mind-identity/>.
+* Stoljar, D. (2023). Physicalism. The Stanford Encyclopedia of Philosophy (Summer 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), forthcoming URL = <https://plato.stanford.edu/archives/sum2023/entries/physicalism/>.
+
 
 
 
 Inspired by the peculiar behaviour of quantum mechanics, some have suggested that the physical substrate produces quantum entanglement and that this quantum entanglement may be the underlying mechanism behind subjective experience, such as  ...{insert name of Microtubules theory}.... Such theories are quiet on which of the other layers are required. Those theories bare some similarity to that of Pan-Psychism, the theory that consciousness is fundamental in the same way that physical forces and energies are fundamental. Under Pan-psychism, some non-conscious processes lead directly to subjective experience with pan-psychist properties providing the "something special" without necessarily requiring specific representations or functional structures. However, pan-psychism is unable to explain why only certain processes are associated with subjective experience while others are not. An obvious explanation would be to require that only certain representations and associated functional structures are sufficient to "combine" the conscious properties of independent neurons / molecules / atoms, but this still leads many open questions about what those representations and/or functional structures might be that have such a power over this underlying fundamental consciousness.
 
-References:
-* Descartes, R. (1644/1911). The Principles of Philosophy. Translated by E. Haldane and G. Ross. Cambridge: Cambridge University Press.
-* Van Gulick, R. (2022). Consciousness. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/consciousness/>.
 
 **Non-conscious processes:** Many processes operate that neither directly nor indirectly lead to any kind of conscious subjective experience. While earlier work assumed that most brain processes are conscious, there is increasingly strong evidence that almost all mental processes are non-conscious, even for mental processes that are associated with attentive subjective experience. The furthest logical extension is that of epi-phenomenalism which posits that no functional mental processes are associated with subjective experience. Rather, subjective experience is posited as being some sort of non-causal summary of internal and external events. A significant problem with epi-phenomenalism is why subjective experience, and indeed consciousness at all, would have evolved if it can provide no functional / causal benefit to the individual. In that sense, epi-phenomenalism only makes any sense if viewed in conjunction with pas-psychism or with metaphysical dualistic theories where some "spirit" that exists on another plane of reality are perceiving the experiences for some grander purpose outside of the context of the corporeal reality.
 - References: https://www.britannica.com/topic/philosophy-of-mind/Qualitative-states
@@ -248,6 +270,12 @@ Others offer alternative ideas focused on how multiple streams of processing bec
 * von der Malsburg, C. (1997). The coherence definition of consciousness. In M. Ito, Y. Miyashita, & E. T. Rolls (Eds.), Cognition, computation, and consciousness (pp. 193–204). Oxford University Press. https://doi.org/10.1037/10247-013
 * von der Malsburg, Christoph (1997) The Coherence Definition of Consciousness. [Book Chapter]
 * keywords: coherent theory of consciousness, coherence theory
+
+## More Reading
+For those who wish to learn more, the _Stanford Encyclopedia of Philosophy_ has excellent articles covering many topics related to this area. In particular I recommend articles on: [Consciousness](https://plato.stanford.edu/entries/consciousness), [The Unity of Consciousness](https://plato.stanford.edu/entries/consciousness-unity/), [The Contents of Perception](https://plato.stanford.edu/entries/perception-contents/), [Perceptual Experience and Perceptual Justification](https://plato.stanford.edu/entries/perception-justification), [Representational Theories of Consciousness](https://plato.stanford.edu/entries/consciousness-representational/), [The Computational Theory of Mind](https://plato.stanford.edu/entries/computational-mind/), [Neuroscience of Consciousness](https://plato.stanford.edu/entries/consciousness-neuroscience/), [Higher-Order Theories of Consciousness](https://plato.stanford.edu/entries/consciousness-higher), [Introspection](https://plato.stanford.edu/entries/introspection/), [Mental Causation](https://plato.stanford.edu/entries/mental-causation/), [Epiphenomenalism](https://plato.stanford.edu/entries/epiphenomenalism/), and [Animal Consciousness](https://plato.stanford.edu/entries/consciousness-animal/). The Wikipedia article on [Experience](https://en.wikipedia.org/wiki/Experience) also provides an excellent summary of various concerns.
+
+Many of the topics require a background in philosophy to really understand them. For some readings, I recommend the Stanford Philosophy articles on [Metaphysical Explanation](https://plato.stanford.edu/entries/metaphysical-explanation/), [Phenomenology: 1. What is Phenomonology](https://plato.stanford.edu/entries/phenomenology), [Functionalism](https://plato.stanford.edu/entries/functionalism/), and the Wikipedia article on [Intentionality](https://en.wikipedia.org/wiki/Intentionality).
+
 
 # I.4 Background - Biology and Neuroscience 
 
@@ -1582,11 +1610,15 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 # References
 
+* Block, N. (1995). On a confusion about a function of consciousness. Behavioral and Brain Sciences, 18(2), 227–247. https://doi.org/10.1017/S0140525X00038188. [Full Text](https://www.researchgate.net/publication/28762323_On_A_Confusion_About_a_Function_of_Consciousness).
+
 * Block, N. (2002). The Harder Problem of Consciousness. The Journal of Philosophy, 99(8), 391–425. https://doi.org/10.2307/3655621
 
 * Borţun, D., & Purcarea, V. L. (2013). Marketing and semiotic approach on communication. Consequences on knowledge of target-audiences. Journal of medicine and life, 6(1), 103–108.
 
 * Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of internal medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
+
+* Crane, T. (2009). Intentionalism. The Oxford Handbook to the Philosophy of Mind. Oxford: Oxford University Press. pp. 474–93. [Abstract](https://philpapers.org/rec/CRAI-17).
 
 * Haynes, J-D. (2013). Beyond Libet: Long-Term Prediction of Free Choices from Neuroimaging Signals. In A. Clark, J. Kiverstein and T. Vierkant (eds.), Decomposing the Will, Oxford: Oxford University Press.
 
@@ -1616,10 +1648,23 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Robinson, William (2019). Epiphenomenalism. The Stanford Encyclopedia of Philosophy (Summer 2019 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2019/entries/epiphenomenalism/>.
 
+* Searle, J. R. (1990). Who is computing with the brain? Behavioral and Brain Sciences, 13:4:632-64.
+
+* Siegel, S. (2021). The Contents of Perception. The Stanford Encyclopedia of Philosophy (Fall 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2021/entries/perception-contents/>.
+
+* Siewert, C. (2004). Is Experience Transparent?. Philosophical Studies. 117 (1/2): 15–41. [doi:10.1023/B:PHIL.0000014523.89489.59](https://doi.org/10.1023%2FB%3APHIL.0000014523.89489.59)
+
+* Siewert, C. (2022). Consciousness and Intentionality. The Stanford Encyclopedia of Philosophy (Summer 2022 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2022/entries/consciousness-intentionality/>.
+
+* Smith, D. W. (2018). "Phenomenology: 1. What is Phenomenology?". The Stanford Encyclopedia of Philosophy. Metaphysics Research Lab, Stanford University. Retrieved 20 September 2021.
+
 * Soon, C., Brass, M., Heinze, H-J., and Haynes, J-D. (2008). Unconscious determinants of free decisions in the human brain. Nature Neuroscience, 11: 543–545. https://doi.org/10.1038/nn.2112
+
+* Tye, M. (2021). Qualia. The Stanford Encyclopedia of Philosophy (Fall 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2021/entries/qualia/>.
 
 * Yablo, S. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford and New York: Oxford University Press, 179-197.
 
 * Wegner, D. M. and Wheatley, T., 1999, “Apparent mental causation: sources of the experience of will”, American Psychologist, 54: 480–492.
 
 * Wegner, D. M., 2002, The Illusion of Conscious Will, Cambridge, MA: MIT Press/Bradford.
+
