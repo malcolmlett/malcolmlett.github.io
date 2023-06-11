@@ -237,12 +237,15 @@ I now describe some generic and specific theories of consciousness. To provide s
 The _substrate_ is the (generally physical) thing in which the processes of the mind are carried out. For example, biology and neuroscience has taught us that biological neurons are the substrate of the human mind. There is a conceptual difference between the thing that "hosts" the processes, and the processes themselves. Historically there has been three broad views with regards to the substrate. Perhaps the oldest view is the _dualist_ view of Descartes. In their view  there was the physical substrate, entailing the body and brain, and there was some other non-physical substance that hosted the mind, independent of the physical body (Descartes, 1644; Van Gulick, 2022). While few hold to that view today, it made more sense at the time when Descartes first proposed it. Reportedly Aristotle 
 believed that the purpose of the brain was to cool the blood (Smart, 2022). Most today hold to a _monist_ view that there is only one substrate, and that this substrate is physical, for example the biological neurons of the brain. More generally, such _physicalistic_ or _materialistic_ views hold that the properties of physical substances and their interactions are entirely sufficient from which to base an explanation of everything about consciousness, even if we don't know enough about those properties just yet (Stoljar, 2023). An alternative monist view, that of _idealism_, is that nothing is physical and that everything we perceive exists only within our minds (Guyer and Horstmann, 2023).
 
-Returning to the materialistic view, for humans and for any other animal that happens to have consciousness, we can say that the conscious mind is _realized_ upon the physical substrate of biological neurons. Is that the only physical substrate upon which consciousness can be realized? If consciousness is _multi-realizable_ then perhaps it could also be realized upon silicon neurons. Even more radically, perhaps the operation of neurons could be _simulated_ within a super computer, and a simulated brain could also by conscious. By extension, if multi-realizability is true, then any _functional isomorphism_ of a biological human brain should be not only conscious, but conscious in a human-like way. In contrast, _identity theory_ (specifically, _psycho-physical identity theory_) posits that there may be something special about biological neurons that give rise to subjective experience, and that non-biological functional isomorphisms would not have such experiences (Van Gulick, 2022) [also see citations listed here: https://plato.stanford.edu/entries/functionalism/].
+Returning to the materialistic view, for humans and for any other animal that happens to have consciousness, we can say that the conscious mind is _realized_ upon the physical substrate of biological neurons. Is that the only physical substrate upon which consciousness can be realized? If consciousness is _multi-realizable_ then perhaps it could also be realized upon silicon neurons. Even more radically, perhaps the operation of neurons could be _simulated_ within a super computer, and a simulated brain could also by conscious. By extension, if multi-realizability is true, then any _functional isomorphism_ of a biological human brain should be not only conscious, but conscious in a human-like way. In contrast, _identity theory_ (specifically, _psycho-physical identity theory_) posits that there may be something special about biological neurons that give rise to subjective experience, and that non-biological functional isomorphisms would not have such experiences (Van Gulick, 2022) [todo: also see citations listed here: https://plato.stanford.edu/entries/functionalism/].
 
-Inspired by the peculiar behaviour of quantum mechanics, some have suggested that the physical substrate produces quantum entanglement and that this quantum entanglement may be the underlying mechanism behind subjective experience, such as  ...{insert name of Microtubules theory}....
 
-Those theories bare some similarity to that of Pan-Psychism, the theory that consciousness is fundamental. The term _fundamental_ here refers to the way that physical forces and energies are fundamental: they are features of reality that cannot be explained as a product of anything else more fundamental. Under Pan-psychism, all matter has some degree of consciousness or proto-consciousness at the micro-scale, and that these micro-scale consciousnesses or proto-consciousnesses combine into larger consciousnesses when the micro-scale parts of matter combine to form larger material objects [citation, chalmers]. In that way, certain processes lead directly to subjective experience with pan-psychist properties providing the "something special" without necessarily requiring specific representations or functional structures. However, pan-psychism is unable to explain why only certain processes are associated with subjective experience while others are not. An obvious explanation would be to require that only certain representations and associated functional structures are sufficient to "combine" the conscious properties of independent neurons / molecules / atoms, but this still leads many open questions about what those representations and/or functional structures might be that have such a power over this underlying fundamental consciousness.
-
+> todo:
+> * Inspired by the peculiar behaviour of quantum mechanics, some have suggested that the physical substrate produces quantum entanglement and that this quantum entanglement may be the underlying mechanism behind subjective experience, such as  ...{insert name of Microtubules theory}....
+>
+> * Those theories bare some similarity to that of Pan-Psychism, the theory that consciousness is fundamental. The term _fundamental_ here refers to the way that physical forces and energies are fundamental: they are features of reality that cannot be explained as a product of anything else more fundamental. Under Pan-psychism, all matter has some degree of consciousness or proto-consciousness at the micro-scale, and that these micro-scale consciousnesses or proto-consciousnesses combine into larger consciousnesses when the micro-scale parts of matter combine to form larger material objects [citation, chalmers]. In that way, certain processes lead directly to subjective experience with pan-psychist properties providing the "something special" without necessarily requiring specific representations or functional structures. However, pan-psychism is unable to explain why only certain processes are associated with subjective experience while others are not. An obvious explanation would be to require that only certain representations and associated functional structures are sufficient to "combine" the conscious properties of independent neurons / molecules / atoms, but this still leads many open questions about what those representations and/or functional structures might be that have such a power over this underlying fundamental consciousness.
+>
+> * The furthest logical extension is that of _epiphenomenalism_ which posits that no functional mental processes are caused by subjective experience. Rather, subjective experience is posited as being some sort of non-causal summary of internal and external events. A significant problem with epiphenomenalism is why subjective experience, and indeed consciousness at all, would have evolved if it can provide no functional / causal benefit to the individual. In that sense, epiphenomenalism only makes any sense if viewed in conjunction with with metaphysical dualistic theories where some "spirit" that exists on another plane of reality are perceiving the experiences for some grander purpose outside of the context of the corporeal reality.
 
 References:
 * Descartes, R. (1644/1911). The Principles of Philosophy. Translated by E. Haldane and G. Ross. Cambridge: Cambridge University Press.
@@ -251,13 +254,15 @@ References:
 * Smart, J. J. C. (2022). The Mind/Brain Identity Theory. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/mind-identity/>.
 * Stoljar, D. (2023). Physicalism. The Stanford Encyclopedia of Philosophy (Summer 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), forthcoming URL = <https://plato.stanford.edu/archives/sum2023/entries/physicalism/>.
 
+One view of brain activity is that is computational in nature (Rescorla, 2020a). In initial versions of this idea likened such computation to that of the _Turing machine_ (McCulloch and Pitts, 1943), with its serial computation, finite set of states, and random access memory. Later variations accepted that the brain wasn't exactly like a Turing machine, but was still Turing-like. In particular, Turing machines operate upon a finite set of symbols. Fodor's _representational theory of mind_ (Fodor, 1975, 1981, 1987, 1990, 1994 and 2008) extended that idea to more generic _representations_. Importantly, these representations could be hierarchically composed, enabling their computational model to create infinitely many variations of states, more closely mirroring our ability to form larger ideas by composition of smaller ones. Nowadays, most apply a _connectionist_ lens to computation (Marcus, 2001; Smolensky, 1988; Kriegesgorte, 2015), following advances in both our neuroscientific understanding of the brain and in artificial intelligence (Krizhevsky, Sutskever, and Hinton, 2012; LeCun, Bengio, and Hinton, 2015). Another lens recognises that the brain must deal with a significant amount of uncertainty and thus might actively include that within its representations and computations (Ma, 2019; Rescorla, 2020).
 
-**Non-conscious processes:** Many processes operate that neither directly nor indirectly lead to any kind of conscious subjective experience. While earlier work assumed that most brain processes are conscious, there is increasingly strong evidence that almost all mental processes are non-conscious, even for mental processes that are associated with attentive subjective experience. The furthest logical extension is that of _epiphenomenalism_ which posits that no functional mental processes are caused by subjective experience. Rather, subjective experience is posited as being some sort of non-causal summary of internal and external events. A significant problem with epiphenomenalism is why subjective experience, and indeed consciousness at all, would have evolved if it can provide no functional / causal benefit to the individual. In that sense, epiphenomenalism only makes any sense if viewed in conjunction with with metaphysical dualistic theories where some "spirit" that exists on another plane of reality are perceiving the experiences for some grander purpose outside of the context of the corporeal reality.
-- References: https://www.britannica.com/topic/philosophy-of-mind/Qualitative-states
+One particular line of criticism levelled at computational models draws issue with the idea of representation (Rescorla, 2020a). Initial views of the brain as a Turing machine, or at least Turing-like, suggested that the brain would operate against symbols in the same way that a computer does. This drew obvious criticism. But the modern connectionist view of computation is not immune. One particularly strong issue lies with the distinction between _syntax_ and _semantics_. Here, syntax refers just to the _form_ of the representation, while semantics refers to its _meaning_. In a modern computer, all information is represented via the _form_ of zeros and ones, regardless of its meaning. For example, a particular string of zeros and ones might _mean_ a particular base-10 number, or it might _mean_ the colour of a pixel. Furthermore, all computation is performed against the form. This can be seen in the way that two large base-10 numbers can be multiplied in a mechanistic way that has no knowledge that it is multiplying base-10 numbers, that sees only a sequence of binary bits and performs only a series of simple per-bit operations (Booth, 1951) that do not involve any multiplication. There exist arguments that all computation is of this form (Rescorla, 2020a), including that of the brain (Fodor, 1981). It seems intuitively problematic that the inherent meaning of the representation is discarded, and thus there is a reluctance to accept representation as being a complete story of mind.
+
+My own stance is that meaning is not lost. For simple habitually repeated operations it is encoded within the process that performs the computation, and for complex operations the meaning is itself represented. But more on that later.
+
+Many processes operate that neither directly nor indirectly lead to any kind of conscious subjective experience. While earlier work assumed that most brain processes are conscious, there is increasingly strong evidence that almost all mental processes are non-conscious, even for mental processes that are associated with attentive subjective experience. 
 
 **Representation:** Under Computational Representation Theories of Consciousness, some of those non-conscious processes produce representations that are associated with subjective experience. Debates within this area are about the kinds of these representations. For example, the intransitive vs transitive debate questions whether it is sufficient that a representation is simply held in attention or whether the representation must be in relation to the individual.......{needs work and better tie-back to actual theories}....
-- References: https://www.britannica.com/topic/philosophy-of-mind/The-computational-representational-theory-of-thought-CRTT
-- Reference: https://www.britannica.com/topic/philosophy-of-mind/Qualitative-states#ref283994
 
 **Functional Structures:** The next question arises about why certain representations would have subjective experience and others would not. Is it sufficient that a particular kind of representation exists for it to be associated with subjective experience, or does that representation need to occur in conjunction with particular functional structures? For example, imagine that all aspects of the brain were understood to the point that we could identify exactly which representations are associated with subjective experience. Now imagine that an exact replica of a particular representation was encoded within the gates of a silicon memory chip within a computer. Most would argue that the silicon memory chip does not subsequently have subjective experience of that representation, because a representational state alone is insufficient for subjective experience. Some kind of functional structure presumably must be required to observe that representation. But if functional structures are indeed required, what are those functional structures? And what distinguishes those functional structures that are associated with subjective experience and those that are not? Once again here it can be hard to avoid the pitfall of infinite regress: if a representation must be interpreted in order to be perceived, and a functional structure is required in order to interpret that representation, what is the output of that interpretation if it is not just another representation needing to be further interpreted?
 
@@ -271,6 +276,8 @@ References:
 One particular area of debate falls variously under the terms "Cartesian theatre" or "homunculus problem". The Cartesian Theatre ..introduced by ....describes the interactions between supposedly two parts of the mind: the part that has subjective experience (the audience in the theatre), and the part that produces the contents of subjective experience (the actors in the theatre). This has also been described as a "homunculus" or "little man" inside the brain that has the experiences. Both descriptions pose a problem: that the audience/homonculus requires a significant level of intelligence in order to interpret and understand the show being put on; but that same intelligence is required to produce the show in the first place. In the case of homunculus, we can provide two descriptions w.r.t. to the layers described above. In the first description, the non-conscious processes produce a representation that is perceived by the homunculus. Here the problem becomes what mechanisms the homunculus uses to do that perceiving? In the second description, the representation is sufficiently processed by functional structures so that no further processing is required, and that final result is simply perceived-without-processing. In practice this raises more questions than it seeks to address. What kind of thing is it that can perceive-without-processing? In response, the theory of semiotics (discussed in a section below) claims that it is impossible for such a thing to exist, because there is no perception without interpretation, and interpretation necessarily involves processing.
 
 _todo: references and more details from:_
+- https://www.britannica.com/topic/philosophy-of-mind/The-computational-representational-theory-of-thought-CRTT
+- https://www.britannica.com/topic/philosophy-of-mind/Qualitative-states
 - https://www.lesswrong.com/posts/GBXKZujXSZe84aAL9/the-homunculus-problem
 - https://en.wikipedia.org/wiki/Homunculus
 - http://pespmc1.vub.ac.be/HOMUNCUL.html
@@ -1628,19 +1635,37 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Block, N. (2002). The Harder Problem of Consciousness. The Journal of Philosophy, 99(8), 391–425. https://doi.org/10.2307/3655621
 
+* Booth, A. D. (1951). A Signed Binary Multiplication Technique. The Quarterly Journal of Mechanics and Applied Mathematics. IV (2): 236–240.
+
 * Borţun, D., & Purcarea, V. L. (2013). Marketing and semiotic approach on communication. Consequences on knowledge of target-audiences. Journal of medicine and life, 6(1), 103–108.
 
 * Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of internal medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
 
 * Crane, T. (2009). Intentionalism. The Oxford Handbook to the Philosophy of Mind. Oxford: Oxford University Press. pp. 474–93. [Abstract](https://philpapers.org/rec/CRAI-17).
 
+* Fodor, J. (1975). The Language of Thought. New York: Thomas Y. Crowell.
+
+* Fodor, J. (1981). Representations. Cambridge: MIT Press.
+
+* Fodor, J. (1987). Psychosemantics. Cambridge: MIT Press.
+
+* Fodor, J. (1990). A Theory of Content and Other Essays. Cambridge, MA: MIT Press.
+
+* Fodor, J. (1994). The Elm and the Expert. Cambridge, MA: MIT Press.
+
+* Fodor, J. (2008). Lot 2: The Language of Thought Revisited. Oxford: Clarendon Press.
+
 * Haynes, J-D. (2013). Beyond Libet: Long-Term Prediction of Free Choices from Neuroimaging Signals. In A. Clark, J. Kiverstein and T. Vierkant (eds.), Decomposing the Will, Oxford: Oxford University Press.
 
 * Hoffman (?). The Interface Theory of Perception. https://sites.socsci.uci.edu/~ddhoff/interface.pdf
 
+* Kant, Immanuel, Critique Of Pure Reason, 1781. Translated by Norman Kemp Smith, London: Macmillan, 1929. Koestler, Arthur, The Act of Creation, London: Pan Books, 1970.
+
 * Kim, J. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford and New York: Oxford University Press, 170-179.
 
-* Kant, Immanuel, Critique Of Pure Reason, 1781. Translated by Norman Kemp Smith, London: Macmillan, 1929. Koestler, Arthur, The Act of Creation, London: Pan Books, 1970.
+* Kriegesgorte, K. (2015). Deep Neural Networks: A New Framework for Modeling Biological Vision and Brain Information Processing. Annual Review of Vision Science, 1: 417–446
+
+* Krishevsky, A., Sutskever, I., and Hinton, G. (2012). ImageNet Classification with Deep Convolutional Neural Networks. Advances in Neural Information Processing Systems, 25: 1097–1105.
 
 * Levine, J. (1983). Materialism and the Qualia: The Explanatory Gap. Pacific Philosophical Quarterly, LXIV, 354-61.
 
@@ -1650,6 +1675,12 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Linser, K and Goschke, T. (2007). Unconscious modulation of the conscious experience of voluntary control, Cognition, 104: 459–475.
 
+* Ma, W. J., 2019, “Bayesian Decision Models: A Primer”, Neuron, 104: 164–175.
+
+* Marcus, G. (2001). The Algebraic Mind, Cambridge, MA: MIT Press
+
+* McCulloch, W. and Pitts, W. (1943). A Logical Calculus of the Ideas Immanent in Nervous Activity. Bulletin of Mathematical Biophysics, 7: 115–133.
+
 * Nessa J. (1996). About signs and symptoms: can semiotics expand the view of clinical medicine?. Theoretical medicine, 17(4), 363–377. https://doi.org/10.1007/BF00489681
 
 * Nisbett, R. E. & Wilson, T. D. (1977a). Telling More Than We Can Know: Verbal Reports on Mental Processes. Psychological Review, 84: 231–259.
@@ -1657,6 +1688,10 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Nisbett, R. E. & Wilson, T. D. (1977b). The halo effect: evidence for unconscious alteration of judgments. Journal of Personality and Social Psychology, 35: 250–256.
 
 * Peirce (1982-). The Writings of Charles S. Peirce: A Chronological Edition. Volumes 1–6. And 8. Eds. Peirce Edition Project. Bloomington I.N: Indiana University Press.
+
+* Rescorla, M. (2020a). The Computational Theory of Mind. The Stanford Encyclopedia of Philosophy (Fall 2020 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2020/entries/computational-mind/>.
+
+* Rescorla, M. (2020b). A Realist Perspective on Bayesian Cognitive Science. in Inference and Consciousness, A. Nes and T. Chan (eds.), New York: Routledge.
 
 * Robb, David, John Heil, and Sophie Gibb (2023). Mental Causation. The Stanford Encyclopedia of Philosophy (Spring 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/spr2023/entries/mental-causation/>
 
@@ -1672,6 +1707,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Smith, D. W. (2018). "Phenomenology: 1. What is Phenomenology?". The Stanford Encyclopedia of Philosophy. Metaphysics Research Lab, Stanford University. Retrieved 20 September 2021.
 
+* Smolensky, P. (1988). On the Proper Treatment of Connectionism. Behavioral and Brain Sciences, 11: 1–74.
+
 * Soon, C., Brass, M., Heinze, H-J., and Haynes, J-D. (2008). Unconscious determinants of free decisions in the human brain. Nature Neuroscience, 11: 543–545. https://doi.org/10.1038/nn.2112
 
 * Tye, M. (2021). Qualia. The Stanford Encyclopedia of Philosophy (Fall 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2021/entries/qualia/>.
@@ -1681,4 +1718,6 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Wegner, D. M. and Wheatley, T., 1999, “Apparent mental causation: sources of the experience of will”, American Psychologist, 54: 480–492.
 
 * Wegner, D. M., 2002, The Illusion of Conscious Will, Cambridge, MA: MIT Press/Bradford.
+
+
 
