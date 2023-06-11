@@ -247,13 +247,6 @@ Returning to the materialistic view, for humans and for any other animal that ha
 >
 > * The furthest logical extension is that of _epiphenomenalism_ which posits that no functional mental processes are caused by subjective experience. Rather, subjective experience is posited as being some sort of non-causal summary of internal and external events. A significant problem with epiphenomenalism is why subjective experience, and indeed consciousness at all, would have evolved if it can provide no functional / causal benefit to the individual. In that sense, epiphenomenalism only makes any sense if viewed in conjunction with with metaphysical dualistic theories where some "spirit" that exists on another plane of reality are perceiving the experiences for some grander purpose outside of the context of the corporeal reality.
 
-References:
-* Descartes, R. (1644/1911). The Principles of Philosophy. Translated by E. Haldane and G. Ross. Cambridge: Cambridge University Press.
-* Guyer, P., and Horstmann, R-P. (2023). Idealism. The Stanford Encyclopedia of Philosophy (Spring 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/spr2023/entries/idealism/>.
-* Van Gulick, R. (2022). Consciousness. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/consciousness/>.
-* Smart, J. J. C. (2022). The Mind/Brain Identity Theory. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/mind-identity/>.
-* Stoljar, D. (2023). Physicalism. The Stanford Encyclopedia of Philosophy (Summer 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), forthcoming URL = <https://plato.stanford.edu/archives/sum2023/entries/physicalism/>.
-
 One view of brain activity is that is computational in nature (Rescorla, 2020a). In initial versions of this idea likened such computation to that of the _Turing machine_ (McCulloch and Pitts, 1943), with its serial computation, finite set of states, and random access memory. Later variations accepted that the brain wasn't exactly like a Turing machine, but was still Turing-like. In particular, Turing machines operate upon a finite set of symbols. Fodor's _representational theory of mind_ (Fodor, 1975, 1981, 1987, 1990, 1994 and 2008) extended that idea to more generic _representations_. Importantly, these representations could be hierarchically composed, enabling their computational model to create infinitely many variations of states, more closely mirroring our ability to form larger ideas by composition of smaller ones. Nowadays, most apply a _connectionist_ lens to computation (Marcus, 2001; Smolensky, 1988; Kriegesgorte, 2015), following advances in both our neuroscientific understanding of the brain and in artificial intelligence (Krizhevsky, Sutskever, and Hinton, 2012; LeCun, Bengio, and Hinton, 2015). Another lens recognises that the brain must deal with a significant amount of uncertainty and thus might actively include that within its representations and computations (Ma, 2019; Rescorla, 2020).
 
 One particular line of criticism levelled at computational models draws issue with the idea of representation (Rescorla, 2020a). Initial views of the brain as a Turing machine, or at least Turing-like, suggested that the brain would operate against symbols in the same way that a computer does. This drew obvious criticism. But the modern connectionist view of computation is not immune. One particularly strong issue lies with the distinction between _syntax_ and _semantics_. Here, syntax refers just to the _form_ of the representation, while semantics refers to its _meaning_. In a modern computer, all information is represented via the _form_ of zeros and ones, regardless of its meaning. For example, a particular string of zeros and ones might _mean_ a particular base-10 number, or it might _mean_ the colour of a pixel. Furthermore, all computation is performed against the form. This can be seen in the way that two large base-10 numbers can be multiplied in a mechanistic way that has no knowledge that it is multiplying base-10 numbers, that sees only a sequence of binary bits and performs only a series of simple per-bit operations (Booth, 1951) that do not involve any multiplication. There exist arguments that all computation is of this form (Rescorla, 2020a), including that of the brain (Fodor, 1981). It seems intuitively problematic that the inherent meaning of the representation is discarded, and thus there is a reluctance to accept representation as being a complete story of mind.
@@ -1643,6 +1636,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Crane, T. (2009). Intentionalism. The Oxford Handbook to the Philosophy of Mind. Oxford: Oxford University Press. pp. 474–93. [Abstract](https://philpapers.org/rec/CRAI-17).
 
+* Descartes, R. (1644/1911). The Principles of Philosophy. Translated by E. Haldane and G. Ross. Cambridge: Cambridge University Press.
+
 * Fodor, J. (1975). The Language of Thought. New York: Thomas Y. Crowell.
 
 * Fodor, J. (1981). Representations. Cambridge: MIT Press.
@@ -1654,6 +1649,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Fodor, J. (1994). The Elm and the Expert. Cambridge, MA: MIT Press.
 
 * Fodor, J. (2008). Lot 2: The Language of Thought Revisited. Oxford: Clarendon Press.
+
+* Guyer, P., and Horstmann, R-P. (2023). Idealism. The Stanford Encyclopedia of Philosophy (Spring 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/spr2023/entries/idealism/>.
 
 * Haynes, J-D. (2013). Beyond Libet: Long-Term Prediction of Free Choices from Neuroimaging Signals. In A. Clark, J. Kiverstein and T. Vierkant (eds.), Decomposing the Will, Oxford: Oxford University Press.
 
@@ -1675,7 +1672,7 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Linser, K and Goschke, T. (2007). Unconscious modulation of the conscious experience of voluntary control, Cognition, 104: 459–475.
 
-* Ma, W. J., 2019, “Bayesian Decision Models: A Primer”, Neuron, 104: 164–175.
+* Ma, W. J. (2019). Bayesian Decision Models: A Primer. Neuron, 104: 164–175.
 
 * Marcus, G. (2001). The Algebraic Mind, Cambridge, MA: MIT Press
 
@@ -1705,17 +1702,23 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Siewert, C. (2022). Consciousness and Intentionality. The Stanford Encyclopedia of Philosophy (Summer 2022 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2022/entries/consciousness-intentionality/>.
 
-* Smith, D. W. (2018). "Phenomenology: 1. What is Phenomenology?". The Stanford Encyclopedia of Philosophy. Metaphysics Research Lab, Stanford University. Retrieved 20 September 2021.
+* Smart, J. J. C. (2022). The Mind/Brain Identity Theory. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/mind-identity/>.
+
+* Smith, D. W. (2018). Phenomenology: 1. What is Phenomenology?. The Stanford Encyclopedia of Philosophy. Metaphysics Research Lab, Stanford University. Retrieved 20 September 2021.
 
 * Smolensky, P. (1988). On the Proper Treatment of Connectionism. Behavioral and Brain Sciences, 11: 1–74.
 
 * Soon, C., Brass, M., Heinze, H-J., and Haynes, J-D. (2008). Unconscious determinants of free decisions in the human brain. Nature Neuroscience, 11: 543–545. https://doi.org/10.1038/nn.2112
 
+* Stoljar, D. (2023). Physicalism. The Stanford Encyclopedia of Philosophy (Summer 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), forthcoming URL = <https://plato.stanford.edu/archives/sum2023/entries/physicalism/>.
+
 * Tye, M. (2021). Qualia. The Stanford Encyclopedia of Philosophy (Fall 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2021/entries/qualia/>.
+
+* Van Gulick, R. (2022). Consciousness. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/consciousness/>.
 
 * Yablo, S. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford and New York: Oxford University Press, 179-197.
 
-* Wegner, D. M. and Wheatley, T., 1999, “Apparent mental causation: sources of the experience of will”, American Psychologist, 54: 480–492.
+* Wegner, D. M. and Wheatley, T. (1999). Apparent mental causation: sources of the experience of will. American Psychologist, 54: 480–492.
 
 * Wegner, D. M., 2002, The Illusion of Conscious Will, Cambridge, MA: MIT Press/Bradford.
 
