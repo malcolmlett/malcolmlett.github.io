@@ -273,42 +273,10 @@ The work on the _Theory of Neuronal Group Selection_ (TNGS) (Edelman 1987; Edelm
 
 _Integrated Information Theory_ (IIT) provides another closely related measure that claims to calculate an objective quantity of consciousness, indicated as Φ (phi). This looks not just for mutual information, which is inherently bidirectional (ie: just a correlation without any idea of cause-effect relationships), but attempts to measure the extent to which certain information is _causually effective_. It then computes the amount of causally effective information that can be integrated across the weakest link of the the system (Tononi and Sporns, 2003; Tononi, 2004). This has since received two major revisions, first in 2008 to measure based on active dynamics rather than static configuration (Tononi, 2008), and then again in 2014 with the introduction _maximally irreducible conceptual structures_ (MICS) (Oizumi, Albantakis, and Tononi, 2014).
 
-Another approach is to look at the dynamics of waves and oscillations of activity within the brain. For example, in older studies it was found that consciousness coincided with so called _gamma-waves_, in the frequency range 30 to 80 Hz, in electrocardiogram readings. That is now understood as being the outwardly measurable effect of the micro-interactions at the neuronal level (Llinás, Ribary, Contreras & Pedroarena, 1998; Friston et al 2014; Hunt and Schooler, 2019). In particular, a productive line of thought has been to treat such brain activity as harmonics, with different global and sub-global populations of neurons dynamically forming groups of closely synchronised activity (Atasoy, Donnelly, and Pearson, 2016; Atasoy et al 2018). The ever changing groupings of neurons that create those harmonics is proposed to be self-organising, with one theory describing _self-organizing harmonic modes_ (SOHMs) (Safron, 2020). The larger _Integrated World Modeling Theory_ of consciousness (IWMT) (Safron, 2020), where SOHMs were introduced, combines IIT and GNW with the _Free Energy Principle_ (Friston, 2019) and _Active Inference Framework_ of Friston (Friston, Kilner, and Harrison, 2006; Friston et al 2017; Noor et al 2021).
+Another approach is to look at the dynamics of waves and oscillations of activity within the brain. For example, in older studies it was found that consciousness coincided with so called _gamma-waves_, in the frequency range 30 to 80 Hz, in electrocardiogram readings. That is now understood as being the outwardly measurable effect of the micro-interactions at the neuronal level (Llinás, Ribary, Contreras & Pedroarena, 1998; Friston et al 2014; Hunt and Schooler, 2019). In particular, a productive line of thought has been to treat such brain activity as harmonics, with different global and sub-global populations of neurons dynamically forming groups of closely synchronised activity (Atasoy, Donnelly, and Pearson, 2016; Atasoy et al 2018). The ever changing groupings of neurons that create those harmonics is proposed to be self-organising, with one theory describing _self-organizing harmonic modes_ (SOHMs) (Safron, 2020). The larger _Integrated World Modeling Theory_ of consciousness (IWMT) (Safron, 2020), where SOHMs were introduced, combines IIT and GNW with the _Free Energy Principle_ (Friston, 2019) and _Active Inference Framework_ of Friston (Friston, Kilner, and Harrison, 2006; Friston et al 2017; Sajid et al 2021).
 
-It is important to note that while such theories find useful correlations to consciousness, known as _neural correlates of consciousness_ (NCC), they do not explain in detail how those processes produce subjective experience.
+It is important to note that while such theories find useful correlations to consciousness, known as _neural correlates of consciousness_ (NCC), they do not explain the mechanism by which those correlated activities or measures produce subjective experience.
 
-
-resonance:
-
-* Llinás, R., Ribary, U., Contreras, D. & Pedroarena, C. 1998. The neuronal basis for consciousness. Philosophical Transactions of the Royal Society of London, Series B, 353, 1841-1849.
-* Atasoy, S., Donnelly, I., & Pearson, J. (2016). Human brain networks function in connectome-specific harmonic waves. Nature communications, 7, 10340. https://doi.org/10.1038/ncomms10340
-* Atasoy, S., Deco, G., Kringelbach, M. L., and Pearson, J. (2018). Harmonic brain modes: a unifying framework for linking space and time in brain dynamics. Neuroscientist 24, 277–293. doi: 10.1177/1073858417728032.
-* Hunt, T., & Schooler, J. W. (2019). The Easy Part of the Hard Problem: A Resonance Theory of Consciousness. Frontiers in human neuroscience, 13, 378. https://doi.org/10.3389/fnhum.2019.00378
-* Safron A. (2020). An Integrated World Modeling Theory (IWMT) of Consciousness: Combining Integrated Information and Global Neuronal Workspace Theories With the Free Energy Principle and Active Inference Framework; Toward Solving the Hard Problem and Characterizing Agentic Causation. Frontiers in artificial intelligence, 3, 30. 
-* Friston, K. J., Kahan, J., Razi, A., Stephan, K. E., and Sporns, O. (2014). On nodes and modes in resting state fMRI. NeuroImage 99, 533–547. doi: 10.1016/j.neuroimage.2014.05.056
-* Friston, K. J., Kilner, J., and Harrison, L. (2006). A free energy principle for the brain. J. Physiol. Paris 100, 70–87. doi: 10.1016/j.jphysparis.2006.10.001
-* Friston, K. J., FitzGerald, T., Rigoli, F., Schwartenbeck, P., and Pezzulo, G. (2017). Active inference: a process theory. Neural Comput. 29, 1–49. doi: 10.1162/NECO_a_00912
-* Friston, K. J. (2010). The free-energy principle: a unified brain theory? Nat. Rev. Neurosci. 11, 127–138. doi: 10.1038/nrn2787
-* Noor Sajid, Philip J. Ball, Thomas Parr, Karl J. Friston. (2021). Active Inference: Demystified and Compared. Neural Comput 2021; 33 (3): 674–712. doi: https://doi.org/10.1162/neco_a_01357
-* Friston, K. J. (2019). A free energy principle for a particular physics. ArXiv190610184 Q-Bio. Available online at: http://arxiv.org/abs/1906.10184 (accessed July 1, 2019).
-
-
-
-References:
-* Tononi, G. 2004 An information integration theory of consciousness. BMC Neurosci 5, 42.
-* Tononi, G. & Sporns, O. 2003 Measuring information integration. BMC Neurosci 4, 31.
-* Tononi, G., Sporns, O. & Edelman, G. M. 1994 A measure for brain complexity: relating functional segregation and integration in the nervous system. Proc Natl Acad Sci U S A 91, 5033-7.
-* Tononi, G. 2008 Consciousness as integrated information: A provisional manifesto. Biological Bulletin 215, 216-42.
-* Edelman, G. M. & Tononi, G. 2000 A universe of consciousness : how matter becomes imagination. New York, NY: Basic Books.
-* Tononi, G. & Edelman, G. M. 1998 Consciousness and complexity. Science 282, 1846-51.
-* Edelman, G. M. 1987 Neural Darwinism: The Theory of Neuronal Group Selection. New York: Basic Books, Inc.
-* Edelman, G. M. 2003 Naturalizing consciousness: a theoretical framework. Proc Natl Acad Sci U S A 100, 5520-4.
-* Oizumi M, Albantakis L, Tononi G (2014) From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0. PLOS Computational Biology 10(5): e1003588. https://doi.org/10.1371/journal.pcbi.1003588
-
-
-
-
-AST, IIT, multiple drafts theory, dynamic core, predictive coding.
 
 > todo:
 > * Inspired by the peculiar behaviour of quantum mechanics, some have suggested that the physical substrate produces quantum entanglement and that this quantum entanglement may be the underlying mechanism behind subjective experience, such as  ...{insert name of Microtubules theory}....
@@ -1684,6 +1652,10 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Armstrong, D. (1984). Consciousness and causality. In D. Armstrong and N. Malcolm (eds), Consciousness and Causality, Oxford: Blackwell.
 
+* Atasoy, S., Donnelly, I., and Pearson, J. (2016). Human brain networks function in connectome-specific harmonic waves. Nature communications, 7, 10340. https://doi.org/10.1038/ncomms10340
+
+* Atasoy, S., Deco, G., Kringelbach, M. L., and Pearson, J. (2018). Harmonic brain modes: a unifying framework for linking space and time in brain dynamics. Neuroscientist 24, 277–293. doi: 10.1177/1073858417728032.
+
 * Baars, B. J. (1988). A cognitive theory of consciousness. New York, NY: Cambridge University Press.
 
 * Baars, B. J., and Franklin, S. (2007). An architectural model of conscious and unconscious brain functions: Global Workspace Theory and IDA. Neural networks : the official journal of the International Neural Network Society, 20(9), 955–961.
@@ -1714,6 +1686,12 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Descartes, R. (1644/1911). The Principles of Philosophy. Translated by E. Haldane and G. Ross. Cambridge: Cambridge University Press.
 
+* Edelman, G. M. (1987). Neural Darwinism: The Theory of Neuronal Group Selection. New York: Basic Books, Inc.
+
+* Edelman, G. M. (2003). Naturalizing consciousness: a theoretical framework. Proc Natl Acad Sci U S A 100, 5520-4.
+
+* Edelman, G. M., Tononi, G. (2000). A universe of consciousness : how matter becomes imagination. New York, NY: Basic Books.
+
 * Favela, L. H. (2020. Dynamical systems theory in cognitive science and neuroscience. Philosophy Compass. 15:e12695. https://doi.org/10.1111/phc3.12695
 
 * Fodor, J. (1975). The Language of Thought. New York: Thomas Y. Crowell.
@@ -1730,6 +1708,16 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Franklin, S. & Graesser, A. (1999). A software agent model of consciousness. Conscious Cogn 8, 285-301
 
+* Friston, K. J., FitzGerald, T., Rigoli, F., Schwartenbeck, P., and Pezzulo, G. (2017). Active inference: a process theory. Neural Comput. 29, 1–49. doi: 10.1162/NECO_a_00912
+
+* Friston, K. J., Kahan, J., Razi, A., Stephan, K. E., and Sporns, O. (2014). On nodes and modes in resting state fMRI. NeuroImage 99, 533–547. doi: 10.1016/j.neuroimage.2014.05.056
+
+* Friston, K. J., Kilner, J., and Harrison, L. (2006). A free energy principle for the brain. J. Physiol. Paris 100, 70–87. doi: 10.1016/j.jphysparis.2006.10.001
+
+* Friston, K. J. (2010). The free-energy principle: a unified brain theory? Nat. Rev. Neurosci. 11, 127–138. doi: 10.1038/nrn2787
+
+* Friston, K. J. (2019). A free energy principle for a particular physics. ArXiv190610184 Q-Bio. Available online at: http://arxiv.org/abs/1906.10184 (accessed July 1, 2019).
+
 * Gennaro, R. (1996). Consciousness and Self-Consciousness. Amsterdam: John Benjamins.
 
 * Gennaro, R. (2012). The Consciousness Paradox: Consciousness, Concepts, and Higher-Order Thoughts. Cambridge, MA: MIT press.
@@ -1739,6 +1727,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Haynes, J-D. (2013). Beyond Libet: Long-Term Prediction of Free Choices from Neuroimaging Signals. In A. Clark, J. Kiverstein and T. Vierkant (eds.), Decomposing the Will, Oxford: Oxford University Press.
 
 * Hoffman (?). The Interface Theory of Perception. https://sites.socsci.uci.edu/~ddhoff/interface.pdf
+
+* Hunt, T., and Schooler, J. W. (2019). The Easy Part of the Hard Problem: A Resonance Theory of Consciousness. Frontiers in human neuroscience, 13, 378. https://doi.org/10.3389/fnhum.2019.00378
 
 * Kant, Immanuel, Critique Of Pure Reason, 1781. Translated by Norman Kemp Smith, London: Macmillan, 1929. Koestler, Arthur, The Act of Creation, London: Pan Books, 1970.
 
@@ -1764,6 +1754,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Linser, K and Goschke, T. (2007). Unconscious modulation of the conscious experience of voluntary control, Cognition, 104: 459–475.
 
+* Llinás, R., Ribary, U., Contreras, D., and Pedroarena, C. (1998). The neuronal basis for consciousness. Philosophical Transactions of the Royal Society of London, Series B, 353, 1841-1849.
+
 * Lycan, W. (1996) Consciousness and Experience. Cambridge, MA: MIT Press.
 
 * Lycan, W. (2004) The superiority of HOP to HOT. In R. Gennaro (ed.) 2004, pp. 93–114.
@@ -1782,6 +1774,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Nisbett, R. E. & Wilson, T. D. (1977b). The halo effect: evidence for unconscious alteration of judgments. Journal of Personality and Social Psychology, 35: 250–256.
 
+* Oizumi, M., Albantakis, L., Tononi, G. (2014). From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0. PLOS Computational Biology 10(5): e1003588. https://doi.org/10.1371/journal.pcbi.1003588
+
 * Peirce (1982-). The Writings of Charles S. Peirce: A Chronological Edition. Volumes 1–6. And 8. Eds. Peirce Edition Project. Bloomington I.N: Indiana University Press.
 
 * Rescorla, M. (2020a). The Computational Theory of Mind. The Stanford Encyclopedia of Philosophy (Fall 2020 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2020/entries/computational-mind/>.
@@ -1799,6 +1793,10 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Rosenthal, D. (2004). Varieties of higher-order theory. In Gennaro, R. (ed.) (2004), Higher-Order Theories of Consciousness: An Anthology. John Benjamins, pp. 17–44.
 
 * Rosenthal, D. (2005). Consciousness and Mind. Oxford: Oxford University Press.
+
+* Safron, A. (2020). An Integrated World Modeling Theory (IWMT) of Consciousness: Combining Integrated Information and Global Neuronal Workspace Theories With the Free Energy Principle and Active Inference Framework; Toward Solving the Hard Problem and Characterizing Agentic Causation. Frontiers in artificial intelligence, 3, 30. 
+
+* Sajid, N., Ball, P. J., Parr, T., Friston, K. J. (2021). Active Inference: Demystified and Compared. Neural Comput 2021; 33 (3): 674–712. doi: https://doi.org/10.1162/neco_a_01357
 
 * Searle, J. R. (1990). Who is computing with the brain? Behavioral and Brain Sciences, 13:4:632-64.
 
@@ -1825,6 +1823,16 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Soon, C., Brass, M., Heinze, H-J., and Haynes, J-D. (2008). Unconscious determinants of free decisions in the human brain. Nature Neuroscience, 11: 543–545. https://doi.org/10.1038/nn.2112
 
 * Stoljar, D. (2023). Physicalism. The Stanford Encyclopedia of Philosophy (Summer 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), forthcoming URL = <https://plato.stanford.edu/archives/sum2023/entries/physicalism/>.
+
+* Tononi, G. (2004). An information integration theory of consciousness. BMC Neurosci 5, 42.
+
+* Tononi, G. (2008). Consciousness as integrated information: A provisional manifesto. Biological Bulletin 215, 216-42.
+
+* Tononi, G., Edelman, G. M. (1998). Consciousness and complexity. Science 282, 1846-51.
+
+* Tononi, G., Sporns, O. (2003). Measuring information integration. BMC Neurosci 4, 31.
+
+* Tononi, G., Sporns, O., Edelman, G. M. (1994). A measure for brain complexity: relating functional segregation and integration in the nervous system. Proc Natl Acad Sci U S A 91, 5033-7.
 
 * Tye, M. (2021). Qualia. The Stanford Encyclopedia of Philosophy (Fall 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2021/entries/qualia/>.
 
