@@ -267,6 +267,45 @@ _Global Workspace Theory_ (GWT) sees the brain as a system of individual computa
 
 GNT was formed by Baars (1988), but has been taken up and extended by many others, such as to provide a more detailed computational model (Franklin and Graesser, 1999), the addition of internal simulation (Shanahan, 2005), or to model via spiking neurons (Shanahan, 2008). Of particular note is _Global Neuronal Workspace_ theory (GNW). GNW takes inspiration from a growing view of neuronal interactions as _dynamical systems_ (Miller, 2016; Favela, 2020; Shapiro, 2013). It proposes how non-linear interactions between populations of neurons can create a sudden "ignition" effect, where multiple independent stimuli suddenly become mutually _salient_, particularly due to long-range axons from sensorial stimuli (Dehaene, Sergent, and Changeux, 2003). In other words, it proposes a specific mechanism of how groups of neurons can cooperate to form a single representation that is then broadcast to others.
 
+The massive number of neurons within the substrate of the brain make it hard to study how specific computational theories may or may not apply, both from the point of view of empirical neurological investigations and in analytical attempts to formulate how neurons interact to form those higher-level computational abstractions. One avenue is to embrace the combinatorial complexity. This is seen in theories that view the brain as a _dynamical system_, mentioned earlier, use _information theoretic_ techniques, or that examine activity in the brain at the level of patterns of waves and oscillations.
+
+The work on the _Theory of Neuronal Group Selection_ (TNGS) (Edelman 1987; Edelman 2003), also known as _Neural Darwinism_, and in particular its _Dynamic Core_ hypothesis (Edelman and Tononi 2000; Tononi and Edelman 1998), neither of which will be discussed here, introduced a quantitive measure of _neural complexity_ (Tononi et al, 1994). The measure is based on the information theoretic idea of _mutual information_. Consider two random variables _x_, and _y_. If knowing the value of _x_ informs me of anything about _y_, then we say that they have mutual information. The more _x_ and _y_ correlate, the more mutual information there is between them. In contrast, if they are statistically independent, then they carry zero mutual information. Mutual information is important if you care about finding correlations or relationships between things (more mutual information is good), and if you care about being able to store or represent large amounts of detail (less mutual information is good). Within the brain there will be regions of activity that are _differentiated_: to a large extent uncorrelated perhaps because they are busy with different functions, or perhaps because the brain is in a state of disorganised chaos. Likewise there will be regions of activity that are _integrated_: strongly correlated because for example that the brain is organised and focused on one task, or perhaps because it has a lot of unnecessary duplication. Neural complexity measures the extent to which activity within the network is both integrated and differentiated by computing the average mutual information between bipartitions of the network.
+
+_Integrated Information Theory_ (IIT) provides another closely related measure that claims to calculate an objective quantity of consciousness, indicated as Φ (phi). This looks not just for mutual information, which is inherently bidirectional (ie: just a correlation without any idea of cause-effect relationships), but attempts to measure the extent to which certain information is _causually effective_. It then computes the amount of causally effective information that can be integrated across the weakest link of the the system (Tononi and Sporns, 2003; Tononi, 2004). This has since received two major revisions, first in 2008 to measure based on active dynamics rather than static configuration (Tononi, 2008), and then again in 2014 with the introduction _maximally irreducible conceptual structures_ (MICS) (Oizumi, Albantakis, and Tononi, 2014).
+
+Another approach is to look at the dynamics of waves and oscillations of activity within the brain. For example, in older studies it was found that consciousness coincided with so called _gamma-waves_, in the frequency range 30 to 80 Hz, in electrocardiogram readings. That is now understood as being the outwardly measurable effect of the micro-interactions at the neuronal level (Llinás, Ribary, Contreras & Pedroarena, 1998; Friston et al 2014; Hunt and Schooler, 2019). In particular, a productive line of thought has been to treat such brain activity as harmonics, with different global and sub-global populations of neurons dynamically forming groups of closely synchronised activity (Atasoy, Donnelly, and Pearson, 2016; Atasoy et al 2018). The ever changing groupings of neurons that create those harmonics is proposed to be self-organising, with one theory describing _self-organizing harmonic modes_ (SOHMs) (Safron, 2020). The larger _Integrated World Modeling Theory_ of consciousness (IWMT) (Safron, 2020), where SOHMs were introduced, combines IIT and GNW with the _Free Energy Principle_ (Friston, 2019) and _Active Inference Framework_ of Friston (Friston, Kilner, and Harrison, 2006; Friston et al 2017; Noor et al 2021).
+
+It is important to note that while such theories find useful correlations to consciousness, known as _neural correlates of consciousness_ (NCC), they do not explain in detail how those processes produce subjective experience.
+
+
+resonance:
+
+* Llinás, R., Ribary, U., Contreras, D. & Pedroarena, C. 1998. The neuronal basis for consciousness. Philosophical Transactions of the Royal Society of London, Series B, 353, 1841-1849.
+* Atasoy, S., Donnelly, I., & Pearson, J. (2016). Human brain networks function in connectome-specific harmonic waves. Nature communications, 7, 10340. https://doi.org/10.1038/ncomms10340
+* Atasoy, S., Deco, G., Kringelbach, M. L., and Pearson, J. (2018). Harmonic brain modes: a unifying framework for linking space and time in brain dynamics. Neuroscientist 24, 277–293. doi: 10.1177/1073858417728032.
+* Hunt, T., & Schooler, J. W. (2019). The Easy Part of the Hard Problem: A Resonance Theory of Consciousness. Frontiers in human neuroscience, 13, 378. https://doi.org/10.3389/fnhum.2019.00378
+* Safron A. (2020). An Integrated World Modeling Theory (IWMT) of Consciousness: Combining Integrated Information and Global Neuronal Workspace Theories With the Free Energy Principle and Active Inference Framework; Toward Solving the Hard Problem and Characterizing Agentic Causation. Frontiers in artificial intelligence, 3, 30. 
+* Friston, K. J., Kahan, J., Razi, A., Stephan, K. E., and Sporns, O. (2014). On nodes and modes in resting state fMRI. NeuroImage 99, 533–547. doi: 10.1016/j.neuroimage.2014.05.056
+* Friston, K. J., Kilner, J., and Harrison, L. (2006). A free energy principle for the brain. J. Physiol. Paris 100, 70–87. doi: 10.1016/j.jphysparis.2006.10.001
+* Friston, K. J., FitzGerald, T., Rigoli, F., Schwartenbeck, P., and Pezzulo, G. (2017). Active inference: a process theory. Neural Comput. 29, 1–49. doi: 10.1162/NECO_a_00912
+* Friston, K. J. (2010). The free-energy principle: a unified brain theory? Nat. Rev. Neurosci. 11, 127–138. doi: 10.1038/nrn2787
+* Noor Sajid, Philip J. Ball, Thomas Parr, Karl J. Friston. (2021). Active Inference: Demystified and Compared. Neural Comput 2021; 33 (3): 674–712. doi: https://doi.org/10.1162/neco_a_01357
+* Friston, K. J. (2019). A free energy principle for a particular physics. ArXiv190610184 Q-Bio. Available online at: http://arxiv.org/abs/1906.10184 (accessed July 1, 2019).
+
+
+
+References:
+* Tononi, G. 2004 An information integration theory of consciousness. BMC Neurosci 5, 42.
+* Tononi, G. & Sporns, O. 2003 Measuring information integration. BMC Neurosci 4, 31.
+* Tononi, G., Sporns, O. & Edelman, G. M. 1994 A measure for brain complexity: relating functional segregation and integration in the nervous system. Proc Natl Acad Sci U S A 91, 5033-7.
+* Tononi, G. 2008 Consciousness as integrated information: A provisional manifesto. Biological Bulletin 215, 216-42.
+* Edelman, G. M. & Tononi, G. 2000 A universe of consciousness : how matter becomes imagination. New York, NY: Basic Books.
+* Tononi, G. & Edelman, G. M. 1998 Consciousness and complexity. Science 282, 1846-51.
+* Edelman, G. M. 1987 Neural Darwinism: The Theory of Neuronal Group Selection. New York: Basic Books, Inc.
+* Edelman, G. M. 2003 Naturalizing consciousness: a theoretical framework. Proc Natl Acad Sci U S A 100, 5520-4.
+* Oizumi M, Albantakis L, Tononi G (2014) From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0. PLOS Computational Biology 10(5): e1003588. https://doi.org/10.1371/journal.pcbi.1003588
+
+
 
 
 AST, IIT, multiple drafts theory, dynamic core, predictive coding.
