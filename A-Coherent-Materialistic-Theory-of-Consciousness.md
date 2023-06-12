@@ -314,6 +314,7 @@ Todo - brain parts etc
 ![forward and backward connections](files/forward-and-backward-connections-in-brain-marino-2021.png)
 
 Purpose:
+* provide framing that my box-and-lines theory doesn't assume a box-and-lines implementation.
 * highlight that processing occurs at the system level, dependent on all the systems involved, that no system on its own can really do anything much
 * highlight the micro-recurrent "wave style" of communication
 * provide a very brief high-level summary of what regions of the brain are believed to be involved with consciousness
