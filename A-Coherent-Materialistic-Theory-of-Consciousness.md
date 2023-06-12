@@ -263,9 +263,13 @@ _Higher-order Thought (HOT)_ and _Higher-order Perception (HOP)_ are a group of 
 
 Where a higher-order state _represents_ that a first-order state was _experienced_, then we have conscious experience. This is a group of theories because many variations exist. HOP theories focus on perception, and in particular an idea that we have an explicit perceptual inner-sense that observes our cognitive state, for example in the same way that our visual sense observes the world outside (Armstrong, 1968 and 1984; Lycan, 1996 and 2004). HOT theories are computational theories that propose that higher-order states are _constructed_ from or about the first-order states. Some HOT theories propose that any first-order state can become conscious, provided that a higher-order state is constructed about them (Rosenthal, 1986, 1993, and 2005), others that certain first-order states carry a special characteristic that make them inherently _disposed_ to have higher-order states about (Carruthers, 1996, 2000, and 2005). Some view that first-order states and higher-order states are related but independent, and thus that one kind can occur without the other, while others take a more _self-repreresentational_ view that higher-order states are somehow always constructed inline with their intentional first-order states (Gennaro, 1996 and 2012; Kriegel, 2003, 2006 and 2009).
 
+_Global Workspace Theory_ (GWT) sees the brain as a system of individual computational processes that compete, and sometimes collaborate, to gain a winner(s)-take-all right to _broadcast_ their results to a _global workspace_ (Baars, 2021; Baars and Franklin, 2007). The state of the global workspace then forms the context upon which subsequent processing occurs by all those same computational processes. This occurs in a continuous and dynamic way typical of the parallel processing that we've come to understand about the brain. GWT is primarily a theory of cognitive processing that focuses on its a-conscious processes, representations, and functional structures. In doing so it offers a partial explanation of the underlying mechanisms of rational thought, or so called _general intelligence_. The link to subjective experience is by way of claiming that the global workspace is the content of subjective experience, based on correlations with the apparent integrative nature of conscious perceptual attention and decision making, forming an apparent single stream of consciousness (Baars, 2021). GNT was formed by Baars (1988), but has been taken up and extended by many others (Franklin and Graesser, 1999; Shanahan, 2005 and 2008).
+
+Of particular note is _Global Neuronal Workspace_ theory (GNW). GWT is a abstract computational theory that composes high-level concepts such as a workspace, processes, frames, and competition and collaboration between processes. While it makes some claims about regions of brain involved, it doesn't explain how groups of neurons produce such behaviour. In other words, it omits important details about the substrate from its explanation. GNW takes inspiration from a growing view of neuronal interactions as _dynamical systems_ (Miller, 2016; Favela, 2020; Shapiro, 2013). It proposes how non-linear interactions between populations of neurons can create a sudden "ignition" effect, where multiple independent stimuli suddenly become mutually _salient_, particularly due to long-range axons from sensorial stimuli (Dehaene, Sergent, and Changeux, 2003). In other words, it proposes a specific mechanism of how groups of neurons can cooperate to form a single representation that is then broadcast to others.
 
 
-GNWT, AST, IIT, predictive coding.
+
+AST, IIT, predictive coding.
 
 > todo:
 > * Inspired by the peculiar behaviour of quantum mechanics, some have suggested that the physical substrate produces quantum entanglement and that this quantum entanglement may be the underlying mechanism behind subjective experience, such as  ...{insert name of Microtubules theory}....
@@ -1641,6 +1645,12 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Armstrong, D. (1984). Consciousness and causality. In D. Armstrong and N. Malcolm (eds), Consciousness and Causality, Oxford: Blackwell.
 
+* Baars, B. J. (1988). A cognitive theory of consciousness. New York, NY: Cambridge University Press.
+
+* Baars, B. J., and Franklin, S. (2007). An architectural model of conscious and unconscious brain functions: Global Workspace Theory and IDA. Neural networks : the official journal of the International Neural Network Society, 20(9), 955–961.
+
+* Baars, B. J. (2021) On Consciousness: Science & Subjectivity - Updated Works on Global Workspace Theory. Nautilus Press
+
 * Block, N. (1995). On a confusion about a function of consciousness. Behavioral and Brain Sciences, 18(2), 227–247. https://doi.org/10.1017/S0140525X00038188. [Full Text](https://www.researchgate.net/publication/28762323_On_A_Confusion_About_a_Function_of_Consciousness).
 
 * Block, N. (2002). The Harder Problem of Consciousness. The Journal of Philosophy, 99(8), 391–425. https://doi.org/10.2307/3655621
@@ -1661,7 +1671,11 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Carruthers, P., and Gennaro, R. (2020). Higher-Order Theories of Consciousness., The Stanford Encyclopedia of Philosophy (Fall 2020 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2020/entries/consciousness-higher/>.
 
+* Dehaene, S., Sergent, C. and Changeux, J. P. (2003). A neuronal network model linking subjective reports and objective physiological data during conscious perception. Proc Natl Acad Sci U S A 100, 8520-5.
+
 * Descartes, R. (1644/1911). The Principles of Philosophy. Translated by E. Haldane and G. Ross. Cambridge: Cambridge University Press.
+
+* Favela, L. H. (2020. Dynamical systems theory in cognitive science and neuroscience. Philosophy Compass. 15:e12695. https://doi.org/10.1111/phc3.12695
 
 * Fodor, J. (1975). The Language of Thought. New York: Thomas Y. Crowell.
 
@@ -1674,6 +1688,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Fodor, J. (1994). The Elm and the Expert. Cambridge, MA: MIT Press.
 
 * Fodor, J. (2008). Lot 2: The Language of Thought Revisited. Oxford: Clarendon Press.
+
+* Franklin, S. & Graesser, A. (1999). A software agent model of consciousness. Conscious Cogn 8, 285-301
 
 * Gennaro, R. (1996). Consciousness and Self-Consciousness. Amsterdam: John Benjamins.
 
@@ -1704,6 +1720,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Libet, B. (1985). Unconscious Cerebral Initiative and the Role of Conscious Will. In Voluntary Action, Behavioral and Brain Sciences, 8: 529–566.
 
 * Libet, B. (2004). Mind Time: The Temporal Factor in Consciousness. Cambridge, MA: Harvard University Press.
+
+* Miller P. (2016). Dynamical systems, attractors, and neural circuits. F1000Research, 5, F1000 Faculty Rev-992. https://doi.org/10.12688/f1000research.7698.1
 
 * Linser, K and Goschke, T. (2007). Unconscious modulation of the conscious experience of voluntary control, Cognition, 104: 459–475.
 
@@ -1746,6 +1764,12 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Searle, J. R. (1990). Who is computing with the brain? Behavioral and Brain Sciences, 13:4:632-64.
 
 * Seth, A.K., Bayne, T. (2022). Theories of consciousness. Nat Rev Neurosci. https://doi.org/10.1038/s41583-022-00587-4
+
+* Shanahan, M. (2005). A cognitive architecture that combines internal simulation with a global workspace. Conscious Cogn. 15(2):433-49
+
+* Shanahan, M. (2008). A spiking neuron model of cortical broadcast and competition. Conscious Cogn. 17(1):288-303.
+
+* Shapiro, L. A. (2013). Dynamics and Cognition. Minds and Machines 23 (3):353-375.
 
 * Siegel, S. (2021). The Contents of Perception. The Stanford Encyclopedia of Philosophy (Fall 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2021/entries/perception-contents/>.
 
