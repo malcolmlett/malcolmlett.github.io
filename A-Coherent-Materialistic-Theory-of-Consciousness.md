@@ -233,6 +233,11 @@ https://www.frontiersin.org/articles/10.3389/fpsyg.2022.913309/full
 > * The furthest logical extension is that of _epiphenomenalism_ which posits that no functional mental processes are caused by subjective experience. Rather, subjective experience is posited as being some sort of non-causal summary of internal and external events. A significant problem with epiphenomenalism is why subjective experience, and indeed consciousness at all, would have evolved if it can provide no functional / causal benefit to the individual. In that sense, epiphenomenalism only makes any sense if viewed in conjunction with with metaphysical dualistic theories where some "spirit" that exists on another plane of reality are perceiving the experiences for some grander purpose outside of the context of the corporeal reality.
 
 
+Learning to Be Conscious
+- Axel Cleeremans, Dalila Achoui, Arnaud Beauny, Lars Keuninckx, Jean-Remy Martin, Santiago Muñoz-Moldes, Laurène Vuillaume, Adélaïde de Heering (2020). Learning to Be Conscious, Trends in Cognitive Sciences, Volume 24, Issue 2, Pages 112-123, ISSN 1364-6613, https://doi.org/10.1016/j.tics.2019.11.011.
+- https://www.sciencedirect.com/science/article/pii/S1364661319302876
+- => See note for full details: Meta-management
+
 ## General Theories of Consciousness
 I now describe some generic and specific theories of consciousness. To provide some grounding to the summary and to aid in comparing theories, a framework of a stack of conceptual layers is used, illustrated in the diagram that follows. This is not meant to imply a priori anything about the actual structure of consciousness and its underlying mechanisms. For example, none of the layers are assumed necessarily to exist a priori, nor is the particular illustrated order appropriate in every case.
 
@@ -278,7 +283,7 @@ The work on the _Theory of Neuronal Group Selection_ (TNGS) (Edelman 1987; Edelm
 
 _Integrated Information Theory_ (IIT) provides another closely related measure that claims to calculate an objective quantity of consciousness, indicated as Φ (phi). This looks not just for mutual information, which is inherently bidirectional (ie: just a correlation without any idea of cause-effect relationships), but attempts to measure the extent to which certain information is _causually effective_. It then computes the amount of causally effective information that can be integrated across the weakest link of the the system (Tononi and Sporns, 2003; Tononi, 2004). This has since received two major revisions, first in 2008 to measure based on active dynamics rather than static configuration (Tononi, 2008), and then again in 2014 with the introduction _maximally irreducible conceptual structures_ (MICS) (Oizumi, Albantakis, and Tononi, 2014).
 
-Another approach is to look at the dynamics of waves and oscillations of activity within the brain. For example, in older studies it was found that consciousness coincided with so called _gamma-waves_, in the frequency range 30 to 80 Hz, in electrocardiogram readings. That is now understood as being the outwardly measurable effect of the micro-interactions at the neuronal level (Llinás, Ribary, Contreras & Pedroarena, 1998; Friston et al 2014; Hunt and Schooler, 2019). In particular, a productive line of thought has been to treat such brain activity as harmonics, with different global and sub-global populations of neurons dynamically forming groups of closely synchronised activity (Atasoy, Donnelly, and Pearson, 2016; Atasoy et al 2018). The ever changing groupings of neurons that create those harmonics is proposed to be self-organising, with one theory describing _self-organizing harmonic modes_ (SOHMs) (Safron, 2020). The larger _Integrated World Modeling Theory_ of consciousness (IWMT) (Safron, 2020), where SOHMs were introduced, combines IIT and GNW with the _Free Energy Principle_ (Friston, 2019) and _Active Inference Framework_ of Friston (Friston, Kilner, and Harrison, 2006; Friston et al 2017; Sajid et al 2021).
+Another approach is to look at the dynamics of waves and oscillations of activity within the brain. For example, in older studies it was found that consciousness coincided with so called _gamma-waves_, in the frequency range 30 to 80 Hz, in electroencephalogram (EEG) readings. That is now understood as being the outwardly measurable effect of the micro-interactions at the neuronal level (Llinás, Ribary, Contreras & Pedroarena, 1998; Friston et al 2014; Hunt and Schooler, 2019). In particular, a productive line of thought has been to treat such brain activity as harmonics, with different global and sub-global populations of neurons dynamically forming groups of closely synchronised activity (Atasoy, Donnelly, and Pearson, 2016; Atasoy et al 2018). The ever changing groupings of neurons that create those harmonics is proposed to be self-organising, with one theory describing _self-organizing harmonic modes_ (SOHMs) (Safron, 2020). The larger _Integrated World Modeling Theory_ of consciousness (IWMT) (Safron, 2020), where SOHMs were introduced, combines IIT and GNW with the _Free Energy Principle_ (Friston, 2019) and _Active Inference Framework_ of Friston (Friston, Kilner, and Harrison, 2006; Friston et al 2017; Sajid et al 2021).
 
 It is important to note that while such theories find useful correlations to consciousness, known as _neural correlates of consciousness_ (NCC), they do not explain the mechanism by which those correlated activities or measures produce subjective experience.
 
@@ -323,6 +328,54 @@ Purpose:
 * highlight that processing occurs at the system level, dependent on all the systems involved, that no system on its own can really do anything much
 * highlight the micro-recurrent "wave style" of communication
 * provide a very brief high-level summary of what regions of the brain are believed to be involved with consciousness
+
+* basic brain areas
+* state that we now know they are not discretely modular
+    * ie: view that neurons that are closest to a particular sensory modality will tend to process things related to that modality, with closer neurons more closely related to the raw signals, and further neurons more abstract and perhaps taking in more information from other places (Mountcastle, see note an "Articles on Predictive Coding"), and similar for motor control (the monkey stimulous thing)
+    * this can be seen quite clearly in the case of the primary and secondary visual cortices.
+* waves are the result of micro-level recurrent processing, that is suspected to be part of a hierarchical bayesian-like mechanism.
+    * see note an "Articles on Predictive Coding")
+
+Hierarchical bayes: ...... P(..) = P(..)P(..)P(..)P(..)
+
+"Through a dynamic process, the system settles to an activity pattern, minimizing prediction error. Over time, the parameters are also adjusted to improve predictions. In this way, negative feedback is used, both in inference and learning, to construct a generative model of sensory inputs."
+
+
+
+An earlier section mentioned the wave effects in brain activity. The idea of _predictive coding_ shows promising results in attempts to explain such waves, particularly in areas of .................. The idea stems from _bayesian inference_, and in particular the _empirical bayes method_ that is capable of handling hierarchical levels of latent variables. Suppose you have observed data _y_ that is caused by a hidden latent variable _x_. Suppose also that latent variable _x_ is itself caused by hidden latent variable _w_. This can be expressed in its generative model as:
+
+_todo_ check the maths:
+```
+p(y|x,w) = p(y|x)p(x|w)p(w)
+    
+```
+
+In its inverted form, where we are trying to infer the hidden variables from y we have:
+```
+                p(y|x)p(x|w)
+p(x|y) = SIGMA ------------- dw
+                p(y|w)
+               
+               
+p(w|y) = SIGMA p(w|x)p(x|y) dx
+         
+```
+
+This can be iteratively solved in a form similar to that of the _expectation maximisation_ algorithm (Dempster, Laird, and Rubin, 1977). Within the expectation step
+
+
+EM:
+* sensory space <-> latent space (representational space)
+* example: trying to identify whether the animal in front of you is a dog or cat, in a dark alleyway.
+* expectation: estimate state in latent space, may produce a confused result (partly dog and partly cat) and may or may not correlate very well with the original sense (eg: may identify more strongly as a cat, when actually it's a dog)
+* maximisation: "generate" back from latent space into sensory space, to update the priors. Another way of looking at this stage is to consider it as identifying the errors caused by the original estimate. The difference between the original sensory data and the generated version can be used to amplify the signal strength of the early-stage neurons that produced low error and reduce the signal strength of the neurons that produced high error (citation: ART). In this way the cohesiveness of the prediction (E step) is improved, by using knowledge of what such a predicted thing should look like (M step).
+
+- Expectation Maximisation (EM) algorithm (Dempster, Laird, and Rubin, 1977)
+- Application of Empirical Bayes (hierarchical) to hierarchical nature of brain (Friston 2005)
+
+
+References:
+* Dempster, A.P.; Laird, N.M.; Rubin, D.B. (1977). "Maximum Likelihood from Incomplete Data via the EM Algorithm". Journal of the Royal Statistical Society, Series B. 39 (1): 1–38. 
 
 
 ---
