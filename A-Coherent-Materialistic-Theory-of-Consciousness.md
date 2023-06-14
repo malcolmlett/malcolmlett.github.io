@@ -341,25 +341,21 @@ Hierarchical bayes: ...... P(..) = P(..)P(..)P(..)P(..)
 "Through a dynamic process, the system settles to an activity pattern, minimizing prediction error. Over time, the parameters are also adjusted to improve predictions. In this way, negative feedback is used, both in inference and learning, to construct a generative model of sensory inputs."
 
 
+An earlier section mentioned the wave effects in brain activity. The idea of _predictive coding_ shows promising results in attempts to explain such waves, particularly in areas of .................. Under this interpretation, sensory inference is the result of an _empirical bayes method_ with iterations of inference and generation steps. This leads to a lot of activity that eventually settles once prediction errors are minimized. 
 
-An earlier section mentioned the wave effects in brain activity. The idea of _predictive coding_ shows promising results in attempts to explain such waves, particularly in areas of .................. The idea stems from _bayesian inference_, and in particular the _empirical bayes method_ that is capable of handling hierarchical levels of latent variables. Suppose you have observed data _y_ that is caused by a hidden latent variable _x_. Suppose also that latent variable _x_ is itself caused by hidden latent variable _w_. This can be expressed in its generative model as:
+First, consider the non-hierarchical case, illustrated in panel A of the following diagram:
 
-_todo_ check the maths:
-```
-p(y|x,w) = p(y|x)p(x|w)p(w)
-    
-```
+![predictive coding](files/A-coherent-theory-v1-predictive-coding.drawio.png)
 
-In its inverted form, where we are trying to infer the hidden variables from y we have:
-```
-                p(y|x)p(x|w)
-p(x|y) = SIGMA ------------- dw
-                p(y|w)
-               
-               
-p(w|y) = SIGMA p(w|x)p(x|y) dx
-         
-```
+* _**Illustration of predictive code:** description todo_
+
+In the bottom-up forward inference step (left side), low-level sensory data is used to _infer_ the expected higher-level representation one level above. In the top-down backward generation step, the higher-order representation within the level above is used to predict the original sensory data. At that point, if there is an error then the higher-level representation is wrong, and the original inference was wrong. Under the theory of predictive coding, the higher-level node represents a _prior_ on the likelihood of the value of a hidden latent variable that is considered to have caused the sensory data. The bottom-up signal carries a prediction error that adjusts that prior, and the top-down is the result of a model that learns the generational model from latent variable to sensory data.
+
+In the hierarchical case (panel B in the diagram), this is repeated across multiple layers. Now, each intermediate layer computes its prior based on the top-down signal from above, and then improves that prior based on prediction error received bottom-up.
+
+This can be understood in a simplified way by an example. Imagine that you are in a dark alleyway and you can just make out the shadowy shape of an animal, which might for example be a dog or a cat. In the dark, the raw visual sensory signal is very noisy, and an initial inference of that signal may be a confused representation that is partly dog and partly cat. By the time that a high-level representation is generated, it is resolved into a single consistent recognition of a dog. That recognition now triggers a top-down generation that reaches close to the low-level sensory layer and picks up lots of errors, because, actually it was a cat. The effect of those errors tweaks the priors and causes a new high-level representation of a cat, which now leads to less error at the low-level representation side.
+
+
 
 This can be iteratively solved in a form similar to that of the _expectation maximisation_ algorithm (Dempster, Laird, and Rubin, 1977). Within the expectation step
 
@@ -367,7 +363,6 @@ This can be iteratively solved in a form similar to that of the _expectation max
 EM:
 * sensory space <-> latent space (representational space)
 * example: trying to identify whether the animal in front of you is a dog or cat, in a dark alleyway.
-* expectation: estimate state in latent space, may produce a confused result (partly dog and partly cat) and may or may not correlate very well with the original sense (eg: may identify more strongly as a cat, when actually it's a dog)
 * maximisation: "generate" back from latent space into sensory space, to update the priors. Another way of looking at this stage is to consider it as identifying the errors caused by the original estimate. The difference between the original sensory data and the generated version can be used to amplify the signal strength of the early-stage neurons that produced low error and reduce the signal strength of the neurons that produced high error (citation: ART). In this way the cohesiveness of the prediction (E step) is improved, by using knowledge of what such a predicted thing should look like (M step).
 
 - Expectation Maximisation (EM) algorithm (Dempster, Laird, and Rubin, 1977)
