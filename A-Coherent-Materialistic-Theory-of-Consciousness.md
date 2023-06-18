@@ -333,44 +333,38 @@ Purpose:
 * state that we now know they are not discretely modular
     * ie: view that neurons that are closest to a particular sensory modality will tend to process things related to that modality, with closer neurons more closely related to the raw signals, and further neurons more abstract and perhaps taking in more information from other places (Mountcastle, see note an "Articles on Predictive Coding"), and similar for motor control (the monkey stimulous thing)
     * this can be seen quite clearly in the case of the primary and secondary visual cortices.
-* waves are the result of micro-level recurrent processing, that is suspected to be part of a hierarchical bayesian-like mechanism.
-    * see note an "Articles on Predictive Coding")
 
-Hierarchical bayes: ...... P(..) = P(..)P(..)P(..)P(..)
+## Neural activity waves and the Predictive Coding theory of brain function
+A traditional conception of brain processing of senses can be characterised as "perception by representation": that the brain attempts to use the senses to accurately represent what is observed. A typical assumption associated with that characterisation is that sensory perception is a largely "feed-forward" process: raw low-level sensory signals are hierarchically interpreted into higher and higher-level representations, eventually identifying specific objects, their boundaries, and other properties such as location, pose, and motion (Buckley et al, 2017).
 
-"Through a dynamic process, the system settles to an activity pattern, minimizing prediction error. Over time, the parameters are also adjusted to improve predictions. In this way, negative feedback is used, both in inference and learning, to construct a generative model of sensory inputs."
+An alternative conception is characterised as "perception by inference": that the brain attempts to infer the (hidden) state of the environment, known as the _latent state_, from sensory signals. In this conception, rather than predicting a representational model that correlates to the sensory signals, the brain attempts to model the underlying structure that _caused_ the sensory signals (Friston, 2005). Furthermore, rather than producing this inference within a single forward pass, it is derived through an iterative process employing both feed-forward and feed-back signals (Rao and Ballard, 1999).
 
+One particular theory, Predictive Coding, holds that much of brain function is the result of such inference (Friston, 2010; Clark, 2013; Kilner, Friston, Frith, 2007), including not just perception but also action generation (Friston, 2010). The explanation stems from the observation that Bayesian inference is analytically intractable for most problems, but can be solved through the _empirical bayes method_ by _factorising_ the problem space (Buckley et al, 2017). A so called _generative model_, which models the the causal structure from environment state to sensory signal, can be approximated by factorising it in three ways (Buckley et al, 2017; Millidge, Seth, Buckley, 2021). Firstly, the state of the environment at a given moment in time can be factorised as a multi-variate combination of independent gaussians. Secondly, the time-dependent dynamics of state can be factorised into the current value, its first-order derivative, its second-order derivative, and so on. Thirdly, the unknown relationships between latent causes can be modelled and learned as a hierarchy of layers (Friston, 2008), with each successive layer acting as a generative model of the layer before.
 
-An earlier section mentioned the wave effects in brain activity. The idea of _predictive coding_ shows promising results in attempts to explain such waves, particularly in areas of .................. Under this interpretation, sensory inference is the result of an _empirical bayes method_ with iterations of inference and generation steps. This leads to a lot of activity that eventually settles once prediction errors are minimized. 
-
-First, consider the non-hierarchical case, illustrated in panel A of the following diagram:
+This factorisation can be distributed across the neural structure of the cortex (Mumford, 1991; Rao and Ballard, 1999), with activity of each individual neuron representing the mean of the gaussian distribution of the particular variable that it models (Buckley et al, 2017), and possibly also representing the variance (Feldman, Friston, 2010). Some aspects of this 3-dimensional factorisation can be seen in the structure and activity within the brain. For example, the hierarchical nature of brain processing can be seen in the way that  the primary visual cortex appears to process visual information at a lower level of representation than the visual association area, and similarly for the primary and secondary somatosensory areas [citations]. Additionally, there is some evidence that neurons within the cortex are formed into _columns_, where the neurons in each column together model a single multi-dimensional variable [citation: Mountcastle], and likely with more accurate modeling than via the simple assumption of multi-variate independence.
 
 ![predictive coding](files/A-coherent-theory-v1-predictive-coding.drawio.png)
 
-* _**Illustration of predictive code:** description todo_
+* _**Predictive coding in action:** A) Top-down computations predict sensory data based on high-level priors. Bottom-up computations indicate prediction errors, leading to updated priors. The process is repeated until prediction errors are sufficiently reduced. B) The same top-down and bottom-up interactions occur at the micro level between adjacent pairs of the hierarchical layers, and at the macro level across the entire system.
 
-In the bottom-up forward inference step (left side), low-level sensory data is used to _infer_ the expected higher-level representation one level above. In the top-down backward generation step, the higher-order representation within the level above is used to predict the original sensory data. At that point, if there is an error then the higher-level representation is wrong, and the original inference was wrong. Under the theory of predictive coding, the higher-level node represents a _prior_ on the likelihood of the value of a hidden latent variable that is considered to have caused the sensory data. The bottom-up signal carries a prediction error that adjusts that prior, and the top-down is the result of a model that learns the generational model from latent variable to sensory data.
+Counter-intuitively, under the theory of predictive coding, the forward computational direction from sensory signal to higher-level representation, also known as the _bottom-up_ calculation, conveys only prediction error. The main computation is performed by the generative model during _top-down_ computation, ie: in backward direction from high level representation towards low-level sensory input. Each layer within the hierarchy represents a _prior_ on the layer below, _conditioned_ on the layer above. At time of inference, bottom-up prediction error is used to identify priors that don't fit reality, which triggers further prediction errors up to higher levels. That is eventually returned with new top-down conditioning adjusting the priors, ultimately resulting in each layer representing its best guess of the latent state at its level of representation. Over longer timescales, bottom-up prediction errors are also used to learn better generative models (Friston, 2008).
 
-In the hierarchical case (panel B in the diagram), this is repeated across multiple layers. Now, each intermediate layer computes its prior based on the top-down signal from above, and then improves that prior based on prediction error received bottom-up.
+This leads to a lot of activity. A novel sensory signal is likely to immediately trigger prediction errors against priors in low-level layers that were _framed_ by previous contextual information. Thus there is immediate short-range waves of generative prediction and prediction error activity (see panel B in the diagram above). In order to completely resolve the prediction errors, higher-level priors may need to be revised, resulting in long-range waves of activity (panel A in the diagram above). Activity eventually settles once prediction errors are sufficiently minimized across all layers.
 
-This can be understood in a simplified way by an example. Imagine that you are in a dark alleyway and you can just make out the shadowy shape of an animal, which might for example be a dog or a cat. In the dark, the raw visual sensory signal is very noisy, and an initial inference of that signal may be a confused representation that is partly dog and partly cat. By the time that a high-level representation is generated, it is resolved into a single consistent recognition of a dog. That recognition now triggers a top-down generation that reaches close to the low-level sensory layer and picks up lots of errors, because, actually it was a cat. The effect of those errors tweaks the priors and causes a new high-level representation of a cat, which now leads to less error at the low-level representation side.
-
-
-
-This can be iteratively solved in a form similar to that of the _expectation maximisation_ algorithm (Dempster, Laird, and Rubin, 1977). Within the expectation step
-
-
-EM:
-* sensory space <-> latent space (representational space)
-* example: trying to identify whether the animal in front of you is a dog or cat, in a dark alleyway.
-* maximisation: "generate" back from latent space into sensory space, to update the priors. Another way of looking at this stage is to consider it as identifying the errors caused by the original estimate. The difference between the original sensory data and the generated version can be used to amplify the signal strength of the early-stage neurons that produced low error and reduce the signal strength of the neurons that produced high error (citation: ART). In this way the cohesiveness of the prediction (E step) is improved, by using knowledge of what such a predicted thing should look like (M step).
-
-- Expectation Maximisation (EM) algorithm (Dempster, Laird, and Rubin, 1977)
-- Application of Empirical Bayes (hierarchical) to hierarchical nature of brain (Friston 2005)
-
+Predictive coding offers an explanation of various otherwise puzzling features of perception (Millidge, Seth, Buckley, 2021), including so called "end-stopping" in visual perception, bistable perception effects under right/left-eye competition, repetition suppression, attentional modulation of neural activity, and of hebbian learning. The suitability of predictive coding as a larger theory of brain function is debated [citation], but the basic idea behind it provides a good explanation of the waves of activity that we see in EEG and fRMI recordings.
 
 References:
-* Dempster, A.P.; Laird, N.M.; Rubin, D.B. (1977). "Maximum Likelihood from Incomplete Data via the EM Algorithm". Journal of the Royal Statistical Society, Series B. 39 (1): 1–38. 
+* Buckley, C. L., Kim, C. S., McGregor, S., and Seth, A. K. (2017). The free energy principle for action and perception: A mathematical review. Journal of Mathematical Psychology, 81, 55–79.
+* Clark, A. Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behav. Brain Sci. 36, 181–204 (2013).
+* Friston, K. (2005). A theory of cortical responses. Philosophical Transactions of the Royal Society of London B: Biological Sciences, 360(1456), 815–836. 
+* Friston, K. (2008). Hierarchical models in the brain. PLoS computational biology, 4(11).
+* Friston, K. (2010). The free-energy principle: a unified brain theory?. Nat. Rev. Neurosci. 11, 127–138.
+* Kilner, J. M., Friston, K. J., & Frith, C. D. (2007). Predictive coding: an account of the mirror neuron system. Cognitive processing, 8(3), 159–166. https://doi.org/10.1007/s10339-007-0170-2
+* Millidge, B., Seth, A., Buckley, C. (2021). Predictive Coding: a Theoretical and Experimental Review. Computer Science. https://doi.org/10.48550/arXiv.2107.12979. [(full text)](https://arxiv.org/abs/2107.12979)
+* Mumford, D. On the computational architecture of neocortex. Biol. Cybern. 65, 135–145 (1991).
+* Rao, R. P. & Ballard, D. H. Predictive coding in the visual cortex: A functional interpretation of some extra-classical receptive-field effects. Nat. Neurosci. 2, 79–87 (1999).
+
+
 
 
 ---
