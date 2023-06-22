@@ -337,35 +337,21 @@ Purpose:
 ## Neural activity waves and the Predictive Coding theory of brain function
 A traditional conception of brain processing of senses can be characterised as "perception by representation": that the brain attempts to use the senses to accurately represent what is observed. A typical assumption associated with that characterisation is that sensory perception is a largely "feed-forward" process: raw low-level sensory signals are hierarchically interpreted into higher and higher-level representations, eventually identifying specific objects, their boundaries, and other properties such as location, pose, and motion (Buckley et al, 2017).
 
-An alternative conception is characterised as "perception by inference": that the brain attempts to infer the (hidden) state of the environment, known as the _latent state_, from sensory signals. In this conception, rather than predicting a representational model that correlates to the sensory signals, the brain attempts to model the underlying structure that _caused_ the sensory signals (Friston, 2005). Furthermore, rather than producing this inference within a single forward pass, it is derived through an iterative process employing both feed-forward and feed-back signals (Rao and Ballard, 1999).
+An alternative conception is characterised as "perception by inference": that the brain attempts to infer the (hidden) state of the environment, known as the _latent state_, from sensory signals. In this conception, rather than predicting a representational model that _correlates_ to the sensory signals, the brain attempts to model the underlying structure that _caused_ the sensory signals (Friston, 2005). Furthermore, rather than producing this inference within a single forward pass, it is derived through an iterative process employing both feed-forward and feed-back signals (Rao and Ballard, 1999).
 
-One particular theory, Predictive Coding, holds that much of brain function is the result of such inference (Friston, 2010; Clark, 2013; Kilner, Friston, Frith, 2007), including not just perception but also action generation (Friston, 2010). The explanation stems from the observation that Bayesian inference is analytically intractable for most problems, but can be solved through the _empirical bayes method_ by _factorising_ the problem space (Buckley et al, 2017). A so called _generative model_, which models the the causal structure from environment state to sensory signal, can be approximated by factorising it in three ways (Buckley et al, 2017; Millidge, Seth, Buckley, 2021). Firstly, the state of the environment at a given moment in time can be factorised as a multi-variate combination of independent gaussians. Secondly, the time-dependent dynamics of state can be factorised into the current value, its first-order derivative, its second-order derivative, and so on. Thirdly, the unknown relationships between latent causes can be modelled and learned as a hierarchy of layers (Friston, 2008), with each successive layer acting as a generative model of the layer before.
+One particular theory, Predictive Coding, holds that much of brain function is the result of such inference (Friston, 2010; Clark, 2013 and 2019; Kilner, Friston, Frith, 2007), including not just perception but also action generation (Friston, 2010). The explanation stems from the observation that Bayesian inference is analytically intractable for most problems, but can be solved through the _empirical bayes method_ by _factorising_ the problem space (Buckley et al, 2017). A so called _generative model_, which models the the causal structure from environment state to sensory signal, can be approximated by factorising it in three ways (Buckley et al, 2017; Millidge, Seth, Buckley, 2021). Firstly, the state of the environment at a given moment in time can be factorised as a multi-variate combination of independent gaussians. Secondly, the time-dependent dynamics of state can be factorised into the current value, its first-order derivative, its second-order derivative, and so on. Thirdly, the unknown relationships between latent causes can be modelled and learned as a hierarchy of layers (Friston, 2008), with each successive layer acting as a generative model of the layer before.
 
-This factorisation can be distributed across the neural structure of the cortex (Mumford, 1991; Rao and Ballard, 1999), with activity of each individual neuron representing the mean of the gaussian distribution of the particular variable that it models (Buckley et al, 2017), and possibly also representing the variance (Feldman, Friston, 2010). Some aspects of this 3-dimensional factorisation can be seen in the structure and activity within the brain. For example, the hierarchical nature of brain processing can be seen in the way that  the primary visual cortex appears to process visual information at a lower level of representation than the visual association area, and similarly for the primary and secondary somatosensory areas [citations]. Additionally, there is some evidence that neurons within the cortex are formed into _columns_, where the neurons in each column together model a single multi-dimensional variable [citation: Mountcastle], and likely with more accurate modeling than via the simple assumption of multi-variate independence.
+This factorisation can be distributed across the neural structure of the cortex (Mumford, 1991; Rao and Ballard, 1999), with activity of each individual neuron representing the mean of the gaussian distribution of the particular variable that it models (Buckley et al, 2017), and possibly also representing the variance (Feldman, Friston, 2010). Some aspects of this 3-dimensional factorisation can be seen in the structure and activity within the brain. For example, the hierarchical nature of brain processing can be seen in the way that  the primary visual cortex appears to process visual information at a lower level of representation than the visual association area, and similarly for the primary and secondary somatosensory areas [citations]. Additionally, there is some evidence that neurons within the cortex are formed into _columns_, where the neurons in each column together model a single multi-dimensional variable (Mountcastle, 1997), and likely with more accurate modeling than via the simple assumption of multi-variate independence.
 
 ![predictive coding](files/A-coherent-theory-v1-predictive-coding.drawio.png)
 
-* _**Predictive coding in action:** A) Top-down computations predict sensory data based on high-level priors. Bottom-up computations indicate prediction errors, leading to updated priors. The process is repeated until prediction errors are sufficiently reduced. B) The same top-down and bottom-up interactions occur at the micro level between adjacent pairs of the hierarchical layers, and at the macro level across the entire system.
+* _**Predictive coding in action.** A) Top-down computations predict sensory data based on high-level priors. Bottom-up computations indicate prediction errors, leading to updated priors. The process is repeated until prediction errors are sufficiently reduced. B) The same top-down and bottom-up interactions occur at the micro level between adjacent pairs of the hierarchical layers, and at the macro level across the entire system._
 
 Counter-intuitively, under the theory of predictive coding, the forward computational direction from sensory signal to higher-level representation, also known as the _bottom-up_ calculation, conveys only prediction error. The main computation is performed by the generative model during _top-down_ computation, ie: in backward direction from high level representation towards low-level sensory input. Each layer within the hierarchy represents a _prior_ on the layer below, _conditioned_ on the layer above. At time of inference, bottom-up prediction error is used to identify priors that don't fit reality, which triggers further prediction errors up to higher levels. That is eventually returned with new top-down conditioning adjusting the priors, ultimately resulting in each layer representing its best guess of the latent state at its level of representation. Over longer timescales, bottom-up prediction errors are also used to learn better generative models (Friston, 2008).
 
 This leads to a lot of activity. A novel sensory signal is likely to immediately trigger prediction errors against priors in low-level layers that were _framed_ by previous contextual information. Thus there is immediate short-range waves of generative prediction and prediction error activity (see panel B in the diagram above). In order to completely resolve the prediction errors, higher-level priors may need to be revised, resulting in long-range waves of activity (panel A in the diagram above). Activity eventually settles once prediction errors are sufficiently minimized across all layers.
 
-Predictive coding offers an explanation of various otherwise puzzling features of perception (Millidge, Seth, Buckley, 2021), including so called "end-stopping" in visual perception, bistable perception effects under right/left-eye competition, repetition suppression, attentional modulation of neural activity, and of hebbian learning. The suitability of predictive coding as a larger theory of brain function is debated [citation], but the basic idea behind it provides a good explanation of the waves of activity that we see in EEG and fRMI recordings.
-
-References:
-* Buckley, C. L., Kim, C. S., McGregor, S., and Seth, A. K. (2017). The free energy principle for action and perception: A mathematical review. Journal of Mathematical Psychology, 81, 55–79.
-* Clark, A. Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behav. Brain Sci. 36, 181–204 (2013).
-* Friston, K. (2005). A theory of cortical responses. Philosophical Transactions of the Royal Society of London B: Biological Sciences, 360(1456), 815–836. 
-* Friston, K. (2008). Hierarchical models in the brain. PLoS computational biology, 4(11).
-* Friston, K. (2010). The free-energy principle: a unified brain theory?. Nat. Rev. Neurosci. 11, 127–138.
-* Kilner, J. M., Friston, K. J., & Frith, C. D. (2007). Predictive coding: an account of the mirror neuron system. Cognitive processing, 8(3), 159–166. https://doi.org/10.1007/s10339-007-0170-2
-* Millidge, B., Seth, A., Buckley, C. (2021). Predictive Coding: a Theoretical and Experimental Review. Computer Science. https://doi.org/10.48550/arXiv.2107.12979. [(full text)](https://arxiv.org/abs/2107.12979)
-* Mumford, D. On the computational architecture of neocortex. Biol. Cybern. 65, 135–145 (1991).
-* Rao, R. P. & Ballard, D. H. Predictive coding in the visual cortex: A functional interpretation of some extra-classical receptive-field effects. Nat. Neurosci. 2, 79–87 (1999).
-
-
-
+Predictive coding offers an explanation of various otherwise puzzling features of perception (Millidge, Seth, Buckley, 2021), including so called "end-stopping" in visual perception, bistable perception effects under right/left-eye competition, repetition suppression, attentional modulation of neural activity, and of hebbian learning. The suitability of predictive coding as a larger theory of brain function is debated (Walsh et al 2020, and see commentaries on Clark, 2019), but the basic idea behind it may yet prove to be a good explanation of the waves of activity that we see in EEG and fRMI recordings.
 
 ---
 
@@ -1710,7 +1696,13 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Borţun, D., & Purcarea, V. L. (2013). Marketing and semiotic approach on communication. Consequences on knowledge of target-audiences. Journal of medicine and life, 6(1), 103–108.
 
+* Buckley, C. L., Kim, C. S., McGregor, S., and Seth, A. K. (2017). The free energy principle for action and perception: A mathematical review. Journal of Mathematical Psychology, 81, 55–79.
+
 * Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of internal medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
+
+* Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behav. Brain Sci. 36, 181–204.
+
+* Clark, A. (2019). Beyond desire? Agency, choice, and the predictive mind. Australas. J. Philos. 9: 1–15.
 
 * Crane, T. (2009). Intentionalism. The Oxford Handbook to the Philosophy of Mind. Oxford: Oxford University Press. pp. 474–93. [Abstract](https://philpapers.org/rec/CRAI-17).
 
@@ -1748,15 +1740,19 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Franklin, S. & Graesser, A. (1999). A software agent model of consciousness. Conscious Cogn 8, 285-301
 
+* Friston, K. J. (2005). A theory of cortical responses. Philosophical Transactions of the Royal Society of London B: Biological Sciences, 360(1456), 815–836. 
+
+* Friston, K. J. (2008). Hierarchical models in the brain. PLoS computational biology, 4(11).
+
+* Friston, K. J. (2010). The free-energy principle: a unified brain theory? Nat. Rev. Neurosci. 11, 127–138. doi: 10.1038/nrn2787
+
+* Friston, K. J. (2019). A free energy principle for a particular physics. ArXiv190610184 Q-Bio. Available online at: http://arxiv.org/abs/1906.10184 (accessed July 1, 2019).
+
 * Friston, K. J., FitzGerald, T., Rigoli, F., Schwartenbeck, P., and Pezzulo, G. (2017). Active inference: a process theory. Neural Comput. 29, 1–49. doi: 10.1162/NECO_a_00912
 
 * Friston, K. J., Kahan, J., Razi, A., Stephan, K. E., and Sporns, O. (2014). On nodes and modes in resting state fMRI. NeuroImage 99, 533–547. doi: 10.1016/j.neuroimage.2014.05.056
 
 * Friston, K. J., Kilner, J., and Harrison, L. (2006). A free energy principle for the brain. J. Physiol. Paris 100, 70–87. doi: 10.1016/j.jphysparis.2006.10.001
-
-* Friston, K. J. (2010). The free-energy principle: a unified brain theory? Nat. Rev. Neurosci. 11, 127–138. doi: 10.1038/nrn2787
-
-* Friston, K. J. (2019). A free energy principle for a particular physics. ArXiv190610184 Q-Bio. Available online at: http://arxiv.org/abs/1906.10184 (accessed July 1, 2019).
 
 * Gennaro, R. (1996). Consciousness and Self-Consciousness. Amsterdam: John Benjamins.
 
@@ -1771,6 +1767,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Hunt, T., and Schooler, J. W. (2019). The Easy Part of the Hard Problem: A Resonance Theory of Consciousness. Frontiers in human neuroscience, 13, 378. https://doi.org/10.3389/fnhum.2019.00378
 
 * Kant, Immanuel, Critique Of Pure Reason, 1781. Translated by Norman Kemp Smith, London: Macmillan, 1929. Koestler, Arthur, The Act of Creation, London: Pan Books, 1970.
+
+* Kilner, J. M., Friston, K. J., & Frith, C. D. (2007). Predictive coding: an account of the mirror neuron system. Cognitive processing, 8(3), 159–166. https://doi.org/10.1007/s10339-007-0170-2
 
 * Kim, J. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford and New York: Oxford University Press, 170-179.
 
@@ -1806,6 +1804,12 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * McCulloch, W. and Pitts, W. (1943). A Logical Calculus of the Ideas Immanent in Nervous Activity. Bulletin of Mathematical Biophysics, 7: 115–133.
 
+* Millidge, B., Seth, A., Buckley, C. (2021). Predictive Coding: a Theoretical and Experimental Review. Computer Science. https://doi.org/10.48550/arXiv.2107.12979. ([full text](https://arxiv.org/abs/2107.12979))
+
+* Mountcastle, V. B. (1997. The Columnar Organization of the Neocortex. Brain, Vol. 120, No. 4, 1997, pp. 701-722. http://dx.doi.org/10.1093/brain/120.4.701. ([full text](https://academic.oup.com/brain/article-pdf/120/4/701/17863573/1200701.pdf))
+
+* Mumford, D. On the computational architecture of neocortex. Biol. Cybern. 65, 135–145 (1991).
+
 * Nagel, T. (1974). What Is It Like to Be a Bat? The Philosophical Review, 83(4), 435–450. https://doi.org/10.2307/2183914
 
 * Nessa J. (1996). About signs and symptoms: can semiotics expand the view of clinical medicine?. Theoretical medicine, 17(4), 363–377. https://doi.org/10.1007/BF00489681
@@ -1817,6 +1821,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Oizumi, M., Albantakis, L., Tononi, G. (2014). From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0. PLOS Computational Biology 10(5): e1003588. https://doi.org/10.1371/journal.pcbi.1003588
 
 * Peirce (1982-). The Writings of Charles S. Peirce: A Chronological Edition. Volumes 1–6. And 8. Eds. Peirce Edition Project. Bloomington I.N: Indiana University Press.
+
+* Rao, R. P. & Ballard, D. H. Predictive coding in the visual cortex: A functional interpretation of some extra-classical receptive-field effects. Nat. Neurosci. 2, 79–87 (1999).
 
 * Rescorla, M. (2020a). The Computational Theory of Mind. The Stanford Encyclopedia of Philosophy (Fall 2020 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2020/entries/computational-mind/>.
 
@@ -1879,6 +1885,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Van Gulick, R. (2022). Consciousness. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/consciousness/>.
 
 * Yablo, S. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford and New York: Oxford University Press, 179-197.
+
+* Walsh, K. S., McGovern, D. P., Clark, A., & O'Connell, R. G. (2020). Evaluating the neurophysiological evidence for predictive processing as a model of perception. Annals of the New York Academy of Sciences, 1464(1), 242–268. https://doi.org/10.1111/nyas.14321. ([full text](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7187369/))
 
 * Wegner, D. M. and Wheatley, T. (1999). Apparent mental causation: sources of the experience of will. American Psychologist, 54: 480–492.
 
