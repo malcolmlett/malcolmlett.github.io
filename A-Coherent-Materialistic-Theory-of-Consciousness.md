@@ -169,7 +169,7 @@ Many theories exist about the nature of consciousness. A very brief summary of s
 
 The word "consciousness" is an overloaded term, ie: that it has many meanings, with the particular meaning depending on context. Furthermore, consciousness of the sort that I wish to talk about here is an ill-defined concept. For example, consider the following working definition:
 
-> By consciousness I simply mean those subjective states of awareness or sentience that begin when one wakes in the morning and continue throughout the period that one is awake until one falls into a dreamless sleep, into a coma, or dies or is otherwise, as they say, unconscious. (Searle 1990)
+> By consciousness I simply mean those subjective states of awareness or sentience that begin when one wakes in the morning and continue throughout the period that one is awake until one falls into a dreamless sleep, into a coma, or dies or is otherwise, as they say, unconscious. (Searle, 1990)
 
 Firstly, this is not a definition, but an example. One that implores the reader to refer to their own intuition in order to guess the author's meaning. Secondly it leaves ambiguous the case of dreams, which many might argue also carry some extent of conscious-like awareness. But this is typical of any research in this field, and I shall do no better.
 
@@ -215,29 +215,38 @@ A problem that arises is whether the experience of its intent and the intent its
 * **Access Consciousness:** awareness of the perception, body sensation, memory, imagination, emotion, desire, action, or thought, to a sufficient extent that the individual can in some way react to the experience
 * **Phenomenal Consciousness:** the first-person subjective experience of those things.
 
-In general the two are tied together. Access consciousness excludes non-conscious processes, such as by being restricted to awareness of experiences that have a phenomenal nature. Phenomenal consciousness has a content, and that content is access consciousness. But many debates exist, resting on more detailed analysis and on attempts to define these terms more accurately. There are claims that some phenomenal conscious experiences carry no representational qualities of the sort that characterise access consciousness, and thus we can have phenomenal consciousness without access consciousness. [....todo example from block....]. Likewise, some definitions of access consciousness make it possible to have access consciousness without phenomenal consciousness.
+In general the two are tied together. Access consciousness excludes non-conscious processes, such as by being restricted to awareness of experiences that have a phenomenal nature. Phenomenal consciousness has a content, and that content is access consciousness. But many debates exist, resting on more detailed analysis and on attempts to define these terms more accurately. There are claims that some phenomenal conscious experiences carry no representational qualities of the sort that characterise access consciousness, and thus we can have phenomenal consciousness without access consciousness. [....todo example from Block....]. Likewise, some definitions of access consciousness make it possible to have access consciousness without phenomenal consciousness.
 
 I subscribe to the view that access consciousness and phenomenal consciousness are just different ways of looking at the same thing. Specifically, that access consciousness is a reference to the processes that construct the specific _content_ of consciousness, including not just the intent but also its "raw feels", while phenomenal consciousness refers to the _question_ of why that specific content became conscious and others did not. Mind you, this is not a standard view; most would associate the raw feels with phenomenal consciousness.
 
 ## The Purpose of Consciousness
-- Biology of Consciousness (Edelman, Gally, Baars). https://www.frontiersin.org/articles/10.3389/fpsyg.2011.00004/full
-  - essential for the laying down of long-term episodic memories (Tulving, 1987).
+Why does consciousness exist? Presumably conscious experience confers some sort of benefit to the individual in order that it evolved. In order words, we assume that it serves some _function_ or _functions_, that those functions are useful, and that the individual would be an a disadvantage if it were lacking that function.
 
+When attempting to decipher the _function of consciousness_, there are a number of different angles that can and should be considered (Niikawa et al, 2020; Rosenthal, 2008). Firstly, we need to distinguish whether we are asking about creature consciousness or state consciousness. On the one hand, we're asking whether the creature as a whole benefits from having conscious experience. On the other hand, we are asking about whether a given process benefits from having conscious experience associated with part or the whole of that process.
 
-Articles on Consciousness > From Rosenthal David. 2012. Higher-order awareness, misrepresentation and function:
-- (see section/note: Meta-Management for full article review)
-- "The ability to report conscious states raises the second type of utility that theorists have explored for mental states' being conscious: the utility of enhancing social interactions. If I can tell you what states I am in, that will facilitate interactions between us.....Frith [87]"
+A second important consideration is to distinguish whether we are talking about the _functional basis_ of consciousness, or the _functional contribution of consciousness_ (Niikawa et al, 2020). As we now understand, many brain processes occur unconsciously, including many processes that associated with perceptions and thoughts that we consciously experience. The functional basis of consciousness is an otherwise unconscious process that _produces_ conscious experience. In contrast, the functional contribution of consciousness is the thing that conscious experience itself produces. It is whatever behaviour or other function that conscious experience bestows upon the individual and that they would not otherwise have had.
 
+Unfortunately, when we understand so little about the processes underlying consciousness, it can be very hard to tease those two conceptions apart. Thus most work that attempts to pinpoint a purpose for consciousness could be said more accurately to identify a correlation and to then build up a theory around that correlation.
 
-https://www.frontiersin.org/articles/10.3389/fpsyg.2022.913309/full
+A number of such theories have been proposed that either attempt to directly suggest a functional purpose for consciousness, or that merely suggest a possible purpose as part of larger theories into the _what_ or _how_ of consciousness. Some broad ideas follow.
 
-> * The furthest logical extension is that of _epiphenomenalism_ which posits that no functional mental processes are caused by subjective experience. Rather, subjective experience is posited as being some sort of non-causal summary of internal and external events. A significant problem with epiphenomenalism is why subjective experience, and indeed consciousness at all, would have evolved if it can provide no functional / causal benefit to the individual. In that sense, epiphenomenalism only makes any sense if viewed in conjunction with with metaphysical dualistic theories where some "spirit" that exists on another plane of reality are perceiving the experiences for some grander purpose outside of the context of the corporeal reality.
+**Integration and Global broadcast:** a predominant feature of consciousness is that it appears to pull together multiple streams of information into a single coherent representation and than make that available for further processing by multiple systems. This is held as the key purpose of consciousness within a number of theories, including Global (Neuronal) Workspace Theory (Baars and Franklin, 2007; Dehaene et al, 2003; Dehaene, 2014), IIT (Tononi and Sporns, 2003), and Supramodular Interaction Theory (Morsella, 2005).
 
+**Flexible behaviour:** a predominant feature of consciousness is its apparent association with flexible behaviour. This can be characterised as an ability to adapt to novel situations more rapidly than would be expected from "learning". A closely related and somewhat ill-defined conception is that of "rational behaviour". Many have proposed that consciousness serves to enable adaptive and/or rational behaviour (Kotchoubey, 2018; Morsella, 2005; Earl, 2004; Humphrey, 2002; Shimamura, 2000; Tye, 1996).
 
-Learning to Be Conscious
-- Axel Cleeremans, Dalila Achoui, Arnaud Beauny, Lars Keuninckx, Jean-Remy Martin, Santiago Muñoz-Moldes, Laurène Vuillaume, Adélaïde de Heering (2020). Learning to Be Conscious, Trends in Cognitive Sciences, Volume 24, Issue 2, Pages 112-123, ISSN 1364-6613, https://doi.org/10.1016/j.tics.2019.11.011.
-- https://www.sciencedirect.com/science/article/pii/S1364661319302876
-- => See note for full details: Meta-management
+**Counter-factual reasoning:** Some have proposed that consciousness enables flexible and adaptive behaviour through specific mechanisms. One such example is that of enabling counter-factual reasoning through the ability to imagine alternatives (Kanai et al, 2019).
+
+**Association learning:** Another specific case of flexible behaviour is through the ability to learn a seemingly unlimited range of associations, both from direct experience and from second hand experience such as observing others or being told about the association. It has been suggested that consciousness directly correlates with that ability and thus must be an integral part of the ability (Birch et al, 2020).
+
+**Meta-cognition:** A view that some have taken, this author included, is that consciousness is strongly associated with meta-cognition (Fernandez Cruz et al, 2016; Paul et al, 2015; Flemming et al, 2014; Flemming et al, 2012; Cleeremans, 2007; Shimamura, 2000). For example, perhaps the point of the integration and broadcasting associated with consciousness is to obtain enough information to enable the individual to determine how best to gain more information (Kriegel, 2004). Or perhaps it is for the detection and correction of errors encountered when performing long chains of reasoning (Rolls, 2004 and 2005).
+
+**Social interactions:** A fascinating possibility is that consciousness evolved as an integral part of our nature as a social species. Consciousness enables _theory of mind_ about one's own mind, and by extension, the minds of others (Frith, 2008; Bahrami et al, 2012; Flemming et al, 2012). Theory of mind plays a key part in enabling us to cooperate with other individuals.
+
+**Volition:** Consciousness may simply be the magic ingredient that enables mobile bundles of matter to have volition in a _free-will_ sense (Pierson and Trout, 2017). For example, _Panpsychism_ holds that consciousness is a fundamental property of the universe (Chalmers, 1996), and of all the matter within it. A commonly presumed feature of such panpsychist consciousness is that it has free-will, and thus it would confer free-will onto the behaviour of fully-formed individuals.
+
+**Functionless:** Another possibility is that consciousness confers no benefit to the individual. For example, this is implied by the claims of _Epiphenomenalism_ (Robinson, 2019). A slightly softer stance is that consciousness occurs as a side effect of other functions, where those functions themselves provide significant benefit to the individual, but consciousness itself does not add an extra benefit (Rosenthal, 2008). Under this view, consciousness is a side-effect of behaviour rather than a driver of behaviour.
+
+Other supposed purposes of consciousness identify strong correlations but which don't really explain why consciousness is needed for that to occur. For example, consciousness appears to be essential for long-term episodic memory. We are unable to remember things that we were not conscious of at the time. (Tulving, 1987; Edelman et al, 2011).
 
 ## General Theories of Consciousness
 I now describe some generic and specific theories of consciousness. To provide some grounding to the summary and to aid in comparing theories, a framework of a stack of conceptual layers is used, illustrated in the diagram that follows. This is not meant to imply a priori anything about the actual structure of consciousness and its underlying mechanisms. For example, none of the layers are assumed necessarily to exist a priori, nor is the particular illustrated order appropriate in every case.
@@ -268,11 +277,9 @@ A deeper philosophical question exists about whether representation and function
 If all the representational and functional structures are in place for an individual to have both the external behaviours and internal mental behaviours of an individual in intense pain, can we even conceive it to be possible that they would not have the typical associated subjective experience of the pain?
 
 ## Specific Theories of Consciousness
-_Higher-order Thought (HOT)_ and _Higher-order Perception (HOP)_ are a group of theories that focus on the form of the representation. It is claimed that there are broadly two types of cognitive state (Carruthers and and Gennaro, 2020; Rosenthal, 2004):
-* **first-order states:** that represent things typically world-focused such as representations of perceptions.
-* **higher-order states:** that represent things about first-order states.
+_Higher-order Thought (HOT)_ and _Higher-order Perception (HOP)_ are a group of theories that focus on the form of the representation. It is claimed that there are broadly two types of cognitive state (Carruthers and and Gennaro, 2020; Rosenthal, 2004). _First-order states_ represent things that are typically world-focused, such as representations of perceptions. In contrast, _higher-order states_ represent things about first-order states.
 
-Where a higher-order state _represents_ that a first-order state was _experienced_, then we have conscious experience. This is a group of theories because many variations exist. HOP theories focus on perception, and in particular an idea that we have an explicit perceptual inner-sense that observes our cognitive state, for example in the same way that our visual sense observes the world outside (Armstrong, 1968 and 1984; Lycan, 1996 and 2004). HOT theories are computational theories that propose that higher-order states are _constructed_ from or about the first-order states. Some HOT theories propose that any first-order state can become conscious, provided that a higher-order state is constructed about them (Rosenthal, 1986, 1993, and 2005), others that certain first-order states carry a special characteristic that make them inherently _disposed_ to have higher-order states about (Carruthers, 1996, 2000, and 2005). Some view that first-order states and higher-order states are related but independent, and thus that one kind can occur without the other, while others take a more _self-repreresentational_ view that higher-order states are somehow always constructed inline with their intentional first-order states (Gennaro, 1996 and 2012; Kriegel, 2003, 2006 and 2009).
+Where a higher-order state _represents_ that a first-order state was _experienced_, then we have conscious experience. Several variations exist in this group of theories. HOP theories focus on perception, and in particular an idea that we have an explicit perceptual inner-sense that observes our cognitive state, for example in the same way that our visual sense observes the world outside (Armstrong, 1968 and 1984; Lycan, 1996 and 2004). HOT theories are computational theories that propose that higher-order states are _constructed_ from or about the first-order states. Some HOT theories propose that first-order states become conscious through the presence of associated higher-order states, and thus that we only experience such first-order states at the moment that a HOT in constructed about them (Rosenthal, 1986, 1993, and 2005). A subtle variation holds that certain first-order states are inherently _disposed_ to have associated higher-order states and that is sufficient for the first-order states to be experienced as conscious (Carruthers, 1996, 2000, and 2005). Some view that first-order states and higher-order states are related but independent, and thus that one kind can occur without the other, while others take a more _self-repreresentational_ view that higher-order states are somehow always constructed inline with their intentional first-order states (Gennaro, 1996 and 2012; Kriegel, 2003, 2006 and 2009).
 
 _Global Workspace Theory_ (GWT) sees the brain as a system of individual computational processes that compete, and sometimes collaborate, to gain a winner(s)-take-all right to _broadcast_ their results to a _global workspace_ (Baars, 2021; Baars and Franklin, 2007). The state of the global workspace then forms the context upon which subsequent processing occurs by all those same computational processes. This occurs in a continuous and dynamic way typical of the parallel processing that we've come to understand about the brain. GWT is primarily a theory of cognitive processing that focuses on its a-conscious processes, representations, and functional structures. In doing so it offers a partial explanation of the underlying mechanisms of rational thought, or so called _general intelligence_. The link to subjective experience is by way of claiming that the global workspace is the content of subjective experience, based on correlations with the apparent integrative nature of conscious perceptual attention and decision making, forming an apparent single stream of consciousness (Baars, 2021). GWT is a abstract computational theory that composes high-level concepts such as a workspace, processes, frames, and competition and collaboration between processes. While it makes some claims about regions of brain involved, it doesn't explain how groups of neurons produce such behaviour. In other words, it omits important details about the substrate from its explanation.
 
@@ -327,13 +334,20 @@ Todo - brain parts etc
 Purpose:
 * provide framing that my box-and-lines theory doesn't assume a box-and-lines implementation.
 * highlight that processing occurs at the system level, dependent on all the systems involved, that no system on its own can really do anything much
-* highlight the micro-recurrent "wave style" of communication
-* provide a very brief high-level summary of what regions of the brain are believed to be involved with consciousness
-
-* basic brain areas
 * state that we now know they are not discretely modular
     * ie: view that neurons that are closest to a particular sensory modality will tend to process things related to that modality, with closer neurons more closely related to the raw signals, and further neurons more abstract and perhaps taking in more information from other places (Mountcastle, see note an "Articles on Predictive Coding"), and similar for motor control (the monkey stimulous thing)
     * this can be seen quite clearly in the case of the primary and secondary visual cortices.
+
+## Functional map of brain
+
+![laterial view of brain](files/A-coherent-theory-v1-brain-lateral.drawio.png)
+
+* _*todo.* todo (Image courtesy of publicdomainvectors.org)._
+
+
+![medial view of brain](files/Basic_structures_of_the_brain_highlighted-wikipedia-229px.png)
+
+* _*todo.* todo (Image courtesy of [Belomaad](https://sites.google.com/view/biologyerettsegi), CC BY-SA 4.0, via Wikimedia Commons)._
 
 ## Neural activity waves and the Predictive Coding theory of brain function
 A traditional conception of brain processing of senses can be characterised as "perception by representation": that the brain attempts to use the senses to accurately represent what is observed. A typical assumption associated with that characterisation is that sensory perception is a largely "feed-forward" process: raw low-level sensory signals are hierarchically interpreted into higher and higher-level representations, eventually identifying specific objects, their boundaries, and other properties such as location, pose, and motion (Buckley et al, 2017; Walsh et al 2020).
@@ -1689,6 +1703,10 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Baars, B. J. (2021) On Consciousness: Science & Subjectivity - Updated Works on Global Workspace Theory. Nautilus Press
 
+* Bahrami, B., Olsen, K., Bang, D., Roepstorff, A., Rees, G., and Frith, C. (2012). What failure in collective decision-making tells us about metacognition. Phil. Trans. R. Soc. B 367, 1350–1365.doi:10.1098/rstb.2011.0420 (doi:10.1098/rstb.2011.0420).
+
+* Birch, J., Ginsburg, S., Jablonka, E. (2020). Unlimited associative learning and the origins of consciousness: a primer and some predictions. Biol Philos, 35:56.
+
 * Block, N. (1995). On a confusion about a function of consciousness. Behavioral and Brain Sciences, 18(2), 227–247. https://doi.org/10.1017/S0140525X00038188. [Full Text](https://www.researchgate.net/publication/28762323_On_A_Confusion_About_a_Function_of_Consciousness).
 
 * Block, N. (2002). The Harder Problem of Consciousness. The Journal of Philosophy, 99(8), 391–425. https://doi.org/10.2307/3655621
@@ -1700,6 +1718,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Buckley, C. L., Kim, C. S., McGregor, S., and Seth, A. K. (2017). The free energy principle for action and perception: A mathematical review. Journal of Mathematical Psychology, 81, 55–79.
 
 * Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of internal medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
+
+* Chalmers, D. (1996). The Conscious Mind. Oxford: Oxford University Press.
 
 * Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behav. Brain Sci. 36, 181–204.
 
@@ -1715,17 +1735,31 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Carruthers, P., and Gennaro, R. (2020). Higher-Order Theories of Consciousness., The Stanford Encyclopedia of Philosophy (Fall 2020 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2020/entries/consciousness-higher/>.
 
+* Cleeremans, A. (2007). Consciousness: the radical plasticity thesis. Editor(s): Rahul Banerjee, Bikas K. Chakrabarti. Progress in Brain Research. Elsevier, Volume 168, Pages 19-33, ISSN 0079-6123, ISBN 9780444530509. https://doi.org/10.1016/S0079-6123(07)68003-0.
+
+* Dehaene, S. (2014). Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts. New York: Penguin Books.
+
 * Dehaene, S., Sergent, C. and Changeux, J. P. (2003). A neuronal network model linking subjective reports and objective physiological data during conscious perception. Proc Natl Acad Sci U S A 100, 8520-5.
 
 * Descartes, R. (1644/1911). The Principles of Philosophy. Translated by E. Haldane and G. Ross. Cambridge: Cambridge University Press.
+
+* Earl, B. (2014). The biological function of consciousness. Front. Psychol. 5:697. doi: 10.3389/fpsyg.2014.00697
 
 * Edelman, G. M. (1987). Neural Darwinism: The Theory of Neuronal Group Selection. New York: Basic Books, Inc.
 
 * Edelman, G. M. (2003). Naturalizing consciousness: a theoretical framework. Proc Natl Acad Sci U S A 100, 5520-4.
 
+* Edelman, G. M., Gally, J. A. and Baars, B. J. (2011). Biology of consciousness. Front. Psychology 2:4. doi: 10.3389/fpsyg.2011.00004. \[[Full Text](https://www.frontiersin.org/articles/10.3389/fpsyg.2011.00004/full)\]
+
 * Edelman, G. M., Tononi, G. (2000). A universe of consciousness : how matter becomes imagination. New York, NY: Basic Books.
 
 * Favela, L. H. (2020. Dynamical systems theory in cognitive science and neuroscience. Philosophy Compass. 15:e12695. https://doi.org/10.1111/phc3.12695
+
+* Fernandez Cruz, A.L., Arango-Muoz, S., Volz, K.G. (2016). Oops, scratch that! Monitoring ones own errors during mental calculation. Cognition, 146, pp. 110-120, 10.1016/j.cognition.2015.09.005
+
+* Fleming, S.M., Dolan, R.J., and Frith, C.D. (2012). Metacognition: computation, biology and function. Phil. Trans. R. Soc. B 367: pp 1280–1286. http://doi.org/10.1098/rstb.2012.0021
+
+* Fleming, S.M. and Lau, H.C. (2014). How to measure metacognition. Front. Hum. Neurosci. 8:443. doi: 10.3389/fnhum.2014.00443
 
 * Fodor, J. (1975). The Language of Thought. New York: Thomas Y. Crowell.
 
@@ -1755,6 +1789,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Friston, K. J., Kilner, J., and Harrison, L. (2006). A free energy principle for the brain. J. Physiol. Paris 100, 70–87. doi: 10.1016/j.jphysparis.2006.10.001
 
+* Frith, C.D. (2008). Social cognition. Phil. Trans. R. Soc. B 363, 2033–2039.doi:10.1098/rstb.2008.0005 (doi:10.1098/rstb.2008.0005).
+
 * Gennaro, R. (1996). Consciousness and Self-Consciousness. Amsterdam: John Benjamins.
 
 * Gennaro, R. (2012). The Consciousness Paradox: Consciousness, Concepts, and Higher-Order Thoughts. Cambridge, MA: MIT press.
@@ -1765,15 +1801,23 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Hoffman (?). The Interface Theory of Perception. https://sites.socsci.uci.edu/~ddhoff/interface.pdf
 
+* Humphrey, N. (2002). The uses of consciousness. In N. Humphrey (Ed.), The mind made flesh: Essays from the frontiers of evolution and psychology (pp. 65–85). Oxford: Oxford University Press.
+
 * Hunt, T., and Schooler, J. W. (2019). The Easy Part of the Hard Problem: A Resonance Theory of Consciousness. Frontiers in human neuroscience, 13, 378. https://doi.org/10.3389/fnhum.2019.00378
 
-* Kant, Immanuel, Critique Of Pure Reason, 1781. Translated by Norman Kemp Smith, London: Macmillan, 1929. Koestler, Arthur, The Act of Creation, London: Pan Books, 1970.
+* Kanai, R., Chang, A., Yu, Y., de Abril, I. M, Biehl, M, Guttenberg, N. (2019). Information generation as a functional basis of consciousness, Neuroscience of Consciousness, Volume 2019, Issue 1, 2019, niz016, 
+
+* Kant, I. (1781). Critique Of Pure Reason. Translated by Norman Kemp Smith, London: Macmillan, 1929. Koestler, Arthur, The Act of Creation, London: Pan Books, 1970.
 
 * Kilner, J. M., Friston, K. J., & Frith, C. D. (2007). Predictive coding: an account of the mirror neuron system. Cognitive processing, 8(3), 159–166. https://doi.org/10.1007/s10339-007-0170-2
 
 * Kim, J. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford and New York: Oxford University Press, 170-179.
 
+* Kotchoubey, B. (2018). Human Consciousness: Where Is It From and What Is It for. Front. Psychol. 9:567. doi: 10.3389/fpsyg.2018.00567
+
 * Kriegel, U. (2003). Consciousness as intransitive self-consciousness: two views and an argument. Canadian Journal of Philosophy, 33: 103–132.
+
+* Kriegel, U. (2004). The functional role of consciousness: a phenomenological approach. Phenomenol Cogn Sci, 3:171–93.
 
 * Kriegel, U. (2006). The same-order monitoring theory of consciousness. In U. Kriegel and K. Williford (eds.) 2006.
 
@@ -1807,6 +1851,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Millidge, B., Seth, A., Buckley, C. (2021). Predictive Coding: a Theoretical and Experimental Review. Computer Science. https://doi.org/10.48550/arXiv.2107.12979. ([full text](https://arxiv.org/abs/2107.12979))
 
+* Morsella, E. (2005). The function of phenomenal states: supramodular interaction theory. Psychol Rev, 112:1000–21.
+
 * Mountcastle, V. B. (1997. The Columnar Organization of the Neocortex. Brain, Vol. 120, No. 4, 1997, pp. 701-722. http://dx.doi.org/10.1093/brain/120.4.701. ([full text](https://academic.oup.com/brain/article-pdf/120/4/701/17863573/1200701.pdf))
 
 * Mumford, D. On the computational architecture of neocortex. Biol. Cybern. 65, 135–145 (1991).
@@ -1821,7 +1867,11 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Oizumi, M., Albantakis, L., Tononi, G. (2014). From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0. PLOS Computational Biology 10(5): e1003588. https://doi.org/10.1371/journal.pcbi.1003588
 
+* Paul, E.J., Smith, J.D., Valentin, V.V., Turner, B.O., Barbey, A.K., Ashby, F.G. (2015). Neural networks underlying the metacognitive uncertainty response. Cortex, Volume 71, Pages 306-322, ISSN 0010-9452. 
+
 * Peirce (1982-). The Writings of Charles S. Peirce: A Chronological Edition. Volumes 1–6. And 8. Eds. Peirce Edition Project. Bloomington I.N: Indiana University Press.
+
+* Pierson, L. M., Trout, M. (2017). What is consciousness for?. New Ideas in Psychology, Volume 47, 2017, Pages 62-71. https://doi.org/10.1016/j.newideapsych.2017.05.004.
 
 * Rao, R. P. & Ballard, D. H. Predictive coding in the visual cortex: A functional interpretation of some extra-classical receptive-field effects. Nat. Neurosci. 2, 79–87 (1999).
 
@@ -1831,7 +1881,11 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Robb, David, John Heil, and Sophie Gibb (2023). Mental Causation. The Stanford Encyclopedia of Philosophy (Spring 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/spr2023/entries/mental-causation/>
 
-* Robinson, William (2019). Epiphenomenalism. The Stanford Encyclopedia of Philosophy (Summer 2019 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2019/entries/epiphenomenalism/>.
+* Robinson, W. (2019). Epiphenomenalism. The Stanford Encyclopedia of Philosophy (Summer 2019 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2019/entries/epiphenomenalism/>.
+
+* Rolls, E. T. (2004). A higher order syntactic thought (HOST) theory of consciousness. In R. J. Gennaro (Ed.), Higher-order theories of consciousness (pp. 137–172). Amsterdam & Philadelphia: John Benjamins Publishers.
+
+* Rolls, E. T. (2005). Emotion explained. Oxford: Oxford University Press.
 
 * Rosenthal, D. (1986). Two concepts of consciousness. Philosophical Studies, 49: 329–359.
 
@@ -1840,6 +1894,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Rosenthal, D. (2004). Varieties of higher-order theory. In Gennaro, R. (ed.) (2004), Higher-Order Theories of Consciousness: An Anthology. John Benjamins, pp. 17–44.
 
 * Rosenthal, D. (2005). Consciousness and Mind. Oxford: Oxford University Press.
+
+* Rosenthal, D. (2008). Consciousness and Its Function. Neuropsychologia 46(3):829-40. http://dx.doi.org/10.1016/j.neuropsychologia.2007.11.012 
 
 * Safron, A. (2020). An Integrated World Modeling Theory (IWMT) of Consciousness: Combining Integrated Information and Global Neuronal Workspace Theories With the Free Energy Principle and Active Inference Framework; Toward Solving the Hard Problem and Characterizing Agentic Causation. Frontiers in artificial intelligence, 3, 30. 
 
@@ -1854,6 +1910,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Shanahan, M. (2008). A spiking neuron model of cortical broadcast and competition. Conscious Cogn. 17(1):288-303.
 
 * Shapiro, L. A. (2013). Dynamics and Cognition. Minds and Machines 23 (3):353-375.
+
+* Shimamura, A. P. (2000). Toward a Cognitive Neuroscience of Metacognition. Consciousness and Cognition. Volume 9, Issue 2. Pages 313-323, ISSN 1053-8100, https://doi.org/10.1006/ccog.2000.0450.
 
 * Siegel, S. (2021). The Contents of Perception. The Stanford Encyclopedia of Philosophy (Fall 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2021/entries/perception-contents/>.
 
@@ -1880,6 +1938,10 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Tononi, G., Sporns, O. (2003). Measuring information integration. BMC Neurosci 4, 31.
 
 * Tononi, G., Sporns, O., Edelman, G. M. (1994). A measure for brain complexity: relating functional segregation and integration in the nervous system. Proc Natl Acad Sci U S A 91, 5033-7.
+
+* Tulving, E. (1987). Multiple memory systems and consciousness. Hum. Neurobiol. 6, 67–80.
+
+* Tye, M. (1996). The function of consciousness. Noûs, 30:287–305.
 
 * Tye, M. (2021). Qualia. The Stanford Encyclopedia of Philosophy (Fall 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2021/entries/qualia/>.
 
