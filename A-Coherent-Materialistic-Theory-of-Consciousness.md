@@ -930,6 +930,19 @@ Meta-cognition has been variously studied in terms of:
 * theory of mind and its ability to support social cohesion (Carruthers & Williams, 2022; Cleeremens, 2020),
 * and in support of social cooperation by enabling a group to identify the individual who is most certain about some decision point (Cleeremens, 2020; Fleming et al, 2012a; Fleming et al, 2012b; Cleeremans et al, 2007).
 
+Next steps:
+* why talk about meta-cognition?
+    - gives some inspiration for the kinds of things that meta-management might be involved with.
+    - I view meta-cognition as the high-level behaviourist view that results from the low-level meta-management architecture.
+* meta-representation (Karmiloff-Smith):
+    - leads into the idea that there's a significant difference in representation between first-order and second-order.
+    
+Diagram:
+* top layer    (descriptional): meta-cognition, consciousness (mostly overlapping)
+* middle layer (behavioural): meta-memory, meta-representation, meta-control
+* bottom layer (architectural): meta-management
+
+
 
 Components of Meta-cognition
 
