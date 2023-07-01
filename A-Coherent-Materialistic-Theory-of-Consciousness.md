@@ -899,6 +899,87 @@ _todo:_
     * emotions
     * relationship to schema
 
+# IV.2 Interlude: Meta-cognition
+One recurring question in research on consciousness in general, and on subjective experience particularly, is what utility it provides over and above other brain processes that are not associated with subjective experience. Many theories of consciousness make reference to the need for flexibility or adaptation, but it is hard to pin-point what that entails. How do you quantify flexibility? What kinds of processes produce flexible behaviour? Behavioural scientists have been asking these very questions in the study of _meta-cognition_. This area looks at the ability of an individual to monitor and control their own mental processes, and how that relates to flexibility, learning, and other capabilities. The study of meta-cognition tries to incorporate behavioural studies with our growing understanding of brain function from neuroscience.
+
+Meta-cognition does not have a single agreed definition, but in general covers the ability for an individual to _examine_ their own knowledge, memories, and physical and mental abilities; to _respond_ to that information in some way, such as to act to improve their knowledge or abilities; and to _report_ on that information (Winkielman & Schooler, 2012; Fleming at al, 2012; Koriat, 2007). Meta-cognition is sometimes paraphrased as "knowledge about knowledge" (Karmiloff-Smith, 2012), "behaviour about behaviour" (Koriat, 2007), or "cognition about cognition" (Fleming et al, 2012; Timmermans et al, 2012). Meta-cognition "adds flexibility to cognitive processes, making them less dependent on external cues" (Fernandez-Duque et al, 2000, p. 289).
+
+The study of meta-cognition has a particular relevancy to the study of consciousness. Why do we have conscious experiential awareness of our external perceptions? Why do we have conscious experiential awareness of some aspects of our own mind's state (eg: inner thoughts)? Theories attempting to explain the evolutionary advantage of this conscious awareness generally implicate adaptive flexibility. But they often fail to explain precisely what kinds of adaptive flexibility need conscious awareness, and why conscious awareness is needed for those adaptive flexibilities. The study of meta-cognition provides insight because it specifically addresses questions around our ability to know aspects of our own mind's state. Indeed, some have suggested that there is strong link between meta-cognition and consciousness (Fleming et al, 2012; Koriat, 2007; Nelson, 1996; Snodgrass et al, 2009).
+
+However, meta-cognition studies are embroiled in debate about which lab-observed behaviours are truly meta-cognitive (Fleming et al, 2012; Winkielman & Schooler, 2011; Koriat, 2007). Many of the claimed behaviours might be explained by unconscious processes. And lab results are hard to interpret. For example, many meta-cognitive studies depend on verbal report, and it is difficult to separate whether an identified brain regions is activated because of its involvement in the original meta-cognition task versus the production of verbal report (Norman, 2020; Turvey & Crowder, 2017). Consequently, some have questioned the link to higher-order processes and consciousness in general, suggesting rather that meta-cognition is itself just part of first-order processes (Rahimian, 2021, Overgaard & Kirkeby-Hinrup, 2021; Cleemans et al, 2021). Thus, a deeper understanding of the low-level mechanisms underlying meta-cognition would help significantly to untangle the confusion.
+
+Meta-cognition has been variously studied in terms of:
+* "feelings of knowing" or "tip of the tongue" situations, where one has a feeling that they know the answer before being able to recall the specifics of the answer itself (Rosenthal, 2012; Shimamura, 2000; Metcalfe & Shimamura, 1994),
+* its contribution to successful learning as a whole (Paris & Winograd, 1990)
+* memory of the source of knowledge or the source of other memories (Dunlosky & Bjork, 2008; Shimamura, 2000; Fernandez-Duque, 2000; Benjamin et al, 1998; Metcalfe & Shimamura, 1994), 
+* judgements of certainty and error detection (Carruthers & Williams, 2022; Cleeremens et al, 2020; Whitmarsh et al, 2017; Fernandez Cruz et al, 2016; Paul et al, 2015; Fleming et al, 2012a; Fleming et al, 2012b; Shimamura, 2000; Fernandez-Duque, 2000),
+* classification of first-order outcomes into knowledge, hope, fear, regret, etc. (Cleeremans et al, 2007),
+* identification of links between separately obtained knowledge (Clark & Karmiloff-Smith, 1993; Karmiloff-Smith, 1992),
+* representing the absence of knowledge (Fleming et al, 2012a),
+* selection of strategies for memory, learning, lifespan approaches (Marković et al, 2021; Shimamura, 2000),
+* learning higher-level objectives (Timmermans et al, 2012),
+* trading off between exploration and exploiting existing knowledge (Marković et al, 2021),
+* balancing effort vs benefits of possible behaviours (Carruthers & Williams, 2022; Marković et al, 2021; Peters, 2010; Fernandez-Duque, 2000),
+* planning (Marković et al, 2021; Cleeremens, 2020; Fernandez-Duque, 2000),
+* monitoring and predicting first-order dynamics (Cleeremens, 2020; Fleming et al, 2012a; Timmermans et al, 2012; Cleeremans et al, 2007; Peters, 2010),
+* control of attention (Whitmarsh et al, 2017; Shimamura, 2000),
+* control over working-memory (Whitmarsh et al, 2017; Shimamura, 2000),
+* internal conflict resolution (Shimamura, 2000; Fernandez-Duque, 2000),
+* maintenance of cognitive homeostatic needs (Peters, 2010; Shimamura, 2000),
+* emotion regulation (Shimamura, 2000),
+* theory of mind and its ability to support social cohesion (Carruthers & Williams, 2022; Cleeremens, 2020),
+* and in support of social cooperation by enabling a group to identify the individual who is most certain about some decision point (Cleeremens, 2020; Fleming et al, 2012a; Fleming et al, 2012b; Cleeremans et al, 2007).
+
+
+Components of Meta-cognition
+
+todo - Meta-cognition can be viewed as having a few aspects:
+- meta-representation ...explain...
+- meta-control (observation only vs control) ...explain...
+- first-order vs conscious processes ...explain...
+
+todo - Some running questions have cropped up out of those studies:
+- To what extent does meta-cognition actually need meta-representations? ...examples...
+- To what extent are meta-cognitive processes truly conscious? Or are they just first-orderprocesses that influence verbal report without direct conscious access? ...examples...
+- axis of questions:
+	- with/without meta-representation
+	- first-order only vs higher-order network architectures
+	- extent to which different human meta-cognitive behaviours employ meta-management.
+	- relationship to conscious experience.
+	- caught up in questions about whether consciousness has any functional purpose (Rosenthal, etc)
+    
+
+References:
+* Benjamin, A.S., Bjork, R.A., Schwartz, B.L. (1998). The mismeasure of memory: When retrieval fluency is misleading as a metamnemonic index. Journal of Experimental Psychology: General, 127 (1), pp. 55-68
+* Carruthers, P., Williams, D. M. (2022). Model-free metacognition. Cognition, Volume 225, 105117, https://doi.org/10.1016/j.cognition.2022.105117.
+* Clark, A., Karmiloff-Smith, A. (1993). The cognizer’s innards: a psychological and philosophical perspective on the development of thought. Mind and Language (Mind Lang.) 8, 487–519
+* Cleeremans, A., Achoui, D., Beauny, A., Keuninckx, L., Martin, J-R., Muñoz-Moldes, S., Vuillaume, L., de Heering, A. (2020). Learning to Be Conscious, Trends in Cognitive Sciences, Volume 24, Issue 2, Pages 112-123, https://doi.org/10.1016/j.tics.2019.11.011.
+* Cleeremans, A., Timmermans, B., Pasquali, A. (2007). Consciousness and metarepresentation: A computational sketch. Neural Networks, Volume 20, Issue 9, Pages 1032-1039,
+* Dunlosky, J., Bjork, R.A. (2008). Handbook of metamemory and memory, 1st edn. East Sussex, UK: Psychology Press.
+* Fernandez-Duque, D., Baird, J.A., Posner, M. I. (2000). Executive attention and metacognitive regulation. Consciousness and Cognition, 9, 288–307.
+* Fleming, S.M., Huijgen, J., Dolan, R.J. (2012b). Prefrontal contributions to metacognition in perceptual decision making. J. Neurosci., 32 (18), pp. 6117-6125, 10.1523/JNEUROSCI.6489-11.2012
+* Karmiloff-Smith, A. (1992) Beyond Modularity: A Developmental Perspective on Cognitive Science, MIT Press
+* Marković, D., Goschke, T., Kiebel, S.J. (2021). Meta-control of the exploration-exploitation dilemma emerges from probabilistic inference over a hierarchy of time scales. Cognitive, affective & behavioral neuroscience, 21(3), 509–533. https://doi.org/10.3758/s13415-020-00837-x
+* Metcalfe, J., Shimamura, A.P. (Eds.). (1994). Metacognition: Knowing about knowing. MIT press.
+* Norman, E. (2020). Why Metacognition Is Not Always Helpful. Front. Psychol. 11:1537. doi: 10.3389/fpsyg.2020.01537
+* Paris, S.G., & Winograd, P. (1990). How metacognition can promote academic learning and instruction. In B. F Jones & L., Idol (Eds.), Dimensions of thinking and cognitive instruction (pp. 15-51). Hillsdale, NJ: Erlbaum.
+* Peters, F. (2010). Consciousness as recursive, spatiotemporal self-location. Psychological Research 74, 407–421. https://doi.org/10.1007/s00426-009-0258-7
+* Rosenthal, D. (2012). Higher-order awareness, misrepresentation and function. Phil. Trans. R. Soc. B 367: pp1424–1438. http://doi.org/10.1098/rstb.2011.0353
+* Timmermans, B., Schilbach, L., Pasquali, A., Cleeremans, A. (2012). Higher order thoughts in action: consciousness as a unconscious re-description process. Philos. Trans. R. Soc. B 367, 1412–1423
+* Turvey, B.E., Crowder, S. (2017). Investigators and the Scientific Method. In Turvey, B.E., Crowder, S. (Eds), Forensic Investigations. Academic Press. Pages 67-90. https://doi.org/10.1016/B978-0-12-800680-1.00004-3.
+* Whitmarsh, S., Oostenveld, R., Almeida, R., Lundqvist, D. (2017). Metacognition of attention during tactile discrimination. NeuroImage, Volume 147, Pages 121-129.
+* Winkielman, P.,  Schooler, J. (2012). Consciousness, metacognition, and the unconscious. In Fiske, S.T., Macrae, C.N. (Eds), The SAGE Handbook of Social Cognition. SAGE Publications Ltd. http://dx.doi.org/10.4135/9781446247631.n4
+
+References:
+* Cleeremans, A., Achoui, D., Beauny, A., Keuninckx, L., Martin, J-R., Muñoz-Moldes, S., Vuillaume, L., de Heering, A. (2021). Do You Need to Be Conscious to Learn to Be Conscious?. Trends in Cognitive Sciences, Volume 25, Issue 1, Pages 9-11, ISSN 1364-6613, https://doi.org/10.1016/j.tics.2020.10.002.
+* Fleming, S.M., Dolan, R.J., Frith, C.D. (2012) Metacognition: computation, biology and function. Phil. Trans. R. Soc. B 367: pp 1280–1286. http://doi.org/10.1098/rstb.2012.0021.
+* Koriat A. (2007). Metacognition and consciousness. The Cambridge handbook of consciousness (eds , Zelazo P.D., Moscovitch M.& Thompson E.), pp. 289–325. Cambridge, UK: Cambridge University Press.
+* Nelson T.O. (1996). Consciousness and metacognition. Am. Psychol. 51, 102–116.doi:10.1037/0003-066X.51.2.102 (http://dx.doi.org/10.1037/0003-066X.51.2.102).
+* Overgaard, M., Kirkeby-Hinrup, A. (2021). Is Learning the Cognitive Basis of Consciousness? The Moral Implications of SOMA, Trends in Cognitive Sciences, Volume 25, Issue 1, Pages 8-9, ISSN 1364-6613. https://doi.org/10.1016/j.tics.2020.08.004.
+* Rahimian, S. (2021). Consciousness in Solitude: Is Social Interaction Really a Necessary Condition? Front. Psychol. 12:630922. doi: 10.3389/fpsyg.2021.630922
+* Snodgrass M., Kalaida N.& Winer E. S. (2009). Access is mainly a second-order process: SDT models whether phenomenally (first-order) conscious states are accessed by reflectively (second-order) conscious processes. Conscious. Cogn. 18, 561–564; discussion 565–567.doi:10.1016/j.concog.2009.01.003
+
+
 # IV.3 Deeper Dive into Control Process Learning
 
 By the end of Part III it was clear that complex multi-iteration control processes require meta-management, and we were able to identify some possible architectures that capture the interaction between control processes and meta-management, but we are left with an outstanding question: how do we identify which meta-management architecture is more likely in humans? The question is important to our end goal because, as will be seen, the answer impacts our ability to explain subjective experience.
