@@ -910,7 +910,7 @@ However, meta-cognition studies are embroiled in debate about which lab-observed
 
 Meta-cognition has been variously studied in terms of:
 * "feelings of knowing" or "tip of the tongue" situations, where one has a feeling that they know the answer before being able to recall the specifics of the answer itself (Rosenthal, 2012; Shimamura, 2000; Metcalfe & Shimamura, 1994),
-* its contribution to successful learning as a whole (Paris & Winograd, 1990)
+* its contribution to successful learning as a whole (Paris & Winograd, 1990),
 * memory of the source of knowledge or the source of other memories (Dunlosky & Bjork, 2008; Shimamura, 2000; Fernandez-Duque, 2000; Benjamin et al, 1998; Metcalfe & Shimamura, 1994), 
 * judgements of certainty and error detection (Carruthers & Williams, 2022; Cleeremens et al, 2020; Whitmarsh et al, 2017; Fernandez Cruz et al, 2016; Paul et al, 2015; Fleming et al, 2012a; Fleming et al, 2012b; Shimamura, 2000; Fernandez-Duque, 2000),
 * classification of first-order outcomes into knowledge, hope, fear, regret, etc. (Cleeremans et al, 2007),
@@ -934,6 +934,7 @@ Next steps:
 * why talk about meta-cognition?
     - gives some inspiration for the kinds of things that meta-management might be involved with.
     - I view meta-cognition as the high-level behaviourist view that results from the low-level meta-management architecture.
+    - maybe even convert this from an Interlude to a Problem chapter.
 * meta-representation (Karmiloff-Smith):
     - leads into the idea that there's a significant difference in representation between first-order and second-order.
     
@@ -985,13 +986,50 @@ References:
 
 References:
 * Cleeremans, A., Achoui, D., Beauny, A., Keuninckx, L., Martin, J-R., Muñoz-Moldes, S., Vuillaume, L., de Heering, A. (2021). Do You Need to Be Conscious to Learn to Be Conscious?. Trends in Cognitive Sciences, Volume 25, Issue 1, Pages 9-11, ISSN 1364-6613, https://doi.org/10.1016/j.tics.2020.10.002.
-* Fleming, S.M., Dolan, R.J., Frith, C.D. (2012) Metacognition: computation, biology and function. Phil. Trans. R. Soc. B 367: pp 1280–1286. http://doi.org/10.1098/rstb.2012.0021.
+* Fleming, S.M., Dolan, R.J., Frith, C.D. (2012a). Metacognition: computation, biology and function. Phil. Trans. R. Soc. B 367: pp 1280–1286. http://doi.org/10.1098/rstb.2012.0021.
 * Koriat A. (2007). Metacognition and consciousness. The Cambridge handbook of consciousness (eds , Zelazo P.D., Moscovitch M.& Thompson E.), pp. 289–325. Cambridge, UK: Cambridge University Press.
 * Nelson T.O. (1996). Consciousness and metacognition. Am. Psychol. 51, 102–116.doi:10.1037/0003-066X.51.2.102 (http://dx.doi.org/10.1037/0003-066X.51.2.102).
 * Overgaard, M., Kirkeby-Hinrup, A. (2021). Is Learning the Cognitive Basis of Consciousness? The Moral Implications of SOMA, Trends in Cognitive Sciences, Volume 25, Issue 1, Pages 8-9, ISSN 1364-6613. https://doi.org/10.1016/j.tics.2020.08.004.
 * Rahimian, S. (2021). Consciousness in Solitude: Is Social Interaction Really a Necessary Condition? Front. Psychol. 12:630922. doi: 10.3389/fpsyg.2021.630922
 * Snodgrass M., Kalaida N.& Winer E. S. (2009). Access is mainly a second-order process: SDT models whether phenomenally (first-order) conscious states are accessed by reflectively (second-order) conscious processes. Conscious. Cogn. 18, 561–564; discussion 565–567.doi:10.1016/j.concog.2009.01.003
 
+## Representation Redescription Theory
+Meta-cognitive studies attempt to divide our cognitive processes into first-order and second-order (Fleming et al, 2012a; Winkielman & Schooler, 2012; Koriat, 2007). First-order _behaviour_ is produced by "mindless" sense-action processes, for example merely repeating learned actions for a given sensory perception. These are the _habitual_, or _automatized_, behaviours. First-order _knowledge_ is gained directly from our experiences. In contrast, second-order knowledge is gained by introspecting our own mental processes - it is knowledge _of_ our mental processes. In addition, the cognitive processes that result from such second-order knowledge are generally considered to be both _rational_ and _conscious_.
+
+As stated before, it is very hard in meta-cognitive studies to identify whether a given behaviour is driven by first-order or second-order processes. Many of the debates revolve around trying to correlate identified behaviours with whether they were produced habitually or not. In fact, I suspect many of the debates are missing a more subtle nuance: that 'first-order or second-order' is orthogonal to 'habitual or rational'.
+
+It is well understood that most action is habitual. The nature of habitual actions is that they have been repeated often enough that we have become proficient in them and don't need to actively control their progress - they are automatized. This is well accepted for outwardly visible behaviour. Likewise it occurs with our mental processes - after sufficient practice on some class of problems we can automatically solve it without "working it out". This should be just as possible for second-order assessments of our mental processes. But if that is the case, how do we understand the relationship between habitual/rational and first-order/second-order?
+
+One explanation is provided by the theory of _Representation Redescription_ (RR) (Karmiloff-Smith, 1992 & 1994; Clark & Karmiloff-Smith, 1993) and by a later extension known as the _Radical Plasticity Theory_ of consciousness (Cleeramans, 2007; Cleeramans, et al 2007; Pasquali et al, 2010; Timmermans et al 2012; Cleeremans et al, 2020). RR proposes that the brain develops multiple representations for the same domain. It looks at the development process of an individual from infant, and sees the first representation as habitual in nature. The literature uses the term _implicit_, which is meant to signify a particular observation about the nature of first-order connectionist architectures. A simple connectionist architecture (predictive or not) encodes a mapping from sense plus state to action. The mapping is learned from multiple examples, with each repeated exposure subtly modifying connection weights. The behaviour that the mapping produces is _emergent_, resulting from the interactions of all those many connection weights. Importantly, the details of that mapping are hidden to every part of the system. Even the particular sub-system that encodes a particular mapping cannot identify the rules that it encodes. Thus a first-order network encodes "knowledge _in_ the system", but it does not make it available as "knowledge _to_ the system" (Clark & Karmiloff-Smith, 1993, p495).
+
+That is contrasted with an _explicit_ representation that captures the individual parts of the causal chain from input to action. Where implicit representations _compute_ an action for a given input, explicit representations _model_ causal relations and as such can be queried and manipulated: "No system in which rules are always merely implicit and emergent can, in our view, exhibit the kinds of higher order flexibility and creativity found in humans. Only explicit rules have the genuine, systematically manipulable components that make radical flexibility possible." (Clark & Karmiloff-Smith, 1993, p504). RR proposes that implicit knowledge is _re-described_ into an explicit representation through an offline process. Subsequently, habitual behaviour continues to be driven by the original implicit representation, but rational cognitive processes can make use of the explicit representation. Explicit representations may be formed that directly cover some particular habitual domain, or may integrate across multiple domains. In that way, rational cognition is able to identify and use associations across different domains and time-scales. Importantly, it is able to do all that independently from actioning the behaviour that the original implicit representations encoded.
+
+RR does not attempt to explain the underlying details of how redescription takes place. The Radical Plasticity Theory (RPT) of consciousness proposes a predictive mechanism, whereby one system in the brain learns to predict the behaviour of another and in so doing builds up a representation of that other systems behaviour. Clearly, in order to observe and predict the behaviour of a first-order system, a second-order process must occur. RPT takes this one step further to claim that consciousness itself is a second-order process that we learn to do.
+
+There are two important points to make here about the predictive mechanism. Firstly, every representation encodes information about a given domain in a certain way that is applicable for the way in which that representation will be used, or in other words, according to its _purpose_. The process that attempts to predict internal behaviours would almost certainly have a different underlying purpose, and thus would produce a representation that captures a different aspect of the same domain. Secondly, we should not assume that the _form_ of representation would be the same either. As we have already said, a first-order connectionist representation is _implicit_. Many predictive networks may also be inherently _implicit_ in their representation. In contrast, the assumption here is that redescribed representations are _explicit_, and thus capture the _causal structure_ of the domain.
+
+-> SDT apparently shows how second-order representations need to be different.
+
+## Architectures of Redescription
+There is one last lesson that I want to bring out from the work on RR and RPT. ext....the authors of RPT obtained empirical evidence through toy simulations of different architectures........that showed that the hierarchical architecture performed best. This is in line with the idea that a meta-management feedback loop could be used to monitor cognitive processes.
+
+[diagram]
+
+
+
+
+
+References:
+* Clark, A., Karmiloff-Smith, A. (1993). The cognizer’s innards: a psychological and philosophical perspective on the development of thought. Mind and Language (Mind Lang.) 8, 487–519
+* Cleeremans, A. (2007). Consciousness: the radical plasticity thesis. Editor(s): Rahul Banerjee, Bikas K. Chakrabarti. Progress in Brain Research. Elsevier, Volume 168, Pages 19-33, ISSN 0079-6123, ISBN 9780444530509. https://doi.org/10.1016/S0079-6123(07)68003-0.
+* Cleeremans, A., Achoui, D., Beauny, A., Keuninckx, L., Martin, J.-R., Muñoz-Moldes, S., Vuillaume, L., de Heering, A. (2020). Learning to Be Conscious, Trends in Cognitive Sciences, Volume 24, Issue 2, Pages 112-123, ISSN 1364-6613, https://doi.org/10.1016/j.tics.2019.11.011.
+* Cleeremans, A., Timmermans, B., Pasquali, A. (2007). Consciousness and metarepresentation: A computational sketch. Neural Networks, Volume 20, Issue 9, Pages 1032-1039, ISSN 0893-6080, https://doi.org/10.1016/j.neunet.2007.09.011. 
+* Karmiloff-Smith, A. (1992). Beyond Modularity: A Developmental Perspective on Cognitive Science, MIT Press
+* Karmiloff-Smith, A. (1994). Précis of Beyond modularity: A developmental perspective on cognitive science. Behavioral and Brain Sciences , Volume 17, Issue 4, December 1994, pp. 693 - 707. DOI: https://doi.org/10.1017/S0140525X00036621
+* Marković et al (2021). Meta-control of the exploration-exploitation dilemma emerges from probabilistic inference over a hierarchy of time scales.
+* Pasquali, A., Timmermans, B., Cleeremans, A. (2010). Know thyself: metacognitive networks and measures of consciousness. Cognition 117, 182–190
+* Timmermans, B., Schilbach, L., Pasquali, A., Cleeremans, A. (2012). Higher order thoughts in action: consciousness as a unconscious re-description process. Philos. Trans. R. Soc. B 367, 1412–1423. doi:10.1098/rstb.2011.0421 (doi:10.1098/rstb.2011.0421).
+* Winkielman, P.,  Schooler, J. (2012). Consciousness, metacognition, and the unconscious. In Fiske, S.T., Macrae, C.N. (Eds), The SAGE Handbook of Social Cognition. SAGE Publications Ltd. http://dx.doi.org/10.4135/9781446247631.n4
 
 # IV.3 Deeper Dive into Control Process Learning
 
@@ -1003,6 +1041,9 @@ So, in order to answer that question, we shall now look at learning in humans.
 
 The controversies surrounding meta-cognition research stems from one problem: that it's not just one system that controls meta-cognitive processes. The meta-cognitive research discussed above generally acknowledge two systems: first-order non-conscious processes and high-order conscious processes. Debates about whether a behaviour is meta-cognitive or not hangs on an assumption that only conscious processes can be classified as meta-cognitive. We can avoid getting caught up in such debates when we acknowledge that all behaviour is an outcome of interactions between all systems. What we need to investigate is what those systems are, their underlying mechanisms, and how they interact to produce that behaviour.
 
+
+
+
 _..todo..introduce concept of layered architecture with: i) innate, ii) habitual, iii) rational systems._
 _...todo : there must be lots of research on this already.....review that and then write this section._
 _...can also introduce Daniel Kahneman's System I and II Thought._
@@ -1011,33 +1052,61 @@ _...can also introduce Daniel Kahneman's System I and II Thought._
 
 * _**Three Systems of Control.** Innate control and innate feedback interpretation bootstrap learning of habitual and rational systems. Habitual and rational systems interact in order to produce learned behaviour._
 
-Experience informs us that any attempt to classify biological processes into discrete categories is fraught with ambiguity because biological systems do not subscribe to such simple classifications. Nevertheless, the classifications will help our current endeavour, so beware in taking the distinctions between these classifications too literally.
 
-## Innate Control
-The _innate control system_ is driven by genetics and is in place at the time of birth. It varies throughout the life of an individual due to biochemical developmental processes, but does not incorporate learning. The innate control system incorporates only the most primitive control mechanisms necessary for sustaining life, for example: reflexes, thermo-regulation, heart-rate, hormone release. It also incorporates primitive sensory interpretation, for example: pain is to be avoided, pleasure is to be sought out, hunger necessitates action, and satiation permits relaxation.
+The literature in behavioural science identifies three broad categories of behaviour, delineated by presumed differences in underlying control mechanisms: innate, habitual, and rational. Innate behaviour is predetermined through our genetics and is characterised by a (semi-)fixed response to stimulus irrespective of goal. Habitual behaviour is characterised by _automatized_ stimulus-response associations. Rational behaviour is characterised by considered stimulus-goal-action associations. As will be seen, the key differences between these three systems of behaviour relate to their speed of adaptation, their accuracy, the resources required for their control, and whether are modulated by current goals.
 
-The innate control system bootstraps development of more advanced systems such as habitual and rational control. It does this in three key ways. Firstly, it prevents untrained habitual and rational systems from causing the individual harm through incorrect action or through inaction. For example, the reflex to flinch and withdraw from pain is so powerful that to counteract that reflex requires an individual to carefully coordinate calming effects against the parasympathetic nervous system and tensing of counteracting muscles. Likewise, young children are often unable to prevent themselves from taking food when they have been told to wait. Habitual and rational systems can counteract innate control, but  only once they have reached sufficient maturity.
+Experience informs us that any attempt to classify biological processes into discrete categories is fraught with ambiguity because biological systems do not subscribe to such simple classifications. Nevertheless, the classifications will help our current endeavour, so beware in taking the distinctions between these classifications too literally. The following investigates innate, habitual, and rational behaviour in more detail.
+
+## Innate behaviour
+Often referred to as _Pavlovian_ behaviour in the literature (Dayan, 2008), innate behaviour has two forms: unconditioned responses and conditioned responses. Unconditioned responses encompass inborn, inflexible and genetically pre-determined _reflexes_ (Dayan, 2008; Dolan & Dayan, 2013; Gęsiarz & Crockett, 2015) that often cannot be consciously overridden. For example the knee-jerk reflex, salivating at the recognition of food, thermo-regulation, heart-rate, and the fight-or-flight response to danger. Innate behaviour is considered to arise because it was significant in our evolutionary history (Dayan, 2008; Gęsiarz & Crockett, 2015). In that sense it can be seen as providing the basic life-sustaining backbone of behaviour upon which all the rest of our behaviour is built.
+
+Despite the genetic pre-definition, some minimal experience-driven adaptation does occur. A _conditioned response_ occurs where an otherwise neutral stimulus becomes associated with a reflex response (Dayan, 2008; Dolan & Dayan, 2013; Gęsiarz & Crockett, 2015). The famous example of Pavlov's dog describes an experiment where a bell was rung every time that food was presented. The dog had a pre-existing unconditioned response of salivating at the sight of food. Some time later, the bell would be rung without food and the dog would salivate at the sound of the bell alone. The dog was _conditioned_ to elicit an innate reflex from a stimulus that was not directly genetically associated with that response.
+
+An significant feature of both unconditioned and conditioned responses is that they are not modulated by the individual's goals at the time. There is a direct stimulus-response association, irrespective of other context.
+
+An area that has to date received less research is the extent to which innate behaviour _bootstraps_ learning of habitual and rational behaviours. For example, there is some research suggesting that the same mechanisms underlying innate behaviour are also involved in the prediction of outcomes (Dolan & Dayan, 2013) such as future rewards and punishments (Dayan, 2008). I suggest that innate behavioural control systems influence habitual and rational control in three ways.
+
+Firstly, it prevents untrained habitual and rational systems from causing the individual harm through incorrect action or through inaction. For example, the reflex to flinch and withdraw from pain is so powerful that to counteract that reflex requires an individual to carefully coordinate calming effects against the parasympathetic nervous system and tensing of counteracting muscles. Likewise, young children are often unable to prevent themselves from taking food when they have been told to wait. Habitual and rational systems can counteract innate control, but only once they have reached sufficient maturity. So, while habitual and rational systems are under-developed and prone to error, the innate system maintains behaviour within the bounds of a "safe zone".
 
 Secondly, the innate control system participates within the training of those more advanced systems through its interpretation of primitive feedback signals such as pain, pleasure, hunger, and satiation. The more advanced systems learn through reinforcement learning by seeking to maximise the integral of positive valence interpreted by the innate control system.
 
-Thirdly, it likely provides additional primitive feedback in the form of indications of energy and time cost that should minimised by reinforcement learning. Any action should be carried out in the most energy conserving way - don't use more muscles than necessary; don't tense counteracting muscles so that motion is difficult and more effort required than necessary. Mental processes should produce effective outcomes quickly.
+Thirdly, it likely provides additional primitive feedback in the form of indications of energy and time cost that should be minimised by reinforcement learning. Any action should be carried out in the most energy conserving way - don't use more muscles than necessary; don't tense counteracting muscles so that motion is difficult and more effort required than necessary. Mental processes should produce effective outcomes quickly.
 
-## Habitual Standard Control
-The _habitual control system_ simply replays common behaviour that it has learned through repeated experience. Notice that now this article is focused on biology, and humans in particular, I use the term "habitual". But I am clearly referring to the same thing that I called "reactive control" when being agnostic to the kind of agent involved.
+## Habitual behaviour
+Unlike innate behaviour, habitual behaviour is a) learned through experience, and b) can be very complex, and c) can be goal-modulated. Additionally, habitual behaviour is learned to the point of being _automatic_: we no longer have to think about how to carry out the behaviour (Snow, 2006). However habitual behaviour is slow to be learned, and slow to be unlearned (van Es, 2019). There some disagreement in the literature as to whether it is affected by contextual priming such as goals (Snow, 2006) or not (Gęsiarz & Crockett, 2015; Bernacer & Murillo, 2014; Dayan, 2008). It is likely that this reflects the specific focus of the research undertaken at the time and as an attempt to identify distinguishing factors between habitual and rational behaviour, rather than a claim that habitual behaviour is truly inflexible to the point of ignoring the individual's goals.
 
-_todo: following diagrams is too concrete and implies an unrealistic architecture_
+As illustrated in the diagram below, control of habitual behaviour is believed to be structured as an _implicit model_ (Sutton, 1998) that directly associates (or _computes_/_infers_) a response to a given stimulus (de Wit, 2009). In Reinforcement Learning literature this same architecture is referred to as _model-free_, because it lacks a structural model of the environment that can be queried in arbitrary ways - discussed further in the section below on rational behaviour. The reader will notice the similarity to mention of _reactive control_ in earlier sections. I use the word habitual now that the context is biologically focused, but the two terms should be treated synonymously. Indeed, the behavioural science literature often uses the _reactive_ termilogy.
 
 ![Habitual standard management](files/A-coherent-theory-v1-habitual-std-mgmt.drawio.png)
 
 * _**Habitual System.** ...todo...._
 
-Initially, learning is driven by environmental and body feedback that is interpreted by the innate system. Pain signals are interpreted by the innate system as negative feedback, and used to effect neuronal weight changes that reduce the likelihood of that same behaviour in the future. Satiation following hunger is interpreted as positive feedback and likewise used to effect neuronal weight changes, but in order to increase the likelihood of that behaviour.
+The learning of habitual behaviour is thought to develop concurrently with rational behaviour (de Wit, 2009; Dayan, 2008). While rational systems control behaviour, the habitual system learns those same behaviours. As the behaviour becomes more practiced, the habitual system takes over (Dolan and Dayan, 2013; Dayan, 2008; Sutton, 1998; Gęsiarz & Crockett, 2015). The mechanism by which the habitual system is "judged" as being trustworthy enough to take over is unclear. A commonly accepted working theory is that both the habitual and rational systems track their predictive uncertainty, and this uncertainty is used to select the system for control (Daw et al, 2005; Sutton, 1998).
 
-For more complex situations, the rational system influences behaviour. As those more complex situations are repeatedly encountered, the habitual system learns the new behaviours, freeing up the rational system for other things. In that way, habitual system learning is driven by a combination of bottom-up pressure from the innate system, and from top-down pressure from the rational system.
+Habitual and rational control of the same behaviours enable a trade-off between effort and time costs versus accuracy (Daw et al, 2005; Gęsiarz & Crockett, 2015; Douskos, 2018; Sloman, 1998). As will be discussed, rational behaviour control is a) computationally expensive, thus taking considerable time to infer the next action, and b) prone to mistakes or inaccuracies. For a well practiced behaviour, habitual control captures fine-tuned improvements that cannot be attained through rational control, and thus it is more accurate than rational control for such behaviours. Indeed, one particular form of habitual control, described as _Episodic Control_, repeats wholesale a complete sequence of actions (Dayan, 2008), such as the complex sequence of actions required in a golf swing. Many such sequences of action occur too quickly for deliberative planning to have any benefit.
 
-Significantly, habitual learning is slow. A habitual system alone would be unable to produce the kinds of rapid adaptation that we see in humans.
+Historically habitual and rational control were seen as a binary choice, but more recent work has identified ways in which they can be combined for control of a single behaviour, leveraging their relative strengths (Douskos, 2018). For example, the goal used by the rational system may be selected by a habitual process (Cushman, 2015), or the rational controller may be leveraged to identify a particular habitual sequence of actions (Cushman, 2015).
 
-## Rational Standard Control Management
+An additional interplay between behaviour systems can be seen from the discussion of innate systems _bootstrapping_ learning. While innate behavioural control provides a bottom-up _restriction_ on habitual behaviour, rationally controlled actions provide a top-down reinforcement learning pressure against habitual behaviour. In that way, habitual behaviour _converges_ towards useful outcomes.
+
+
+
+References:
+* Bernacer, J. Murillo, J.I. (2014). The Aristotelian conception of habit and its contribution to human neuroscience. Front. Hum. Neurosci. 8:883. doi: 10.3389/fnhum.2014.00883
+* Cushman, F., Morris, A. (2015). Habitual control of goal selection in humans. Proceedings of the National Academy of Sciences of the United States of America, 112(45), 13817–13822. https://doi.org/10.1073/pnas.1506367112
+* Daw, N.D., Niv, Y., Dayan, P. (2005). Uncertainty-based competition between prefrontal and dorsolateral striatal systems for behavioural control. Nat. Neurosci. 8, 1704–1711. doi: 10.1038/nn1560
+* Dayan, P. (2008). The role of value systems in decision making. In Engel, C. and Singer, W. (Eds), Better Than Conscious? Implications for Performance and Institutional Analysis (Cambridge, MA: MIT press), 51–70.
+* de Wit, S., Corlett, P.R., Aitken, M.R., Dickinson, A., Fletcher, P.C. (2009). Differential Engagement of the Ventromedial Prefrontal Cortex by Goal-Directed and Habitual Behavior toward Food Pictures in Humans. Journal of Neuroscience, 29 (36) 11330-11338; DOI: https://doi.org/10.1523/JNEUROSCI.1639-09.2009
+* Dolan, R.J., Dayan, P. (2013). Goals and habits in the brain. Neuron 80, 312–325. doi: 10.1016/j.neuron.2013.09.007
+* Douskos, C. (2018). Deliberation and Automaticity in Habitual Acts. ETHICS IN PROGRESS, 9(1), 25–43. https://doi.org/10.14746/eip.2018.1.2
+* Gęsiarz, F. Crockett, M.J. (2015). Goal-directed, habitual and Pavlovian prosocial behavior. Front. Behav. Neurosci. 9:135. doi: 10.3389/fnbeh.2015.00135
+* Sloman, A. (1998). Damasio, Descartes, alarms and meta-management. SMC'98 Conference Proceedings. 1998 IEEE International Conference on Systems, Man, and Cybernetics (Cat. No.98CH36218), San Diego, CA, USA, 1998, pp. 2652-2657 vol.3, doi: 10.1109/ICSMC.1998.725060.
+* Snow, N.E. (2006). Habitual Virtuous Actions and Automaticity. Ethic Theory Moral Prac 9, 545–561. https://doi.org/10.1007/s10677-006-9035-5
+* Sutton, R.S., Barto, A.G. (1998). Reinforcement Learning: An Introduction. Cambridge, MA: MIT Press.
+* van Es, D.M., Knapen, T. (2019). Implicit and explicit learning in reactive and voluntary saccade adaptation. PloS one, 14(1), e0203248. https://doi.org/10.1371/journal.pone.0203248
+
+
+## Rational Standard Control Management (old)
 The _rational control system_ is significantly more elaborate than the habitual system. It's purpose is to enable rapid adaptation through high-level modelling and reasoning.
 
 Our knowledge of rational processes in humans is still in its infancy, and as such we can only guess at the underlying mechanisms. In order to motivate some of the discussion that follows I shall hazard a guess at some of its features, illustrated in the diagram below. As discussed above already, control processes must utilise multi-iteration processing, and I believe that is a key part of the rational system. As part of that multi-iteration processing, I suspect it also learns a repertoire of strategies for navigating CP state space given different problem domains. It incorporates short term and long term memories. It incorporates modelling of other systems, in a way that it can somehow incorporate new information from few or even a single example. And it includes the ability simulate and examine environmental, body, and mental behaviours without actioning them.
