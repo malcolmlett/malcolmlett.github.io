@@ -1041,17 +1041,9 @@ So, in order to answer that question, we shall now look at learning in humans.
 
 The controversies surrounding meta-cognition research stems from one problem: that it's not just one system that controls meta-cognitive processes. The meta-cognitive research discussed above generally acknowledge two systems: first-order non-conscious processes and high-order conscious processes. Debates about whether a behaviour is meta-cognitive or not hangs on an assumption that only conscious processes can be classified as meta-cognitive. We can avoid getting caught up in such debates when we acknowledge that all behaviour is an outcome of interactions between all systems. What we need to investigate is what those systems are, their underlying mechanisms, and how they interact to produce that behaviour.
 
-
-
-
-_..todo..introduce concept of layered architecture with: i) innate, ii) habitual, iii) rational systems._
-_...todo : there must be lots of research on this already.....review that and then write this section._
-_...can also introduce Daniel Kahneman's System I and II Thought._
-
 ![three systems of control](files/A-coherent-theory-v1-bio-3-systems.drawio.png)
 
 * _**Three Systems of Control.** Innate control and innate feedback interpretation bootstrap learning of habitual and rational systems. Habitual and rational systems interact in order to produce learned behaviour._
-
 
 The literature in behavioural science identifies three broad categories of behaviour, delineated by presumed differences in underlying control mechanisms: innate, habitual, and rational. Innate behaviour is predetermined through our genetics and is characterised by a (semi-)fixed response to stimulus irrespective of goal. Habitual behaviour is characterised by _automatized_ stimulus-response associations. Rational behaviour is characterised by considered stimulus-goal-action associations. As will be seen, the key differences between these three systems of behaviour relate to their speed of adaptation, their accuracy, the resources required for their control, and whether are modulated by current goals.
 
@@ -1073,56 +1065,39 @@ Secondly, the innate control system participates within the training of those mo
 Thirdly, it likely provides additional primitive feedback in the form of indications of energy and time cost that should be minimised by reinforcement learning. Any action should be carried out in the most energy conserving way - don't use more muscles than necessary; don't tense counteracting muscles so that motion is difficult and more effort required than necessary. Mental processes should produce effective outcomes quickly.
 
 ## Habitual behaviour
-Unlike innate behaviour, habitual behaviour is a) learned through experience, and b) can be very complex, and c) can be goal-modulated. Additionally, habitual behaviour is learned to the point of being _automatic_: we no longer have to think about how to carry out the behaviour (Snow, 2006). However habitual behaviour is slow to be learned, and slow to be unlearned (van Es, 2019). There some disagreement in the literature as to whether it is affected by contextual priming such as goals (Snow, 2006) or not (Gęsiarz & Crockett, 2015; Bernacer & Murillo, 2014; Dayan, 2008). It is likely that this reflects the specific focus of the research undertaken at the time and as an attempt to identify distinguishing factors between habitual and rational behaviour, rather than a claim that habitual behaviour is truly inflexible to the point of ignoring the individual's goals.
+Unlike innate behaviour, habitual behaviour is a) learned through experience, and b) can be very complex, and c) can be goal-modulated. Additionally, habitual behaviour is learned to the point of being _automatic_: we no longer have to think about how to carry out the behaviour (Snow, 2006). However habitual behaviour is slow to be learned, and slow to be unlearned (van Es, 2019). There is some disagreement in the literature as to whether it is affected by contextual priming such as goals (Snow, 2006) or not (Gęsiarz & Crockett, 2015; Bernacer & Murillo, 2014; Dayan, 2008). It is likely that this reflects the specific focus of the research undertaken at the time and as an attempt to identify distinguishing factors between habitual and rational behaviour, rather than a claim that habitual behaviour is truly inflexible to the point of ignoring the individual's goals.
 
-As illustrated in the diagram below, control of habitual behaviour is believed to be structured as an _implicit model_ (Sutton, 1998) that directly associates (or _computes_/_infers_) a response to a given stimulus (de Wit, 2009). In Reinforcement Learning literature this same architecture is referred to as _model-free_, because it lacks a structural model of the environment that can be queried in arbitrary ways - discussed further in the section below on rational behaviour. The reader will notice the similarity to mention of _reactive control_ in earlier sections. I use the word habitual now that the context is biologically focused, but the two terms should be treated synonymously. Indeed, the behavioural science literature often uses the _reactive_ termilogy.
+As illustrated in the diagram below, control of habitual behaviour is believed to be structured as an _implicit model_ (Sutton, 1998) that directly associates (or _computes_/_infers_) a response to a given stimulus (de Wit, 2009). In Reinforcement Learning literature this same architecture is referred to as _model-free_ because it lacks a structural model of the environment that can be queried in arbitrary ways - discussed further in the section below on rational behaviour. The reader will notice the similarity to mention of _reactive control_ in earlier sections. I use the word habitual now that the context is biologically focused, but the two terms should be treated synonymously. Indeed, the behavioural science literature often uses the _reactive_ termilogy.
 
 ![Habitual standard management](files/A-coherent-theory-v1-habitual-std-mgmt.drawio.png)
 
-* _**Habitual System.** ...todo...._
+* _**Habitual System.** A policy network learns a mapping from stimulus to action. The stimulus-action mapping may or may not be modulated by the current goal._
 
 The learning of habitual behaviour is thought to develop concurrently with rational behaviour (de Wit, 2009; Dayan, 2008). While rational systems control behaviour, the habitual system learns those same behaviours. As the behaviour becomes more practiced, the habitual system takes over (Dolan and Dayan, 2013; Dayan, 2008; Sutton, 1998; Gęsiarz & Crockett, 2015). The mechanism by which the habitual system is "judged" as being trustworthy enough to take over is unclear. A commonly accepted working theory is that both the habitual and rational systems track their predictive uncertainty, and this uncertainty is used to select the system for control (Daw et al, 2005; Sutton, 1998).
 
 Habitual and rational control of the same behaviours enable a trade-off between effort and time costs versus accuracy (Daw et al, 2005; Gęsiarz & Crockett, 2015; Douskos, 2018; Sloman, 1998). As will be discussed, rational behaviour control is a) computationally expensive, thus taking considerable time to infer the next action, and b) prone to mistakes or inaccuracies. For a well practiced behaviour, habitual control captures fine-tuned improvements that cannot be attained through rational control, and thus it is more accurate than rational control for such behaviours. Indeed, one particular form of habitual control, described as _Episodic Control_, repeats wholesale a complete sequence of actions (Dayan, 2008), such as the complex sequence of actions required in a golf swing. Many such sequences of action occur too quickly for deliberative planning to have any benefit.
 
-Historically habitual and rational control were seen as a binary choice, but more recent work has identified ways in which they can be combined for control of a single behaviour, leveraging their relative strengths (Douskos, 2018). For example, the goal used by the rational system may be selected by a habitual process (Cushman, 2015), or the rational controller may be leveraged to identify a particular habitual sequence of actions (Cushman, 2015).
+Historically habitual and rational control were seen as a binary choice, but more recent work has identified ways in which they can be combined for control of a single behaviour, leveraging their relative strengths (Douskos, 2018). For example, the goal used by the rational system may be selected by a habitual process (Cushman, 2015), or the rational controller may select a particular habitual sequence of actions to carry out (Cushman, 2015).
 
 An additional interplay between behaviour systems can be seen from the discussion of innate systems _bootstrapping_ learning. While innate behavioural control provides a bottom-up _restriction_ on habitual behaviour, rationally controlled actions provide a top-down reinforcement learning pressure against habitual behaviour. In that way, habitual behaviour _converges_ towards useful outcomes.
 
+## Rational behaviour
+often referred to as _goal-directed_, _deliberative_, _executive control_, or _voluntary_, rational behaviour is characterised by multi-iteration processing with conscious awareness of at least some part of the decisioning process. Unlike for habitual behaviour, rational behaviour control adapts quickly (Dayan, 2008; van Es, 2019), and is the optimal behavioural control strategy for novel situations (Cushman & Morris, 2015). Behavioural sciences describe it as learned outcome-action associations (de Wit, 2009; Gęsiarz & Crockett, 2015).
 
-
-References:
-* Bernacer, J. Murillo, J.I. (2014). The Aristotelian conception of habit and its contribution to human neuroscience. Front. Hum. Neurosci. 8:883. doi: 10.3389/fnhum.2014.00883
-* Cushman, F., Morris, A. (2015). Habitual control of goal selection in humans. Proceedings of the National Academy of Sciences of the United States of America, 112(45), 13817–13822. https://doi.org/10.1073/pnas.1506367112
-* Daw, N.D., Niv, Y., Dayan, P. (2005). Uncertainty-based competition between prefrontal and dorsolateral striatal systems for behavioural control. Nat. Neurosci. 8, 1704–1711. doi: 10.1038/nn1560
-* Dayan, P. (2008). The role of value systems in decision making. In Engel, C. and Singer, W. (Eds), Better Than Conscious? Implications for Performance and Institutional Analysis (Cambridge, MA: MIT press), 51–70.
-* de Wit, S., Corlett, P.R., Aitken, M.R., Dickinson, A., Fletcher, P.C. (2009). Differential Engagement of the Ventromedial Prefrontal Cortex by Goal-Directed and Habitual Behavior toward Food Pictures in Humans. Journal of Neuroscience, 29 (36) 11330-11338; DOI: https://doi.org/10.1523/JNEUROSCI.1639-09.2009
-* Dolan, R.J., Dayan, P. (2013). Goals and habits in the brain. Neuron 80, 312–325. doi: 10.1016/j.neuron.2013.09.007
-* Douskos, C. (2018). Deliberation and Automaticity in Habitual Acts. ETHICS IN PROGRESS, 9(1), 25–43. https://doi.org/10.14746/eip.2018.1.2
-* Gęsiarz, F. Crockett, M.J. (2015). Goal-directed, habitual and Pavlovian prosocial behavior. Front. Behav. Neurosci. 9:135. doi: 10.3389/fnbeh.2015.00135
-* Sloman, A. (1998). Damasio, Descartes, alarms and meta-management. SMC'98 Conference Proceedings. 1998 IEEE International Conference on Systems, Man, and Cybernetics (Cat. No.98CH36218), San Diego, CA, USA, 1998, pp. 2652-2657 vol.3, doi: 10.1109/ICSMC.1998.725060.
-* Snow, N.E. (2006). Habitual Virtuous Actions and Automaticity. Ethic Theory Moral Prac 9, 545–561. https://doi.org/10.1007/s10677-006-9035-5
-* Sutton, R.S., Barto, A.G. (1998). Reinforcement Learning: An Introduction. Cambridge, MA: MIT Press.
-* van Es, D.M., Knapen, T. (2019). Implicit and explicit learning in reactive and voluntary saccade adaptation. PloS one, 14(1), e0203248. https://doi.org/10.1371/journal.pone.0203248
-
-
-## Rational Standard Control Management (old)
-The _rational control system_ is significantly more elaborate than the habitual system. It's purpose is to enable rapid adaptation through high-level modelling and reasoning.
-
-Our knowledge of rational processes in humans is still in its infancy, and as such we can only guess at the underlying mechanisms. In order to motivate some of the discussion that follows I shall hazard a guess at some of its features, illustrated in the diagram below. As discussed above already, control processes must utilise multi-iteration processing, and I believe that is a key part of the rational system. As part of that multi-iteration processing, I suspect it also learns a repertoire of strategies for navigating CP state space given different problem domains. It incorporates short term and long term memories. It incorporates modelling of other systems, in a way that it can somehow incorporate new information from few or even a single example. And it includes the ability simulate and examine environmental, body, and mental behaviours without actioning them.
-
-The product of the rational system may be a goal selection that is then applied against habitual processes in order to actually produce the desired behaviour.
+There are two key presumed features of the systems underlying rational behaviour that distinguish it from habitual behaviour. Firstly, rational behaviour is thought to employ an _explicit model_ (Sutton, 1998) that captures the causal structure of the world (Cushman & Morris, 2015). This model can be queried to obtain information without immediately triggering action. In other words, the explicit model can be used to _simulate_ a sequence of events and to identify the most likely result. Thus the outcomes for different actions can be considered, or the most likely action to achieve a certain goal can be inferred, and from that information the rational system can choose how to act next. Secondly, there is evidence that only rational behaviour employs _working memory_ (van Es, 2019). It is believed that, over multiple iterations of processing, the explicit model is combined with working memory in order to perform _planning_. For example, it has been proposed that planning is performed as a search through a decision tree (Dayan, 2008; Dolan and Dayan, 2013).
 
 ![Rational standard management](files/A-coherent-theory-v1-rational-std-mgmt.drawio.png)
 
-* _**Rational System.** Some of the features that might underlie rational thought._
+* _**Rational System.** Some of the features that might underlie rational thought: deliberative strategies, explicit modelling, working memory, and simulation. All driven through multi-iteration (a.k.a. deliberative) processing._
 
-The learning processes within the rational system may be very complex. While for any given problem domain the models that it operates against are likely very high-level and efficient, and thus require only a few neurons, the brain mass required to operate such an elaborate and adaptive system is likely very large. ......_todo: details of suggested parts of brain involved and percentage of brain neuronal mass_... Correspondingly, while in a well developed brain the training required for any given problem domain may be small, the training required to reach a point where the rational system is effective may require a very long time due its overall complexity. In early infancy, the rational system is likely extremely chaotic. I expect that developmental processes attenuate the rational system during the infant period of a baby's life.
+While rational behaviour confers considerable adaptive advantage for novel situations, is believed to be complex, resource intensive, and inefficient (Cushman & Morris, 2015; Sutton, 1998; Dolan & Dayan, 2013). Where habitual and innate behaviour can be controlled immediately upon stimulus, rational behaviour requires deliberation - multiple iterations of processing. For example, where the model is extremely complex or where the search space is too large, approximations may be required in order to avoid spending too much time deliberating. It has been proposed that habitual processes may play a part in helping to carry out some of those deliberative approximations (Dayan, 2008; Cushman & Morris, 2015). Another limitation of rational behaviour is that it tends to be inaccurate. For example, where the choice of behaviour requires searching a deep tree of possible actions, it is thought that working memory is unable to accurately track of all of the intermediate states, and thus introduces noise (Dayan, 2008). Another possibility is that the explicit model can only capture relationships within the world to a course level of granularity, as it represents information in a more complex way than the stimulus-action mapping of habitual behaviour.
 
-In that way, the rational system may be "held to account" by i) the innate system, which prevents the rational system from sending the individual outside of a safe operating range, ii) developmental processes, that only let the rational system take control once it is ready to do so, and iii) the habitual system, that actually carries out most actions and which is itself constrained by innate feedback mechanisms.
+Planning through decision tree searches is just one particular _strategy_ that's possible for rational determination of appropriate behaviour. There may be many others. In particular, connectionist learning methods are quite adept at mixing-and-matching different informational sources and control mechanisms. So in addition to the above, I would propose that rational behaviour is also characterised by many different deliberative strategies, and that those strategies are learned through experience and reinforcement.
+
+In the section above I highlighted how the innate and rational systems enable the habitual system to _converge_ towards useful learned responses. To complete the circle, as it were, I wish to briefly mention how the same can occur for the rational system. However I have not studied this at length and so this is just a conjecture. The rational system must surely also need to _learn_ to perform its duties. I have suggested one such learning in the form of strategies, but there may be more. Thus the rational system is likely prone to gross errors in its early development, and perhaps even takes longer to develop than the simpler habitual control system. I suspect that the rational system may be "held to account" by three factors: i) the innate system, which prevents the rational system from sending the individual outside of a safe operating range, ii) developmental processes, that only let the rational system take control once it is ready to do so, and iii) the habitual system, that may develop earlier than the rational system.
 
 ## Habitual and Rational Control operating together
-Daniel Kahneman describes thought as operating within two "systems" or as two modes, namely _System I_ thinking and _System II_ thinking [citation]. System I is rapid and occurs without conscious involvement: a conclusion merely becomes available, apparently without any deliberation. In contrast, System II is explicitly deliberative: with subjective experience of individual steps as thought progresses from problem to solution. System II thought is significantly slower than System I thought. It is no surprise, I think, that the ideas of System I and II thought map conveniently onto the ideas of habitual and rational control, respectively.
+Daniel Kahneman describes thought as operating within two "systems" or as two modes, namely _System I_ thinking and _System II_ thinking (Kahneman, 2011). System I is rapid and occurs without conscious involvement: a conclusion merely becomes available, apparently without any deliberation. In contrast, System II is explicitly deliberative: with subjective experience of individual steps as thought progresses from problem to solution. System II thought is significantly slower than System I thought. It is no surprise, I think, that the ideas of System I and II thought map conveniently onto the ideas of habitual and rational control, respectively.
 
 One key point of Kahneman's work is that each system has different strengths and weaknesses, and that we benefit by the aggregate of the two. System I decisions are great for quickly choosing which toothbrush to buy in the supermarket - there's way too many options available now, and at the end of the day they all do the same job almost to the same degree of effectiveness, so there's no point stressing oneself out choosing the "best" toothbrush. But System I decisions cause us to repeat our past behaviour even when those behaviours have been proven to be "bad habits". System II thought enables us to cope with novel situations that our System I thought is not sufficiently trained to cope with. It also enables us to counteract our bad habits by considering the same problem from multiple angles and by only making a decision when we are confident that we have deliberated sufficiently. Conversely, System II thought is too slow when danger looms and a quick decision is needed between flee or fight, or of where to flee to. Additionally, System II thought is resource intensive - it consumes a lot of energy, it involves many brain regions (potentially preventing those involved brain regions from serving the needs of multiple parallelised System I activities), and it is slow. Thus System II thought carries a significant _opportunity cost_ - for any deliberation that we are currently involved in, there are countless alternative uses for the brain's resources that might have provided greater benefit to the individual.
 
@@ -1868,6 +1843,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Bahrami, B., Olsen, K., Bang, D., Roepstorff, A., Rees, G., and Frith, C. (2012). What failure in collective decision-making tells us about metacognition. Phil. Trans. R. Soc. B 367, 1350–1365.doi:10.1098/rstb.2011.0420 (doi:10.1098/rstb.2011.0420).
 
+* Bernacer, J. Murillo, J.I. (2014). The Aristotelian conception of habit and its contribution to human neuroscience. Front. Hum. Neurosci. 8:883. doi: 10.3389/fnhum.2014.00883
+
 * Birch, J., Ginsburg, S., Jablonka, E. (2020). Unlimited associative learning and the origins of consciousness: a primer and some predictions. Biol Philos, 35:56.
 
 * Block, N. (1995). On a confusion about a function of consciousness. Behavioral and Brain Sciences, 18(2), 227–247. https://doi.org/10.1017/S0140525X00038188. [Full Text](https://www.researchgate.net/publication/28762323_On_A_Confusion_About_a_Function_of_Consciousness).
@@ -1882,14 +1859,6 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of internal medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
 
-* Chalmers, D. (1996). The Conscious Mind. Oxford: Oxford University Press.
-
-* Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behav. Brain Sci. 36, 181–204.
-
-* Clark, A. (2019). Beyond desire? Agency, choice, and the predictive mind. Australas. J. Philos. 9: 1–15.
-
-* Crane, T. (2009). Intentionalism. The Oxford Handbook to the Philosophy of Mind. Oxford: Oxford University Press. pp. 474–93. [Abstract](https://philpapers.org/rec/CRAI-17).
-
 * Carruthers, P. (1996). Language, Thought and Consciousness. Cambridge: Cambridge University Press.
 
 * Carruthers, P. (2000). Phenomenal Consciousness: a naturalistic theory. Cambridge: Cambridge University Press.
@@ -1898,13 +1867,33 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Carruthers, P., and Gennaro, R. (2020). Higher-Order Theories of Consciousness., The Stanford Encyclopedia of Philosophy (Fall 2020 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2020/entries/consciousness-higher/>.
 
+* Chalmers, D. (1996). The Conscious Mind. Oxford: Oxford University Press.
+
+* Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behav. Brain Sci. 36, 181–204.
+
+* Clark, A. (2019). Beyond desire? Agency, choice, and the predictive mind. Australas. J. Philos. 9: 1–15.
+
 * Cleeremans, A. (2007). Consciousness: the radical plasticity thesis. Editor(s): Rahul Banerjee, Bikas K. Chakrabarti. Progress in Brain Research. Elsevier, Volume 168, Pages 19-33, ISSN 0079-6123, ISBN 9780444530509. https://doi.org/10.1016/S0079-6123(07)68003-0.
+
+* Crane, T. (2009). Intentionalism. The Oxford Handbook to the Philosophy of Mind. Oxford: Oxford University Press. pp. 474–93. [Abstract](https://philpapers.org/rec/CRAI-17).
+
+* Cushman, F., Morris, A. (2015). Habitual control of goal selection in humans. Proceedings of the National Academy of Sciences of the United States of America, 112(45), 13817–13822. https://doi.org/10.1073/pnas.1506367112
+
+* Daw, N.D., Niv, Y., Dayan, P. (2005). Uncertainty-based competition between prefrontal and dorsolateral striatal systems for behavioural control. Nat. Neurosci. 8, 1704–1711. doi: 10.1038/nn1560
+
+* Dayan, P. (2008). The role of value systems in decision making. In Engel, C. and Singer, W. (Eds), Better Than Conscious? Implications for Performance and Institutional Analysis (Cambridge, MA: MIT press), 51–70.
+
+* de Wit, S., Corlett, P.R., Aitken, M.R., Dickinson, A., Fletcher, P.C. (2009). Differential Engagement of the Ventromedial Prefrontal Cortex by Goal-Directed and Habitual Behavior toward Food Pictures in Humans. Journal of Neuroscience, 29 (36) 11330-11338; DOI: https://doi.org/10.1523/JNEUROSCI.1639-09.2009
 
 * Dehaene, S. (2014). Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts. New York: Penguin Books.
 
 * Dehaene, S., Sergent, C. and Changeux, J. P. (2003). A neuronal network model linking subjective reports and objective physiological data during conscious perception. Proc Natl Acad Sci U S A 100, 8520-5.
 
 * Descartes, R. (1644/1911). The Principles of Philosophy. Translated by E. Haldane and G. Ross. Cambridge: Cambridge University Press.
+
+* Dolan, R.J., Dayan, P. (2013). Goals and habits in the brain. Neuron 80, 312–325. doi: 10.1016/j.neuron.2013.09.007
+
+* Douskos, C. (2018). Deliberation and Automaticity in Habitual Acts. ETHICS IN PROGRESS, 9(1), 25–43. https://doi.org/10.14746/eip.2018.1.2
 
 * Earl, B. (2014). The biological function of consciousness. Front. Psychol. 5:697. doi: 10.3389/fpsyg.2014.00697
 
@@ -1958,6 +1947,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Gennaro, R. (2012). The Consciousness Paradox: Consciousness, Concepts, and Higher-Order Thoughts. Cambridge, MA: MIT press.
 
+* Gęsiarz, F. Crockett, M.J. (2015). Goal-directed, habitual and Pavlovian prosocial behavior. Front. Behav. Neurosci. 9:135. doi: 10.3389/fnbeh.2015.00135
+
 * Guyer, P., and Horstmann, R-P. (2023). Idealism. The Stanford Encyclopedia of Philosophy (Spring 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/spr2023/entries/idealism/>.
 
 * Haynes, J-D. (2013). Beyond Libet: Long-Term Prediction of Free Choices from Neuroimaging Signals. In A. Clark, J. Kiverstein and T. Vierkant (eds.), Decomposing the Will, Oxford: Oxford University Press.
@@ -1967,6 +1958,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Humphrey, N. (2002). The uses of consciousness. In N. Humphrey (Ed.), The mind made flesh: Essays from the frontiers of evolution and psychology (pp. 65–85). Oxford: Oxford University Press.
 
 * Hunt, T., and Schooler, J. W. (2019). The Easy Part of the Hard Problem: A Resonance Theory of Consciousness. Frontiers in human neuroscience, 13, 378. https://doi.org/10.3389/fnhum.2019.00378
+
+* Kahneman, D. (2011). Thinking, fast and slow. Farrar, Straus and Giroux.
 
 * Kanai, R., Chang, A., Yu, Y., de Abril, I. M, Biehl, M, Guttenberg, N. (2019). Information generation as a functional basis of consciousness, Neuroscience of Consciousness, Volume 2019, Issue 1, 2019, niz016, 
 
@@ -2082,15 +2075,21 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 * Siewert, C. (2022). Consciousness and Intentionality. The Stanford Encyclopedia of Philosophy (Summer 2022 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2022/entries/consciousness-intentionality/>.
 
+* Sloman, A. (1998). Damasio, Descartes, alarms and meta-management. SMC'98 Conference Proceedings. 1998 IEEE International Conference on Systems, Man, and Cybernetics (Cat. No.98CH36218), San Diego, CA, USA, 1998, pp. 2652-2657 vol.3, doi: 10.1109/ICSMC.1998.725060.
+
 * Smart, J. J. C. (2022). The Mind/Brain Identity Theory. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/mind-identity/>.
 
 * Smith, D. W. (2018). Phenomenology: 1. What is Phenomenology?. The Stanford Encyclopedia of Philosophy. Metaphysics Research Lab, Stanford University. Retrieved 20 September 2021.
 
 * Smolensky, P. (1988). On the Proper Treatment of Connectionism. Behavioral and Brain Sciences, 11: 1–74.
 
+* Snow, N.E. (2006). Habitual Virtuous Actions and Automaticity. Ethic Theory Moral Prac 9, 545–561. https://doi.org/10.1007/s10677-006-9035-5
+
 * Soon, C., Brass, M., Heinze, H-J., and Haynes, J-D. (2008). Unconscious determinants of free decisions in the human brain. Nature Neuroscience, 11: 543–545. https://doi.org/10.1038/nn.2112
 
 * Stoljar, D. (2023). Physicalism. The Stanford Encyclopedia of Philosophy (Summer 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), forthcoming URL = <https://plato.stanford.edu/archives/sum2023/entries/physicalism/>.
+
+* Sutton, R.S., Barto, A.G. (1998). Reinforcement Learning: An Introduction. Cambridge, MA: MIT Press.
 
 * Tononi, G. (2004). An information integration theory of consciousness. BMC Neurosci 5, 42.
 
@@ -2107,6 +2106,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Tye, M. (1996). The function of consciousness. Noûs, 30:287–305.
 
 * Tye, M. (2021). Qualia. The Stanford Encyclopedia of Philosophy (Fall 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2021/entries/qualia/>.
+
+* van Es, D.M., Knapen, T. (2019). Implicit and explicit learning in reactive and voluntary saccade adaptation. PloS one, 14(1), e0203248. https://doi.org/10.1371/journal.pone.0203248
 
 * Van Gulick, R. (2022). Consciousness. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/consciousness/>.
 
