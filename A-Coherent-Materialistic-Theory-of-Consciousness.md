@@ -1071,7 +1071,7 @@ As illustrated in the diagram below, control of habitual behaviour is believed t
 
 ![Habitual standard management](files/A-coherent-theory-v1-habitual-std-mgmt.drawio.png)
 
-* _**Habitual System.** A policy network learns a mapping from stimulus to action. The stimulus-action mapping may or may not be modulated by the current goal._
+* _**Habitual System.** A policy network learns a mapping from stimulus to action, sometimes referred to as an implicit-model. The stimulus-action mapping may or may not be modulated by the current goal. Adaptation occurs through reinforcement learning that takes rewards and punishments and/or prediction errors and uses them to update neural weights._
 
 The learning of habitual behaviour is thought to develop concurrently with rational behaviour (de Wit, 2009; Dayan, 2008). While rational systems control behaviour, the habitual system learns those same behaviours. As the behaviour becomes more practiced, the habitual system takes over (Dolan and Dayan, 2013; Dayan, 2008; Sutton, 1998; Gęsiarz & Crockett, 2015). The mechanism by which the habitual system is "judged" as being trustworthy enough to take over is unclear. A commonly accepted working theory is that both the habitual and rational systems track their predictive uncertainty, and this uncertainty is used to select the system for control (Daw et al, 2005; Sutton, 1998).
 
