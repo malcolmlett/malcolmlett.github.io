@@ -872,6 +872,8 @@ In practice, however, it is difficult to distinguish whether a given behaviour i
 A deeper understanding of the low-level mechanisms underlying meta-cognition would help significantly to untangle the confusion. For example, many of the debates revolve around trying to correlate identified behaviours with whether they were produced habitually or through rational control. I suspect many of the debates are missing a more subtle nuance: that "first-order versus second-order" may be orthogonal to "habitual versus rational". This is a point to which we will return, but first we need to look a little deeper at habitual, rational, and other modes of control.
 
 # IV.3 Modes of Behavioural Control
+..todo..clean up.
+
 why: which MM architecture:
 * By the end of Part III it was clear that complex multi-iteration control processes require meta-management, and we were able to identify some possible architectures that capture the interaction between control processes and meta-management, but we are left with an outstanding question: how do we identify which meta-management architecture is more likely in humans? The question is important to our end goal because, as will be seen, the answer impacts our ability to explain subjective experience.
 * To my knowledge, there is no research investigating the relative merits of the proposed possible meta-management architectures within the context of connectionist computational architectures. At this stage, drawing any conclusions from the empirical evidence of neuroscientific data is fraught [citations for general problems of conclusions from fRMI data, or the history of mistakes?]. Thus we are left to postulate based on theoretical analysis._
@@ -900,7 +902,7 @@ An significant feature of both unconditioned and conditioned responses is that t
 ## Habitual behaviour
 Unlike innate behaviour, habitual behaviour is a) learned through experience, and b) can be very complex, and c) can be goal-modulated. Additionally, habitual behaviour is learned to the point of being _automatic_: we no longer have to think about how to carry out the behaviour (Snow, 2006). However habitual behaviour is slow to be learned, and slow to be unlearned (van Es, 2019). There is some disagreement in the literature as to whether it is affected by contextual priming such as goals (Snow, 2006) or not (Gęsiarz & Crockett, 2015; Bernacer & Murillo, 2014; Dayan, 2008). It is likely that this reflects the specific focus of the research undertaken at the time and as an attempt to identify distinguishing factors between habitual and rational behaviour, rather than a claim that habitual behaviour is truly inflexible to the point of ignoring the individual's goals.
 
-As illustrated in the diagram below, control of habitual behaviour is believed to be structured as an _implicit model_ (Sutton, 1998) that directly associates (or _computes_/_infers_) a response to a given stimulus (de Wit, 2009). In Reinforcement Learning literature this same architecture is referred to as _model-free_ because it lacks a structural model of the environment that can be queried in arbitrary ways - discussed further in the section below on rational behaviour. The reader will notice the similarity to mention of _reactive control_ in earlier sections. I use the word habitual now that the context is biologically focused, but the two terms should be treated synonymously. Indeed, the behavioural science literature often uses the _reactive_ termilogy.
+As illustrated in the diagram below, control of habitual behaviour is believed to be structured as an _implicit model_ (Sutton, 1998) that directly associates (or _computes_/_infers_) a response to a given stimulus (de Wit, 2009). In Reinforcement Learning literature this same architecture is referred to as _model-free_ because it lacks a structural model of the environment that can be queried in arbitrary ways - discussed further in the section below on rational behaviour. The reader will notice the similarity to mention of _reactive control_ in earlier sections. I use the word habitual now that the context is biologically focused, but the two terms should be treated synonymously. Indeed, the behavioural science literature often uses the _reactive_ terminology.
 
 ![Habitual standard management](files/A-coherent-theory-v1-habitual-std-mgmt.drawio.png)
 
@@ -925,15 +927,16 @@ Secondly, there is evidence that only rational behaviour employs _working memory
 
 While rational behaviour confers considerable adaptive advantage for novel situations, is believed to be complex, resource intensive, and inefficient (Cushman & Morris, 2015; Sutton, 1998; Dolan & Dayan, 2013). Where habitual and innate behaviour can be controlled immediately upon stimulus, rational behaviour requires deliberation - multiple iterations of processing. For example, where the model is extremely complex or where the search space is too large, approximations may be required in order to avoid spending too much time deliberating. It has been proposed that habitual processes may play a part in helping to carry out some of those deliberative approximations (Dayan, 2008; Cushman & Morris, 2015). Another limitation of rational behaviour is that it tends to be inaccurate. For example, where the choice of behaviour requires searching a deep tree of possible actions, it is thought that working memory is unable to accurately track of all of the intermediate states, and thus introduces noise (Dayan, 2008). Another possibility is that the explicit model can only capture relationships within the world to a course level of granularity, as it represents information in a more complex way than the stimulus-action mapping of habitual behaviour.
 
-Planning through decision tree searches is just one particular _strategy_ that's possible for rational determination of appropriate behaviour. There may be many others. In particular, connectionist learning methods are quite adept at mixing-and-matching different informational sources and control mechanisms. So in addition to the above, I would propose that rational behaviour is also characterised by many different deliberative strategies, and that those strategies are learned through experience and reinforcement.
+Planning through decision tree searches is just one particular _strategy_ that's possible for rational determination of appropriate behaviour. There may be many others. In particular, connectionist learning methods are quite adept at mixing-and-matching different informational sources and control mechanisms. So in addition to the above, I would propose that rational behaviour is also characterised by many different deliberative strategies, and that those strategies are _learned_ through experience and reinforcement.
+
+Notice that, while rational behaviour is generally associated with conscious experience, it is not necessarily meta-cognitive in nature. For example, a goal-driven or explicit model-based decision process that focuses on external needs can be carried out without any recourse to self-appraisal. Where self-appraisal becomes necessary is for after-the-fact analysis of performance. Thus, second-order processes and rational processes should not be seen as the same thing.
 
 ## Emotion
 There is another fascinating aspect of control that has for a long time been left on the periphery of studies, but which has more recently gained more traction. Damasio and others are beginning to make strong cases that emotion is a key part of "truly rational" behaviour (Damasio, 1994). Studies are finding that individuals with brain lesions that prevent emotions influence over control struggle to make suitable long-term life choices. It appears that they lack fear of their own loss and suffering and thus cannot "rationally" weigh up options, often choosing short-term wins that have significant long-term deleterious effects.
 
 Damasio's 1994 book _Descartes' error : emotion, reason, and the human brain_ provides an excellent discussion of the importance of emotion in rational decision making, as well as discussions of how cognitive processes, emotion, and body are intertwined. Clearly, a discussion of human behavioural control would not be complete without a discussion of emotions. Unfortunately such a discussion is beyond the scope of the present focus.
 
-## Behavioural control co-development
-
+## Co-development of behavioural control systems
 ...todo: review the evolutionary history...
 
 From an evolutionary perspective, Pavlovian behaviour is seen as being most ancient. It developed initially as simple localised reflexes in single celled organisms [citation]. Later, as multi-celled organisms evolved, their reflexes needed to be globally choreographed, which is believed to have led to the evolution of loosely networked nerves, and later to central nervous systems [citation]. The evolution of habitual action appears to have occurred during the time known as the "Cambrian explosion" (about 542 to 485 million years ago), or perhaps even a little earlier during the Ediacaran period (635 to 542 million years ago) (Godfrey-Smith, 2016, p27-41). Rational behaviour is believed to have occurred more recently in conjunction with the development of the neo-cortex.
@@ -952,6 +955,29 @@ Much of that plays a direct influence on habitual learning in particular. Thus i
 
 To complete the circle, as it were, I wish to briefly mention how the same might occur for the rational system. However I have not studied this at length and so this is just a conjecture. The rational system must surely also need to _learn_ to perform its duties. I have suggested above one such learning in the form of strategies, but there may be more. Thus the rational system is likely prone to gross errors in its early development during early childhood. Furthermore, as a far more complex system than for habitual control, it is likely that the rational system takes longer to develop. I suspect that the rational system may be "held to account" by three factors: i) the innate system, which prevents the rational system from sending the individual outside of a safe operating range, ii) the habitual system, that may develop earlier than the rational system, and iii) developmental processes, that only let the rational system take control once it is ready to do so.
 
+# IV.3 Habitual and Rational Meta-management
+In comparing innate, habitual, and rational behavioural control we see that the innate system primarily provides a bootstrapping role for the more advanced systems of habitual and rational control, and we see that habitual and rational control are combined in ways that strike a balance between their relative strengths. Habitual systems are slow to adapt, but efficient to execute. Rational systems are fast to adapt, but complex and slow to execute. Independent habitual systems seem to be distributed throughout the human brain, as multiple habitually controlled behaviours can be executed simultaneously, eg: talking while driving. In contrast, there appears to be only one rational system, which can only operate against one task at a time. Clearly there is an advantage to combining them wherever possible.
+
+Further to that, we have seen that there is evidence that habitual processes may play a role in rational control. This fits well with the prevalence of debates about whether apparently rational behaviour is actually executed by habitual first-order processes. Perhaps rational behaviour _always_ involves significant habitual control.
+
+What about for meta-management?
+
+I have made the claim earlier that rational behaviour is not the same thing as second-order or meta-cognitive behaviour. I now make the claim that meta-management, the low-level architectural aspect of meta-cognition, is itself a combination of habitual and rational control mechanisms and that these systems develop in conjunction with each other in the same way as they do for first-order control.
+
+Rational mechanisms of meta-management would leverage all of the modelling and deliberative capabilities discussed above, but operate at a higher-order meta-cognitive level. Some examples might include:
+* **Higher-level modelling of reinforcement feedback.** For example, reinforcement learning struggles where reinforcement is sparse. By observing and developing explicit causal models of the world, including eventual reinforcements, the individual can infer whether a given action just taken is likely to be a step towards or away from a desired future reinforcement. Thus the individual can generate their own reinforcement feedback for individual actions, filling in the gaps as it where between the sparse rewards provided by the environment.
+* **Behaviour modelling.** Developing higher-order models of first-order habitual and rational behaviours, including tracking of abilities (in other words, effectiveness) against different problem domains.
+* **First-order strategy selection.** Through deliberative processes involving the above models, the meta-management process may help to select the strategy used within first-order rational deliberation.
+	
+As discussed earlier, rational processes are computationally expensive. To make matters worse, as rational processes seem to be executed in a serial fashion, if an individual is carrying out rational meta-cognitive thought, they are preventing themselves from carrying out rational first-order control. An example of this is when we are doing something that needs constant attention but we become distracted. Our default mode network (DMN), which may be a form of meta-management, takes over our rational processes, leaving our primary task under solely habitual control.
+
+Thus ideally even meta-management would be done through habitual processes wherever possible. This is entirely plausible. Habitual control of meta-management would occur for meta-management tasks that have been sufficiently repeated that they can become automatized. Some examples might include:
+* Generation of frequent feedback, learned from regular use of higher-order models.
+* First-order rational strategy selection, learned from repeated similar decisions
+* Error detection: detecting when habitual first-order control behaviour has resulted in unexpected outcomes that require rational systems to take over in order to correct the situation
+* Learned meta-learning behaviours - for example, as observed by others as an individual's position on the sliding scale of _learning mindset_ to _fixed mindset_.
+
+Before I wrap up the discussion of habitual and rational control, I need to be up front about an issue that is emerging with my description of meta-management. The distinction between first-order control and meta-management is getting blurry. At first I claimed that meta-management is something entirely different from first-order control. Then I claimed that rather than being independent, meta-management processing may be performed by the same underlying system that performs first-order processing. I have now elaborated on that by claiming that meta-management makes the same distinction between habitual and rational control. So is meta-management really distinct from first-order control? In order to answer that, we need to look at the details of the representations used and of how they are processed. And in order to do that, I need to first introduce the concept of _semiotics_.
 
 # IV.5 Semiotics
 The claim so far is that the meta-management feedback loop generates a (high-level, and filtered) representation of the state of the goings on within the brain. That representation is then available for processing, which may produce some computational actions as part of meta-management. Assuming an inline meta-management architecture, a logical extension is that the outcome of that meta-management processing result in]s new state that is subsequently captured by the meta-management feedback loop and fed back as a new representation.
@@ -1163,31 +1189,6 @@ What differences are there in the meta-management of these two different systems
 
 As we proceed, remember that by the definitions as they stand, standard control is related to how the individual governs actions against their body and the environment, whereas meta-management is related to how the individual governs the execution of the computational processes involved with the former. If, by the end of this section, you are beginning to suspect that this distinction is somewhat arbitrary, then you will be well towards grasping one of the key points of this article.
 
-## Components of Habitual and Rational Meta-management
-Habitual mechanisms could well help to solve meta-management needs. _Habitual mechanisms of meta-management_ (HMMM) would be an individual's learned automatic behaviours with respect to meta-management. Some examples might include:
-* Higher-order production and interpretation of feedback. Providing more frequent feedback for RL algorithms. Providing better understanding of feedback with broader contexts. Influences: habitual standard control, rational standard control.
-* Strategy execution within rational system -- it's meta-management, but it's implemented through habitual mechanisms.
-* Strategy selection within rational system - will be a mixture of habitual and rational meta-management, depending on familiarity with problem domain.
-* detecting when habitual standard control behaviour has resulted in unexpected outcomes that require rational systems to take over in order to correct the situation
-* Learned meta-learning behaviours - observed by others as an individual's position on the sliding scale of "learning mindset" to "fixed mindset".
-* ..others..
-
-Rational mechanisms are equally important for meta-management. _Rational mechanisms of meta-management_ (RMMM) would leverage all of the higher-order modelling and deliberative capabilities discussed above. Some examples might include:
-* modelling the behaviours of the standard control processes, including tracking of their abilities (in other words, effectiveness) against different problem domains.
-* deliberative selection of problem solving strategy based on above modelling
-* domain knowledge, complex, lots of neural mass
-* domain knowledge at time of meta-management same as domain knowledge in effect within CP at that time, so if there is any mechanism that "loads" domain knowledge in order to hold it is context during execution, then that same domain knowledge may be at play in both systems.
-* In short, this is all the most advanced meta-learning, meta-cognitive thought processes that we can think of. This is the magic sauce that enables abstract thought.
-* other examples (but be careful to avoid just replicating what's already in other lists:
-    - noticing repeated states/sequences of states that indicate _stuck thought_.
-    - associative memory to shortcut via memo-isation.
-    - modelling and observing CP strategies: if CP is currently using a weaker strategy and it is floundering, then MM can detect that and encourage to use an alternative strategy.
-    - modelling and improving CP strategies: choosing to use a weaker strategy in order to improve it.
-    - modelling and selecting CP strategies: choosing to use the strongest strategy in CP according to a particular problem.
-    - meta-mgmt is effectively a big part of the learning against CP.
-    - loss-function rewards: using higher-order / domain knowledge to measure CP performance & apply as loss function -> mm acting as part of learning algorithm.
-
-_todo: review other lists, eg from my notebook._
 
 ## Reusable Domain Knowledge
 
