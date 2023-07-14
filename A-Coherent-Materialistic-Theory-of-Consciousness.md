@@ -947,102 +947,6 @@ Damasio's 1994 book _Descartes' error : emotion, reason, and the human brain_ pr
 ...todo...evolutionary bent.
 
 
-# IV.4 Deeper Dive into Meta-management
-points:
-* domain knowledge, complex, lots of neural mass
-* domain knowledge at time of meta-management same as domain knowledge in effect within CP at that time, so if there is any mechanism that "loads" domain knowledge in order to hold it is context during execution, then that same domain knowledge may be at play in both systems.
-* rational system can model outside world concerns; can also model internal concerns, such as needed for meta-mgmt
-* some components of rational system are probably implemented through habitual mechanisms
-* conclusion: inline meta-management with meta-management feedback loop
-* what exactly does it incorporate?
-    - ......have I repeated that already?
-
-So, the brain leverages both habitual and rational mechanisms in order to strike a balance between their relative strengths. Habitual systems are slow to adapt, but efficient to execute. Rational systems are fast to adapt, but complex and slow to execute. Independent habitual systems seem to be distributed throughout the human brain, as multiple habitually controlled behaviours can be executed simultaneously, eg: talking while driving. In contrast, there appears to be only one rational system, which can only operate against one task at a time.
-
-What differences are there in the meta-management of these two different systems? Might meta-management itself also employ both mechanisms? And does that help us identify the architecture of meta-management?
-
-As we proceed, remember that by the definitions as they stand, standard control is related to how the individual governs actions against their body and the environment, whereas meta-management is related to how the individual governs the execution of the computational processes involved with the former. If, by the end of this section, you are beginning to suspect that this distinction is somewhat arbitrary, then you will be well towards grasping one of the key points of this article.
-
-## Components of Habitual and Rational Meta-management
-Habitual mechanisms could well help to solve meta-management needs. _Habitual mechanisms of meta-management_ (HMMM) would be an individual's learned automatic behaviours with respect to meta-management. Some examples might include:
-* Higher-order production and interpretation of feedback. Providing more frequent feedback for RL algorithms. Providing better understanding of feedback with broader contexts. Influences: habitual standard control, rational standard control.
-* Strategy execution within rational system -- it's meta-management, but it's implemented through habitual mechanisms.
-* Strategy selection within rational system - will be a mixture of habitual and rational meta-management, depending on familiarity with problem domain.
-* detecting when habitual standard control behaviour has resulted in unexpected outcomes that require rational systems to take over in order to correct the situation
-* Learned meta-learning behaviours - observed by others as an individual's position on the sliding scale of "learning mindset" to "fixed mindset".
-* ..others..
-
-Rational mechanisms are equally important for meta-management. _Rational mechanisms of meta-management_ (RMMM) would leverage all of the higher-order modelling and deliberative capabilities discussed above. Some examples might include:
-* modelling the behaviours of the standard control processes, including tracking of their abilities (in other words, effectiveness) against different problem domains.
-* deliberative selection of problem solving strategy based on above modelling
-* domain knowledge, complex, lots of neural mass
-* domain knowledge at time of meta-management same as domain knowledge in effect within CP at that time, so if there is any mechanism that "loads" domain knowledge in order to hold it is context during execution, then that same domain knowledge may be at play in both systems.
-* In short, this is all the most advanced meta-learning, meta-cognitive thought processes that we can think of. This is the magic sauce that enables abstract thought.
-* other examples (but be careful to avoid just replicating what's already in other lists:
-    - noticing repeated states/sequences of states that indicate _stuck thought_.
-    - associative memory to shortcut via memo-isation.
-    - modelling and observing CP strategies: if CP is currently using a weaker strategy and it is floundering, then MM can detect that and encourage to use an alternative strategy.
-    - modelling and improving CP strategies: choosing to use a weaker strategy in order to improve it.
-    - modelling and selecting CP strategies: choosing to use the strongest strategy in CP according to a particular problem.
-    - meta-mgmt is effectively a big part of the learning against CP.
-    - loss-function rewards: using higher-order / domain knowledge to measure CP performance & apply as loss function -> mm acting as part of learning algorithm.
-
-_todo: review other lists, eg from my notebook._
-
-## Reusable Domain Knowledge
-
-..todo..
-
-## Summary of Meta-management Architecture
-_todo: avoid temptation to relate this back to subjective experience. That'll come in the solution part._
-
-We are now finally in a position to place our bets on the most likely architecture of meta-management, that of _inline meta-management_, incorporating both habitual and rational systems.
-
-diagram: habitual with standard + meta-management intermingled, rational with standard + meta-management intermingled.
-
-# IV.4 Distinguishing Meta-management from Standard Control
-Things are getting blurry. At first I claimed that meta-management is something entirely different from standard control. Now I claim that there is no independent meta-management system. And to top it off, I'm also claiming that the same functions and even states associated with standard control can be re-used for meta-management. So is meta-management in any way distinct from standard control?
-
-The answer to that question is nuanced. I believe the best answer is that some aspects of meta-management and standard control differ significantly while others have very close coincidence. Thus I consider them as separate processes that are superimposed and intermingled within the same system.
-
-I will make this case by looking at three aspects that I believe do differ considerably between standard control and meta-management: state representation, pathways, and learning.
-
-## State Representation
-The state of the standard control process, as used as part of its computations for action decision, is considerably different to the state of the standard control process as used for meta-management. The most significant differences are in terms of context. 
-
-Consider the biologically plausible planner introduced earlier. The state that it would hold and use in its computations would be focused on the specific problem at hand at the time, for example:
-- the results of simulated real-world trajectories already attempted
-- factors related to generation of new real-world trajectory simulations yet to be attempted
-- factors helping to decide whether to continue to search for better real-world trajectories or to settle on the current best guess.
-
-In contrast, the state information required for meta-management of that same planner has the planner itself as its target of representation:
-- the computational state trajectory of the control process itself (ie: the three bullet points above, together, form a single point in the computational state trajectory), including how long it has been running for on the current problem
-- the class of problem that the control process is currently operating against
-- modelled information about how effective the control process is against that class of problem
-- indication of whether the control process is currently trending towards finding an effective solution
-- indication of whether the control process appears to be repeating any past observed behaviour that required intervention
-
-Further to that. Meta-management processes can model not just past observed behaviours (of the control process), but expected future behaviours. For example, through teacher instruction and by observation of others, an individual can develop a model of how good they _should be_ at a particular task. This is clear, for example, in students comparing their results on a maths test and in a parent scolding their child for doing badly on said maths test. So the meta-management process not only observes the state of the control process, but generates additional state information in the act of comparing the current behaviour of the control process against past actual behaviours and future possible behaviours.
-
-The distinction is best summed up in colloquial vernacular: that a standard control process represents its state "from the inside", whereas meta-management represents the state of the control process "from the outside".
-
-## Pathways
-For a standard control process, its "state" is just a concept that the scientific community apply against it as a way of understanding its operation. We know that its behaviour for the same input will be different depending on the sequence of past inputs. We explain to ourselves that the process itself must be somehow affected by that sequence of past inputs. And we summarise that as a) the process has a state, and b) the state of the process changes as processing occurs. Importantly, there is nothing said about the representation of that state, nor of the underlying mechanics of how that state is "held".
-
-Our understanding from neuroscience is that state in brains is held in the form of recurrency: results at various layers are fed back as inputs at earlier layers [citation]. That feedback can occur with different lengths, anywhere from each individual neuron holding onto its own state to outputs at the final nodes being fed as inputs into the earliest nodes. Captured in panel A in the diagram below.
-
-![state pathways](files/A-coherent-theory-v1-state-pathways.drawio.png)
-
-* _**State pathways.** A) Short-path and long-path recurrency of immediate state in standard control. B) Long-path recurrency of state plus context in meta-management._
-
-In contrast, meta-management processes require an explicit representation of the control process state. That representation is most likely constructed through a pathway that has the express purpose of generating that very representation from various sources. The sources include some kind of cache or accumulative representation generator of CP state trajectory plus information obtained through comparison with models of past and expected behaviour.
-
-As mentioned earlier, to represent the state held by every neuron within the control process would lead to an infinite regress in the scale of the system.....todo....
-
-
-## Learning
-- learning pressure: standard control representations trained to accurately represent the problem state w.r.t. the mechanisms needed to solve them. Rational control representations trained to represent all of the inner workings with the minimal amount of information needed to attain sufficient stability.
-
 
 # IV.5 Semiotics
 The claim so far is that the meta-management feedback loop generates a (high-level, and filtered) representation of the state of the goings on within the brain. That representation is then available for processing, which may produce some computational actions as part of meta-management. Assuming an inline meta-management architecture, a logical extension is that the outcome of that meta-management processing result in]s new state that is subsequently captured by the meta-management feedback loop and fed back as a new representation.
@@ -1236,6 +1140,105 @@ There are two important points to make here about the predictive mechanism. Firs
 There is one last lesson that I want to bring out from the work on RR and RPT. ext....the authors of RPT obtained empirical evidence through toy simulations of different architectures........that showed that the hierarchical architecture performed best. This is in line with the idea that a meta-management feedback loop could be used to monitor cognitive processes.
 
 [diagram]
+
+
+# IV.y Deeper Dive into Meta-management
+points:
+* domain knowledge, complex, lots of neural mass
+* domain knowledge at time of meta-management same as domain knowledge in effect within CP at that time, so if there is any mechanism that "loads" domain knowledge in order to hold it is context during execution, then that same domain knowledge may be at play in both systems.
+* rational system can model outside world concerns; can also model internal concerns, such as needed for meta-mgmt
+* some components of rational system are probably implemented through habitual mechanisms
+* conclusion: inline meta-management with meta-management feedback loop
+* what exactly does it incorporate?
+    - ......have I repeated that already?
+
+So, the brain leverages both habitual and rational mechanisms in order to strike a balance between their relative strengths. Habitual systems are slow to adapt, but efficient to execute. Rational systems are fast to adapt, but complex and slow to execute. Independent habitual systems seem to be distributed throughout the human brain, as multiple habitually controlled behaviours can be executed simultaneously, eg: talking while driving. In contrast, there appears to be only one rational system, which can only operate against one task at a time.
+
+What differences are there in the meta-management of these two different systems? Might meta-management itself also employ both mechanisms? And does that help us identify the architecture of meta-management?
+
+As we proceed, remember that by the definitions as they stand, standard control is related to how the individual governs actions against their body and the environment, whereas meta-management is related to how the individual governs the execution of the computational processes involved with the former. If, by the end of this section, you are beginning to suspect that this distinction is somewhat arbitrary, then you will be well towards grasping one of the key points of this article.
+
+## Components of Habitual and Rational Meta-management
+Habitual mechanisms could well help to solve meta-management needs. _Habitual mechanisms of meta-management_ (HMMM) would be an individual's learned automatic behaviours with respect to meta-management. Some examples might include:
+* Higher-order production and interpretation of feedback. Providing more frequent feedback for RL algorithms. Providing better understanding of feedback with broader contexts. Influences: habitual standard control, rational standard control.
+* Strategy execution within rational system -- it's meta-management, but it's implemented through habitual mechanisms.
+* Strategy selection within rational system - will be a mixture of habitual and rational meta-management, depending on familiarity with problem domain.
+* detecting when habitual standard control behaviour has resulted in unexpected outcomes that require rational systems to take over in order to correct the situation
+* Learned meta-learning behaviours - observed by others as an individual's position on the sliding scale of "learning mindset" to "fixed mindset".
+* ..others..
+
+Rational mechanisms are equally important for meta-management. _Rational mechanisms of meta-management_ (RMMM) would leverage all of the higher-order modelling and deliberative capabilities discussed above. Some examples might include:
+* modelling the behaviours of the standard control processes, including tracking of their abilities (in other words, effectiveness) against different problem domains.
+* deliberative selection of problem solving strategy based on above modelling
+* domain knowledge, complex, lots of neural mass
+* domain knowledge at time of meta-management same as domain knowledge in effect within CP at that time, so if there is any mechanism that "loads" domain knowledge in order to hold it is context during execution, then that same domain knowledge may be at play in both systems.
+* In short, this is all the most advanced meta-learning, meta-cognitive thought processes that we can think of. This is the magic sauce that enables abstract thought.
+* other examples (but be careful to avoid just replicating what's already in other lists:
+    - noticing repeated states/sequences of states that indicate _stuck thought_.
+    - associative memory to shortcut via memo-isation.
+    - modelling and observing CP strategies: if CP is currently using a weaker strategy and it is floundering, then MM can detect that and encourage to use an alternative strategy.
+    - modelling and improving CP strategies: choosing to use a weaker strategy in order to improve it.
+    - modelling and selecting CP strategies: choosing to use the strongest strategy in CP according to a particular problem.
+    - meta-mgmt is effectively a big part of the learning against CP.
+    - loss-function rewards: using higher-order / domain knowledge to measure CP performance & apply as loss function -> mm acting as part of learning algorithm.
+
+_todo: review other lists, eg from my notebook._
+
+## Reusable Domain Knowledge
+
+..todo..
+
+## Summary of Meta-management Architecture
+_todo: avoid temptation to relate this back to subjective experience. That'll come in the solution part._
+
+We are now finally in a position to place our bets on the most likely architecture of meta-management, that of _inline meta-management_, incorporating both habitual and rational systems.
+
+diagram: habitual with standard + meta-management intermingled, rational with standard + meta-management intermingled.
+
+# IV.z Distinguishing Meta-management from Standard Control
+Things are getting blurry. At first I claimed that meta-management is something entirely different from standard control. Now I claim that there is no independent meta-management system. And to top it off, I'm also claiming that the same functions and even states associated with standard control can be re-used for meta-management. So is meta-management in any way distinct from standard control?
+
+The answer to that question is nuanced. I believe the best answer is that some aspects of meta-management and standard control differ significantly while others have very close coincidence. Thus I consider them as separate processes that are superimposed and intermingled within the same system.
+
+I will make this case by looking at three aspects that I believe do differ considerably between standard control and meta-management: state representation, pathways, and learning.
+
+## State Representation
+The state of the standard control process, as used as part of its computations for action decision, is considerably different to the state of the standard control process as used for meta-management. The most significant differences are in terms of context. 
+
+Consider the biologically plausible planner introduced earlier. The state that it would hold and use in its computations would be focused on the specific problem at hand at the time, for example:
+- the results of simulated real-world trajectories already attempted
+- factors related to generation of new real-world trajectory simulations yet to be attempted
+- factors helping to decide whether to continue to search for better real-world trajectories or to settle on the current best guess.
+
+In contrast, the state information required for meta-management of that same planner has the planner itself as its target of representation:
+- the computational state trajectory of the control process itself (ie: the three bullet points above, together, form a single point in the computational state trajectory), including how long it has been running for on the current problem
+- the class of problem that the control process is currently operating against
+- modelled information about how effective the control process is against that class of problem
+- indication of whether the control process is currently trending towards finding an effective solution
+- indication of whether the control process appears to be repeating any past observed behaviour that required intervention
+
+Further to that. Meta-management processes can model not just past observed behaviours (of the control process), but expected future behaviours. For example, through teacher instruction and by observation of others, an individual can develop a model of how good they _should be_ at a particular task. This is clear, for example, in students comparing their results on a maths test and in a parent scolding their child for doing badly on said maths test. So the meta-management process not only observes the state of the control process, but generates additional state information in the act of comparing the current behaviour of the control process against past actual behaviours and future possible behaviours.
+
+The distinction is best summed up in colloquial vernacular: that a standard control process represents its state "from the inside", whereas meta-management represents the state of the control process "from the outside".
+
+## Pathways
+For a standard control process, its "state" is just a concept that the scientific community apply against it as a way of understanding its operation. We know that its behaviour for the same input will be different depending on the sequence of past inputs. We explain to ourselves that the process itself must be somehow affected by that sequence of past inputs. And we summarise that as a) the process has a state, and b) the state of the process changes as processing occurs. Importantly, there is nothing said about the representation of that state, nor of the underlying mechanics of how that state is "held".
+
+Our understanding from neuroscience is that state in brains is held in the form of recurrency: results at various layers are fed back as inputs at earlier layers [citation]. That feedback can occur with different lengths, anywhere from each individual neuron holding onto its own state to outputs at the final nodes being fed as inputs into the earliest nodes. Captured in panel A in the diagram below.
+
+![state pathways](files/A-coherent-theory-v1-state-pathways.drawio.png)
+
+* _**State pathways.** A) Short-path and long-path recurrency of immediate state in standard control. B) Long-path recurrency of state plus context in meta-management._
+
+In contrast, meta-management processes require an explicit representation of the control process state. That representation is most likely constructed through a pathway that has the express purpose of generating that very representation from various sources. The sources include some kind of cache or accumulative representation generator of CP state trajectory plus information obtained through comparison with models of past and expected behaviour.
+
+As mentioned earlier, to represent the state held by every neuron within the control process would lead to an infinite regress in the scale of the system.....todo....
+
+
+## Learning
+- learning pressure: standard control representations trained to accurately represent the problem state w.r.t. the mechanisms needed to solve them. Rational control representations trained to represent all of the inner workings with the minimal amount of information needed to attain sufficient stability.
+
+
 
 
 
