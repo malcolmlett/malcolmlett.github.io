@@ -972,10 +972,10 @@ Rational mechanisms of meta-management would leverage all of the modelling and d
 As discussed earlier, rational processes are computationally expensive. To make matters worse, as rational processes seem to be executed in a serial fashion, if an individual is carrying out rational meta-cognitive thought, they are preventing themselves from carrying out rational first-order control. An example of this is when we are doing something that needs constant attention but we become distracted. Our default mode network (DMN), which may be a form of meta-management, takes over our rational processes, leaving our primary task under solely habitual control.
 
 Thus ideally even meta-management would be done through habitual processes wherever possible. This is entirely plausible. Habitual control of meta-management would occur for meta-management tasks that have been sufficiently repeated that they can become automatized. Some examples might include:
-* Generation of frequent feedback, learned from regular use of higher-order models.
-* First-order rational strategy selection, learned from repeated similar decisions
-* Error detection: detecting when habitual first-order control behaviour has resulted in unexpected outcomes that require rational systems to take over in order to correct the situation
-* Learned meta-learning behaviours - for example, as observed by others as an individual's position on the sliding scale of _learning mindset_ to _fixed mindset_.
+* **Generation of frequent feedback.** Learned from regular use of higher-order models.
+* **First-order rational strategy selection.** Learned from repeated similar decisions.
+* **Error detection.** Detecting when habitual first-order control behaviour has resulted in unexpected outcomes that require rational systems to take over in order to correct the situation
+* **Learned meta-learning behaviours.** For example, as observed by others as an individual's position on the sliding scale of _learning mindset_ to _fixed mindset_.
 
 Before I wrap up the discussion of habitual and rational control, I need to be up front about an issue that is emerging with my description of meta-management. The distinction between first-order control and meta-management is getting blurry. At first I claimed that meta-management is something entirely different from first-order control. Then I claimed that rather than being independent, meta-management processing may be performed by the same underlying system that performs first-order processing. I have now elaborated on that by claiming that meta-management makes the same distinction between habitual and rational control. So is meta-management really distinct from first-order control? In order to answer that, we need to look at the details of the representations used and of how they are processed. And in order to do that, I need to first introduce the concept of _semiotics_.
 
