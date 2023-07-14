@@ -934,6 +934,11 @@ Meta-cognition has been variously studied in terms of:
 * theory of mind and its ability to support social cohesion (Carruthers & Williams, 2022; Cleeremens, 2020),
 * and in support of social cooperation by enabling a group to identify the individual who is most certain about some decision point (Cleeremens, 2020; Fleming et al, 2012a; Fleming et al, 2012b; Cleeremans et al, 2007).
 
+This list provides some insight into the kinds of processes that meta-management may be involved in. Meta-management may be involved in observing CP state related to the above meta-cognitive processes, including identification of familiarity, prediction uncertainty and conflicts, current attentional focus, emotional state, and judgements of informational source and form. Meta-management may be involved in meta-cognitive control through various means including control of attention, conflict resolution, and direct manipulation of first-order processing.
+
+We can view meta-management as .....low level....
+
+
 Next steps:
 * why talk about meta-cognition?
     - gives some inspiration for the kinds of things that meta-management might be involved with.
@@ -1056,6 +1061,11 @@ While rational behaviour confers considerable adaptive advantage for novel situa
 Planning through decision tree searches is just one particular _strategy_ that's possible for rational determination of appropriate behaviour. There may be many others. In particular, connectionist learning methods are quite adept at mixing-and-matching different informational sources and control mechanisms. So in addition to the above, I would propose that rational behaviour is also characterised by many different deliberative strategies, and that those strategies are learned through experience and reinforcement.
 
 In the section above I highlighted how the innate and rational systems enable the habitual system to _converge_ towards useful learned responses. To complete the circle, as it were, I wish to briefly mention how the same can occur for the rational system. However I have not studied this at length and so this is just a conjecture. The rational system must surely also need to _learn_ to perform its duties. I have suggested one such learning in the form of strategies, but there may be more. Thus the rational system is likely prone to gross errors in its early development, and perhaps even takes longer to develop than the simpler habitual control system. I suspect that the rational system may be "held to account" by three factors: i) the innate system, which prevents the rational system from sending the individual outside of a safe operating range, ii) developmental processes, that only let the rational system take control once it is ready to do so, and iii) the habitual system, that may develop earlier than the rational system.
+
+## Emotion
+There is another fascinating aspect of control that has for a long time been left on the periphery of studies, but which has more recently gained more traction. Damasio and others are beginning to make strong cases that emotion is a key part of "truly rational" behaviour (Damasio, 1994). Studies are finding that individuals with brain lesions that prevent emotions influence over control struggle to make suitable long-term life choices. It appears that they lack fear of their own loss and suffering and thus cannot "rationally" weigh up options, often choosing short-term wins that have significant long-term deleterious effects.
+
+Damasio's 1994 book _Descartes' error : emotion, reason, and the human brain_ provides an excellent discussion of the importance of emotion in rational decision making, as well as discussions of how cognitive processes, emotion, and body are intertwined. Clearly, a discussion of human behavioural control would not be complete without a discussion of emotions. Unfortunately such a discussion is beyond the scope of the present focus.
 
 ## Habitual and Rational Control operating together
 Daniel Kahneman describes thought as operating within two "systems" or as two modes, namely _System I_ thinking and _System II_ thinking (Kahneman, 2011). System I is rapid and occurs without conscious involvement: a conclusion merely becomes available, apparently without any deliberation. In contrast, System II is explicitly deliberative: with subjective experience of individual steps as thought progresses from problem to solution. System II thought is significantly slower than System I thought. It is no surprise, I think, that the ideas of System I and II thought map conveniently onto the ideas of habitual and rational control, respectively.
@@ -1853,6 +1863,8 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 * Crane, T. (2009). Intentionalism. The Oxford Handbook to the Philosophy of Mind. Oxford: Oxford University Press. pp. 474–93. [Abstract](https://philpapers.org/rec/CRAI-17).
 
 * Cushman, F., Morris, A. (2015). Habitual control of goal selection in humans. Proceedings of the National Academy of Sciences of the United States of America, 112(45), 13817–13822. https://doi.org/10.1073/pnas.1506367112
+
+* Damasio, A.R. (1994). Descartes' error : emotion, reason, and the human brain. New York :G.P. Putnam,
 
 * Daw, N.D., Niv, Y., Dayan, P. (2005). Uncertainty-based competition between prefrontal and dorsolateral striatal systems for behavioural control. Nat. Neurosci. 8, 1704–1711. doi: 10.1038/nn1560
 
