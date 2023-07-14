@@ -813,8 +813,6 @@ Meta-cognition does not have a single agreed definition, but in general covers t
 
 The study of meta-cognition has a particular relevancy to the study of consciousness. Why do we have conscious experiential awareness of our external perceptions? Why do we have conscious experiential awareness of some aspects of our own mind's state (eg: inner thoughts)? Theories attempting to explain the evolutionary advantage of this conscious awareness generally implicate adaptive flexibility. But they often fail to explain precisely what kinds of adaptive flexibility need conscious awareness, and why conscious awareness is needed for those adaptive flexibilities. The study of meta-cognition provides insight because it specifically addresses questions around our ability to know aspects of our own mind's state. Indeed, some have suggested that there is strong link between meta-cognition and consciousness (Fleming et al, 2012a; Koriat, 2007; Nelson, 1996; Snodgrass et al, 2009).
 
-However, meta-cognition studies are embroiled in debate about which lab-observed behaviours are truly meta-cognitive (Fleming et al, 2012a; Winkielman & Schooler, 2011; Koriat, 2007). Many of the claimed behaviours might be explained by unconscious processes. And lab results are hard to interpret. For example, many meta-cognitive studies depend on verbal report, and it is difficult to separate whether an identified brain regions is activated because of its involvement in the original meta-cognition task versus the production of verbal report (Norman, 2020; Turvey & Crowder, 2017). Consequently, some have questioned the link to higher-order processes and consciousness in general, suggesting rather that meta-cognition is itself just part of first-order processes (Rahimian, 2021, Overgaard & Kirkeby-Hinrup, 2021; Cleemans et al, 2021). Thus, a deeper understanding of the low-level mechanisms underlying meta-cognition would help significantly to untangle the confusion.
-
 Meta-cognition has been variously studied in terms of:
 * "feelings of knowing" or "tip of the tongue" situations, where one has a feeling that they know the answer before being able to recall the specifics of the answer itself (Rosenthal, 2012; Shimamura, 2000; Metcalfe & Shimamura, 1994),
 * its contribution to successful learning as a whole (Paris & Winograd, 1990),
@@ -837,69 +835,43 @@ Meta-cognition has been variously studied in terms of:
 * theory of mind and its ability to support social cohesion (Carruthers & Williams, 2022; Cleeremens, 2020),
 * and in support of social cooperation by enabling a group to identify the individual who is most certain about some decision point (Cleeremens, 2020; Fleming et al, 2012a; Fleming et al, 2012b; Cleeremans et al, 2007).
 
-This list provides some insight into the kinds of processes that meta-management may be involved in. Meta-management may be involved in observing CP state related to the above meta-cognitive processes, including identification of familiarity, prediction uncertainty and conflicts, current attentional focus, emotional state, and judgements of informational source and form. Meta-management may be involved in meta-cognitive control through various means including control of attention, conflict resolution, and direct manipulation of first-order processing.
+## Analysis of Meta-cognition
+In discussing meta-cognition together with meta-management, I view the term _meta-management_ as referring to the lower-level architectural and network-level mechanisms that underly the higher-level behavioural forms. And I view _meta-cognition_ as those higher-level behavioural forms. An analysis of the various studies of meta-cognition reveals a few common factors that provide some insight into the lower-level architectural aspects of meta-management. These are summarised in the following diagram and discussed below.
 
-We can view meta-management as .....low level....
-
-
-Next steps:
-* why talk about meta-cognition?
-    - gives some inspiration for the kinds of things that meta-management might be involved with.
-    - I view meta-cognition as the high-level behaviourist view that results from the low-level meta-management architecture.
-    - maybe even convert this from an Interlude to a Problem chapter.
-* meta-representation (Karmiloff-Smith):
-    - leads into the idea that there's a significant difference in representation between first-order and second-order.
-    
 Diagram:
 * top layer    (descriptional): meta-cognition, consciousness (mostly overlapping)
 * middle layer (behavioural): meta-memory, meta-representation, meta-control
-* bottom layer (architectural): meta-management
+* bottom layer (architectural): meta-management (low-level meta-observation mechanisms, low-level meta-control mechanisms)
 
 
+There are four broad _behavioural forms_ of meta-cognition:
+* **Meta-memory.** Meta-cognitive awareness of memory. Memories appear to be encoded or are accessible in at least two forms: one for their specific content, and a second form that identifies meta-data such as source, certainty, and mere familiarity. The second form appears to be used extensively in judgements about memory, including the "tip of the tongue" effect.
+* **Meta-learning.** Individuals can assess their own learning progress. They can use that to make judgements of certainty and to take corrective actions to improve their learning progress.
+* **Meta-representation.** Various aspects of meta-cognition appear to depend on developing new representations about first-order processes. These new representations are assumed to be both a) as a higher-level abstraction than used in first-order processes, and b) _about_ those first-order processes and knowledge, known as _second-order_ or _higher-order_ representations.
+* **Meta-control.** While some aspects of meta-cognition merely enable reporting on first-order processes, others elicit direct control over first-order processes as a result of that meta-cognitive awareness.
 
-Components of Meta-cognition
+Through extensive use of fRMI and comparative studies, meta-cognitive studies are beginning to tentatively identify specific brain regions involved with those different behavioural forms.
 
-todo - Meta-cognition can be viewed as having a few aspects:
-- meta-representation ...explain...
-- meta-control (observation only vs control) ...explain...
-- first-order vs conscious processes ...explain...
+At the architectural level, we can identify some low-level meta-observation mechanisms that play a significant part in meta-cognitive abilities. Including for example:
+* identification of familiarity,
+* identification of prediction uncertainty and conflicts,
+* knowledge of current attentional focus,
+* emotional state,
+* and judgements of informational source and form.
 
-todo - Some running questions have cropped up out of those studies:
-- To what extent does meta-cognition actually need meta-representations? ...examples...
-- To what extent are meta-cognitive processes truly conscious? Or are they just first-orderprocesses that influence verbal report without direct conscious access? ...examples...
-- axis of questions:
-	- with/without meta-representation
-	- first-order only vs higher-order network architectures
-	- extent to which different human meta-cognitive behaviours employ meta-management.
-	- relationship to conscious experience.
-	- caught up in questions about whether consciousness has any functional purpose (Rosenthal, etc)
-    
-## Representation Redescription Theory
-Meta-cognitive studies attempt to divide our cognitive processes into first-order and second-order (Fleming et al, 2012a; Winkielman & Schooler, 2012; Koriat, 2007). First-order _behaviour_ is produced by "mindless" sense-action processes, for example merely repeating learned actions for a given sensory perception. These are the _habitual_, or _automatized_, behaviours. First-order _knowledge_ is gained directly from our experiences. In contrast, second-order knowledge is gained by introspecting our own mental processes - it is knowledge _of_ our mental processes. In addition, the cognitive processes that result from such second-order knowledge are generally considered to be both _rational_ and _conscious_.
+Additionally, we can identify some low-level meta-control mechanisms, including for example:
+* control of attention,
+* conflict resolution,
+* and apparent direct manipulation of first-order processing.
 
-As stated before, it is very hard in meta-cognitive studies to identify whether a given behaviour is driven by first-order or second-order processes. Many of the debates revolve around trying to correlate identified behaviours with whether they were produced habitually or not. In fact, I suspect many of the debates are missing a more subtle nuance: that "first-order versus second-order" orthogonal to "habitual versus rational".
+## First-order vs Conscious
+Meta-cognitive studies attempt to divide our cognitive processes into _first-order_ and _second-order_ (Fleming et al, 2012a; Winkielman & Schooler, 2012; Koriat, 2007). First-order _behaviour_ is considered to be produced by "mindless" sense-action processes, for example merely repeating learned actions for a given sensory perception. These are the _habitual_ or _automatized_ behaviours. Likewise, first-order _knowledge_ is gained directly from our experiences, particularly from our perceptions. In contrast, second-order knowledge is considered to be gained by introspecting our own mental processes - it is knowledge _of_ our mental processes. In addition, it is common in meta-cognitive studies to tie second-order knowledge to both _rational_ cognition and to _consciousness_.
 
-It is well understood that most action is habitual. The nature of habitual actions is that they have been repeated often enough that we have become proficient in them and don't need to actively control their progress - they are automatized. This is well accepted for outwardly visible behaviour. Likewise it occurs with our mental processes - after sufficient practice on some class of problems we can automatically solve it without "working it out". This should be just as possible for second-order assessments of our mental processes. But if that is the case, how do we understand the relationship between habitual/rational and first-order/second-order?
+In practice, however, it is difficult to distinguish whether a given behaviour is truly meta-cognitive (Fleming et al, 2012a; Winkielman & Schooler, 2011; Koriat, 2007). Many of the claimed second-order behaviours might be explained by unconscious first-order processes. Lab results are hard to interpret. For example, many meta-cognitive studies depend on verbal report, and it is difficult to separate whether an identified brain region is activated because of its involvement in the original meta-cognition task or from the separate production of verbal report subsequent to the meta-cognitive task (Norman, 2020; Turvey & Crowder, 2017). Consequently, some have questioned the link to higher-order processes and consciousness in general, suggesting rather that meta-cognition is itself just part of first-order processes (Rahimian, 2021, Overgaard & Kirkeby-Hinrup, 2021; Cleemans et al, 2021).
 
-One explanation is provided by the theory of _Representation Redescription_ (RR) (Karmiloff-Smith, 1992 & 1994; Clark & Karmiloff-Smith, 1993) and by a later extension known as the _Radical Plasticity Theory_ of consciousness (Cleeramans, 2007; Cleeramans, et al 2007; Pasquali et al, 2010; Timmermans et al 2012; Cleeremans et al, 2020). RR proposes that the brain develops multiple representations for the same domain. It looks at the development process of an individual from infant, and sees the first representation as habitual in nature. The literature uses the term _implicit_, which is meant to signify a particular observation about the nature of first-order connectionist architectures. A simple connectionist architecture (predictive or not) encodes a mapping from sense plus state to action. The mapping is learned from multiple examples, with each repeated exposure subtly modifying connection weights. The behaviour that the mapping produces is _emergent_, resulting from the interactions of all those many connection weights. Importantly, the details of that mapping are hidden to every part of the system. Even the particular sub-system that encodes a particular mapping cannot identify the rules that it encodes. Thus a first-order network encodes "knowledge _in_ the system", but it does not make it available as "knowledge _to_ the system" (Clark & Karmiloff-Smith, 1993, p495).
+A deeper understanding of the low-level mechanisms underlying meta-cognition would help significantly to untangle the confusion. For example, many of the debates revolve around trying to correlate identified behaviours with whether they were produced habitually or through rational control. I suspect many of the debates are missing a more subtle nuance: that "first-order versus second-order" may be orthogonal to "habitual versus rational". This is a point to which we will return, but first we need to look a little deeper at habitual, rational, and other modes of control.
 
-That is contrasted with an _explicit_ representation that captures the individual parts of the causal chain from input to action. Where implicit representations _compute_ an action for a given input, explicit representations _model_ causal relations and as such can be queried and manipulated: "No system in which rules are always merely implicit and emergent can, in our view, exhibit the kinds of higher order flexibility and creativity found in humans. Only explicit rules have the genuine, systematically manipulable components that make radical flexibility possible." (Clark & Karmiloff-Smith, 1993, p504). RR proposes that implicit knowledge is _re-described_ into an explicit representation through an offline process. Subsequently, habitual behaviour continues to be driven by the original implicit representation, but rational cognitive processes can make use of the explicit representation. Explicit representations may be formed that directly cover some particular habitual domain, or may integrate across multiple domains. In that way, rational cognition is able to identify and use associations across different domains and time-scales. Importantly, it is able to do all that independently from actioning the behaviour that the original implicit representations encoded.
-
-RR does not attempt to explain the underlying details of how redescription takes place. The Radical Plasticity Theory (RPT) of consciousness proposes a predictive mechanism, whereby one system in the brain learns to predict the behaviour of another and in so doing builds up a representation of that other systems behaviour. Clearly, in order to observe and predict the behaviour of a first-order system, a second-order process must occur. RPT takes this one step further to claim that consciousness itself is a second-order process that we learn to do.
-
-There are two important points to make here about the predictive mechanism. Firstly, every representation encodes information about a given domain in a certain way that is applicable for the way in which that representation will be used, or in other words, according to its _purpose_. The process that attempts to predict internal behaviours would almost certainly have a different underlying purpose, and thus would produce a representation that captures a different aspect of the same domain. Secondly, we should not assume that the _form_ of representation would be the same either. As we have already said, a first-order connectionist representation is _implicit_. Many predictive networks may also be inherently _implicit_ in their representation. In contrast, the assumption here is that redescribed representations are _explicit_, and thus capture the _causal structure_ of the domain.
-
-## Architectures of Redescription
-..todo..
-
-There is one last lesson that I want to bring out from the work on RR and RPT. ext....the authors of RPT obtained empirical evidence through toy simulations of different architectures........that showed that the hierarchical architecture performed best. This is in line with the idea that a meta-management feedback loop could be used to monitor cognitive processes.
-
-[diagram]
-
-
-
-# IV.3 Deeper Dive into Control Process Learning
-
+# IV.3 Modes of Behavioural Control
 By the end of Part III it was clear that complex multi-iteration control processes require meta-management, and we were able to identify some possible architectures that capture the interaction between control processes and meta-management, but we are left with an outstanding question: how do we identify which meta-management architecture is more likely in humans? The question is important to our end goal because, as will be seen, the answer impacts our ability to explain subjective experience.
 
 To my knowledge, there is no research investigating the relative merits of the proposed possible meta-management architectures within the context of connectionist computational architectures. At this stage, drawing any conclusions from the empirical evidence of neuroscientific data is fraught [citations for general problems of conclusions from fRMI data, or the history of mistakes?]. Thus we are left to postulate based on theoretical analysis._
@@ -1257,6 +1229,28 @@ The last key message I want to draw out here is that a given thought only exists
 "But what about memory?", I hear you say. Indeed, through mechanisms that we are only beginning to understand, individual neurons do hold temporary state [citation] that modifies their behaviour [citations]. So interpreters could "hold onto" the thought representations that they receive or produce. Likewise, we easily recall past thoughts, indicating that they are somehow recorded within our episodic memory. However, the point I wish to make is that these representations are not "thought" while they are stationary. It is only through re-interpretation that they become thought.
 
 The argument here may seem somewhat tautological to some (thought only exists while thought exists), but the message is more fundamental: that thought only exists as a fleeting interaction between representation and interpretation and that a given thought collapses (ceases to exist as a thought) when that cyclic interaction ends or changes topic. This argument will make more sense when used in the discussion of subjective experience that follows in the next part.
+
+# IV. x Representations
+
+## Representation Redescription Theory
+....intro...
+
+One explanation is provided by the theory of _Representation Redescription_ (RR) (Karmiloff-Smith, 1992 & 1994; Clark & Karmiloff-Smith, 1993) and by a later extension known as the _Radical Plasticity Theory_ of consciousness (Cleeramans, 2007; Cleeramans, et al 2007; Pasquali et al, 2010; Timmermans et al 2012; Cleeremans et al, 2020). RR proposes that the brain develops multiple representations for the same domain. It looks at the development process of an individual from infant, and sees the first representation as habitual in nature. The literature uses the term _implicit_, which is meant to signify a particular observation about the nature of first-order connectionist architectures. A simple connectionist architecture (predictive or not) encodes a mapping from sense plus state to action. The mapping is learned from multiple examples, with each repeated exposure subtly modifying connection weights. The behaviour that the mapping produces is _emergent_, resulting from the interactions of all those many connection weights. Importantly, the details of that mapping are hidden to every part of the system. Even the particular sub-system that encodes a particular mapping cannot identify the rules that it encodes. Thus a first-order network encodes "knowledge _in_ the system", but it does not make it available as "knowledge _to_ the system" (Clark & Karmiloff-Smith, 1993, p495).
+
+That is contrasted with an _explicit_ representation that captures the individual parts of the causal chain from input to action. Where implicit representations _compute_ an action for a given input, explicit representations _model_ causal relations and as such can be queried and manipulated: "No system in which rules are always merely implicit and emergent can, in our view, exhibit the kinds of higher order flexibility and creativity found in humans. Only explicit rules have the genuine, systematically manipulable components that make radical flexibility possible." (Clark & Karmiloff-Smith, 1993, p504). RR proposes that implicit knowledge is _re-described_ into an explicit representation through an offline process. Subsequently, habitual behaviour continues to be driven by the original implicit representation, but rational cognitive processes can make use of the explicit representation. Explicit representations may be formed that directly cover some particular habitual domain, or may integrate across multiple domains. In that way, rational cognition is able to identify and use associations across different domains and time-scales. Importantly, it is able to do all that independently from actioning the behaviour that the original implicit representations encoded.
+
+RR does not attempt to explain the underlying details of how redescription takes place. The Radical Plasticity Theory (RPT) of consciousness proposes a predictive mechanism, whereby one system in the brain learns to predict the behaviour of another and in so doing builds up a representation of that other systems behaviour. Clearly, in order to observe and predict the behaviour of a first-order system, a second-order process must occur. RPT takes this one step further to claim that consciousness itself is a second-order process that we learn to do.
+
+There are two important points to make here about the predictive mechanism. Firstly, every representation encodes information about a given domain in a certain way that is applicable for the way in which that representation will be used, or in other words, according to its _purpose_. The process that attempts to predict internal behaviours would almost certainly have a different underlying purpose, and thus would produce a representation that captures a different aspect of the same domain. Secondly, we should not assume that the _form_ of representation would be the same either. As we have already said, a first-order connectionist representation is _implicit_. Many predictive networks may also be inherently _implicit_ in their representation. In contrast, the assumption here is that redescribed representations are _explicit_, and thus capture the _causal structure_ of the domain.
+
+## Architectures of Redescription
+..todo..
+
+There is one last lesson that I want to bring out from the work on RR and RPT. ext....the authors of RPT obtained empirical evidence through toy simulations of different architectures........that showed that the hierarchical architecture performed best. This is in line with the idea that a meta-management feedback loop could be used to monitor cognitive processes.
+
+[diagram]
+
+
 
 ---
 
