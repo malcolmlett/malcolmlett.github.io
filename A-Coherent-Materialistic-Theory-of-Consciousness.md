@@ -1194,23 +1194,8 @@ Another aspect that I believe is shared between first-order control and meta-man
 ## Differences between first-order processes and meta-management
 One key difference between first-order processes and meta-management has been identified as the representations used by these respective processes. First-order processes use representations that focus on the immediate task at hand. Meta-management uses representations about the first-order processes themselves.
 
-...pathawys...
+Other likely areas in which they differ include the _pathways_ taken for such processing, and associated _learning_ mechanisms. Meta-management requires two key differences in pathway from first-order processes: i) it needs to observe and model behaviours over a longer period of time than for first-order control, and ii) it requires a higher-level abstraction in order to avoid an infinite regress on the neural count. This is encapsulated in the idea of a meta-management feedback-loop. Likewise, within a reinforcement learning paradigm, meta-management needs different reinforcement signals; though a detailed discussion is beyond a scope of this article.
 
-...learning...
-
-## Summary of Meta-management Architecture
-_todo: avoid temptation to relate this back to subjective experience. That'll come in the solution part._
-
-We are now finally in a position to place our bets on the most likely architecture of meta-management, that of _inline meta-management_, incorporating both habitual and rational systems.
-
-diagram: habitual with standard + meta-management intermingled, rational with standard + meta-management intermingled.
-
-# IV.z Distinguishing Meta-management from Standard Control
-Things are getting blurry. At first I claimed that meta-management is something entirely different from standard control. Now I claim that there is no independent meta-management system. And to top it off, I'm also claiming that the same functions and even states associated with standard control can be re-used for meta-management. So is meta-management in any way distinct from standard control?
-
-The answer to that question is nuanced. I believe the best answer is that some aspects of meta-management and standard control differ significantly while others have very close coincidence. Thus I consider them as separate processes that are superimposed and intermingled within the same system.
-
-I will make this case by looking at three aspects that I believe do differ considerably between standard control and meta-management: state representation, pathways, and learning.
 
 ## Pathways
 For a standard control process, its "state" is just a concept that the scientific community apply against it as a way of understanding its operation. We know that its behaviour for the same input will be different depending on the sequence of past inputs. We explain to ourselves that the process itself must be somehow affected by that sequence of past inputs. And we summarise that as a) the process has a state, and b) the state of the process changes as processing occurs. Importantly, there is nothing said about the representation of that state, nor of the underlying mechanics of how that state is "held".
@@ -1225,12 +1210,15 @@ In contrast, meta-management processes require an explicit representation of the
 
 As mentioned earlier, to represent the state held by every neuron within the control process would lead to an infinite regress in the scale of the system.....todo....
 
-
 ## Learning
 - learning pressure: standard control representations trained to accurately represent the problem state w.r.t. the mechanisms needed to solve them. Rational control representations trained to represent all of the inner workings with the minimal amount of information needed to attain sufficient stability.
 
+## Summary of Meta-management Architecture
+_todo: avoid temptation to relate this back to subjective experience. That'll come in the solution part._
 
+We are now finally in a position to place our bets on the most likely architecture of meta-management, that of _inline meta-management_, incorporating both habitual and rational systems.
 
+diagram: habitual with standard + meta-management intermingled, rational with standard + meta-management intermingled.
 
 
 ---
