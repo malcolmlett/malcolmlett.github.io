@@ -812,8 +812,6 @@ One recurring question in research on consciousness in general, and on subjectiv
 
 Meta-cognition does not have a single agreed definition, but in general covers the ability for an individual to _examine_ their own knowledge, memories, and physical and mental abilities; to _respond_ to that information in some way, such as to act to improve their knowledge or abilities; and to _report_ on that information (Winkielman & Schooler, 2012; Fleming at al, 2012; Koriat, 2007). Meta-cognition is sometimes paraphrased as "knowledge about knowledge" (Karmiloff-Smith, 2012), "behaviour about behaviour" (Koriat, 2007), or "cognition about cognition" (Fleming et al, 2012a; Timmermans et al, 2012). Meta-cognition "adds flexibility to cognitive processes, making them less dependent on external cues" (Fernandez-Duque et al, 2000, p. 289).
 
-The study of meta-cognition has a particular relevancy to the study of consciousness. Why do we have conscious experiential awareness of our external perceptions? Why do we have conscious experiential awareness of some aspects of our own mind's state (eg: inner thoughts)? Theories attempting to explain the evolutionary advantage of this conscious awareness generally implicate adaptive flexibility. But they often fail to explain precisely what kinds of adaptive flexibility need conscious awareness, and why conscious awareness is needed for those adaptive flexibilities. The study of meta-cognition provides insight because it specifically addresses questions around our ability to know aspects of our own mind's state. Indeed, some have suggested that there is strong link between meta-cognition and consciousness (Fleming et al, 2012a; Koriat, 2007; Nelson, 1996; Snodgrass et al, 2009).
-
 Meta-cognition has been variously studied in terms of:
 * "feelings of knowing" or "tip of the tongue" situations, where one has a feeling that they know the answer before being able to recall the specifics of the answer itself (Rosenthal, 2012; Shimamura, 2000; Metcalfe & Shimamura, 1994),
 * its contribution to successful learning as a whole (Paris & Winograd, 1990),
@@ -839,11 +837,9 @@ Meta-cognition has been variously studied in terms of:
 ## Analysis of Meta-cognition
 In discussing meta-cognition together with meta-management, I view the term _meta-management_ as referring to the lower-level architectural and network-level mechanisms that underly the higher-level behavioural forms. And I view _meta-cognition_ as those higher-level behavioural forms. An analysis of the various studies of meta-cognition reveals a few common factors that provide some insight into the lower-level architectural aspects of meta-management. These are summarised in the following diagram and discussed below.
 
-Diagram:
-* top layer    (descriptional): meta-cognition, consciousness (mostly overlapping)
-* middle layer (behavioural): meta-memory, meta-representation, meta-control
-* bottom layer (architectural): meta-management (low-level meta-observation mechanisms, low-level meta-control mechanisms)
+![Layers of Meta-cognition](files/A-coherent-theory-v1-meta-cognition.drawio.png)
 
+* _**Layers of Meta-cognition.** At a level of scientific description, meta-cognition and consciousness are presumed to closely coincide, although there may be some exceptions. At a behavioural level, meta-cognition consists of meta-memory, meta-learning, meta-representations, and meta-control. In contrast, the term "meta-management" is used to refer to the low-level architectural mechanisms underlying those behaviours, which is made up of low-level mechanisms of meta-observation and meta-control.
 
 There are four broad _behavioural forms_ of meta-cognition:
 * **Meta-memory.** Meta-cognitive awareness of memory. Memories appear to be encoded or are accessible in at least two forms: one for their specific content, and a second form that identifies meta-data such as source, certainty, and mere familiarity. The second form appears to be used extensively in judgements about memory, including the "tip of the tongue" effect.
@@ -851,7 +847,7 @@ There are four broad _behavioural forms_ of meta-cognition:
 * **Meta-representation.** Various aspects of meta-cognition appear to depend on developing new representations about first-order processes. These new representations are assumed to be both a) as a higher-level abstraction than used in first-order processes, and b) _about_ those first-order processes and knowledge, known as _second-order_ or _higher-order_ representations.
 * **Meta-control.** While some aspects of meta-cognition merely enable reporting on first-order processes, others elicit direct control over first-order processes as a result of that meta-cognitive awareness.
 
-Through extensive use of fRMI and comparative studies, meta-cognitive studies are beginning to tentatively identify specific brain regions involved with those different behavioural forms.
+Through extensive use of fRMI and comparative studies, meta-cognitive studies are beginning to tentatively identify specific brain regions involved with those different behavioural forms. The reader is encouraged to review the papers referenced in the prior section for details.
 
 At the architectural level, we can identify some low-level meta-observation mechanisms that play a significant part in meta-cognitive abilities. Including for example:
 * identification of familiarity,
@@ -866,24 +862,18 @@ Additionally, we can identify some low-level meta-control mechanisms, including 
 * and apparent direct manipulation of first-order processing.
 
 ## First-order vs Conscious
-Meta-cognitive studies attempt to divide our cognitive processes into _first-order_ and _second-order_ (Fleming et al, 2012a; Winkielman & Schooler, 2012; Koriat, 2007). First-order _behaviour_ is considered to be produced by "mindless" sense-action processes, for example merely repeating learned actions for a given sensory perception. These are the _habitual_ or _automatized_ behaviours. Likewise, first-order _knowledge_ is gained directly from our experiences, particularly from our perceptions. In contrast, second-order knowledge is considered to be gained by introspecting our own mental processes - it is knowledge _of_ our mental processes. In addition, it is common in meta-cognitive studies to tie second-order knowledge to both _rational_ cognition and to _consciousness_.
+Meta-cognitive studies attempt to divide our cognitive processes into _first-order_ and _second-order_ (Fleming et al, 2012a; Winkielman & Schooler, 2012; Koriat, 2007). First-order _behaviour_ is considered to be produced by "mindless" sense-action processes, for example merely repeating learned actions for a given sensory perception. These are the _habitual_ or _automatized_ behaviours. Likewise, first-order _knowledge_ is gained directly from our experiences, particularly from our perceptions. In contrast, second-order knowledge is considered to be gained by introspecting our own mental processes - it is knowledge _of_ our mental processes. In addition, it is common in meta-cognitive studies to tie second-order knowledge to both _rational_ cognition and to _consciousness_ (Fleming et al, 2012a; Koriat, 2007; Nelson, 1996; Snodgrass et al, 2009).
 
 In practice, however, it is difficult to distinguish whether a given behaviour is truly meta-cognitive (Fleming et al, 2012a; Winkielman & Schooler, 2011; Koriat, 2007). Many of the claimed second-order behaviours might be explained by unconscious first-order processes. Lab results are hard to interpret. For example, many meta-cognitive studies depend on verbal report, and it is difficult to separate whether an identified brain region is activated because of its involvement in the original meta-cognition task or from the separate production of verbal report subsequent to the meta-cognitive task (Norman, 2020; Turvey & Crowder, 2017). Consequently, some have questioned the link to higher-order processes and consciousness in general, suggesting rather that meta-cognition is itself just part of first-order processes (Rahimian, 2021, Overgaard & Kirkeby-Hinrup, 2021; Cleemans et al, 2021).
 
 A deeper understanding of the low-level mechanisms underlying meta-cognition would help significantly to untangle the confusion. For example, many of the debates revolve around trying to correlate identified behaviours with whether they were produced habitually or through rational control. I suspect many of the debates are missing a more subtle nuance: that "first-order versus second-order" may be orthogonal to "habitual versus rational". This is a point to which we will return, but first we need to look a little deeper at habitual, rational, and other modes of control.
 
-# IV.3 Modes of Behavioural Control
-..todo..clean up.
+# IV.3 Systems of Behavioural Control
+By the end of Part III it was clear that complex multi-iteration control processes require meta-management, and we were able to identify some possible architectures that capture the interaction between control processes and meta-management, but we are left with an outstanding question: how do we identify which meta-management architecture is more likely in humans? The question is important to our end goal because it impacts our ability to explain subjective experience. To my knowledge, there is no research investigating the relative merits of the proposed possible meta-management architectures within the context of connectionist computational architectures. Thus we are left to postulate based on a theoretical analysis.
 
-why: which MM architecture:
-* By the end of Part III it was clear that complex multi-iteration control processes require meta-management, and we were able to identify some possible architectures that capture the interaction between control processes and meta-management, but we are left with an outstanding question: how do we identify which meta-management architecture is more likely in humans? The question is important to our end goal because, as will be seen, the answer impacts our ability to explain subjective experience.
-* To my knowledge, there is no research investigating the relative merits of the proposed possible meta-management architectures within the context of connectionist computational architectures. At this stage, drawing any conclusions from the empirical evidence of neuroscientific data is fraught [citations for general problems of conclusions from fRMI data, or the history of mistakes?]. Thus we are left to postulate based on theoretical analysis._
+The controversies surrounding meta-cognition research stems from one problem: that it's not just one system that controls meta-cognitive processes. The meta-cognitive research discussed above generally acknowledge two systems: first-order non-conscious processes and high-order conscious processes. Debates about whether a behaviour is meta-cognitive or not hangs on an assumption that only conscious processes can be classified as meta-cognitive. We can avoid getting caught up in such debates when we acknowledge that all behaviour is an outcome of interactions between all systems. What we need to investigate is what those systems are, their underlying mechanisms, and how they interact to produce that behaviour.
 
-why: confusions:
-* The controversies surrounding meta-cognition research stems from one problem: that it's not just one system that controls meta-cognitive processes. The meta-cognitive research discussed above generally acknowledge two systems: first-order non-conscious processes and high-order conscious processes. Debates about whether a behaviour is meta-cognitive or not hangs on an assumption that only conscious processes can be classified as meta-cognitive. We can avoid getting caught up in such debates when we acknowledge that all behaviour is an outcome of interactions between all systems. What we need to investigate is what those systems are, their underlying mechanisms, and how they interact to produce that behaviour.
-
-why: developmental perspective:
-* To help alleviate some of these confusions, we can examine behavioural control from a developmental perspective.
+To help alleviate some of these confusions, we can examine behavioural control from a developmental perspective.
 
 ![three systems of control](files/A-coherent-theory-v1-bio-3-systems.drawio.png)
 
@@ -892,7 +882,9 @@ why: developmental perspective:
 The literature in behavioural science identifies three broad categories of behaviour, delineated by presumed differences in underlying control mechanisms: innate, habitual, and rational. Innate behaviour is predetermined through our genetics and is characterised by a (semi-)fixed response to stimulus irrespective of goal. Habitual behaviour is characterised by _automatized_ stimulus-response associations. Rational behaviour is characterised by considered stimulus-goal-action associations. As will be seen, these three systems of behaviour follow a path of evolutionary development that combines their respective strengths and weaknesses: speed of adaptation, accuracy, the resources required for computing control, and whether they are modulated by current goals.
 
 ## Innate behaviour
-...todo: diagram...
+![innate control](files/A-coherent-theory-v1-innate-std-mgmt.drawio.png)
+
+* _**Innate System.** Evolutionarily pre-determined (unconditioned) responses are produced for certain stimulus. Some adaptability is possible with the same reflex response being associated with (conditioned against) other stimuli._
 
 Often referred to as _Pavlovian_ behaviour in the literature (Dayan, 2008), innate behaviour has two forms: unconditioned responses and conditioned responses. Unconditioned responses encompass inborn, inflexible and genetically pre-determined _reflexes_ (Dayan, 2008; Dolan & Dayan, 2013; Gęsiarz & Crockett, 2015) that often cannot be consciously overridden. For example the knee-jerk reflex, salivating at the recognition of food, thermo-regulation, heart-rate, and the fight-or-flight response to danger. Innate behaviour is considered to arise because it was significant in our evolutionary history (Dayan, 2008; Gęsiarz & Crockett, 2015). In that sense it can be seen as providing the basic life-sustaining backbone of behaviour upon which all the rest of our behaviour is built.
 
@@ -1624,6 +1616,10 @@ In summary, for many cases observations and their SES are not the cause of the t
 If we pick (somewhat arbitrarily) that the construction of an SES is the closest concrete thing we can attribute to subjective experience, then we can say that subjective experience is a mixture of causal and non-causal natures in the exact ways as described in the prior paragraph, except for the last sentence. 
 
 With respect to the last sentence, whether you can have entirely non-causal subjective experiences is another example of the problem of defining the mapping from our concept of subjective experience to the concrete mechanisms surrounding observation and SES. I would argue that, by definition, subjective experience only exists if the individual is aware that it existed, otherwise it was not subjective experience in the first place. And I would argue that this awareness occurs in the form of the underlying SES having a causal effect on some further result. But this is not the only way of defining subjective experience and not the only way to map from it to the mechanisms explained here. So I will leave any further discussion of whether there exists entirely non-causal subjective experience as a matter of definitional opinion and metaphysical debate.
+
+# Summary
+
+...todo...
 
 
 # References
