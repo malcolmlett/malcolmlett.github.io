@@ -1099,28 +1099,15 @@ From the discussion on semiotics we see that representations must always be inte
 In this chapter we shall look at some specific examples of the ways in which different representations can be produced about the same domain. Finally from here the differences between first-order and meta-management processes will become clear.
 
 ## Representation Redescription Theory
-....intro...
-
-One explanation is provided by the theory of _Representation Redescription_ (RR) (Karmiloff-Smith, 1992 & 1994; Clark & Karmiloff-Smith, 1993) and by a later extension known as the _Radical Plasticity Theory_ of consciousness (Cleeramans, 2007; Cleeramans, et al 2007; Pasquali et al, 2010; Timmermans et al 2012; Cleeremans et al, 2020). RR proposes that the brain develops multiple representations for the same domain. It looks at the development process of an individual from infant, and sees the first representation as habitual in nature. The literature uses the term _implicit_, which is meant to signify a particular observation about the nature of first-order connectionist architectures. A simple connectionist architecture (predictive or not) encodes a mapping from sense plus state to action. The mapping is learned from multiple examples, with each repeated exposure subtly modifying connection weights. The behaviour that the mapping produces is _emergent_, resulting from the interactions of all those many connection weights. Importantly, the details of that mapping are hidden to every part of the system. Even the particular sub-system that encodes a particular mapping cannot identify the rules that it encodes. Thus a first-order network encodes "knowledge _in_ the system", but it does not make it available as "knowledge _to_ the system" (Clark & Karmiloff-Smith, 1993, p495).
+The theory of _Representation Redescription_ (RR) proposes that the brain develops multiple representations for the same domain (Karmiloff-Smith, 1992 & 1994; Clark & Karmiloff-Smith, 1993). It looks at the development process of an individual from infant, and sees the first representation as habitual in nature. The literature uses the term _implicit_, which is meant to signify a particular observation about the nature of first-order connectionist architectures. A simple connectionist architecture (predictive or not) encodes a mapping from sense plus state to action. The mapping is learned from multiple examples, with each repeated exposure subtly modifying connection weights. The behaviour that the mapping produces is _emergent_, resulting from the interactions of all those many connection weights. Importantly, the details of that mapping are hidden to every part of the system. Even the particular sub-system that encodes a particular mapping cannot identify the rules that it encodes. Thus a first-order network encodes "knowledge _in_ the system", but it does not make it available as "knowledge _to_ the system" (Clark & Karmiloff-Smith, 1993, p495).
 
 That is contrasted with an _explicit_ representation that captures the individual parts of the causal chain from input to action. Where implicit representations _compute_ an action for a given input, explicit representations _model_ causal relations and as such can be queried and manipulated: "No system in which rules are always merely implicit and emergent can, in our view, exhibit the kinds of higher order flexibility and creativity found in humans. Only explicit rules have the genuine, systematically manipulable components that make radical flexibility possible." (Clark & Karmiloff-Smith, 1993, p504). RR proposes that implicit knowledge is _re-described_ into an explicit representation through an offline process. Subsequently, habitual behaviour continues to be driven by the original implicit representation, but rational cognitive processes can make use of the explicit representation. Explicit representations may be formed that directly cover some particular habitual domain, or may integrate across multiple domains. In that way, rational cognition is able to identify and use associations across different domains and time-scales. Importantly, it is able to do all that independently from actioning the behaviour that the original implicit representations encoded.
 
-RR does not attempt to explain the underlying details of how redescription takes place. The Radical Plasticity Theory (RPT) of consciousness proposes a predictive mechanism, whereby one system in the brain learns to predict the behaviour of another and in so doing builds up a representation of that other systems behaviour. Clearly, in order to observe and predict the behaviour of a first-order system, a second-order process must occur. RPT takes this one step further to claim that consciousness itself is a second-order process that we learn to do.
+RR does not attempt to explain the underlying details of how redescription takes place. The _Radical Plasticity Theory_ of consciousness (RPT) of consciousness proposes a predictive mechanism, whereby one system in the brain learns to predict the behaviour of another and in so doing builds up a representation of that other systems behaviour (Cleeramans, 2007; Cleeramans, et al 2007; Pasquali et al, 2010; Timmermans et al 2012; Cleeremans et al, 2020). Clearly, in order to observe and predict the behaviour of a first-order system, a second-order process must occur. RPT even takes this one step further to claim that consciousness itself is a second-order process that we learn to do.
 
 There are two important points to make here about the predictive mechanism. Firstly, every representation encodes information about a given domain in a certain way that is applicable for the way in which that representation will be used, or in other words, according to its _purpose_. The process that attempts to predict internal behaviours would almost certainly have a different underlying purpose, and thus would produce a representation that captures a different aspect of the same domain. Secondly, we should not assume that the _form_ of representation would be the same either. As we have already said, a first-order connectionist representation is _implicit_. Many predictive networks may also be inherently _implicit_ in their representation. In contrast, the assumption here is that redescribed representations are _explicit_, and thus capture the _causal structure_ of the domain.
 
-...SDT proof that the representations much be different....
-
-## Architectures of Redescription
-..todo..
-
-There is one last lesson that I want to bring out from the work on RR and RPT. ext....the authors of RPT obtained empirical evidence through toy simulations of different architectures........that showed that the hierarchical architecture performed best. This is in line with the idea that a meta-management feedback loop could be used to monitor cognitive processes.
-
-[diagram]
-
 ## Semiotic Analysis of Control Processes
-...todo...better intro....
-
 I shall now return to the question of control processes and meta-management, by examining them in terms of semiotics. I shall present three examples of processing, and in so doing we will see that their objects, representations, and interpretations have some important differences:
 * first-order body action control
 * task-focused CP state trajectory meta-control
@@ -1175,15 +1162,6 @@ The meta-management process infers what it can about the object through the repr
 
 
 # IV.7 Review of Meta-management
-points:
-* domain knowledge, complex, lots of neural mass
-* domain knowledge at time of meta-management same as domain knowledge in effect within CP at that time, so if there is any mechanism that "loads" domain knowledge in order to hold it is context during execution, then that same domain knowledge may be at play in both systems.
-* rational system can model outside world concerns; can also model internal concerns, such as needed for meta-mgmt
-* some components of rational system are probably implemented through habitual mechanisms
-* conclusion: inline meta-management with meta-management feedback loop
-* what exactly does it incorporate?
-    - ......have I repeated that already?
-	
 To wrap up this part I shall briefly lay out the salient points that have been made about the architecture and processes of meta-management. I shall also present some final points that I have not found a better way to introduce earlier.
 	
 ## Similarities between first-order processes and meta-management
@@ -1196,12 +1174,14 @@ One key difference between first-order processes and meta-management has been id
 
 Other likely areas in which they differ include the _pathways_ taken for such processing, and associated _learning_ mechanisms. Meta-management requires two key differences in pathway from first-order processes: i) it needs to observe and model behaviours over a longer period of time than for first-order control, and ii) it requires a higher-level abstraction in order to avoid an infinite regress on the neural count. This is encapsulated in the idea of a meta-management feedback-loop. Likewise, within a reinforcement learning paradigm, meta-management needs different reinforcement signals; though a detailed discussion is beyond a scope of this article.
 
-## Summary of Meta-management Architecture
-_todo: avoid temptation to relate this back to subjective experience. That'll come in the solution part._
-
+## Meta-management Architecture
 We are now finally in a position to place our bets on the most likely architecture of meta-management, that of _inline meta-management_, incorporating both habitual and rational systems.
 
-diagram: habitual with standard + meta-management intermingled, rational with standard + meta-management intermingled.
+This stands from i) the evolutionary need to avoid duplicating the complexity of rational control systems, ii) the benefit in sharing domain knowledge, and iii) anecdotal evidence that we can freely switch between consciously considering a task at hand and consciously thinking about our own awareness.
+
+But that is not the all of it. We started with the suggestion that complex systems require explicit meta-management and then took ourselves on a journey to investigate the component parts of that meta-management system. By the end of our journey we have identified that key first-order systems equally play a part in meta-management. While we have identified some differences in terms of representations, pathways, and learning pressures, these differences are not necessarily are more fundamental than the differences required to cope with different sensory modalities and different problem domains as part of first-order control. Innate, habitual, and rational control systems already incorporate many different representations, explicit models, pathways and learning pressures.
+
+We are thus at a point where a re-description of meta-management is warranted. Meta-management is an emergent phenomena, evolutionarily enabled by one key modification: the addition of a meta-management feedback-loop. Everything else being equal, with that one adjustment the same habitual and rational systems that provide automatized and deliberative first-order control can perform automatized and deliberative meta-cognitive management of their own processes. While there are differences in representation and modelling, those can easily be incorporated. There are also differences in reinforcement learning pressures, but these are likely bootstrapped by the same innate feedbacks: pain, pleasure, hunger, satiation, time cost, energy consumption, etc. In practice, rational control and meta-management likely evolved together, developing all of these representations and innate feedbacks in conjunction.
 
 
 ---
