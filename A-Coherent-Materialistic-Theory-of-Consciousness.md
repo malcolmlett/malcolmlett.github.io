@@ -771,15 +771,22 @@ Like many others, I focus on humans in order to avoid the ambiguity and uncertai
 Now that this article is focused on biology, and humans in particular, the reader will also notice that some of the terminology shifts to be more human-centric. One such shift, with a happy coincidence, is that the abbreviation CP will now be used interchangeably to stand for both _Control Process_ and _Cognitive Process_ - because a cognitive process is just a computational-style of control process, implemented upon a substrate of wet biological neurons.
 
 
-# IV.1 Interlude: Embodiment
+# IV.1 Embodiment
+
+To fully capture all the ways in which cognitive processes are involved to sustain life would require a considerable review well beyond the scope of this article. In particular, such a review would need to discuss in detail the many different interactions between the external environment, the body, and the cognitive processes. Just a small selection of such interactions are illustrated in the diagram that follows.
 
 ![env, body, and CP high level](files/A-coherent-theory-v1-env-body-cp-why.drawio.png)
 
-* _**Some pathways of how the environment, body, and cognitive processes are leveraged to support the needs of the body.** Solid arrows indicate the most significant relationships, with dotted arrows indicating supporting processes._
+* _**Some pathways of how the environment, body, and cognitive processes are leveraged to sustain the individual's life.** Solid arrows indicate the most significant relationships, with dotted arrows indicating supporting processes._
 
+What follows is a brief discussion of a few salient features that bear significance to the discussions of meta-management and subjective experience.
 
 ## Identification of Source
-...
+As the brain learns about the world around it and about its own body, it builds up models of the various objects within those spaces of environment and body. An important aspect of those models is to capture what ability the individual has to affect the state of the different objects within its models. A chair that obstructs motion can be easily lifted and moved. A tree cannot. The modality of action varies by the form and location of the object. The chair can be moved by performing physical actions involving the entire body. An itch may be scratched via motion of only a single arm and hand. A racing heart can be calmed by modulating one's breathing. A pain in the eyes from a blinding light can be resolved by closing the eyelids or averting gaze.
+
+The same applies to actions against our cognitive processes. Different modalities of action are required for different situations. To remain focussed on a particular task in the presence of distractions requires us to continually re-asses whether we are still focused on that task. In contrast, if we are "stuck in a rut" unable to solve a problem, the action required is to intentionally remove the focus in order to allow broader ideas to surface. On the topic of distractions, different actions are more suitable depending on the source of the distraction. If someone is repeatedly interrupting our thought by talking to us, a suitable action is to remove ourselves from the situation or ask them to desist. In contrast, if our own wondering thoughts are the source of distraction, we can only perform physical or mental actions against ourselves in order to solve the problem. The distraction examples are particularly interesting because in both cases some sort of thought is projected into our conscious processes, but the ultimate source differs.
+
+More generally, I suggest that the brain identifies the source for the majority of perceptions and thoughts that pass through our cognitive processes. This may be in the form of an extra meta-data label that is _attached_ as it were to the original perception or thought, or perhaps just the nature of the underlying representation is sufficient for the brain to identify the source wherever it needs to. This _source labelling_, as I shall refer to it, would be useful for many components of cognitive processing, including i) helping to distinguish between independent objects when developing models of the environment, body, and of cognitive behaviours, ii) identifying suitable actions, and iii) would form the basis of the concept of "I".
 
 ## Schema
 _todo: flesh out:_
@@ -805,6 +812,9 @@ _todo:_
     * labelling
     * emotions
     * relationship to schema
+	
+	
+## CP Homeostasis
 	
 
 # IV.2 Meta-cognition
@@ -839,7 +849,7 @@ In discussing meta-cognition together with meta-management, I view the term _met
 
 ![Layers of Meta-cognition](files/A-coherent-theory-v1-meta-cognition.drawio.png)
 
-* _**Layers of Meta-cognition.** At a level of scientific description, meta-cognition and consciousness are presumed to closely coincide, although there may be some exceptions. At a behavioural level, meta-cognition consists of meta-memory, meta-learning, meta-representations, and meta-control. In contrast, the term "meta-management" is used to refer to the low-level architectural mechanisms underlying those behaviours, which is made up of low-level mechanisms of meta-observation and meta-control.
+* _**Layers of Meta-cognition.** At a level of scientific description, meta-cognition and consciousness are presumed to closely coincide, although there may be some exceptions. At a behavioural level, meta-cognition consists of meta-memory, meta-learning, meta-representations, and meta-control. In contrast, the term "meta-management" is used to refer to the low-level architectural mechanisms underlying those behaviours, which is made up of low-level mechanisms of meta-observation and meta-control._
 
 There are four broad _behavioural forms_ of meta-cognition:
 * **Meta-memory.** Meta-cognitive awareness of memory. Memories appear to be encoded or are accessible in at least two forms: one for their specific content, and a second form that identifies meta-data such as source, certainty, and mere familiarity. The second form appears to be used extensively in judgements about memory, including the "tip of the tongue" effect.
