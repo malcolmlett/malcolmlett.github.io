@@ -740,7 +740,7 @@ A somewhat radical suggestion is that perhaps the control process can meta-manag
 What conditions might make this possible? Firstly, the control process needs to observe its own behaviours. 
 This could be achieved via a feedback loop that captures that behaviour and feeds it back as input. That feedback may capture the control process' current state, its recent trajectory, and its inputs and outputs.
 
-In some architectures, the overall state of the control process may be held as state within each network node. Any attempt to capture the whole of that state leads to an infinite regress on the size of the control process. Thus, necessarily, the feedback loop would provide a higher-order, dimensionality reduced, summary of that state and behaviour.
+In some architectures, the overall state of the control process may be held as state within each network node. Any attempt to capture the whole of that state leads to an infinite regress on the size of the control process. Thus, necessarily, the feedback loop would provide a high-level, dimensionality reduced, summary of that state and behaviour.
 
 Importantly, the output of the feedback loop needs to frame observations about the control process not from the perspective of the control process's current state on its immediate current task, "from the inside" as it were. Rather, it must carry the perspective of the control process as part of a larger system, and as it interacts over a larger period of time. In other words, framed with a perspective as "from the outside".
 
@@ -1095,6 +1095,7 @@ The argument here may seem somewhat tautological to some (thought only exists wh
 # IV.6 Representations
 
 From the discussion on semiotics we see that representations must always be interpreted in order for them to have any effect. Each interpreter process has some specific focus, and the representations that it uses must have a similar focus for it to have any benefit to the individual. Evolution and individual developmental processes produce representations that are targeted to the needs of the interpretive processes that use them.
+The representational spaces used by different processes are thus different. These spaces can differ in terms of i) what thing is represented, ii) represented properties of that thing, and iii) the form of representation used.
 
 In this chapter we shall look at some specific examples of the ways in which different representations can be produced about the same domain. Finally from here the differences between first-order and meta-management processes will become clear.
 
