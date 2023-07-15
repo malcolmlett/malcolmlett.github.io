@@ -1196,23 +1196,6 @@ One key difference between first-order processes and meta-management has been id
 
 Other likely areas in which they differ include the _pathways_ taken for such processing, and associated _learning_ mechanisms. Meta-management requires two key differences in pathway from first-order processes: i) it needs to observe and model behaviours over a longer period of time than for first-order control, and ii) it requires a higher-level abstraction in order to avoid an infinite regress on the neural count. This is encapsulated in the idea of a meta-management feedback-loop. Likewise, within a reinforcement learning paradigm, meta-management needs different reinforcement signals; though a detailed discussion is beyond a scope of this article.
 
-
-## Pathways
-For a standard control process, its "state" is just a concept that the scientific community apply against it as a way of understanding its operation. We know that its behaviour for the same input will be different depending on the sequence of past inputs. We explain to ourselves that the process itself must be somehow affected by that sequence of past inputs. And we summarise that as a) the process has a state, and b) the state of the process changes as processing occurs. Importantly, there is nothing said about the representation of that state, nor of the underlying mechanics of how that state is "held".
-
-Our understanding from neuroscience is that state in brains is held in the form of recurrency: results at various layers are fed back as inputs at earlier layers [citation]. That feedback can occur with different lengths, anywhere from each individual neuron holding onto its own state to outputs at the final nodes being fed as inputs into the earliest nodes. Captured in panel A in the diagram below.
-
-![state pathways](files/A-coherent-theory-v1-state-pathways.drawio.png)
-
-* _**State pathways.** A) Short-path and long-path recurrency of immediate state in standard control. B) Long-path recurrency of state plus context in meta-management._
-
-In contrast, meta-management processes require an explicit representation of the control process state. That representation is most likely constructed through a pathway that has the express purpose of generating that very representation from various sources. The sources include some kind of cache or accumulative representation generator of CP state trajectory plus information obtained through comparison with models of past and expected behaviour.
-
-As mentioned earlier, to represent the state held by every neuron within the control process would lead to an infinite regress in the scale of the system.....todo....
-
-## Learning
-- learning pressure: standard control representations trained to accurately represent the problem state w.r.t. the mechanisms needed to solve them. Rational control representations trained to represent all of the inner workings with the minimal amount of information needed to attain sufficient stability.
-
 ## Summary of Meta-management Architecture
 _todo: avoid temptation to relate this back to subjective experience. That'll come in the solution part._
 
