@@ -1174,27 +1174,6 @@ Contrast this to the object in the case of CP state trajectory meta-management. 
 The meta-management process infers what it can about the object through the representations made available via the meta-management feedback loop, and via models. Here the models are built up over time to capture the CP behaviours and abilities on different kinds of problems. Separate models capture the individual's understanding of how other individuals fit against those measures.
 
 
-### Summary
-...todo..redo...
-
-There are a few key takeaways from the above that help us understand the similarities and differences between standard control and meta-management and the effects on how these respective systems could cooperate and coexist, particularly within an inline architecture.
-
-**Objects differ substantially**. The discussion of objects above identify information that the systems need in order to carry out their purpose, but that they can only guess at. Thus a tremendous amount of processing (and neural mass) is devoted to approximating that knowledge as closely as possible. These are a key focus of the processing systems. That focus differs significantly for the different processes: a) trying to understand and predict the outside world and how the body interacts with it, b) trying to govern the stability of short-term computational behaviour, c) trying to distinguish different problem domains and how changes in learned behaviour could improve future outcomes against those disparate problem domains.
-
-**Overlapping pathways**. The inferred state of the environment, the inferred state of the body, the inferred state of the control process, and predictive models of the dynamics thereof. In one way or another these are all important information that plays an important part of processing and meta-management. This is likely the case in all scenarios where meta-management is required, because at the end of the day meta-management is a process that helps the individual survive in the environment. The raw representations supplied by these pathways is likely re-used for multiple processing levels.
-
-**Significantly differing interpretations from same representations**. If the similarity between likely pathways is impressive, that is matched equally by the difference in outcomes produced by different forms of processing/meta-management.
-
-
-..todo.. still feels like it's got a bit of course. Need to get back to ultimate purpose of this section...why am I yakking about this?
-* Regarding object: in the sample case the object is the external world. But more realistic understanding is that the object is "what could and should be done to afford best results for the individual" (ie: the ground truth). And the representation & interpretation are all about drawing a best guess about that object. (This description is more inline with the Interface Theory of the human brain)
-
-- Takeaways
-	- Objects of focus differ
-	- Representations used differ substantially. 
-	- Overlap in actions, but sub processes differ substantially
-
-
 # IV.7 Review of Meta-management
 points:
 * domain knowledge, complex, lots of neural mass
