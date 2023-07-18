@@ -790,10 +790,6 @@ More generally, I suggest that the brain identifies the source for the majority 
 
 Source labelling is consistent with the suggestion that the feeling of _conscious volition_ is the result of a an after-the-fact inference process that identifies whether action was caused by the self. Experiments have found that such inferences can be easily misled, leading to the individual falsely acknowledging or rejecting their causal involvement in the action (Wegner, 2003).
 
-References:
-* Wegner, D. M. (2003). The mind’s best trick: How we experience conscious will. Trends in Cognitive Sciences, 7(February (2)), 65–69.
-* Arthur P. Shimamura (2000). Toward a Cognitive Neuroscience of Metacognition
-
 ## Schema
 Psychology has long identified in humans the existence of a model of the individual's body – known as the _body schema_. It is used in production of action control, and integrates information from our main physical senses and the proprioceptive senses (Proske & Gandevia, 2012). A clear definition is given by Morasso et al (2015):
 > In summary, we view the body schema as a set of fronto-parietal networks that integrate information originating from regions of the body and external space in a way, which is functionally relevant to specific actions performed by different body parts. As such, the body schema is a representation of the body’s spatial properties, including the length of limbs and limb segments, their arrangement, the configuration of the segments in space, and the shape of the body surface. (p. 1)
@@ -807,14 +803,6 @@ The idea of some sort of cognitive schema has also been made in the form of Atte
 In the same way that the body schema likely creates explicit _identities_ for individual body parts, the cognitive schema likely creates an explicit _identity_ for the "mind". When we say that we had a thought, we identify the source of that thought to our "conscious self", the inner part of us that experiences subjective experience. For neuro-typical individuals, we are under no delusion that the thought arose from perception of some external source, nor that it arose from our limbs. Furthermore, in the same way that we identify multiple independent body-parts, it's possible that our cognitive processes create not just one "mind" identity, but multiple. This may not be as far fetched as it sounds. An old idea of consciousness was of a little person, known as a _homunculus_, watching from the inside (now more commonly referred to as the Cartesian Theatre) [citations]. While the idea of a little person inside our heads has been thoroughly dismissed in modern times, it remains an accurate description of what it "feels like" to be conscious. It seems quite reasonable to me to conclude that the brain thus forms at least two separate identities for its own cognitive processes: i) the homunculus, which clusters together cognitive senses and actions that are captured under higher-order monitoring, and ii) the non-consciousness, for all the rest. Another possibility is that cognitive processes are divided along more functional lines, such as having a cognitive identity for "memory", explaining why we consciously perceive no obvious difference between recall of episodic and semantic memories although their underlying structures are likely very different.
 
 The exact specifics are not important here, as the most important point has already been made, summarised as follows: a cognitive schema creates a causal association between the outcome of mental processes and the source of those outcomes as coming from the individual, and it strongly demarks the boundary between the individual as source versus other possible sources. This is a major part from which our first person experiences of consciousness arise.
-
-References:
-* Graziano, M. S. A., and Kastner, S. (2011). Human consciousness and its relationship to social neuroscience: a novel hypothesis. Cogn. Neurosci. 2, 98–113. doi:10.1080/17588928.2011.565121
-* Graziano, M. S. A. (2017). The Attention Schema Theory: A Foundation for Engineering Artificial Consciousnes. Front. Robot. AI. doi:10.3389/frobt.2017.00060.
-* Morasso, P., Casadio, M., Mohan, V., Rea, F., and Zenzeri, J. (2015). Revisiting the body-schema concept in the context of whole-body postural-focal dynamics. Front. Hum. Neurosci. 9:83. doi:10.3389/fnhum.2015.00083.
-* Proske, U., and Gandevia, S. C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiol. Rev., 92:4, 1651-1697. doi:10.1152/physrev.00048.2011.
-* Webb, T. W., and Graziano, M. S. A. (2015). The attention schema theory: a mechanistic account of subjective awareness. Front. Psychol. 6:500. doi:10.3389/fpsyg.2015.00500.
-
   
 ## Emotions
 _..todo..may need to cover off emotions too, because it turns out that they're a form of MM too_
@@ -1804,6 +1792,10 @@ Consciousness is the result of:
 
 * Godfrey-Smith, P. (2016). Other Minds: The octopus and the evolution of intelligent life. Farrar, Straus and Giroux, New York.
 
+* Graziano, M.S.A., Kastner, S. (2011). Human consciousness and its relationship to social neuroscience: a novel hypothesis. Cogn. Neurosci. 2, 98–113. doi:10.1080/17588928.2011.565121
+
+* Graziano, M.S.A. (2017). The Attention Schema Theory: A Foundation for Engineering Artificial Consciousnes. Front. Robot. AI. doi:10.3389/frobt.2017.00060.
+
 * Guyer, P., and Horstmann, R-P. (2023). Idealism. The Stanford Encyclopedia of Philosophy (Spring 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/spr2023/entries/idealism/>.
 
 * Haynes, J-D. (2013). Beyond Libet: Long-Term Prediction of Free Choices from Neuroimaging Signals. In A. Clark, J. Kiverstein and T. Vierkant (eds.), Decomposing the Will, Oxford: Oxford University Press.
@@ -1872,6 +1864,8 @@ Consciousness is the result of:
 
 * Millidge, B., Seth, A., Buckley, C. (2021). Predictive Coding: a Theoretical and Experimental Review. Computer Science. https://doi.org/10.48550/arXiv.2107.12979. ([full text](https://arxiv.org/abs/2107.12979))
 
+* Morasso, P., Casadio, M., Mohan, V., Rea, F., Zenzeri, J. (2015). Revisiting the body-schema concept in the context of whole-body postural-focal dynamics. Front. Hum. Neurosci. 9:83. doi:10.3389/fnhum.2015.00083.
+
 * Morsella, E. (2005). The function of phenomenal states: supramodular interaction theory. Psychol Rev, 112:1000–21.
 
 * Mountcastle, V. B. (1997. The Columnar Organization of the Neocortex. Brain, Vol. 120, No. 4, 1997, pp. 701-722. http://dx.doi.org/10.1093/brain/120.4.701. ([full text](https://academic.oup.com/brain/article-pdf/120/4/701/17863573/1200701.pdf))
@@ -1906,6 +1900,8 @@ Consciousness is the result of:
 
 * Pierson, L. M., Trout, M. (2017). What is consciousness for?. New Ideas in Psychology, Volume 47, 2017, Pages 62-71. https://doi.org/10.1016/j.newideapsych.2017.05.004.
 
+* Proske, U., Gandevia, S.C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiol. Rev., 92:4, 1651-1697. doi:10.1152/physrev.00048.2011.
+
 * Rahimian, S. (2021). Consciousness in Solitude: Is Social Interaction Really a Necessary Condition? Front. Psychol. 12:630922. doi: 10.3389/fpsyg.2021.630922
 
 * Rao, R. P. & Ballard, D. H. Predictive coding in the visual cortex: A functional interpretation of some extra-classical receptive-field effects. Nat. Neurosci. 2, 79–87 (1999).
@@ -1938,7 +1934,7 @@ Consciousness is the result of:
 
 * Sajid, N., Ball, P. J., Parr, T., Friston, K. J. (2021). Active Inference: Demystified and Compared. Neural Comput 2021; 33 (3): 674–712. doi: https://doi.org/10.1162/neco_a_01357
 
-* Searle, J. R. (1990). Who is computing with the brain? Behavioral and Brain Sciences, 13:4:632-64.
+* Searle, J.R. (1990). Who is computing with the brain? Behavioral and Brain Sciences, 13:4:632-64.
 
 * Seth, A.K., Bayne, T. (2022). Theories of consciousness. Nat Rev Neurosci. https://doi.org/10.1038/s41583-022-00587-4
 
@@ -1946,9 +1942,9 @@ Consciousness is the result of:
 
 * Shanahan, M. (2008). A spiking neuron model of cortical broadcast and competition. Conscious Cogn. 17(1):288-303.
 
-* Shapiro, L. A. (2013). Dynamics and Cognition. Minds and Machines 23 (3):353-375.
+* Shapiro, L.A. (2013). Dynamics and Cognition. Minds and Machines 23 (3):353-375.
 
-* Shimamura, A. P. (2000). Toward a Cognitive Neuroscience of Metacognition. Consciousness and Cognition. Volume 9, Issue 2. Pages 313-323, ISSN 1053-8100, https://doi.org/10.1006/ccog.2000.0450.
+* Shimamura, A.P. (2000). Toward a Cognitive Neuroscience of Metacognition. Consciousness and Cognition. Volume 9, Issue 2. Pages 313-323, ISSN 1053-8100, https://doi.org/10.1006/ccog.2000.0450.
 
 * Siegel, S. (2021). The Contents of Perception. The Stanford Encyclopedia of Philosophy (Fall 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2021/entries/perception-contents/>.
 
@@ -2002,13 +1998,16 @@ Consciousness is the result of:
 
 * Walsh, K. S., McGovern, D. P., Clark, A., & O'Connell, R. G. (2020). Evaluating the neurophysiological evidence for predictive processing as a model of perception. Annals of the New York Academy of Sciences, 1464(1), 242–268. https://doi.org/10.1111/nyas.14321. ([full text](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7187369/))
 
+* Webb, T.W., Graziano, M.S.A. (2015). The attention schema theory: a mechanistic account of subjective awareness. Front. Psychol. 6:500. doi:10.3389/fpsyg.2015.00500.
+
 * Whitmarsh, S., Oostenveld, R., Almeida, R., Lundqvist, D. (2017). Metacognition of attention during tactile discrimination. NeuroImage, Volume 147, Pages 121-129.
 
 * Winkielman, P.,  Schooler, J. (2012). Consciousness, metacognition, and the unconscious. In Fiske, S.T., Macrae, C.N. (Eds), The SAGE Handbook of Social Cognition. SAGE Publications Ltd. http://dx.doi.org/10.4135/9781446247631.n4
 
 * Wegner, D. M. and Wheatley, T. (1999). Apparent mental causation: sources of the experience of will. American Psychologist, 54: 480–492.
 
-* Wegner, D. M., 2002, The Illusion of Conscious Will, Cambridge, MA: MIT Press/Bradford.
+* Wegner, D. M. (2002). The Illusion of Conscious Will, Cambridge, MA: MIT Press/Bradford.
 
+* Wegner, D. M. (2003). The mind’s best trick: How we experience conscious will. Trends in Cognitive Sciences, 7(February (2)), 65–69.
 
 
