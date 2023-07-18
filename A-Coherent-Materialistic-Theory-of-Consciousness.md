@@ -802,31 +802,17 @@ The idea of some sort of cognitive schema has also been made in the form of Atte
 
 In the same way that the body schema likely creates explicit _identities_ for individual body parts, the cognitive schema likely creates an explicit _identity_ for the "mind". When we say that we had a thought, we identify the source of that thought to our "conscious self", the inner part of us that experiences subjective experience. For neuro-typical individuals, we are under no delusion that the thought arose from perception of some external source, nor that it arose from our limbs. Furthermore, in the same way that we identify multiple independent body-parts, it's possible that our cognitive processes create not just one "mind" identity, but multiple. This may not be as far fetched as it sounds. An old idea of consciousness was of a little person, known as a _homunculus_, watching from the inside (now more commonly referred to as the Cartesian Theatre) [citations]. While the idea of a little person inside our heads has been thoroughly dismissed in modern times, it remains an accurate description of what it "feels like" to be conscious. It seems quite reasonable to me to conclude that the brain thus forms at least two separate identities for its own cognitive processes: i) the homunculus, which clusters together cognitive senses and actions that are captured under higher-order monitoring, and ii) the non-consciousness, for all the rest. Another possibility is that cognitive processes are divided along more functional lines, such as having a cognitive identity for "memory", explaining why we consciously perceive no obvious difference between recall of episodic and semantic memories although their underlying structures are likely very different.
 
-The exact specifics are not important here, as the most important point has already been made, summarised as follows: a cognitive schema creates a causal association between the outcome of mental processes and the source of those outcomes as coming from the individual, and it strongly demarks the boundary between the individual as source versus other possible sources. This is a major part from which our first person experiences of consciousness arise.
+The exact specifics are not important here, as the most important point has already been made, summarised as follows: a cognitive schema creates a causal association between the outcome of mental processes and the source of those outcomes as coming from the individual, and it strongly demarks the boundary between the individual as source versus other possible sources. This is a major component of our first person experiences of consciousness.
   
-## Emotions
-_..todo..may need to cover off emotions too, because it turns out that they're a form of MM too_
-
-_todo: emotions......This does not do justice to the full extent to which emotions and feelings play a role in cognition. For a full account see Damasio (...)._
-	
-References:
-* "Emotion - Based on clinical studies, Damasio (1995) argued persuasively that the human capacity for rational deliberation is dependent on an intact affective system, and many other cognitive scientists subscribe to the view that affect addresses the problems of decision making and action selection (Picard, 1997; Sloman, 2001). It permits a number of factors to be blended together and brought to bear on the problem of contention for resources (ie: muscles) by different brain processes. Neurologically plausible mechanisms of action selection compatible with this idea have been demonstrated in a robotics setting by Prescott, et al (1999) and Cañamero (2003)." [Murray Shanahan (2006). A cognitive architecture that combines internal simulation with a global workspace.]	
-	
-
 ## Meaning Attachment
-_todo:_
-* Summarise all of above with the term "meaning attachment" so I can use it later on to refer to all of:
-    * labelling
-    * emotions
-    * relationship to schema
-	
-References:	
-* "Conscious thoughts and experiences are also transparent in a semantic sense in that their meanings seem immediately known to us in the very act of thinking them (Van Gulick 1992). In that sense we might be said to ‘think right through’ them to what they mean or represent. Transparency in this semantic sense may correspond at least partly with what John Searle calls the “intrinsic intentionality” of consciousness (Searle 1992)." [ of consciousness are evident in the coherent order of its ever changing process of flow and self-transformation, what William James (1890) called the ], and as indicating our incomplete understanding of how consciousness might depend upon a nonconscious substrate, especially a physical substrate."
-	
-## CP Homeostasis
-	
+It has been observed that thoughts and experiences are experienced in conjunction with the meanings of those thoughts and experiences (Van Gulick, 1992 & 2022). For example, we don't just see a lion, we see a lion plus with an instantaneous association of the level of danger that we're in, and perhaps the beauty of such a wild animal. When we see a toothbrush on the bathroom sink, we don't just see it a patch of colourful pixels and edges mapped into a three-dimensional shape, we immediately experience an identification of whether it is our toothbrush or someone else, and perhaps displeasure that it is no longer safely in its holder.
+
+I refer below to this process as _meaning attachment_. The source labelling discussed above is one form of meaning that may be attached to the experience or thought. Information regarding the thought or experience's association to our body or cognitive schemata is another form of meaning attachment. Emotions may be a third form. More generally, meaning attachment includes any contextual information that is associated to the thought or experience.
+
+For the topic of subjective experience, the effect of meaning attachment is that we never truly experience a raw perception. Every perception is contextualised with source labelling, knowledge, and emotional affect. If the meta-management feedback loop led to construction of a higher-order thought representing that the individual had just observed their own thought, it would be experienced as far more than just information about a thought. It would also be contextualised by the cognitive schema, with concomitant emotional significance.
 
 # IV.2 Meta-cognition
+
 One recurring question in research on consciousness in general, and on subjective experience particularly, is what utility it provides over and above other brain processes that are not associated with subjective experience. Many theories of consciousness make reference to the need for flexibility or adaptation, but it is hard to pin-point what that entails. How do you quantify flexibility? What kinds of processes produce flexible behaviour? Behavioural scientists have been asking these very questions in the study of _meta-cognition_. This area looks at the ability of an individual to monitor and control their own mental processes, and how that relates to flexibility, learning, and other capabilities. The study of meta-cognition tries to incorporate behavioural studies with our growing understanding of brain function from neuroscience.
 
 Meta-cognition does not have a single agreed definition, but in general covers the ability for an individual to _examine_ their own knowledge, memories, and physical and mental abilities; to _respond_ to that information in some way, such as to act to improve their knowledge or abilities; and to _report_ on that information (Winkielman & Schooler, 2012; Fleming at al, 2012; Koriat, 2007). Meta-cognition is sometimes paraphrased as "knowledge about knowledge" (Karmiloff-Smith, 2012), "behaviour about behaviour" (Koriat, 2007), or "cognition about cognition" (Fleming et al, 2012a; Timmermans et al, 2012). Meta-cognition "adds flexibility to cognitive processes, making them less dependent on external cues" (Fernandez-Duque et al, 2000, p. 289).
@@ -944,7 +930,7 @@ Planning through decision tree searches is just one particular _strategy_ that's
 Notice that, while rational behaviour is generally associated with conscious experience, it is not necessarily meta-cognitive in nature. For example, a goal-driven or explicit model-based decision process that focuses on external needs can be carried out without any recourse to self-appraisal. Where self-appraisal becomes necessary is for after-the-fact analysis of performance. Thus, second-order processes and rational processes should not be seen as the same thing.
 
 ## Emotion
-There is another fascinating aspect of control that has for a long time been left on the periphery of studies, but which has more recently gained more traction. Damasio and others are beginning to make strong cases that emotion is a key part of "truly rational" behaviour (Damasio, 1994). Studies are finding that individuals with brain lesions that prevent emotions influence over control struggle to make suitable long-term life choices. It appears that they lack fear of their own loss and suffering and thus cannot "rationally" weigh up options, often choosing short-term wins that have significant long-term deleterious effects.
+There is another fascinating aspect of control that has for a long time been left on the periphery of studies, but which has more recently gained more traction. Damasio and others are beginning to make strong cases that emotion is a key part of "truly rational" behaviour (Damasio, 1994; Picard, 1997; Sloman, 2001). Studies are finding that individuals with brain lesions that prevent emotions influence over control struggle to make suitable long-term life choices. It appears that they lack fear of their own loss and suffering and thus cannot "rationally" weigh up options, often choosing short-term wins that have significant long-term deleterious effects.
 
 Damasio's 1994 book _Descartes' error : emotion, reason, and the human brain_ provides an excellent discussion of the importance of emotion in rational decision making, as well as discussions of how cognitive processes, emotion, and body are intertwined. Clearly, a discussion of human behavioural control would not be complete without a discussion of emotions. Unfortunately such a discussion is beyond the scope of the present focus.
 
@@ -1712,7 +1698,7 @@ Consciousness is the result of:
 
 * Cushman, F., Morris, A. (2015). Habitual control of goal selection in humans. Proceedings of the National Academy of Sciences of the United States of America, 112(45), 13817–13822. https://doi.org/10.1073/pnas.1506367112
 
-* Damasio, A.R. (1994). Descartes' error : emotion, reason, and the human brain. New York :G.P. Putnam,
+* Damasio, A.R. (1994). Descartes' error : emotion, reason, and the human brain. New York :G.P. Putnam. Re-printed 2006, Vantage.
 
 * Daw, N.D., Niv, Y., Dayan, P. (2005). Uncertainty-based competition between prefrontal and dorsolateral striatal systems for behavioural control. Nat. Neurosci. 8, 1704–1711. doi: 10.1038/nn1560
 
@@ -1898,6 +1884,8 @@ Consciousness is the result of:
 
 * Peters, F. (2010). Consciousness as recursive, spatiotemporal self-location. Psychological Research 74, 407–421. https://doi.org/10.1007/s00426-009-0258-7
 
+* Picard, R. (1997). Affective Computing. MIT Press.
+
 * Pierson, L. M., Trout, M. (2017). What is consciousness for?. New Ideas in Psychology, Volume 47, 2017, Pages 62-71. https://doi.org/10.1016/j.newideapsych.2017.05.004.
 
 * Proske, U., Gandevia, S.C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiol. Rev., 92:4, 1651-1697. doi:10.1152/physrev.00048.2011.
@@ -1954,6 +1942,8 @@ Consciousness is the result of:
 
 * Sloman, A. (1998). Damasio, Descartes, alarms and meta-management. SMC'98 Conference Proceedings. 1998 IEEE International Conference on Systems, Man, and Cybernetics (Cat. No.98CH36218), San Diego, CA, USA, 1998, pp. 2652-2657 vol.3, doi: 10.1109/ICSMC.1998.725060.
 
+* Sloman, A. (2001). Beyond Shallow Models of Emotion. Cognitive Processing 2 (1), 177–198.
+
 * Smart, J. J. C. (2022). The Mind/Brain Identity Theory. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/mind-identity/>.
 
 * Smith, D. W. (2018). Phenomenology: 1. What is Phenomenology?. The Stanford Encyclopedia of Philosophy. Metaphysics Research Lab, Stanford University. Retrieved 20 September 2021.
@@ -1992,7 +1982,9 @@ Consciousness is the result of:
 
 * van Es, D.M., Knapen, T. (2019). Implicit and explicit learning in reactive and voluntary saccade adaptation. PloS one, 14(1), e0203248. https://doi.org/10.1371/journal.pone.0203248
 
-* Van Gulick, R. (2022). Consciousness. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/consciousness/>.
+* Van Gulick, R. (1992). "Nonreductive materialism and intertheoretical constraint." In A. Beckermann, H. Flohr, J. Kim, eds. Emergence and Reduction. Berlin and New York: De Gruyter, 157–179.
+
+* Van Gulick, R. (2022). Consciousness. In Zalta, E.N. & Nodelman, U. (eds.), The Stanford Encyclopedia of Philosophy (Winter 2022 Edition). URL = <https://plato.stanford.edu/archives/win2022/entries/consciousness/>.
 
 * Yablo, S. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford and New York: Oxford University Press, 179-197.
 
