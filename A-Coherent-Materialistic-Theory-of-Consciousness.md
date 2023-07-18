@@ -95,7 +95,7 @@ Contents:
 * [V.3 Interpretation of Subjective Experience States](#v3-interpretation-of-subjective-experience-states)
   * [Rounding it out](#rounding-it-out)
 * [V.4 The Properties of Subjective Experience](#v4-the-properties-of-subjective-experience)
-  * [Homonculous](#homonculous)
+  * [Homunculus](#homunculus)
   * [Conscious and Unconscious Thought](#conscious-and-unconscious-thought)
   * [Subjective experience is "always on"](#subjective-experience-is-always-on)
 * [V.5 Conditions of Subjective Experience](#v5-conditions-of-subjective-experience)
@@ -303,7 +303,7 @@ It is important to note that while such theories find useful correlations to con
 Other noteworthy theories of consciousness include the _Orch OR_ theory of consciousness [citation], and pan-psychism [citation].
 
 ## A point of Central Unification?
-One particular area of debate falls variously under the terms "Cartesian theatre" or "homunculus problem". The Cartesian Theatre ..introduced by ....describes the interactions between supposedly two parts of the mind: the part that has subjective experience (the audience in the theatre), and the part that produces the contents of subjective experience (the actors in the theatre). This has also been described as a "homunculus" or "little man" inside the brain that has the experiences. Both descriptions pose a problem: that the audience/homonculus requires a significant level of intelligence in order to interpret and understand the show being put on; but that same intelligence is required to produce the show in the first place. In the case of homunculus, we can provide two descriptions w.r.t. to the layers described above. In the first description, the non-conscious processes produce a representation that is perceived by the homunculus. Here the problem becomes what mechanisms the homunculus uses to do that perceiving? In the second description, the representation is sufficiently processed by functional structures so that no further processing is required, and that final result is simply perceived-without-processing. In practice this raises more questions than it seeks to address. What kind of thing is it that can perceive-without-processing? In response, the theory of semiotics (discussed in a section below) claims that it is impossible for such a thing to exist, because there is no perception without interpretation, and interpretation necessarily involves processing.
+One particular area of debate falls variously under the terms "Cartesian theatre" or "homunculus problem". The Cartesian Theatre ..introduced by ....describes the interactions between supposedly two parts of the mind: the part that has subjective experience (the audience in the theatre), and the part that produces the contents of subjective experience (the actors in the theatre). This has also been described as a "homunculus" or "little man" inside the brain that has the experiences. Both descriptions pose a problem: that the audience/homunculus requires a significant level of intelligence in order to interpret and understand the show being put on; but that same intelligence is required to produce the show in the first place. In the case of homunculus, we can provide two descriptions w.r.t. to the layers described above. In the first description, the non-conscious processes produce a representation that is perceived by the homunculus. Here the problem becomes what mechanisms the homunculus uses to do that perceiving? In the second description, the representation is sufficiently processed by functional structures so that no further processing is required, and that final result is simply perceived-without-processing. In practice this raises more questions than it seeks to address. What kind of thing is it that can perceive-without-processing? In response, the theory of semiotics (discussed in a section below) claims that it is impossible for such a thing to exist, because there is no perception without interpretation, and interpretation necessarily involves processing.
 
 _todo: references and more details from:_
 - https://www.britannica.com/topic/philosophy-of-mind/The-computational-representational-theory-of-thought-CRTT
@@ -1286,16 +1286,16 @@ _todo: maybe_:
 # V.4 The Properties of Subjective Experience
 To show more clearly how the above creates subjective experience, let us examine some specific properties of subjective experience. We shall focus on heterophenomena - [define, cite].
 
-## Homonculous
-...[details and citation of old ideas of homonculous in brain]...
+## Homunculus
+...[details and citation of old ideas of homunculus in brain]...
 
 _todo_
 
-The existence of an impression of a homonculous has a simple explanation:
+The existence of an impression of a homunculus has a simple explanation:
 * schema, SES constructed from the schema
 * MM needs that source identification in order to model appropriate actions
 
-The apparent location of the homonculous within the bounds of our head is curious.
+The apparent location of the homunculus within the bounds of our head is curious.
 * the brain constructs body schema to identify the specific location of its senses. This provides the important purpose of guiding where actions should be targeted. Many of our physical senses are hosted within our head (sight, sound, smell, taste), and so the schema naturally locates them as such. Although our vision is purposed to gain information about the world outside, our visual sense organs are located within our head. This affects interpretation of the perspective of our vision (things at the centre of our visual field are at about the height of our head, while things at the bottom of our visual field are below our heads), and of actions we need to take if our visual sense organs are in danger of being damaged. These locations encoded within our schema are learned through exploration of cause and effect.
 * For the cognitive sense, there are no cause and effect relationships that could be explored under normal circumstances in order to build a schema that locates the cognitive senses within the head. So it is not obvious why the brain chooses the head as the location of the cognitive sense. A possible explanation is that it is an artifact of the fact that most of our senses are located within our head. But I suspect the real answer is not so simple.
 
