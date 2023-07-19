@@ -17,11 +17,10 @@ Contents:
   * [Specific Theories of Consciousness](#specific-theories-of-consciousness)
   * [More Reading](#more-reading)
 * [I.4 Background - Biology and Neuroscience ](#i4-background---biology-and-neuroscience-)
-  * [Functional map of brain](#functional-map-of-brain)
-  * [Neural activity waves and the Predictive Coding theory of brain function](#neural-activity-waves-and-the-predictive-coding-theory-of-brain-function)
+  * [The Predictive Coding theory of brain function](#the-predictive-coding-theory-of-brain-function)
 
 [Part II - Problems in Simple Synthetic Control Processes](#part-ii---problems-in-simple-synthetic-control-processes)
-* [II.1 Interlude: Environment, Body, and Control Processes (first part)](#ii1-interlude-environment-body-and-control-processes-first-part)
+* [II.1 Interlude: Environment, Body, and Control Processes](#ii1-interlude-environment-body-and-control-processes)
 * [II.2 Complexity and the need for Processing Loops](#ii2-complexity-and-the-need-for-processing-loops)
 * [II.3 State Trajectories in a Multi-iteration Processor](#ii3-state-trajectories-in-a-multi-iteration-processor)
 
