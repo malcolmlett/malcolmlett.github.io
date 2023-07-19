@@ -306,35 +306,18 @@ Many of the broad topics on consciousness require a background in philosophy to 
 
 
 # I.4 Background - Biology and Neuroscience 
+Though somewhat abrupt, there is one important feature of the neurological aspect of brain function that needs to be described for fully, that of its dynamical system nature. Many of the discussions later in this article combine simplistic functional descriptions with simple box-and-line diagrams using clearly demarked components. I want to dispel any misconceptions about the interpretation of those simplistic descriptions before they arise.
 
-Todo - brain parts etc
+Functional descriptions that include a single boxes for, say, processing and memory, are simply wrong. The brain does not operate that way. Processing is a distributed product of many different systems. Even memory may be a distributed effect, with a single memory actually being produced by different systems focussed on the various different modalities that make up the memory [citation]. However, simple functional descriptions give us something understandable to work with while we're trying to figure out the broad ideas. Remapping that onto a dynamical systems substrate can come later.
 
-![forward and backward connections](files/forward-and-backward-connections-in-brain-marino-2021.png)
+Nevertheless, it will helpful to the reader to have some intuition of the brain's true underlying dynamical systems nature. To that end, what follows is a brief description of one attempt at explanation, known as a _Predictive Coding_. It remains to be seen how accurately predictive coding explains brain function. It is also not the only approach being developed. Even if it is eventually proven to hold true for some parts of the brain, it likely does not hold true for all parts of the brain.
 
-Purpose:
-* provide framing that my box-and-lines theory doesn't assume a box-and-lines implementation.
-* highlight that processing occurs at the system level, dependent on all the systems involved, that no system on its own can really do anything much
-* state that we now know they are not discretely modular
-    * ie: view that neurons that are closest to a particular sensory modality will tend to process things related to that modality, with closer neurons more closely related to the raw signals, and further neurons more abstract and perhaps taking in more information from other places (Mountcastle, see note an "Articles on Predictive Coding"), and similar for motor control (the monkey stimulous thing)
-    * this can be seen quite clearly in the case of the primary and secondary visual cortices.
-
-## Functional map of brain
-
-![laterial view of brain](files/A-coherent-theory-v1-brain-lateral.drawio.png)
-
-* _*todo.* todo (Image courtesy of publicdomainvectors.org)._
-
-
-![medial view of brain](files/Basic_structures_of_the_brain_highlighted-wikipedia-229px.png)
-
-* _*todo.* todo (Image courtesy of [Belomaad](https://sites.google.com/view/biologyerettsegi), CC BY-SA 4.0, via Wikimedia Commons)._
-
-## Neural activity waves and the Predictive Coding theory of brain function
+## The Predictive Coding theory of brain function
 A traditional conception of brain processing of senses can be characterised as "perception by representation": that the brain attempts to use the senses to accurately represent what is observed. A typical assumption associated with that characterisation is that sensory perception is a largely "feed-forward" process: raw low-level sensory signals are hierarchically interpreted into higher and higher-level representations, eventually identifying specific objects, their boundaries, and other properties such as location, pose, and motion (Buckley et al, 2017; Walsh et al 2020).
 
 An alternative conception is characterised as "perception by inference": that the brain attempts to infer the (hidden) state of the environment, known as the _latent state_, from sensory signals. In this conception, rather than predicting a representational model that _correlates_ to the sensory signals, the brain attempts to model the underlying structure that _caused_ the sensory signals (Friston, 2005). Furthermore, rather than producing this inference within a single forward pass, it is derived through an iterative process employing both feed-forward and feed-back signals (Rao and Ballard, 1999).
 
-One particular theory, Predictive Coding, holds that much of brain function is the result of such inference (Friston, 2010; Clark, 2013 and 2019; Kilner, Friston, Frith, 2007), including not just perception but also action generation (Friston, 2010). The explanation stems from the observation that Bayesian inference is analytically intractable for most problems, but can be solved through the _empirical bayes method_ by _factorising_ the problem space (Buckley et al, 2017). A so called _generative model_, which models the the causal structure from environment state to sensory signal, can be approximated by factorising it in three ways (Buckley et al, 2017; Millidge, Seth, Buckley, 2021). Firstly, the state of the environment at a given moment in time can be factorised as a multi-variate combination of independent gaussians. Secondly, the time-dependent dynamics of state can be factorised into the current value, its first-order derivative, its second-order derivative, and so on. Thirdly, the unknown relationships between latent causes can be modelled and learned as a hierarchy of layers (Friston, 2008), with each successive layer acting as a generative model of the layer before.
+Predictive Coding is one such theory. It holds that much of brain function is the result of such inference (Friston, 2010; Clark, 2013 and 2019; Kilner, Friston, Frith, 2007), including not just perception but also action generation (Friston, 2010). The explanation stems from the observation that Bayesian inference is analytically intractable for most problems, but can be solved through the _empirical bayes method_ by _factorising_ the problem space (Buckley et al, 2017). A so called _generative model_, which models the the causal structure from environment state to sensory signal, can be approximated by factorising it in three ways (Buckley et al, 2017; Millidge, Seth, Buckley, 2021). Firstly, the state of the environment at a given moment in time can be factorised as a multi-variate combination of independent gaussians. Secondly, the time-dependent dynamics of state can be factorised into the current value, its first-order derivative, its second-order derivative, and so on. Thirdly, the unknown relationships between latent causes can be modelled and learned as a hierarchy of layers (Friston, 2008), with each successive layer acting as a generative model of the layer before.
 
 This factorisation can be distributed across the neural structure of the cortex (Mumford, 1991; Rao and Ballard, 1999), with activity of each individual neuron representing the mean of the gaussian distribution of the particular variable that it models (Buckley et al, 2017), and possibly also representing the variance (Feldman, Friston, 2010). Some aspects of this 3-dimensional factorisation can be seen in the structure and activity within the brain. For example, the hierarchical nature of brain processing can be seen in the way that  the primary visual cortex appears to process visual information at a lower level of representation than the visual association area, and similarly for the primary and secondary somatosensory areas [citations]. Additionally, there is some evidence that neurons within the cortex are formed into _columns_, where the neurons in each column together model a single multi-dimensional variable (Mountcastle, 1997), and likely with more accurate modeling than via the simple assumption of multi-variate independence.
 
