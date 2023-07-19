@@ -336,6 +336,8 @@ Predictive coding offers an explanation of various otherwise puzzling features o
 
 # Part II - Problems in Simple Synthetic Control Processes
 
+This part and the two that follow it describe a series of problems that are faced by _control processes_, computational processes control the behaviour of the larger system of which they are a part. This part is focused on simple artificial _agents_, while the Part III is focused on more complex artificial agents. Part IV takes that up a notch to look at control processes in humans. Interspersed between chapters on control process problems are the occasional _interlude_ chapter that provides additional background to the discussions immediately following.
+
 # II.1 Interlude: Environment, Body, and Control Processes (first part)
 
 _...todo..._
