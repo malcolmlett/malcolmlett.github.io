@@ -331,6 +331,7 @@ This leads to a lot of activity. A novel sensory signal is likely to immediately
 
 Predictive coding offers an explanation of various otherwise puzzling features of perception (Millidge, Seth, Buckley, 2021), including so called "end-stopping" in visual perception, bistable perception effects under right/left-eye competition, repetition suppression, attentional modulation of neural activity, and of hebbian learning. The suitability of predictive coding as a larger theory of brain function is debated (Walsh et al 2020, and see commentaries on Clark, 2019), but the basic idea behind it may yet prove to be a good explanation of the waves of activity that we see in EEG and fRMI recordings.
 
+
 ---
 
 
@@ -338,10 +339,23 @@ Predictive coding offers an explanation of various otherwise puzzling features o
 
 This part and the two that follow it describe a series of problems that are faced by _control processes_, computational processes control the behaviour of the larger system of which they are a part. This part is focused on simple artificial _agents_, while the Part III is focused on more complex artificial agents. Part IV takes that up a notch to look at control processes in humans. Interspersed between chapters on control process problems are the occasional _interlude_ chapter that provides additional background to the discussions immediately following.
 
-# II.1 Interlude: Environment, Body, and Control Processes (first part)
+# II.1 Interlude: Environment, Body, and Control Processes
 
-_...todo..._
+I shall start by defining some terminology and concepts.
 
+While the latter sections and chapters of this article focus on human brain function, the earlier sections refer to agents in a more generic sense. Here I draw inspiration from artificial intelligence (AI) research, particularly from Reinforcement Learning (RL) settings. In RL research, an agent may be nothing more than a computational device running on a computer that incorporates the weights of one or more artificial neural networks (ANNs) plus a hand-coded learning algorithm. The agent may be operated within a virtual environment, simulated within the same computer that executes the agents computations. Often the hand-coded learning algorithm has direct access to ground truth information (the true state of that virtual environment and the agents coordinates and state within that environment), whereas the agent has only specific simulated senses through which it must infer those states. In such a simulated environment, the agent may be embodied - having a (simulated/virtual) physical form; common examples include humanoid shape [citations], cars [citations], and robotic arms with a fixed base [citations]. AI agents may also exist in the real world. Often in RL settings these are agents that are initially trained within a virtual environment that closely mimics the real world, and then the partially trained agent is transferred into the real world equivalent body. Humans and other animals can be considered as very complex natural biological agents. Many of the complex processes within the brains of humans have their origins in simpler organisms. Studying simple artificial agents is a first step towards understanding those processes.
+
+For an embodied agent that exists within an environment, there are three independent but interacting components at play: the environment, the body of the agent, and the agent's collection of control processes (CPs). Illustrated in the following diagram.
+
+![env, body, and CP](files/A-coherent-theory-v1-env-body-cp.drawio.png)
+
+* _**Relationships between environment, body, and control in an embodied agent.** Body actions influence the state of the environment and of the body state, while body state influences how those body actions carry out. Environment state affects body state and motivates some of the body actions. Control processes observe body and environment state and govern the state of the body via body actions._
+
+The environment is everything external to the agent, potentially including other agents. In simple synthetic AI settings, the environment is usually innocuous. In the real world it is highly dynamic and includes many dangers. The embodied agent that exists within the environment must monitor and predict the state of that environment so that it can a) benefit from the environment, and b) modify the environment to meet its own needs, and c) avoid dangers inherent within the environment.
+
+In this article body refers to the entire (real or virtual) physical form of the agent, including its outer surfaces and its internal structures and processes. The state of the body captures its externally visible components such as limbs, and its internal mechanical or biological processes such as those involved with homeostatic temperature regulation and energy production. Actions by the body include externally visible events such as moving a limb or producing audible communication, and internal processes such as those involved with temperature regulation and energy production. Body actions may be performed for the purpose of merely changing the body state, or they may be performed with the intent to change the environment (eg: put a plate on the table, or lift the object held by the robotic claw). There are three broad and somewhat overlapping reasons why the agent would perform body actions: i) to meet immediate homeostatic needs, ii) towards meeting a goal, and iii) exploration for the benefit of learning and gaining additional information that would be useful in the future.
+
+For the sake of convenience of the discussions that follow we consider the central control processes (CPs) of the agent as distinct from its body, particularly those that can be said as being computational in nature. In a typical AI agent, this refers to the entirety of its neural network(s) and/or other computational mechanisms of control and learning. In a biological organism such as humans, an approximation is to consider it as referring to the organism's central and peripheral nervous system. A significant component of the control processes are required to monitor, predict, and to tune the body's static state (eg: it's current location and energy levels) and dynamic state (eg: speed and acceleration of limb movement, adapting to resistance in movement due to external or internal factors).
 
 # II.2 Complexity and the need for Processing Loops
 
@@ -735,7 +749,7 @@ Now that this article is focused on biology, and humans in particular, the reade
 
 To fully capture all the ways in which cognitive processes are involved to sustain life would require a considerable review well beyond the scope of this article. In particular, such a review would need to discuss in detail the many different interactions between the external environment, the body, and the cognitive processes. Just a small selection of such interactions are illustrated in the diagram that follows.
 
-![env, body, and CP high level](files/A-coherent-theory-v1-env-body-cp-why.drawio.png)
+![env, body, and CP high level](files/A-coherent-theory-v1-human-env-body-cp-simple.drawio.png)
 
 * _**Some pathways of how the environment, body, and cognitive processes are leveraged to sustain the individual's life.** Solid arrows indicate the most significant relationships, with dotted arrows indicating supporting processes._
 
