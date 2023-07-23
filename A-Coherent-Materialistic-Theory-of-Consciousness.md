@@ -910,7 +910,22 @@ Damasio's 1994 book _Descartes' error : emotion, reason, and the human brain_ pr
 ## Co-development of behavioural control systems
 ...todo: review the evolutionary history...
 
-From an evolutionary perspective, Pavlovian behaviour is seen as being most ancient. It developed initially as simple localised reflexes in single celled organisms [citation]. Later, as multi-celled organisms evolved, their reflexes needed to be globally choreographed, which is believed to have led to the evolution of loosely networked nerves, and later to central nervous systems [citation]. The evolution of habitual action appears to have occurred during the time known as the "Cambrian explosion" (about 542 to 485 million years ago), or perhaps even a little earlier during the Ediacaran period (635 to 542 million years ago) (Godfrey-Smith, 2016, p27-41). Rational behaviour is believed to have occurred more recently in conjunction with the development of the neo-cortex.
+From an evolutionary perspective, Pavlovian behaviour is seen as being most ancient. It developed initially as simple localised reflexes in single celled organisms, using simple chemical signalling (Godfrey-Smith, 2016, p27-41) and non-nervous electrical signalling (Erulkar & Lentz, 2023).
+
+Later, as multi-celled organisms evolved, their reflexes needed to be globally choreographed, which is believed to have led to the evolution of nerves (Erulkar & Lentz, 2023), and eventually to the diffuse nerve nets found in cnidarians (hydroids, jellyfish, sea anemones, corals) and ctenophores (comb jellies), and later to central nervous systems. Habitual action, specifically the ability to learn from experience, is necessary for the coordination of limbs (Paulin & Cahill-Lane, 2019; Godfrey-Smith, 2016, p27-41). There is clear evidence that this had evolved by the time of the "Cambrian explosion" (about 542 to 485 million years ago), where there was an explosion in the forms of animal bodies and where there was significant predation between species (Godfrey-Smith, 2016, p27-41). There is some evidence that complex nervous systems (though not necessarily central nervous systems) evolved a little earlier during the Ediacaran period (635 to 542 million years ago), where there was apparently little predation but there were scavenging creatures with complex bodies (Paulin & Cahill-Lane, 2019), such as the trilobite (Godfrey-Smith, 2016, p27-41).
+
+The evolution of rationally controlled behaviour is much harder to identify. It is believed to correlate with so called "symbolic thinking", evidence of which is searched for in the forms of cave drawings and in the construction of tools that would require planning ahead. That is identified as evolving somewhere between 70,000 and 164,000 years ago (Wayman, 2023; Henshilwood et al, 2001). 	
+
+
+References:
+* Erulkar, S.D. and Lentz, T.L. (2023). Nervous system. Encyclopedia Britannica. https://www.britannica.com/science/nervous-system
+* Michael G. Paulin, Joseph Cahill-Lane, 2019.
+* Erin Wayman (2023). When Did the Human Mind Evolve to What It is Today? Smithsonian Magazine. 
+https://www.smithsonianmag.com/science-nature/when-did-the-human-mind-evolve-to-what-it-is-today-140507905/
+* C.S. Henshilwood, J.C. Sealy, R. Yates, K. Cruz-Uribe, P. Goldberg, F.E. Grine, R.G. Klein, C. Poggenpoel, K. van Niekerk, I. Watts (2001). Blombos Cave, Southern Cape, South Africa: Preliminary Report on the 1992–1999 Excavations of the Middle Stone Age Level. Journal of Archaeological Science, Volume 28, Issue 4. Pages 421-448, 
+ISSN 0305-4403, https://doi.org/10.1006/jasc.2000.0638.
+* Godfrey-Smith, 2016, p27-41
+
 
 That is from the perspective of development of a species. What about for the development of an individual? How do these three systems interact in order to help the individual learn to control its own behaviour?
 
