@@ -908,24 +908,9 @@ There is another fascinating aspect of control that has for a long time been lef
 Damasio's 1994 book _Descartes' error : emotion, reason, and the human brain_ provides an excellent discussion of the importance of emotion in rational decision making, as well as discussions of how cognitive processes, emotion, and body are intertwined. Clearly, a discussion of human behavioural control would not be complete without a discussion of emotions. Unfortunately such a discussion is beyond the scope of the present focus.
 
 ## Co-development of behavioural control systems
-...todo: review the evolutionary history...
+From an evolutionary perspective, innate behaviour is seen as being most ancient. It developed initially as simple localised reflexes in single celled organisms, using simple chemical signalling (Godfrey-Smith, 2016, p27-41) and non-nervous electrical signalling (Erulkar & Lentz, 2023). Later, as multi-celled organisms evolved, their reflexes needed to be globally choreographed, leading to the evolution of nerves (Erulkar & Lentz, 2023). This eventually led to the diffuse nerve nets found in cnidarians (hydroids, jellyfish, sea anemones, corals) and ctenophores (comb jellies), and later to central nervous systems. Habitual action, specifically the ability to learn from experience, is necessary for the coordination of limbs (Paulin & Cahill-Lane, 2019; Godfrey-Smith, 2016, p27-41). There is clear evidence that this had evolved by the time of the "Cambrian explosion" (about 542 to 485 million years ago), where there was an explosion in the forms of animal bodies and where there was significant predation between species (Godfrey-Smith, 2016, p27-41). There is some evidence that complex nervous systems (though not necessarily central nervous systems) may even have evolved a little earlier, during the Ediacaran period (635 to 542 million years ago), where there was apparently little predation but there were scavenging creatures with complex bodies (Paulin & Cahill-Lane, 2019), such as the trilobite (Godfrey-Smith, 2016, p27-41).
 
-From an evolutionary perspective, Pavlovian behaviour is seen as being most ancient. It developed initially as simple localised reflexes in single celled organisms, using simple chemical signalling (Godfrey-Smith, 2016, p27-41) and non-nervous electrical signalling (Erulkar & Lentz, 2023).
-
-Later, as multi-celled organisms evolved, their reflexes needed to be globally choreographed, which is believed to have led to the evolution of nerves (Erulkar & Lentz, 2023), and eventually to the diffuse nerve nets found in cnidarians (hydroids, jellyfish, sea anemones, corals) and ctenophores (comb jellies), and later to central nervous systems. Habitual action, specifically the ability to learn from experience, is necessary for the coordination of limbs (Paulin & Cahill-Lane, 2019; Godfrey-Smith, 2016, p27-41). There is clear evidence that this had evolved by the time of the "Cambrian explosion" (about 542 to 485 million years ago), where there was an explosion in the forms of animal bodies and where there was significant predation between species (Godfrey-Smith, 2016, p27-41). There is some evidence that complex nervous systems (though not necessarily central nervous systems) evolved a little earlier during the Ediacaran period (635 to 542 million years ago), where there was apparently little predation but there were scavenging creatures with complex bodies (Paulin & Cahill-Lane, 2019), such as the trilobite (Godfrey-Smith, 2016, p27-41).
-
-The evolution of rationally controlled behaviour is much harder to identify. It is believed to correlate with so called "symbolic thinking", evidence of which is searched for in the forms of cave drawings and in the construction of tools that would require planning ahead. That is identified as evolving somewhere between 70,000 and 164,000 years ago (Wayman, 2023; Henshilwood et al, 2001). 	
-
-
-References:
-* Erulkar, S.D. and Lentz, T.L. (2023). Nervous system. Encyclopedia Britannica. https://www.britannica.com/science/nervous-system
-* Michael G. Paulin, Joseph Cahill-Lane, 2019.
-* Erin Wayman (2023). When Did the Human Mind Evolve to What It is Today? Smithsonian Magazine. 
-https://www.smithsonianmag.com/science-nature/when-did-the-human-mind-evolve-to-what-it-is-today-140507905/
-* C.S. Henshilwood, J.C. Sealy, R. Yates, K. Cruz-Uribe, P. Goldberg, F.E. Grine, R.G. Klein, C. Poggenpoel, K. van Niekerk, I. Watts (2001). Blombos Cave, Southern Cape, South Africa: Preliminary Report on the 1992–1999 Excavations of the Middle Stone Age Level. Journal of Archaeological Science, Volume 28, Issue 4. Pages 421-448, 
-ISSN 0305-4403, https://doi.org/10.1006/jasc.2000.0638.
-* Godfrey-Smith, 2016, p27-41
-
+The evolution of rationally controlled behaviour is hard to identify, but it is a significantly much more recent development than that of habitual control. Rational behaviour is believed to correlate with so called "symbolic thinking", evidence of which is searched for in the forms of cave drawings and in the construction of tools that would require planning ahead. Those traits are identified as evolving somewhere between 70,000 and 164,000 years ago (Wayman, 2023; Henshilwood et al, 2001). 	
 
 That is from the perspective of development of a species. What about for the development of an individual? How do these three systems interact in order to help the individual learn to control its own behaviour?
 
@@ -1720,6 +1705,8 @@ Consciousness is the result of:
 
 * Edelman, G. M., Tononi, G. (2000). A universe of consciousness : how matter becomes imagination. New York, NY: Basic Books.
 
+* Erulkar, S.D., Lentz, T.L. (2023). Nervous system. Encyclopedia Britannica. https://www.britannica.com/science/nervous-system
+
 * Favela, L. H. (2020. Dynamical systems theory in cognitive science and neuroscience. Philosophy Compass. 15:e12695. https://doi.org/10.1111/phc3.12695
 
 * Fernandez Cruz, A.L., Arango-Muoz, S., Volz, K.G. (2016). Oops, scratch that! Monitoring ones own errors during mental calculation. Cognition, 146, pp. 110-120, 10.1016/j.cognition.2015.09.005
@@ -1778,6 +1765,8 @@ Consciousness is the result of:
 
 * Haynes, J-D. (2013). Beyond Libet: Long-Term Prediction of Free Choices from Neuroimaging Signals. In A. Clark, J. Kiverstein and T. Vierkant (eds.), Decomposing the Will, Oxford: Oxford University Press.
 
+* Henshilwood, C.S., Sealy, J.C., Yates, R., Cruz-Uribe, K., Goldberg, P., Grine, F.E., Klein, R.G., Poggenpoel, C., van Niekerk, K., Watts, I. (2001). Blombos Cave, Southern Cape, South Africa: Preliminary Report on the 1992–1999 Excavations of the Middle Stone Age Level. Journal of Archaeological Science, Volume 28, Issue 4. Pages 421-448, https://doi.org/10.1006/jasc.2000.0638.
+
 * Hoffman (?). The Interface Theory of Perception. https://sites.socsci.uci.edu/~ddhoff/interface.pdf
 
 * Humphrey, N. (2002). The uses of consciousness. In N. Humphrey (Ed.), The mind made flesh: Essays from the frontiers of evolution and psychology (pp. 65–85). Oxford: Oxford University Press.
@@ -1786,7 +1775,7 @@ Consciousness is the result of:
 
 * Kahneman, D. (2011). Thinking, fast and slow. Farrar, Straus and Giroux.
 
-* Kanai, R., Chang, A., Yu, Y., de Abril, I. M, Biehl, M, Guttenberg, N. (2019). Information generation as a functional basis of consciousness, Neuroscience of Consciousness, Volume 2019, Issue 1, 2019, niz016, 
+* Kanai, R., Chang, A., Yu, Y., de Abril, I. M, Biehl, M, Guttenberg, N. (2019). Information generation as a functional basis of consciousness, Neuroscience of Consciousness, Volume 2019, Issue 1, 2019
 
 * Kant, I. (1781). Critique Of Pure Reason. Translated by Norman Kemp Smith, London: Macmillan, 1929. Koestler, Arthur, The Act of Creation, London: Pan Books, 1970.
 
@@ -1871,6 +1860,8 @@ Consciousness is the result of:
 * Pasquali, A., Timmermans, B., Cleeremans, A. (2010). Know thyself: metacognitive networks and measures of consciousness. Cognition 117, 182–190
 
 * Paul, E.J., Smith, J.D., Valentin, V.V., Turner, B.O., Barbey, A.K., Ashby, F.G. (2015). Neural networks underlying the metacognitive uncertainty response. Cortex, Volume 71, Pages 306-322, ISSN 0010-9452. 
+
+* Paulin, M.G. and Cahill-Lane, J. (2021), Events in Early Nervous System Evolution. Top Cogn Sci, 13: 25-44. https://doi.org/10.1111/tops.12461
 
 * Peirce, C.S. (1982-). The Writings of Charles S. Peirce: A Chronological Edition. Volumes 1–6. And 8. Eds. Peirce Edition Project. Bloomington I.N: Indiana University Press.
 
@@ -1981,6 +1972,9 @@ Consciousness is the result of:
 * Yablo, S. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford and New York: Oxford University Press, 179-197.
 
 * Walsh, K. S., McGovern, D. P., Clark, A., & O'Connell, R. G. (2020). Evaluating the neurophysiological evidence for predictive processing as a model of perception. Annals of the New York Academy of Sciences, 1464(1), 242–268. https://doi.org/10.1111/nyas.14321. ([full text](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7187369/))
+
+* Wayman, E. (2023). When Did the Human Mind Evolve to What It is Today? Smithsonian Magazine. 
+https://www.smithsonianmag.com/science-nature/when-did-the-human-mind-evolve-to-what-it-is-today-140507905/
 
 * Webb, T.W., Graziano, M.S.A. (2015). The attention schema theory: a mechanistic account of subjective awareness. Front. Psychol. 6:500. doi:10.3389/fpsyg.2015.00500.
 
