@@ -1009,25 +1009,14 @@ Now, in some cases that folded protein goes onto become part of basic structure 
 
 The processes described above have a clear semiotic explanation within an individual. DNA and RNA are codes that require interpretation, and so from a semiotic point of view they are _representations_. The _object_ that they represent are the whole or parts, respectively, of the animal. The _interpretation_ of those representations results in new cells that replace old cells and in the continual production of all of the micro and macro machinery needed to keep the whole organism alive. But there is more. With each newly formed cell, there is a clone of the original DNA. And that new cell begins to carry out all the same processes that were carried by its parent cell, but this time all driven off a copy of the DNA. At the level of a cell, the object, representation, and interpretation together produce another cell, and that new cell becomes the next object in a repeated cycle. This forms a pseudo-infinite semiotic chain.
 
-...todo...arbitrary also means that it only makes sense when interpreted by something that simultaneously evolved to interpret it...
-
 At the evolutionary level, another aspect of DNA becomes important. Not only is the form of DNA somewhat independent of the form of thing that is produced from its instructions, but the particular form of DNA itself is arbitrary. In the words of Pattee, "Many other copolymer strings or even bit strings in a computer could be interpreted or translated by a suitable coding mechanism to synthesize the same proteins as a DNA sequence." (2007, pg 120). For evolution to work, that arbitrariness is an important feature. Firstly, because it enabled unguided primordial chemical experimentation to experiment with many different chemical forms, and to eventually stumble upon one such experiment that happened to become self-sustaining. Secondly, it enables evolution to experiment in an open-ended way, trying out many different DNA sequences, exploring the search space, and finding better sequences (more "evolutionarily fit"). In that way, the changes in DNA from one individual to another as a species evolves creates another pseudo-infinite semiotic chain.
 
-It is worthwhile to note that no cognitive entity is required to do any of the _interpretation_ in any of the steps discussed above. This perhaps stretches the original meanings of the semiotic jargon. Indeed, in a later article Pattee (2021) discusses the fact that the science of semiotics was originally designed for interpretation of thought and human artifacts, and thus the terminology used generally assumes some cognitive entity that does the interpretation. They go on to make the case that the underlying concepts are just as relevant to mechanical processes such as RNA transcription.
+There is a lesson here about representations: they don't have any meaning on their own. A representation only has a specific meaning in the context of a specific interpreter. The DNA that becomes messenger RNA that becomes sequences of amino acids would only become that particular sequence of amino acids thanks to the ribosomes that do the translation. A different interpreter would produce a different result. And a different form of representation would not be translated by the ribosome. The form of representation and its interpreter must evolve together.
 
-* Pattee, H. H. (2007). The Necessity of Biosemiotics: Matter-symbol Complementarity. In Introduction to Biosemiotics, Marcello Barbieri, Ed., Springer, Dordrecht, The Netherlands, pp. 115-132.
-* Pattee, H. H. (2021). Symbol Grounding Precedes Interpretation. Biosemiotics, 14(3), 561–568. https://doi.org/10.1007/S12304-021-09458-4
-* Von Neumann, J. (1966). Theory of Self-reproducing Automata. Edited and completed by A. W. Burks, University of Illinois Press, Urbana and London, pp. 74–87 and pp. 121–123.
-
-
-
-
-...Lessons:
-* interpretation doesn't require a "cognitive entity"
-* representation is nothing without interpretation, the interpreter is nothing without the representation.
+It is also worthwhile to note that no cognitive entity is required to do any of the _interpretation_ in any of the steps discussed above. This perhaps stretches the original meanings of the semiotic jargon. Indeed, in a later article Pattee (2021) discusses the fact that the science of semiotics was originally designed for interpretation of thought and human artifacts, and thus the terminology used generally assumes some cognitive entity that does the interpretation. They go on to make the case that the underlying concepts are just as relevant to mechanical processes such as RNA transcription.
 
 ## Thought
-Things get a little more nuanced when you look at computational semiotic processes in connectionist paradigms. When the entire brain is a massive multi-layered network involving many different kinds of processes, some of which talk to each other in some way, but all part of a single larger system, where are the boundaries of object, representation, and interpretation? One answer is that the brain involves many objects, representations and interpretations, layered in deep hierarchies. But more generally, the lesson is that semiotics is a tool. The concepts of object, representation and interpretation help us to understand processes as they occur, and we can apply the tool to whatever layer or part of the process that we need.
+Things get even more complex and nuanced when you look at computational semiotic processes in connectionist paradigms. When the entire brain is a massive multi-layered network involving many different kinds of processes, some of which talk to each other in some way, but all part of a single larger system, where are the boundaries of object, representation, and interpretation? One answer is that the brain involves many objects, representations and interpretations, layered in deep hierarchies. More generally semiotics is best viewed as a tool that can be applied at whatever layer or part of the process that we are interested in.
 
 As a first example of semiotics in the brain, consider how the body gathers and interprets information about the environment, illustrated in the diagram below. The environment is the _object_, and its true state is what the individual hopes to attain knowledge of. But the individual will never gain such knowledge as they do not directly perceive the environmental state. Signals obtained from the classic five senses of sight, sound, smell, touch, taste _represent_ the environment. That collective representation captures only a narrow and shallow aspect of the true state of the environment. For example, our visual sense only reports on a small field of view at any given time, and that too only about the external surface of whatever thing is being looked at. That representation is interpreted by the network of brain neurons, producing an inference about the state of the environment. What form does this inference take? Millions of _spike trains_ [citation] in some particular pattern of activity.
 
@@ -1883,6 +1872,10 @@ Consciousness is the result of:
 
 * Pasquali, A., Timmermans, B., Cleeremans, A. (2010). Know thyself: metacognitive networks and measures of consciousness. Cognition 117, 182–190
 
+* Pattee, H. H. (2007). The Necessity of Biosemiotics: Matter-symbol Complementarity. In Introduction to Biosemiotics, Marcello Barbieri, Ed., Springer, Dordrecht, The Netherlands, pp. 115-132.
+
+* Pattee, H. H. (2021). Symbol Grounding Precedes Interpretation. Biosemiotics, 14(3), 561–568. https://doi.org/10.1007/S12304-021-09458-4
+
 * Paul, E.J., Smith, J.D., Valentin, V.V., Turner, B.O., Barbey, A.K., Ashby, F.G. (2015). Neural networks underlying the metacognitive uncertainty response. Cortex, Volume 71, Pages 306-322, ISSN 0010-9452. 
 
 * Paulin, M.G. and Cahill-Lane, J. (2021), Events in Early Nervous System Evolution. Top Cogn Sci, 13: 25-44. https://doi.org/10.1111/tops.12461
@@ -1992,6 +1985,8 @@ Consciousness is the result of:
 * Van Gulick, R. (1992). "Nonreductive materialism and intertheoretical constraint." In A. Beckermann, H. Flohr, J. Kim, eds. Emergence and Reduction. Berlin and New York: De Gruyter, 157–179.
 
 * Van Gulick, R. (2022). Consciousness. In Zalta, E.N. & Nodelman, U. (eds.), The Stanford Encyclopedia of Philosophy (Winter 2022 Edition). URL = <https://plato.stanford.edu/archives/win2022/entries/consciousness/>.
+
+* Von Neumann, J. (1966). Theory of Self-reproducing Automata. Edited and completed by A. W. Burks, University of Illinois Press, Urbana and London, pp. 74–87 and pp. 121–123.
 
 * Yablo, S. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford and New York: Oxford University Press, 179-197.
 
