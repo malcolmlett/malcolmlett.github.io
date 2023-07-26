@@ -2,6 +2,21 @@ _This is a work in progress._
 
 _Please come back later._
 
+MathJax experimentations:
+
+```math
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
+
+Inline math: This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+
+Inline math: This sentence uses $\` and \`$ delimiters to show math inline:  $`\sqrt{3x-1}+(1+x)^2`$
+
+Avoiding math: To split <span>$</span>100 in half, we calculate $100/2$
+
+Not avoiding math: To split $100 in half, we calculate $100/2$
+
+
 Abstract:
 - Consciousness is produced by a semiotic multi-step planner state machine with meta management. 
 
