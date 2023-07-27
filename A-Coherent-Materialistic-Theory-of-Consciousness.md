@@ -448,17 +448,7 @@ A good example is that of a path planner.........todo.....describe one particula
 
 The sequence of CP actions required to execute a planner are complex and, although an overall strategy is known, the exact sequence is unknown a priori. Additionally, there are multiple strategies for solving the planning problem and different domains may be better aligned to different strategies. 
 
-So meta-management may be more than just parameter optimisation at learning time. It may involve processes for monitoring, modelling, and actively affecting the state of the control process while the control process performs its control of the body.
-
-A detailed discussion for all the possible reasons for meta management will be carried out in a later chapter after introducing more elaborate forms of deliberative control process. For now, in the context of the control processes discussed so far, some example forms of meta management include:
-- parameter optimisation at time of learning based on past action sequences and feedback 
-- generation of low-level feedback signals such as to indicate efficiency and "smoothness" of state trajectories
-- generation of feedback signals based on higher order understanding of the problem domain (eg: that the path planner considered paths in the wrong order)
-- monitoring of control process
-- active tuning of control process during execution
-- strategy selection
-
-In conclusion, a multi-step processor requires meta-management. For the most simple multi-step processors, meta-management can be in the form of simple parameter optimisation algorithms applied during a learning phase post execution. For more advanced multi-step processors, a much more advanced and active form of meta-management is required, one which might even have comparable complexity to the primary control process itself.
+In conclusion, a multi-iteration processor requires meta-management. For the simplest multi-iteration processors meta-management may be in the form of simple parameter optimisation algorithms applied during an offline learning phase. For more advanced multi-iterations processors, a much more advanced and active form of meta-management may be required, one which might model the behaviours of the first-order processes and which might even have comparable complexity to the first-order control process itself. The next part looks in more detail at the different possible forms of meta-management.
 
 
 ---
@@ -466,12 +456,9 @@ In conclusion, a multi-step processor requires meta-management. For the most sim
 
 # Part III - Problems in Complex Synthetic Control Processes
 
-We now turn our attention to deliberative artificial embodied agents that might operate within the real world.
+We now turn our attention to deliberative artificial embodied agents. The reasoning here follows a "design stance" where we look at what problems might need solutions if we were to try to design these systems ourselves. Heavy inspiration is taken from current AI techniques.
 
 # III.1 Meta-management in Deliberative Systems
-
-_todo: needs a clear strategy for referring to "main/standard/first-order control process"_
-
 
 Why might we need to add meta-management processes to connectionist architectures? Deep AI techniques have had many successes of late [citation]. However, these networks still lack some of the most basic adaptive capabilities that we see in many biological organisms (citations, eg: sloman). A key feature lacking from AI today is _deliberation_. Deliberation can be thought of as an extension of multi-iteration processing to more human-like thought that incorporates modelling of multiple problem domains, selection of goals, the ability to break problems into smaller sub-goals, and the ability to select between multiple strategies for problem solving.
 
@@ -482,64 +469,51 @@ A number of potential control problems have been identified in systems with such
 - **Digressions.** Choosing to deliberate over some sub-goal, and then loosing track of the "big picture" by forgetting to return to the overarching goal.
 - **Maundering.** Getting stuck deliberating over the details of a goal without making a decision.
 
-Here some specific meta-management features are discussed in the context of how they might improve connectionist computational systems with deliberative capabilities. This "design stance" is useful as a means for teasing out the lower level mechanisms that may underlie much higher-order behaviours such as meta-cognition.
+The following subsections list some specific ways in which meta-management plays a part in computational systems, with a particular focus on connectionist implementations. Many of these examples highlight areas that have existing solutions for the most simple cases, but yet have active research investigating ways to improve the handling.
 
 ## State Trajectory Control during Body Action
-Actions by an embodied agent occur over time. During the time it takes for an agent to move its arm through space from the arm's initial position to target position, the agent will make many observations about the environment and body states. The agent's goal and action plan must be relatively persistent during that time. Otherwise the agent's behaviour will be chaotic, with rapid goal and action changes.
+Actions by an embodied agent occur over time. During the time it takes for an agent to move its arm through space from the arm's initial position to target position the agent will make many observations about the environment and body states. The agent's goal and action plan must be relatively persistent during that time, otherwise the agent's behaviour will be chaotic, with rapid goal and action changes.
 
-Thus, while the agent manages (controls) the trajectory of its body state through the use of its computational state (eg: the given goal and action-plan at the time), it must also meta-manage the trajectory of that computational state. In this case, the agent's computational state must to some extent resist change influenced by new observations.
+Thus, while the computational control process manages (controls) the trajectory of its body state, it must also meta-manage the trajectory of its CP state (eg: the given goal and action-plan at the time). In this case, the agent's CP state must to some extent resist change influenced by new observations.
 
 ## State Trajectory Control during Multi-iteration Processing
-During multi-iteration processing the control process navigates through computational state space, without performing body actions.
+As introduced in chapter II.3, during multi-iteration processing the control process navigates through computational state space, without performing body actions.
 
-This state trajectory needs to be managed just the same as for the body state trajectory. In order to maintain stability the agent needs to i) observe the state trajectory, ii) apply some objective measure to decide upon the relative effectiveness of the trajectory, and iii) act to change the trajectory if a better one is available.
+This state trajectory needs to be managed just the same as for the body state trajectory. In order to maintain stability the agent needs to i) observe the CP state trajectory, ii) apply some objective measure to decide upon the relative effectiveness of the trajectory, and iii) act to change the trajectory if a better one is available. 
 
 ## State Trajectory Control during Iterative Inference
-A special case of multi-iteration processing is that of _iterative inference_, where the control process takes multiple iterations to interpret some input signal. Here a representation of the input signal may need to be held persistent for the duration of the inference, even if the original input signal has ceased. For example in an animal context where a fleeting glimpse of a potential predator has been observed but that observation needs re-review before being certain.
+A special case of multi-iteration processing is that of _iterative inference_, where the control process takes multiple iterations to interpret some input signal. Here a representation of the sensory input signal may need to be held persistent for the duration of the inference, even if the original input signal has ceased. For example in an animal context where a fleeting glimpse of a potential predator has been observed but that observation needs re-consideration before being certain.
 
-In that case, some portion of the state must be held stable, while the rest is free to change significantly. Something needs to manage
-
-## State trajectory control in summary
-_todo: do I really need this summary?_
-
-As discussed in detail in an earlier chapter, there is a strong case for the need to actively manage the trajectory of the agent's computational state. Three contexts have been highlighted for this need:
-- during iterative prediction (micro-scale recurrency)
-- during looping multi-step execution (macro-scale recurrency)
-- while waiting for actions to play out.
-
-Mechanisms underlying state trajectory control can include:
-- Observing performance over time
-- Predicting future outcomes from current trajectory
-- Predicting expected future utility of current trajectory, and comparing against that of other predicted possible trajectories.
-- Applying tuning control where current trajectory is sub-optimal.
+In that case, some portion of the state must be held stable, while the rest is free to change significantly. This requires some form of meta-management. In simple cases that may develop as an implicit product of the learned connectionist control process. In more complex agents, such as those with attention, more explicit meta-management may be required.
 
 ## Objective learning
-How does a continuously learning embodied agent know which actions are better than others? This decision is tied to the agent's objective: it's ultimate goal that influences all other goals. For example, to eat and stay healthy in order to survive. Or to produce as many staples as possible in as little time as possible (citation). If the agent is not pre-configured with its objective, then it must learn that objective.
+How does a continuously learning embodied agent know which actions are better than others? This decision is tied to the agent's objective: it's ultimate goal that influences all other goals. For example, to eat and stay healthy in order to survive. Or to produce as many staples as possible in as little time as possible [citation]. If the agent is not pre-configured with its objective, then it must learn that objective.
 
-An agent in the human world requires the use of inedible metal tokens (coins), which are used in complex ways for the purpose of life preservation. The involvement of such an inedible metal token as part of some process (eg: doing a job and being payed) does not necessarily immediately result in a life sustaining outcome. Thus, without any other information, it is hard for the agent to learn the relationship between that inedible metal token, the processes that it must be involved in, and the life sustaining result. This is known in the AI community as _sparse feedback_, and it poses a particularly difficult problem for continuously learning agents (citation needed).
+An agent in the human world requires the use of inedible metal tokens (coins), which are used in complex ways for the purpose of life preservation. The involvement of such an inedible metal token as part of some process (eg: doing a job and being paid) does not necessarily immediately result in a life sustaining outcome. Thus, without any other information, it is hard for the agent to learn the relationship between that inedible metal token, the processes that it must be involved in, and the life sustaining result. This is known in the AI community as _sparse feedback_, and it poses a particularly difficult problem for continuously learning agents [citation needed].
 
-Another problem for a continuously learning agent is known as the "exploration-exploitation dilemma" (citation needed). The agent gains knowledge about its world and itself by exploring places and things, and by experimenting with novel behaviours. When the agent needs to achieve a goal, it may know that it can achieve the goal via its existing knowledge (exploitation), but it may be able to achieve that goal in some better way if it were to explore more first; it also may not. The dilemma concerns how the agent chooses between exploration and exploitation at any given moment.
+Another problem for a continuously learning agent is known as the _exploration-exploitation dilemma_ (Kaplan & Friston, 2018). The agent gains knowledge about its world and itself by exploring places and things, and by experimenting with novel behaviours. When the agent needs to achieve a goal, it may by able to achieve the goal by _exploiting_ its existing knowledge, but it may be able to achieve that goal in some better way if it were to _explore_ more first; it also may not. The dilemma concerns how the agent chooses between exploration and exploitation at any given moment.
 
-Sparse feedback and the exploration-exploitation dilemma make objective learning difficult. One solution is for the agent to build simplified models of its environment, itself, the behaviours it can perform, and how those behaviours influence different outcomes. Simplified models have fewer degrees of freedom than found in the raw first-order signals. This means that the models can be built up from fewer examples, and they are easier to change as learning progresses. These models become the agent's "knowledge", and somewhere within that knowledge a continuously learning agent builds a structure that ultimately governs its behaviours and goals – that is, an objective that it infers over time.
+Sparse feedback and the exploration-exploitation dilemma make objective learning difficult. One solution is for the agent to build high-level simplified models of its environment, itself, the behaviours it can perform, and how those behaviours influence different outcomes. High-level models have fewer degrees of freedom than found in the raw first-order signals. This means that the models can be built up from fewer examples, and they are easier to change as learning progresses. These models become the agent's "knowledge", and somewhere within that knowledge a continuously learning agent builds a structure that ultimately governs its behaviours and goals – that is, an objective that it infers over time.
 
-_todo: remove....Importantly, those models can have different forms, and their forms influence what kinds of inferences the agent can draw from the knowledge, and consequently how they can be used for other management and meta-management purposes. A discussion of different models is presented in a later section._
-
-_todo: needs revising....Objective learning becomes a meta-management concern for two reasons. Firstly, the objective governs all lower level concerns, including meta-management. Secondly, as will be seen later, meta-management necessarily operates at a higher-order representation, and is thus an appropriate framework upon which to build objective learning._
+Objective learning can be seen as another form of meta-management for a number of reasons. Firstly, even with a learned objective function, first-order behaviour continues to use low-level representations, where the high-level objective function is used only in the generation of endogenous feedback as part of subsequent behaviour learning. Thus the learning and use of the objective function is a second-order process. Secondly, learning of objective functions is hard [citation needed], and in complex environments it may too require deliberative involvement.
 
 ## Mode control
 A number of seemingly distinctly different behavioural outcomes share a single principle, referred to here as _mode control_. Mode control involves a decision being made between multiple alternatives and that decision influencing the way in which a subsequent process or decision is carried out.
 
 Examples of mode control include:
 - **Strategy selection.** Choosing between multiple previously learned strategies (ie: sequences of processing) that may be useful for solving the particular problem at hand. The selected strategy may affect goal selection and/or it may bias the outcomes of certain processes.
-- **Goal selection.** Choosing the next target state, for example based on an interpretation of external signals, or from weighed up options in an ambiguous situation. The chosen target state thus becomes the reference point for generation of actions.
+- **Goal selection.** Choosing the next target state, for example based on an interpretation of external signals, or from weighed up options in an ambiguous situation. The chosen target state thus becomes the reference point for inference of appropriate actions.
 - **Context.** Context plays a huge part in the interpretation of sparse signals. A visual patch of yellow with dark spots, when seen in the Savannah, may indicate a leopard, but the same patch on the beach may simply indicate sea shells. Context is not always available from direct sense of the external environment. Most perceptual interpretation also receives context from short-term and/or long-term term memory. Thus meta-management plays a role in inferring that context from a mixture of current sensory signals plus memory.
-- **Attention.** As suggested in the chapter on embodied state machines, the bandwidth of any computational system is limited, and the complexity of the environment may exceed the agent's computational bandwidth. One solution is to focus on only the most salient features of the environment, ignoring the rest. What the agent considers salient differs depending on things in the environment, the context in which the agent is operating, and on the agent's knowledge. Attention has a significant impact on the processes executed by the main control process – a change in attention changes the input to the control process, and thus to its output.
-- **Exploration vs exploitation.** Already introduced in an earlier discussion on objective learning, the choice between exploration and exploitation affects sub-goal selection and the actions taken by the agent. Where an agent chooses its actions based on certainty of expected outcome, an exploration mode may for example bias the agent towards preferring expected outcomes with less certainty.
+- **Attention.** As suggested in Part II, the bandwidth of any computational system is limited, and the complexity of the environment may exceed the agent's computational bandwidth. One solution is to focus on only the most salient features of the environment, ignoring the rest. What the agent considers salient differs depending on things in the environment, the context in which the agent is operating, and on the agent's knowledge. Attention has a significant impact on the processes executed by the main control process – a change in attention changes the input to the control process, and thus to its output.
+- **Exploration vs exploitation.** Already introduced in an earlier discussion on objective learning, the choice between exploration and exploitation affects sub-goal selection and the actions taken by the agent. For example, an agent can measure its actions according to the certainty associated with the predicted outcome; in an exploration mode, the agent will prefer actions that have less associated certainty (Kaplan & Friston, 2018).
+
+References:
+* Kaplan, R., Friston, K.J. Planning and navigation as active inference. Biol Cybern 112, 323–343 (2018). https://doi.org/10.1007/s00422-018-0753-2
 
 ## Mode identification
-For mode selection to be possible, the agent must identify the modes that can be selected from, whether they be discrete or a range of continuous values. This requires two important features of the meta-management system: i) that it has sufficient access to observe the things that it needs to control, the outcomes of the control, and the values used in control; and ii) that it can model those observations and later use that model to choose the control mode.
+For mode selection to be possible, the agent must identify the modes that can be selected from, whether they be discrete or a range of continuous values. This requires two important features of the meta-management system: i) that it has sufficient access to _observe_ the things that it needs to control, the outcomes of the control, and the values used in control; and ii) that it can _model_ those observations and later use that model to choose the control mode.
 
-In some cases this may involve modelling the relationships between different components of the first-order control process. Timmermans et al (2012) give the example of meta-cognitive processes learning cause-effect relationships between the supplementary motor cortex and the primary motor cortex and using this to infer what signals to send from higher order areas.
+In some cases this may involve modelling the relationships between different components of the first-order control process. For example, Timmermans et al (2012) identify that meta-cognitive processes appear to learn cause-effect relationships between the supplementary motor cortex and the primary motor cortex. They suggest that this model is used to infer the most appropriate signals to send from higher order areas.
 
 ## Distributed cooperation
 Some theories of brain function describe the brain as having multiple independent processes that are in constant competition. For example the biased-competition theory of attention (citations) assumes multiple processors, each interpreting their own local sub-scene out of a larger visual scene. It pits those different sub-scene interpretations against each other, until a single unified scene interpretation wins out. Global Workspace Theory adds the option for groups of otherwise competing processes to cooperate (citation), with the outcome being that a group of processes can collectively win the competition for attention when each process individually would loose.
@@ -548,54 +522,42 @@ This seems like an obvious situation in which meta-management has a part to play
 
 Curiously, as observed by Baars (citation, pp ref), humans don't appear to have experiential awareness of this competition / cooperation process. Rather, we observe only a sort of stabilized outcome. So perhaps this is a first-order concern, at least in humans. But in principle it could also be a meta-management concern.
 
-## Certainty measurement / reaction
-todo: Eg: low level simulations linking certainty encoding to attention. Not sure how used for meta mgtmt, but has a plausible low level mechanism.
+# III.2 Interlude: Mechanisms of First-order Control Processes
 
-# III.2 Interlude: Mechanisms of Standard Control Processes
+In order to elaborate more fully on the possible implementation details of meta-management, I need first a more detailed description of the first-order control processes that it might operate against. This chapter examines a small selection of different architectures for first-order control.
 
-What form might meta-management take. In order to answer that question I shall first present a review of different architectures for standard control (ie: non meta-management). 
-
-_..todo...maybe now diagram all the component parts of an AI RL learning algorithm, so we can see what meta-management is already incorporated._
-
-In AI, a common scenario is to train a simulated robot to navigate within a virtual environment. It is common to incorporate a Neural Network (NN) as part of the control system and to use Reinforcement Learning (RL) to train that neural network. Several broad options exist for the architecture of the control algorithm. These can be framed as a progression of improvements, that lead to increasingly better adaptability. The progress is illustrated in the diagram below, and outlined as follows. 
-
-_...todo...update wording below to use "policy" instead of "function"._
+In AI, a common scenario is to train a simulated robot to navigate within a virtual environment. It is common to incorporate a Neural Network (NN) as part of the control system and to use Reinforcement Learning (RL) to train that neural network. Several broad options exist for the architecture of the control algorithm. These can be framed as a progression of improvements that lead to increasingly better adaptability. The progress is illustrated in the diagram below, and outlined in what follows. 
 
 ![standard control algorithms](files/A-coherent-theory-v1-std-control-algs.drawio.png)
 
-* _**Control algorithms.** A graduation of increasingly adaptive control algorithms in an embodied controller. Training algorithm connectivities simplified or it is entirely omitted for the sake of simplicity. A) A so called "model-free" parameterised function that produces action without awareness of its own state. B) Model-free parameterised function that is aware of its own state. C) A so called "model-based" planner that predicts entire trajectories in order to choose the best action, with or without awareness of its own state. D) a hybrid that employs model-free control with a planner to observe and protect against major errors._
-
-
-_..todo.. for all of the sections that follow:_
-- _need to describe the algorithms better, and more formally._
-- _look at industry explanations_
+* _**Control algorithms.** A graduation of increasingly adaptive control algorithms in an embodied controller. Some training algorithm connectivities have been simplified or omitted for the sake of simplicity. A) A so called "model-free" _policy_ network that produces action without awareness of the dynamics of the agent itself. B) Model-free policy network that is aware of the state of its body. C) A so called "model-based" planner that predicts entire trajectories in order to choose the best action, with or without awareness of its own state. D) Iterative convergence......todo...._
 
 ## Stateless reactive control process
 In the most simple case, a _policy_ NN simply predicts the best action given a sensory input about the environment. A typical example is a robot car with very simple choices of actions: stop/go, left/right/forwards. The robot observes its surroundings using, for example, vision, sonar, or laser. The dynamics of the robot itself are ignored. The robot is assumed to produce the required action immediately; for example that no time is taken while the robots changes its steering angle.
 
-This kind of agent is known as _model-free_, because it lacks an explicit model of the state-space in which it operates. For example, it has no possibility to predict expected outcomes of actions and to detect when actual outcomes diverge from expectation.
+This kind of agent is known as _model-free_, because it lacks an explicit model of the state-space in which it operates. For example, it has no ability to predict expected outcomes of actions and to detect when actual outcomes diverge from expectation.
 
-The RL algorithm is really the thing with the smarts here. It has access to much information that the agent does not. For example, it knows what the training goal is (eg: to navigate a race course), it knows the ground truth position and orientation of the robot at all times, and it knows how "costly" each robot action was relative to the goal. From that information it computes a _loss function_ as the time-devalued sum of those action costs [citation, and details]. That loss function is then used via back propagation to update the weights within the NN.
+The training is done by the RL algorithm, which is hand-written by researchers. The RL algorithm is really the thing with the smarts here. It has access to much information that the agent does not. For example, it knows what the training goal is (eg: to navigate a race course), it knows the ground truth position and orientation of the robot at all times, and it knows how "costly" each robot action was relative to the goal. From that information it computes a _loss function_ as the time-devalued sum of those action costs [citation, and details]. The loss function effectively computes a unit-neutral measure that has the characteristic that lower loss values indicate behaviour is closer to ideal, without needing to know exactly what ideal is. That loss function is then used via gradient descent and back propagation to update the weights within the NN.
 
 In the earlier days of neural network research, including deep learning, many of the problems addressed were of this very simple form.
 
 ## Stateful reactive control process
 A small improvement enables the agent to cope with its own dynamics.
 
-Here the agent has information about its own state. For example, information about the current steering angle and speed of the robot car's wheels. ....[citation needed].... how does that actually improve things?
+Here the agent has information about its own state. For example, a car robot may have information about its current steering angle and speed of its wheels. This enables the robot to implicitly take into account the dynamics of its own physical properties when inferring the next action. 
 
-A particular scalability problem afflicts reactive control processes for more realistic real-world scenarios. In the real world, the best trajectory is a function not just of the initial state, but also of the goal at the time. Here the policy NN learns a probability distribution `P(a|s,g)`. The potential range of goals could be large, and thus the dimensionality of the distribution is exponentially larger than `P(a|s)` alone. And this solution only generalises to new goals that are similar to ones seen at training time.
+A particular scalability problem afflicts reactive control processes for more realistic real-world scenarios. In the real world, the best trajectory is a function not just of the initial state, but also of the goal at the time. Here the policy NN learns a probability distribution $`P(a|s,g)`$. The potential range of goals could be large, and thus the dimensionality of the distribution is exponentially larger than $`P(a|s)`$ alone. Furthermore, the policy network only generalises to new goals that are similar to ones seen at training time.
 
 ## Planning control process
-A significant improvement to adaptability and reduction in training time is seen in AI research by incorporating a planner into the control process. Here, a model is incorporated that predicts the effect of an action on the state of the environment and on the agent's own state. Rather than predicting a single best action, the agent simulates a trajectory from its current state via a sequence of actions to see where it may end up. It does that multiple times with multiple trajectories. It completes each step by picking the best trajectory tried, and the first action from that trajectory. Then it repeats the whole process again for the next timestep.
+A significant improvement to adaptability and reduction in training time is seen in AI research by incorporating a _causal model_ with a _planner_ into the control process. Here, a model is learnt that predicts the effect of an action on the state of the environment and on the agent's own state. Rather than predicting a single best action, the agent simulates a trajectory from its current state via a sequence of actions to see where it may end up. It does that multiple times with multiple trajectories. It completes each action step by picking the best trajectory tried, and executing only the first action from that trajectory. Then it repeats the whole process again for the next action step.
 
-Compared to reactive control processes. Such a solution has a significant advantage in the real world where the most appropriate action depends on the goal at the time. The planner learns a model P(s'|s,a). The model is not parameterised by goal, as the goal needs only be considered at the time of planning. Additionally, the same model parameters can be updated from experience regardless of the goal that was being followed at the time. So the model generalises well to totally unseen goals.
+Compared to reactive control processes, such a solution has a significant advantage in the real world where the most appropriate action depends on the goal at the time. The planner learns a model $`P(s'|s,a)`$. The model is not parameterised by goal, as the goal needs only be considered at the time of planning. Thus the same model suffices to work with many goals, including goals never seen during training. Additionally, during training the same model parameters can be updated from experience regardless of the goal that was being followed at the time.
 
-A key feature of this control algorithm is the use of _simulation_ when considering different possible trajectories. A simulated sequence of actions can often be run orders of magnitude faster than actually carrying out the same sequence of actions. Negative outcomes in a simulation have no impact on the agent except for the time spent running the simulation. And simulations can even be used to train other systems.......todo: [citation] example of EM where problem space is split into multiple models.
+A key feature of this control algorithm is the use of _simulation_ when considering different possible trajectories. A simulated sequence of actions can often be run orders of magnitude faster than actually carrying out the same sequence of actions. Negative outcomes in a simulation have no impact on the agent except for the time spent running the simulation.
 
 Unfortunately, this planning approach can also be computationally inefficient. In a naive implementation an extensive amount of computations are performed that are completely discarded and repeated again. It also doesn't scale well into long trajectories of high-resolution. Various optimisations exist. One particularly relevant optimisation is to use a planner to produce a course-grained high-level trajectory, and to use a reactive control process for the fine-grained motion control. In such a setup, the next point in the high-level trajectory sets a dynamic goal that is fed into the reactive control process as an additional input. [citations]
 
-Note that the structure and algorithm of the planner is far from given. It too has many parameters. In AI research the planning algorithm is typically chosen beforehand. In a biological setting, the planning algorithm itself may be learned from experimentation and instruction.
+Note that the structure and algorithm of the planner is far from given. It too has many parameters. In AI research the planning algorithm is typically chosen beforehand and hand-written. In a biological setting, the planning algorithm itself is likely learned from experimentation and instruction.
 
 _...todo....this needs better phrasing. I think I should accept that the planner is multi-step, and that meta-management is incorporated into the hard-coded planner implementation, but that it's all totally different for a biological setting:_
 _- In most AI research today, a planning control process is still a single-step control process: each env + body state inference is associated with a single pass through its control process and an immediate choice of action. Any apparent multi-step processing, such as within the planner, are typically hard-coded by AI engineers. The planning process is not controlled by a learned NN. In biology, such a hard-coded static planner does not exist. The biological organism needs to learn how to do and control such a process itself._
@@ -690,13 +652,15 @@ Mechanisms for meta-management processes to observe the control process include:
 - **Inputs.** Including any goal selection supplied from systems outside of the scope of discussion. Needed in order to associate CP behaviour with certain kinds of input.
 - **Outputs.** Needed in order to observe CP behaviour.
 - **State.** For multi-step control processes, their internal hidden state may be the only thing that changes from step to step. It is the trajectory of the CP state that we first called out above as needing meta-management.
-- **Whether outputs lead to body action or not.* Useful in order to measure the "efficiency" of the multi-step process for producing useful body actions.
-- **Feedback.**
+- **Whether outputs lead to body action or not.** Useful in order to measure the "efficiency" of the multi-step process for producing useful body actions.
+- **Feedback.** Generation of low-level feedback signals such as to indicate efficiency and "smoothness" of state trajectories. Generation of feedback signals based on higher order understanding of the problem domain (eg: that the path planner considered paths in the wrong order).
 - **Trajectory caches.** Unlike the control process itself, meta-management may need to track the trajectory of CP behaviours over time. Likely across multiple timeframes. This will involve some mechanism to represent those trajectories. For example, the trajectory in the context of the current problem at hand in order to monitor whether it is leading towards a solution. And for example tracking of the control process's overall abilities and over time, and whether it tends to produce useful results or tends to be "wrong" (for some definition of "wrong").
 - **Modelling.** Modelling of CP behaviour and how meta-control signals affect them, in order to infer the most appropriate meta-control signals.
 - **Predicting.** For example predicting whether the current CP state trajectory is likely to lead towards a beneficial outcome or not.
 - **Associative memory.** Used to recognise frequent and infrequent CP behaviours that need specific meta-management. For example, situations in which the multi-step CP tends to get "stuck in a loop", where it would repeat a particular cyclic sequence of steps ad-infinitum without any intervention.
 - **Measuring error rate.** Recording and tracking how beneficial the CP behaviours are, such as would be needed to attenuate CP output strength in early stages of CP training.
+
+
 
 Of particular note is the fact that many of these mechanisms described are the same kinds of systems that would be used in an advanced agent for the observation, inference, and manipulation of interactions between the agents limbs, and between the agent and the environment.
 
