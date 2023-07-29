@@ -557,10 +557,6 @@ It remains to be seen how complex a system can get via such a hierarchical mutua
 # III.3 Interlude: Planning in AI and Biology
 
 ## Hand-written Control Processes in AI vs Biologically Plausible Control
-_todo_:
-* I need to make regular reference to the idea that AI today uses a lot of "hand-written" processes, many of which are imperative in style rather than connectionist. So there are many aspects of AI today that are a) not biologically plausible, and b) conveniently skip some of the problems that I'm trying to identify and propose solutions for.
-* Then draw some specific comparisons and a framework for understanding the biologically plausible equivalents: dynamic layers bootstrapping on top of relatively static layers.
-
 In the above I have taken substantial inspiration from contemporary AI research into artificial connectionist computational paradigms. I shall continue to use AI research for inspiration and to draw comparisons. For that comparison to be legitimate I need to address a major difference between contemporary AI's use of connectionist architectures and that of biology.
 
 In contemporary AI, many of the processes are hand-written _imperative code_ - written in a chosen computer language that executes steps one at a time. It could be argued that in most AI agents the primary control process is that imperative code. The connectionist part of the architecture is only a small component of the overall solution. Somewhat confusingly, the AI community refer to that artificial NN as a "model" regardless of whether they are implementing model-free or model-based RL or some other form of AI. However this reference as a "model" is appropriate - it is not a real neural network, but a data structure on a computer that represents certain simplified aspects of how such a neural network might be structured. As it is just a data structure, something else must _execute_ it. And the thing that executes it is the hand-written imperative code.
@@ -573,13 +569,11 @@ The following diagram illustrates some of the components used in AI RL agents.
 
 * _**Control and meta-management processes in contemporary AI.** A mixture of imperative code hand-written by AI researchers plus connectionist models implement the control and meta-management processes of the agent._
 
-In a narrow way there are aspects of the above that are not entirely dissimilar to biology. Biology employs aspects that are "hard-coded" by an individual's genetics. But the key point here is that in biological organisms, significantly more of the first-order control and of meta-management processes use connectionist solutions that _learn_. In that way, contemporary AI today avoids some of the difficulties faced by biology, but it also misses out on the opportunities provided by that flexibility.
+In a narrow way there are aspects of the above that are not entirely dissimilar to biology. Biology employs aspects that are "hard-coded" by an individual's genetics. But significantly more of the first-order control and of meta-management processes use connectionist solutions that _learn_. In that way, contemporary AI today avoids some of the difficulties faced by biology, but it also misses out on the opportunities provided by that flexibility. In practice, as illustrated in the following diagram, biological brains probably have a graduation of inflexible to flexible computational processes. At the most low-level there are entirely genetically hard-wired processes such as reflexes. At the most high-level there are processes that are entirely learned through experience. And in between there is computational processes with strong genetic influence, but which can be adjusted over a lifetime through experience.
 
 ![biologically plausible CP and MM](files/A-coherent-theory-v1-bio-plaus-cp-and-mm.drawio.png)
 
-* _**Control and meta-management processes in biology.** Layers of increasingly flexible and learning connectionist networks run on top of more static connectionist networks, plus on top of a "hard-coded" body._
-
-_todo: improve diagram by making it just one vertically connected network, with fuzzy boundaries rather than strict boundaries, and describe the vertical sections as layers._
+* _**Control and meta-management processes in biology.** Layers of increasingly flexible and learning connectionist networks run on top of more static (genetically pre-determined) connectionist networks, all of which are "hosted" within a largely genetically "hard-wired" body._
 
 ## A Biologically Plausible Planning Control Process
 In order to more accurately motivate further discussions of meta-management in a way that might be applicable to biology, we need a control process that is itself more biologically plausible. A biological version of a trajectory planner provides a good such example. It is reasonable to consider that an ability to do planning is very important for biological agents just as much as it is for artificial agents. Biological agents are unlikely to be imbued with a fully-formed pre-built planning engine. And even if such a thing was partially or fully formed, it is more likely to built using the same kind of neural network structures found throughout the rest of the brain.
