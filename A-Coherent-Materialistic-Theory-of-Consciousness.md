@@ -600,7 +600,7 @@ What options are available to meta-manage a first-order control process? This in
 
 ![meta-management control options](files/A-coherent-theory-v1-mm-cntrl-options.drawio.png)
 
-* _**Meta-control options.** Identification of some ways in which a control process may be meta-managed. A) A control process that takes sensory input, incorporates goal and processing state and bayesian-style inferences with biases in order to produce outputs. The result of actions produce feedback that is used in parameter optimisation. All of those components pose as avenues for meta-control. B) Where multiple control processes "compete", some mechanism needs to choose the winning outcome. 
+* _**Meta-control options.** Identification of some ways in which a control process may be meta-managed. A) A control process that takes sensory input, incorporates goal and processing state and bayesian-style inferences with biases in order to produce outputs. The result of actions produce feedback that is used in parameter optimisation. All of those components pose as avenues for meta-control. B) Where multiple control processes "compete", some mechanism needs to choose the winning outcome._
 
 Let's examine some options:
 
