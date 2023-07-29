@@ -492,9 +492,6 @@ Examples of mode control include:
 - **Attention.** As suggested in Part II, the bandwidth of any computational system is limited, and the complexity of the environment may exceed the agent's computational bandwidth. One solution is to focus on only the most salient features of the environment, ignoring the rest. What the agent considers salient differs depending on things in the environment, the context in which the agent is operating, and on the agent's knowledge. Attention has a significant impact on the processes executed by the main control process – a change in attention changes the input to the control process, and thus to its output.
 - **Exploration vs exploitation.** Already introduced in an earlier discussion on objective learning, the choice between exploration and exploitation affects sub-goal selection and the actions taken by the agent. For example, an agent can measure its actions according to the certainty associated with the predicted outcome; in an exploration mode, the agent will prefer actions that have less associated certainty (Kaplan & Friston, 2018).
 
-References:
-* Kaplan, R., Friston, K.J. Planning and navigation as active inference. Biol Cybern 112, 323–343 (2018). https://doi.org/10.1007/s00422-018-0753-2
-
 ## Mode identification
 For mode selection to be possible, the agent must identify the modes that can be selected from, whether they be discrete or a range of continuous values. This requires two important features of the meta-management system: i) that it has sufficient access to _observe_ the things that it needs to control, the outcomes of the control, and the values used in control; and ii) that it can _model_ those observations and later use that model to choose the control mode.
 
@@ -513,7 +510,7 @@ In order to elaborate more fully on the possible implementation details of meta-
 
 In AI, a common scenario is to train a simulated robot to navigate within a virtual environment. It is common to incorporate a Neural Network (NN) as part of the control system, known as a _policy_ network, and to use Reinforcement Learning (RL) to train that neural network. Several broad options exist for the architecture of the control algorithm. These can be framed as a progression of improvements that lead to increasingly better adaptability. The progress is illustrated in the diagram below, and outlined in what follows. 
 
-![standard control algorithms](files/A-coherent-theory-v1-std-control-algs.drawio.png)
+![standard control algorithms](files/A-coherent-theory-v1-first-order-control-algs.drawio.png)
 
 * _**Control algorithms.** A graduation of increasingly adaptive control algorithms in an embodied controller. Some training algorithm connectivities have been simplified or omitted for the sake of simplicity. A) A so called "model-free" _policy_ network that produces action without awareness of the dynamics of the agent itself, with an additional training algorithm that optimises its parameters. B) Model-free policy network that is aware of the state of its body. C) A so called "model-based" planner that simulates entire trajectories in order to choose the best action, with or without awareness of its own state. D) Hierarchical prediction-based control process that may not need explicit meta-management._
 
@@ -553,7 +550,7 @@ It also needs to simulate trajectories, but where the planner above does that th
 
 Additional explicit meta-management processes are not required in the system described above because each individual component inherently converges towards its ideal state: there is nothing more ideal than being the best at predicting what it needs to predict. In a neural network, learning from prediction errors occurs locally, without requiring an overarching system to compute and backpropagate weight changes. The system as a whole converges due to the convergence of all of its parts, and due to mutual interactions between them.
 
-An example of such an architecture is that of Predictive Coding, described in chapter I.4. This approach has been generalised further into the concept of _free-energy minimisation_ [citation]. Prediction error is considered as one kind of "free energy". Another kind is uncertainty in the prediction, ie: lack of confidence in a prediction, prior to measuring the error. On a longer timescale, another source of free energy is expectation of negative outcomes in the future, or just uncertainty about the future at large. It has been theorised that significant behavioural complexity can be achieved through free-energy minimisation alone, and that it plays a large part of driving behaviour in biological organisms. For example, free-energy minimisation balances between exploitation and exploration. Uncertainty leads to exploration. Certainty of negative outcomes (eg: hunger) leads to avoidance of those negative outcomes (eg: by finding food). Uncertainty in negative outcomes leads to cautiousness.
+An example of such an architecture is that of Predictive Coding, described in chapter I.4. This approach has been generalised further into the concept of _free-energy minimisation_ (Kaplan & Friston, 2018; Friston, 2010; Friston et al, 2017; Friston et al, 2006). Prediction error is considered as one kind of "free energy". Another kind is uncertainty in the prediction, ie: lack of confidence in a prediction, prior to measuring the error. On a longer timescale, another source of free energy is expectation of negative outcomes in the future, or just uncertainty about the future at large. It has been theorised that significant behavioural complexity can be achieved through free-energy minimisation alone, and that it plays a large part of driving behaviour in biological organisms. For example, free-energy minimisation balances between exploitation and exploration. Uncertainty leads to exploration. Certainty of negative outcomes (eg: hunger) leads to avoidance of those negative outcomes (eg: by finding food). Uncertainty in negative outcomes leads to cautiousness.
 
 It remains to be seen how complex a system can get via such a hierarchical mutual-predictive process alone, and whether explicit meta-management processes may also provide benefit.
 
@@ -605,11 +602,11 @@ This planning controller exhibits many of the potential problems with multi-iter
 
 # III.4 Meta-control Options in Meta-management
 
-What options are available for a control process to be meta-managed? We have already mentioned parameter optimisation. Here we shall look at some other options. The goal is not to provide an exhaustive list, but to build up a case for the need to observe the control process and to draw out what kinds of observation might be needed.
+What options are available to meta-manage a first-order control process? This includes for the biologically plausible control process described above, and for other potentially biologically plausible architectures such as hierarchical predictive coding. We have already mentioned parameter optimisation. Here we shall look at some other options. The goal is not to provide an exhaustive list, but to build up a case for the need to observe the control process and to draw out what kinds of observation might be needed.
 
 ![meta-management control options](files/A-coherent-theory-v1-mm-cntrl-options.drawio.png)
 
-* _**How meta-management can influence the control process.** Identification of some ways in which a control process may be meta-managed._
+* _**Meta-control options.** Identification of some ways in which a control process may be meta-managed. A) A control process that takes sensory input, incorporates goal and processing state and bayesian-style inferences with biases in order to produce outputs. The result of actions produce feedback that is used in parameter optimisation. All of those components pose as avenues for meta-control. B) Where multiple control processes "compete", some mechanism needs to choose the winning outcome. 
 
 Let's examine some options:
 
@@ -629,74 +626,72 @@ Many of the above meta-management processes could be implicit or explicit. Impli
 
 # III.5 Meta-observation Options in Meta-Management
 
-In order to carry out any of the meta-control mechanisms described in the section above, those explicit meta-management processes need to observe the behaviour of the first-order control process. We look now at a brief review of some of those _meta-observation_ options.
+In order to carry out any of the meta-control mechanisms described in the section above, those meta-management processes need to observe the behaviour of the first-order control process. We look now at a brief review of some of those _meta-observation_ options.
 
 ![meta-management observation options](files/A-coherent-theory-v1-mm-observation-options.drawio.png)
 
-* _**How meta-management can observe the control process.** Illustration of the sorts of things that explicit meta-management may need to observe, and the processes that might be involved to draw inferences from that information._
+* _**Meta-observation options.** Illustration of the sorts of things that may need to be observed in order to perform meta-management, and the processes that might be involved to draw inferences from that information. Behaviour of the control process can be observed, modelled, and predicted over time. Behaviour can be described in terms of the trajectories that it takes through a state space that incorporates inputs, CP state, and outputs. For rapid adaptive learning from single experiences, memory could associate salient situational features to urgent recall of behaviours that need to be avoided or repeated in the future. The effectiveness of first-order behaviour control needs to be observed, in terms of prediction error, reward signals, etc.
 
 Mechanisms for meta-management processes to observe the control process include:
-- **Inputs.** Including any goal selection supplied from systems outside of the scope of discussion. Needed in order to associate CP behaviour with certain kinds of input.
-- **Outputs.** Needed in order to observe CP behaviour.
-- **State.** For multi-step control processes, their internal hidden state may be the only thing that changes from step to step. It is the trajectory of the CP state that we first called out above as needing meta-management.
-- **Whether outputs lead to body action or not.** Useful in order to measure the "efficiency" of the multi-step process for producing useful body actions.
+- **Inputs.** Inputs to the first-order control process need to be observed, including any goal selection supplied from systems outside of the scope of discussion. This is needed in order to associate CP behaviour with certain kinds of input.
+- **Outputs.** CP behaviour is defined by its output for given inputs, so its outputs need to be observed and recorded or modelled w.r.t. to the inputs at the time.
+- **State.** For multi-iteration control processes, their internal hidden state may be the only thing that changes from step to step. The trajectory of the CP state is what we first called out as needing meta-management back in part II.
+- **Whether outputs lead to body action or not.** Useful in order to measure the "efficiency" of the multi-iteration process for producing useful body actions.
 - **Feedback.** Generation of low-level feedback signals such as to indicate efficiency and "smoothness" of state trajectories. Generation of feedback signals based on higher order understanding of the problem domain (eg: that the path planner considered paths in the wrong order).
 - **Trajectory caches.** Unlike the control process itself, meta-management may need to track the trajectory of CP behaviours over time. Likely across multiple timeframes. This will involve some mechanism to represent those trajectories. For example, the trajectory in the context of the current problem at hand in order to monitor whether it is leading towards a solution. And for example tracking of the control process's overall abilities and over time, and whether it tends to produce useful results or tends to be "wrong" (for some definition of "wrong").
 - **Modelling.** Modelling of CP behaviour and how meta-control signals affect them, in order to infer the most appropriate meta-control signals.
 - **Predicting.** For example predicting whether the current CP state trajectory is likely to lead towards a beneficial outcome or not.
-- **Associative memory.** Used to recognise frequent and infrequent CP behaviours that need specific meta-management. For example, situations in which the multi-step CP tends to get "stuck in a loop", where it would repeat a particular cyclic sequence of steps ad-infinitum without any intervention.
+- **Associative memory.** Used to recognise frequent and infrequent CP behaviours that need specific meta-management. For example, situations that lead to maundering.
 - **Measuring error rate.** Recording and tracking how beneficial the CP behaviours are, such as would be needed to attenuate CP output strength in early stages of CP training.
 
-
-
-Of particular note is the fact that many of these mechanisms described are the same kinds of systems that would be used in an advanced agent for the observation, inference, and manipulation of interactions between the agents limbs, and between the agent and the environment.
+Many of the mechanisms described above would already be required in an advanced agent for the observation, inference, and manipulation of interactions between the agent's limbs and between the agent and the environment.
 
 # III.6 Architectural Options for Meta-management
 
-..todo: intro..
+Now that we have considered various options for meta-control and for meta-observation, we can tie them together by looking at how a meta-management process may be integrated with a first-order process. The diagram here illustrates three such options, with details discussed in the sections that follow.
 
 ![meta-management architecture options](files/A-coherent-theory-v1-mm-architectures.drawio.png)
 
-* _**Meta-management Architectures.** Three broad architectures for meta-management. A) Implicit - the control process converges towards stable behaviour without any explicit meta-management processes acting upon it. B) Independent - explicit meta-management processes acting upon the main control process. C) Inline - control process acting upon itself to self meta-manage._
+* _**Meta-management architecture options.** Three broad architectures for meta-management. A) Implicit - the first-order control process converges towards stable behaviour without any explicit meta-management processes acting upon it. B) Independent - explicit meta-management processes acting upon the first-order control process. C) Inline - control process acting upon itself to self meta-manage._
 
 ## Implicit Meta-management
-This is the null-hypothesis of meta-management strategies. The control process somehow produces stable behaviour without any explicit meta-management processes acting upon it. Or whatever meta-management processes are required are inherent within the primary mechanisms of the control process.
+Mentioned already in the discussion on first-order control processes, some control processes are structured in such a way as that they are inherently convergent and thus do not need explicit meta-management. This is effectively the null-hypothesis of meta-management.
 
-Only the simplest of control processes could fit this category of meta-management. One example is a simple mechanical thermostat that uses temperature feedback to control a heater. No meta-management is required as the system's control strategy is static - it does not learn.
+One example is a simple mechanical thermostat that uses temperature feedback to control a heater. No meta-management is required as the system's control strategy is static - it does not learn. Another example is that of prediction-based control processes, described in chapter III.2. That does incorporate learning, and with the extension to free-energy minimisation may even produce relatively complex behaviour. For example, perhaps it is a good description of much of insect behaviour.
 
-Perhaps it could be argued that an Expectation Maximisation style of iterative inference incorporates its own implicit meta-management. This could be true provided that no additional process is required to act upon it in order to adjust its behaviour. Once again, no real learning takes place.
+Through the various arguments presented in this article, I claim that such control processes are limited in their adaptability. For example, Part IV discusses model-based rational thought in humans, which goes well beyond what is possible with a single hierarchical predictive mechanism.
 
 ## Independent Meta-management
-A training process that records positive and negative feedback, derives a loss function, computes the gradients, and optimises the parameters of the control process is a simple example of an independent meta-management process. It is the most common example within AI research today.
+This form of meta-management uses explicit processes that operate separately from the first-order processes.
 
-In AI research the training process is typically hand-rolled, but research has begun to look at how some parts of that process can be replaced with ANNs. This includes using ANNs to estimate gradients (Bengio, Léonard, Aaron Courville, 2013) and using ANNs to calculate parameter updates (Andrychowicz et al, 2016).
+A training process that records positive and negative feedback, derives a loss function, computes the gradients, and optimises the parameters of the control process is a simple example of an independent meta-management process. It is the most common example within AI research today. In AI research the training process is typically hand-rolled, but research has begun to look at how some parts of that process can be replaced with artificial NNs. This includes using NNs to estimate gradients (Bengio, Léonard, Aaron Courville, 2013) and using NNs to calculate parameter updates (Andrychowicz et al, 2016). 
 
-So, one can consider the possibility of a neural network that calculates and executes all of the meta-management needs against a target control process. This could include all of the meta-control options discussed in a section above.
+One can imagine the possibility of a neural network that calculates and executes all of the meta-management needs against a target control process. This could include all of the meta-control options discussed in a section above. A challenge with this architecture is how to train the meta-management NN.
 
 ## Inline Meta-management
-A somewhat radical suggestion is that perhaps the control process can meta-manage itself, given the right conditions. This suggestion stems from the observation that the processes involved to observe, infer, and act as part of meta-management seem very similar to those processes that we would assume make up the main control process in terms of interactions with its own body and the environment. In a complex environment we would expect those processes to be very complex. In a biological brain, due to the complexities and difference between the different sub-processes (modelling vs memory, for example) we expect some degree of brain region specialisation. Correspondingly, if two different problem domains need the same kind of processing capability, perhaps the same brain region might handle that processing capability for both problem domains.
+A somewhat radical suggestion is that perhaps the first-order control process can meta-manage itself, given the right conditions. This suggestion stems from the observation that the processes involved to observe, infer, and act as part of meta-management seem very similar to those processes that we would assume make up the first-order control process in terms of interactions with its own body and the environment. In a complex environment we would expect those processes to be very complex. In a biological brain, due to the complexities and difference between the different sub-processes (modelling vs memory, for example) we expect some degree of brain region specialisation. Correspondingly, if two different problem domains need the same kind of processing capability, perhaps the same brain region might handle that processing capability for both problem domains. That would be the most neurally efficient solution because neurons cost a lot [citation].
 
-What conditions might make this possible? Firstly, the control process needs to observe its own behaviours. 
-This could be achieved via a feedback loop that captures that behaviour and feeds it back as input. That feedback may capture the control process' current state, its recent trajectory, and its inputs and outputs.
+What conditions might make this possible? Firstly, the control process needs to observe its own behaviours. This could be achieved via a feedback loop that captures that behaviour and feeds it back as input. That feedback may capture the control process' current state, its recent trajectory, and its inputs and outputs.
 
 In some architectures, the overall state of the control process may be held as state within each network node. Any attempt to capture the whole of that state leads to an infinite regress on the size of the control process. Thus, necessarily, the feedback loop would provide a high-level, dimensionality reduced, summary of that state and behaviour.
 
 Importantly, the output of the feedback loop needs to frame observations about the control process not from the perspective of the control process's current state on its immediate current task, "from the inside" as it were. Rather, it must carry the perspective of the control process as part of a larger system, and as it interacts over a larger period of time. In other words, framed with a perspective as "from the outside".
 
-Lastly, training of the whole system needs to be bootstrapped. Initially the self meta-management capabilities of the control process will be as chaotic as its primary control behaviours. This could be achieved through a separation of meta-management concerns into a non-learning primitive (or "innate") independent process that applies simple domain agnostic constraints against the learning, adaptive, and complex processes of the self meta-managing control process.
+Lastly, training of the whole system needs to be bootstrapped. Initially the self meta-management capabilities of the control process will be as chaotic as its first-order behaviours. This could be achieved through a separation of meta-management concerns into a) an evolutionarily hard-wired process that applies simple domain agnostic constraints, and b) the complex, learning, an adaptive self meta-managing control process.
+
+In some respect this is a description of one particular solution for implicit meta-management, but I find it useful to treat it separately for two reasons. Firstly, inline meta-management incorporates a feedback-loop with the very explicit purpose of aiding in meta-management. Secondly, the ways in which the control process can meta-control itself include all of those explicit meta-control mechanisms described chapter III.4. This inline meta-management is better described as a form of explicit meta-management than it is as a form of implicit meta-management.
 
 ## Chapter Summary
-All of the meta-management architectures described above may be valid. In fact, biological brains probably incorporate a mixture of all of them, and perhaps with other mechanisms not listed above. But we are interested in the most significant form of meta-management that might be at play in the context of subjective experience. Subjective experience seems to be tightly correlated with higher order executive control, and so we are interested in the most significant form of meta-management as it pertains to that higher-order executive control.
+All of the meta-management architectures described above may be valid. In fact, biological brains probably incorporate a mixture of all of them, and perhaps with other mechanisms not listed above. However, we are interested in the most significant form of meta-management that might be at play in the context of subjective experience. Subjective experience seems to be tightly correlated with higher-level and higher-order executive control, and so we are interested in the most significant form of meta-management as it pertains to that higher-order executive control.
 
-When looking at generic control problems, there is no architecture that is clearly more effective or more realistic than the others. Perhaps the answer depends too much on how the control process itself functions. The devil is in the details, as they say. The functioning of the control process depends also on what kinds of control are required, and the more interesting kinds of control process occur in more complex agents.
+When looking at generic control problems, there is no architecture that is clearly more effective or more realistic than the others. Perhaps the answer depends too much on how the control process itself functions. The devil is in the details, as they say. The functioning of the control process depends also on what kinds of control are required, with the more interesting kinds of control occurring in more complex agents.
 
-Another sobering issue is that the distinction between these three architectures is somewhat poorly defined. If inline meta-management is a valid architecture, what distinguishes it from an implicit architecture? What distinguishes the "Summarisation" component in panel C from the independent meta-management process component in panel B?
+Another sobering issue is that despite my best efforts the distinction between these three architectures is still somewhat poorly defined. The distinction between implicit and inline meta-management is that there are components of "explicit" meta-management in the latter. Could one look at a brain connectome and understand which parts are "explicit" meta-management? In the diagram above, what really distinguishes the "Summarisation" component in panel C from the independent meta-management process component in panel B?
 
 For those reasons, the next part drills deeper into more complex control process requirements and mechanisms. After that we will be in a better position to circle back to re-address the question of meta-management architecture.
 
-In the interim, however, there is some anecdotal evidence to suggest that the inline meta-management architecture is at play within humans. It is said that humans have 5 senses of touch, taste, smell, sight, and hearing. That list has since grown with the recognition of proprioception, balance, and other internal senses ..[citation, and use of accurate terminology]. While it is not often classified as such, our awareness of our own mental state behaves like any other sense. The extent to which we can attend to any sense varies by modality (eg: while we have proprioceptive sense, it doesn't seem to carry the same ability to flood our consciousness than, say, our vision), but they are clearly all available for observation, integration, differentiation, correlation, modelling, and reaction-to within that higher-order executive control process that seems to be associated with subjective experience. This applies equally to the sense of mental state. That suggests the feedback loop described within the inline meta-management architecture.
+In the interim, however, there is some anecdotal evidence to suggest that the inline meta-management architecture is at play within humans. It is said that humans have five senses of touch, taste, smell, sight, and hearing. That list has since grown with the recognition of proprioception, balance, and other internal senses ..[citation, and use of accurate terminology]. While it is not often classified as such, our awareness of our own mental state behaves like any other sense. The extent to which we can attend to any sense varies by modality (eg: while we have proprioceptive sense, it doesn't seem to carry the same ability to flood our consciousness than, say, our vision), but they are clearly all available for observation, integration, differentiation, correlation, modelling, and reaction-to within that higher-order executive control process that seems to be associated with subjective experience. This applies equally to the sense of mental state. That suggests the feedback loop described within the inline meta-management architecture.
 
-_todo: either here or somewhere else, I need to draw correlation between the inline meta-management architecture and human phenomena, eg: higher-order thought, awareness of only certain processes_
 
 ---
 
@@ -1755,6 +1750,8 @@ Consciousness is the result of:
 * Kanai, R., Chang, A., Yu, Y., de Abril, I. M, Biehl, M, Guttenberg, N. (2019). Information generation as a functional basis of consciousness, Neuroscience of Consciousness, Volume 2019, Issue 1, 2019
 
 * Kant, I. (1781). Critique Of Pure Reason. Translated by Norman Kemp Smith, London: Macmillan, 1929. Koestler, Arthur, The Act of Creation, London: Pan Books, 1970.
+
+* Kaplan, R., Friston, K.J (2018). Planning and navigation as active inference. Biol Cybern 112, 323–343. https://doi.org/10.1007/s00422-018-0753-2
 
 * Karmiloff-Smith, A. (1992). Beyond Modularity: A Developmental Perspective on Cognitive Science, MIT Press
 
