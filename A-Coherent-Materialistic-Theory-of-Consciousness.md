@@ -398,7 +398,7 @@ In a multi-iteration control process, there are periods where the controller tra
 
 ![control process trajectories](files/A-coherent-theory-v1-cp-trajectory.drawio.png)
 
-* _**Control process trajectories.** With multi-iteration processing, the control process (CP) has its own state trajectory ($`S_{i,cp}`$), influenced by its actions ($`A_{i,cp}`$). Control process actions only occasionally produce changes to body state ( $`S_{j,bdy}`$)._
+* _**Control process trajectories.** With multi-iteration processing, the control process (CP) has its own state trajectory ($`S_{i,cp}`$), influenced by its actions ($`A_{i,cp}`$). Control process actions only occasionally produce changes to body state ($`S_{j,bdy}`$)._
 
 Within a learning setting, the control processes must learn to manage the state of the agent's body. Typically this is influenced by feedback received in association with the outcome of some sequence of actions. That feedback must be interpreted and used to infer the best way to optimise the parameters of the control process. In a synthetic RL setting, that feedback and parameter optimisation is performed via hand-coded learning algorithms, often incorporating back-propagation and gradient descent. In a biological organism, the corresponding learning processes may be somewhat more complex and are certainly much less understood, but their effect is the same: that parameters of the control process are optimised such that future attempts would be more successful or efficient. This is a first concrete example of meta-management.
 
