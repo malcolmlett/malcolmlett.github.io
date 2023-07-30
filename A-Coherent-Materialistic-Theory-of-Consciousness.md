@@ -368,11 +368,7 @@ Another form of recurrency is to execute multiple passes through the same networ
 
 Some have begun to experiment with loops in ANNs. Complex results can be achieved with shallower networks when using a loop-style of recurrency (Kubilius et al, 2019; Wen et al, 2018). Loop architectures have been used to adaptively vary the amount of computation time allocated to problems, as Adaptive Computation Time (Graves, 2016), which has been suggested as an important component of next generation language decoder-encoders known as Universal Translators (Dehghani et al, 2018).
 
-There is a practical limit to the complexity that a single-iteration processing architecture can achieve. The network can be made broader (more nodes in each layer) and deeper (more layers), but that increases the number of parameters that need to be optimised during learning. In earlier versions of ANNs, where smooth non-linearity functions such as sigmoid were used within hidden layers, the vanishing gradient problem [citation] meant that practical networks could not be more than a few layers in depth. Current state of the art ANNs obtain non-linearity through piecewise linear functions and enable many more layers before the vanishing gradient problem becomes an issue. However an upper bound on the number of layers is still present [details, and citation]. Even GPT 3 only uses 96 layers [citation].
-
-_..todo: any estimate on number of layers in human brain?_
-
-![mountcastle](files/Striate-cortex-modules-mountcastle-1997.png)
+There is a practical limit to the complexity that a single-iteration processing architecture can achieve. The network can be made broader (more nodes in each layer) and deeper (more layers), but that increases the number of parameters that need to be optimised during learning. In earlier versions of ANNs, where smooth non-linearity functions such as sigmoid were used within hidden layers, the vanishing gradient problem (Hochreiter et al, 2001; Schmidhuber, 2015) meant that practical networks could not be more than a few layers in depth. Current state of the art ANNs obtain non-linearity through piecewise linear functions (Glorot, Bordes and Bengio, 2011) and enable many more layers before the vanishing gradient problem becomes an issue. While theoretical work has shown successes with as many as 10,000 layers (Xiao et al, 2018), most ANNs use around 100 layers or less. Even Chat GPT-3 only uses 96 layers (Brown et al, 2020).
 
 Another problem with a single-iteration processing architecture is that its fixed depth implies a trade-off between the maximum complexity that the architecture can handle and the cost of training in order to cater for the average complexity of situations that the agent must cope with. Additionally, if we consider that such processing may entail multiple stages of processing, the order in which those stages is executed is fixed.
 
@@ -386,13 +382,7 @@ So, it can be said that there is a limit on the complexity that can be handled b
 
 To adapt to more complex environments, an embodied agent must employ multiple iterations of processing. This enables, for example, further analysis of the environment in order to better model its state; or further deliberation alternative action plans before proceeding. In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that might take longer to reach a decision for more complex problems. Van Bergen & Kriegeskorte (2020) make the case that recurrency is indeed employed in biology for that very reason.
 
-_todo: Estimate of layer depth in brain?_
-
-_todo: I use the term multi-iteration processing to clarify that I am referring to a particular form of recurrency where, for some materially significant portion of the process, the majority of its outcome is fed back as input.... yeesh, this is hard to quantify. _
-
-_Todo: To avoid confusion with micro-level recurrency, this article uses the term "multi-iteration processing". 
-or should I use multi-iteration processing everywhere instead?_
-
+The term _recurrency_ can mean many things because recurrency can occur at any level. For example, in the case of Recurrent Neural Networks (RNNs) as used within AI, recurrency occurs at the level of a single neuron in order to hold state. Thus I shall continue to use the term _multi-iteration processing_ in order to avoid confusion about the level at which the recurrency occurs in the context of discussion.
 
 # II.3 State Trajectories in a Multi-iteration Processor
 
@@ -1604,6 +1594,8 @@ Consciousness is the result of:
 
 * Borţun, D., & Purcarea, V. L. (2013). Marketing and semiotic approach on communication. Consequences on knowledge of target-audiences. Journal of medicine and life, 6(1), 103–108.
 
+* Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D. M., Wu, J., Winter, C., ... Amodei, D. (2020). Language Models are Few-Shot Learners. Neural Information Processing Systems, 33, 1877–1901. https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf
+
 * Buckley, C. L., Kim, C. S., McGregor, S., and Seth, A. K. (2017). The free energy principle for action and perception: A mathematical review. Journal of Mathematical Psychology, 81, 55–79.
 
 * Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of internal medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
@@ -1720,6 +1712,8 @@ Consciousness is the result of:
 
 * Gęsiarz, F. Crockett, M.J. (2015). Goal-directed, habitual and Pavlovian prosocial behavior. Front. Behav. Neurosci. 9:135. doi: 10.3389/fnbeh.2015.00135
 
+* Glorot, X., Bordes, A. & Bengio, Y.. (2011). Deep Sparse Rectifier Neural Networks. Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics, in Proceedings of Machine Learning Research. 15:315-323. Available from https://proceedings.mlr.press/v15/glorot11a.html.
+
 * Godfrey-Smith, P. (2016). Other Minds: The octopus and the evolution of intelligent life. Farrar, Straus and Giroux, New York.
 
 * Graziano, M.S.A., Kastner, S. (2011). Human consciousness and its relationship to social neuroscience: a novel hypothesis. Cogn. Neurosci. 2, 98–113. doi:10.1080/17588928.2011.565121
@@ -1731,6 +1725,8 @@ Consciousness is the result of:
 * Haynes, J-D. (2013). Beyond Libet: Long-Term Prediction of Free Choices from Neuroimaging Signals. In A. Clark, J. Kiverstein and T. Vierkant (eds.), Decomposing the Will, Oxford: Oxford University Press.
 
 * Henshilwood, C.S., Sealy, J.C., Yates, R., Cruz-Uribe, K., Goldberg, P., Grine, F.E., Klein, R.G., Poggenpoel, C., van Niekerk, K., Watts, I. (2001). Blombos Cave, Southern Cape, South Africa: Preliminary Report on the 1992–1999 Excavations of the Middle Stone Age Level. Journal of Archaeological Science, Volume 28, Issue 4. Pages 421-448, https://doi.org/10.1006/jasc.2000.0638.
+
+* Hochreiter, S., Bengio, Y., Frasconi, P. & Schmidhuber, J. (2001). Gradient flow in recurrent nets: the difficulty of learning long-term dependencies. In S. C. Kremer & J. F. Kolen (ed.), A Field Guide to Dynamical Recurrent Neural Networks. IEEE Press.
 
 * Hoffman (?). The Interface Theory of Perception. https://sites.socsci.uci.edu/~ddhoff/interface.pdf
 
@@ -1876,6 +1872,8 @@ Consciousness is the result of:
 
 * Sajid, N., Ball, P. J., Parr, T., Friston, K. J. (2021). Active Inference: Demystified and Compared. Neural Comput 2021; 33 (3): 674–712. doi: https://doi.org/10.1162/neco_a_01357
 
+* Schmidhuber, J. (2015): Deep learning in neural networks: an overview. Neural Netw. 61, 85–117
+
 * Searle, J.R. (1990). Who is computing with the brain? Behavioral and Brain Sciences, 13:4:632-64.
 
 * Seth, A.K., Bayne, T. (2022). Theories of consciousness. Nat Rev Neurosci. https://doi.org/10.1038/s41583-022-00587-4
@@ -1941,6 +1939,8 @@ Consciousness is the result of:
 * Van Gulick, R. (2022). Consciousness. In Zalta, E.N. & Nodelman, U. (eds.), The Stanford Encyclopedia of Philosophy (Winter 2022 Edition). URL = <https://plato.stanford.edu/archives/win2022/entries/consciousness/>.
 
 * Von Neumann, J. (1966). Theory of Self-reproducing Automata. Edited and completed by A. W. Burks, University of Illinois Press, Urbana and London, pp. 74–87 and pp. 121–123.
+
+* Xiao, L., Bahri, Y., Sohl-Dickstein, J., Schoenholz, S. S. & Pennington, J. (2018). Dynamical Isometry and a Mean Field Theory of CNNs: How to Train 10, 000-Layer Vanilla Convolutional Neural Networks.. In J. G. Dy & A. Krause (eds.), ICML (p./pp. 5389-5398), : PMLR.
 
 * Yablo, S. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford and New York: Oxford University Press, 179-197.
 
