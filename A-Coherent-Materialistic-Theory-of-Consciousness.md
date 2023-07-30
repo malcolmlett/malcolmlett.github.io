@@ -3,7 +3,7 @@ _This is a work in progress._
 _Please come back later._
 
 Abstract:
-- Consciousness is produced by a semiotic multi-step planner state machine with meta management. 
+- Consciousness is produced by a semiotic multi-iteration planner state machine with meta management. 
 
 Contents:
 
@@ -388,9 +388,9 @@ To adapt to more complex environments, an embodied agent must employ multiple it
 
 _todo: Estimate of layer depth in brain?_
 
-_todo: I use the term multi-step processing to clarify that I am referring to a particular form of recurrency where, for some materially significant portion of the process, the majority of its outcome is fed back as input.... yeesh, this is hard to quantify. _
+_todo: I use the term multi-iteration processing to clarify that I am referring to a particular form of recurrency where, for some materially significant portion of the process, the majority of its outcome is fed back as input.... yeesh, this is hard to quantify. _
 
-_Todo: To avoid confusion with micro-level recurrency, this article uses the term "multi-step processing". 
+_Todo: To avoid confusion with micro-level recurrency, this article uses the term "multi-iteration processing". 
 or should I use multi-iteration processing everywhere instead?_
 
 
@@ -408,7 +408,7 @@ In a multi-iteration control process, there are periods where the controller tra
 
 ![control process trajectories](files/A-coherent-theory-v1-cp-trajectory.drawio.png)
 
-* _**Control process trajectories.** With multi-step processing, the control process (CP) has its own state trajectory ($`S_{i,cp}`$), influenced by its actions ($`A_{i,cp}`$). Control process actions only occasionally produce changes to body state ( $`S_{j,bdy}`$)._
+* _**Control process trajectories.** With multi-iteration processing, the control process (CP) has its own state trajectory ($`S_{i,cp}`$), influenced by its actions ($`A_{i,cp}`$). Control process actions only occasionally produce changes to body state ( $`S_{j,bdy}`$)._
 
 Within a learning setting, the control processes must learn to manage the state of the agent's body. Typically this is influenced by feedback received in association with the outcome of some sequence of actions. That feedback must be interpreted and used to infer the best way to optimise the parameters of the control process. In a synthetic RL setting, that feedback and parameter optimisation is performed via hand-coded learning algorithms, often incorporating back-propagation and gradient descent. In a biological organism, the corresponding learning processes may be somewhat more complex and are certainly much less understood, but their effect is the same: that parameters of the control process are optimised such that future attempts would be more successful or efficient. This is a first concrete example of meta-management.
 
@@ -579,7 +579,7 @@ In order to more accurately motivate further discussions of meta-management in a
 
 ![biologically plausible planner](files/A-coherent-theory-v1-bio-planner.drawio.png)
 
-* _**A biologically plausible planner.** A NN-based policy executes as a multi-step control process (CP). CP state_ ($`s_{cp}`$) _represents everything that a planner may need to hold onto, including the partially complete trajectory being considered at the time and information about other trajectories already attempted. The policy predicts control process actions ($`a_{cp}`$) that change the control process state ($`s_{cp}`$). CP actions sometimes also cause body actions ($`a_{bdy}`$) that lead to new body state ($`s'_{bdy}`$) and environment state ($`s'_{env}`$). One or more separately trained models could feed into the policy, or the policy itself could effectively represent those models. The training algorithm optimises policy parameters in order to achieve the right body state trajectories while meeting CP state constraints ($`c_{cp}`$) and body state constraints ($`c_{bdy}`$). Parameter optimisation of models not shown._
+* _**A biologically plausible planner.** A NN-based policy executes as a multi-iteration control process (CP). CP state_ ($`s_{cp}`$) _represents everything that a planner may need to hold onto, including the partially complete trajectory being considered at the time and information about other trajectories already attempted. The policy predicts control process actions ($`a_{cp}`$) that change the control process state ($`s_{cp}`$). CP actions sometimes also cause body actions ($`a_{bdy}`$) that lead to new body state ($`s'_{bdy}`$) and environment state ($`s'_{env}`$). One or more separately trained models could feed into the policy, or the policy itself could effectively represent those models. The training algorithm optimises policy parameters in order to achieve the right body state trajectories while meeting CP state constraints ($`c_{cp}`$) and body state constraints ($`c_{bdy}`$). Parameter optimisation of models not shown._
 
 The above diagram presents a rough structure of a possible biologically plausible planning control process. The hand-written planner is replaced by a policy network that controls the behaviour of the planner in exactly the same way that a policy network would normally control the outwardly visible behaviour of an embodied agent. The same policy network also controls those outwardly visible behaviours. Actions produced by the control process ($`a_{cp}`$) are for the most part hidden - they modify the state of the control process ($`s_{cp}`$) without producing any outwardly visible behaviour. Depending on certain properties, some CP actions additionally produce body actions ($`a_{bdy}`$), this being the key goal of the planner. Those body actions have the effect of changing the state of the agent's body ($`s_{bdy}`$) and of the environment around it ($`s_{env}`$).
 
