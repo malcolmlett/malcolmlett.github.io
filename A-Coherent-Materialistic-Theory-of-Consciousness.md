@@ -82,21 +82,14 @@ Contents:
 
 [Part V - Solution](#part-v---solution)
 * [V.1 The Architecture of Subjective Experience](#v1-the-architecture-of-subjective-experience)
-* [V.2 Subjective Experience State](#v2-subjective-experience-state)
+* [V.2 Subjective Experience States](#v2-subjective-experience-states)
 * [V.3 Interpretation of Subjective Experience States](#v3-interpretation-of-subjective-experience-states)
-  * [Rounding it out](#rounding-it-out)
+  * [Rounding it Out](#rounding-it-out)
 * [V.4 The Properties of Subjective Experience](#v4-the-properties-of-subjective-experience)
   * [Homunculus](#homunculus)
   * [Conscious and Unconscious Thought](#conscious-and-unconscious-thought)
   * [Subjective experience is "always on"](#subjective-experience-is-always-on)
 * [V.5 Conditions of Subjective Experience](#v5-conditions-of-subjective-experience)
-  * [Access to computational state](#access-to-computational-state)
-  * [Processing of computational state](#processing-of-computational-state)
-  * [Subjective experience state](#subjective-experience-state)
-  * [Representational and processing capacity and qualities](#representational-and-processing-capacity-and-qualities)
-  * [Modelling](#modelling)
-  * [Attention](#attention)
-  * [Self-schema](#self-schema)
 * [V.6 Degrees of Subjective Experience](#v6-degrees-of-subjective-experience)
 * [V.7 An example of an alternative consciousness](#v7-an-example-of-an-alternative-consciousness)
 
@@ -106,9 +99,10 @@ Contents:
 * [VI.3 Argument By Delusion](#vi3-argument-by-delusion)
 
 [Part VII - Predictions and Conclusions](#part-vii---predictions-and-conclusions)
-  * [Convergence of Meta-Management](#convergence-of-meta-management)
-  * [On the Causality of Consciousness](#on-the-causality-of-consciousness)
-* [Summary](#summary)
+  * [VII.1 Convergence of Meta-Management](#vii1-convergence-of-meta-management)
+  * [VII.2 On the Causality of Consciousness](#vii2-on-the-causality-of-consciousness)
+* [VII.3 Comparison to other theories](#vii3-comparison-to-other-theories)
+* [VII.4 Summary](#vii4-summary)
 * [References](#references)
 
 ---
@@ -1131,18 +1125,16 @@ The following illustration pulls together the various processes described in sec
 
 * _**Functional processes underlying subjective experience in humans**. Habitual, rational, and innate control processes receive sensory input about the state of the body and the environment and produce body actions that effect change against the state of the body and environment. Control processes retain state, enabling multi-iteration processing. The current and recent trajectory of control process state (CP state) is captured and a dimensionality reduced high-level representation is made available as an additional sense to the control processes via the meta-management feedback loop. Environment, body, and cognitive schemas attach additional contextual and meaning information to sensory input, for example providing source labelling to the control processes. Emotions/feelings add an extra level of "importance" to some information. Attentional control mechanisms "choose" which sensory information is attended to._
     
-At its core, these functional processes take the externally focussed physical senses (sight, sound, smell, touch, taste) and the internally focussed physical senses (proprioception, balance, etc.), and process them through the action of the innate, habitual and rational control processes, producing appropriate body actions. Schemas for body and environment attach additional contextual and meaning information to the raw senses, including "source labelling" - identifying whether the sense indicates an external or internal source. Emotions/feelings likewise attach additional meaning information to the raw senses. Emotions likely also a have more direct manipulative effect on the control processes, but that is not important for our discussion. Attention affects which information from those sense modalities becomes the focus of the control processes at any given time.
+At its core, these functional processes take the externally focussed physical senses (sight, sound, smell, touch, taste) and the internally focussed physical senses (proprioception, balance, etc.), and process them through the action of the innate, habitual and rational control processes, producing appropriate body actions. Schemas for body and environment attach additional contextual and meaning information to the raw senses, including "source labelling" - identifying whether the sense indicates an external or internal source. Emotions/feelings likewise attach additional meaning information to the raw senses. Emotions likely also a have more direct manipulative effect on the control processes, but that is not important for our discussion. Attention affects which information from those sense modalities becomes the focus of the control processes at any given moment.
 
 Over the course of multi-iteration processing, the state and recent trajectory of the control processes are captured through some means and a dimensionality reduced representation is constructed. That is made available as an additional sense, a _cognitive sense_, via the meta-management feedback loop. That cognitive sense goes through the same processes for meaning attachment and source labelling as any other sense, including through the development of cognitive schemas.
 
 The cognitive sense likely also encounters the same attentional control as for any other sense. The full extent to which attention attenuates the meta-management feedback loop cannot be clarified at this stage. Anecdotally there is definitely a way in which we can attend less or more to our own mental states, but conversely the arguments of the need for meta-management suggest that the data feed from the feedback loop should always be available. The answers are not important for an understanding of subjective experience. For now we will simply assume that handling of meta-management feedback has the same mixture of "unconscious" and "conscious" processing that we are familiar with for other things - to whatever extent that actually means.
 
-Through the action of multi-iteration processing, this system is capable of entertaining trains of thought. The kinds of trains of thought, the topics that are possible to be thought about, and the duration of any given train of thought are all constrained by the computational capacity and representational qualities of the components of this system.
+Through the action of multi-iteration processing, this system is capable of entertaining trains of thought. The kinds of trains of thought, the topics that are possible to be thought about, and the duration of any given train of thought are all constrained by the computational capacity and representational qualities of the components of this system. In short, the representational complexity associated with any train of thought is limited by the understanding inherent within the system.
 
 Memory enables past computational states to be recovered.
         
-Before proceeding further, it is important to briefly clarify what the above description is _not_. As a functional description, it makes no claims about the specific neurological pathways or components involved. For example, the meta-management feedback loop may follow a single neurological pathway, forming a single integrated representation, in the style of a _cartesian theatre_ [citation]. Alternatively, it may be the effect of many independent feedback pathways, for example in the style of Dennetian _multiple-drafts_ [citation]. The functional description presented is focused on the most significant processing underlying subject experience and thus omits a lot of other cognitive processes and even omits other connectivities between processes identified. For example, as identified in an earlier section, the emotions can be viewed as a meta-management process themselves and likely directly influence the behaviour of the identified control processes. I have also not attempted to capture in this illustration _how_ the control processes might perform their meta-management functions.
-
 # V.2 Subjective Experience States
 I believe that the processes described above are entirely sufficient for the creation of all of our subjective experiences. These processes can be used to explain the specific nature of the content of subjective experience, and of the existence of subjective experience in the first place.
 
@@ -1404,29 +1396,8 @@ So we observe our own thoughts, identify them as our own, and feel strongly abou
 
 In this final part I shall take a little time to draw out some of the consequences of my theory of subjective experience. There are a few reasons for doing so. Firstly as a place to fill out some of the details of explanations presented earlier that otherwise would have made them longer. Secondly as a chance to deal with some of the likely rebuttals. And lastly as an opportunity to be a little more speculative.
 
-Top priority:
-* Convergence of Meta-Management
-* Brain structures
-    * Why would there only be one subjective experience within the brain?
-    * Effect of split-brains
 
-Then:
-* Consciousness in the animal kingdom and artificial consciousness
-* Causality
-* Blindsight
-* Cartesian Theatres vs other models
-    * Have I re-created a cartesian theatre? Maybe.
-
-Dropped:    
-* Abstract thought
-    * Meta-management leads to abstract thought and general intelligence
-* Content type of memory
-    * That meta-management feedback loop becomes the central language
-    * => Nah. It's too tied to having a central point, ignoring decentralised processing.
-* Continuous stream or just a blip?
-    * => already covered.
-    
-## Convergence of Meta-Management
+## VII.1 Convergence of Meta-Management
 In developing this theory I have been palpably aware of concerns that what I am proposing makes no sense because such a system could never be stable enough to operate effectively. I have made the claim that habitual and rational system learn off each other. That alone can produce unstable results. Indeed, I have made the claim that they are so unstable that they need a meta-management process in order make them stable. But then I've twisted that assumption on its head by claiming that somehow those very same unstable systems can meta-manage themselves. Without sound empirical results what basis do I have to believe that this could possibly work? And if it's not a feasible architecture, then my entire argument for the basis of subjective experience is in question.
 
 I have attempted to keep this treatise focused on the theoretical for two reasons. One is that I am not really attempting to prove exactly _how_ the human brain generates subjective experience through material means; but rather merely to prove that it is _plausible_ and _likely_ that material means are sufficient. The detail that I have included hopefully provides a reference point for others to pick up from. The second reason is that I only have so much time in the day. It takes long enough to generate and write about a plausible theory. It takes longer still to do all the empirical research needed to provide data proof behind such a theory. Thus my original intent was not to provide a watertight solution for every question, and I certainly did not intend to prove how such a system could attain stability.
@@ -1460,7 +1431,7 @@ Effectively, society is a collective behavioural exploration and learning system
 
 * _**Convergence pressures operating against the control systems of an individual.** ..todo.._
 
-## On the Causality of Consciousness
+## VII.2 On the Causality of Consciousness
 Many of the debates around the causal nature of consciousness are in the form of deep metaphysical ontological questions about mind-states, physical-states, and the kinds of relationships between them (Yablo, 2002; Kim, 2002; Robb et al 2023; Robinson & William, 2019). Those debates arise even assuming a materialistic basis for those mind-states. I have neither the skill nor the inclination to attempt a response to those philosophical questions. I merely hope that those more philosophically skilled will find my scientific explanations as a useful grounding for their metaphysical arguments - hopefully in support of my own conclusions.
 
 To the more practical scientific questions of causation is what I shall devote some time here.
@@ -1510,7 +1481,9 @@ If we pick (somewhat arbitrarily) that the construction of a HOOS is the closest
 
 With respect to the last sentence, whether you can have entirely non-causal subjective experiences is another example of the problem of defining the mapping from our concept of subjective experience to the concrete mechanisms surrounding observation and HOOS. I would argue that, by definition, subjective experience only exists if the individual is aware that it existed, otherwise it was not subjective experience in the first place. And I would argue that this awareness occurs in the form of the underlying HOOS having a causal effect on some further result. But this is not the only way of defining subjective experience and not the only way to map from it to the mechanisms explained here. So I will leave any further discussion of whether there exists entirely non-causal subjective experience as a matter of definitional opinion and metaphysical debate.
 
-# Summary
+# VII.3 Comparison to other theories
+
+# VII.4 Summary
 
 ...todo...
 
