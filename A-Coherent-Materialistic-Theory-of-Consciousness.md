@@ -9,7 +9,7 @@ Contents:
 
 [Part I - Introduction](#part-i---introduction)
 * [I.1 A Question of Consciousness](#i1-a-question-of-consciousness)
-* [I.2 Précis of Thesis](#i2-prcis-of-thesis)
+* [I.2 Précis of Thesis](#i2-précis-of-thesis)
 * [I.3 Background - Consciousness](#i3-background---consciousness)
   * [Questions of Consciousness](#questions-of-consciousness)
   * [The Purpose of Consciousness](#the-purpose-of-consciousness)
