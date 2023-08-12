@@ -85,10 +85,10 @@ Contents:
 * [V.2 Subjective Experience States](#v2-subjective-experience-states)
 * [V.3 Interpretation of Subjective Experience States](#v3-interpretation-of-subjective-experience-states)
   * [Rounding it Out](#rounding-it-out)
-* [V.4 The Properties of Subjective Experience](#v4-the-properties-of-subjective-experience)
+* [V.4 Explaining Phenomenology of Subjective Experience](#v4-explaining-phenomenology-of-subjective-experience)
   * [Homunculus](#homunculus)
   * [Conscious and Unconscious Thought](#conscious-and-unconscious-thought)
-  * [Subjective experience is "always on"](#subjective-experience-is-always-on)
+  * [Stream of Consciousness](#stream-of-consciousness)
 * [V.5 Conditions of Subjective Experience](#v5-conditions-of-subjective-experience)
 * [V.6 Degrees of Subjective Experience](#v6-degrees-of-subjective-experience)
 * [V.7 An example of an alternative consciousness](#v7-an-example-of-an-alternative-consciousness)
@@ -1174,20 +1174,20 @@ The outcomes of all of the above entail the _content_ of subjective experience. 
 ## Rounding it Out
 Some of the implications of what I am trying to say may not be obvious at first glance, so I shall now summarise by restating some of the conclusions so far.
 
-The HOOS is effectively a state that represents that subjective experience has occurred, but it is subjective experience on its own. It is merely the content of the experience: a statement that the individual has observed whatever is the topic of the so called subjective experience.
+The HOOS is effectively a state that represents that subjective experience has occurred. However, it is not subjective experience on its own; it is merely the content of the experience: a statement that the individual has observed whatever is the topic of the so called subjective experience.
 
-The processing that follows is also not itself subjective experience. It is merely the interpretation of the HOOS representation, and has as its output another representation. In the brain, that interpretation occurs through the action of millions of individual neurons. There is no place to pinpoint as the thing that has subjective experience.
+The processing that follows is also not itself subjective experience; it is merely the interpretation of the HOOS representation, and has as its output another representation. In the brain, that interpretation occurs through the action of millions of individual neurons. There is no place to pinpoint as the thing that has subjective experience.
 
-There is also no time to pinpoint as the moment of subjective experience. At any given moment in time, the only thing that exists of subjective experience is a representation that subjective experience occurred plus the in-flight action of millions of individual computational units interpreting that representation.
+There is also no time to pinpoint as the moment of subjective experience. At any given moment in time, the only thing that exists of subjective experience is a representation that subjective experience occurred, plus the in-flight action of millions of individual computational units interpreting that representation.
 
-The only evidence we have for the supposed existence of subjective experience is the actions that follow from the above: further thought plus further representations of subjective experience, external actions such as verbal report with regard to our observations, and the subsequently processed memories of the former two.
+The only evidence that we have for the supposed existence of subjective experience is the actions that follow the generation of a HOOS: further thought plus further representations of subjective experience, external actions such as verbal report with regard to our observations, and the subsequently processed memories of the former two.
 
-So, while the HOOS captures the essence of subjective experience and in that sense it is subjective experience in its most basic form, it is only through the subsequent train of thought that we collate sufficient evidence of the existence of the HOOS in order for us to convince ourselves that we have subjective experience.
+So, while the HOOS captures the essence of subjective experience and in that sense it is subjective experience in its most basic form, it is only through the subsequent train of thought that we collate sufficient evidence of the existence of the HOOS in order for us to convince ourselves that we have just had subjective experience.
 
 In conclusion, we need to shift our view from looking for a particular place or point in time when subjective experience occurs, to seeing it as duration over which various aspects of its content are processed. The exact point in time when the subjective experience starts cannot be identified, because it is gradually built up from earlier computational states. The point in time when a given subjective experience ends also cannot be identified as computation gradually shifts from being about that observation to doing things as a result of the observation.
 
-# V.4 The Properties of Subjective Experience
-To show more clearly how the above creates subjective experience, let us examine some specific properties of subjective experience.
+# V.4 Explaining Phenomenology of Subjective Experience
+To show more clearly how the above creates subjective experience, let us examine some specific phenomena of subjective experience.
 
 ## Homunculus
 In chapter IV.1 I discussed briefly the old notion of a _homunculus_, a "little person" that sits in our heads and does all the observing. While that old notion has been thoroughly dismissed, it remains a very accurate description of what it "feels like" to be conscious. There is something specific about the way that we feel like we observe our perceptions and our thoughts as if the "we" doing the observation is somehow separate from the "we" doing the perceptions and thoughts.
@@ -1199,7 +1199,7 @@ In principle there's no need for the brain to represent that cognitive organ as 
 The apparent location of the homunculus within the bounds of our head is curious, but again I think I think it has a relatively simple explanation. The brain constructs body schema to identify the specific location of its senses. Many of our physical senses are hosted within our head (sight, sound, smell, taste), and so the schema naturally locates them as such. Although our vision is purposed to gain information about the world outside, our visual sense organs are located within our head. This affects interpretation of the perspective of our vision (things at the centre of our visual field are at about the height of our head, while things at the bottom of our visual field are below our heads). If the brain develops a body schema that identifies the majority of its senses as located within our heads, it's not a far stretch to do likewise for the cognitive sense.
 
 ## Conscious and Unconscious Thought
-We seem to have some thought that is always unconscious, some that can be selectively accessed when attention so chooses, and some where we are always actively involved. How does an understanding of HOOS help explain this?
+We have some thought that is always unconscious, some that can be selectively accessed when attention so chooses, and some where we are always actively involved. This seems arbitrary. Why does some processing appear as conscious thought, while other processing does not? How does an understanding of HOOS help explain this?
 
 Let us discuss entirely unconscious thought first. The answer simply is that there is no need for that form of processing to be represented by the meta-management feedback loop. Feedback will be optimised by evolution to contain the minimal set of information needed for effective meta-management of control processes. Anything else would serve to consume extra neural capacity without further benefit, and would simply be evolved away. There are two possible reasons why the processing does not need to be captured by the feedback loop. One is that the process is inherently stable (eg: inherently convergent), and thus simply does not to be meta-managed. A second possibility is that it is sufficiently meta-managed indirectly through meta-observation of other processing.
 
@@ -1209,14 +1209,14 @@ For more elaborate multi-iteration processing, and in particular where rational 
 
 In summary, subjective experience is the collection of certain processing iterations where aspects of the processing behaviour require meta-management, and the content information of that conscious thought is constrained to the information that is needed for the purpose of meta-management. So called "unconscious thought" is everything else that occurs within the brain.
 
-## Subjective experience is "always on"
-The reader may notice an implication in the statements about the continuity of HOOS and associated subjective experience. I have implied in several ways that HOOS are only sometimes constructed. This would imply that subjective experience only sometimes exists. But that is not our experience. It appears to be "always on" - a continuous stream.
+## Stream of Consciousness
+The reader may notice an implication in the statements about the continuity of HOOS and associated subjective experience. I have implied in several ways that HOOS are only sometimes constructed. This would imply that subjective experience only sometimes exists. But that is not our experience. It appears to be "always on" - a continuous stream of consciousness.
 
-We recognise that there are times when we aren't consciously aware of actions, such as when walking or driving along a familiar road, but that is usually because we are lost in thought at the time. So we still seem to have a continuous, unbroken, stream of subjective experience.
+We recognise that there are times when we aren't consciously aware of actions, such as when walking or driving along a familiar road, but that is usually because were lost in thought at the time. So even during those moments it as if we still had a continuously present, unbroken, stream of subjective experience.
 
 HOOS and associated interpretations may occur in a number of different scenarios, and such states may be constructed through a number of different sequences of events. By examining this, we may be able to form some accurate statements about whether subjective experience can be said to be "always on".
 
-Let us start by considering some initial topic _x_ that has no representation of subjective experience. For example, consider noticing an apple sitting on a table, and wondering about some odd-shaped spot in its surface.
+Let us start by considering some initial topic _x_ that has no representation of subjective experience. For example, consider noticing an apple sitting on a table, and wondering about some unusual-shaped texturing in its surface.
 
 From a processor state representing _x_ a number of things may occur next, illustrated in the following diagram.
 
