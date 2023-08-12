@@ -1479,10 +1479,17 @@ _...todo: need to discuss in more details ties to other theories like HOT in its
 
 # VII.4 Summary
 
-...todo...
+We cannot understand consciousness on its own. We must consider it in the context of other processes occurring within the brain. So to understand consciousness we must look back at the problems faced during our evolution, and the mechanisms that evolved to resolve those problems. As our ancestors evolved advanced forms of computational processing, one significant problem that arose was the chaotic nature inherent within flexible deliberative thought and something was needed to reign in that chaos. The solution was simple and elegant: that the very same adaptive and chaotic deliberative process could learn to gain control over itself; all it needed was a feedback loop so that it could _observe_ itself. Thus self meta-management evolved, and consciousness with it.
 
-Consciousness is the result of:
-* "a cognitive schema creates a causal association between the outcome of mental processes and the source of those outcomes as coming from the individual, and it strongly demarks the boundary between the individual as source versus other possible sources" [Schema section]
+Meta-management enables the generation of higher-order thoughts. Schemata and source labelling enable the attachment of additional contextual information to both first-order and higher-order thought. One such form of higher-order thought generates a higher-order observational state (HOOS), which represents that the individual has observed their own internal state. Subjective experience is the result of the generation and subsequent processing of a HOOS. It occurs only with a level of detail and for a duration that is proportional to the extent of brain resources that are spent on the train of thought that may or may not ensue.
+
+The phenomena of subjective experience itself does not meet any evolutionary need that anyone has been able to identify to date; but its underlying meta-management mechanisms do. Thus subjective experience is an emergent side-effect. It has causal power, like any other processing, that affects subsequent thought, so it is not epiphenomenal; but it likely has minimal to no effect on the particular perception or thought that is the _intent_ of any given subjective experience.
+
+The explanation given is entirely materialistic. No additional "something special" is required in order to explain the phenomenological aspects of subjective experience. But the explanation given is theoretical, and has many aspects that need empirical evidence. So this is not a _proof_ that consciousness is explained through entirely materialistic means. However, by presenting a _plausible_ materialistic explanation, it does prove that it is _plausible_ for consciousness to have an entirely materialistic explanation.
+
+Some outstanding questions remain. Firstly there is the clear empirical question regarding the meta-management architectures proposed. Does the inline meta-management architecture actually match up with the real architecture of the human brain? But a more puzzling question relates to the apparent prevalence of the generation of HOOS. While generation of HOOS is clearly just one example of the many possible forms of output from meta-management, its functional benefit to the individual is less clear. So why would it be generated with such regularity?
+
+Issues of HOOS aside, the theory presented here is more than just a theory of subjective experience. I started this treatise by explaining that I believed that consciousness could only be understood in the context of meta-management and general intelligence. I then proceeded to spend the bulk of discussion on topics related to meta-management. But meta-management is only needed because of general intelligence. Thus this theory is also about the mechanisms underlying general intelligence, and I believe that more discoveries will follow from it.
 
 
 # References
