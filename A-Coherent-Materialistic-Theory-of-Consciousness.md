@@ -977,7 +977,7 @@ Now, given a computational system, and given some particular potential topic and
 
 ![train of thought](files/A-coherent-theory-v1-train-of-thought.drawio.png)
 
-* _**Semiotic cycle.** All brain processes are the result of a constant cycling between representation and interpretation. A train of thought is a semiotic loop where the interpretation produces a new representation that is further interpreted by the same system.
+* _**Semiotic cycle.** All brain processes are the result of a constant cycling between representation and interpretation. A train of thought is a semiotic loop where the interpretation produces a new representation that is further interpreted by the same system._
 
 Illustrated in the above figure, we have seen that all thought is the act of interpreting representations, producing more representations requiring interpretation, in an endless cycle. The questions around trains of thought translates to questions around the capacities of those representations and interpretations. By this I mean that a representation only captures a certain amount of information, about a certain thing. Something that is never represented is never available for interpretation. A representation with a coarse granularity makes less information available to the interpreter than a fine-grained representation. Likewise, an interpreter can only produce interpretations (or rather, interpretational representations) according to its degree of computational complexity (eg: the number of neurons and synapses that make it up) and the learned knowledge available to it.
 
