@@ -3,6 +3,7 @@
 
 ### Theory
 * [[Theory Home]]
+* [[Consciousness is a Semiotic Meta-management Feedback Loop]]
 * [[A Theory of Consciousness]]
 * [[What is Consciousness]]
 * [[Background to A Theory of Mind]]
@@ -12,6 +13,8 @@
 * [[The Hard Problem of Experience]]
 * [[Visceral Loop]]
 * [[The Error Prone Brain]]
+* [[Proto AGI v1]]
+* [[Focusing on the Why]]
 * [[Human Phenomena]]
 * [[Guiding Principles]]
 * [[Theory Archive]]
