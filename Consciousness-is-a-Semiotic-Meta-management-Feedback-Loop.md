@@ -3,7 +3,7 @@ _This is a work in progress._
 _Please come back later._
 
 Abstract:
-- Consciousness is produced by a semiotic multi-iteration planner state machine with meta management. 
+- Consciousness is produced by a semiotic multi-iteration state machine with a meta-management feedback loop.
 
 Contents:
 
