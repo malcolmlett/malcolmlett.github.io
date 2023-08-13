@@ -1402,7 +1402,7 @@ Panel A in the diagram below illustrates how the external environment, the innat
 
 ![Narrowing convergent boundaries](files/A-coherent-theory-v1-mm-convergence.drawio.png)
 
-* _**Narrowing convergent boundaries.**_ A: behaviour of the habitual system is trained through narrowing convergent boundaries created by the environment and innate system on one hand, and by the rational system on the other. B: behaviour of the rational system is trained through narrowing convergent boundaries created by the environment and innate system on the one hand, and by the habitual system on the other.
+* _**Narrowing convergent boundaries.** A: behaviour of the habitual system is trained through narrowing convergent boundaries created by the environment and innate system on one hand, and by the rational system on the other. B: behaviour of the rational system is trained through narrowing convergent boundaries created by the environment and innate system on the one hand, and by the habitual system on the other._
 
 When the rational system is not operating near its optimum, the environment and habitual system act to apply a narrowing convergent boundary, illustrated in Panel B. The external environment applies after-the-fact feedback in the form of positive and negative rewards, interpreted by the innate system, which the rational system can use for future improvement through both rational adaptation and through whatever underlying learning mechanisms it operates on. As actions become more strongly habituated, it becomes harder for the rational system to counteract them. Thus the habitual system also applies a before-the-fact prevention against the most catastrophic errors.
 
