@@ -1475,7 +1475,19 @@ With respect to the last sentence, whether you can have entirely non-causal subj
 
 # VII.3 Comparison to other theories
 
-_...todo: need to discuss in more details ties to other theories like HOT in its various forms, GWT, Sloman's work, Roll's theory of the "why" of consciousness being to correct errors..._ 
+The theory as presented bears similarities to a number of existing theories of consciousness. I shall briefly mention some of those and examine how the various theories fit together.
+
+While the high-level meta-cognitive aspect of consciousness has been long suspected, few works address the underlying meta-management mechanisms of meta-cognition. Sloman (1978) applied abstract analysis of concepts associated with intelligence such as: notice, alert, interested, puzzled, surprised, understand, and others. They identified the importance of "administrative processes" in "intelligent" deliberative systems in order to support flexibility and creativity, but only in a later revised version of the book did they begin to use the term "meta-management". They highlighted the need for communication between different sub-systems of the brain, and suggested that those administrative processes are required in order to coordinate behaviour between those sub-systems. They went on to describe several specific systems that might be involved, including modelling of the environment, storage of facts about that environment and about the individual, motivational modelling, modelling of actions against purpose, tracking of current behaviour, and retrospective analysis of past behaviour. Beaudoin (1994) identified the importance of understanding those as "meta-" processes and identified several varieties, grouped under the umbrella term "meta-management": meta-goals, meta-planning, meta-procedure, meta-process. Beaudoin proposed a symbol-based meta-management system suitable for use within artificial autonomous agents. Sloman (2008) extended that research to the human sphere and identified a hierarchical behaviour control system involving three layers: i) reactive processes, ii) deliberative processes, and iii) meta-management processes. They also proposed various additional mechanisms that could influence the primary layer, such as "alarms" which mimic the effect of emotion to change our focus when a threat is identified.
+
+The meta-management needs of intelligence is key to understanding how intelligence can function. So understanding what those meta-management are is of utmost importance. I have attempted to collate the many works in this area in order to identify the range of high-level meta-cognitive and low-level meta-management needs. In order to form the basis of a theory of _human_ intelligence I have focused on connectionist architectures and formed my theory around those, extending the works of Beaudoin and Sloman to the connectionist domain. With the advances in deep neural networks today, it should be possible to build and train an artificial neural network based on my theory.
+
+A large part of the theory presented involves higher-order thoughts (HOTs). The definition of a higher-order observational state (HOOS) is almost identical to the definition of a HOT put forward by Rosenthal (1997): a HOT is a particular kind of thought about a first-order mental state such that its contents represents that the individual is in that mental state, and that the HOT was formed through direct internal observation rather than through indirect inference. However, the constraint on HOT contents is not obvious from the term alone and the HOT term is now used by many other researchers who may have subtly different interpretations, so I chose to coin a term that made more direct reference to the observational aspect. Another motivation for coining a new term is that I wish to get away from making a distinction between perceptions, thoughts, and other kinds of experiences. The brain has states. Some represent thoughts, some perceptions, some others, some mixtures of different kinds. We should not be prematurely identifying higher-order states as being only one particular kind.
+
+Rosenthal's variation of HOT theory (1997, 2004) proposes that all consciously experienced first-order mental states must have a HOT generated about them at the time in order to be consciously experienced. Detractors bemoan the inefficiency in the implied constant production of HOTs. Carruthers (1996, 2000, 2005) proposes instead that conscious mental states have a disposition towards the production of HOTs, and only need those HOTs to be produced on the rare occasion when one chooses to consciously introspect their thoughts. The _actualist_ HOT theory of Rosenthal more closely aligns to our experience of a continuous stream of consciousness. The _dispositional_ theory of Carruthers is more appropriate from a resource efficiency point of view. My own theory is closer to that of Carruthers. I have argued that HOTs/HOOS are only generated at the time that we choose to introspect our mental state. I have claimed that we are tricked into believing in a continuous stream of consciousness through the action of memory and source labelling.
+
+Global Workspace Theory (GWT) (Baars, 1988 & 2021; Baars and Franklin, 2007) proposes that consciousness is due to the global broadcast of information. While it is clear that the content of consciousness contains information from many disparate brain processes and thus a global broadcast seems a likely source of that information, GWT does not explain _how_ that global broadcast creates the phenomenological aspects of subjective experience. My own theory is entirely compatible with GWT and adds that missing explanation, by explaining how higher-order information about our mental state creates the phenomenological experience. The global broadcast of GWT may be a first-order process that broadcasts first-order state, such as in Global Neuronal Workspace Theory (Dehaene, Sergent, and Changeux, 2003), and this may occur in parallel to the higher-order representation supplied by the meta-management feedback loop. Alternatively, perhaps the global broadcast and the meta-management feedback loop are the same thing.
+
+Lastly, I have provided context to Integrated Information Theory (IIT) (Tononi and Sporns, 2003; Tononi, 2004, 2008 & 2014). IIT applies a systems theory to information flow within a complex computational system and devises an objective measure of the degree of consciousness in that system. Detractors have long been dissatisfied because of a lack of a way to identify which of those systems are conscious in the first place. IIT works against the information flow in arbitrary connectionist architectures, without an understanding of what that information represents. The theory as presented here operates against a higher-level conceptualisation of the processes in the brain and identifies specific kinds of representations and processing. It is only at that level that we can identify the necessary and sufficient conditions for consciousness, and I have provided an initial sketch of those conditions. At that higher level I have also identified that consciousness occurs by _degrees_. IIT provides the objective measure of degrees. My own theory explains how that produces subjective experience.
 
 # VII.4 Summary
 
@@ -1509,6 +1521,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 * Baars, B. J. (2021) On Consciousness: Science & Subjectivity - Updated Works on Global Workspace Theory. Nautilus Press
 
 * Bahrami, B., Olsen, K., Bang, D., Roepstorff, A., Rees, G., and Frith, C. (2012). What failure in collective decision-making tells us about metacognition. Phil. Trans. R. Soc. B 367, 1350–1365.doi:10.1098/rstb.2011.0420 (doi:10.1098/rstb.2011.0420).
+
+* Beaudoin, L. (1994). Goal processing in autonomous agents, PhD thesis, School of Computer Science, The University of Birmingham, Birmingham, UK.
 
 * Bernacer, J. Murillo, J.I. (2014). The Aristotelian conception of habit and its contribution to human neuroscience. Front. Hum. Neurosci. 8:883. doi: 10.3389/fnhum.2014.00883
 
@@ -1788,17 +1802,19 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Rolls, E. T. (2005). Emotion explained. Oxford: Oxford University Press.
 
-* Rosenthal, D. (1986). Two concepts of consciousness. Philosophical Studies, 49: 329–359.
+* Rosenthal, D. M. (1986). Two concepts of consciousness. Philosophical Studies, 49: 329–359.
 
-* Rosenthal, D. (1993). Thinking that one thinks. In Davies and Humphreys (eds) 1993.
+* Rosenthal, D. M. (1993). Thinking that one thinks. In Davies and Humphreys (eds) 1993.
 
-* Rosenthal, D. (2004). Varieties of higher-order theory. In Gennaro, R. (ed.) (2004), Higher-Order Theories of Consciousness: An Anthology. John Benjamins, pp. 17–44.
+* Rosenthal, D. M. (1997). "A Theory of Consciousness," In Ned Block, Owen Flanagan, & Güven Güzeldere (Eds.), "The Nature of Consciousness: Philosophical Debates, Cambridge, Massachusetts: MIT Press/Bradford Books, pp. 729-753.
 
-* Rosenthal, D. (2005). Consciousness and Mind. Oxford: Oxford University Press.
+* Rosenthal, D. M. (2004). Varieties of higher-order theory. In Gennaro, R. (ed.) (2004), Higher-Order Theories of Consciousness: An Anthology. John Benjamins, pp. 17–44.
 
-* Rosenthal, D. (2008). Consciousness and Its Function. Neuropsychologia 46(3):829-40. http://dx.doi.org/10.1016/j.neuropsychologia.2007.11.012 
+* Rosenthal, D. M. (2005). Consciousness and Mind. Oxford: Oxford University Press.
 
-* Rosenthal, D. (2012). Higher-order awareness, misrepresentation and function. Phil. Trans. R. Soc. B 367: pp1424–1438. http://doi.org/10.1098/rstb.2011.0353
+* Rosenthal, D. M. (2008). Consciousness and Its Function. Neuropsychologia 46(3):829-40. http://dx.doi.org/10.1016/j.neuropsychologia.2007.11.012 
+
+* Rosenthal, D. M. (2012). Higher-order awareness, misrepresentation and function. Phil. Trans. R. Soc. B 367: pp1424–1438. http://doi.org/10.1098/rstb.2011.0353
 
 * Safron, A. (2020). An Integrated World Modeling Theory (IWMT) of Consciousness: Combining Integrated Information and Global Neuronal Workspace Theories With the Free Energy Principle and Active Inference Framework; Toward Solving the Hard Problem and Characterizing Agentic Causation. Frontiers in artificial intelligence, 3, 30. 
 
@@ -1824,9 +1840,13 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Siewert, C. (2022). Consciousness and Intentionality. The Stanford Encyclopedia of Philosophy (Summer 2022 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2022/entries/consciousness-intentionality/>.
 
+* Sloman, A. (1978). The Computer Revolution in Philosophy, Harvester Press (and Humanities Press), Hassocks, Sussex. (Revised 2018).
+
 * Sloman, A. (1998). Damasio, Descartes, alarms and meta-management. SMC'98 Conference Proceedings. 1998 IEEE International Conference on Systems, Man, and Cybernetics (Cat. No.98CH36218), San Diego, CA, USA, 1998, pp. 2652-2657 vol.3, doi: 10.1109/ICSMC.1998.725060.
 
 * Sloman, A. (2001). Beyond Shallow Models of Emotion. Cognitive Processing 2 (1), 177–198.
+
+* Sloman, A. (2008). Varieties of Metacognition in Natural and Artificial Systems. Book Chapter in Metareasoning: Thinking about Thinking. Editors Michael T. Cox and Anita Raja. DOI:10.7551/mitpress/9780262014809.003.0020
 
 * Smart, J. J. C. (2022). The Mind/Brain Identity Theory. The Stanford Encyclopedia of Philosophy (Winter 2022 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2022/entries/mind-identity/>.
 
