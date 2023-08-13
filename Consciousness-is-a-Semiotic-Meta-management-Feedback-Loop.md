@@ -8,13 +8,13 @@
 * [I.1 A Question of Consciousness](#i1-a-question-of-consciousness)
 * [I.2 Précis of Thesis](#i2-précis-of-thesis)
 * [I.3 Background - Consciousness](#i3-background---consciousness)
-  * [Questions of Consciousness](#questions-of-consciousness)
-  * [The Purpose of Consciousness](#the-purpose-of-consciousness)
-  * [General Theories of Consciousness](#general-theories-of-consciousness)
-  * [Specific Theories of Consciousness](#specific-theories-of-consciousness)
-  * [More Reading](#more-reading)
+  * [I.3.1 Questions of Consciousness](#i31-questions-of-consciousness)
+  * [I.3.2 The Purpose of Consciousness](#i32-the-purpose-of-consciousness)
+  * [I.3.3 General Theories of Consciousness](#i33-general-theories-of-consciousness)
+  * [I.3.4 Specific Theories of Consciousness](#i34-specific-theories-of-consciousness)
+  * [I.3.5 More Reading](#i35-more-reading)
 * [I.4 Background - Biology and Neuroscience](#i4-background---biology-and-neuroscience)
-  * [The Predictive Coding theory of brain function](#the-predictive-coding-theory-of-brain-function)
+  * [I.4.1 The Predictive Coding theory of brain function](#i41-the-predictive-coding-theory-of-brain-function)
 
 [Part II - Problems in Simple Synthetic Control Processes](#part-ii---problems-in-simple-synthetic-control-processes)
 * [II.1 Interlude: Environment, Body, and Control Processes](#ii1-interlude-environment-body-and-control-processes)
@@ -23,69 +23,69 @@
 
 [Part III - Problems in Complex Synthetic Control Processes](#part-iii---problems-in-complex-synthetic-control-processes)
 * [III.1 Meta-management in Deliberative Systems](#iii1-meta-management-in-deliberative-systems)
-  * [State Trajectory Control during Body Action](#state-trajectory-control-during-body-action)
-  * [State Trajectory Control during Multi-iteration Processing](#state-trajectory-control-during-multi-iteration-processing)
-  * [State Trajectory Control during Iterative Inference](#state-trajectory-control-during-iterative-inference)
-  * [Objective learning](#objective-learning)
-  * [Mode control](#mode-control)
-  * [Mode identification](#mode-identification)
-  * [Distributed cooperation](#distributed-cooperation)
+  * [III.1.1 State Trajectory Control during Body Action](#iii11-state-trajectory-control-during-body-action)
+  * [III.1.2 State Trajectory Control during Multi-iteration Processing](#iii12-state-trajectory-control-during-multi-iteration-processing)
+  * [III.1.3 State Trajectory Control during Iterative Inference](#iii13-state-trajectory-control-during-iterative-inference)
+  * [III.1.4 Objective learning](#iii14-objective-learning)
+  * [III.1.5 Mode control](#iii15-mode-control)
+  * [III.1.6 Mode identification](#iii16-mode-identification)
+  * [III.1.7 Distributed cooperation](#iii17-distributed-cooperation)
 * [III.2 Interlude: Mechanisms of First-order Control Processes](#iii2-interlude-mechanisms-of-first-order-control-processes)
-  * [Stateless reactive control process](#stateless-reactive-control-process)
-  * [Stateful reactive control process](#stateful-reactive-control-process)
-  * [Planning control process](#planning-control-process)
-  * [Prediction-based Control](#prediction-based-control)
+  * [III.2.1 Stateless reactive control process](#iii21-stateless-reactive-control-process)
+  * [III.2.2 Stateful reactive control process](#iii22-stateful-reactive-control-process)
+  * [III.2.3 Planning control process](#iii23-planning-control-process)
+  * [III.2.4 Prediction-based Control](#iii24-prediction-based-control)
 * [III.3 Interlude: Planning in AI and Biology](#iii3-interlude-planning-in-ai-and-biology)
-  * [Hand-written Control Processes in AI vs Biologically Plausible Control](#hand-written-control-processes-in-ai-vs-biologically-plausible-control)
-  * [A Biologically Plausible Planning Control Process](#a-biologically-plausible-planning-control-process)
+  * [III.3.1 Hand-written Control Processes in AI vs Biologically Plausible Control](#iii31-hand-written-control-processes-in-ai-vs-biologically-plausible-control)
+  * [III.3.2 A Biologically Plausible Planning Control Process](#iii32-a-biologically-plausible-planning-control-process)
 * [III.4 Meta-control Options in Meta-management](#iii4-meta-control-options-in-meta-management)
 * [III.5 Meta-observation Options in Meta-Management](#iii5-meta-observation-options-in-meta-management)
 * [III.6 Architectural Options for Meta-management](#iii6-architectural-options-for-meta-management)
-  * [Implicit Meta-management](#implicit-meta-management)
-  * [Independent Meta-management](#independent-meta-management)
-  * [Inline Meta-management](#inline-meta-management)
-  * [Chapter Summary](#chapter-summary)
+  * [III.6.1 Implicit Meta-management](#iii61-implicit-meta-management)
+  * [III.6.2 Independent Meta-management](#iii62-independent-meta-management)
+  * [III.6.3 Inline Meta-management](#iii63-inline-meta-management)
+  * [III.6.4 Chapter Summary](#iii64-chapter-summary)
 
 [Part IV - Problems in Biological Control Processes](#part-iv---problems-in-biological-control-processes)
 * [IV.1 Embodiment](#iv1-embodiment)
-  * [Identification of Source](#identification-of-source)
-  * [Schema](#schema)
-  * [Meaning Attachment](#meaning-attachment)
+  * [IV.1.1 Identification of Source](#iv11-identification-of-source)
+  * [IV.1.2 Schema](#iv12-schema)
+  * [IV.1.3 Meaning Attachment](#iv13-meaning-attachment)
 * [IV.2 Meta-cognition](#iv2-meta-cognition)
-  * [Analysis of Meta-cognition](#analysis-of-meta-cognition)
-  * [First-order vs Conscious](#first-order-vs-conscious)
+  * [IV.2.1 Analysis of Meta-cognition](#iv21-analysis-of-meta-cognition)
+  * [IV.2.2 First-order vs Conscious](#iv22-first-order-vs-conscious)
 * [IV.3 Systems of Behavioural Control](#iv3-systems-of-behavioural-control)
-  * [Innate behaviour](#innate-behaviour)
-  * [Habitual behaviour](#habitual-behaviour)
-  * [Rational behaviour](#rational-behaviour)
-  * [Emotion](#emotion)
-  * [Co-development of behavioural control systems](#co-development-of-behavioural-control-systems)
-* [IV.3 Habitual and Rational Meta-management](#iv3-habitual-and-rational-meta-management)
+  * [IV.3.1 Innate behaviour](#iv31-innate-behaviour)
+  * [IV.3.2 Habitual behaviour](#iv32-habitual-behaviour)
+  * [IV.3.3 Rational behaviour](#iv33-rational-behaviour)
+  * [IV.3.4 Emotion](#iv34-emotion)
+  * [IV.3.5 Co-development of behavioural control systems](#iv35-co-development-of-behavioural-control-systems)
+* [IV.4 Habitual and Rational Meta-management](#iv4-habitual-and-rational-meta-management)
 * [IV.5 Semiotics](#iv5-semiotics)
-  * [Objects, Representations, and Interpretations](#objects-representations-and-interpretations)
-  * [Infinite semiosis](#infinite-semiosis)
-  * [Thought](#thought)
-  * [Trains of Thought](#trains-of-thought)
+  * [IV.5.1 Objects, Representations, and Interpretations](#iv51-objects-representations-and-interpretations)
+  * [IV.5.2 Infinite semiosis](#iv52-infinite-semiosis)
+  * [IV.5.3 Thought](#iv53-thought)
+  * [IV.5.4 Trains of Thought](#iv54-trains-of-thought)
 * [IV.6 Representations](#iv6-representations)
-  * [Representation Redescription Theory](#representation-redescription-theory)
-  * [Semiotic Analysis of Control Processes](#semiotic-analysis-of-control-processes)
+  * [IV.6.1 Representation Redescription Theory](#iv61-representation-redescription-theory)
+  * [IV.6.2 Semiotic Analysis of Control Processes](#iv62-semiotic-analysis-of-control-processes)
     * [Body action control](#body-action-control)
     * [Meta-management of CP state trajectory](#meta-management-of-cp-state-trajectory)
     * [Meta-learning](#meta-learning)
 * [IV.7 Review of Meta-management](#iv7-review-of-meta-management)
-  * [Similarities between first-order processes and meta-management](#similarities-between-first-order-processes-and-meta-management)
-  * [Differences between first-order processes and meta-management](#differences-between-first-order-processes-and-meta-management)
-  * [Meta-management Architecture](#meta-management-architecture)
+  * [IV.7.1 Similarities between first-order processes and meta-management](#iv71-similarities-between-first-order-processes-and-meta-management)
+  * [IV.7.2 Differences between first-order processes and meta-management](#iv72-differences-between-first-order-processes-and-meta-management)
+  * [IV.7.3 Meta-management Architecture](#iv73-meta-management-architecture)
 
 [Part V - Solution](#part-v---solution)
 * [V.1 The Architecture of Subjective Experience](#v1-the-architecture-of-subjective-experience)
 * [V.2 Subjective Experience States](#v2-subjective-experience-states)
 * [V.3 Interpretation of Subjective Experience States](#v3-interpretation-of-subjective-experience-states)
-  * [Rounding it Out](#rounding-it-out)
+  * [V.3.1 Rounding it Out](#v31-rounding-it-out)
 * [V.4 Explaining Phenomenology of Subjective Experience](#v4-explaining-phenomenology-of-subjective-experience)
-  * [Homunculus](#homunculus)
-  * [Conscious and Unconscious Thought](#conscious-and-unconscious-thought)
-  * [Stream of Consciousness](#stream-of-consciousness)
+  * [V.4.1 Homunculus](#v41-homunculus)
+  * [V.4.2 Conscious and Unconscious Thought](#v42-conscious-and-unconscious-thought)
+  * [V.4.3 Stream of Consciousness](#v43-stream-of-consciousness)
 * [V.5 Conditions of Subjective Experience](#v5-conditions-of-subjective-experience)
 * [V.6 Degrees of Subjective Experience](#v6-degrees-of-subjective-experience)
 * [V.7 An example of an alternative consciousness](#v7-an-example-of-an-alternative-consciousness)
@@ -158,7 +158,7 @@ Here is my own attempt at defining consciousness of the form that shall be discu
 
 Unfortunately there is still much ambiguity and room for disagreement. But it will suffice as a start so that I can refine some ideas as we go along.
 
-## Questions of Consciousness
+## I.3.1 Questions of Consciousness
 For the study of consciousness, we have three broad questions that we wish to answer, that can be paraphrased as "what, why and how?":
 
 * **What:** what are the defining characteristics and properties of consciousness? ie: what do we look for in order to identify whether some thing or some creature experiences consciousness, or to distinguish whether a particular mental state is conscious? Also, what kinds of properties are we trying to explain through an explanation of consciousness?
@@ -199,7 +199,7 @@ For the most part these two forms of consciousness are tied together. Most would
 
 I subscribe to the view that access consciousness and phenomenal consciousness are just different ways of looking at the same thing. Specifically, that access consciousness is a reference to the processes that construct the specific _content_ of consciousness, including not just the intent but also its "raw feels", while phenomenal consciousness is a reference to the _question_ of why that specific content became conscious in the first place. Mind you, this is not a standard view; most would associate the raw feels with phenomenal consciousness as something that is somehow distinguishable from access consciousness. It is for this reason that I predominantly use the term _subjective experience_ throughout this treatise, instead of _consciousness_. I wish to be clear that my theory is about both access and phenomenal consciousness (as per Block's definitions), together as a single thing.
 
-## The Purpose of Consciousness
+## I.3.2 The Purpose of Consciousness
 Why does consciousness exist? Presumably conscious experience confers some sort of benefit to the individual in order that it evolved. In order words, we assume that it serves some _function_ or _functions_, that those functions are useful, and that the individual would be an a disadvantage if it were lacking those functions.
 
 When attempting to decipher the _function of consciousness_, there are a number of different angles that should be considered (Niikawa et al, 2020; Rosenthal, 2008). Firstly, we need to distinguish whether we are asking about creature consciousness or state consciousness. On the one hand, we're asking whether the creature as a whole benefits from having conscious experience. On the other hand, we are asking whether a given process benefits from having conscious experience associated with part or the whole of that process.
@@ -228,7 +228,7 @@ A number of such theories have been proposed that either attempt to directly sug
 
 Other supposed purposes of consciousness identify strong correlations but fail to explain why consciousness is needed for that to occur. For example, consciousness appears to be essential for long-term episodic memory; we are unable to remember things that we were not conscious of at the time (Tulving, 1987; Edelman et al, 2011).
 
-## General Theories of Consciousness
+## I.3.3 General Theories of Consciousness
 I now describe some generic and specific theories of consciousness. To provide some grounding to the summary and to aid in comparing theories, a framework of a stack of conceptual layers is used, illustrated in the diagram that follows. This is not meant to imply a priori anything about the actual structure of consciousness and its underlying mechanisms. For example, none of the layers are assumed necessarily to exist a priori, nor is the particular illustrated order appropriate in every case.
 
 ![theory layers](files/A-coherent-theory-v1-theory-layers.drawio.png)
@@ -258,7 +258,7 @@ A deeper philosophical question exists about whether representation and function
 
 If all the representational and functional structures are in place for an individual to have both the external behaviours and internal mental behaviours of an individual in intense pain, can we even conceive it to be possible that they would not have the typical associated subjective experience of the pain?
 
-## Specific Theories of Consciousness
+## I.3.4 Specific Theories of Consciousness
 _Higher-order Thought (HOT) and Higher-order Perception (HOP)_ are a group of theories that focus on the form of the representation. It is claimed that there are broadly two types of cognitive state (Carruthers and and Gennaro, 2020; Rosenthal, 2004). _First-order states_ represent things that are typically world-focused, such as representations of perceptions. In contrast, _higher-order states_ represent things about first-order states.
 
 Where a higher-order state represents that a first-order state was _experienced_, then we have conscious experience. Several variations exist in this group of theories. HOP theories focus on perception, and in particular an idea that we have an explicit perceptual inner-sense that observes our cognitive state, for example in the same way that our visual sense observes the world outside (Armstrong, 1968 and 1984; Lycan, 1996 and 2004). HOT theories are computational theories that propose that higher-order states are _constructed_ from or about the first-order states. Some HOT theories propose that first-order states become conscious through the presence of associated higher-order states, and thus that we only experience such first-order states at the moment that a HOT in constructed about them (Rosenthal, 1986, 1993, and 2005). A subtle variation holds that certain first-order states are inherently _disposed_ to have associated higher-order states and that that is sufficient for the first-order states to be experienced as conscious (Carruthers, 1996, 2000, and 2005). Some view that first-order states and higher-order states are related but independent, and thus that one kind can occur without the other, while others take a _self-representational_ view that higher-order states are somehow always constructed inline with their intentional first-order states (Gennaro, 1996 and 2012; Kriegel, 2003, 2006 and 2009).
@@ -279,7 +279,7 @@ It is important to note that while such theories find useful correlations to con
 
 Other noteworthy theories include the _Orch OR_ theory of consciousness [citation], and pan-psychism [citation].
 
-## More Reading
+## I.3.5 More Reading
 For those who wish to learn more, the _Stanford Encyclopedia of Philosophy_ has excellent articles covering many topics related to this area. In particular I recommend articles on: [Consciousness](https://plato.stanford.edu/entries/consciousness), [The Unity of Consciousness](https://plato.stanford.edu/entries/consciousness-unity/), [The Contents of Perception](https://plato.stanford.edu/entries/perception-contents/), [Perceptual Experience and Perceptual Justification](https://plato.stanford.edu/entries/perception-justification), [Representational Theories of Consciousness](https://plato.stanford.edu/entries/consciousness-representational/), [The Computational Theory of Mind](https://plato.stanford.edu/entries/computational-mind/), [Neuroscience of Consciousness](https://plato.stanford.edu/entries/consciousness-neuroscience/), [Higher-Order Theories of Consciousness](https://plato.stanford.edu/entries/consciousness-higher), [Introspection](https://plato.stanford.edu/entries/introspection/), [Mental Causation](https://plato.stanford.edu/entries/mental-causation/), [Epiphenomenalism](https://plato.stanford.edu/entries/epiphenomenalism/), and [Animal Consciousness](https://plato.stanford.edu/entries/consciousness-animal/). The Wikipedia article on [Experience](https://en.wikipedia.org/wiki/Experience) also provides an excellent summary of various concerns.
 
 For more background on the various theories of consciousness, I recommend Seth (2022) and the Scholarpedia article on [Models of Consciousness](http://www.scholarpedia.org/article/Models_of_consciousness).
@@ -294,7 +294,7 @@ Functional descriptions that include a single boxes for, say, processing and mem
 
 Nevertheless, it will helpful to the reader to have some intuition of the brain's true underlying dynamical systems nature. To that end, what follows is a brief description of one attempt at explanation, known as a _Predictive Coding_. It remains to be seen how accurately predictive coding explains brain function. It is also not the only approach being developed. Even if it is eventually proven to hold true for some parts of the brain, it may not hold true for all parts of the brain.
 
-## The Predictive Coding theory of brain function
+## I.4.1 The Predictive Coding theory of brain function
 A traditional conception of brain processing of senses can be characterised as "perception by representation": that the brain attempts to use the senses to accurately represent what is observed. A typical assumption associated with that characterisation is that sensory perception is a largely "feed-forward" process: raw low-level sensory signals are hierarchically interpreted into higher and higher-level representations, eventually identifying specific objects, their boundaries, and other properties such as location, pose, and motion (Buckley et al, 2017; Walsh et al 2020).
 
 An alternative conception is characterised as "perception by inference": that the brain attempts to infer the (hidden) state of the environment, known as the _latent state_, from sensory signals. In this conception, rather than predicting a representational model that _correlates_ to the sensory signals, the brain attempts to model the underlying structure that _caused_ the sensory signals (Friston, 2005). Furthermore, rather than producing this inference within a single forward pass, it is derived through an iterative process employing both feed-forward and feed-back signals (Rao and Ballard, 1999).
@@ -428,22 +428,22 @@ A number of potential control problems have been identified in systems with such
 
 The following subsections list some specific ways in which meta-management plays a part in computational systems, with a particular focus on connectionist implementations. Many of these examples highlight areas that have existing solutions for the most simple cases, but yet have active research investigating ways to improve the handling.
 
-## State Trajectory Control during Body Action
+## III.1.1 State Trajectory Control during Body Action
 Actions by an embodied agent occur over time. During the time it takes for an agent to move its arm through space from the arm's initial position to target position the agent will make many observations about the environment and body states. The agent's goal and action plan must be relatively persistent during that time, otherwise the agent's behaviour will be chaotic, with rapid goal and action changes.
 
 Thus, while the computational control process manages (controls) the trajectory of its body state, it must also meta-manage the trajectory of its CP state (eg: the given goal and action-plan at the time). In this case, the agent's CP state must to some extent resist change influenced by new observations.
 
-## State Trajectory Control during Multi-iteration Processing
+## III.1.2 State Trajectory Control during Multi-iteration Processing
 As introduced in chapter II.3, during multi-iteration processing the control process navigates through computational state space, without performing body actions.
 
 This state trajectory needs to be managed just the same as for the body state trajectory. In order to maintain stability the agent needs to i) observe the CP state trajectory, ii) apply some objective measure to decide upon the relative effectiveness of the trajectory, and iii) act to change the trajectory if a better one is available. 
 
-## State Trajectory Control during Iterative Inference
+## III.1.3 State Trajectory Control during Iterative Inference
 A special case of multi-iteration processing is that of _iterative inference_, where the control process takes multiple iterations to interpret some input signal. Here a representation of the sensory input signal may need to be held persistent for the duration of the inference, even if the original input signal has ceased. For example in an animal context where a fleeting glimpse of a potential predator has been observed but that observation needs re-consideration before being certain.
 
 In that case, some portion of the state must be held stable, while the rest is free to change significantly. This requires some form of meta-management. In simple cases that may develop as an implicit product of the learned connectionist control process. In more complex agents, such as those with attention, more explicit meta-management may be required.
 
-## Objective learning
+## III.1.4 Objective learning
 How does a continuously learning embodied agent know which actions are better than others? This decision is tied to the agent's objective: it's ultimate goal that influences all other goals. For example, to eat and stay healthy in order to survive. Or to produce as many staples as possible in as little time as possible [citation]. If the agent is not pre-configured with its objective, then it must learn that objective.
 
 An agent in the human world requires the use of inedible metal tokens (coins), which are used in complex ways for the purpose of life preservation. The involvement of such an inedible metal token as part of some process (eg: doing a job and being paid) does not necessarily immediately result in a life sustaining outcome. Thus, without any other information, it is hard for the agent to learn the relationship between that inedible metal token, the processes that it must be involved in, and the life sustaining result. This is known in the AI community as _sparse feedback_, and it poses a particularly difficult problem for continuously learning agents [citation needed].
@@ -454,7 +454,7 @@ Sparse feedback and the exploration-exploitation dilemma make objective learning
 
 Objective learning can be seen as another form of meta-management for a number of reasons. Firstly, even with a learned objective function, first-order behaviour continues to use low-level representations, where the high-level objective function is used only in the generation of endogenous feedback as part of subsequent behaviour learning. Thus the learning and use of the objective function is a second-order process. Secondly, learning of objective functions is hard [citation needed], and in complex environments it may too require deliberative involvement.
 
-## Mode control
+## III.1.5 Mode control
 A number of seemingly distinctly different behavioural outcomes share a single principle, referred to here as _mode control_. Mode control involves a decision being made between multiple alternatives and that decision influencing the way in which a subsequent process or decision is carried out.
 
 Examples of mode control include:
@@ -464,12 +464,12 @@ Examples of mode control include:
 - **Attention.** As suggested in Part II, the bandwidth of any computational system is limited, and the complexity of the environment may exceed the agent's computational bandwidth. One solution is to focus on only the most salient features of the environment, ignoring the rest. What the agent considers salient differs depending on things in the environment, the context in which the agent is operating, and on the agent's knowledge. Attention has a significant impact on the processes executed by the main control process – a change in attention changes the input to the control process, and thus to its output.
 - **Exploration vs exploitation.** Already introduced in an earlier discussion on objective learning, the choice between exploration and exploitation affects sub-goal selection and the actions taken by the agent. For example, an agent can measure its actions according to the certainty associated with the predicted outcome; in an exploration mode, the agent will prefer actions that have less associated certainty (Kaplan & Friston, 2018).
 
-## Mode identification
+## III.1.6 Mode identification
 For mode selection to be possible, the agent must identify the modes that can be selected from, whether they be discrete or a range of continuous values. This requires two important features of the meta-management system: i) that it has sufficient access to _observe_ the things that it needs to control, the outcomes of the control, and the values used in control; and ii) that it can _model_ those observations and later use that model to choose the control mode.
 
 In some cases this may involve modelling the relationships between different components of the first-order control process. For example, Timmermans et al (2012) identify that meta-cognitive processes appear to learn cause-effect relationships between the supplementary motor cortex and the primary motor cortex. They suggest that this model is used to infer the most appropriate signals to send from higher order areas.
 
-## Distributed cooperation
+## III.1.7 Distributed cooperation
 Some theories of brain function describe the brain as having multiple independent processes that are in constant competition. For example the biased-competition theory of attention (citations) assumes multiple processors, each interpreting their own local sub-scene out of a larger visual scene. It pits those different sub-scene interpretations against each other, until a single unified scene interpretation wins out. Global Workspace Theory adds the option for groups of otherwise competing processes to cooperate (citation), with the outcome being that a group of processes can collectively win the competition for attention when each process individually would loose.
 
 This seems like an obvious situation in which meta-management has a part to play – in managing the competition and cooperation between those processes. One possible mechanism is the same as discussed in the section above on Mode selection – by adjusting priors.
@@ -486,19 +486,19 @@ In AI, a common scenario is to train a simulated robot to navigate within a virt
 
 * _**Control algorithms.** A graduation of increasingly adaptive control algorithms in an embodied controller. Some training algorithm connectivities have been simplified or omitted for the sake of simplicity. A) A so called "model-free" _policy_ network that produces action without awareness of the dynamics of the agent itself, with an additional training algorithm that optimises its parameters. B) Model-free policy network that is aware of the state of its body. C) A so called "model-based" planner that simulates entire trajectories in order to choose the best action, with or without awareness of its own state. D) Hierarchical prediction-based control process that may not need explicit meta-management._
 
-## Stateless reactive control process
+## III.2.1 Stateless reactive control process
 In the most simple case, the policy network simply predicts the best action given a sensory input about the environment. The policy network is a learned approximation of a probability distribution $`P(a|s)`$, representing that best action for each given state. A typical example is a robot car with very simple choices of actions: stop/go, left/right/forwards. The robot observes its surroundings using, for example, vision, sonar, or laser.
 
 The training is done by the RL algorithm, which is hand-written by researchers. The RL algorithm is really the thing with the smarts here. It has access to much information that the agent does not. For example, it knows what the training goal is (eg: to navigate a race course), it knows the true position and orientation of the robot at all times (the _ground truth_), and it knows how "costly" each robot action was relative to the goal. From that information it computes a _loss function_ as the time-devalued sum of those action costs [citation, and details]. The loss function effectively computes a unit-neutral measure that has the characteristic that lower loss values indicate behaviour is closer to ideal, without needing to know exactly what ideal is. That loss function is then used via gradient descent and back propagation to update the weights within the NN. Over many training iterations the policy network _converges_ towards producing ideal behaviour.
 
 In this simplest version, the dynamics of the agent itself are also ignored. For example, a car robot is assumed to produce the required action immediately, the policy has way to take into account how quickly the steering angle can be changed. In the earlier days of neural network research, including deep learning, many of the problems addressed were of this very simple form.
 
-## Stateful reactive control process
+## III.2.2 Stateful reactive control process
 In a first small improvement, we give the agent _some_ information about its own physical state, enabling the agent to cope with its own dynamics. For example, a car robot may have information about its current steering angle and speed of its wheels. Through multiple iterations of RL, the policy network learns to take the agent's physical state into account when predicting the next action, effectively incorporating knowledge of its own dynamics.
 
 Both this an the former kind of agent are known as _model-free_, because they lack an explicit causal model of the space in which they operate. For example, they have no ability to predict the expected outcomes of actions and to detect when actual outcomes diverge from expectation. In more realistic real-world scenarios, there is a particular scalability problem that arises. In the real world the best trajectory is a function not just of the initial state, but also of the goal at the time. Here the policy network effectively must learn a probability distribution $`P(a|s,g)`$. The potential range of goals could be large, and thus the dimensionality of the distribution is exponentially larger than $`P(a|s)`$ alone. Furthermore, the policy network only generalises to new goals that are similar to ones seen at training time.
 
-## Planning control process
+## III.2.3 Planning control process
 A significant improvement to adaptability and reduction in training time is seen in AI research by incorporating a causal model with a _planner_ into the control process, known as _model-based_ RL. Here, a model is learnt that predicts the effect of an action on the state of the environment and on the agent's own physical state. Rather than predicting a single best action, the agent simulates a trajectory from its current state via a sequence of actions to see where it may end up. It does that multiple times with multiple trajectories. Finally it chooses the best trajectory, and the executes the first action from that trajectory. Then it repeats the whole process again for the next action step. The rest of the computed best trajectory is typically discarded at each step.
 
 Compared to reactive control processes, such a solution has a significant advantage in the real world where the most appropriate action depends on the goal at the time. The planner learns a model $`P(s'|s,a)`$. The model is not parameterised by goal, as the goal needs only be considered at the time of planning. Thus the same model suffices to work with many goals, including goals never seen during training. Additionally, during training the same model parameters can be updated from experience regardless of the goal that was being followed at the time.
@@ -509,7 +509,7 @@ Unfortunately, this planning approach can also be computationally inefficient. I
 
 Note that the structure and algorithm of the planner is far from given. It too has many parameters. In AI research the planning algorithm is typically chosen beforehand and hand-written. In a biological setting, the planning algorithm is likely learned from experimentation and instruction.
 
-## Prediction-based Control
+## III.2.4 Prediction-based Control
 A fourth control strategy exists that doesn't fit neatly into the supposed sequence of adaptive improvement. But it needs to be described because it may be the significantly more biologically plausible strategy, and this is as good a place as any to describe it.
 
 A feature of the first three supposed first-order control processes is that their descriptions incorporate a lot about how they are meta-managed. For reactive control processes, the first-order process that actually drives behaviour is just the policy network. The RL learning algorithm is meta-management. It should also be pointed out that there are many different RL algorithms that have been developed, and many more improvements under active research [citation]. The description of the model-based control process included a hand-written planning algorithm that simulates trajectories (how?) and then chooses (how?) one of those trajectories over the others and then finally chooses (how?) one action out of the chosen trajectory. Those interspersed "how?" comments identify points where many different algorithms exist. These are all steps that don't produce behaviour but rather are involved in determining how to produce the behaviour - meta-management again. It should be becoming clear that there are a great many variations and choices to be made in _how_ to meta-manage a first-order process.
@@ -528,7 +528,7 @@ It remains to be seen how complex a system can get via such a hierarchical mutua
 
 # III.3 Interlude: Planning in AI and Biology
 
-## Hand-written Control Processes in AI vs Biologically Plausible Control
+## III.3.1 Hand-written Control Processes in AI vs Biologically Plausible Control
 In the above I have taken substantial inspiration from contemporary AI research into artificial connectionist computational paradigms. I shall continue to use AI research for inspiration and to draw comparisons. For that comparison to be legitimate I need to address a major difference between contemporary AI's use of connectionist architectures and that of biology.
 
 In contemporary AI, many of the processes are hand-written _imperative code_ - written in a chosen computer language that executes steps one at a time. It could be argued that in most AI agents the primary control process is that imperative code. The connectionist part of the architecture is only a small component of the overall solution. Somewhat confusingly, the AI community refer to that artificial NN as a "model" regardless of whether they are implementing model-free or model-based RL or some other form of AI. However this reference as a "model" is appropriate - it is not a real neural network, but a data structure on a computer that represents certain simplified aspects of how such a neural network might be structured. As it is just a data structure, something else must _execute_ it. And the thing that executes it is the hand-written imperative code.
@@ -547,7 +547,7 @@ In a narrow way there are aspects of the above that are not entirely dissimilar 
 
 * _**Control and meta-management processes in biology.** Layers of increasingly flexible and learning connectionist networks run on top of more static (genetically pre-determined) connectionist networks, all of which are "hosted" within a largely genetically "hard-wired" body._
 
-## A Biologically Plausible Planning Control Process
+## III.3.2 A Biologically Plausible Planning Control Process
 In order to more accurately motivate further discussions of meta-management in a way that might be applicable to biology, we need a control process that is itself more biologically plausible. A biological version of a trajectory planner provides a good such example. It is reasonable to consider that an ability to do planning is very important for biological agents just as much as it is for artificial agents. Biological agents are unlikely to be imbued with a fully-formed pre-built planning engine. And even if such a thing was partially or fully formed, it is more likely to built using the same kind of neural network structures found throughout the rest of the brain.
 
 ![biologically plausible planner](files/A-coherent-theory-v1-bio-planner.drawio.png)
@@ -620,21 +620,21 @@ Now that we have considered various options for meta-control and for meta-observ
 
 * _**Meta-management architecture options.** Three broad architectures for meta-management. A) Implicit - the first-order control process converges towards stable behaviour without any explicit meta-management processes acting upon it. B) Independent - explicit meta-management processes acting upon the first-order control process. C) Inline - control process acting upon itself to self meta-manage._
 
-## Implicit Meta-management
+## III.6.1 Implicit Meta-management
 Mentioned already in the discussion on first-order control processes, some control processes are structured in such a way as that they are inherently convergent and thus do not need explicit meta-management. This is effectively the null-hypothesis of meta-management.
 
 One example is a simple mechanical thermostat that uses temperature feedback to control a heater. No meta-management is required as the system's control strategy is static - it does not learn. Another example is that of prediction-based control processes, described in chapter III.2. That does incorporate learning, and with the extension to free-energy minimisation may even produce relatively complex behaviour. For example, perhaps it is a good description of much of insect behaviour.
 
 Through the various arguments presented in this treatise, I claim that such control processes are limited in their adaptability. For example, Part IV discusses model-based rational thought in humans, which goes well beyond what is possible with a single hierarchical predictive mechanism.
 
-## Independent Meta-management
+## III.6.2 Independent Meta-management
 This form of meta-management uses explicit processes that operate separately from the first-order processes.
 
 A training process that records positive and negative feedback, derives a loss function, computes the gradients, and optimises the parameters of the control process is a simple example of an independent meta-management process. It is the most common example within AI research today. In AI research the training process is typically hand-rolled, but research has begun to look at how some parts of that process can be replaced with artificial NNs. This includes using NNs to estimate gradients (Bengio, Léonard, Aaron Courville, 2013) and using NNs to calculate parameter updates (Andrychowicz et al, 2016). 
 
 One can imagine the possibility of a neural network that calculates and executes all of the meta-management needs against a target control process. This could include all of the meta-control options discussed in a section above. A challenge with this architecture is how to train the meta-management NN.
 
-## Inline Meta-management
+## III.6.3 Inline Meta-management
 A somewhat radical suggestion is that perhaps the first-order control process can meta-manage itself, given the right conditions. This suggestion stems from the observation that the processes involved to observe, infer, and act as part of meta-management seem very similar to those processes that we would assume make up the first-order control process in terms of interactions with its own body and the environment. In a complex environment we would expect those processes to be very complex. In a biological brain, due to the complexities and difference between the different sub-processes (modelling vs memory, for example) we expect some degree of brain region specialisation. Correspondingly, if two different problem domains need the same kind of processing capability, perhaps the same brain region might handle that processing capability for both problem domains. That would be the most neurally efficient solution because neurons cost a lot [citation].
 
 What conditions might make this possible? Firstly, the control process needs to observe its own behaviours. This could be achieved via a feedback loop that captures that behaviour and feeds it back as input. That feedback may capture the control process' current state, its recent trajectory, and its inputs and outputs.
@@ -647,7 +647,7 @@ Lastly, training of the whole system needs to be bootstrapped. Initially the sel
 
 In some respect this is a description of one particular solution for implicit meta-management, but I find it useful to treat it separately for two reasons. Firstly, inline meta-management incorporates a feedback-loop with the very explicit purpose of aiding in meta-management. Secondly, the ways in which the control process can meta-control itself include all of those explicit meta-control mechanisms described chapter III.4. This inline meta-management is better described as a form of explicit meta-management than it is as a form of implicit meta-management.
 
-## Chapter Summary
+## III.6.4 Chapter Summary
 All of the meta-management architectures described above may be valid. In fact, biological brains probably incorporate a mixture of all of them, and perhaps with other mechanisms not listed above. However, we are interested in the most significant form of meta-management that might be at play in the context of subjective experience. Subjective experience seems to be tightly correlated with higher-level and higher-order executive control, and so we are interested in the most significant form of meta-management as it pertains to that higher-order executive control.
 
 When looking at generic control problems, there is no architecture that is clearly more effective or more realistic than the others. Perhaps the answer depends too much on how the control process itself functions. The devil is in the details, as they say. The functioning of the control process depends also on what kinds of control are required, with the more interesting kinds of control occurring in more complex agents.
@@ -681,7 +681,7 @@ To fully capture all the ways in which cognitive processes are involved to susta
 
 What follows is a brief discussion of a few salient features that bear significance to the discussions of meta-management and subjective experience.
 
-## Identification of Source
+## IV.1.1 Identification of Source
 As the brain learns about the world around it and about its own body, it builds up models of the various objects within those spaces of environment and body. An important aspect of those models is to capture what ability the individual has to affect the state of the different objects within its models. A chair that obstructs motion can be easily lifted and moved. A tree cannot. The modality of action varies by the form and location of the object. The chair can be moved by performing physical actions involving the entire body. An itch may be scratched via motion of only a single arm and hand. A racing heart can be calmed by modulating one's breathing. A pain in the eyes from a blinding light can be resolved by closing the eyelids or averting gaze.
 
 The same applies to actions against our cognitive processes. Different modalities of action are required for different situations. To remain focussed on a particular task in the presence of distractions requires us to continually re-asses whether we are still focused on that task. In contrast, if we are "stuck in a rut" unable to solve a problem, the action required is to intentionally remove the focus in order to allow broader ideas to surface. On the topic of distractions, different actions are more suitable depending on the source of the distraction. If someone is repeatedly interrupting our thought by talking to us, a suitable action is to remove ourselves from the situation or ask them to desist. In contrast, if our own wondering thoughts are the source of distraction, we can only perform physical or mental actions against ourselves in order to solve the problem. The distraction examples are particularly interesting because in both cases some sort of thought is projected into our conscious processes, but the ultimate source differs. The ability to identify source, at least for external events, is acknowledged in metacognitive source monitoring studies, where subjects are asked, for example, to remember when or where some event occurred or to remember who presented the information (Shimamura, 2000).
@@ -690,7 +690,7 @@ More generally, I suggest that the brain identifies the source for the majority 
 
 Source labelling is consistent with the suggestion that the feeling of _conscious volition_ is the result of a an after-the-fact inference process that identifies whether action was caused by the self. Experiments have found that such inferences can be easily misled, leading to the individual falsely acknowledging or rejecting their causal involvement in the action (Wegner, 2003).
 
-## Schema
+## IV.1.2 Schema
 Psychology has long identified in humans the existence of a model of the individual's body – known as the _body schema_. It is used in production of action control, and integrates information from our main physical senses and the proprioceptive senses (Proske & Gandevia, 2012). A clear definition is given by Morasso et al (2015):
 > In summary, we view the body schema as a set of fronto-parietal networks that integrate information originating from regions of the body and external space in a way, which is functionally relevant to specific actions performed by different body parts. As such, the body schema is a representation of the body’s spatial properties, including the length of limbs and limb segments, their arrangement, the configuration of the segments in space, and the shape of the body surface. (p. 1)
 
@@ -706,7 +706,7 @@ In the same way that the body schema likely creates explicit _identities_ for in
 
 The exact specifics are not important here, as the most important point has already been made, summarised as follows: a cognitive schema creates a causal association between the outcome of mental processes and the source of those outcomes as coming from the individual, and it strongly demarks the boundary between the individual as source versus other possible sources. This is a major component of our first person experiences of consciousness.
   
-## Meaning Attachment
+## IV.1.3 Meaning Attachment
 It has been observed that thoughts and experiences are experienced in conjunction with the meanings of those thoughts and experiences (Van Gulick, 1992 & 2022). For example, we don't just see a lion, we see a lion plus with an instantaneous association of the level of danger that we're in, and perhaps the beauty of such a wild animal. When we see a toothbrush on the bathroom sink, we don't just see it a patch of colourful pixels and edges mapped into a three-dimensional shape, we immediately experience an identification of whether it is our toothbrush or someone else, and perhaps displeasure that it is no longer safely in its holder.
 
 I refer below to this process as _meaning attachment_. The source labelling discussed above is one form of meaning that may be attached to the experience or thought. Information regarding the thought or experience's association to our body or cognitive schemata is another form of meaning attachment. Emotions may be a third form. More generally, meaning attachment includes any contextual information that is associated to the thought or experience.
@@ -741,7 +741,7 @@ Meta-cognition has been variously studied in terms of:
 * theory of mind and its ability to support social cohesion (Carruthers & Williams, 2022; Cleeremens, 2020),
 * and in support of social cooperation by enabling a group to identify the individual who is most certain about some decision point (Cleeremens, 2020; Fleming et al, 2012a; Fleming et al, 2012b; Cleeremans et al, 2007).
 
-## Analysis of Meta-cognition
+## IV.2.1 Analysis of Meta-cognition
 In discussing meta-cognition together with meta-management, I view the term _meta-management_ as referring to the lower-level architectural and network-level mechanisms that underly the higher-level behavioural forms. And I view _meta-cognition_ as those higher-level behavioural forms. An analysis of the various studies of meta-cognition reveals a few common factors that provide some insight into the lower-level architectural aspects of meta-management. These are summarised in the following diagram and discussed below.
 
 ![Layers of Meta-cognition](files/A-coherent-theory-v1-meta-cognition.drawio.png)
@@ -768,7 +768,7 @@ Additionally, we can identify some low-level meta-control mechanisms, including 
 * conflict resolution,
 * and apparent direct manipulation of first-order processing.
 
-## First-order vs Conscious
+## IV.2.2 First-order vs Conscious
 Meta-cognitive studies attempt to divide our cognitive processes into _first-order_ and _second-order_ (Fleming et al, 2012a; Winkielman & Schooler, 2012; Koriat, 2007). First-order _behaviour_ is considered to be produced by "mindless" sense-action processes, for example merely repeating learned actions for a given sensory perception. These are the _habitual_ or _automatized_ behaviours. Likewise, first-order _knowledge_ is gained directly from our experiences, particularly from our perceptions. In contrast, second-order knowledge is considered to be gained by introspecting our own mental processes - it is knowledge _of_ our mental processes. In addition, it is common in meta-cognitive studies to tie second-order knowledge to both _rational_ cognition and to _consciousness_ (Fleming et al, 2012a; Koriat, 2007; Nelson, 1996; Snodgrass et al, 2009).
 
 In practice, however, it is difficult to distinguish whether a given behaviour is truly meta-cognitive (Fleming et al, 2012a; Winkielman & Schooler, 2011; Koriat, 2007). Many of the claimed second-order behaviours might be explained by unconscious first-order processes. Lab results are hard to interpret. For example, many meta-cognitive studies depend on verbal report, and it is difficult to separate whether an identified brain region is activated because of its involvement in the original meta-cognition task or from the separate production of verbal report subsequent to the meta-cognitive task (Norman, 2020; Turvey & Crowder, 2017). Consequently, some have questioned the link to higher-order processes and consciousness in general, suggesting rather that meta-cognition is itself just part of first-order processes (Rahimian, 2021, Overgaard & Kirkeby-Hinrup, 2021; Cleemans et al, 2021).
@@ -788,7 +788,7 @@ To help alleviate some of these confusions, we can examine behavioural control f
 
 The literature in behavioural science identifies three broad categories of behaviour, delineated by presumed differences in underlying control mechanisms: innate, habitual, and rational. Innate behaviour is predetermined through our genetics and is characterised by a (semi-)fixed response to stimulus irrespective of goal. Habitual behaviour is characterised by _automatized_ stimulus-response associations. Rational behaviour is characterised by considered stimulus-goal-action associations. As will be seen, these three systems of behaviour follow a path of evolutionary development that combines their respective strengths and weaknesses: speed of adaptation, accuracy, the resources required for computing control, and whether they are modulated by current goals.
 
-## Innate behaviour
+## IV.3.1 Innate behaviour
 ![innate control](files/A-coherent-theory-v1-innate-std-mgmt.drawio.png)
 
 * _**Innate System.** Evolutionarily pre-determined (unconditioned) responses are produced for certain stimulus. Some adaptability is possible with the same reflex response being associated with (conditioned against) other stimuli._
@@ -799,7 +799,7 @@ Despite the genetic pre-definition, some minimal experience-driven adaptation do
 
 An significant feature of both unconditioned and conditioned responses is that they are not modulated by the individual's goals at the time. There is a direct stimulus-response association, irrespective of other context.
 
-## Habitual behaviour
+## IV.3.2 Habitual behaviour
 Unlike innate behaviour, habitual behaviour is a) learned through experience, and b) can be very complex, and c) can be goal-modulated. Additionally, habitual behaviour is learned to the point of being _automatic_: we no longer have to think about how to carry out the behaviour (Snow, 2006). However habitual behaviour is slow to be learned, and slow to be unlearned (van Es, 2019). There is some disagreement in the literature as to whether it is affected by contextual priming such as goals (Snow, 2006) or not (Gęsiarz & Crockett, 2015; Bernacer & Murillo, 2014; Dayan, 2008). It is likely that this reflects the specific focus of the research undertaken at the time and as an attempt to identify distinguishing factors between habitual and rational behaviour, rather than a claim that habitual behaviour is truly inflexible to the point of ignoring the individual's goals.
 
 As illustrated in the diagram below, control of habitual behaviour is believed to be structured as an _implicit model_ (Sutton, 1998) that directly associates (or _computes_/_infers_) a response to a given stimulus (de Wit, 2009). In Reinforcement Learning literature this same architecture is referred to as _model-free_ because it lacks a structural model of the environment that can be queried in arbitrary ways - discussed further in the section below on rational behaviour. The reader will notice the similarity to mention of _reactive control_ in earlier sections. I use the word habitual now that the context is biologically focused, but the two terms should be treated synonymously. Indeed, the behavioural science literature often uses the _reactive_ terminology.
@@ -814,7 +814,7 @@ Habitual and rational control of the same behaviours enable a trade-off between 
 
 Historically habitual and rational control were seen as a binary choice, but more recent work has identified ways in which they can be combined for control of a single behaviour, leveraging their relative strengths (Douskos, 2018). For example, the goal used by the rational system may be selected by a habitual process (Cushman, 2015), or the rational controller may select a particular habitual sequence of actions to carry out (Cushman, 2015).
 
-## Rational behaviour
+## IV.3.3 Rational behaviour
 Often referred to as _goal-directed_, _deliberative_, _executive control_, or _voluntary_, rational behaviour is characterised by multi-iteration processing with conscious awareness of at least some part of the decisioning process. Unlike for habitual behaviour, rational behaviour control adapts quickly (Dayan, 2008; van Es, 2019), and is the optimal behavioural control strategy for novel situations (Cushman & Morris, 2015). Behavioural sciences describe it as learned outcome-action associations (de Wit, 2009; Gęsiarz & Crockett, 2015).
 
 There are two key presumed features of the systems underlying rational behaviour that distinguish it from habitual behaviour. Firstly, rational behaviour is thought to employ an _explicit model_ (Sutton, 1998) that captures the causal structure of the world (Cushman & Morris, 2015). For example, it can capture likely outcomes for different possible actions when in known initial states. It might also capture relationships between things in the world, such as the shape of a maze that the individual needs to navigate. This model can be queried in almost arbitrary ways. Importantly, the model can be used to obtain information without immediately triggering action. In other words, the explicit model can be used to _simulate_ a sequence of events and to identify the most likely result. Thus the outcomes for different actions can be considered, or the most likely action to achieve a certain goal can be selected, and from that information the rational system can choose how to act next. Within AI research, this is known as _model-based_ reinforcement learning (Carruthers & Williams, 2022; Kanai et al, 2019), and there is considerable knowledge on how it can be implemented within an AI setting.
@@ -831,12 +831,12 @@ Planning through decision tree searches is just one particular _strategy_ that's
 
 Notice that, while rational behaviour is generally associated with conscious experience, it is not necessarily meta-cognitive in nature. For example, a goal-driven or explicit model-based decision process that focuses on external needs can be carried out without any recourse to self-appraisal. Where self-appraisal becomes necessary is for after-the-fact analysis of performance. Thus, second-order processes and rational processes should not be seen as the same thing.
 
-## Emotion
+## IV.3.4 Emotion
 There is another fascinating aspect of control that has for a long time been left on the periphery of studies, but which has more recently gained more traction. Damasio and others are beginning to make strong cases that emotion is a key part of "truly rational" behaviour (Damasio, 1994; Picard, 1997; Sloman, 2001). Studies are finding that individuals with brain lesions that prevent emotions influence over control struggle to make suitable long-term life choices. It appears that they lack fear of their own loss and suffering and thus cannot "rationally" weigh up options, often choosing short-term wins that have significant long-term deleterious effects.
 
 Damasio's 1994 book _Descartes' error : emotion, reason, and the human brain_ provides an excellent discussion of the importance of emotion in rational decision making, as well as discussions of how cognitive processes, emotion, and body are intertwined. Clearly, a discussion of human behavioural control would not be complete without a discussion of emotions. Unfortunately such a discussion is beyond the scope of the present focus.
 
-## Co-development of behavioural control systems
+## IV.3.5 Co-development of behavioural control systems
 From an evolutionary perspective, innate behaviour is seen as being most ancient. It developed initially as simple localised reflexes in single celled organisms, using simple chemical signalling (Godfrey-Smith, 2016, p27-41) and non-nervous electrical signalling (Erulkar & Lentz, 2023). Later, as multi-celled organisms evolved, their reflexes needed to be globally choreographed, leading to the evolution of nerves (Erulkar & Lentz, 2023). This eventually led to the diffuse nerve nets found in cnidarians (hydroids, jellyfish, sea anemones, corals) and ctenophores (comb jellies), and later to central nervous systems. Habitual action, specifically the ability to learn from experience, is necessary for the coordination of limbs (Paulin & Cahill-Lane, 2019; Godfrey-Smith, 2016, p27-41). There is clear evidence that this had evolved by the time of the "Cambrian explosion" (about 542 to 485 million years ago), where there was an explosion in the forms of animal bodies and where there was significant predation between species (Godfrey-Smith, 2016, p27-41). There is some evidence that complex nervous systems (though not necessarily central nervous systems) may even have evolved a little earlier, during the Ediacaran period (635 to 542 million years ago), where there was apparently little predation but there were scavenging creatures with complex bodies (Paulin & Cahill-Lane, 2019), such as the trilobite (Godfrey-Smith, 2016, p27-41).
 
 The evolution of rationally controlled behaviour is hard to identify, but it is a significantly much more recent development than that of habitual control. Rational behaviour is believed to correlate with so called "symbolic thinking", evidence of which is searched for in the forms of cave drawings and in the construction of tools that would require planning ahead. Those traits are identified as evolving somewhere between 70,000 and 164,000 years ago (Wayman, 2023; Henshilwood et al, 2001). 	
@@ -855,7 +855,7 @@ Much of that plays a direct influence on habitual learning in particular. Thus i
 
 To complete the circle, as it were, I wish to briefly mention how the same might occur for the rational system. However I have not studied this at length and so this is just a conjecture. The rational system must surely also need to _learn_ to perform its duties. I have suggested above one such learning in the form of strategies, but there may be more. Thus the rational system is likely prone to gross errors in its early development during early childhood. Furthermore, as a far more complex system than for habitual control, it is likely that the rational system takes longer to develop. I suspect that the rational system may be "held to account" by three factors: i) the innate system, which prevents the rational system from sending the individual outside of a safe operating range, ii) the habitual system, that may develop earlier than the rational system, and iii) developmental processes, that only let the rational system take control once it is ready to do so.
 
-# IV.3 Habitual and Rational Meta-management
+# IV.4 Habitual and Rational Meta-management
 In comparing innate, habitual, and rational behavioural control we see that the innate system primarily provides a bootstrapping role for the more advanced systems of habitual and rational control, and we see that habitual and rational control are combined in ways that strike a balance between their relative strengths. Habitual systems are slow to adapt, but efficient to execute. Rational systems are fast to adapt, but complex and slow to execute. Independent habitual systems seem to be distributed throughout the human brain, as multiple habitually controlled behaviours can be executed simultaneously, eg: talking while driving. In contrast, there appears to be only one rational system, which can only operate against one task at a time. Clearly there is an advantage to combining them wherever possible.
 
 Further to that, we have seen that there is evidence that habitual processes may play a role in rational control. This fits well with the prevalence of debates about whether apparently rational behaviour is actually executed by habitual first-order processes. Perhaps rational behaviour _always_ involves significant habitual control.
@@ -888,7 +888,7 @@ Another issue that has arisen from the discussion so far is that the proposed me
 
 In both cases the language that will help us is that of _semiotics_: the study of signs and their interpretations.
 
-## Objects, Representations, and Interpretations
+## IV.5.1 Objects, Representations, and Interpretations
 Semiotics studies signs, meaning making, and the processes involving them. There are different formulations but the one that we shall use is through the triad of _Objects_, _Representations_, and _Interpretations_.
 
 ![components of semiotics](files/A-coherent-theory-v1-semiotics.drawio.png)
@@ -921,7 +921,7 @@ Semiotics provides a tool for understanding meaning-interpretation processes in 
 
 The study of Semiotics has a long history, but it's modern structure is most commonly traced to the works of Ferdinand de Saussure and Charles Sanders Peirce. Peirce was the first to introduce it via its triadic formulation. It is informative to note that in Peirce's earlier works he was focused on semiotics as the process underlying cognition (Peirce, 1982, vol 2, pg 56, 213). To that end, Peirce supported an idea of _infinite-semiosis_ within the mind: representations being interpreted, producing new representations that need to be further interpreted, and so forth. This is convenient to us, as it is an idea to which we shall now turn.
 
-## Infinite semiosis
+## IV.5.2 Infinite semiosis
 The examples mentioned above describe single iterations of a semiotic process: an object exists in some way, a representation of the object is presented, an interpreter constructs an interpretation based on the representation. Infinite-semiosis is the continued execution of the semiotic process, with the interpretation itself becoming an object that must be represented and further interpreted. Infinite-semiosis is not necessarily infinite in an absolute sense, and in practice never can be, but that the process is in principle capable of continuing "for a long time" before it breaks down in some way.
 
 A fascinating and informative example comes in the form of the life sustaining processes surrounding DNA replication. A biosemiotic description of DNA and related processes was described eloquently by Pattee (2007), following inspiration from a much earlier attempt by Von Neumann (1966). I myself take heavy inspiration from that in what follows.
@@ -944,7 +944,7 @@ There is a lesson here about representations: they don't have any meaning on the
 
 It is also worthwhile to note that no cognitive entity is required to do any of the _interpretation_ in any of the steps discussed above. This perhaps stretches the original meanings of the semiotic jargon. Indeed, in a later treatise Pattee (2021) discusses the fact that the science of semiotics was originally designed for interpretation of thought and human artifacts, and thus the terminology used generally assumes some cognitive entity that does the interpretation. They go on to make the case that the underlying concepts are just as relevant to mechanical processes such as RNA transcription.
 
-## Thought
+## IV.5.3 Thought
 Things get even more complex and nuanced when you look at computational semiotic processes in connectionist paradigms. When the entire brain is a massive multi-layered network involving many different kinds of processes, some of which talk to each other in some way, but all part of a single larger system, where are the boundaries of object, representation, and interpretation? One answer is that the brain involves many objects, representations and interpretations, layered in deep hierarchies. More generally semiotics is best viewed as a tool that can be applied at whatever layer or part of the process that we are interested in.
 
 As a first example of semiotics in the brain, consider how the body gathers and interprets information about the environment, illustrated in the diagram below. The environment is the _object_, and its true state is what the individual hopes to attain knowledge of. But the individual will never gain such knowledge as they do not directly perceive the environmental state. Signals obtained from the classic five senses of sight, sound, smell, touch, taste _represent_ the environment. That collective representation captures only a narrow and shallow aspect of the true state of the environment. For example, our visual sense only reports on a small field of view at any given time, and that too only about the external surface of whatever thing is being looked at. That representation is interpreted by the network of brain neurons, producing an inference about the state of the environment. What form does this inference take? Millions of _spike trains_ [citation] in some particular pattern of activity.
@@ -965,7 +965,7 @@ The discussion one paragraph before gives the example of a brain region producin
 
 So, in computational infinite-semiosis, objects are past interpretations, but interpretations are nebulous and exist only as the sequence of activities spanning many neurons over a course of time. And representations are no better - they exist only as a sequence of electrical spikes, spanning many synapses, over a period of time. More brutally, in computational infinite-semiosis, at any given instantaneous moment in time, nothing ever exists in its complete form except the interpreters with their background (learned) knowledge ready to be applied as representations pass transiently through them.
 
-## Trains of Thought
+## IV.5.4 Trains of Thought
 There is another key takeaway from the semiotic analysis above that needs a more thorough discussion. This regards the kinds of thoughts that are possible.
 
 A common turn of phrase is to refer to a "train of thought". For example, when someone suddenly speaks to us after a period of silence we complain that they "broke our train of thought". There are two notions behind that statement. One is that thought progresses. For example when trying to solve a problem, thought progresses from problem to solution through a series of steps. Another notion refers to there being one particular basic grounding idea, or _topic_, being considered which is held onto for the duration of a period of thought. For example, the topic may be the underlying problem that one is attempting to solve. So that while thought shifts from step to step, and between different possible solutions, the topic remains the same for the duration of that sequence of thoughts. When our train of thought is "broken", our attentional focus shifts from that topic to some other, and we loose some of the details held as temporary state in the progression from problem to solution.
@@ -1007,7 +1007,7 @@ The representational spaces used by different processes are thus different. Thes
 
 In this chapter we shall look at some specific examples of the ways in which different representations can be produced about the same domain. Finally from here the differences between first-order and meta-management processes will become clear.
 
-## Representation Redescription Theory
+## IV.6.1 Representation Redescription Theory
 The theory of _Representation Redescription_ (RR) proposes that the brain develops multiple representations for the same domain (Karmiloff-Smith, 1992 & 1994; Clark & Karmiloff-Smith, 1993). It looks at the development process of an individual from infant, and sees the first representation as habitual in nature. The literature uses the term _implicit_, which is meant to signify a particular observation about the nature of first-order connectionist architectures. A simple connectionist architecture (predictive or not) encodes a mapping from sense plus state to action. The mapping is learned from multiple examples, with each repeated exposure subtly modifying connection weights. The behaviour that the mapping produces is _emergent_, resulting from the interactions of all those many connection weights. Importantly, the details of that mapping are hidden to every part of the system. Even the particular sub-system that encodes a particular mapping cannot identify the rules that it encodes. Thus a first-order network encodes "knowledge _in_ the system", but it does not make it available as "knowledge _to_ the system" (Clark & Karmiloff-Smith, 1993, p495).
 
 That is contrasted with an _explicit_ representation that captures the individual parts of the causal chain from input to action. Where implicit representations _compute_ an action for a given input, explicit representations _model_ causal relations and as such can be queried and manipulated: "No system in which rules are always merely implicit and emergent can, in our view, exhibit the kinds of higher order flexibility and creativity found in humans. Only explicit rules have the genuine, systematically manipulable components that make radical flexibility possible." (Clark & Karmiloff-Smith, 1993, p504). RR proposes that implicit knowledge is _re-described_ into an explicit representation through an offline process. Subsequently, habitual behaviour continues to be driven by the original implicit representation, but rational cognitive processes can make use of the explicit representation. Explicit representations may be formed that directly cover some particular habitual domain, or may integrate across multiple domains. In that way, rational cognition is able to identify and use associations across different domains and time-scales. Importantly, it is able to do all that independently from actioning the behaviour that the original implicit representations encoded.
@@ -1016,7 +1016,7 @@ RR does not attempt to explain the underlying details of how redescription takes
 
 There are two important points to make here about the predictive mechanism. Firstly, every representation encodes information about a given domain in a certain way that is applicable for the way in which that representation will be used, or in other words, according to its _purpose_. The process that attempts to predict internal behaviours would almost certainly have a different underlying purpose, and thus would produce a representation that captures a different aspect of the same domain. Secondly, we should not assume that the _form_ of representation would be the same either. As we have already said, a first-order connectionist representation is _implicit_. Many predictive networks may also be inherently _implicit_ in their representation. In contrast, the assumption here is that redescribed representations are _explicit_, and thus capture the _causal structure_ of the domain.
 
-## Semiotic Analysis of Control Processes
+## IV.6.2 Semiotic Analysis of Control Processes
 I shall now return to the question of control processes and meta-management, by examining them in terms of semiotics. I shall present three examples of processing, and in so doing we will see that their objects, representations, and interpretations have some important differences:
 * first-order body action control
 * task-focused CP state trajectory meta-control
@@ -1073,17 +1073,17 @@ The meta-management process infers what it can about the object through the repr
 # IV.7 Review of Meta-management
 To wrap up this part I shall briefly lay out the salient points that have been made about the architecture and processes of meta-management. I shall also present some final points that I have not found a better way to introduce earlier.
 	
-## Similarities between first-order processes and meta-management
+## IV.7.1 Similarities between first-order processes and meta-management
 Meta-management processes likely leverage many of the same systems used for first-order control. I have made the case that the balancing of strengths and weaknesses between habitual and rational control equally benefit meta-management. This enables well practiced meta-management actions to be carried out automatically. Anecdotally I believe this makes every bit of sense and correlates with with our general lack of needing to continuously consciously monitor our thought processes.
 
 Another aspect that I believe is shared between first-order control and meta-management is _domain knowledge_. The world that we interact with is tremendously complex, and so are our bodies. We must devote considerable neural mass to learned implicit and explicit models of our environment and of the control of our own bodies. That knowledge obviously plays a extremely important role in first-order control. But it is also must surely play an important role in meta-management - how else can meta-management model and operate against those first-order processes without understanding the domain in which they operate? We have discussed that different purposes require different representations, and Representation Re-description theory even formalises that as a key part of developmental processes, but multiple representations take up more neural mass. There must surely be ways in which the brain optimises the form of representations in order to minimise the number of re-representations required, and it seems likely that the shared domain knowledge required by both first-order and meta-management are a contender for such optimisations.
 
-## Differences between first-order processes and meta-management
+## IV.7.2 Differences between first-order processes and meta-management
 One key difference between first-order processes and meta-management has been identified as the representations used by these respective processes. First-order processes use representations that focus on the immediate task at hand. Meta-management uses representations about the first-order processes themselves.
 
 Other likely areas in which they differ include the _pathways_ taken for such processing, and associated _learning_ mechanisms. Meta-management requires two key differences in pathway from first-order processes: i) it needs to observe and model behaviours over a longer period of time than for first-order control, and ii) it requires a higher-level abstraction in order to avoid an infinite regress on the neural count. This is encapsulated in the idea of a meta-management feedback-loop. Likewise, within a reinforcement learning paradigm, meta-management needs different reinforcement signals; though a detailed discussion is beyond a scope of this treatise.
 
-## Meta-management Architecture
+## IV.7.3 Meta-management Architecture
 We are now finally in a position to place our bets on the most likely architecture of meta-management, that of _inline meta-management_, incorporating both habitual and rational systems.
 
 This stands from i) the evolutionary need to avoid duplicating the complexity of rational control systems, ii) the benefit in sharing domain knowledge, and iii) anecdotal evidence that we can freely switch between consciously considering a task at hand and consciously thinking about our own awareness.
@@ -1166,7 +1166,7 @@ The interpretations above begin a chain reaction, a train of thought, that convi
 
 The outcomes of all of the above entail the _content_ of subjective experience. Most importantly, this includes the specific property of the content that claims "I am experiencing this". So this also explains the _existence_ of subjective experience - that it is processing of a state that claims "I am experiencing this". And why should such a state and associated processing occur? Because it is a direct result of the mechanisms underlying meta-management.
 
-## Rounding it Out
+## V.3.1 Rounding it Out
 Some of the implications of what I am trying to say may not be obvious at first glance, so I shall now summarise by restating some of the conclusions so far.
 
 The HOOS is effectively a state that represents that subjective experience has occurred. However, it is not subjective experience on its own; it is merely the content of the experience: a statement that the individual has observed whatever is the topic of the so called subjective experience.
@@ -1184,7 +1184,7 @@ In conclusion, we need to shift our view from looking for a particular place or 
 # V.4 Explaining Phenomenology of Subjective Experience
 To show more clearly how the above creates subjective experience, let us examine some specific phenomena of subjective experience.
 
-## Homunculus
+## V.4.1 Homunculus
 In chapter IV.1 I discussed briefly the old notion of a _homunculus_, a "little person" that sits in our heads and does all the observing. While that old notion has been thoroughly dismissed, it remains a very accurate description of what it "feels like" to be conscious. There is something specific about the way that we feel like we observe our perceptions and our thoughts as if the "we" doing the observation is somehow separate from the "we" doing the perceptions and thoughts.
 
 With the understanding of a meta-management feedback loop and its associated cognitive sense, and with an understanding of the kinds of schema that the brain builds up, it is not so hard to understand how subjective experience "feels like" a homunculus. The cognitive "observation" cause-effect model that forms of the basis of a HOOS is part of the cognitive schema. That schema groups all of the cognitive actions into a single identity - a sort of cognitive organ. That identity is useful for the purpose modelling those cause-effect relationships between states and and possible interactions. Thus the "source" of thought is labelled as that cognitive organ.
@@ -1193,7 +1193,7 @@ In principle there's no need for the brain to represent that cognitive organ as 
 
 The apparent location of the homunculus within the bounds of our head is curious, but again I think I think it has a relatively simple explanation. The brain constructs body schema to identify the specific location of its senses. Many of our physical senses are hosted within our head (sight, sound, smell, taste), and so the schema naturally locates them as such. Although our vision is purposed to gain information about the world outside, our visual sense organs are located within our head. This affects interpretation of the perspective of our vision (things at the centre of our visual field are at about the height of our head, while things at the bottom of our visual field are below our heads). If the brain develops a body schema that identifies the majority of its senses as located within our heads, it's not a far stretch to do likewise for the cognitive sense.
 
-## Conscious and Unconscious Thought
+## V.4.2 Conscious and Unconscious Thought
 We have some thought that is always unconscious, some that can be selectively accessed when attention so chooses, and some where we are always actively involved. This seems arbitrary. Why does some processing appear as conscious thought, while other processing does not? How does an understanding of HOOS help explain this?
 
 Let us discuss entirely unconscious thought first. The answer simply is that there is no need for that form of processing to be represented by the meta-management feedback loop. Feedback will be optimised by evolution to contain the minimal set of information needed for effective meta-management of control processes. Anything else would serve to consume extra neural capacity without further benefit, and would simply be evolved away. There are two possible reasons why the processing does not need to be captured by the feedback loop. One is that the process is inherently stable (eg: inherently convergent), and thus simply does not to be meta-managed. A second possibility is that it is sufficiently meta-managed indirectly through meta-observation of other processing.
@@ -1204,7 +1204,7 @@ For more elaborate multi-iteration processing, and in particular where rational 
 
 In summary, subjective experience is the collection of certain processing iterations where aspects of the processing behaviour require meta-management, and the content information of that conscious thought is constrained to the information that is needed for the purpose of meta-management. So called "unconscious thought" is everything else that occurs within the brain.
 
-## Stream of Consciousness
+## V.4.3 Stream of Consciousness
 The reader may notice an implication in the statements about the continuity of HOOS and associated subjective experience. I have implied in several ways that HOOS are only sometimes constructed. This would imply that subjective experience only sometimes exists. But that is not our experience. It appears to be "always on" - a continuous stream of consciousness.
 
 We recognise that there are times when we aren't consciously aware of actions, such as when walking or driving along a familiar road, but that is usually because were lost in thought at the time. So even during those moments it as if we still had a continuously present, unbroken, stream of subjective experience.
