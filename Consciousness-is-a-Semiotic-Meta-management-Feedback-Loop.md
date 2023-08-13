@@ -1,11 +1,8 @@
-_This is a work in progress._
+**Abstract**
 
-_Please come back later._
+* Starting from first principles I develop a case for _why_ consciousness evolved: to solve the meta-management problem of computational state trajectories in multi-iteration processing. I explain how the mechanisms that solve that meta-management problem create the phenomena of subjective experience. The theory shows how consciousness, intelligence, and meta-cognition are related, and paves a way towards human-level general intelligence. A précis of the entire theory is included in chapter I.2.
 
-Abstract:
-- Consciousness is produced by a semiotic multi-iteration state machine with a meta-management feedback loop.
-
-Contents:
+**Contents**
 
 [Part I - Introduction](#part-i---introduction)
 * [I.1 A Question of Consciousness](#i1-a-question-of-consciousness)
