@@ -300,7 +300,7 @@ An alternative conception is characterised as "perception by inference": that th
 
 Predictive Coding is one such theory. It holds that much of brain function is the result of such inference (Friston, 2010; Clark, 2013 and 2019; Kilner, Friston, Frith, 2007), including not just perception but also action generation (Friston, 2010). The explanation stems from the observation that Bayesian inference is analytically intractable for most problems, but can be solved through the _empirical bayes method_ by _factorising_ the problem space (Buckley et al, 2017). A so called _generative model_, which models the the causal structure from environment state to sensory signal, can be approximated by factorising it in three ways (Buckley et al, 2017; Millidge, Seth, Buckley, 2021). Firstly, the state of the environment at a given moment in time can be factorised as a multi-variate combination of independent gaussians. Secondly, the time-dependent dynamics of state can be factorised into the current value, its first-order derivative, its second-order derivative, and so on. Thirdly, the unknown relationships between latent causes can be modelled and learned as a hierarchy of layers (Friston, 2008), with each successive layer acting as a generative model of the layer before.
 
-This factorisation can be distributed across the neural structure of the cortex (Mumford, 1991; Rao and Ballard, 1999), with activity of each individual neuron representing the mean of the gaussian distribution of the particular variable that it models (Buckley et al, 2017), and possibly also representing the variance (Feldman, Friston, 2010). Some aspects of this 3-dimensional factorisation can be seen in the structure and activity within the brain. For example, the hierarchical nature of brain processing can be seen in the way that  the primary visual cortex processes visual information at a lower level of representation than the visual association area, and similarly for the primary and secondary somatosensory areas [citations]. Additionally, there is some evidence that neurons within the cortex are formed into _columns_, where the neurons in each column together model a single multi-dimensional variable (Mountcastle, 1997), likely modelling the full covariance matrix between those dimensions.
+This factorisation can be distributed across the neural structure of the cortex (Mumford, 1991; Rao and Ballard, 1999), with activity of each individual neuron representing the mean of the gaussian distribution of the particular variable that it models (Buckley et al, 2017), and possibly also representing the variance (Feldman, Friston, 2010). Some aspects of this 3-dimensional factorisation can be seen in the structure and activity within the brain. For example, the hierarchical nature of brain processing can be seen in the way that  the primary visual cortex processes visual information at a lower level of representation than the visual association area [citation], and similarly for the primary and secondary somatosensory areas (explained in _[Neuroscience Online, "Chapter 3: Motor Cortex"](https://nba.uth.tmc.edu/neuroscience/m/s3/chapter03.html)_). Additionally, there is some evidence that neurons within the cortex are formed into _columns_, where the neurons in each column together model a single multi-dimensional variable (Mountcastle, 1997), likely modelling the full covariance matrix between those dimensions [citation].
 
 ![predictive coding](files/A-coherent-theory-v1-predictive-coding.drawio.png)
 
@@ -634,7 +634,7 @@ A training process that records positive and negative feedback, derives a loss f
 One can imagine the possibility of a neural network that calculates and executes all of the meta-management needs against a target control process. This could include all of the meta-control options discussed in a section above. A challenge with this architecture is how to train the meta-management NN.
 
 ## III.6.3 Inline Meta-management
-A somewhat radical suggestion is that perhaps the first-order control process can meta-manage itself, given the right conditions. This suggestion stems from the observation that the processes involved to observe, infer, and act as part of meta-management seem very similar to those processes that we would assume make up the first-order control process in terms of interactions with its own body and the environment. In a complex environment we would expect those processes to be very complex. In a biological brain, due to the complexities and difference between the different sub-processes (modelling vs memory, for example) we expect some degree of brain region specialisation. Correspondingly, if two different problem domains need the same kind of processing capability, perhaps the same brain region might handle that processing capability for both problem domains. That would be the most neurally efficient solution because neurons cost a lot [citation].
+A somewhat radical suggestion is that perhaps the first-order control process can meta-manage itself, given the right conditions. This suggestion stems from the observation that the processes involved to observe, infer, and act as part of meta-management seem very similar to those processes that we would assume make up the first-order control process in terms of interactions with its own body and the environment. In a complex environment we would expect those processes to be very complex. In a biological brain, due to the complexities and difference between the different sub-processes (modelling vs memory, for example) we expect some degree of brain region specialisation. Correspondingly, if two different problem domains need the same kind of processing capability, perhaps the same brain region might handle that processing capability for both problem domains. That would be the most neurally efficient solution because neurons cost a lot (Herculano-Houzel, 2012; Fonseca-Azevedo and Herculano-Houzel, 2012).
 
 What conditions might make this possible? Firstly, the control process needs to observe its own behaviours. This could be achieved via a feedback loop that captures that behaviour and feeds it back as input. That feedback may capture the control process' current state, its recent trajectory, and its inputs and outputs.
 
@@ -655,7 +655,7 @@ Another sobering issue is that despite my best efforts the distinction between t
 
 For those reasons, the next part drills deeper into more complex control process requirements and mechanisms. After that we will be in a better position to circle back to re-address the question of meta-management architecture.
 
-In the interim, however, there is some anecdotal evidence to suggest that the inline meta-management architecture is at play within humans. It is said that humans have five senses of touch, taste, smell, sight, and hearing. That list has since grown with the recognition of proprioception, balance, and other internal senses ..[citation, and use of accurate terminology]. While it is not often classified as such, our awareness of our own mental state behaves like any other sense. The extent to which we can attend to any sense varies by modality (eg: while we have proprioceptive sense, it doesn't seem to carry the same ability to flood our consciousness than, say, our vision), but they are clearly all available for observation, integration, differentiation, correlation, modelling, and reaction-to within that higher-order executive control process that seems to be associated with subjective experience. This applies equally to the sense of mental state. That suggests the feedback loop described within the inline meta-management architecture.
+In the interim, however, there is some anecdotal evidence to suggest that the inline meta-management architecture is at play within humans. It is said that humans have five senses of touch, taste, smell, sight, and hearing. That list has since grown with the recognition of proprioception (location of limbs), equilibrioception (balance), pain (nociception), kinaesthesia (movement), environmental temperature (thermoception), time (chronoception), and others. While it is not often classified as such, our awareness of our own mental state behaves like any other sense. The extent to which we can attend to any sense varies by modality (eg: while we have proprioceptive sense, it doesn't seem to carry the same ability to flood our consciousness than, say, our vision), but they are clearly all available for observation, integration, differentiation, correlation, modelling, and reaction-to within that higher-order executive control process that seems to be associated with subjective experience. This applies equally to the sense of mental state. That suggests the feedback loop described within the inline meta-management architecture.
 
 
 ---
@@ -946,7 +946,7 @@ It is also worthwhile to note that no cognitive entity is required to do any of 
 ## IV.5.3 Thought
 Things get even more complex and nuanced when you look at computational semiotic processes in connectionist paradigms. When the entire brain is a massive multi-layered network involving many different kinds of processes, some of which talk to each other in some way, but all part of a single larger system, where are the boundaries of object, representation, and interpretation? One answer is that the brain involves many objects, representations and interpretations, layered in deep hierarchies. More generally semiotics is best viewed as a tool that can be applied at whatever layer or part of the process that we are interested in.
 
-As a first example of semiotics in the brain, consider how the body gathers and interprets information about the environment, illustrated in the diagram below. The environment is the _object_, and its true state is what the individual hopes to attain knowledge of. But the individual will never gain such knowledge as they do not directly perceive the environmental state. Signals obtained from the classic five senses of sight, sound, smell, touch, taste _represent_ the environment. That collective representation captures only a narrow and shallow aspect of the true state of the environment. For example, our visual sense only reports on a small field of view at any given time, and that too only about the external surface of whatever thing is being looked at. That representation is interpreted by the network of brain neurons, producing an inference about the state of the environment. What form does this inference take? Millions of _spike trains_ [citation] in some particular pattern of activity.
+As a first example of semiotics in the brain, consider how the body gathers and interprets information about the environment, illustrated in the diagram below. The environment is the _object_, and its true state is what the individual hopes to attain knowledge of. But the individual will never gain such knowledge as they do not directly perceive the environmental state. Signals obtained from the classic five senses of sight, sound, smell, touch, taste _represent_ the environment. That collective representation captures only a narrow and shallow aspect of the true state of the environment. For example, our visual sense only reports on a small field of view at any given time, and that too only about the external surface of whatever thing is being looked at. That representation is interpreted by the network of brain neurons, producing an inference about the state of the environment. What form does this inference take? Millions of _spike trains_ in some particular pattern of activity (Krüger & Aiple, 1988; Paiva, 2010).
 
 ![sensory semiotics](files/Paper-on-Loops-in-AI-and-Consciousness-env-semiotics.jpg)
 
@@ -983,7 +983,7 @@ Furthermore the question of capacities of those representations and interpretati
 
 So, what kinds of trains of thought can be entertained by a given computational processing system? Answer: those that provide utility according to the given system's function in maximising evolutionary survival.
 
-There are fascinating philosophical discussions that can stem from this idea, like asking what kinds of thought we have never had and will never have simply because our evolved structures are incapable of entertaining them [citation?]. But I am more interested in something a little more concrete.
+There are fascinating philosophical discussions that can stem from this idea, like asking what kinds of thought we have never had and will never have simply because our evolved structures are incapable of entertaining them (McGinn, 1989, 1991). But I am more interested in something a little more concrete.
 
 The first key message I wish to convey is simply the fact that representational and interpretational capacity is not arbitrarily large - it is finite, and tuned according to specific needs. Thus the trains of thought that are possible according to a given system are _constrained_ by that system.
 
@@ -991,7 +991,7 @@ In our semiotic analysis of first-order control and meta-management processes, w
 
 Secondly, successive iterations of interpretation, representation, and re-interpretation will tend to _attenuate_ the train of thought down to the capacity of some weakest, least complex stage. As we have stated before, representation is almost always an informational bottleneck, so whatever receives that representation has only the informational capacity of the representation plus its own (learned) knowledge. The brain is an extremely complex system, with many sub-processes interacting in complex ways. Any information that is obtained, but not retained through all those interactions, is lost. We can see this effect in the apparent limitation on the number of things that can we can retain within working memory.
 
-A concrete example of attenuation at play can be directly experienced. It is experienced anytime that we are unable to focus. Imagine this scenario: it's 2pm, you finished your lunch an hour or two ago, and you forgot to have your coffee. You're attempting to complete the work you started earlier in the morning. Something mentally difficult, like doing the accounts for your tax return. You're finding, like many around this time of day [citation], that you're struggling to remain focussed on the task at hand. You start to think about the problem immediately in front of you, you start to form the idea in your mind, and then you realise you can't remember what the next step is. You shift focus to recall the next step, but then can't remember the details of the result you'd just obtained from the prior step. Rather than there being anything wrong with our fundamental potential for such thought, the underlying issue here is one of attention [citations], energy use of digestive processes [citation], and the way our circadian rhythm impacts our cognition [citation]. However, it illustrates what our experience might be if we had a certain amount of the required computational and representational capacity for such a task, but that during multi-iteration processing it quickly became too attenuated to be operated against.
+A concrete example of attenuation at play can be directly experienced. It is experienced anytime that we are unable to focus. Imagine this scenario: it's 2pm, you finished your lunch an hour or two ago, and you forgot to have your coffee. You're attempting to complete the work you started earlier in the morning. Something mentally difficult, like doing the accounts for your tax return. You're finding, like many around this time of day, that you're struggling to remain focussed on the task at hand. You start to think about the problem immediately in front of you, you start to form the idea in your mind, and then you realise you can't remember what the next step is. You shift focus to recall the next step, but then can't remember the details of the result you'd just obtained from the prior step. Rather than there being anything wrong with our fundamental potential for such thought, the underlying issue here is one of attention, metabolic processes (Serin and Tek, 2019), and the way our circadian rhythm impacts our cognition (Valdez, 2019). However, it illustrates what our experience might be if we had a certain amount of the required computational and representational capacity for such a task, but that during multi-iteration processing it quickly became too attenuated to be operated against.
 
 The last key message I want to draw out here is that a given thought only exists for the duration that it is repeatedly cycled between representation and interpretation. As we have seen, representations in the brain are fleeting transient sequences of energy spikes travelling along synapses, and interpretations are merely the action of target neurons in receiving those signals and producing new signals. Once those spike trains stop representing a given thought, it ceases to be a thought.
 
@@ -1629,6 +1629,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Fodor, J. (2008). Lot 2: The Language of Thought Revisited. Oxford: Clarendon Press.
 
+* Fonseca-Azevedo, K. and Herculano-Houzel, S. (2012). Metabolic constraint imposes tradeoff between body size and number of brain neurons in human evolution. Proceedings of the National Academy of Sciences, 109(45):18571-18576, https://doi.org/10.1073/pnas.1206390109
+
 * Franklin, S. & Graesser, A. (1999). A software agent model of consciousness. Conscious Cogn 8, 285-301
 
 * Friston, K. J. (2005). A theory of cortical responses. Philosophical Transactions of the Royal Society of London B: Biological Sciences, 360(1456), 815–836. 
@@ -1679,6 +1681,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Henshilwood, C.S., Sealy, J.C., Yates, R., Cruz-Uribe, K., Goldberg, P., Grine, F.E., Klein, R.G., Poggenpoel, C., van Niekerk, K., Watts, I. (2001). Blombos Cave, Southern Cape, South Africa: Preliminary Report on the 1992–1999 Excavations of the Middle Stone Age Level. Journal of Archaeological Science, Volume 28, Issue 4. Pages 421-448, https://doi.org/10.1006/jasc.2000.0638.
 
+* Herculano-Houzel, S. (2012). The remarkable, yet not extraordinary, human brain as a scaled-up primate brain and its associated cost. Proceedings of the National Academy of Sciences Jun 2012, 109 (Supplement 1) 10661-10668; DOI: 10.1073/pnas.1201895109
+
 * Hochreiter, S., Bengio, Y., Frasconi, P. & Schmidhuber, J. (2001). Gradient flow in recurrent nets: the difficulty of learning long-term dependencies. In S. C. Kremer & J. F. Kolen (ed.), A Field Guide to Dynamical Recurrent Neural Networks. IEEE Press.
 
 * Hoffman (?). The Interface Theory of Perception. https://sites.socsci.uci.edu/~ddhoff/interface.pdf
@@ -1719,6 +1723,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Krishevsky, A., Sutskever, I., and Hinton, G. (2012). ImageNet Classification with Deep Convolutional Neural Networks. Advances in Neural Information Processing Systems, 25: 1097–1105.
 
+* Krüger, J., & Aiple, F. (1988). Multimicroelectrode investigation of monkey striate cortex: spike train correlations in the infragranular layers [Abstract from PubMed]. Journal of neurophysiology, 60(2), 798–828. https://doi.org/10.1152/jn.1988.60.2.798
+
 * Lazaridis, A., Fachantidis, A., & Vlahavas, I. (2020). Deep Reinforcement Learning: A State-of-the-Art Walkthrough. J. Artif. Intell. Res., 69, 1421-1471. https://doi.org/10.1613/jair.1.12412
 
 * Levine, J. (1983). Materialism and qualia: The explanatory gap. Pacific Philosophical Quarterly, 64: 354-361.
@@ -1744,6 +1750,10 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 * Marković, D., Goschke, T., Kiebel, S.J. (2021). Meta-control of the exploration-exploitation dilemma emerges from probabilistic inference over a hierarchy of time scales. Cognitive, affective & behavioral neuroscience, 21(3), 509–533. https://doi.org/10.3758/s13415-020-00837-x
 
 * McCulloch, W. and Pitts, W. (1943). A Logical Calculus of the Ideas Immanent in Nervous Activity. Bulletin of Mathematical Biophysics, 7: 115–133.
+
+* McGinn, C. (1989). Can We Solve the Mind-Body Problem? Mind, New Series, 98(391), pp. 349–366
+
+* McGinn, C. (1991). The Problem of Consciousness: Essays Toward a Resolution [Abstract from PhilPapers]. Cambridge, Mass., USA: Blackwell.
 
 * Metcalfe, J., Shimamura, A.P. (Eds.). (1994). Metacognition: Knowing about knowing. MIT press.
 
@@ -1776,6 +1786,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 * OpenAI, O., Plappert, M., Sampedro, R., Xu, T., Akkaya, I., Kosaraju, V., Welinder, P., D'Sa, R., Petron, A., Pinto, H.P., Paino, A., Noh, H., Weng, L., Yuan, Q., Chu, C., & Zaremba, W. (2021). Asymmetric self-play for automatic goal discovery in robotic manipulation. ICLR 2021. https://arxiv.org/abs/2101.04882.
 
 * Overgaard, M., Kirkeby-Hinrup, A. (2021). Is Learning the Cognitive Basis of Consciousness? The Moral Implications of SOMA, Trends in Cognitive Sciences, Volume 25, Issue 1, Pages 8-9, ISSN 1364-6613. https://doi.org/10.1016/j.tics.2020.08.004.
+
+* Paiva, A. R. C., Park, I., Príncipe, J. C. (2010). Chapter 8 - Inner Products for Representation and Learning in the Spike Train Domain [Abstract from ScienceDirect]. Editor(s): Karim G. Oweiss. Statistical Signal Processing for Neuroscience and Neurotechnology, Academic Press, Pages 265-309, ISBN 9780123750273, https://doi.org/10.1016/B978-0-12-375027-3.00008-9.
 
 * Paris, S.G., & Winograd, P. (1990). How metacognition can promote academic learning and instruction. In B. F Jones & L., Idol (Eds.), Dimensions of thinking and cognitive instruction (pp. 15-51). Hillsdale, NJ: Erlbaum.
 
@@ -1841,6 +1853,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Searle, J.R. (1990). Who is computing with the brain? Behavioral and Brain Sciences, 13:4:632-64.
 
+* Serin, Y., Tek, N. A. (2019). Effect of Circadian Rhythm on Metabolic Processes and the Regulation of Energy Balance. Ann Nutr Metab, 74 (4): 322–330. https://doi.org/10.1159/000500071
+
 * Seth, A.K., Bayne, T. (2022). Theories of consciousness. Nat Rev Neurosci. https://doi.org/10.1038/s41583-022-00587-4
 
 * Shanahan, M. (2005). A cognitive architecture that combines internal simulation with a global workspace. Conscious Cogn. 15(2):433-49
@@ -1902,6 +1916,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 * Tye, M. (1996). The function of consciousness. Noûs, 30:287–305.
 
 * Tye, M. (2021). Qualia. The Stanford Encyclopedia of Philosophy (Fall 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2021/entries/qualia/>.
+
+* Valdez, P. (2019). Circadian Rhythms in Attention. The Yale journal of biology and medicine, 92(1), 81–92. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6430172/
 
 * van Es, D.M., Knapen, T. (2019). Implicit and explicit learning in reactive and voluntary saccade adaptation. PloS one, 14(1), e0203248. https://doi.org/10.1371/journal.pone.0203248
 
