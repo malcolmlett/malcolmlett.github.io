@@ -173,15 +173,15 @@ The "what, why, and how" questions can be focussed on two different scopes:
 
 For example, this leads to different variants of the "what" question, two of which are a) what are the characteristics associated with creature consciousness? b) what kinds of things are we conscious of?
 
-A good answer to the former requires us to answer the questions of why and how. But the latter is more open to investigation on its own. A few kinds of experience have been identified [citation]:
-* **Perception:** specifically via the traditional five senses of sight, sound, smell, taste, touch that give us information about the world external to us
-* **Bodily awareness:** this includes strong feelings such as pains and pleasures, and more subtle body-state awareness such as balance and proprioception
-* **Memory:** recalling past experiences, where that past experience may be any of the sorts described here
-* **Imagination:** conjuring images (and perhaps via other modalities) within our mind of things that do not exist
-* **Emotion:** the experience of feeling one's emotional state
-* **Desire:** the awareness of ones goals and desires
-* **Action:** experience and awareness of one's actions, or of the intent to act
-* **Thought:** an awareness of the sequence of thoughts, particularly via internal imagined worded vocalisations
+A good answer to the former requires us to answer the questions of why and how. But the latter is more open to investigation on its own. A few kinds of experience have been identified:
+* **Perception:** specifically via the traditional five senses of sight, sound, smell, taste, touch that give us information about the world external to us (Gleitman, 2004, p. 204-237)
+* **Bodily awareness:** this includes strong feelings such as pains and pleasures, and more subtle body-state awareness such as balance and proprioception (de Vignemont, 2020; Bermúdez, 2005; Mandrigin, 2021)
+* **Memory:** recalling past experiences, where that past experience may be any of the sorts described here (Gleitman, 2004, p. 242-273)
+* **Imagination:** conjuring images (and perhaps via other modalities) within our mind of things that do not exist (Liao and Gendler, 2020)
+* **Emotion:** the experience of feeling one's emotional state (Scarantino and de Sousa, 2021)
+* **Desire:** the awareness of ones goals and desires (Smithies and Weiss, 2019; Schroeder, 2020)
+* **Action:** experience and awareness of one's actions, or of the intent to act (Tsakiris and Haggard, 2005; Bayne and Pacherie, 2007)
+* **Thought:** an awareness of the sequence of thoughts, such as during problem solving, including via internal imagined worded vocalisations (Gleitman, 2004, p. 278-315)
 
 The term "experience" itself is sometimes attributed to only a subset of the above, but I shall use it here to refer to any of the above where one could be said as being consciously aware of that experience. Or in other words, I take it that we can consciously experience all of the above "experiences".
 
@@ -1513,11 +1513,15 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Bahrami, B., Olsen, K., Bang, D., Roepstorff, A., Rees, G., and Frith, C. (2012). What failure in collective decision-making tells us about metacognition. Phil. Trans. R. Soc. B 367, 1350–1365.doi:10.1098/rstb.2011.0420 (doi:10.1098/rstb.2011.0420).
 
+* Bayne, T., and Pacherie, E (2007). Narrators and comparators: the architecture of agentive self-awareness [Abstract from Springer]. Synthese 159, 475–491. https://doi.org/10.1007/s11229-007-9239-9
+
 * Beaudoin, L. (1994). Goal processing in autonomous agents, PhD thesis, School of Computer Science, The University of Birmingham, Birmingham, UK.
 
-* Bernacer, J. Murillo, J.I. (2014). The Aristotelian conception of habit and its contribution to human neuroscience. Front. Hum. Neurosci. 8:883. doi: 10.3389/fnhum.2014.00883
-
 * Benjamin, A.S., Bjork, R.A., Schwartz, B.L. (1998). The mismeasure of memory: When retrieval fluency is misleading as a metamnemonic index. Journal of Experimental Psychology: General, 127 (1), pp. 55-68
+
+* Bermúdez, J. L. (2005). The Phenomenology of Bodily Awareness. In David Woodruff Smith, and Amie L. Thomasson (eds), Phenomenology and Philosophy of Mind (Oxford, 2005; online edn, Oxford Academic, 1 May 2010), https://doi.org/10.1093/acprof:oso/9780199272457.003.0015
+
+* Bernacer, J. Murillo, J.I. (2014). The Aristotelian conception of habit and its contribution to human neuroscience. Front. Hum. Neurosci. 8:883. doi: 10.3389/fnhum.2014.00883
 
 * Birch, J., Ginsburg, S., Jablonka, E. (2020). Unlimited associative learning and the origins of consciousness: a primer and some predictions. Biol Philos, 35:56.
 
@@ -1576,6 +1580,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 * Daw, N.D., Niv, Y., Dayan, P. (2005). Uncertainty-based competition between prefrontal and dorsolateral striatal systems for behavioural control. Nat. Neurosci. 8, 1704–1711. doi: 10.1038/nn1560
 
 * Dayan, P. (2008). The role of value systems in decision making. In Engel, C. and Singer, W. (Eds), Better Than Conscious? Implications for Performance and Institutional Analysis (Cambridge, MA: MIT press), 51–70.
+
+* de Vignemont, F. (2020). Bodily Awareness. The Stanford Encyclopedia of Philosophy (Fall 2020 Edition), Edward N. Zalta (ed.). https://plato.stanford.edu/archives/fall2020/entries/bodily-awareness/.
 
 * de Wit, S., Corlett, P.R., Aitken, M.R., Dickinson, A., Fletcher, P.C. (2009). Differential Engagement of the Ventromedial Prefrontal Cortex by Goal-Directed and Habitual Behavior toward Food Pictures in Humans. Journal of Neuroscience, 29 (36) 11330-11338; DOI: https://doi.org/10.1523/JNEUROSCI.1639-09.2009
 
@@ -1657,6 +1663,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Ghosh, D., Gupta, A., Levine, S. (2019). Learning Actionable Representations with Goal-Conditioned Policies. ICLR 2019. https://arxiv.org/abs/1811.07819
 
+* Gleitman, H., Fridlund, A. J., & Reisberg, D. (2004). Psychology (6th Ed.). New York: Norton.
+
 * Glorot, X., Bordes, A. & Bengio, Y.. (2011). Deep Sparse Rectifier Neural Networks. Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics, in Proceedings of Machine Learning Research. 15:315-323. Available from https://proceedings.mlr.press/v15/glorot11a.html.
 
 * Godfrey-Smith, P. (2016). Other Minds: The octopus and the evolution of intelligent life. Farrar, Straus and Giroux, New York.
@@ -1733,9 +1741,9 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Libet, B. (2004). Mind Time: The Temporal Factor in Consciousness. Cambridge, MA: Harvard University Press.
 
-* Miller P. (2016). Dynamical systems, attractors, and neural circuits. F1000Research, 5, F1000 Faculty Rev-992. https://doi.org/10.12688/f1000research.7698.1
-
 * Linser, K and Goschke, T. (2007). Unconscious modulation of the conscious experience of voluntary control, Cognition, 104: 459–475.
+
+* Liao, S. and Gendler, T (2020). Imagination. The Stanford Encyclopedia of Philosophy (Summer 2020 Edition), Edward N. Zalta (ed.). https://plato.stanford.edu/archives/sum2020/entries/imagination/.
 
 * Llinás, R., Ribary, U., Contreras, D., and Pedroarena, C. (1998). The neuronal basis for consciousness. Philosophical Transactions of the Royal Society of London, Series B, 353, 1841-1849.
 
@@ -1744,6 +1752,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 * Lycan, W. (2004) The superiority of HOP to HOT. In R. Gennaro (ed.) 2004, pp. 93–114.
 
 * Ma, W. J. (2019). Bayesian Decision Models: A Primer. Neuron, 104: 164–175.
+
+* Mandrigin, A (2021). The where of bodily awareness. Synthese, 198, 1887–1903 (2021). https://doi.org/10.1007/s11229-019-02171-3
 
 * Marcus, G. (2001). The Algebraic Mind, Cambridge, MA: MIT Press
 
@@ -1756,6 +1766,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 * McGinn, C. (1991). The Problem of Consciousness: Essays Toward a Resolution [Abstract from PhilPapers]. Cambridge, Mass., USA: Blackwell.
 
 * Metcalfe, J., Shimamura, A.P. (Eds.). (1994). Metacognition: Knowing about knowing. MIT press.
+
+* Miller P. (2016). Dynamical systems, attractors, and neural circuits. F1000Research, 5, F1000 Faculty Rev-992. https://doi.org/10.12688/f1000research.7698.1
 
 * Millidge, B., Seth, A., Buckley, C. (2021). Predictive Coding: a Theoretical and Experimental Review. Computer Science. https://doi.org/10.48550/arXiv.2107.12979. ([full text](https://arxiv.org/abs/2107.12979))
 
@@ -1847,9 +1859,13 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Sajid, N., Ball, P. J., Parr, T., Friston, K. J. (2021). Active Inference: Demystified and Compared. Neural Comput 2021; 33 (3): 674–712. doi: https://doi.org/10.1162/neco_a_01357
 
+* Scarantino, A. and de Sousa, R (2021). Emotion. The Stanford Encyclopedia of Philosophy (Summer 2021 Edition), Edward N. Zalta (ed.). https://plato.stanford.edu/archives/sum2021/entries/emotion/
+
 * Schmidhuber, J. (2015). Deep learning in neural networks: An overview. Neural Networks, 61:85-117. https://doi.org/10.1016/j.neunet.2014.09.003.
 
 * Schrittwieser, J., Antonoglou, I., Hubert, T. et al (2020). Mastering Atari, Go, chess and shogi by planning with a learned model. Nature, 588:604–609. https://doi.org/10.1038/s41586-020-03051-4
+
+* Schroeder, T. (2020). Desire. The Stanford Encyclopedia of Philosophy (Summer 2020 Edition), Edward N. Zalta (ed.). https://plato.stanford.edu/archives/sum2020/entries/desire/
 
 * Searle, J.R. (1990). Who is computing with the brain? Behavioral and Brain Sciences, 13:4:632-64.
 
@@ -1883,6 +1899,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Smith, D. W. (2018). Phenomenology: 1. What is Phenomenology?. The Stanford Encyclopedia of Philosophy. Metaphysics Research Lab, Stanford University. Retrieved 20 September 2021.
 
+* Smithies, D., and Weiss, J. (2019). Affective Experience, Desire, and Reasons for Action. Analytic Philosophy, 60(1): 27-54. https://doi.org/10.1111/phib.12144
+
 * Smolensky, P. (1988). On the Proper Treatment of Connectionism. Behavioral and Brain Sciences, 11: 1–74.
 
 * Snodgrass, M., Kalaida, N., Winer E. S. (2009). Access is mainly a second-order process: SDT models whether phenomenally (first-order) conscious states are accessed by reflectively (second-order) conscious processes. Conscious. Cogn. 18, 561–564; discussion 565–567.doi:10.1016/j.concog.2009.01.003
@@ -1906,6 +1924,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 * Tononi, G., Sporns, O. (2003). Measuring information integration. BMC Neurosci 4, 31.
 
 * Tononi, G., Sporns, O., Edelman, G. M. (1994). A measure for brain complexity: relating functional segregation and integration in the nervous system. Proc Natl Acad Sci U S A 91, 5033-7.
+
+* Tsakiris, M., & Haggard, P. (2005). Experimenting with the acting self, Cognitive Neuropsychology, 22:3-4, 387-407, DOI: 10.1080/02643290442000158
 
 * Tulving, E. (1987). Multiple memory systems and consciousness. Hum. Neurobiol. 6, 67–80.
 
