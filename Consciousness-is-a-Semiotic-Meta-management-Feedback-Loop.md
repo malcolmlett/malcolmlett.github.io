@@ -289,7 +289,7 @@ Many of the broad topics on consciousness require a background in philosophy to 
 # I.4 Background - Biology and Neuroscience
 I shall not attempt to explain any of structure of the brain itself. However there is one important feature of the neurological aspect of brain function that needs to be described more fully, that of its dynamical system nature. Many of the discussions later in this treatise combine simplistic functional descriptions with simple box-and-line diagrams using clearly demarked components. I want to dispel any misconceptions about the interpretation of those simplistic descriptions before they arise.
 
-Functional descriptions that include a single boxes for, say, processing and memory, are simply wrong. The brain does not operate that way. Processing is a distributed product of many different systems. Even memory may be a distributed effect, with a single memory actually being produced by different systems focussed on the various different modalities that make up the memory [citation]. However, simple functional descriptions give us something understandable to work with while we're trying to figure out the broad ideas. Remapping that onto a dynamical systems substrate can come later.
+Functional descriptions that include a single boxes for, say, processing and memory, are simply wrong. The brain does not operate that way. Processing is a distributed product of many different systems (Spillmann et al, 2015; Livingstone and Hubel, 1987; Zeki and Shipp, 1988). Even memory may be a distributed effect, with a single memory actually being produced by different systems focused on the various different modalities that make up the memory (Postle, 2016; Carter et al, 2019, p. 156-159). However, simple functional descriptions give us something understandable to work with while we're trying to figure out the broad ideas. Remapping that onto a dynamical systems substrate can come later.
 
 Nevertheless, it will helpful to the reader to have some intuition of the brain's true underlying dynamical systems nature. To that end, what follows is a brief description of one attempt at explanation, known as a _Predictive Coding_. It remains to be seen how accurately predictive coding explains brain function. It is also not the only approach being developed. Even if it is eventually proven to hold true for some parts of the brain, it may not hold true for all parts of the brain.
 
@@ -443,13 +443,15 @@ A special case of multi-iteration processing is that of _iterative inference_, w
 In that case, some portion of the state must be held stable, while the rest is free to change significantly. This requires some form of meta-management. In simple cases that may develop as an implicit product of the learned connectionist control process. In more complex agents, such as those with attention, more explicit meta-management may be required.
 
 ## III.1.4 Objective learning
-How does a continuously learning embodied agent know which actions are better than others? This decision is tied to the agent's objective: it's ultimate goal that influences all other goals. For example, to eat and stay healthy in order to survive. Or to produce as many staples as possible in as little time as possible [citation]. If the agent is not pre-configured with its objective, then it must learn that objective.
+How does a continuously learning embodied agent know which actions are better than others? This decision is tied to the agent's objective: it's ultimate goal that influences all other goals. For example, to eat and stay healthy in order to survive. Or to produce as many paperclips as possible (Bostrom, 2003, 2014; Gans, 2017). If the agent is not pre-configured with its objective, then it must learn that objective.
 
 An agent in the human world requires the use of inedible metal tokens (coins), which are used in complex ways for the purpose of life preservation. The involvement of such an inedible metal token as part of some process (eg: doing a job and being paid) does not necessarily immediately result in a life sustaining outcome. Thus, without any other information, it is hard for the agent to learn the relationship between that inedible metal token, the processes that it must be involved in, and the life sustaining result. This is known in the AI community as _sparse feedback_, and it poses a particularly difficult problem for continuously learning agents (Armstrong et al, 2020).
 
 Another problem for a continuously learning agent is known as the _exploration-exploitation dilemma_ (Kaplan & Friston, 2018). The agent gains knowledge about its world and itself by exploring places and things, and by experimenting with novel behaviours. When the agent needs to achieve a goal, it may by able to achieve the goal by _exploiting_ its existing knowledge, but it may be able to achieve that goal in some better way if it were to _explore_ more first; it also may not. The dilemma concerns how the agent chooses between exploration and exploitation at any given moment.
 
 Sparse feedback and the exploration-exploitation dilemma make objective learning difficult. One solution is for the agent to build high-level simplified models of its environment, itself, the behaviours it can perform, and how those behaviours influence different outcomes. High-level models have fewer degrees of freedom than found in the raw first-order signals. This means that the models can be built up from fewer examples, and they are easier to change as learning progresses. These models become the agent's "knowledge", and somewhere within that knowledge a continuously learning agent builds a structure that ultimately governs its behaviours and goals – that is, an objective that it infers over time.
+
+For example, some success has been shown using model-based RL to learn the structure of goals and combining that to train a model-free RL agent (Krueger and Griffiths, 2018). The authors of that paper suggest how objective learning feeds into behavioural automatization: "our knowledge of the world doesn’t just provide a source of simulated experience for training our instincts, but that it shapes the rewards that those instincts latch onto." (p. 1)
 
 Objective learning can be seen as another form of meta-management for a number of reasons. Firstly, even with a learned objective function, first-order behaviour continues to use low-level representations, where the high-level objective function is used only in the generation of endogenous feedback as part of subsequent behaviour learning. Thus the learning and use of the objective function is a second-order process. Secondly, learning of objective functions is hard (Armstrong et al, 2020), and in complex environments it may too require deliberative involvement.
 
@@ -842,7 +844,7 @@ The evolution of rationally controlled behaviour is hard to identify, but it is 
 
 That is from the perspective of development of a species. What about for the development of an individual? How do these three systems interact in order to help the individual learn to control its own behaviour?
 
-One area that appears to have received only minimal research to date is the extent to which innate behaviour may _bootstrap_ learning of habitual and rational behaviours. For example, there is some research suggesting that the same mechanisms underlying innate behaviour are also involved in the prediction of outcomes (Dolan & Dayan, 2013) such as future rewards and punishments (Dayan, 2008). I suggest that innate behavioural control systems may influence habitual and rational control in more fundamental ways.
+One area that has received only minimal research to date is the extent to which innate behaviour may _bootstrap_ learning of habitual and rational behaviours. An old idea proposed by John Locke was that infants start with a "blank slate" and learn everything. Only more recently have we started to find clear evidence that evolution predisposes individuals with innate capabilities that bootstrap learning (McCarthy, 2008; Chappell and Sloman, 2007). For example, there is research suggesting that the same mechanisms underlying innate behaviour are also involved in the prediction of outcomes (Dolan & Dayan, 2013) such as future rewards and punishments (Dayan, 2008). I suggest that innate behavioural control systems may influence habitual and rational control in more fundamental ways.
 
 Firstly, it may prevent untrained habitual and rational systems from causing the individual harm through incorrect action or through inaction. For example, the reflex to flinch and withdraw from pain is so powerful that to counteract that reflex requires an individual to carefully coordinate calming effects against the parasympathetic nervous system and tensing of counteracting muscles. Likewise, young children are often unable to prevent themselves from taking food when they have been told to wait. Habitual and rational systems can counteract innate control, but only once they have reached sufficient maturity. So, while habitual and rational systems are under-developed and prone to error, the innate system maintains behaviour within the bounds of a "safe zone".
 
@@ -1533,6 +1535,10 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Borţun, D., & Purcarea, V. L. (2013). Marketing and semiotic approach on communication. Consequences on knowledge of target-audiences. Journal of medicine and life, 6(1), 103–108.
 
+* Bostrom, N. (2003). Ethical issues in advanced artificial intelligence. Science Fiction and Philosophy: From Time Travel to Superintelligence, 277–284.
+
+* Bostrom, N. (2014). Superintelligence: Paths, dangers, strategies. Oxford University Press.
+
 * Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D. M., Wu, J., Winter, C., ... Amodei, D. (2020). Language Models are Few-Shot Learners. Neural Information Processing Systems, 33, 1877–1901. https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf
 
 * Buckley, C. L., Kim, C. S., McGregor, S., and Seth, A. K. (2017). The free energy principle for action and perception: A mathematical review. Journal of Mathematical Psychology, 81, 55–79.
@@ -1549,9 +1555,13 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Carruthers, P., Williams, D.M. (2022). Model-free metacognition. Cognition, Volume 225, 105117, https://doi.org/10.1016/j.cognition.2022.105117.
 
+* Carter, R., Aldridge, S., Page, M., and Parker, S. (2019). The brain brain book: An illustrated guide to its structure, function, and disorders. 3rd edition. DK Publishing. London, England.
+
 * Chalmers, D. J. (1996). The Conscious Mind. Oxford: Oxford University Press.
 
 * Chalmers, D. J. (2013). Panpsychism and Panprotopsychism. Amherst Lecture in Philosophy 8: 1-35. http://www.amherstlecture.org/chalmers2013/
+
+* Chappell, J., and Sloman, A. (2007). The International Journal of Unconventional Computing. Vol 2, Issue 3, 2007, pp. 211-239
 
 * Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behav. Brain Sci. 36, 181–204.
 
@@ -1655,6 +1665,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Frith, C.D. (2008). Social cognition. Phil. Trans. R. Soc. B 363, 2033–2039.doi:10.1098/rstb.2008.0005 (doi:10.1098/rstb.2008.0005).
 
+* Gans, J. S. (2017). Self-Regulating Artificial General Intelligence. arXiv:1711.04309. https://arxiv.org/abs/1711.04309
+
 * Gennaro, R. (1996). Consciousness and Self-Consciousness. Amsterdam: John Benjamins.
 
 * Gennaro, R. (2012). The Consciousness Paradox: Consciousness, Concepts, and Higher-Order Thoughts. Cambridge, MA: MIT press.
@@ -1731,6 +1743,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Krishevsky, A., Sutskever, I., and Hinton, G. (2012). ImageNet Classification with Deep Convolutional Neural Networks. Advances in Neural Information Processing Systems, 25: 1097–1105.
 
+* Krueger, P. M, and Griffiths, T. (2018). Cognitive Science. \[[SemanticScholar](https://www.semanticscholar.org/paper/Shaping-Model-Free-Habits-with-Model-Based-Goals-Krueger-Griffiths/4a3147b00de1e5fe2625636a01f1b4d6cb31391e)\] 
+
 * Krüger, J., & Aiple, F. (1988). Multimicroelectrode investigation of monkey striate cortex: spike train correlations in the infragranular layers [Abstract from PubMed]. Journal of neurophysiology, 60(2), 798–828. https://doi.org/10.1152/jn.1988.60.2.798
 
 * Lazaridis, A., Fachantidis, A., & Vlahavas, I. (2020). Deep Reinforcement Learning: A State-of-the-Art Walkthrough. J. Artif. Intell. Res., 69, 1421-1471. https://doi.org/10.1613/jair.1.12412
@@ -1745,6 +1759,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Liao, S. and Gendler, T (2020). Imagination. The Stanford Encyclopedia of Philosophy (Summer 2020 Edition), Edward N. Zalta (ed.). https://plato.stanford.edu/archives/sum2020/entries/imagination/.
 
+* Livingstone, M. S., and Hubel, D. H. (1987). Psychophysical Evidence for Separate Channels for the Perception of Form, Color, Movement, and Depth. Journal of Neuroscience, 7, pp. 236-368.
+
 * Llinás, R., Ribary, U., Contreras, D., and Pedroarena, C. (1998). The neuronal basis for consciousness. Philosophical Transactions of the Royal Society of London, Series B, 353, 1841-1849.
 
 * Lycan, W. (1996) Consciousness and Experience. Cambridge, MA: MIT Press.
@@ -1758,6 +1774,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 * Marcus, G. (2001). The Algebraic Mind, Cambridge, MA: MIT Press
 
 * Marković, D., Goschke, T., Kiebel, S.J. (2021). Meta-control of the exploration-exploitation dilemma emerges from probabilistic inference over a hierarchy of time scales. Cognitive, affective & behavioral neuroscience, 21(3), 509–533. https://doi.org/10.3758/s13415-020-00837-x
+
+* McCarthy, J. (2008). The well-designed child. Artificial Intelligence, 172(18):2003-2014, ISSN 0004-3702, https://doi.org/10.1016/j.artint.2008.10.001.
 
 * McCulloch, W. and Pitts, W. (1943). A Logical Calculus of the Ideas Immanent in Nervous Activity. Bulletin of Mathematical Biophysics, 7: 115–133.
 
@@ -1820,6 +1838,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 * Picard, R. (1997). Affective Computing. MIT Press.
 
 * Pierson, L. M., Trout, M. (2017). What is consciousness for?. New Ideas in Psychology, Volume 47, 2017, Pages 62-71. https://doi.org/10.1016/j.newideapsych.2017.05.004.
+
+* Postle B. R. (2016). How does the brain keep information "in mind"?. Current directions in psychological science, 25(3), 151–156. https://doi.org/10.1177/0963721416643063.
 
 * Proske, U., Gandevia, S.C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiol. Rev., 92:4, 1651-1697. doi:10.1152/physrev.00048.2011.
 
@@ -1909,6 +1929,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Soon, C., Brass, M., Heinze, H-J., and Haynes, J-D. (2008). Unconscious determinants of free decisions in the human brain. Nature Neuroscience, 11: 543–545. https://doi.org/10.1038/nn.2112
 
+* Spillmann, L., Dresp-Langley, B., and Tseng, C.-h. (2015). Beyond the classical receptive field: The effect of contextual stimuli. Journal of Vision 2015;15(9):7. https://doi.org/10.1167/15.9.7.
+
 * Stoljar, D. (2023). Physicalism. The Stanford Encyclopedia of Philosophy (Summer 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), forthcoming URL = <https://plato.stanford.edu/archives/sum2023/entries/physicalism/>.
 
 * Sutton, R.S., Barto, A.G. (1998). Reinforcement Learning: An Introduction. Cambridge, MA: MIT Press.
@@ -1970,4 +1992,4 @@ https://www.smithsonianmag.com/science-nature/when-did-the-human-mind-evolve-to-
 
 * Wegner, D. M. (2003). The mind’s best trick: How we experience conscious will. Trends in Cognitive Sciences, 7(February (2)), 65–69.
 
-
+* Zeki, S. M., and Shipp, S. (1988). The Functional Logic of Cortical Connections. Nature, 335, pp. 311-317.
