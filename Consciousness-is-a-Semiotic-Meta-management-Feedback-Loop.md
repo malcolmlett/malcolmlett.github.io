@@ -51,7 +51,7 @@
   * [IV.1.1 Identification of Source](#iv11-identification-of-source)
   * [IV.1.2 Schema](#iv12-schema)
   * [IV.1.3 Meaning Attachment](#iv13-meaning-attachment)
-* [IV.2 Meta-cognition](#iv2-meta-cognition)
+* [IV.2 Interlude: Meta-cognition](#iv2-interlude-meta-cognition)
   * [IV.2.1 Analysis of Meta-cognition](#iv21-analysis-of-meta-cognition)
   * [IV.2.2 First-order vs Conscious](#iv22-first-order-vs-conscious)
 * [IV.3 Systems of Behavioural Control](#iv3-systems-of-behavioural-control)
