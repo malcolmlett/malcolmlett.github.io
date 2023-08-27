@@ -1854,7 +1854,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Rigoli, F., Pezzulo, G., Dolan, R., & Friston, K. (2017). A Goal-Directed Bayesian Framework for Categorization. Frontiers in Psychology, 8, 408. https://doi.org/10.3389/fpsyg.2017.00408
 
-* Rescorla, M. (2019). A Realist Perspective on Bayesian Cognitive Science. In A. Nes & T. Chan (Eds.), Inference and Consciousness (pp. 40-73). Routledge. http://dx.doi.org/10.4324/9781315150703-3
+* Rescorla, M. (2019). A Realist Perspective on Bayesian Cognitive Science. In A. Nes & T. Chan (Eds.), Inference and Consciousness (pp. 40-73). Routledge. http://doi.org/10.4324/9781315150703-3
 
 * Rescorla, M. (2020). The Computational Theory of Mind. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2020 Edition). https://plato.stanford.edu/archives/fall2020/entries/computational-mind/
 
@@ -1872,7 +1872,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Rosenthal, D. M. (1997). A Theory of Consciousness. In N. Block, O. Flanagan, & G. Güzeldere (Eds.), The Nature of Consciousness: Philosophical Debates (pp. 729-753). MIT Press/Bradford Books. ([Full Text](https://davidrosenthal.org/DR-A-Theory.pdf))
 
-* Rosenthal, D. M. (2004). Varieties of higher-order theory. In R. Gennaro (Ed.), Higher-Order Theories of Consciousness: An Anthology (pp. 17-44). John Benjamins. http://dx.doi.org/10.1075/aicr.56.04ros
+* Rosenthal, D. M. (2004). Varieties of higher-order theory. In R. Gennaro (Ed.), Higher-Order Theories of Consciousness: An Anthology (pp. 17-44). John Benjamins. http://doi.org/10.1075/aicr.56.04ros
 
 * Rosenthal, D. M. (2005). Consciousness and Mind. Oxford University Press.
 
@@ -1908,7 +1908,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Siegel, S. (2021). The Contents of Perception. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2021 Edition). https://plato.stanford.edu/archives/fall2021/entries/perception-contents/
 
-* Siewert, C. (2004). Is Experience Transparent? Philosophical Studies, 117(1/2), 15–41. [doi:10.1023/B:PHIL.0000014523.89489.59](https://doi.org/10.1023%2FB%3APHIL.0000014523.89489.59)
+* Siewert, C. (2004). Is Experience Transparent? Philosophical Studies, 117(1/2), 15–41. https://doi.org/10.1023%2FB%3APHIL.0000014523.89489.59
 
 * Siewert, C. (2022). Consciousness and Intentionality. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2022 Edition). https://plato.stanford.edu/archives/sum2022/entries/consciousness-intentionality/
 
