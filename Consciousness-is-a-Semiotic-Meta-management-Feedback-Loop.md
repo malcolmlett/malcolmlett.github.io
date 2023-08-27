@@ -1788,7 +1788,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Miller P. (2016). Dynamical systems, attractors, and neural circuits. F1000Research, 5, F1000 Faculty Rev-992. https://doi.org/10.12688/f1000research.7698.1
 
-* Millidge, B., Seth, A., & Buckley, C. (2021). Predictive Coding: a Theoretical and Experimental Review. Computer Science. https://doi.org/10.48550/arXiv.2107.12979. ([Full Text](https://arxiv.org/abs/2107.12979))
+* Millidge, B., Seth, A., & Buckley, C. (2021). Predictive Coding: a Theoretical and Experimental Review. Computer Science. https://doi.org/10.48550/arXiv.2107.12979 ([Full Text](https://arxiv.org/abs/2107.12979))
 
 * Mitchell, K. J., & Johnson, M. K. (2009). Source monitoring 15 years later: what have we learned from fMRI about the neural mechanisms of source memory? Psychological bulletin, 135(4), 638–677. https://doi.org/10.1037/a0015849
 
@@ -1798,7 +1798,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Morsella, E. (2005). The Function of Phenomenal States: Supramodular Interaction Theory. Psychological Review, 112(1), 1000–21. https://doi.org/10.1037/0033-295x.112.4.1000
 
-* Mountcastle, V. B. (1997). The Columnar Organization of the Neocortex. Brain, 120(4), 701-722. http://doi.org/10.1093/brain/120.4.701. ([Full Text](https://academic.oup.com/brain/article-pdf/120/4/701/17863573/1200701.pdf))
+* Mountcastle, V. B. (1997). The Columnar Organization of the Neocortex. Brain, 120(4), 701-722. http://doi.org/10.1093/brain/120.4.701 ([Full Text](https://academic.oup.com/brain/article-pdf/120/4/701/17863573/1200701.pdf))
 
 * Mumford, D. (1991). On the computational architecture of neocortex. Biological Cybernetics, 65, 135–145. https://doi.org/10.1007/bf00202389
 
@@ -1916,7 +1916,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Sloman, A. (1998). Damasio, Descartes, alarms and meta-management. SMC'98 Conference Proceedings. IEEE International Conference on Systems, Man, and Cybernetics, 3, 2652-2657. https://doi.org/10.1109/ICSMC.1998.725060
 
-* Sloman, A. (2001). Beyond Shallow Models of Emotion. Cognitive Processing, 2(1), 177–198. ([[Full Text](https://citeseerx.ist.psu.edu/document?doi=4a6ece0a0ee3f436fa2a4d0ed9e89c49eec363c8))
+* Sloman, A. (2001). Beyond Shallow Models of Emotion. Cognitive Processing, 2(1), 177–198. ([Full Text](https://citeseerx.ist.psu.edu/document?doi=4a6ece0a0ee3f436fa2a4d0ed9e89c49eec363c8))
 
 * Sloman, A. (2008). Varieties of Metacognition in Natural and Artificial Systems. In M. T. Cox & A. Raja (Eds.), Metareasoning: Thinking about Thinking. MIT Press. https://doi.org/10.7551/mitpress/9780262014809.003.0020
 
