@@ -1490,8 +1490,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Armstrong, D., & Malcolm. N (1984). Consciousness and Causality: A Debate on the Nature of Mind. Blackwell.
 
-* Armstrong, S., Leike, J., Orseau, L., & Legg, S. (2020). Pitfalls of learning a reward function online. 
-Pitfalls of Learning a Reward Function Online. Proceedings of the International Joint Conferences on Artificial Intelligence (IJCAI-20). https://doi.org/10.24963/ijcai.2020/221
+* Armstrong, S., Leike, J., Orseau, L., & Legg, S. (2020). Pitfalls of Learning a Reward Function Online. Proceedings of the International Joint Conferences on Artificial Intelligence (IJCAI-20). https://doi.org/10.24963/ijcai.2020/221
 
 * Atasoy, S., Donnelly, I., & Pearson, J. (2016). Human brain networks function in connectome-specific harmonic waves. Nature Communications, 7, 10340. https://doi.org/10.1038/ncomms10340
 
@@ -1567,8 +1566,7 @@ Pitfalls of Learning a Reward Function Online. Proceedings of the International 
 
 * Cleeremans, A., Timmermans, B., Pasquali, A. (2007). Consciousness and metarepresentation: A computational sketch. Neural Networks, 20(9), 1032-1039, https://doi.org/10.1016/j.neunet.2007.09.011.
 
-* Colas, C., Fournier, P., Sigaud, O., Chetouani, M., & Oudeyer, P-Y. 2019. CURIOUS: Intrinsically Motivated Modular Multi-Goal Reinforcement Learning. Proceedings of the 36th International Conference on Machine Learning (PMLR), 97, 1331-1340,
-ArXiv, 1810.06284. https://proceedings.mlr.press/v97/colas19a.html.
+* Colas, C., Fournier, P., Sigaud, O., Chetouani, M., & Oudeyer, P-Y. 2019. CURIOUS: Intrinsically Motivated Modular Multi-Goal Reinforcement Learning. Proceedings of the 36th International Conference on Machine Learning (PMLR), 97, 1331-1340. https://proceedings.mlr.press/v97/colas19a.html.
 
 * Crane, T. (2009). Intentionalism. In B. McLaughlin, & A. Beckermann (Eds.), The Oxford Handbook to the Philosophy of Mind (pp. 474–93). Oxford University Press. ([Abstract](https://philpapers.org/rec/CRAI-17))
 
@@ -1990,8 +1988,7 @@ ArXiv, 1810.06284. https://proceedings.mlr.press/v97/colas19a.html.
 
 * Wang, T., Bao, X., Clavera, I., Hoang, J., Wen, Y., Langlois, E., Zhang, S., Zhang, G., Abbeel, P., & Ba, J. (2019). Benchmarking Model-Based Reinforcement Learning. ArXiv, 1907.02057. https://doi.org/10.48550/arXiv.1907.02057
 
-* Wayman, E. (2023). When Did the Human Mind Evolve to What It is Today? Smithsonian Magazine. 
-https://www.smithsonianmag.com/science-nature/when-did-the-human-mind-evolve-to-what-it-is-today-140507905/
+* Wayman, E. (2023). When Did the Human Mind Evolve to What It is Today? Smithsonian Magazine. https://www.smithsonianmag.com/science-nature/when-did-the-human-mind-evolve-to-what-it-is-today-140507905/
 
 * Webb, T.W., & Graziano, M.S.A. (2015). The attention schema theory: a mechanistic account of subjective awareness. Frontiers in Psychology, 6, 500. https://doi.org/10.3389/fpsyg.2015.00500.
 
