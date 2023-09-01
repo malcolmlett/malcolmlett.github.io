@@ -1566,7 +1566,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Cleeremans, A., Timmermans, B., Pasquali, A. (2007). Consciousness and metarepresentation: A computational sketch. Neural Networks, 20(9), 1032-1039, https://doi.org/10.1016/j.neunet.2007.09.011.
 
-* Colas, C., Fournier, P., Sigaud, O., Chetouani, M., & Oudeyer, P-Y. 2019. CURIOUS: Intrinsically Motivated Modular Multi-Goal Reinforcement Learning. Proceedings of the 36th International Conference on Machine Learning (PMLR), 97, 1331-1340. https://proceedings.mlr.press/v97/colas19a.html.
+* Colas, C., Fournier, P., Sigaud, O., Chetouani, M., & Oudeyer, P-Y. (2019). CURIOUS: Intrinsically Motivated Modular Multi-Goal Reinforcement Learning. Proceedings of the 36th International Conference on Machine Learning (PMLR), 97, 1331-1340. https://proceedings.mlr.press/v97/colas19a.html.
 
 * Crane, T. (2009). Intentionalism. In B. McLaughlin, & A. Beckermann (Eds.), The Oxford Handbook to the Philosophy of Mind (pp. 474–93). Oxford University Press. ([Abstract](https://philpapers.org/rec/CRAI-17))
 
@@ -1614,7 +1614,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Eysenbach, B., Gupta, A., Ibarz, J., & Levine, S. (2019). Diversity is All You Need: Learning Skills without a Reward Function. ArXiv, 1802.06070. https://doi.org/10.48550/arXiv.1802.06070
 
-* Favela, L. H. (2020. Dynamical systems theory in cognitive science and neuroscience. Philosophy Compass, 15, e12695. https://doi.org/10.1111/phc3.12695
+* Favela, L. H. (2020). Dynamical systems theory in cognitive science and neuroscience. Philosophy Compass, 15, e12695. https://doi.org/10.1111/phc3.12695
 
 * Fernandez Cruz, A.L., Arango-Muoz, S., Volz, K.G. (2016). Oops, scratch that! Monitoring ones own errors during mental calculation. Cognition, 146, 110-120. https://doi.org/10.1016/j.cognition.2015.09.005
 
@@ -1784,7 +1784,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * McGinn, C. (1991). The Problem of Consciousness: Essays Toward a Resolution [Abstract from PhilPapers]. Blackwell. https://doi.org/10.2307/2186044
 
-* Metcalfe, J., & Shimamura, A.P. (Eds.). (1994). Metacognition: Knowing about knowing. MIT press.
+* Metcalfe, J., & Shimamura, A.P. (Eds.) (1994). Metacognition: Knowing about knowing. MIT press.
 
 * Miller P. (2016). Dynamical systems, attractors, and neural circuits. F1000Research, 5, F1000 Faculty Rev-992. https://doi.org/10.12688/f1000research.7698.1
 
