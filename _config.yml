@@ -1,0 +1,41 @@
+title: Malcolm Lett
+description: Consciousness and AI
+theme: just-the-docs
+
+url: https://malcolmlett.github.io/
+
+plugins:
+  - jekyll-katex
+  
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Aux links for the upper right navigation
+#aux_links_new_tab: true
+#aux_links:
+#  "Just the Docs on GitHub":
+#    - "https://github.com/just-the-docs/just-the-docs"
+
+# navigation
+nav_external_links:
+  - title: Blog on Medium.com
+    url: https://malcolmlett.medium.com/
+
+# Footer
+# - pages must have `last_modified_date` defined in the frontmatter
+# - uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+footer_content: "Copyright &copy; 2020-2023 Malcolm Lett. Licensed under <a href=\"https://github.com/malcolmlett/malcolmlett.github.io/blob/main/LICENSE">GPL 3.0</a>"
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y at %I:%M %p" 
+
+# Copied from JTD example
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+  # ignore:
+  #   envs: all
