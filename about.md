@@ -6,6 +6,9 @@ nav_order: 90
 
 ![](../../assets/images/me.jpg)
 
+* Loop: [https://loop.frontiersin.org/people/1570586/bio](https://loop.frontiersin.org/people/1570586/bio)
+* Research Gate: [https://www.researchgate.net/scientific-contributions/Malcolm-Lett-69587837](https://www.researchgate.net/scientific-contributions/Malcolm-Lett-69587837)
+
 I'm a software engineer and consciousness enthusiast. Originally from NZ, and now based in Chennai, India.
 
 

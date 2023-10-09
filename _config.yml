@@ -21,6 +21,10 @@ back_to_top_text: "Back to top"
 nav_external_links:
   - title: Blog on Medium.com
     url: https://malcolmlett.medium.com/
+  - title: LinkedIn profile
+    url: https://www.linkedin.com/in/malcolmlett/
+  - title: Research profile on Loop
+    url: https://loop.frontiersin.org/people/1570586/bio
 
 # Footer
 # - pages must have `last_modified_date` defined in the frontmatter
