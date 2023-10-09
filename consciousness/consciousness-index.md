@@ -5,6 +5,7 @@ nav_order: 2
 permalink: /consciousness
 has_children: false
 has_toc: false
+last_modified_date: 2023-10-09
 ---
 
 # Why
