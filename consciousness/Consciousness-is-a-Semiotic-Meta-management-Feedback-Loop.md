@@ -1,7 +1,7 @@
 ---
 title: Consciousness is a Semiotic Meta-management Feedback Loop
 layout: wiki
-parent: Wiki
+parent: Consciousness
 ---
 
 **Abstract**

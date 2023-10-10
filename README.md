@@ -62,3 +62,9 @@ Steps:
     $ bundle install
     ```
 
+# Jekyll and Just the Docs tips
+
+Creating markdown links that open in a new tab ([source](https://heymichellemac.com/external-links-jekyll)):
+```
+[Mishacreatrix Website](https://mishacreatrix.com/){:target="_blank"}{:rel="noopener noreferrer"}
+```
