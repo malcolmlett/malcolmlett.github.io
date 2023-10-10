@@ -1,3 +1,9 @@
+---
+title: Background to A Theory of Mind
+layout: wiki
+parent: Wiki
+---
+
 This article investigates how consciousness in the human mind operates, explaining it from common phenomena. The focus is on providing an explanation for how I drew conclusions on the architecture of consciousness.
 
 For further reading see [[A Theory of Consciousness]], which provides a unified description of consciousness.

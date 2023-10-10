@@ -1,3 +1,9 @@
+---
+title: Learning to Count
+layout: wiki
+parent: Wiki
+---
+
 Can I teach my AI to count and do arithmetic?
 
 What's the minimum prior knowledge? From gut instinct, let's assume the following is sufficient to learn to count:

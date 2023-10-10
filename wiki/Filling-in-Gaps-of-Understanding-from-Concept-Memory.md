@@ -1,3 +1,9 @@
+---
+title: Filling in Gaps of Understanding from Concept Memory
+layout: wiki
+parent: Wiki
+---
+
 ## Problem
 How to solve "3 + ? = 8" without having previously been trained to cope with such expressions, and without knowing anything about what '?' might be? And how can it solve that without any help?
 

@@ -1,3 +1,9 @@
+---
+title: Discarded Content; Paper on Loops in AI and Consciousness
+layout: wiki
+parent: Wiki
+---
+
 
 tbd: also needed for corollary discharge?
 

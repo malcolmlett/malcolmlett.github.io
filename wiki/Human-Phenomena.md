@@ -1,3 +1,9 @@
+---
+title: Human Phenomena
+layout: wiki
+parent: Wiki
+---
+
 As much as possible, I'm interested in emulating the design of the human brain, at a high-level architectural level. This page serves to collect together interesting human phenomena. Particularly those that help us make architectural decisions.
 
 Some cases are also indicated with a brief summary of how the implications for design of the emulator.

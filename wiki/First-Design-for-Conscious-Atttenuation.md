@@ -1,3 +1,9 @@
+---
+title: First Design for Conscious Attenuation
+layout: wiki
+parent: Wiki
+---
+
 Problem : how do I incorporate the idea that CF is fundamental to high order thinking in order to attenuate unwanted processor outputs? 
 
 Inspired by noticing how I keep turning on the tap too early while brushing teeth, I think I have an idea. 

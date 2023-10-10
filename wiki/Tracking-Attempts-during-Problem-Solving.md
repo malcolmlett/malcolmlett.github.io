@@ -1,3 +1,9 @@
+---
+title: Tracking Attempts during Problem Solving
+layout: wiki
+parent: Wiki
+---
+
 ## Problem
 When solving problems, we try out different strategies, and some strategies require us to make multiple attempts with different values, and we need a way of keeping track of all of that. My current solution involves creating some of TriedAttemptsEvent, held in Working Memory (WM), that can be updated with each attempt tried. But I'm not convinced it fits human phenomena.
 

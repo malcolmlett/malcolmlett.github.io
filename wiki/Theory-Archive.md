@@ -1,3 +1,9 @@
+---
+title: Theory Archive
+layout: wiki
+parent: Wiki
+---
+
 This page lists some of my older theories on consciousness.
 
 * [[A Theory of the Human Mind]]

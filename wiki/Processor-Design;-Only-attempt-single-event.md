@@ -1,3 +1,9 @@
+---
+title: Processor Design; Only attempt single event
+layout: wiki
+parent: Wiki
+---
+
 ## Problem
 The current implementation of Processors iterates over each event within WorkingMemory (in strength order), and emits for the first event it can produce a result for. This is not biologically plausible, because it moves the code over the data.
 

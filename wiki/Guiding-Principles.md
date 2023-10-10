@@ -1,3 +1,9 @@
+---
+title: Guiding Principles
+layout: wiki
+parent: Wiki
+---
+
 This is an attempt to collect together the hidden guiding principles that I've been applying in trying to formulate my theories.
 
 ### If it can operate without something, then it probably does

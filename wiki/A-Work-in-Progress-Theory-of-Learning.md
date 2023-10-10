@@ -1,3 +1,9 @@
+---
+title: A Work in Progress Theory of Learning
+layout: wiki
+parent: Wiki
+---
+
 In contrast to my theories on consciousness itself, I have no strong ideas on how learning must operate. I'm merely trying to put something together that would probably work.
 
 The motivation is that I can't really prove general artificial intelligence without learning. Additionally, some of the algorithms /processors in my consciousness architecture are hard to write by hand, so a learning mechanism provides an alternative way of creating them.

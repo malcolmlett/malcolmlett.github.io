@@ -1,3 +1,9 @@
+---
+title: Awareness of Thought is not the mystery
+layout: wiki
+parent: Wiki
+---
+
 With a better understanding that conscious feedback evolved as a necessary component to control the chaotic nature of a neural network based high level state machine, it becomes apparent that this is not the crux of the mystery of conscious experience. The real mystery is why we experience anything at all. 
 
 We introduced conscious feedback (CF) to explain _experience_. In doing so, we realised that CF is just another sense. In fact, it appears that the CF sense is managed exactly the same as other senses; even to the point that it is shut off during sleep in the same way that other senses are.

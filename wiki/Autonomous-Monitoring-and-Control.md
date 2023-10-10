@@ -1,3 +1,9 @@
+---
+title: Autonomous Monitoring and Control
+layout: wiki
+parent: Wiki
+---
+
 This page forms part of the [[Proto AGI v1]] series.
 
 In the search for a strong argument for the need of conscious feedback, and for an AI architecture that could leverage such a feature, we shall now turn to the topic of _monitoring and control_.

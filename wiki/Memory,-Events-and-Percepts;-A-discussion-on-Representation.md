@@ -1,3 +1,9 @@
+---
+title: Memory, Events and Percepts; A discussion on Representation
+layout: wiki
+parent: Wiki
+---
+
 ## Problem
 Currently have a bit of a mess with the representation of events within WM vs STM/LTM, and then with storage and fetching of Percepts.
 We have:

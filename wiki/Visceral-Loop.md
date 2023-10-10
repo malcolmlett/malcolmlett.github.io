@@ -1,3 +1,9 @@
+---
+title: Visceral Loop
+layout: wiki
+parent: Wiki
+---
+
 The "Visceral Loop" is a characterisation of the thought processes required in order for one to rationalise about their own awareness, about the apparent _viscerality_ of those thoughts, and thus for them to conclude themselves as conscious. It takes as a premise that high-order thought is carried out in cycles of a state machine, where the output of one cycle (or some summarisation thereof) is used as input to the next cycle, along with further inputs retrieved from other sources (such as sense, or memory). A further premise is that each cycle of the state machine can only carry out a single basic processing step. In other words, multiple cycles of the state machine are required for any algorithm or thought process that requires the combination of multiple intermediate results, or requires access to memory structures after intermediate decisions of what to access, or simply requires more complex thinking than one's brain has learned to perform within a single pass through of its neural structures.
 
 Consider the following mental conversation:

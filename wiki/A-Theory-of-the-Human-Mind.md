@@ -1,3 +1,9 @@
+---
+title: A Theory of the Human Mind
+layout: wiki
+parent: Wiki
+---
+
 This page attempts to present a unified theory of how consciousness and high-level thinking function in the human mind, and likely in the mind of other mammals. Most of the points here are unproven assumptions, based on observations of my own thoughts and influenced from current scientific theories around world. See [[Background to A Theory of Mind]] for more details on how this theory was constructed.
 
 While the theory uses the human mind as the primary example, it is focused on the theoretical fundamental architectures of consciousness, irrespective of whether that is in the form of a human biological consciousness, or some other alien mechanical consciousness.

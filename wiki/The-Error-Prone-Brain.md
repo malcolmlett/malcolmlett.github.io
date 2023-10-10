@@ -1,3 +1,9 @@
+---
+title: The Error Prone Brain
+layout: wiki
+parent: Wiki
+---
+
 The high reasoning part of our brain is a state machine, but without the reliable stack of a computer CPU. The architecture of having many processors competing for attention is extremely flexible, but suffers from a susceptibility to wandering thought, circular thought (infinite loops), and stuck thought (dead ends in the state machine).
 
 According to my theory, basic creatures like insects probably employ purely stateless processors. The only state coming from body feedback and hormones. So the evolution of higher reasoning also needed to develop a mechanism for managing the overall processing. That management process is complex, and needs domain knowledge of the data and thought process being carried out. So a natural solution is to just feed the mental state break in as a first class input. Interestingly, this would lead to evolved and learned processors with the processing of problem data and feedback being tightly integrated.

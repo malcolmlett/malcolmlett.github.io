@@ -1,3 +1,9 @@
+---
+title: Executive Control in a proto AGI
+layout: wiki
+parent: Wiki
+---
+
 This page forms part of the [[Proto AGI v1]] series.
 
 I present an examination of executive control for the purpose of building a proto AGI.

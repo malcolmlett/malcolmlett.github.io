@@ -1,3 +1,9 @@
+---
+title: Conscious Calculator v2
+layout: wiki
+parent: Wiki
+---
+
 This page discusses the design of v2 of Conscious Calculator.
 For this one, I'm starting again from scratch and building slowly up using my up to date theories.
 And this one is based on Neural Networks.

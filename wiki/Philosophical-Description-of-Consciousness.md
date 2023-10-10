@@ -1,3 +1,9 @@
+---
+title: Philosophical Description of Consciousness
+layout: wiki
+parent: Wiki
+---
+
 It turns out that Consciousness is nothing like what we thought it was. This article looks at what it means for our understanding of ourselves and our place in the world.
 
 For background, please see [[Background to A Theory of Mind]] and [[A Theory of the Human Mind]].

@@ -1,3 +1,9 @@
+---
+title: General Intelligence Classifications
+layout: wiki
+parent: Wiki
+---
+
 This page forms part of the [[Proto AGI v1]] series.
 
 General intelligence is a classic ill-defined problem: we don't understand it well enough even to define what it is. Many have attempted to define it, but there is no agreement. We don't have a way to measure whether something has general intelligence or not, or the level to which it has general intelligence. We don't have a clear idea of what characteristics should definitely be included vs excluded. In many cases the discussion is further muddied by disagreement on whether to focus on _human-like_ intelligence or a more species-agnostic view of general intelligence. 

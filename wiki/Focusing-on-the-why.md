@@ -1,3 +1,9 @@
+---
+title: Focusing on the why
+layout: wiki
+parent: Wiki
+---
+
 My apologies dear reader, for this page is in a "brain-dump" form and may not be the easiest to read.
 
 # Introduction

@@ -1,3 +1,9 @@
+---
+title: An Investigation of Active Inference
+layout: wiki
+parent: Wiki
+---
+
 # Some mathematical background
 
 ## Expected values

@@ -1,3 +1,9 @@
+---
+title: Focusing on the why for Animal Kingdom
+layout: wiki
+parent: Wiki
+---
+
 This page forms part of the [[Focusing on the Why]] series. It presents a comparison to the Animal Kingdom.
 
 # Introduction

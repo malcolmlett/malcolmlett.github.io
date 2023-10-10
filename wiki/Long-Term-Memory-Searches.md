@@ -1,3 +1,9 @@
+---
+title: Long-Term Memory Searches
+layout: wiki
+parent: Wiki
+---
+
 ## Discussion - Fire-and-Forget Style
 A lot of processes within the humain brain seem to operate on a "fire-and-forget-and-wait" model:
 1. send a one-way request into the abyss

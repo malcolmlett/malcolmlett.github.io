@@ -1,3 +1,9 @@
+---
+title: Archive of Scanned Notes
+layout: wiki
+parent: Wiki
+---
+
 This page lists PDF scans of notes.
 * [Basic Idea.pdf](files/archive/Basic-Idea.pdf) - Oct 2019
 * [Basic Idea - Take 2.pdf](files/archive/Basic-Idea-Take-2.pdf) - Oct 2019

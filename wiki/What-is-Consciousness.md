@@ -1,3 +1,9 @@
+---
+title: What is Consciousness
+layout: wiki
+parent: Wiki
+---
+
 The word "Consciousness" can mean many different things to different people, in different contexts.
 
 ## What does "Consciousness" mean to me?

@@ -1,3 +1,9 @@
+---
+title: A Theory of Consciousness
+layout: wiki
+parent: Wiki
+---
+
 This page outlines a working theory for the algorithmic and computational aspects of consciousness, including its external and internal behaviours, and explains why consciousness evolved in order to support high-level thought. It is suggested that the content of conscious experience is governed by the action of a state machine and its representational _state model_, and which fully explains the content of our internal subjective experience of consciousness. It provides a framework within which consciousness could be emulated, and which may prove to be the basis for artificial general intelligence. Finally, an investigation of the gaps remaining in our understanding is covered and directions for further avenues of research suggested.
 
 # Introduction

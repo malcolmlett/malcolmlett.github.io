@@ -1,3 +1,9 @@
+---
+title: Ideas on Learning
+layout: wiki
+parent: Wiki
+---
+
 This page is a brain-dump of ideas, while I piece together something more logical.
 
 ## Hierarchical Learning

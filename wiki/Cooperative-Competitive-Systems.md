@@ -1,3 +1,9 @@
+---
+title: Cooperative Competitive Systems
+layout: wiki
+parent: Wiki
+---
+
 This page forms part of the [[Proto AGI v1]] series.
 
 # Introduction

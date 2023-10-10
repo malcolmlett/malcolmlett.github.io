@@ -1,3 +1,9 @@
+---
+title: Proto AGI v1
+layout: wiki
+parent: Wiki
+---
+
 Can we use our best current understanding of neuroscience to inspire AI architectures that could form an artificial general intelligence (AGI)? This page attempts to do that. It uses the results of [[A Theory of Consciousness]] as the overarching guide, along with additional biological influences.
 
 This page presents CIPAGIO, _Consciousness Inspired Proto Artificial General Intelligence Operative_. It is part of a collection of documents:

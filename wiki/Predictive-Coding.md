@@ -1,3 +1,9 @@
+---
+title: Predictive Coding
+layout: wiki
+parent: Wiki
+---
+
 # Introduction
 
 Modules within striate cortex of Macaque monkey (Mountcastle, 1997):

@@ -1,3 +1,9 @@
+---
+title: Paper on Loops in AI and Consciousness
+layout: wiki
+parent: Wiki
+---
+
 # PREPRINT DRAFT
 
 ## Title: A Characterisation of processing loops in AI and biological systems and its implications for understanding Consciousness

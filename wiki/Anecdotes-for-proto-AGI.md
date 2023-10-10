@@ -1,3 +1,9 @@
+---
+title: Anecdotes for proto AGI
+layout: wiki
+parent: Wiki
+---
+
 This page forms part of the [[Proto AGI v1]] series.
 
 Here I present a few anecdotes that present some particular aspects of mental behaviour.

@@ -1,3 +1,9 @@
+---
+title: Consciousness is a Semiotic Meta-management Feedback Loop
+layout: wiki
+parent: Wiki
+---
+
 **Abstract**
 
 * Starting from first principles I develop a case for _why_ consciousness evolved: to solve the meta-management problem of computational state trajectories in multi-iteration processing. I show that this is best solved through a meta-management feedback loop that presents a summary of computational state as an additional sense, enabling the first-order control process to meta-manage itself. I then explain _how_ those mechanisms create the various phenomena associated with subjective experience: through the construction of Higher Order Observational States, a specific form of HOT. The "little person in the head" homunculus effect, the "stream of consciousness", and the causal natures of consciousness all find a clear explanation. The theory shows how consciousness, intelligence, and meta-cognition are related, and paves a way towards human-level general intelligence. A précis of the entire theory is included in chapter I.2.

@@ -1,3 +1,9 @@
+---
+title: Survey of reinforcement learning
+layout: wiki
+parent: Wiki
+---
+
 # Classifications
 
 One way of slicing the range of RL algorithms available at the moment is to classify them as using one of two approaches:

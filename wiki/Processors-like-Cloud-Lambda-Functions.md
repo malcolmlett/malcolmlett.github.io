@@ -1,3 +1,9 @@
+---
+title: Processors like Cloud Lambda Functions
+layout: wiki
+parent: Wiki
+---
+
 This started as an idea about simplifying the implementation of processors emitting events (see [Issue #14](https://github.com/toaomalkster/conscious-calculator/issues/14)). Ultimately the theme was to make the implementation of processors more like functional programming.
 
 Then I wondered how far this could be taken?

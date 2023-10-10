@@ -1,3 +1,9 @@
+---
+title: The Hard Problem of Experience
+layout: wiki
+parent: Wiki
+---
+
 tbd.
 see: [Current summary article notes.pdf](files/archive/2020-02-23-Current-summary-article-notes.pdf)
 

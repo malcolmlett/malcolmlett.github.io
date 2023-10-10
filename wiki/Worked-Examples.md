@@ -1,3 +1,9 @@
+---
+title: Worked Examples
+layout: wiki
+parent: Wiki
+---
+
 What actually happens in order to execute a thought process from start to finish? This page answers that through some detailed examples.
 
 ## Solve "3 + 8"

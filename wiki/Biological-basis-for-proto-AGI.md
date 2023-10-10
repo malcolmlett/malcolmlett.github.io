@@ -1,3 +1,9 @@
+---
+title: Biological basis for proto AGI
+layout: wiki
+parent: Wiki
+---
+
 This page forms part of the [[Proto AGI v1]] series.
 
 Here we shall review how the brain achieves its behaviours. We shall focus on both external behaviour (eg: that leads to physical motion) and internal behaviour (eg: thought). The purpose here is not to provide a complete or even accurate account of existing research. Rather, the purpose here is to identify principles that might need to be incorporated within an AI solution in order to build an AGI. Thus the content of this page is based on a mixture of neuroscience research, personal observations, and a careful selection of reasonable assumptions.

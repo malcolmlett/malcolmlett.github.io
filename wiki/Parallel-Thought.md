@@ -1,3 +1,9 @@
+---
+title: Parallel Thought
+layout: wiki
+parent: Wiki
+---
+
 ## Current Model
 1. All processors compete against each other
 2. Attention Attenuator looks at the relative strengths of output from all processors, ignoring anything currently in WM.

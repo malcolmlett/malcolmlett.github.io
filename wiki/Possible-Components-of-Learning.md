@@ -1,3 +1,9 @@
+---
+title: Possible Components of Learning
+layout: wiki
+parent: Wiki
+---
+
 I wonder if the following three main components enable our advanced learning:
 * Skills
 * Prediction
