@@ -44,3 +44,9 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
+  
+# Callouts
+callouts:
+  news:
+    title: News
+    color: green
