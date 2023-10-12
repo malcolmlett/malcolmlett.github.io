@@ -1,12 +1,18 @@
 ---
 title: Consciousness is a Semiotic Meta-management Feedback Loop
-layout: wiki
+layout: article
 parent: Consciousness
+last_modified_date: 2023-09-03
+authors:
+- Malcolm Lett
 ---
+
+{: .note }
+> A précis of the entire theory is included in [chapter I.2](#i2-précis-of-thesis).
 
 **Abstract**
 
-* Starting from first principles I develop a case for _why_ consciousness evolved: to solve the meta-management problem of computational state trajectories in multi-iteration processing. I show that this is best solved through a meta-management feedback loop that presents a summary of computational state as an additional sense, enabling the first-order control process to meta-manage itself. I then explain _how_ those mechanisms create the various phenomena associated with subjective experience: through the construction of Higher Order Observational States, a specific form of HOT. The "little person in the head" homunculus effect, the "stream of consciousness", and the causal natures of consciousness all find a clear explanation. The theory shows how consciousness, intelligence, and meta-cognition are related, and paves a way towards human-level general intelligence. A précis of the entire theory is included in chapter I.2.
+* Starting from first principles I develop a case for _why_ consciousness evolved: to solve the meta-management problem of computational state trajectories in multi-iteration processing. I show that this is best solved through a meta-management feedback loop that presents a summary of computational state as an additional sense, enabling the first-order control process to meta-manage itself. I then explain _how_ those mechanisms create the various phenomena associated with subjective experience: through the construction of Higher Order Observational States, a specific form of HOT. The "little person in the head" homunculus effect, the "stream of consciousness", and the causal natures of consciousness all find a clear explanation. The theory shows how consciousness, intelligence, and meta-cognition are related, and paves a way towards human-level general intelligence.
 
 **Contents**
 
@@ -33,7 +39,7 @@ parent: Consciousness
   * [III.1.2 State Trajectory Control during Multi-iteration Processing](#iii12-state-trajectory-control-during-multi-iteration-processing)
   * [III.1.3 State Trajectory Control during Iterative Inference](#iii13-state-trajectory-control-during-iterative-inference)
   * [III.1.4 Objective learning](#iii14-objective-learning)
-  * [III.1.5 Mode control](#iii15-mode-control)
+  * [III.1.5 Mode control](#iii15-mode-control)
   * [III.1.6 Mode identification](#iii16-mode-identification)
   * [III.1.7 Distributed cooperation](#iii17-distributed-cooperation)
 * [III.2 Interlude: Mechanisms of First-order Control Processes](#iii2-interlude-mechanisms-of-first-order-control-processes)
@@ -461,7 +467,7 @@ For example, some success has been shown using model-based RL to learn the struc
 
 Objective learning can be seen as another form of meta-management for a number of reasons. Firstly, even with a learned objective function, first-order behaviour continues to use low-level representations, where the high-level objective function is used only in the generation of endogenous feedback as part of subsequent behaviour learning. Thus the learning and use of the objective function is a second-order process. Secondly, learning of objective functions is hard (Armstrong et al, 2020), and in complex environments it may too require deliberative involvement.
 
-## III.1.5 Mode control
+## III.1.5 Mode control
 A number of seemingly distinctly different behavioural outcomes share a single principle, referred to here as _mode control_. Mode control involves a decision being made between multiple alternatives and that decision influencing the way in which a subsequent process or decision is carried out.
 
 Examples of mode control include:

@@ -50,3 +50,6 @@ callouts:
   news:
     title: News
     color: green
+  note:
+    title: Note
+    color: blue
