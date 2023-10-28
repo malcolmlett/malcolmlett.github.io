@@ -7,8 +7,19 @@ authors:
 - Malcolm Lett
 ---
 
-{: .note }
+[Download PDF](files/Lett, Malcolm (Sep 2023) - Consciousness is a Semiotic Meta-management Feedback Loop.pdf)
+
+{: .note-title }
+> Looking for a shorter version?
+>
 > A précis of the entire theory is included in [chapter I.2](#i2-précis-of-thesis).
+
+{: .note-title }
+> Got feedback?
+>
+> I'd absolutely love to hear your feedback. The best way is by replying to my [Medium blog post](https://malcolmlett.medium.com/consciousness-is-a-what-kind-of-loop-b0a2a637ebb9). Other contact options are available from the [About]({% link about.md %}) page.
+
+
 
 **Abstract**
 
