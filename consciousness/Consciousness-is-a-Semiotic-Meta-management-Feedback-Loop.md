@@ -149,7 +149,7 @@ I believe that three things go hand-in-hand: general intelligence, meta-manageme
 
 To save the impatient reader from the tedium of waiting till the end, the entire argument is first presented here in brief. Background explanations and some definitions are omitted for the sake of brevity. The rest of the treatise is devoted to detailed explanations of each of the logical steps in the argument thread here.
 
-Any computational system is limited in the complexity that it can handle within a single execution of its computational process. For embodied agents, this appears as a limit on the environmental complexity that they can sufficiently model and respond to within a single executional iteration. For more complex problems, multiple iterations of processing are required in order to determine the next physical action. Such recurrency in processing may for example entail further analysis of the environment in order to better model its state; or consideration of alternative action plans. In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that takes longer to make some decisions. Van Bergen & Kriegeskorte (2020) make the case that recurrency is indeed employed in biology for that very reason.
+Any computational system is limited in the complexity that it can handle within a single execution of its computational process. For embodied agents, this appears as a limit on the environmental complexity that they can sufficiently model and respond to within a single executional iteration. For more complex problems, multiple iterations of processing are required in order to determine the next physical action. Such recurrency in processing may for example entail further analysis of the environment in order to better model its state; or consideration of alternative action plans. In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that takes longer to make some decisions (van Bergen & Kriegeskorte, 2020; Spoerer et al, 2020).
 
 During the execution of a _multi-iteration_ controller within an embodied agent, its control process (CP) passes through an internal state trajectory that is only occasionally associated with interaction with the physical environment. That internal state trajectory can become increasingly disassociated with the physical environment the more complex the problem space and the longer the time required for deliberation. If the multi-iteration processor must also learn through reinforcement then it is likely to exhibit chaotic and unproductive behaviour, particularly so during the earliest stages of learning. Reinforcement from the environment may be too sparse for efficient learning to take place, and simple rules that penalise longer deliberation time may be insufficiently flexible to cater for the complexity of problem domains that the agent may be faced with. Explicit meta-management (second-order) processes are required to observe the first order control process, to model its behaviours, to track its success rate, to act upon it to prevent chaotic behaviours that could harm the agent, and to participate in providing rewards and penalties with more advanced problem-domain aware knowledge than just a simple penalty for deliberation time.
 
@@ -383,7 +383,7 @@ An architecture that employs multiple passes through its network can be conceptu
 
 So, it can be said that there is a limit on the complexity that can be handled by a single pass through any computational process. While that computational process can be extended with more parameters, there are practical limitations to how much it can be extended. For embodied agents, this appears as a limit on the complexity of the environmental and of their own body that they can sufficiently model and respond to within a single processing iteration. In biological terms, this practical limit is manifested in terms of both the energy costs of larger brains and in terms of the time required to reach maturity of brain function.
 
-To adapt to more complex environments, an embodied agent must employ multiple iterations of processing. This enables, for example, further analysis of the environment in order to better model its state; or further deliberation of alternative action plans before proceeding. In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that might take longer to reach a decision for more complex problems. Van Bergen & Kriegeskorte (2020) make the case that recurrency is indeed employed in biology for that very reason.
+To adapt to more complex environments, an embodied agent must employ multiple iterations of processing. This enables, for example, further analysis of the environment in order to better model its state; or further deliberation of alternative action plans before proceeding. In biology, this provides scope for evolutionary pressures to trade off between a more energy hungry complex brain and a simpler less energy intensive one that might take longer to reach a decision for more complex problems. van Bergen & Kriegeskorte (2020), and also Spoerer et al (2020), make the case that recurrency is indeed employed in biology for that very reason.
 
 The term _recurrency_ can mean many things because recurrency can occur at any level. For example, in the case of Recurrent Neural Networks (RNNs) as used within AI, recurrency occurs at the level of a single neuron in order to hold state. Thus I shall continue to use the term _multi-iteration processing_ in order to avoid confusion about the level at which the recurrency occurs in the context of discussion.
 
@@ -1971,6 +1971,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Spillmann, L., Dresp-Langley, B., & Tseng, C.-h. (2015). Beyond the classical receptive field: The effect of contextual stimuli. Journal of Vision, 15(9), 7. https://doi.org/10.1167/15.9.7.
 
+* Spoerer, C. J., Kietzmann, T. C., Mehrer J., Charest, I., & Kriegeskorte, N. (2020). Recurrent neural networks can explain flexible trading of speed and accuracy in biological vision. PLOS Computational Biology, 16(10), e1008215. https://doi.org/10.1371/journal.pcbi.1008215
+
 * Stoljar, D. (2023). Physicalism. In E. N. Zalta & U. Nodelman (Eds.), The Stanford Encyclopedia of Philosophy (Summer 2023 Edition). https://plato.stanford.edu/archives/sum2023/entries/physicalism/
 
 * Sutton, R. S., & Barto, A. G. (1998). Reinforcement Learning: An Introduction. MIT Press.
@@ -1981,9 +1983,9 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Tononi, G. (2004). An information integration theory of consciousness. BMC Neuroscience, 5, 42. https://doi.org/10.1186/1471-2202-5-42
 
-* Tononi, G. (2008). Consciousness as integrated information: A provisional manifesto. Biological Bulletin, 215, 216-42. https://doi.org/10.2307/25470707
+* Tononi, G. (2008). Consciousness as integrated information: A provisional manifesto. Biological Bulletin, 215(3), 216-42. https://doi.org/10.2307/25470707
 
-* Tononi, G., & Edelman, G. M. (1998). Consciousness and complexity. Science, 282, 1846-51. https://doi.org/10.1126/science.282.5395.1846
+* Tononi, G., & Edelman, G. M. (1998). Consciousness and complexity. Science, 282(5395), 1846-51. https://doi.org/10.1126/science.282.5395.1846
 
 * Tononi, G., Sporns, O. (2003). Measuring information integration. BMC Neuroscience, 4, 31. https://doi.org/10.1186%2F1471-2202-4-31
 
@@ -2004,6 +2006,8 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 * Tye, M. (2021). Qualia. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2021 Edition). https://plato.stanford.edu/archives/fall2021/entries/qualia/
 
 * Valdez, P. (2019). Circadian Rhythms in Attention. The Yale Journal of Biology and Medicine, 92(1), 81–92. ([Full Text](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6430172/))
+
+* van Bergen, R. S., & Kriegeskorte, N. (2020). Going in circles is the way forward: the role of recurrence in visual inference, Current Opinion in Neurobiology, 65(176-193). https://doi.org/10.1016/j.conb.2020.11.009
 
 * van Es, D.M., & Knapen, T. (2019). Implicit and explicit learning in reactive and voluntary saccade adaptation. PLOS ONE, 14(1), e0203248. https://doi.org/10.1371/journal.pone.0203248
 
