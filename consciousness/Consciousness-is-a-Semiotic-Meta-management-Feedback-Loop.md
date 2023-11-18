@@ -302,7 +302,7 @@ Other noteworthy theories include the _Orch OR_ theory of consciousness (Hamerof
 ## I.3.5 More Reading
 For those who wish to learn more, the _Stanford Encyclopedia of Philosophy_ has excellent articles covering many topics related to this area. In particular I recommend articles on: [Consciousness](https://plato.stanford.edu/entries/consciousness), [The Unity of Consciousness](https://plato.stanford.edu/entries/consciousness-unity/), [The Contents of Perception](https://plato.stanford.edu/entries/perception-contents/), [Perceptual Experience and Perceptual Justification](https://plato.stanford.edu/entries/perception-justification), [Representational Theories of Consciousness](https://plato.stanford.edu/entries/consciousness-representational/), [The Computational Theory of Mind](https://plato.stanford.edu/entries/computational-mind/), [Neuroscience of Consciousness](https://plato.stanford.edu/entries/consciousness-neuroscience/), [Higher-Order Theories of Consciousness](https://plato.stanford.edu/entries/consciousness-higher), [Introspection](https://plato.stanford.edu/entries/introspection/), [Mental Causation](https://plato.stanford.edu/entries/mental-causation/), [Epiphenomenalism](https://plato.stanford.edu/entries/epiphenomenalism/), and [Animal Consciousness](https://plato.stanford.edu/entries/consciousness-animal/). The Wikipedia article on [Experience](https://en.wikipedia.org/wiki/Experience) also provides an excellent summary of various concerns.
 
-For more background on the various theories of consciousness, I recommend Seth (2022) and the Scholarpedia article on [Models of Consciousness](http://www.scholarpedia.org/article/Models_of_consciousness).
+For more background on the various theories of consciousness, I recommend Seth (2022) and the Scholarpedia article on [Models of Consciousness](https://www.scholarpedia.org/article/Models_of_consciousness).
 
 Many of the broad topics on consciousness require a background in philosophy to really understand them. For some readings, I recommend the Stanford Philosophy articles on [Metaphysical Explanation](https://plato.stanford.edu/entries/metaphysical-explanation/), [Phenomenology: 1. What is Phenomonology](https://plato.stanford.edu/entries/phenomenology), [Functionalism](https://plato.stanford.edu/entries/functionalism/), and the Wikipedia article on [Intentionality](https://en.wikipedia.org/wiki/Intentionality).
 
@@ -1577,13 +1577,13 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Carruthers, P., & Gennaro, R. (2020). Higher-Order Theories of Consciousness. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2020 Edition). <https://plato.stanford.edu/archives/fall2020/entries/consciousness-higher/>
 
-* Carruthers, P., & Williams, D.M. (2022). Model-free metacognition. Cognition, 225, 105117, <https://doi.org/10.1016/j.cognition.2022.105117>.
+* Carruthers, P., & Williams, D.M. (2022). Model-free metacognition. Cognition, 225, 105117, <https://doi.org/10.1016/j.cognition.2022.105117>
 
 * Carter, R., Aldridge, S., Page, M., & Parker, S. (2019). The brain brain book: An illustrated guide to its structure, function, and disorders (3rd ed.). DK Publishing.
 
 * Chalmers, D. J. (1996). The Conscious Mind. Oxford University Press.
 
-* Chalmers, D. J. (2013). Panpsychism and Panprotopsychism. Amherst Lecture in Philosophy, 8, 1-35. ([Full Text](http://www.amherstlecture.org/chalmers2013/))
+* Chalmers, D. J. (2013). Panpsychism and Panprotopsychism. Amherst Lecture in Philosophy, 8, 1-35. ([Full Text](https://www.amherstlecture.org/chalmers2013/))
 
 * Chappell, J., & Sloman, A. (2007). Natural and artificial meta-configured altricial information-processing systems. The International Journal of Unconventional Computing. 3(3), 211-239.
 
@@ -1593,15 +1593,15 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Clark, A., & Karmiloff-Smith, A. (1993). The cognizer’s innards: a psychological and philosophical perspective on the development of thought. Mind and Language, 8, 487–519. <https://doi.org/10.1111/j.1468-0017.1993.tb00299.x>
 
-* Cleeremans, A. (2007). Consciousness: the radical plasticity thesis. Editor(s): Rahul Banerjee, Bikas K. Chakrabarti. Progress in Brain Research, 168, 19-33. Elsevier. <https://doi.org/10.1016/S0079-6123(07)68003-0>.
+* Cleeremans, A. (2007). Consciousness: the radical plasticity thesis. Editor(s): Rahul Banerjee, Bikas K. Chakrabarti. Progress in Brain Research, 168, 19-33. Elsevier. <https://doi.org/10.1016/S0079-6123(07)68003-0>
 
-* Cleeremans, A., Achoui, D., Beauny, A., Keuninckx, L., Martin, J-R., Muñoz-Moldes, S., Vuillaume, L., & de Heering, A. (2020). Learning to Be Conscious. Trends in Cognitive Sciences, 24(2), 112-123, <https://doi.org/10.1016/j.tics.2019.11.011>.
+* Cleeremans, A., Achoui, D., Beauny, A., Keuninckx, L., Martin, J-R., Muñoz-Moldes, S., Vuillaume, L., & de Heering, A. (2020). Learning to Be Conscious. Trends in Cognitive Sciences, 24(2), 112-123, <https://doi.org/10.1016/j.tics.2019.11.011>
 
 * Cleeremans, A., Achoui, D., Beauny, A., Keuninckx, L., Martin, J-R., Muñoz-Moldes, S., Vuillaume, L., & de Heering, A. (2021). Do You Need to Be Conscious to Learn to Be Conscious? Trends in Cognitive Sciences, 25(1), 9-11. <https://doi.org/10.1016/j.tics.2020.10.002>
 
-* Cleeremans, A., Timmermans, B., Pasquali, A. (2007). Consciousness and metarepresentation: A computational sketch. Neural Networks, 20(9), 1032-1039, <https://doi.org/10.1016/j.neunet.2007.09.011>.
+* Cleeremans, A., Timmermans, B., Pasquali, A. (2007). Consciousness and metarepresentation: A computational sketch. Neural Networks, 20(9), 1032-1039, <https://doi.org/10.1016/j.neunet.2007.09.011>
 
-* Colas, C., Fournier, P., Sigaud, O., Chetouani, M., & Oudeyer, P-Y. (2019). CURIOUS: Intrinsically Motivated Modular Multi-Goal Reinforcement Learning. Proceedings of the 36th International Conference on Machine Learning (PMLR), 97, 1331-1340. <https://proceedings.mlr.press/v97/colas19a.html>.
+* Colas, C., Fournier, P., Sigaud, O., Chetouani, M., & Oudeyer, P-Y. (2019). CURIOUS: Intrinsically Motivated Modular Multi-Goal Reinforcement Learning. Proceedings of the 36th International Conference on Machine Learning (PMLR), 97, 1331-1340. <https://proceedings.mlr.press/v97/colas19a.html>
 
 * Crane, T. (2009). Intentionalism. In B. McLaughlin, & A. Beckermann (Eds.), The Oxford Handbook to the Philosophy of Mind (pp. 474–93). Oxford University Press. ([Abstract](https://philpapers.org/rec/CRAI-17))
 
@@ -1613,9 +1613,9 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Daw, N.D., Niv, Y., & Dayan, P. (2005). Uncertainty-based competition between prefrontal and dorsolateral striatal systems for behavioural control. Nature Neuroscience, 8, 1704–1711. <https://doi.org/10.1038/nn1560>
 
-* Dayan, P. (2008). The role of value systems in decision making. In C. Engel, & W. Singer (Eds.), Better Than Conscious? Implications for Performance and Institutional Analysis (pp. 51-70). MIT press. ([Full Text](http://www.gatsby.ucl.ac.uk/~dayan/papers/dayval08.pdf))
+* Dayan, P. (2008). The role of value systems in decision making. In C. Engel, & W. Singer (Eds.), Better Than Conscious? Implications for Performance and Institutional Analysis (pp. 51-70). MIT press. ([Full Text](https://www.gatsby.ucl.ac.uk/~dayan/papers/dayval08.pdf))
 
-* de Vignemont, F. (2020). Bodily Awareness. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2020 Edition). <https://plato.stanford.edu/archives/fall2020/entries/bodily-awareness/>.
+* de Vignemont, F. (2020). Bodily Awareness. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2020 Edition). <https://plato.stanford.edu/archives/fall2020/entries/bodily-awareness/>
 
 * de Wit, S., Corlett, P.R., Aitken, M.R., Dickinson, A., & Fletcher, P.C. (2009). Differential Engagement of the Ventromedial Prefrontal Cortex by Goal-Directed and Habitual Behavior toward Food Pictures in Humans. Journal of Neuroscience, 29(36), 11330-11338. <https://doi.org/10.1523/JNEUROSCI.1639-09.2009>
 
@@ -1655,7 +1655,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Fernandez-Duque, D., Baird, J.A., & Posner, M. I. (2000). Executive attention and metacognitive regulation. Consciousness and Cognition, 9, 288–307. <https://doi.org/10.1006/ccog.2000.0447>
 
-* Fleming, S.M., Dolan, R.J., & Frith, C.D. (2012a). Metacognition: computation, biology and function. Philosophical Transactions of the Royal Society B: Biological Sciences, 367, 1280–1286. <http://doi.org/10.1098/rstb.2012.0021>
+* Fleming, S.M., Dolan, R.J., & Frith, C.D. (2012a). Metacognition: computation, biology and function. Philosophical Transactions of the Royal Society B: Biological Sciences, 367, 1280–1286. <https://doi.org/10.1098/rstb.2012.0021>
 
 * Fleming, S.M., Huijgen, J., & Dolan, R.J. (2012b). Prefrontal contributions to metacognition in perceptual decision making. The Journal of Neuroscience, 32(18), 6117-6125. <https://doi.org/10.1523/JNEUROSCI.6489-11.2012>
 
@@ -1683,7 +1683,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Friston, K. J. (2010). The free-energy principle: a unified brain theory? Nature Reviews Neuroscience, 11, 127–138. <https://doi.org/10.1038/nrn2787>
 
-* Friston, K. J. (2019). A free energy principle for a particular physics. ArXiv, 1906.10184. <https://doi.org/10.48550/arXiv.1906.10184>.
+* Friston, K. J. (2019). A free energy principle for a particular physics. ArXiv, 1906.10184. <https://doi.org/10.48550/arXiv.1906.10184>
 
 * Friston, K. J., FitzGerald, T., Rigoli, F., Schwartenbeck, P., & Pezzulo, G. (2017). Active inference: a process theory. Neural Computation, 29, 1–49. <https://doi.org/10.1162/NECO_a_00912>
 
@@ -1713,7 +1713,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Graziano, M.S.A., & Kastner, S. (2011). Human consciousness and its relationship to social neuroscience: a novel hypothesis. Cognitive Neuroscience, 2, 98–113. <https://doi.org/10.1080/17588928.2011.565121>
 
-* Graziano, M.S.A. (2017). The Attention Schema Theory: A Foundation for Engineering Artificial Consciousness. Frontiers in Robotics and AI, 4, 60. <https://doi.org/10.3389/frobt.2017.00060>.
+* Graziano, M.S.A. (2017). The Attention Schema Theory: A Foundation for Engineering Artificial Consciousness. Frontiers in Robotics and AI, 4, 60. <https://doi.org/10.3389/frobt.2017.00060>
 
 * Guyer, P., & Horstmann, R-P. (2023). Idealism. In E. N. Zalta, & U. Nodelman (Eds.), The Stanford Encyclopedia of Philosophy (Spring 2023 Edition). <https://plato.stanford.edu/archives/spr2023/entries/idealism/>
 
@@ -1731,7 +1731,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Herculano-Houzel, S. (2012). The remarkable, yet not extraordinary, human brain as a scaled-up primate brain and its associated cost. Proceedings of the National Academy of Sciences (PNAS), 109(Supplement 1), 10661-10668. <https://doi.org/10.1073/pnas.1201895109>
 
-* Hochreiter, S., Bengio, Y., Frasconi, P. & Schmidhuber, J. (2001). Gradient flow in recurrent nets: the difficulty of learning long-term dependencies. In S. C. Kremer & J. F. Kolen (Eds.), A Field Guide to Dynamical Recurrent Neural Networks (pp. 237-243). IEEE Press. <https://doi.org/10.1109/9780470544037.ch14>.
+* Hochreiter, S., Bengio, Y., Frasconi, P. & Schmidhuber, J. (2001). Gradient flow in recurrent nets: the difficulty of learning long-term dependencies. In S. C. Kremer & J. F. Kolen (Eds.), A Field Guide to Dynamical Recurrent Neural Networks (pp. 237-243). IEEE Press. <https://doi.org/10.1109/9780470544037.ch14>
 
 * Hoffman, D. D. (2009). The Interface Theory of Perception: Natural Selection Drives True Perception to Swift Extinction. In S. Dickinson, A. Leonardis, B. Schiele, & M. Tarr (Eds.), Object Categorization: Computer and Human Vision Perspectives (pp. 148-166). Cambridge University Press. <https://doi.org/10.1017/CBO9780511635465.009>
 
@@ -1829,11 +1829,11 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Mitchell, K. J., & Johnson, M. K. (2000). Source monitoring: Attributing mental experiences. In E. Tulving & F. I. M. Craik (Eds.), The Oxford handbook of memory (pp. 179-195). Oxford University Press.
 
-* Morasso, P., Casadio, M., Mohan, V., Rea, F., & Zenzeri, J. (2015). Revisiting the body-schema concept in the context of whole-body postural-focal dynamics. Frontiers in Human Neuroscience, 9, 83. <https://doi.org/10.3389/fnhum.2015.00083>.
+* Morasso, P., Casadio, M., Mohan, V., Rea, F., & Zenzeri, J. (2015). Revisiting the body-schema concept in the context of whole-body postural-focal dynamics. Frontiers in Human Neuroscience, 9, 83. <https://doi.org/10.3389/fnhum.2015.00083>
 
 * Morsella, E. (2005). The Function of Phenomenal States: Supramodular Interaction Theory. Psychological Review, 112(1), 1000–21. <https://doi.org/10.1037/0033-295x.112.4.1000>
 
-* Mountcastle, V. B. (1997). The Columnar Organization of the Neocortex. Brain, 120(4), 701-722. <http://doi.org/10.1093/brain/120.4.701> ([Full Text](https://academic.oup.com/brain/article-pdf/120/4/701/17863573/1200701.pdf))
+* Mountcastle, V. B. (1997). The Columnar Organization of the Neocortex. Brain, 120(4), 701-722. <https://doi.org/10.1093/brain/120.4.701> ([Full Text](https://academic.oup.com/brain/article-pdf/120/4/701/17863573/1200701.pdf))
 
 * Mumford, D. (1991). On the computational architecture of neocortex. Biological Cybernetics, 65, 135–145. <https://doi.org/10.1007/bf00202389>
 
@@ -1841,7 +1841,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Nair, A., Pong, V., Dalal, M., Bahl, S., Lin, S., & Levine, S. (2018). Visual Reinforcement Learning with Imagined Goals. Proceedings of the 32nd International Conference on Neural Information Processing Systems (NIPS'18). ([Full Text](https://proceedings.neurips.cc/paper_files/paper/2018/file/7ec69dd44416c46745f6edd947b470cd-Paper.pdf))
 
-* Nelson T.O. (1996). Consciousness and metacognition. American Psychologist, 51(1), 102–116. <http://doi.org/10.1037/0003-066X.51.2.102>
+* Nelson T.O. (1996). Consciousness and metacognition. American Psychologist, 51(1), 102–116. <https://doi.org/10.1037/0003-066X.51.2.102>
 
 * Nessa J. (1996). About signs and symptoms: can semiotics expand the view of clinical medicine? Theoretical Medicine, 17(4), 363–377. <https://doi.org/10.1007/BF00489681>
 
@@ -1877,11 +1877,11 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Picard, R. (1997). Affective Computing. MIT Press.
 
-* Pierson, L. M., & Trout, M. (2017). What is consciousness for? New Ideas in Psychology, 47, 62-71. <https://doi.org/10.1016/j.newideapsych.2017.05.004>.
+* Pierson, L. M., & Trout, M. (2017). What is consciousness for? New Ideas in Psychology, 47, 62-71. <https://doi.org/10.1016/j.newideapsych.2017.05.004>
 
-* Postle B. R. (2016). How does the brain keep information "in mind"? Current Directions in Psychological Science, 25(3), 151–156. <https://doi.org/10.1177/0963721416643063>.
+* Postle B. R. (2016). How does the brain keep information "in mind"? Current Directions in Psychological Science, 25(3), 151–156. <https://doi.org/10.1177/0963721416643063>
 
-* Proske, U., & Gandevia, S.C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiological Reviews, 92, 4, 1651-1697. <https://doi.org/10.1152/physrev.00048.2011>.
+* Proske, U., & Gandevia, S.C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiological Reviews, 92, 4, 1651-1697. <https://doi.org/10.1152/physrev.00048.2011>
 
 * Rahimian, S. (2021). Consciousness in Solitude: Is Social Interaction Really a Necessary Condition? Frontiers in Psychology, 12, 630922. <https://doi.org/10.3389/fpsyg.2021.630922>
 
@@ -1889,7 +1889,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Rigoli, F., Pezzulo, G., Dolan, R., & Friston, K. (2017). A Goal-Directed Bayesian Framework for Categorization. Frontiers in Psychology, 8, 408. <https://doi.org/10.3389/fpsyg.2017.00408>
 
-* Rescorla, M. (2019). A Realist Perspective on Bayesian Cognitive Science. In A. Nes & T. Chan (Eds.), Inference and Consciousness (pp. 40-73). Routledge. <http://doi.org/10.4324/9781315150703-3>
+* Rescorla, M. (2019). A Realist Perspective on Bayesian Cognitive Science. In A. Nes & T. Chan (Eds.), Inference and Consciousness (pp. 40-73). Routledge. <https://doi.org/10.4324/9781315150703-3>
 
 * Rescorla, M. (2020). The Computational Theory of Mind. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2020 Edition). <https://plato.stanford.edu/archives/fall2020/entries/computational-mind/>
 
@@ -1907,13 +1907,13 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Rosenthal, D. M. (1997). A Theory of Consciousness. In N. Block, O. Flanagan, & G. Güzeldere (Eds.), The Nature of Consciousness: Philosophical Debates (pp. 729-753). MIT Press/Bradford Books. ([Full Text](https://davidrosenthal.org/DR-A-Theory.pdf))
 
-* Rosenthal, D. M. (2004). Varieties of higher-order theory. In R. Gennaro (Ed.), Higher-Order Theories of Consciousness: An Anthology (pp. 17-44). John Benjamins. <http://doi.org/10.1075/aicr.56.04ros>
+* Rosenthal, D. M. (2004). Varieties of higher-order theory. In R. Gennaro (Ed.), Higher-Order Theories of Consciousness: An Anthology (pp. 17-44). John Benjamins. <https://doi.org/10.1075/aicr.56.04ros>
 
 * Rosenthal, D. M. (2005). Consciousness and Mind. Oxford University Press.
 
-* Rosenthal, D. M. (2008). Consciousness and Its Function. Neuropsychologia, 46(3), 829-40. <http://doi.org/10.1016/j.neuropsychologia.2007.11.012> 
+* Rosenthal, D. M. (2008). Consciousness and Its Function. Neuropsychologia, 46(3), 829-40. <https://doi.org/10.1016/j.neuropsychologia.2007.11.012>
 
-* Rosenthal, D. M. (2012). Higher-order awareness, misrepresentation and function. Philosophical Transactions of the Royal Society B: Biological Sciences, 367, 1424–1438. <http://doi.org/10.1098/rstb.2011.0353>
+* Rosenthal, D. M. (2012). Higher-order awareness, misrepresentation and function. Philosophical Transactions of the Royal Society B: Biological Sciences, 367, 1424–1438. <https://doi.org/10.1098/rstb.2011.0353>
 
 * Safron, A. (2020). An Integrated World Modeling Theory (IWMT) of Consciousness: Combining Integrated Information and Global Neuronal Workspace Theories With the Free Energy Principle and Active Inference Framework; Toward Solving the Hard Problem and Characterizing Agentic Causation. Frontiers in Artificial Intelligence, 3, 30. <https://doi.org/10.3389/frai.2020.00030>
 
@@ -1921,7 +1921,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Scarantino, A., & de Sousa, R (2021). Emotion. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2021 Edition). <https://plato.stanford.edu/archives/sum2021/entries/emotion/>
 
-* Schmidhuber, J. (2015). Deep learning in neural networks: An overview. Neural Networks, 61, 85-117. <https://doi.org/10.1016/j.neunet.2014.09.003>.
+* Schmidhuber, J. (2015). Deep learning in neural networks: An overview. Neural Networks, 61, 85-117. <https://doi.org/10.1016/j.neunet.2014.09.003>
 
 * Schrittwieser, J., Antonoglou, I., Hubert, T. et al (2020). Mastering Atari, Go, chess and shogi by planning with a learned model. Nature, 588, 604–609. <https://doi.org/10.1038/s41586-020-03051-4>
 
@@ -1939,7 +1939,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Shapiro, L.A. (2013). Dynamics and Cognition. Minds and Machines, 23(3), 353-375. <https://doi.org/10.1002/wcs.1200>
 
-* Shimamura, A.P. (2000). Toward a Cognitive Neuroscience of Metacognition. Consciousness and Cognition, 9(2), 313-323. <https://doi.org/10.1006/ccog.2000.0450>.
+* Shimamura, A.P. (2000). Toward a Cognitive Neuroscience of Metacognition. Consciousness and Cognition, 9(2), 313-323. <https://doi.org/10.1006/ccog.2000.0450>
 
 * Siegel, S. (2021). The Contents of Perception. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2021 Edition). <https://plato.stanford.edu/archives/fall2021/entries/perception-contents/>
 
@@ -1969,7 +1969,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Soon, C., Brass, M., Heinze, H-J., & Haynes, J-D. (2008). Unconscious determinants of free decisions in the human brain. Nature Neuroscience, 11, 543–545. <https://doi.org/10.1038/nn.2112>
 
-* Spillmann, L., Dresp-Langley, B., & Tseng, C.-h. (2015). Beyond the classical receptive field: The effect of contextual stimuli. Journal of Vision, 15(9), 7. <https://doi.org/10.1167/15.9.7>.
+* Spillmann, L., Dresp-Langley, B., & Tseng, C.-h. (2015). Beyond the classical receptive field: The effect of contextual stimuli. Journal of Vision, 15(9), 7. <https://doi.org/10.1167/15.9.7>
 
 * Spoerer, C. J., Kietzmann, T. C., Mehrer J., Charest, I., & Kriegeskorte, N. (2020). Recurrent neural networks can explain flexible trading of speed and accuracy in biological vision. PLOS Computational Biology, 16(10), e1008215. <https://doi.org/10.1371/journal.pcbi.1008215>
 
@@ -1999,7 +1999,7 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Turova, T., & Rolls, E. T. (2019). Analysis of Biased Competition and Cooperation for Attention in the Cerebral Cortex. Frontiers in Computational Neuroscience, 13:51. <https://doi.org/10.3389/fncom.2019.00051>
 
-* Turvey, B.E., & Crowder, S. (2017). Investigators and the Scientific Method. In B. E. Turvey, & S. Crowder (Eds.), Forensic Investigations (pp. 67-90). Academic Press. <https://doi.org/10.1016/B978-0-12-800680-1.00004-3>.
+* Turvey, B.E., & Crowder, S. (2017). Investigators and the Scientific Method. In B. E. Turvey, & S. Crowder (Eds.), Forensic Investigations (pp. 67-90). Academic Press. <https://doi.org/10.1016/B978-0-12-800680-1.00004-3>
 
 * Tye, M. (1996). The function of consciousness. Noûs, 30(3), 287–305. <https://doi.org/10.2307/2216271>
 
@@ -2029,13 +2029,13 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Wayman, E. (2023). When Did the Human Mind Evolve to What It is Today? Smithsonian Magazine. <https://www.smithsonianmag.com/science-nature/when-did-the-human-mind-evolve-to-what-it-is-today-140507905/>
 
-* Webb, T.W., & Graziano, M.S.A. (2015). The attention schema theory: a mechanistic account of subjective awareness. Frontiers in Psychology, 6, 500. <https://doi.org/10.3389/fpsyg.2015.00500>.
+* Webb, T.W., & Graziano, M.S.A. (2015). The attention schema theory: a mechanistic account of subjective awareness. Frontiers in Psychology, 6, 500. <https://doi.org/10.3389/fpsyg.2015.00500>
 
 * Weiskrantz, L., Warrington, E., Sanders, M., & Marshall, J. (1975). Visual Capacity in the Hemianopic Field Following a Restricted Occipital Ablation. Brain: A Journal of Neurology. 97:709-28. <https://doi.org/10.1093/brain/97.1.709>
 
 * Whitmarsh, S., Oostenveld, R., Almeida, R., & Lundqvist, D. (2017). Metacognition of attention during tactile discrimination. NeuroImage, 147, 121-129. <https://doi.org/10.1016/j.neuroimage.2016.11.070>
 
-* Winkielman, P., & Schooler, J. (2012). Consciousness, metacognition, and the unconscious. In S.T. Fiske, & C.N. Macrae (Eds.), The SAGE Handbook of Social Cognition. SAGE Publications Ltd. <http://doi.org/10.4135/9781446247631.n4>
+* Winkielman, P., & Schooler, J. (2012). Consciousness, metacognition, and the unconscious. In S.T. Fiske, & C.N. Macrae (Eds.), The SAGE Handbook of Social Cognition. SAGE Publications Ltd. <https://doi.org/10.4135/9781446247631.n4>
 
 * Wegner, D. M., & Wheatley, T. (1999). Apparent mental causation: sources of the experience of will. American Psychologist, 54(7), 480–492. <https://doi.org/10.1037//0003-066x.54.7.480> ([Full Text](http://wexler.free.fr/library/files/wegner%20(1999)%20apparent%20mental%20causation.%20sources%20of%20the%20experience%20of%20will.pdf))
 
