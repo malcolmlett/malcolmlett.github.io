@@ -1521,43 +1521,43 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 # References
 
-* Armstrong, D. (1994). A Materialist Theory of the Mind. Routledge. (Originally published 1968) https://doi.org/10.4324/9780203003237
+* Armstrong, D. (1994). A Materialist Theory of the Mind. Routledge. (Originally published 1968) <https://doi.org/10.4324/9780203003237>
 
 * Armstrong, D., & Malcolm. N (1984). Consciousness and Causality: A Debate on the Nature of Mind. Blackwell.
 
-* Armstrong, S., Leike, J., Orseau, L., & Legg, S. (2020). Pitfalls of Learning a Reward Function Online. Proceedings of the International Joint Conferences on Artificial Intelligence (IJCAI-20). https://doi.org/10.24963/ijcai.2020/221
+* Armstrong, S., Leike, J., Orseau, L., & Legg, S. (2020). Pitfalls of Learning a Reward Function Online. Proceedings of the International Joint Conferences on Artificial Intelligence (IJCAI-20). <https://doi.org/10.24963/ijcai.2020/221>
 
-* Atasoy, S., Donnelly, I., & Pearson, J. (2016). Human brain networks function in connectome-specific harmonic waves. Nature Communications, 7, 10340. https://doi.org/10.1038/ncomms10340
+* Atasoy, S., Donnelly, I., & Pearson, J. (2016). Human brain networks function in connectome-specific harmonic waves. Nature Communications, 7, 10340. <https://doi.org/10.1038/ncomms10340>
 
-* Atasoy, S., Deco, G., Kringelbach, M. L., & Pearson, J. (2018). Harmonic brain modes: a unifying framework for linking space and time in brain dynamics. Neuroscientist, 24, 277–293. https://doi.org/10.1177/1073858417728032
+* Atasoy, S., Deco, G., Kringelbach, M. L., & Pearson, J. (2018). Harmonic brain modes: a unifying framework for linking space and time in brain dynamics. Neuroscientist, 24, 277–293. <https://doi.org/10.1177/1073858417728032>
 
 * Baars, B. J. (1988). A cognitive theory of consciousness. Cambridge University Press.
 
-* Baars, B. J., & Franklin, S. (2007). An architectural model of conscious and unconscious brain functions: Global Workspace Theory and IDA. Neural Networks, 20(9), 955–961. https://psycnet.apa.org/doi/10.1016/j.neunet.2007.09.013
+* Baars, B. J., & Franklin, S. (2007). An architectural model of conscious and unconscious brain functions: Global Workspace Theory and IDA. Neural Networks, 20(9), 955–961. <https://psycnet.apa.org/doi/10.1016/j.neunet.2007.09.013>
 
 * Baars, B. J. (2021). On Consciousness: Science & Subjectivity - Updated Works on Global Workspace Theory. Nautilus Press.
 
-* Bahrami, B., Olsen, K., Bang, D., Roepstorff, A., Rees, G., & Frith, C. (2012). What failure in collective decision-making tells us about metacognition. Philosophical Transactions of the Royal Society B: Biological Sciences, 367, 1350–1365. https://doi.org/10.1098/rstb.2011.0420
+* Bahrami, B., Olsen, K., Bang, D., Roepstorff, A., Rees, G., & Frith, C. (2012). What failure in collective decision-making tells us about metacognition. Philosophical Transactions of the Royal Society B: Biological Sciences, 367, 1350–1365. <https://doi.org/10.1098/rstb.2011.0420>
 
-* Bayne, T., & Pacherie, E (2007). Narrators and comparators: the architecture of agentive self-awareness [Abstract from Springer]. Synthese, 159, 475–491. https://doi.org/10.1007/s11229-007-9239-9
+* Bayne, T., & Pacherie, E (2007). Narrators and comparators: the architecture of agentive self-awareness [Abstract from Springer]. Synthese, 159, 475–491. <https://doi.org/10.1007/s11229-007-9239-9>
 
-* Beaudoin, L. (1994). Goal processing in autonomous agents [PhD thesis, The University of Birmingham]. https://citeseerx.ist.psu.edu/document?doi=382135c4379c08253810ef8f5823c469af6b69df
+* Beaudoin, L. (1994). Goal processing in autonomous agents [PhD thesis, The University of Birmingham]. <https://citeseerx.ist.psu.edu/document?doi=382135c4379c08253810ef8f5823c469af6b69df>
 
-* Benjamin, A.S., Bjork, R.A., & Schwartz, B.L. (1998). The mismeasure of memory: When retrieval fluency is misleading as a metamnemonic index. Journal of Experimental Psychology: General, 127(1), 55-68. https://psycnet.apa.org/doi/10.1037/0096-3445.127.1.55
+* Benjamin, A.S., Bjork, R.A., & Schwartz, B.L. (1998). The mismeasure of memory: When retrieval fluency is misleading as a metamnemonic index. Journal of Experimental Psychology: General, 127(1), 55-68. <https://psycnet.apa.org/doi/10.1037/0096-3445.127.1.55>
 
-* Bermúdez, J. L. (2005). The Phenomenology of Bodily Awareness [Abstract from Oxford Academic]. In D. W. Smith, & A. L. Thomasson (Eds.), Phenomenology and Philosophy of Mind (pp. 295-316), https://doi.org/10.1093/acprof:oso/9780199272457.003.0015
+* Bermúdez, J. L. (2005). The Phenomenology of Bodily Awareness [Abstract from Oxford Academic]. In D. W. Smith, & A. L. Thomasson (Eds.), Phenomenology and Philosophy of Mind (pp. 295-316), <https://doi.org/10.1093/acprof:oso/9780199272457.003.0015>
 
-* Bernacer, J., & Murillo, J.I. (2014). The Aristotelian conception of habit and its contribution to human neuroscience. Frontiers in Human Neuroscience, 8, 883. https://doi.org/10.3389/fnhum.2014.00883
+* Bernacer, J., & Murillo, J.I. (2014). The Aristotelian conception of habit and its contribution to human neuroscience. Frontiers in Human Neuroscience, 8, 883. <https://doi.org/10.3389/fnhum.2014.00883>
 
-* Birch, J., Ginsburg, S., & Jablonka, E. (2020). Unlimited associative learning and the origins of consciousness: a primer and some predictions. Biology & Philosophy, 35, 56. https://doi.org/10.1007/s10539-020-09772-0
+* Birch, J., Ginsburg, S., & Jablonka, E. (2020). Unlimited associative learning and the origins of consciousness: a primer and some predictions. Biology & Philosophy, 35, 56. <https://doi.org/10.1007/s10539-020-09772-0>
 
-* Block, N. (1995). On a confusion about a function of consciousness. Behavioral and Brain Sciences, 18(2), 227–247. https://doi.org/10.1017/S0140525X00038188 ([Full Text](https://www.researchgate.net/publication/28762323_On_A_Confusion_About_a_Function_of_Consciousness))
+* Block, N. (1995). On a confusion about a function of consciousness. Behavioral and Brain Sciences, 18(2), 227–247. <https://doi.org/10.1017/S0140525X00038188> ([Full Text](https://www.researchgate.net/publication/28762323_On_A_Confusion_About_a_Function_of_Consciousness))
 
-* Block, N. (2002). The Harder Problem of Consciousness. The Journal of Philosophy, 99(8), 391–425. https://doi.org/10.2307/3655621
+* Block, N. (2002). The Harder Problem of Consciousness. The Journal of Philosophy, 99(8), 391–425. <https://doi.org/10.2307/3655621>
 
-* Booth, A. D. (1951). A Signed Binary Multiplication Technique. The Quarterly Journal of Mechanics and Applied Mathematics, 4(2), 236–240. https://doi.org/10.1093/qjmam/4.2.236
+* Booth, A. D. (1951). A Signed Binary Multiplication Technique. The Quarterly Journal of Mechanics and Applied Mathematics, 4(2), 236–240. <https://doi.org/10.1093/qjmam/4.2.236>
 
-* Borţun, D., & Purcarea, V. L. (2013). Marketing and semiotic approach on communication. Consequences on knowledge of target-audiences. Journal of Medicine and Life, 6(1), 103–108. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3632356/
+* Borţun, D., & Purcarea, V. L. (2013). Marketing and semiotic approach on communication. Consequences on knowledge of target-audiences. Journal of Medicine and Life, 6(1), 103–108. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3632356/>
 
 * Bostrom, N. (2003). Ethical issues in advanced artificial intelligence. Science Fiction and Philosophy: From Time Travel to Superintelligence, 277–284.
 
@@ -1565,9 +1565,9 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D. M., Wu, J., Winter, C., ... Amodei, D. (2020). Language Models are Few-Shot Learners. Neural Information Processing Systems (NeurIPS), 33, 1877–1901. ([Full Text](https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf))
 
-* Buckley, C. L., Kim, C. S., McGregor, S., & Seth, A. K. (2017). The free energy principle for action and perception: A mathematical review. Journal of Mathematical Psychology, 81, 55–79. https://doi.org/10.1016/j.jmp.2017.09.004
+* Buckley, C. L., Kim, C. S., McGregor, S., & Seth, A. K. (2017). The free energy principle for action and perception: A mathematical review. Journal of Mathematical Psychology, 81, 55–79. <https://doi.org/10.1016/j.jmp.2017.09.004>
 
-* Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of Internal Medicine, 119(9), 939–943. https://doi.org/10.7326/0003-4819-119-9-199311010-00012
+* Burnum J. F. (1993). Medical diagnosis through semiotics. Giving meaning to the sign. Annals of Internal Medicine, 119(9), 939–943. <https://doi.org/10.7326/0003-4819-119-9-199311010-00012>
 
 * Carruthers, P. (1996). Language, Thought and Consciousness. Cambridge University Press.
 
@@ -1575,9 +1575,9 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Carruthers, P. (2005). Consciousness: essays from a higher-order perspective. Oxford University Press.
 
-* Carruthers, P., & Gennaro, R. (2020). Higher-Order Theories of Consciousness. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2020 Edition). https://plato.stanford.edu/archives/fall2020/entries/consciousness-higher/
+* Carruthers, P., & Gennaro, R. (2020). Higher-Order Theories of Consciousness. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2020 Edition). <https://plato.stanford.edu/archives/fall2020/entries/consciousness-higher/>
 
-* Carruthers, P., & Williams, D.M. (2022). Model-free metacognition. Cognition, 225, 105117, https://doi.org/10.1016/j.cognition.2022.105117.
+* Carruthers, P., & Williams, D.M. (2022). Model-free metacognition. Cognition, 225, 105117, <https://doi.org/10.1016/j.cognition.2022.105117>.
 
 * Carter, R., Aldridge, S., Page, M., & Parker, S. (2019). The brain brain book: An illustrated guide to its structure, function, and disorders (3rd ed.). DK Publishing.
 
@@ -1587,79 +1587,79 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Chappell, J., & Sloman, A. (2007). Natural and artificial meta-configured altricial information-processing systems. The International Journal of Unconventional Computing. 3(3), 211-239.
 
-* Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behavioral and Brain Sciences, 36, 181–204. https://doi.org/10.1017/s0140525x12000477
+* Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behavioral and Brain Sciences, 36, 181–204. <https://doi.org/10.1017/s0140525x12000477>
 
-* Clark, A. (2019). Beyond desire? Agency, choice, and the predictive mind. Australasian Journal of Philosophy, 9, 1–15. https://doi.org/10.1080/00048402.2019.1602661
+* Clark, A. (2019). Beyond desire? Agency, choice, and the predictive mind. Australasian Journal of Philosophy, 9, 1–15. <https://doi.org/10.1080/00048402.2019.1602661>
 
-* Clark, A., & Karmiloff-Smith, A. (1993). The cognizer’s innards: a psychological and philosophical perspective on the development of thought. Mind and Language, 8, 487–519. https://doi.org/10.1111/j.1468-0017.1993.tb00299.x
+* Clark, A., & Karmiloff-Smith, A. (1993). The cognizer’s innards: a psychological and philosophical perspective on the development of thought. Mind and Language, 8, 487–519. <https://doi.org/10.1111/j.1468-0017.1993.tb00299.x>
 
-* Cleeremans, A. (2007). Consciousness: the radical plasticity thesis. Editor(s): Rahul Banerjee, Bikas K. Chakrabarti. Progress in Brain Research, 168, 19-33. Elsevier. https://doi.org/10.1016/S0079-6123(07)68003-0.
+* Cleeremans, A. (2007). Consciousness: the radical plasticity thesis. Editor(s): Rahul Banerjee, Bikas K. Chakrabarti. Progress in Brain Research, 168, 19-33. Elsevier. <https://doi.org/10.1016/S0079-6123(07)68003-0>.
 
-* Cleeremans, A., Achoui, D., Beauny, A., Keuninckx, L., Martin, J-R., Muñoz-Moldes, S., Vuillaume, L., & de Heering, A. (2020). Learning to Be Conscious. Trends in Cognitive Sciences, 24(2), 112-123, https://doi.org/10.1016/j.tics.2019.11.011.
+* Cleeremans, A., Achoui, D., Beauny, A., Keuninckx, L., Martin, J-R., Muñoz-Moldes, S., Vuillaume, L., & de Heering, A. (2020). Learning to Be Conscious. Trends in Cognitive Sciences, 24(2), 112-123, <https://doi.org/10.1016/j.tics.2019.11.011>.
 
-* Cleeremans, A., Achoui, D., Beauny, A., Keuninckx, L., Martin, J-R., Muñoz-Moldes, S., Vuillaume, L., & de Heering, A. (2021). Do You Need to Be Conscious to Learn to Be Conscious? Trends in Cognitive Sciences, 25(1), 9-11. https://doi.org/10.1016/j.tics.2020.10.002
+* Cleeremans, A., Achoui, D., Beauny, A., Keuninckx, L., Martin, J-R., Muñoz-Moldes, S., Vuillaume, L., & de Heering, A. (2021). Do You Need to Be Conscious to Learn to Be Conscious? Trends in Cognitive Sciences, 25(1), 9-11. <https://doi.org/10.1016/j.tics.2020.10.002>
 
-* Cleeremans, A., Timmermans, B., Pasquali, A. (2007). Consciousness and metarepresentation: A computational sketch. Neural Networks, 20(9), 1032-1039, https://doi.org/10.1016/j.neunet.2007.09.011.
+* Cleeremans, A., Timmermans, B., Pasquali, A. (2007). Consciousness and metarepresentation: A computational sketch. Neural Networks, 20(9), 1032-1039, <https://doi.org/10.1016/j.neunet.2007.09.011>.
 
-* Colas, C., Fournier, P., Sigaud, O., Chetouani, M., & Oudeyer, P-Y. (2019). CURIOUS: Intrinsically Motivated Modular Multi-Goal Reinforcement Learning. Proceedings of the 36th International Conference on Machine Learning (PMLR), 97, 1331-1340. https://proceedings.mlr.press/v97/colas19a.html.
+* Colas, C., Fournier, P., Sigaud, O., Chetouani, M., & Oudeyer, P-Y. (2019). CURIOUS: Intrinsically Motivated Modular Multi-Goal Reinforcement Learning. Proceedings of the 36th International Conference on Machine Learning (PMLR), 97, 1331-1340. <https://proceedings.mlr.press/v97/colas19a.html>.
 
 * Crane, T. (2009). Intentionalism. In B. McLaughlin, & A. Beckermann (Eds.), The Oxford Handbook to the Philosophy of Mind (pp. 474–93). Oxford University Press. ([Abstract](https://philpapers.org/rec/CRAI-17))
 
-* Cushman, F. (2020). Rationalization is rational. Behavioral and Brain Sciences, 43, E28. https://doi.org/10.1017/S0140525X19001730
+* Cushman, F. (2020). Rationalization is rational. Behavioral and Brain Sciences, 43, E28. <https://doi.org/10.1017/S0140525X19001730>
 
-* Cushman, F., & Morris, A. (2015). Habitual control of goal selection in humans. Proceedings of the National Academy of Sciences (PNAS), 112(45), 13817–13822. https://doi.org/10.1073/pnas.1506367112
+* Cushman, F., & Morris, A. (2015). Habitual control of goal selection in humans. Proceedings of the National Academy of Sciences (PNAS), 112(45), 13817–13822. <https://doi.org/10.1073/pnas.1506367112>
 
 * Damasio, A. R. (2006). Descartes' Error. Vantage. (Original work published 1994)
 
-* Daw, N.D., Niv, Y., & Dayan, P. (2005). Uncertainty-based competition between prefrontal and dorsolateral striatal systems for behavioural control. Nature Neuroscience, 8, 1704–1711. https://doi.org/10.1038/nn1560
+* Daw, N.D., Niv, Y., & Dayan, P. (2005). Uncertainty-based competition between prefrontal and dorsolateral striatal systems for behavioural control. Nature Neuroscience, 8, 1704–1711. <https://doi.org/10.1038/nn1560>
 
 * Dayan, P. (2008). The role of value systems in decision making. In C. Engel, & W. Singer (Eds.), Better Than Conscious? Implications for Performance and Institutional Analysis (pp. 51-70). MIT press. ([Full Text](http://www.gatsby.ucl.ac.uk/~dayan/papers/dayval08.pdf))
 
-* de Vignemont, F. (2020). Bodily Awareness. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2020 Edition). https://plato.stanford.edu/archives/fall2020/entries/bodily-awareness/.
+* de Vignemont, F. (2020). Bodily Awareness. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2020 Edition). <https://plato.stanford.edu/archives/fall2020/entries/bodily-awareness/>.
 
-* de Wit, S., Corlett, P.R., Aitken, M.R., Dickinson, A., & Fletcher, P.C. (2009). Differential Engagement of the Ventromedial Prefrontal Cortex by Goal-Directed and Habitual Behavior toward Food Pictures in Humans. Journal of Neuroscience, 29(36), 11330-11338. https://doi.org/10.1523/JNEUROSCI.1639-09.2009
+* de Wit, S., Corlett, P.R., Aitken, M.R., Dickinson, A., & Fletcher, P.C. (2009). Differential Engagement of the Ventromedial Prefrontal Cortex by Goal-Directed and Habitual Behavior toward Food Pictures in Humans. Journal of Neuroscience, 29(36), 11330-11338. <https://doi.org/10.1523/JNEUROSCI.1639-09.2009>
 
-* Deco, G., Jirsa, V. K., Robinson, P. A., Breakspear, M., & Friston, K. (2008). The dynamic brain: from spiking neurons to neural masses and cortical fields. PLOS Computational Biology, 4(8), e1000092. https://doi.org/10.1371/journal.pcbi.1000092
+* Deco, G., Jirsa, V. K., Robinson, P. A., Breakspear, M., & Friston, K. (2008). The dynamic brain: from spiking neurons to neural masses and cortical fields. PLOS Computational Biology, 4(8), e1000092. <https://doi.org/10.1371/journal.pcbi.1000092>
 
 * Dehaene, S. (2014). Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts. Penguin Books.
 
-* Dehaene, S., Sergent, C. & Changeux, J. P. (2003). A neuronal network model linking subjective reports and objective physiological data during conscious perception. The Proceedings of the National Academy of Sciences (PNAS), 100, 8520-5. https://doi.org/10.1073/pnas.1332574100
+* Dehaene, S., Sergent, C. & Changeux, J. P. (2003). A neuronal network model linking subjective reports and objective physiological data during conscious perception. The Proceedings of the National Academy of Sciences (PNAS), 100, 8520-5. <https://doi.org/10.1073/pnas.1332574100>
 
 * Dennett, D. C. (1991). Consciousness explained (P. Weiner, Illustrator). Little, Brown and Co.
 
 * Descartes, R. (1911). The Principles of Philosophy (E. Haldane & G. Ross, Trans.). Cambridge University Press. (Original work published 1644)
 
-* Dolan, R.J., & Dayan, P. (2013). Goals and habits in the brain. Neuron, 80, 312–325. https://doi.org/10.1016/j.neuron.2013.09.007
+* Dolan, R.J., & Dayan, P. (2013). Goals and habits in the brain. Neuron, 80, 312–325. <https://doi.org/10.1016/j.neuron.2013.09.007>
 
-* Douskos, C. (2018). Deliberation and Automaticity in Habitual Acts. Ethics in Progress, 9(1), 25–43. https://doi.org/10.14746/eip.2018.1.2
+* Douskos, C. (2018). Deliberation and Automaticity in Habitual Acts. Ethics in Progress, 9(1), 25–43. <https://doi.org/10.14746/eip.2018.1.2>
 
 * Dunlosky, J., & Bjork, R.A. (2008). Handbook of metamemory and memory (1st ed.). Psychology Press.
 
-* Earl, B. (2014). The biological function of consciousness. Frontiers in Psychology, 5, 697. https://doi.org/10.3389/fpsyg.2014.00697
+* Earl, B. (2014). The biological function of consciousness. Frontiers in Psychology, 5, 697. <https://doi.org/10.3389/fpsyg.2014.00697>
 
 * Edelman, G. M. (1987). Neural Darwinism: The Theory of Neuronal Group Selection. Basic Books, Inc.
 
-* Edelman, G. M. (2003). Naturalizing consciousness: a theoretical framework. The Proceedings of the National Academy of Sciences (PNAS), 100, 5520-4. https://doi.org/10.1073/pnas.0931349100
+* Edelman, G. M. (2003). Naturalizing consciousness: a theoretical framework. The Proceedings of the National Academy of Sciences (PNAS), 100, 5520-4. <https://doi.org/10.1073/pnas.0931349100>
 
-* Edelman, G. M., Gally, J. A., & Baars, B. J. (2011). Biology of consciousness. Frontiers in Psychology, 2, 4. https://doi.org/10.3389/fpsyg.2011.00004 ([Full Text](https://www.frontiersin.org/articles/10.3389/fpsyg.2011.00004/full))
+* Edelman, G. M., Gally, J. A., & Baars, B. J. (2011). Biology of consciousness. Frontiers in Psychology, 2, 4. <https://doi.org/10.3389/fpsyg.2011.00004> ([Full Text](https://www.frontiersin.org/articles/10.3389/fpsyg.2011.00004/full))
 
 * Edelman, G. M., & Tononi, G. (2000). A universe of consciousness: how matter becomes imagination. New York, NY: Basic Books.
 
-* Erulkar, S.D., & Lentz, T.L. (2023). Nervous system. Encyclopedia Britannica. https://www.britannica.com/science/nervous-system
+* Erulkar, S.D., & Lentz, T.L. (2023). Nervous system. Encyclopedia Britannica. <https://www.britannica.com/science/nervous-system>
 
-* Eysenbach, B., Gupta, A., Ibarz, J., & Levine, S. (2019). Diversity is All You Need: Learning Skills without a Reward Function. ArXiv, 1802.06070. https://doi.org/10.48550/arXiv.1802.06070
+* Eysenbach, B., Gupta, A., Ibarz, J., & Levine, S. (2019). Diversity is All You Need: Learning Skills without a Reward Function. ArXiv, 1802.06070. <https://doi.org/10.48550/arXiv.1802.06070>
 
-* Favela, L. H. (2020). Dynamical systems theory in cognitive science and neuroscience. Philosophy Compass, 15, e12695. https://doi.org/10.1111/phc3.12695
+* Favela, L. H. (2020). Dynamical systems theory in cognitive science and neuroscience. Philosophy Compass, 15, e12695. <https://doi.org/10.1111/phc3.12695>
 
-* Fernandez Cruz, A.L., Arango-Muoz, S., Volz, K.G. (2016). Oops, scratch that! Monitoring ones own errors during mental calculation. Cognition, 146, 110-120. https://doi.org/10.1016/j.cognition.2015.09.005
+* Fernandez Cruz, A.L., Arango-Muoz, S., Volz, K.G. (2016). Oops, scratch that! Monitoring ones own errors during mental calculation. Cognition, 146, 110-120. <https://doi.org/10.1016/j.cognition.2015.09.005>
 
-* Fernandez-Duque, D., Baird, J.A., & Posner, M. I. (2000). Executive attention and metacognitive regulation. Consciousness and Cognition, 9, 288–307. https://doi.org/10.1006/ccog.2000.0447
+* Fernandez-Duque, D., Baird, J.A., & Posner, M. I. (2000). Executive attention and metacognitive regulation. Consciousness and Cognition, 9, 288–307. <https://doi.org/10.1006/ccog.2000.0447>
 
-* Fleming, S.M., Dolan, R.J., & Frith, C.D. (2012a). Metacognition: computation, biology and function. Philosophical Transactions of the Royal Society B: Biological Sciences, 367, 1280–1286. http://doi.org/10.1098/rstb.2012.0021
+* Fleming, S.M., Dolan, R.J., & Frith, C.D. (2012a). Metacognition: computation, biology and function. Philosophical Transactions of the Royal Society B: Biological Sciences, 367, 1280–1286. <http://doi.org/10.1098/rstb.2012.0021>
 
-* Fleming, S.M., Huijgen, J., & Dolan, R.J. (2012b). Prefrontal contributions to metacognition in perceptual decision making. The Journal of Neuroscience, 32(18), 6117-6125. https://doi.org/10.1523/JNEUROSCI.6489-11.2012
+* Fleming, S.M., Huijgen, J., & Dolan, R.J. (2012b). Prefrontal contributions to metacognition in perceptual decision making. The Journal of Neuroscience, 32(18), 6117-6125. <https://doi.org/10.1523/JNEUROSCI.6489-11.2012>
 
-* Fleming, S.M., & Lau, H.C. (2014). How to measure metacognition. Frontiers in Human Neuroscience, 8, 443. https://doi.org/10.3389/fnhum.2014.00443
+* Fleming, S.M., & Lau, H.C. (2014). How to measure metacognition. Frontiers in Human Neuroscience, 8, 443. <https://doi.org/10.3389/fnhum.2014.00443>
 
 * Fodor, J. (1975). The Language of Thought. Thomas Y. Crowell.
 
@@ -1673,229 +1673,229 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Fodor, J. (2008). Lot 2: The Language of Thought Revisited. Clarendon Press.
 
-* Fonseca-Azevedo, K., & Herculano-Houzel, S. (2012). Metabolic constraint imposes tradeoff between body size and number of brain neurons in human evolution. Proceedings of the National Academy of Sciences (PNAS), 109(45), 18571-18576, https://doi.org/10.1073/pnas.1206390109
+* Fonseca-Azevedo, K., & Herculano-Houzel, S. (2012). Metabolic constraint imposes tradeoff between body size and number of brain neurons in human evolution. Proceedings of the National Academy of Sciences (PNAS), 109(45), 18571-18576, <https://doi.org/10.1073/pnas.1206390109>
 
-* Franklin, S. & Graesser, A. (1999). A software agent model of consciousness. Consciousness and Cognition, 8, 285-301. https://doi.org/10.1006/ccog.1999.0391
+* Franklin, S. & Graesser, A. (1999). A software agent model of consciousness. Consciousness and Cognition, 8, 285-301. <https://doi.org/10.1006/ccog.1999.0391>
 
-* Friston, K. J. (2005). A theory of cortical responses. Philosophical Transactions of the Royal Society B: Biological Sciences, 360(1456), 815–836. https://doi.org/10.1098/rstb.2005.1622
+* Friston, K. J. (2005). A theory of cortical responses. Philosophical Transactions of the Royal Society B: Biological Sciences, 360(1456), 815–836. <https://doi.org/10.1098/rstb.2005.1622>
 
-* Friston, K. J. (2008). Hierarchical models in the brain. PLOS Computational Biology, 4(11). https://doi.org/10.1371/journal.pcbi.1000211
+* Friston, K. J. (2008). Hierarchical models in the brain. PLOS Computational Biology, 4(11). <https://doi.org/10.1371/journal.pcbi.1000211>
 
-* Friston, K. J. (2010). The free-energy principle: a unified brain theory? Nature Reviews Neuroscience, 11, 127–138. https://doi.org/10.1038/nrn2787
+* Friston, K. J. (2010). The free-energy principle: a unified brain theory? Nature Reviews Neuroscience, 11, 127–138. <https://doi.org/10.1038/nrn2787>
 
-* Friston, K. J. (2019). A free energy principle for a particular physics. ArXiv, 1906.10184. https://doi.org/10.48550/arXiv.1906.10184.
+* Friston, K. J. (2019). A free energy principle for a particular physics. ArXiv, 1906.10184. <https://doi.org/10.48550/arXiv.1906.10184>.
 
-* Friston, K. J., FitzGerald, T., Rigoli, F., Schwartenbeck, P., & Pezzulo, G. (2017). Active inference: a process theory. Neural Computation, 29, 1–49. https://doi.org/10.1162/NECO_a_00912
+* Friston, K. J., FitzGerald, T., Rigoli, F., Schwartenbeck, P., & Pezzulo, G. (2017). Active inference: a process theory. Neural Computation, 29, 1–49. <https://doi.org/10.1162/NECO_a_00912>
 
-* Friston, K. J., Kahan, J., Razi, A., Stephan, K. E., & Sporns, O. (2014). On nodes and modes in resting state fMRI. NeuroImage, 99, 533–547. https://doi.org/10.1016/j.neuroimage.2014.05.056
+* Friston, K. J., Kahan, J., Razi, A., Stephan, K. E., & Sporns, O. (2014). On nodes and modes in resting state fMRI. NeuroImage, 99, 533–547. <https://doi.org/10.1016/j.neuroimage.2014.05.056>
 
-* Friston, K. J., Kilner, J., & Harrison, L. (2006). A free energy principle for the brain. Journal of Physiology-Paris, 100(1-3), 70–87. https://doi.org/10.1016/j.jphysparis.2006.10.001
+* Friston, K. J., Kilner, J., & Harrison, L. (2006). A free energy principle for the brain. Journal of Physiology-Paris, 100(1-3), 70–87. <https://doi.org/10.1016/j.jphysparis.2006.10.001>
 
-* Frith, C.D. (2008). Social cognition. Philosophical Transactions of the Royal Society B: Biological Sciences, 363, 2033–2039. https://doi.org/10.1098/rstb.2008.0005
+* Frith, C.D. (2008). Social cognition. Philosophical Transactions of the Royal Society B: Biological Sciences, 363, 2033–2039. <https://doi.org/10.1098/rstb.2008.0005>
 
-* Gans, J. S. (2017). Self-Regulating Artificial General Intelligence. ArXiv, 1711.04309. https://doi.org/10.48550/arXiv.1711.04309
+* Gans, J. S. (2017). Self-Regulating Artificial General Intelligence. ArXiv, 1711.04309. <https://doi.org/10.48550/arXiv.1711.04309>
 
 * Gennaro, R. (1996). Consciousness and Self-Consciousness. John Benjamins.
 
 * Gennaro, R. (2012). The Consciousness Paradox: Consciousness, Concepts, and Higher-Order Thoughts. MIT press.
 
-* Gęsiarz, F., & Crockett, M.J. (2015). Goal-directed, habitual and Pavlovian prosocial behavior. Frontiers in Behavioral Neuroscience, 9, 135. https://doi.org/10.3389/fnbeh.2015.00135
+* Gęsiarz, F., & Crockett, M.J. (2015). Goal-directed, habitual and Pavlovian prosocial behavior. Frontiers in Behavioral Neuroscience, 9, 135. <https://doi.org/10.3389/fnbeh.2015.00135>
 
-* Ghosh, D., Gupta, A., & Levine, S. (2019). Learning Actionable Representations with Goal-Conditioned Policies. ArXiv, 1811.07819. https://doi.org/10.48550/arXiv.1811.07819
+* Ghosh, D., Gupta, A., & Levine, S. (2019). Learning Actionable Representations with Goal-Conditioned Policies. ArXiv, 1811.07819. <https://doi.org/10.48550/arXiv.1811.07819>
 
 * Gleitman, H., Fridlund, A. J., & Reisberg, D. (2004). Psychology (6th ed.). Norton.
 
-* Glorot, X., Bordes, A. & Bengio, Y. (2010). Deep Sparse Rectifier Neural Networks. Proceedings of the 14th International Conference on Artificial Intelligence and Statistics, Journal of Machine Learning Research, 15, 315-323. https://proceedings.mlr.press/v15/glorot11a.html
+* Glorot, X., Bordes, A. & Bengio, Y. (2010). Deep Sparse Rectifier Neural Networks. Proceedings of the 14th International Conference on Artificial Intelligence and Statistics, Journal of Machine Learning Research, 15, 315-323. <https://proceedings.mlr.press/v15/glorot11a.html>
 
 * Godfrey-Smith, P. (2016). Other Minds: The octopus and the evolution of intelligent life. Farrar, Straus and Giroux.
 
-* Goff, P., Seager, W., & Allen-Hermanson, S. (2022). Panpsychism. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2022 Edition). https://plato.stanford.edu/archives/sum2022/entries/panpsychism/
+* Goff, P., Seager, W., & Allen-Hermanson, S. (2022). Panpsychism. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2022 Edition). <https://plato.stanford.edu/archives/sum2022/entries/panpsychism/>
 
-* Graziano, M.S.A., & Kastner, S. (2011). Human consciousness and its relationship to social neuroscience: a novel hypothesis. Cognitive Neuroscience, 2, 98–113. https://doi.org/10.1080/17588928.2011.565121
+* Graziano, M.S.A., & Kastner, S. (2011). Human consciousness and its relationship to social neuroscience: a novel hypothesis. Cognitive Neuroscience, 2, 98–113. <https://doi.org/10.1080/17588928.2011.565121>
 
-* Graziano, M.S.A. (2017). The Attention Schema Theory: A Foundation for Engineering Artificial Consciousness. Frontiers in Robotics and AI, 4, 60. https://doi.org/10.3389/frobt.2017.00060.
+* Graziano, M.S.A. (2017). The Attention Schema Theory: A Foundation for Engineering Artificial Consciousness. Frontiers in Robotics and AI, 4, 60. <https://doi.org/10.3389/frobt.2017.00060>.
 
-* Guyer, P., & Horstmann, R-P. (2023). Idealism. In E. N. Zalta, & U. Nodelman (Eds.), The Stanford Encyclopedia of Philosophy (Spring 2023 Edition). https://plato.stanford.edu/archives/spr2023/entries/idealism/
+* Guyer, P., & Horstmann, R-P. (2023). Idealism. In E. N. Zalta, & U. Nodelman (Eds.), The Stanford Encyclopedia of Philosophy (Spring 2023 Edition). <https://plato.stanford.edu/archives/spr2023/entries/idealism/>
 
-* Hameroff S. (2021). 'Orch OR' is the most complete, and most easily falsifiable theory of consciousness. Cognitive Neuroscience, 12(2), 74–76. https://doi.org/10.1080/17588928.2020.1839037
+* Hameroff S. (2021). 'Orch OR' is the most complete, and most easily falsifiable theory of consciousness. Cognitive Neuroscience, 12(2), 74–76. <https://doi.org/10.1080/17588928.2020.1839037>
 
-* Hameroff, S., & Penrose, R. (2014). Consciousness in the universe: A review of the ‘Orch OR’ theory. Physics of Life Reviews, 11(1), 39–78. https://doi.org/10.1016/j.plrev.2013.08.002
+* Hameroff, S., & Penrose, R. (2014). Consciousness in the universe: A review of the ‘Orch OR’ theory. Physics of Life Reviews, 11(1), 39–78. <https://doi.org/10.1016/j.plrev.2013.08.002>
 
 * Hameroff, S., & Penrose, R. (1996b). Conscious events as orchestrated space–time selections. Journal of Consciousness Studies, 3(1), 36–53. ([Full Text](https://www.neuroteoretica.org/html_sezioni/pdf/Hameroff_ConsciousEvents.pdf))
 
-* Hameroff, S., & Penrose, R. (1996a). Orchestrated reduction of quantum coherence in brain microtubules: A model for consciousness. Mathematics and Computers in Simulation, 40(3–4), 453–480. https://doi.org/10.1016/0378-4754(96)80476-9
+* Hameroff, S., & Penrose, R. (1996a). Orchestrated reduction of quantum coherence in brain microtubules: A model for consciousness. Mathematics and Computers in Simulation, 40(3–4), 453–480. <https://doi.org/10.1016/0378-4754(96)80476-9>
 
 * Haynes, J-D. (2013). Beyond Libet: Long-Term Prediction of Free Choices from Neuroimaging Signals. In A. Clark, J. Kiverstein, & T. Vierkant (Eds.), Decomposing the Will (pp. 60-72). Oxford University Press.
 
-* Henshilwood, C.S., Sealy, J.C., Yates, R., Cruz-Uribe, K., Goldberg, P., Grine, F.E., Klein, R.G., Poggenpoel, C., van Niekerk, K., & Watts, I. (2001). Blombos Cave, Southern Cape, South Africa: Preliminary Report on the 1992–1999 Excavations of the Middle Stone Age Level. Journal of Archaeological Science, 28(4), 421-448. https://doi.org/10.1006/jasc.2000.0638
+* Henshilwood, C.S., Sealy, J.C., Yates, R., Cruz-Uribe, K., Goldberg, P., Grine, F.E., Klein, R.G., Poggenpoel, C., van Niekerk, K., & Watts, I. (2001). Blombos Cave, Southern Cape, South Africa: Preliminary Report on the 1992–1999 Excavations of the Middle Stone Age Level. Journal of Archaeological Science, 28(4), 421-448. <https://doi.org/10.1006/jasc.2000.0638>
 
-* Herculano-Houzel, S. (2012). The remarkable, yet not extraordinary, human brain as a scaled-up primate brain and its associated cost. Proceedings of the National Academy of Sciences (PNAS), 109(Supplement 1), 10661-10668. https://doi.org/10.1073/pnas.1201895109
+* Herculano-Houzel, S. (2012). The remarkable, yet not extraordinary, human brain as a scaled-up primate brain and its associated cost. Proceedings of the National Academy of Sciences (PNAS), 109(Supplement 1), 10661-10668. <https://doi.org/10.1073/pnas.1201895109>
 
-* Hochreiter, S., Bengio, Y., Frasconi, P. & Schmidhuber, J. (2001). Gradient flow in recurrent nets: the difficulty of learning long-term dependencies. In S. C. Kremer & J. F. Kolen (Eds.), A Field Guide to Dynamical Recurrent Neural Networks (pp. 237-243). IEEE Press. https://doi.org/10.1109/9780470544037.ch14.
+* Hochreiter, S., Bengio, Y., Frasconi, P. & Schmidhuber, J. (2001). Gradient flow in recurrent nets: the difficulty of learning long-term dependencies. In S. C. Kremer & J. F. Kolen (Eds.), A Field Guide to Dynamical Recurrent Neural Networks (pp. 237-243). IEEE Press. <https://doi.org/10.1109/9780470544037.ch14>.
 
-* Hoffman, D. D. (2009). The Interface Theory of Perception: Natural Selection Drives True Perception to Swift Extinction. In S. Dickinson, A. Leonardis, B. Schiele, & M. Tarr (Eds.), Object Categorization: Computer and Human Vision Perspectives (pp. 148-166). Cambridge University Press. https://doi.org/10.1017/CBO9780511635465.009
+* Hoffman, D. D. (2009). The Interface Theory of Perception: Natural Selection Drives True Perception to Swift Extinction. In S. Dickinson, A. Leonardis, B. Schiele, & M. Tarr (Eds.), Object Categorization: Computer and Human Vision Perspectives (pp. 148-166). Cambridge University Press. <https://doi.org/10.1017/CBO9780511635465.009>
 
-* Hoffman, D. D. (2023). The Interface Theory of Perception. In J. T. Wixted, & J. Serences (Eds.), Stevens' Handbook of Experimental Psychology and Cognitive Neuroscience. Wiley. https://doi.org/10.1002/9781119170174.epcn216
+* Hoffman, D. D. (2023). The Interface Theory of Perception. In J. T. Wixted, & J. Serences (Eds.), Stevens' Handbook of Experimental Psychology and Cognitive Neuroscience. Wiley. <https://doi.org/10.1002/9781119170174.epcn216>
 
-* Hoffman, D. D., Singh, M. & Prakash, C (2015). The Interface Theory of Perception. Psychonometric Bulletin & Review, 22, 1480–1506. https://doi.org/10.3758/s13423-015-0890-8 ([Full Text](https://link.springer.com/article/10.3758/s13423-015-0890-8))
+* Hoffman, D. D., Singh, M. & Prakash, C (2015). The Interface Theory of Perception. Psychonometric Bulletin & Review, 22, 1480–1506. <https://doi.org/10.3758/s13423-015-0890-8> ([Full Text](https://link.springer.com/article/10.3758/s13423-015-0890-8))
 
 * Humphrey, N. (2002). The uses of consciousness. In N. Humphrey (Ed.), The mind made flesh: Essays from the frontiers of evolution and psychology (pp. 65–85). Oxford University Press.
 
-* Hunt, T., & Schooler, J. W. (2019). The Easy Part of the Hard Problem: A Resonance Theory of Consciousness. Frontiers in Human Neuroscience, 13, 378. https://doi.org/10.3389/fnhum.2019.00378
+* Hunt, T., & Schooler, J. W. (2019). The Easy Part of the Hard Problem: A Resonance Theory of Consciousness. Frontiers in Human Neuroscience, 13, 378. <https://doi.org/10.3389/fnhum.2019.00378>
 
-* Johnson, M. K., Hashtroudi, S., & Lindsay D. S. (1993). Source Monitoring [Abstract from APA PsycNet]. Psychological Bulletin, 114(1), 3–28. https://psycnet.apa.org/doi/10.1037/0033-2909.114.1.3
+* Johnson, M. K., Hashtroudi, S., & Lindsay D. S. (1993). Source Monitoring [Abstract from APA PsycNet]. Psychological Bulletin, 114(1), 3–28. <https://psycnet.apa.org/doi/10.1037/0033-2909.114.1.3>
 
 * Kahneman, D. (2011). Thinking, fast and slow. Farrar, Straus and Giroux.
 
-* Kanai, R., Chang, A., Yu, Y., de Abril, I. M, Biehl, M, & Guttenberg, N. (2019). Information generation as a functional basis of consciousness. Neuroscience of Consciousness, 2019(1), niz016. https://doi.org/10.1093/nc/niz016
+* Kanai, R., Chang, A., Yu, Y., de Abril, I. M, Biehl, M, & Guttenberg, N. (2019). Information generation as a functional basis of consciousness. Neuroscience of Consciousness, 2019(1), niz016. <https://doi.org/10.1093/nc/niz016>
 
 * Kant, I. (1929). Critique Of Pure Reason (N. K. Smith, Trans.). Macmillan. (Original work published 1781)
 
-* Kaplan, R., & Friston, K. J (2018). Planning and navigation as active inference. Biol. Cybern., 112, 323–343. https://doi.org/10.1007/s00422-018-0753-2
+* Kaplan, R., & Friston, K. J (2018). Planning and navigation as active inference. Biol. Cybern., 112, 323–343. <https://doi.org/10.1007/s00422-018-0753-2>
 
 * Karmiloff-Smith, A. (1992). Beyond Modularity: A Developmental Perspective on Cognitive Science. MIT Press
 
-* Karmiloff-Smith, A. (1994). Précis of Beyond modularity: A developmental perspective on cognitive science. Behavioral and Brain Sciences, 17(4), 693-707. https://doi.org/10.1017/S0140525X00036621
+* Karmiloff-Smith, A. (1994). Précis of Beyond modularity: A developmental perspective on cognitive science. Behavioral and Brain Sciences, 17(4), 693-707. <https://doi.org/10.1017/S0140525X00036621>
 
-* Kilner, J. M., Friston, K. J., & Frith, C. D. (2007). Predictive coding: an account of the mirror neuron system. Cognitive Processing, 8(3), 159–166. https://doi.org/10.1007/s10339-007-0170-2
+* Kilner, J. M., Friston, K. J., & Frith, C. D. (2007). Predictive coding: an account of the mirror neuron system. Cognitive Processing, 8(3), 159–166. <https://doi.org/10.1007/s10339-007-0170-2>
 
 * Kim, J. (2002). The Many Problems of Mental Causation (Excerpt). In Chalmers, D. (Ed.), Philosophy of Mind: Classical and Contemporary Readings (170-179). Oxford University Press.
 
 * Koriat A. (2007). Metacognition and consciousness. In P. D. Zelazo, M. Moscovitch, & E. Thompson (Eds.), The Cambridge Handbook of Consciousness (pp. 289–325). Cambridge University Press.
 
-* Kotchoubey, B. (2018). Human Consciousness: Where Is It From and What Is It for. Frontiers in Psychology, 9, 567. https://doi.org/10.3389/fpsyg.2018.00567
+* Kotchoubey, B. (2018). Human Consciousness: Where Is It From and What Is It for. Frontiers in Psychology, 9, 567. <https://doi.org/10.3389/fpsyg.2018.00567>
 
-* Kriegel, U. (2003). Consciousness as intransitive self-consciousness: two views and an argument. Canadian Journal of Philosophy, 33(1), 103–132. https://doi.org/10.1080/00455091.2003.10716537
+* Kriegel, U. (2003). Consciousness as intransitive self-consciousness: two views and an argument. Canadian Journal of Philosophy, 33(1), 103–132. <https://doi.org/10.1080/00455091.2003.10716537>
 
-* Kriegel, U. (2004). The functional role of consciousness: a phenomenological approach. Phenomenology and the Cognitive Sciences, 3, 171–93. https://doi.org/10.1023/B:PHEN.0000040833.23356.6a
+* Kriegel, U. (2004). The functional role of consciousness: a phenomenological approach. Phenomenology and the Cognitive Sciences, 3, 171–93. <https://doi.org/10.1023/B:PHEN.0000040833.23356.6a>
 
 * Kriegel, U. (2006). The same-order monitoring theory of consciousness. In U. Kriegel & K. Williford (Eds.), Self-Representational Approaches to Consciousness (pp. 143-170). MIT Press.
 
 * Kriegel, U. (2009). Subjective Consciousness. Oxford University Press.
 
-* Kriegesgorte, K. (2015). Deep Neural Networks: A New Framework for Modeling Biological Vision and Brain Information Processing. Annual Review of Vision Science, 1, 417–446. https://doi.org/10.1146/annurev-vision-082114-035447
+* Kriegesgorte, K. (2015). Deep Neural Networks: A New Framework for Modeling Biological Vision and Brain Information Processing. Annual Review of Vision Science, 1, 417–446. <https://doi.org/10.1146/annurev-vision-082114-035447>
 
 * Krishevsky, A., Sutskever, I., & Hinton, G. (2012). ImageNet Classification with Deep Convolutional Neural Networks. Advances in Neural Information Processing Systems (NeurIPS), 25, 1097–1105. ([Full Text](https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
 
 * Krueger, P. M, & Griffiths, T. (2018). Shaping Model-Free Habits with Model-Based Goals. Cognitive Science. ([SemanticScholar](https://api.semanticscholar.org/CorpusID:47019631)) ([Full Text](https://cocosci.princeton.edu/papers/kruegerCogsci.pdf))
 
-* Krüger, J., & Aiple, F. (1988). Multimicroelectrode investigation of monkey striate cortex: spike train correlations in the infragranular layers [Abstract from PubMed]. Journal of Neurophysiology, 60(2), 798–828. https://doi.org/10.1152/jn.1988.60.2.798
+* Krüger, J., & Aiple, F. (1988). Multimicroelectrode investigation of monkey striate cortex: spike train correlations in the infragranular layers [Abstract from PubMed]. Journal of Neurophysiology, 60(2), 798–828. <https://doi.org/10.1152/jn.1988.60.2.798>
 
-* Lazaridis, A., Fachantidis, A., & Vlahavas, I. (2020). Deep Reinforcement Learning: A State-of-the-Art Walkthrough. Journal of Artificial Intelligence Research, 69, 1421-1471. https://doi.org/10.1613/jair.1.12412
+* Lazaridis, A., Fachantidis, A., & Vlahavas, I. (2020). Deep Reinforcement Learning: A State-of-the-Art Walkthrough. Journal of Artificial Intelligence Research, 69, 1421-1471. <https://doi.org/10.1613/jair.1.12412>
 
-* Levine, J. (1983). Materialism and qualia: The explanatory gap. Pacific Philosophical Quarterly, 64, 354-361. https://doi.org/10.1111/j.1468-0114.1983.tb00207.x ([Full Text](https://www.newdualism.org/papers/J.Levine/Levine-PPQ1983.pdf))
+* Levine, J. (1983). Materialism and qualia: The explanatory gap. Pacific Philosophical Quarterly, 64, 354-361. <https://doi.org/10.1111/j.1468-0114.1983.tb00207.x> ([Full Text](https://www.newdualism.org/papers/J.Levine/Levine-PPQ1983.pdf))
 
-* Libet, B. (1985). Unconscious Cerebral Initiative and the Role of Conscious Will in Voluntary Action. Behavioral and Brain Sciences, 8(4), 529–566. https://psycnet.apa.org/doi/10.1017/S0140525X00044903
+* Libet, B. (1985). Unconscious Cerebral Initiative and the Role of Conscious Will in Voluntary Action. Behavioral and Brain Sciences, 8(4), 529–566. <https://psycnet.apa.org/doi/10.1017/S0140525X00044903>
 
 * Libet, B. (2004). Mind Time: The Temporal Factor in Consciousness. Harvard University Press.
 
-* Linser, K., & Goschke, T. (2007). Unconscious modulation of the conscious experience of voluntary control. Cognition, 104, 459–475. https://doi.org/10.1016/j.cognition.2006.07.009
+* Linser, K., & Goschke, T. (2007). Unconscious modulation of the conscious experience of voluntary control. Cognition, 104, 459–475. <https://doi.org/10.1016/j.cognition.2006.07.009>
 
-* Liao, S., & Gendler, T (2020). Imagination. In E. N. Zalta (ed.), The Stanford Encyclopedia of Philosophy (Summer 2020 Edition). https://plato.stanford.edu/archives/sum2020/entries/imagination/
+* Liao, S., & Gendler, T (2020). Imagination. In E. N. Zalta (ed.), The Stanford Encyclopedia of Philosophy (Summer 2020 Edition). <https://plato.stanford.edu/archives/sum2020/entries/imagination/>
 
-* Livingstone, M. S., & Hubel, D. H. (1987). Psychophysical Evidence for Separate Channels for the Perception of Form, Color, Movement, and Depth. Journal of Neuroscience, 7, 236-368. https://doi.org/10.1523/jneurosci.07-11-03416.1987
+* Livingstone, M. S., & Hubel, D. H. (1987). Psychophysical Evidence for Separate Channels for the Perception of Form, Color, Movement, and Depth. Journal of Neuroscience, 7, 236-368. <https://doi.org/10.1523/jneurosci.07-11-03416.1987>
 
-* Llinás, R., Ribary, U., Contreras, D., & Pedroarena, C. (1998). The neuronal basis for consciousness. Philosophical Transactions of the Royal Society B: Biological Sciences, 353, 1841-1849. https://doi.org/10.1098%2Frstb.1998.0336
+* Llinás, R., Ribary, U., Contreras, D., & Pedroarena, C. (1998). The neuronal basis for consciousness. Philosophical Transactions of the Royal Society B: Biological Sciences, 353, 1841-1849. <https://doi.org/10.1098%2Frstb.1998.0336>
 
-* Luo, T. Z., & Maunsell, J. H. R. (2019). Attention can be subdivided into neurobiological components corresponding to distinct behavioral effects. Proceedings of the National Academy of Sciences (PNAS), 116 (52), 26187-26194. https://doi.org/10.1073/pnas.1902286116
+* Luo, T. Z., & Maunsell, J. H. R. (2019). Attention can be subdivided into neurobiological components corresponding to distinct behavioral effects. Proceedings of the National Academy of Sciences (PNAS), 116 (52), 26187-26194. <https://doi.org/10.1073/pnas.1902286116>
 
 * Lycan, W. (1996). Consciousness and Experience. MIT Press.
 
-* Lycan, W. (2004). The superiority of HOP to HOT. In R. J. Gennaro (Ed.), Higher-Order Theories of Consciousness: An Anthology (pp. 93–114). John Bejamins. https://doi.org/10.1075/aicr.56.07lyc
+* Lycan, W. (2004). The superiority of HOP to HOT. In R. J. Gennaro (Ed.), Higher-Order Theories of Consciousness: An Anthology (pp. 93–114). John Bejamins. <https://doi.org/10.1075/aicr.56.07lyc>
 
-* Ma, W. J. (2019). Bayesian Decision Models: A Primer. Neuron, 104, 164–175. https://doi.org/10.1016/j.neuron.2019.09.037
+* Ma, W. J. (2019). Bayesian Decision Models: A Primer. Neuron, 104, 164–175. <https://doi.org/10.1016/j.neuron.2019.09.037>
 
-* Mandrigin, A (2021). The where of bodily awareness. Synthese, 198, 1887–1903. https://doi.org/10.1007/s11229-019-02171-3
+* Mandrigin, A (2021). The where of bodily awareness. Synthese, 198, 1887–1903. <https://doi.org/10.1007/s11229-019-02171-3>
 
 * Marcus, G. (2001). The Algebraic Mind. MIT Press
 
-* Marković, D., Goschke, T., & Kiebel, S.J. (2021). Meta-control of the exploration-exploitation dilemma emerges from probabilistic inference over a hierarchy of time scales. Cognitive, Affective & Behavioral Neuroscience, 21(3), 509–533. https://doi.org/10.3758/s13415-020-00837-x
+* Marković, D., Goschke, T., & Kiebel, S.J. (2021). Meta-control of the exploration-exploitation dilemma emerges from probabilistic inference over a hierarchy of time scales. Cognitive, Affective & Behavioral Neuroscience, 21(3), 509–533. <https://doi.org/10.3758/s13415-020-00837-x>
 
-* McCarthy, J. (2008). The well-designed child. Artificial Intelligence, 172(18), 2003-2014. https://doi.org/10.1016/j.artint.2008.10.001
+* McCarthy, J. (2008). The well-designed child. Artificial Intelligence, 172(18), 2003-2014. <https://doi.org/10.1016/j.artint.2008.10.001>
 
-* McCulloch, W., & Pitts, W. (1943). A Logical Calculus of the Ideas Immanent in Nervous Activity. Bulletin of Mathematical Biophysics, 7, 115–133. https://doi.org/10.1007/BF02478259
+* McCulloch, W., & Pitts, W. (1943). A Logical Calculus of the Ideas Immanent in Nervous Activity. Bulletin of Mathematical Biophysics, 7, 115–133. <https://doi.org/10.1007/BF02478259>
 
-* McGinn, C. (1989). Can We Solve the Mind-Body Problem? Mind, 98(391), 349–366. https://doi.org/10.1093/mind/XCVIII.391.349
+* McGinn, C. (1989). Can We Solve the Mind-Body Problem? Mind, 98(391), 349–366. <https://doi.org/10.1093/mind/XCVIII.391.349>
 
-* McGinn, C. (1991). The Problem of Consciousness: Essays Toward a Resolution [Abstract from PhilPapers]. Blackwell. https://doi.org/10.2307/2186044
+* McGinn, C. (1991). The Problem of Consciousness: Essays Toward a Resolution [Abstract from PhilPapers]. Blackwell. <https://doi.org/10.2307/2186044>
 
 * Metcalfe, J., & Shimamura, A.P. (Eds.) (1994). Metacognition: Knowing about knowing. MIT press.
 
-* Miller P. (2016). Dynamical systems, attractors, and neural circuits. F1000Research, 5, F1000 Faculty Rev-992. https://doi.org/10.12688/f1000research.7698.1
+* Miller P. (2016). Dynamical systems, attractors, and neural circuits. F1000Research, 5, F1000 Faculty Rev-992. <https://doi.org/10.12688/f1000research.7698.1>
 
-* Millidge, B., Seth, A., & Buckley, C. (2021). Predictive Coding: a Theoretical and Experimental Review. Computer Science. https://doi.org/10.48550/arXiv.2107.12979 ([Full Text](https://arxiv.org/abs/2107.12979))
+* Millidge, B., Seth, A., & Buckley, C. (2021). Predictive Coding: a Theoretical and Experimental Review. Computer Science. <https://doi.org/10.48550/arXiv.2107.12979> ([Full Text](https://arxiv.org/abs/2107.12979))
 
-* Mitchell, K. J., & Johnson, M. K. (2009). Source monitoring 15 years later: what have we learned from fMRI about the neural mechanisms of source memory? Psychological Bulletin, 135(4), 638–677. https://doi.org/10.1037/a0015849
+* Mitchell, K. J., & Johnson, M. K. (2009). Source monitoring 15 years later: what have we learned from fMRI about the neural mechanisms of source memory? Psychological Bulletin, 135(4), 638–677. <https://doi.org/10.1037/a0015849>
 
 * Mitchell, K. J., & Johnson, M. K. (2000). Source monitoring: Attributing mental experiences. In E. Tulving & F. I. M. Craik (Eds.), The Oxford handbook of memory (pp. 179-195). Oxford University Press.
 
-* Morasso, P., Casadio, M., Mohan, V., Rea, F., & Zenzeri, J. (2015). Revisiting the body-schema concept in the context of whole-body postural-focal dynamics. Frontiers in Human Neuroscience, 9, 83. https://doi.org/10.3389/fnhum.2015.00083.
+* Morasso, P., Casadio, M., Mohan, V., Rea, F., & Zenzeri, J. (2015). Revisiting the body-schema concept in the context of whole-body postural-focal dynamics. Frontiers in Human Neuroscience, 9, 83. <https://doi.org/10.3389/fnhum.2015.00083>.
 
-* Morsella, E. (2005). The Function of Phenomenal States: Supramodular Interaction Theory. Psychological Review, 112(1), 1000–21. https://doi.org/10.1037/0033-295x.112.4.1000
+* Morsella, E. (2005). The Function of Phenomenal States: Supramodular Interaction Theory. Psychological Review, 112(1), 1000–21. <https://doi.org/10.1037/0033-295x.112.4.1000>
 
-* Mountcastle, V. B. (1997). The Columnar Organization of the Neocortex. Brain, 120(4), 701-722. http://doi.org/10.1093/brain/120.4.701 ([Full Text](https://academic.oup.com/brain/article-pdf/120/4/701/17863573/1200701.pdf))
+* Mountcastle, V. B. (1997). The Columnar Organization of the Neocortex. Brain, 120(4), 701-722. <http://doi.org/10.1093/brain/120.4.701> ([Full Text](https://academic.oup.com/brain/article-pdf/120/4/701/17863573/1200701.pdf))
 
-* Mumford, D. (1991). On the computational architecture of neocortex. Biological Cybernetics, 65, 135–145. https://doi.org/10.1007/bf00202389
+* Mumford, D. (1991). On the computational architecture of neocortex. Biological Cybernetics, 65, 135–145. <https://doi.org/10.1007/bf00202389>
 
-* Nagel, T. (1974). What Is It Like to Be a Bat? The Philosophical Review, 83(4), 435–450. https://doi.org/10.2307/2183914
+* Nagel, T. (1974). What Is It Like to Be a Bat? The Philosophical Review, 83(4), 435–450. <https://doi.org/10.2307/2183914>
 
 * Nair, A., Pong, V., Dalal, M., Bahl, S., Lin, S., & Levine, S. (2018). Visual Reinforcement Learning with Imagined Goals. Proceedings of the 32nd International Conference on Neural Information Processing Systems (NIPS'18). ([Full Text](https://proceedings.neurips.cc/paper_files/paper/2018/file/7ec69dd44416c46745f6edd947b470cd-Paper.pdf))
 
-* Nelson T.O. (1996). Consciousness and metacognition. American Psychologist, 51(1), 102–116. http://doi.org/10.1037/0003-066X.51.2.102
+* Nelson T.O. (1996). Consciousness and metacognition. American Psychologist, 51(1), 102–116. <http://doi.org/10.1037/0003-066X.51.2.102>
 
-* Nessa J. (1996). About signs and symptoms: can semiotics expand the view of clinical medicine? Theoretical Medicine, 17(4), 363–377. https://doi.org/10.1007/BF00489681
+* Nessa J. (1996). About signs and symptoms: can semiotics expand the view of clinical medicine? Theoretical Medicine, 17(4), 363–377. <https://doi.org/10.1007/BF00489681>
 
-* Nisbett, R. E., & Wilson, T. D. (1977a). Telling More Than We Can Know: Verbal Reports on Mental Processes. Psychological Review, 84(3), 231–259. https://doi.org/10.1037/0033-295X.84.3.231
+* Nisbett, R. E., & Wilson, T. D. (1977a). Telling More Than We Can Know: Verbal Reports on Mental Processes. Psychological Review, 84(3), 231–259. <https://doi.org/10.1037/0033-295X.84.3.231>
 
-* Nisbett, R. E. & Wilson, T. D. (1977b). The halo effect: evidence for unconscious alteration of judgments. Journal of Personality and Social Psychology, 35(4), 250–256. https://psycnet.apa.org/doi/10.1037/0022-3514.35.4.250
+* Nisbett, R. E. & Wilson, T. D. (1977b). The halo effect: evidence for unconscious alteration of judgments. Journal of Personality and Social Psychology, 35(4), 250–256. <https://psycnet.apa.org/doi/10.1037/0022-3514.35.4.250>
 
-* Norman, E. (2020). Why Metacognition Is Not Always Helpful. Frontiers in Psychology, 11, 1537. https://doi.org/10.3389/fpsyg.2020.01537
+* Norman, E. (2020). Why Metacognition Is Not Always Helpful. Frontiers in Psychology, 11, 1537. <https://doi.org/10.3389/fpsyg.2020.01537>
 
-* Oizumi, M., Albantakis, L., & Tononi, G. (2014). From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0. PLOS Computational Biology, 10(5), e1003588. https://doi.org/10.1371/journal.pcbi.1003588
+* Oizumi, M., Albantakis, L., & Tononi, G. (2014). From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0. PLOS Computational Biology, 10(5), e1003588. <https://doi.org/10.1371/journal.pcbi.1003588>
 
-* OpenAI, O., Plappert, M., Sampedro, R., Xu, T., Akkaya, I., Kosaraju, V., Welinder, P., D'Sa, R., Petron, A., Pinto, H.P., Paino, A., Noh, H., Weng, L., Yuan, Q., Chu, C., & Zaremba, W. (2021). Asymmetric self-play for automatic goal discovery in robotic manipulation. ArXiv, 2101.04882. https://doi.org/10.48550/arXiv.2101.04882
+* OpenAI, O., Plappert, M., Sampedro, R., Xu, T., Akkaya, I., Kosaraju, V., Welinder, P., D'Sa, R., Petron, A., Pinto, H.P., Paino, A., Noh, H., Weng, L., Yuan, Q., Chu, C., & Zaremba, W. (2021). Asymmetric self-play for automatic goal discovery in robotic manipulation. ArXiv, 2101.04882. <https://doi.org/10.48550/arXiv.2101.04882>
 
-* Overgaard, M., & Kirkeby-Hinrup, A. (2021). Is Learning the Cognitive Basis of Consciousness? The Moral Implications of SOMA. Trends in Cognitive Sciences, 25(1), 8-9. https://doi.org/10.1016/j.tics.2020.08.004
+* Overgaard, M., & Kirkeby-Hinrup, A. (2021). Is Learning the Cognitive Basis of Consciousness? The Moral Implications of SOMA. Trends in Cognitive Sciences, 25(1), 8-9. <https://doi.org/10.1016/j.tics.2020.08.004>
 
-* Paiva, A. R. C., Park, I., & Príncipe, J. C. (2010). Inner Products for Representation and Learning in the Spike Train Domain [Abstract from ScienceDirect]. In K. G. Oweiss (Ed.), Statistical Signal Processing for Neuroscience and Neurotechnology (pp. 265-309). Academic Press. https://doi.org/10.1016/B978-0-12-375027-3.00008-9
+* Paiva, A. R. C., Park, I., & Príncipe, J. C. (2010). Inner Products for Representation and Learning in the Spike Train Domain [Abstract from ScienceDirect]. In K. G. Oweiss (Ed.), Statistical Signal Processing for Neuroscience and Neurotechnology (pp. 265-309). Academic Press. <https://doi.org/10.1016/B978-0-12-375027-3.00008-9>
 
 * Paris, S.G., & Winograd, P. (1990). How metacognition can promote academic learning and instruction. In B. F Jones & L. Idol (Eds.), Dimensions of thinking and cognitive instruction (pp. 15-51). Lawrence Erlbaum Associates, Inc.
 
-* Pasquali, A., Timmermans, B., & Cleeremans, A. (2010). Know thyself: metacognitive networks and measures of consciousness. Cognition, 117(2), 182–190. https://doi.org/10.1016/j.cognition.2010.08.010
+* Pasquali, A., Timmermans, B., & Cleeremans, A. (2010). Know thyself: metacognitive networks and measures of consciousness. Cognition, 117(2), 182–190. <https://doi.org/10.1016/j.cognition.2010.08.010>
 
 * Pattee, H. H. (2007). The Necessity of Biosemiotics: Matter-symbol Complementarity. In M. Barbieri (Ed.), Introduction to Biosemiotics (pp. 115-132). Springer.
 
-* Pattee, H. H. (2021). Symbol Grounding Precedes Interpretation. Biosemiotics, 14(3), 561–568. https://doi.org/10.1007/S12304-021-09458-4
+* Pattee, H. H. (2021). Symbol Grounding Precedes Interpretation. Biosemiotics, 14(3), 561–568. <https://doi.org/10.1007/S12304-021-09458-4>
 
-* Paul, E.J., Smith, J.D., Valentin, V.V., Turner, B.O., Barbey, A.K., & Ashby, F.G. (2015). Neural networks underlying the metacognitive uncertainty response. Cortex, 71, 306-322. https://doi.org/10.1016/j.cortex.2015.07.028
+* Paul, E.J., Smith, J.D., Valentin, V.V., Turner, B.O., Barbey, A.K., & Ashby, F.G. (2015). Neural networks underlying the metacognitive uncertainty response. Cortex, 71, 306-322. <https://doi.org/10.1016/j.cortex.2015.07.028>
 
-* Paulin, M.G., & Cahill-Lane, J. (2021), Events in Early Nervous System Evolution. Topics in Cognitive Science, 13, 25-44. https://doi.org/10.1111/tops.12461
+* Paulin, M.G., & Cahill-Lane, J. (2021), Events in Early Nervous System Evolution. Topics in Cognitive Science, 13, 25-44. <https://doi.org/10.1111/tops.12461>
 
 * Peirce, C. S. (1982). The Writings of Charles S. Peirce: A Chronological Edition (Volumes 1–8). Indiana University Press.
 
-* Peters, F. (2010). Consciousness as recursive, spatiotemporal self-location. Psychological Research, 74, 407–421. https://doi.org/10.1007/s00426-009-0258-7
+* Peters, F. (2010). Consciousness as recursive, spatiotemporal self-location. Psychological Research, 74, 407–421. <https://doi.org/10.1007/s00426-009-0258-7>
 
 * Picard, R. (1997). Affective Computing. MIT Press.
 
-* Pierson, L. M., & Trout, M. (2017). What is consciousness for? New Ideas in Psychology, 47, 62-71. https://doi.org/10.1016/j.newideapsych.2017.05.004.
+* Pierson, L. M., & Trout, M. (2017). What is consciousness for? New Ideas in Psychology, 47, 62-71. <https://doi.org/10.1016/j.newideapsych.2017.05.004>.
 
-* Postle B. R. (2016). How does the brain keep information "in mind"? Current Directions in Psychological Science, 25(3), 151–156. https://doi.org/10.1177/0963721416643063.
+* Postle B. R. (2016). How does the brain keep information "in mind"? Current Directions in Psychological Science, 25(3), 151–156. <https://doi.org/10.1177/0963721416643063>.
 
-* Proske, U., & Gandevia, S.C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiological Reviews, 92, 4, 1651-1697. https://doi.org/10.1152/physrev.00048.2011.
+* Proske, U., & Gandevia, S.C. (2012). The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiological Reviews, 92, 4, 1651-1697. <https://doi.org/10.1152/physrev.00048.2011>.
 
-* Rahimian, S. (2021). Consciousness in Solitude: Is Social Interaction Really a Necessary Condition? Frontiers in Psychology, 12, 630922. https://doi.org/10.3389/fpsyg.2021.630922
+* Rahimian, S. (2021). Consciousness in Solitude: Is Social Interaction Really a Necessary Condition? Frontiers in Psychology, 12, 630922. <https://doi.org/10.3389/fpsyg.2021.630922>
 
-* Rao, R. P. & Ballard, D. H. (1999). Predictive coding in the visual cortex: A functional interpretation of some extra-classical receptive-field effects. Nature Neuroscience, 2, 79–87. https://doi.org/10.1038/4580
+* Rao, R. P. & Ballard, D. H. (1999). Predictive coding in the visual cortex: A functional interpretation of some extra-classical receptive-field effects. Nature Neuroscience, 2, 79–87. <https://doi.org/10.1038/4580>
 
-* Rigoli, F., Pezzulo, G., Dolan, R., & Friston, K. (2017). A Goal-Directed Bayesian Framework for Categorization. Frontiers in Psychology, 8, 408. https://doi.org/10.3389/fpsyg.2017.00408
+* Rigoli, F., Pezzulo, G., Dolan, R., & Friston, K. (2017). A Goal-Directed Bayesian Framework for Categorization. Frontiers in Psychology, 8, 408. <https://doi.org/10.3389/fpsyg.2017.00408>
 
-* Rescorla, M. (2019). A Realist Perspective on Bayesian Cognitive Science. In A. Nes & T. Chan (Eds.), Inference and Consciousness (pp. 40-73). Routledge. http://doi.org/10.4324/9781315150703-3
+* Rescorla, M. (2019). A Realist Perspective on Bayesian Cognitive Science. In A. Nes & T. Chan (Eds.), Inference and Consciousness (pp. 40-73). Routledge. <http://doi.org/10.4324/9781315150703-3>
 
-* Rescorla, M. (2020). The Computational Theory of Mind. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2020 Edition). https://plato.stanford.edu/archives/fall2020/entries/computational-mind/
+* Rescorla, M. (2020). The Computational Theory of Mind. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2020 Edition). <https://plato.stanford.edu/archives/fall2020/entries/computational-mind/>
 
-* Robb, David, John Heil, & Sophie Gibb (2023). Mental Causation. In E. N. Zalta & U. Nodelman (Eeds.), The Stanford Encyclopedia of Philosophy (Spring 2023 Edition). https://plato.stanford.edu/archives/spr2023/entries/mental-causation/
+* Robb, David, John Heil, & Sophie Gibb (2023). Mental Causation. In E. N. Zalta & U. Nodelman (Eeds.), The Stanford Encyclopedia of Philosophy (Spring 2023 Edition). <https://plato.stanford.edu/archives/spr2023/entries/mental-causation/>
 
-* Robinson, W. (2019). Epiphenomenalism. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2019 Edition). https://plato.stanford.edu/archives/sum2019/entries/epiphenomenalism/
+* Robinson, W. (2019). Epiphenomenalism. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2019 Edition). <https://plato.stanford.edu/archives/sum2019/entries/epiphenomenalism/>
 
 * Rolls, E. T. (2004). A higher order syntactic thought (HOST) theory of consciousness. In R. J. Gennaro (Ed.), Higher-order theories of consciousness (pp. 137–172). John Benjamins.
 
@@ -1907,115 +1907,115 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Rosenthal, D. M. (1997). A Theory of Consciousness. In N. Block, O. Flanagan, & G. Güzeldere (Eds.), The Nature of Consciousness: Philosophical Debates (pp. 729-753). MIT Press/Bradford Books. ([Full Text](https://davidrosenthal.org/DR-A-Theory.pdf))
 
-* Rosenthal, D. M. (2004). Varieties of higher-order theory. In R. Gennaro (Ed.), Higher-Order Theories of Consciousness: An Anthology (pp. 17-44). John Benjamins. http://doi.org/10.1075/aicr.56.04ros
+* Rosenthal, D. M. (2004). Varieties of higher-order theory. In R. Gennaro (Ed.), Higher-Order Theories of Consciousness: An Anthology (pp. 17-44). John Benjamins. <http://doi.org/10.1075/aicr.56.04ros>
 
 * Rosenthal, D. M. (2005). Consciousness and Mind. Oxford University Press.
 
-* Rosenthal, D. M. (2008). Consciousness and Its Function. Neuropsychologia, 46(3), 829-40. http://doi.org/10.1016/j.neuropsychologia.2007.11.012 
+* Rosenthal, D. M. (2008). Consciousness and Its Function. Neuropsychologia, 46(3), 829-40. <http://doi.org/10.1016/j.neuropsychologia.2007.11.012> 
 
-* Rosenthal, D. M. (2012). Higher-order awareness, misrepresentation and function. Philosophical Transactions of the Royal Society B: Biological Sciences, 367, 1424–1438. http://doi.org/10.1098/rstb.2011.0353
+* Rosenthal, D. M. (2012). Higher-order awareness, misrepresentation and function. Philosophical Transactions of the Royal Society B: Biological Sciences, 367, 1424–1438. <http://doi.org/10.1098/rstb.2011.0353>
 
-* Safron, A. (2020). An Integrated World Modeling Theory (IWMT) of Consciousness: Combining Integrated Information and Global Neuronal Workspace Theories With the Free Energy Principle and Active Inference Framework; Toward Solving the Hard Problem and Characterizing Agentic Causation. Frontiers in Artificial Intelligence, 3, 30. https://doi.org/10.3389/frai.2020.00030
+* Safron, A. (2020). An Integrated World Modeling Theory (IWMT) of Consciousness: Combining Integrated Information and Global Neuronal Workspace Theories With the Free Energy Principle and Active Inference Framework; Toward Solving the Hard Problem and Characterizing Agentic Causation. Frontiers in Artificial Intelligence, 3, 30. <https://doi.org/10.3389/frai.2020.00030>
 
-* Sajid, N., Ball, P. J., Parr, T., & Friston, K. J. (2021). Active Inference: Demystified and Compared. Neural Computation, 33(3), 674–712. https://doi.org/10.1162/neco_a_01357
+* Sajid, N., Ball, P. J., Parr, T., & Friston, K. J. (2021). Active Inference: Demystified and Compared. Neural Computation, 33(3), 674–712. <https://doi.org/10.1162/neco_a_01357>
 
-* Scarantino, A., & de Sousa, R (2021). Emotion. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2021 Edition). https://plato.stanford.edu/archives/sum2021/entries/emotion/
+* Scarantino, A., & de Sousa, R (2021). Emotion. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2021 Edition). <https://plato.stanford.edu/archives/sum2021/entries/emotion/>
 
-* Schmidhuber, J. (2015). Deep learning in neural networks: An overview. Neural Networks, 61, 85-117. https://doi.org/10.1016/j.neunet.2014.09.003.
+* Schmidhuber, J. (2015). Deep learning in neural networks: An overview. Neural Networks, 61, 85-117. <https://doi.org/10.1016/j.neunet.2014.09.003>.
 
-* Schrittwieser, J., Antonoglou, I., Hubert, T. et al (2020). Mastering Atari, Go, chess and shogi by planning with a learned model. Nature, 588, 604–609. https://doi.org/10.1038/s41586-020-03051-4
+* Schrittwieser, J., Antonoglou, I., Hubert, T. et al (2020). Mastering Atari, Go, chess and shogi by planning with a learned model. Nature, 588, 604–609. <https://doi.org/10.1038/s41586-020-03051-4>
 
-* Schroeder, T. (2020). Desire. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2020 Edition). https://plato.stanford.edu/archives/sum2020/entries/desire/
+* Schroeder, T. (2020). Desire. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2020 Edition). <https://plato.stanford.edu/archives/sum2020/entries/desire/>
 
-* Searle, J.R. (1990). Who is computing with the brain? Behavioral and Brain Sciences, 13(4), 632-64. https://doi.org/10.1017/s0140525x00080663
+* Searle, J.R. (1990). Who is computing with the brain? Behavioral and Brain Sciences, 13(4), 632-64. <https://doi.org/10.1017/s0140525x00080663>
 
-* Serin, Y., & Tek, N. A. (2019). Effect of Circadian Rhythm on Metabolic Processes and the Regulation of Energy Balance. Ann Nutr Metab, 74(4), 322–330. https://doi.org/10.1159/000500071
+* Serin, Y., & Tek, N. A. (2019). Effect of Circadian Rhythm on Metabolic Processes and the Regulation of Energy Balance. Ann Nutr Metab, 74(4), 322–330. <https://doi.org/10.1159/000500071>
 
-* Seth, A.K., Bayne, T. (2022). Theories of consciousness. Nature Reviews Neuroscience. https://doi.org/10.1038/s41583-022-00587-4
+* Seth, A.K., Bayne, T. (2022). Theories of consciousness. Nature Reviews Neuroscience. <https://doi.org/10.1038/s41583-022-00587-4>
 
-* Shanahan, M. (2005). A cognitive architecture that combines internal simulation with a global workspace. Consciousness and Cognition, 15(2), 433-49. https://doi.org/10.1016/j.concog.2005.11.005
+* Shanahan, M. (2005). A cognitive architecture that combines internal simulation with a global workspace. Consciousness and Cognition, 15(2), 433-49. <https://doi.org/10.1016/j.concog.2005.11.005>
 
-* Shanahan, M. (2008). A spiking neuron model of cortical broadcast and competition. Consciousness and Cognition, 17(1), 288-303. https://doi.org/10.1016/j.concog.2006.12.005
+* Shanahan, M. (2008). A spiking neuron model of cortical broadcast and competition. Consciousness and Cognition, 17(1), 288-303. <https://doi.org/10.1016/j.concog.2006.12.005>
 
-* Shapiro, L.A. (2013). Dynamics and Cognition. Minds and Machines, 23(3), 353-375. https://doi.org/10.1002/wcs.1200
+* Shapiro, L.A. (2013). Dynamics and Cognition. Minds and Machines, 23(3), 353-375. <https://doi.org/10.1002/wcs.1200>
 
-* Shimamura, A.P. (2000). Toward a Cognitive Neuroscience of Metacognition. Consciousness and Cognition, 9(2), 313-323. https://doi.org/10.1006/ccog.2000.0450.
+* Shimamura, A.P. (2000). Toward a Cognitive Neuroscience of Metacognition. Consciousness and Cognition, 9(2), 313-323. <https://doi.org/10.1006/ccog.2000.0450>.
 
-* Siegel, S. (2021). The Contents of Perception. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2021 Edition). https://plato.stanford.edu/archives/fall2021/entries/perception-contents/
+* Siegel, S. (2021). The Contents of Perception. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2021 Edition). <https://plato.stanford.edu/archives/fall2021/entries/perception-contents/>
 
-* Siewert, C. (2004). Is Experience Transparent? Philosophical Studies, 117(1/2), 15–41. https://doi.org/10.1023%2FB%3APHIL.0000014523.89489.59
+* Siewert, C. (2004). Is Experience Transparent? Philosophical Studies, 117(1/2), 15–41. <https://doi.org/10.1023%2FB%3APHIL.0000014523.89489.59>
 
-* Siewert, C. (2022). Consciousness and Intentionality. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2022 Edition). https://plato.stanford.edu/archives/sum2022/entries/consciousness-intentionality/
+* Siewert, C. (2022). Consciousness and Intentionality. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2022 Edition). <https://plato.stanford.edu/archives/sum2022/entries/consciousness-intentionality/>
 
 * Sloman, A. (1978). The Computer Revolution in Philosophy (Revised 2018). Harvester Press (and Humanities Press).
 
-* Sloman, A. (1998). Damasio, Descartes, alarms and meta-management. SMC'98 Conference Proceedings. IEEE International Conference on Systems, Man, and Cybernetics, 3, 2652-2657. https://doi.org/10.1109/ICSMC.1998.725060
+* Sloman, A. (1998). Damasio, Descartes, alarms and meta-management. SMC'98 Conference Proceedings. IEEE International Conference on Systems, Man, and Cybernetics, 3, 2652-2657. <https://doi.org/10.1109/ICSMC.1998.725060>
 
 * Sloman, A. (2001). Beyond Shallow Models of Emotion. Cognitive Processing, 2(1), 177–198. ([Full Text](https://citeseerx.ist.psu.edu/document?doi=4a6ece0a0ee3f436fa2a4d0ed9e89c49eec363c8))
 
-* Sloman, A. (2008). Varieties of Metacognition in Natural and Artificial Systems. In M. T. Cox & A. Raja (Eds.), Metareasoning: Thinking about Thinking. MIT Press. https://doi.org/10.7551/mitpress/9780262014809.003.0020
+* Sloman, A. (2008). Varieties of Metacognition in Natural and Artificial Systems. In M. T. Cox & A. Raja (Eds.), Metareasoning: Thinking about Thinking. MIT Press. <https://doi.org/10.7551/mitpress/9780262014809.003.0020>
 
-* Smart, J. J. C. (2022). The Mind/Brain Identity Theory. In E N. Zalta & U. Nodelman (Eds.), The Stanford Encyclopedia of Philosophy (Winter 2022 Edition). https://plato.stanford.edu/archives/win2022/entries/mind-identity/
+* Smart, J. J. C. (2022). The Mind/Brain Identity Theory. In E N. Zalta & U. Nodelman (Eds.), The Stanford Encyclopedia of Philosophy (Winter 2022 Edition). <https://plato.stanford.edu/archives/win2022/entries/mind-identity/>
 
-* Smith, D. W. (2018). Phenomenology. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2018 Edition). https://plato.stanford.edu/archives/sum2018/entries/phenomenology/
+* Smith, D. W. (2018). Phenomenology. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Summer 2018 Edition). <https://plato.stanford.edu/archives/sum2018/entries/phenomenology/>
 
-* Smithies, D., & Weiss, J. (2019). Affective Experience, Desire, and Reasons for Action. Analytic Philosophy, 60(1), 27-54. https://doi.org/10.1111/phib.12144
+* Smithies, D., & Weiss, J. (2019). Affective Experience, Desire, and Reasons for Action. Analytic Philosophy, 60(1), 27-54. <https://doi.org/10.1111/phib.12144>
 
-* Smolensky, P. (1988). On the Proper Treatment of Connectionism. Behavioral and Brain Sciences, 11(1), 1–74. https://doi.org/10.1017/S0140525X00052432
+* Smolensky, P. (1988). On the Proper Treatment of Connectionism. Behavioral and Brain Sciences, 11(1), 1–74. <https://doi.org/10.1017/S0140525X00052432>
 
-* Snodgrass, M., Kalaida, N., & Winer E. S. (2009). Access is mainly a second-order process: SDT models whether phenomenally (first-order) conscious states are accessed by reflectively (second-order) conscious processes. Consciousness and Cognition, 18, 561–564; discussion 565–567. https://doi.org/10.1016/j.concog.2009.01.003
+* Snodgrass, M., Kalaida, N., & Winer E. S. (2009). Access is mainly a second-order process: SDT models whether phenomenally (first-order) conscious states are accessed by reflectively (second-order) conscious processes. Consciousness and Cognition, 18, 561–564; discussion 565–567. <https://doi.org/10.1016/j.concog.2009.01.003>
 
-* Snow, N.E. (2006). Habitual Virtuous Actions and Automaticity. Ethical Theory and Moral Practice, 9, 545–561. https://doi.org/10.1007/s10677-006-9035-5
+* Snow, N.E. (2006). Habitual Virtuous Actions and Automaticity. Ethical Theory and Moral Practice, 9, 545–561. <https://doi.org/10.1007/s10677-006-9035-5>
 
-* Soon, C., Brass, M., Heinze, H-J., & Haynes, J-D. (2008). Unconscious determinants of free decisions in the human brain. Nature Neuroscience, 11, 543–545. https://doi.org/10.1038/nn.2112
+* Soon, C., Brass, M., Heinze, H-J., & Haynes, J-D. (2008). Unconscious determinants of free decisions in the human brain. Nature Neuroscience, 11, 543–545. <https://doi.org/10.1038/nn.2112>
 
-* Spillmann, L., Dresp-Langley, B., & Tseng, C.-h. (2015). Beyond the classical receptive field: The effect of contextual stimuli. Journal of Vision, 15(9), 7. https://doi.org/10.1167/15.9.7.
+* Spillmann, L., Dresp-Langley, B., & Tseng, C.-h. (2015). Beyond the classical receptive field: The effect of contextual stimuli. Journal of Vision, 15(9), 7. <https://doi.org/10.1167/15.9.7>.
 
-* Spoerer, C. J., Kietzmann, T. C., Mehrer J., Charest, I., & Kriegeskorte, N. (2020). Recurrent neural networks can explain flexible trading of speed and accuracy in biological vision. PLOS Computational Biology, 16(10), e1008215. https://doi.org/10.1371/journal.pcbi.1008215
+* Spoerer, C. J., Kietzmann, T. C., Mehrer J., Charest, I., & Kriegeskorte, N. (2020). Recurrent neural networks can explain flexible trading of speed and accuracy in biological vision. PLOS Computational Biology, 16(10), e1008215. <https://doi.org/10.1371/journal.pcbi.1008215>
 
-* Stoljar, D. (2023). Physicalism. In E. N. Zalta & U. Nodelman (Eds.), The Stanford Encyclopedia of Philosophy (Summer 2023 Edition). https://plato.stanford.edu/archives/sum2023/entries/physicalism/
+* Stoljar, D. (2023). Physicalism. In E. N. Zalta & U. Nodelman (Eds.), The Stanford Encyclopedia of Philosophy (Summer 2023 Edition). <https://plato.stanford.edu/archives/sum2023/entries/physicalism/>
 
 * Sutton, R. S., & Barto, A. G. (1998). Reinforcement Learning: An Introduction. MIT Press.
 
 * Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning: An Introduction (2nd ed.). MIT press.
 
-* Timmermans, B., Schilbach, L., Pasquali, A., & Cleeremans, A. (2012). Higher order thoughts in action: consciousness as a unconscious re-description process. Philosophical Transactions of the Royal Society B: Biological Sciences, 367, 1412–1423. https://doi.org/10.1098%2Frstb.2011.0421
+* Timmermans, B., Schilbach, L., Pasquali, A., & Cleeremans, A. (2012). Higher order thoughts in action: consciousness as a unconscious re-description process. Philosophical Transactions of the Royal Society B: Biological Sciences, 367, 1412–1423. <https://doi.org/10.1098%2Frstb.2011.0421>
 
-* Tononi, G. (2004). An information integration theory of consciousness. BMC Neuroscience, 5, 42. https://doi.org/10.1186/1471-2202-5-42
+* Tononi, G. (2004). An information integration theory of consciousness. BMC Neuroscience, 5, 42. <https://doi.org/10.1186/1471-2202-5-42>
 
-* Tononi, G. (2008). Consciousness as integrated information: A provisional manifesto. Biological Bulletin, 215(3), 216-42. https://doi.org/10.2307/25470707
+* Tononi, G. (2008). Consciousness as integrated information: A provisional manifesto. Biological Bulletin, 215(3), 216-42. <https://doi.org/10.2307/25470707>
 
-* Tononi, G., & Edelman, G. M. (1998). Consciousness and complexity. Science, 282(5395), 1846-51. https://doi.org/10.1126/science.282.5395.1846
+* Tononi, G., & Edelman, G. M. (1998). Consciousness and complexity. Science, 282(5395), 1846-51. <https://doi.org/10.1126/science.282.5395.1846>
 
-* Tononi, G., Sporns, O. (2003). Measuring information integration. BMC Neuroscience, 4, 31. https://doi.org/10.1186%2F1471-2202-4-31
+* Tononi, G., Sporns, O. (2003). Measuring information integration. BMC Neuroscience, 4, 31. <https://doi.org/10.1186%2F1471-2202-4-31>
 
-* Tononi, G., Sporns, O., & Edelman, G. M. (1994). A measure for brain complexity: relating functional segregation and integration in the nervous system. The Proceedings of the National Academy of Sciences (PNAS), 91, 5033-7. https://doi.org/10.1073/pnas.91.11.5033
+* Tononi, G., Sporns, O., & Edelman, G. M. (1994). A measure for brain complexity: relating functional segregation and integration in the nervous system. The Proceedings of the National Academy of Sciences (PNAS), 91, 5033-7. <https://doi.org/10.1073/pnas.91.11.5033>
 
-* Trevethan, C. T., & Sahraie, A. (2009). Blindsight. In William P. Banks (Ed.), Encyclopedia of Consciousness (pp. 107-122). Academic Press. https://doi.org/10.1016/B978-012373873-8.00012-8
+* Trevethan, C. T., & Sahraie, A. (2009). Blindsight. In William P. Banks (Ed.), Encyclopedia of Consciousness (pp. 107-122). Academic Press. <https://doi.org/10.1016/B978-012373873-8.00012-8>
 
-* Tsakiris, M., & Haggard, P. (2005). Experimenting with the acting self. Cognitive Neuropsychology, 22(3-4), 387-407. https://doi.org/10.1080/02643290442000158
+* Tsakiris, M., & Haggard, P. (2005). Experimenting with the acting self. Cognitive Neuropsychology, 22(3-4), 387-407. <https://doi.org/10.1080/02643290442000158>
 
 * Tulving, E. (1987). Multiple memory systems and consciousness. Human Neurobiology, 6(2), 67–80.
 
-* Turova, T., & Rolls, E. T. (2019). Analysis of Biased Competition and Cooperation for Attention in the Cerebral Cortex. Frontiers in Computational Neuroscience, 13:51. https://doi.org/10.3389/fncom.2019.00051
+* Turova, T., & Rolls, E. T. (2019). Analysis of Biased Competition and Cooperation for Attention in the Cerebral Cortex. Frontiers in Computational Neuroscience, 13:51. <https://doi.org/10.3389/fncom.2019.00051>
 
-* Turvey, B.E., & Crowder, S. (2017). Investigators and the Scientific Method. In B. E. Turvey, & S. Crowder (Eds.), Forensic Investigations (pp. 67-90). Academic Press. https://doi.org/10.1016/B978-0-12-800680-1.00004-3.
+* Turvey, B.E., & Crowder, S. (2017). Investigators and the Scientific Method. In B. E. Turvey, & S. Crowder (Eds.), Forensic Investigations (pp. 67-90). Academic Press. <https://doi.org/10.1016/B978-0-12-800680-1.00004-3>.
 
-* Tye, M. (1996). The function of consciousness. Noûs, 30(3), 287–305. https://doi.org/10.2307/2216271
+* Tye, M. (1996). The function of consciousness. Noûs, 30(3), 287–305. <https://doi.org/10.2307/2216271>
 
-* Tye, M. (2021). Qualia. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2021 Edition). https://plato.stanford.edu/archives/fall2021/entries/qualia/
+* Tye, M. (2021). Qualia. In E. N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Fall 2021 Edition). <https://plato.stanford.edu/archives/fall2021/entries/qualia/>
 
 * Valdez, P. (2019). Circadian Rhythms in Attention. The Yale Journal of Biology and Medicine, 92(1), 81–92. ([Full Text](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6430172/))
 
-* van Bergen, R. S., & Kriegeskorte, N. (2020). Going in circles is the way forward: the role of recurrence in visual inference, Current Opinion in Neurobiology, 65(176-193). https://doi.org/10.1016/j.conb.2020.11.009
+* van Bergen, R. S., & Kriegeskorte, N. (2020). Going in circles is the way forward: the role of recurrence in visual inference, Current Opinion in Neurobiology, 65(176-193). <https://doi.org/10.1016/j.conb.2020.11.009>
 
-* van Es, D.M., & Knapen, T. (2019). Implicit and explicit learning in reactive and voluntary saccade adaptation. PLOS ONE, 14(1), e0203248. https://doi.org/10.1371/journal.pone.0203248
+* van Es, D.M., & Knapen, T. (2019). Implicit and explicit learning in reactive and voluntary saccade adaptation. PLOS ONE, 14(1), e0203248. <https://doi.org/10.1371/journal.pone.0203248>
 
-* Van Gulick, R. (1992). Nonreductive Materialism and the Nature of Intertheoretical Constraint. In A. Beckermann, H. Flohr, & J. Kim (Eds.), Emergence or Reduction?: Essays on the Prospects of Nonreductive Physicalism (pp. 157-179). De Gruyter. https://doi.org/10.1515/9783110870084.157
+* Van Gulick, R. (1992). Nonreductive Materialism and the Nature of Intertheoretical Constraint. In A. Beckermann, H. Flohr, & J. Kim (Eds.), Emergence or Reduction?: Essays on the Prospects of Nonreductive Physicalism (pp. 157-179). De Gruyter. <https://doi.org/10.1515/9783110870084.157>
 
-* Van Gulick, R. (2022). Consciousness. In E. N. Zalta, & U. Nodelman (Eds.), The Stanford Encyclopedia of Philosophy (Winter 2022 Edition). https://plato.stanford.edu/archives/win2022/entries/consciousness/
+* Van Gulick, R. (2022). Consciousness. In E. N. Zalta, & U. Nodelman (Eds.), The Stanford Encyclopedia of Philosophy (Winter 2022 Edition). <https://plato.stanford.edu/archives/win2022/entries/consciousness/>
 
-* Vierra, N. C., O'Dwyer, S. C., Matsumoto, C., Santana, L. F., & Trimmer, J. S. (2021). Regulation of neuronal excitation–transcription coupling by Kv2.1-induced clustering of somatic L-type Ca2+ channels at ER-PM junctions. Proceedings of the National Academy of Sciences, 118(46), e2110094118. https://doi.org/10.1073/pnas.2110094118
+* Vierra, N. C., O'Dwyer, S. C., Matsumoto, C., Santana, L. F., & Trimmer, J. S. (2021). Regulation of neuronal excitation–transcription coupling by Kv2.1-induced clustering of somatic L-type Ca2+ channels at ER-PM junctions. Proceedings of the National Academy of Sciences, 118(46), e2110094118. <https://doi.org/10.1073/pnas.2110094118>
 
 * Von Neumann, J. (1966). Theory of Self-reproducing Automata. Edited and completed by A. W. Burks, University of Illinois Press, Urbana and London (pp. 74–87 and pp. 121–123). ([Full Text](https://cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf))
 
@@ -2023,24 +2023,24 @@ Issues of HOOS aside, the theory presented here is more than just a theory of su
 
 * Yablo, S. (2002). The Many Problems of Mental Causation (Excerpt). In D. Chalmers, D. (Ed.), Philosophy of Mind: Classical and Contemporary Readings. Oxford University Press (pp. 179-197).
 
-* Walsh, K. S., McGovern, D. P., Clark, A., & O'Connell, R. G. (2020). Evaluating the neurophysiological evidence for predictive processing as a model of perception. Annals of the New York Academy of Sciences, 1464(1), 242–268. https://doi.org/10.1111/nyas.14321
+* Walsh, K. S., McGovern, D. P., Clark, A., & O'Connell, R. G. (2020). Evaluating the neurophysiological evidence for predictive processing as a model of perception. Annals of the New York Academy of Sciences, 1464(1), 242–268. <https://doi.org/10.1111/nyas.14321>
 
-* Wang, T., Bao, X., Clavera, I., Hoang, J., Wen, Y., Langlois, E., Zhang, S., Zhang, G., Abbeel, P., & Ba, J. (2019). Benchmarking Model-Based Reinforcement Learning. ArXiv, 1907.02057. https://doi.org/10.48550/arXiv.1907.02057
+* Wang, T., Bao, X., Clavera, I., Hoang, J., Wen, Y., Langlois, E., Zhang, S., Zhang, G., Abbeel, P., & Ba, J. (2019). Benchmarking Model-Based Reinforcement Learning. ArXiv, 1907.02057. <https://doi.org/10.48550/arXiv.1907.02057>
 
-* Wayman, E. (2023). When Did the Human Mind Evolve to What It is Today? Smithsonian Magazine. https://www.smithsonianmag.com/science-nature/when-did-the-human-mind-evolve-to-what-it-is-today-140507905/
+* Wayman, E. (2023). When Did the Human Mind Evolve to What It is Today? Smithsonian Magazine. <https://www.smithsonianmag.com/science-nature/when-did-the-human-mind-evolve-to-what-it-is-today-140507905/>
 
-* Webb, T.W., & Graziano, M.S.A. (2015). The attention schema theory: a mechanistic account of subjective awareness. Frontiers in Psychology, 6, 500. https://doi.org/10.3389/fpsyg.2015.00500.
+* Webb, T.W., & Graziano, M.S.A. (2015). The attention schema theory: a mechanistic account of subjective awareness. Frontiers in Psychology, 6, 500. <https://doi.org/10.3389/fpsyg.2015.00500>.
 
-* Weiskrantz, L., Warrington, E., Sanders, M., & Marshall, J. (1975). Visual Capacity in the Hemianopic Field Following a Restricted Occipital Ablation. Brain: A Journal of Neurology. 97:709-28. https://doi.org/10.1093/brain/97.1.709
+* Weiskrantz, L., Warrington, E., Sanders, M., & Marshall, J. (1975). Visual Capacity in the Hemianopic Field Following a Restricted Occipital Ablation. Brain: A Journal of Neurology. 97:709-28. <https://doi.org/10.1093/brain/97.1.709>
 
-* Whitmarsh, S., Oostenveld, R., Almeida, R., & Lundqvist, D. (2017). Metacognition of attention during tactile discrimination. NeuroImage, 147, 121-129. https://doi.org/10.1016/j.neuroimage.2016.11.070
+* Whitmarsh, S., Oostenveld, R., Almeida, R., & Lundqvist, D. (2017). Metacognition of attention during tactile discrimination. NeuroImage, 147, 121-129. <https://doi.org/10.1016/j.neuroimage.2016.11.070>
 
-* Winkielman, P., & Schooler, J. (2012). Consciousness, metacognition, and the unconscious. In S.T. Fiske, & C.N. Macrae (Eds.), The SAGE Handbook of Social Cognition. SAGE Publications Ltd. http://doi.org/10.4135/9781446247631.n4
+* Winkielman, P., & Schooler, J. (2012). Consciousness, metacognition, and the unconscious. In S.T. Fiske, & C.N. Macrae (Eds.), The SAGE Handbook of Social Cognition. SAGE Publications Ltd. <http://doi.org/10.4135/9781446247631.n4>
 
-* Wegner, D. M., & Wheatley, T. (1999). Apparent mental causation: sources of the experience of will. American Psychologist, 54(7), 480–492. https://doi.org/10.1037//0003-066x.54.7.480 ([Full Text](http://wexler.free.fr/library/files/wegner%20(1999)%20apparent%20mental%20causation.%20sources%20of%20the%20experience%20of%20will.pdf))
+* Wegner, D. M., & Wheatley, T. (1999). Apparent mental causation: sources of the experience of will. American Psychologist, 54(7), 480–492. <https://doi.org/10.1037//0003-066x.54.7.480> ([Full Text](http://wexler.free.fr/library/files/wegner%20(1999)%20apparent%20mental%20causation.%20sources%20of%20the%20experience%20of%20will.pdf))
 
 * Wegner, D. M. (2002). The Illusion of Conscious Will. MIT Press/Bradford.
 
-* Wegner, D. M. (2003). The mind’s best trick: How we experience conscious will. Trends in Cognitive Sciences, 7(2), 65–69. https://doi.org/10.1016/S1364-6613(03)00002-0
+* Wegner, D. M. (2003). The mind’s best trick: How we experience conscious will. Trends in Cognitive Sciences, 7(2), 65–69. <https://doi.org/10.1016/S1364-6613(03)00002-0>
 
-* Zeki, S. M., & Shipp, S. (1988). The Functional Logic of Cortical Connections. Nature, 335, 311-317. https://doi.org/10.1038/335311a0
+* Zeki, S. M., & Shipp, S. (1988). The Functional Logic of Cortical Connections. Nature, 335, 311-317. <https://doi.org/10.1038/335311a0>

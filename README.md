@@ -4,10 +4,11 @@ This is the repository for my [Personal website](https://malcolmlett.github.io/)
 This site is built with [Jekyll](https://jekyllrb.com/) and the [Just the Docs](https://just-the-docs.com/) theme.
 
 # Running locally
+Works best within Windows System for Linux (WSL).
 
 The first time you run this, you'll need to follow the "one time setup" steps below.
 
-Then:
+Then, run as follows:
 
 1. Run jekyll
 
@@ -20,7 +21,7 @@ Then:
 
 ## Running locally - one time setup
 
-The following steps configure Jekyll to run within Windows System for Linux.
+The following steps configure Jekyll to run within WSL.
 
 Prerequisites:
 * make sure you are on Ubuntu 20.04.5 LTS or later
@@ -67,4 +68,19 @@ Steps:
 Creating markdown links that open in a new tab ([source](https://heymichellemac.com/external-links-jekyll)):
 ```
 [Mishacreatrix Website](https://mishacreatrix.com/){:target="_blank"}{:rel="noopener noreferrer"}
+```
+
+# Random useful stuff
+
+Sed command to wrap http urls as hyperlinks in short-hand md syntax (supported by Jekyll), without affecting existing wrapped urls:
+```bash
+sed -E 's/(^|[,. ])(http(s?):\/\/([^. ]|\.[^ ])+)(\.?([ ]|$))/\1<\2>\5/g' source.txt > updated.txt
+
+```
+
+
+Sed command to wrap http urls as hyperlinks in full-form md syntax, without affecting urls that have already
+been turned into hyperlinks:
+```bash
+sed -E 's/(^|[. ])(http(s?):\/\/([^. ]|\.[^ ])+)(\.?([ ]|$))/\1[\2](\2)\5/g' source.txt > updated.txt
 ```
