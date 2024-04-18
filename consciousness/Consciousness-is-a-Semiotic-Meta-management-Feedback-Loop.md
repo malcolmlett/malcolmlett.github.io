@@ -13,11 +13,13 @@ authors:
 > Looking for a shorter version?
 >
 > A précis of the entire theory is included in [chapter I.2](#i2-précis-of-thesis).
+>
+> The theory is also summarised in a blog post: [The Meta-management Theory of Consciousness](https://medium.com/@malcolmlett/the-meta-management-theory-of-consciousness-17b1efdf4755).
 
 {: .note-title }
 > Got feedback?
 >
-> I'd absolutely love to hear your feedback. The best way is by replying to my [Medium blog post](https://malcolmlett.medium.com/consciousness-is-a-what-kind-of-loop-b0a2a637ebb9). Other contact options are available from the [About]({% link about.md %}) page.
+> I'd absolutely love to hear your feedback. Contact options are available from the [About]({% link about.md %}) page.
 
 
 
