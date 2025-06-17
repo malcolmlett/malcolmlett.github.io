@@ -6,3 +6,10 @@ updates:
       interval: daily
     allow:
       - dependency-type: direct
+      
+  # Automatically keep github actions up to date to prevent the build from suddenly failing because
+  # I'm not paying attention to this.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly      
