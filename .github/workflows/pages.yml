@@ -9,6 +9,10 @@ name: Deploy Jekyll site to Pages
 on:
   push:
     branches: ["main"]
+    
+  # Also run during PRs
+  # (but note need to use "if:" in Deploy section)
+  pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -51,6 +55,7 @@ jobs:
 
   # Deployment job
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
